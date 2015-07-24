@@ -1,0 +1,315 @@
+/* ==========================================================================
+  Global Styles
+  ========================================================================== */
+
+html {
+	height: 100%;
+	margin-top: 0 !important;
+	font-size: $basefontsize;
+	-webkit-overflow-scrolling : touch;
+	-webkit-tap-highlight-color : rgba(0,0,0,0.3);
+	-webkit-text-size-adjust : 100%;
+	-ms-text-size-adjust : 100%; 
+}
+
+body {
+	background-color: #EBEBEB;
+}
+
+* {
+	@include border-box;
+}
+
+a {
+	outline: 0;
+}
+
+a:hover, a:active, a:focus {
+	outline: inherit;
+}
+
+a,a:visited {
+	color: inherit;
+}
+
+.wrap-link {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	border-width: 0;
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+  	resize: vertical;
+}
+
+ol, ul {
+	padding: 0;
+	margin-left: $gutterwidth * 2;
+}
+
+.u-unstyled, .inline-list {
+	margin: 0;
+	list-style: none;
+}
+
+.inline-list li {
+	display: inline-block;
+}
+
+.wrapper {
+	position: relative;
+}
+
+/* ==========================================================================
+  Alignments
+  ========================================================================== */
+
+.left {
+	float: left;
+}
+
+/* ==========================================================================
+  Layouts
+  ========================================================================== */
+
+// Flexbox ===============================================================
+
+@include bp(l) {
+
+	.has-flex {
+		.l-row,
+		.l-list {
+			width: 100%;
+			@include flexbox();
+		}
+
+		.l-row {
+			@include flex-flow(row nowrap);
+		}
+
+		.l-list {
+			@include flex-flow(column nowrap);
+		}
+
+		.l-row-cols-2 {
+			@include flex-flow(row nowrap);
+		}
+
+		.l-row-item,
+		.l-list-item {
+			@include flexbox;
+		}
+
+		.l-list--item-span-1,
+		.l-row--item-span-1 {
+			@include flex(1 1 auto);
+		}
+
+		.l-list--item-span-2,
+		.l-row--item-span-2 {
+			@include flex(2 1 auto);
+		}
+
+		.l-list--item-span-3,
+		.l-row--item-span-3 {
+			@include flex(3 1 auto);
+		}
+
+		.centered-items {
+			-webkit-justify-content: center;
+			-webkit-align-items: center;
+			-moz-justify-content: center;
+			-moz-align-items: center;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.multirow {
+			@include flex-flow(wrap);
+
+			& > .l-row-item {
+				margin-bottom: $gutterwidth * 2;
+			}
+		}
+	}
+}
+
+.l-list-item {
+	margin-bottom: $gutterwidth;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.l-row {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.l-row-item,
+.l-col-item {
+	@include bp(l) {
+		padding: 0 $gutterwidth/2;
+	}
+}
+
+/* ==========================================================================
+  Sections
+  ========================================================================== */
+
+.section {
+	padding: $gutterwidth 0;
+}
+
+.section-headlines {
+	padding: 0 $gutterwidth / 2;
+
+	@include bp(m) {
+		padding: 0;
+	}
+
+	@include bp(xl) {
+		.l-row {
+		}
+	}
+
+	.main {
+		width: 100%;
+		@include bp(l) {
+			width: 67.8%;
+		}
+		@include bp(xl) {
+			width: 71.8%;
+		}
+	}
+}
+
+// Site Header ===============================================================
+
+.header {
+	position: relative;
+
+	.header-top,
+	.header-bottom {
+		position: relative;
+		@include clearfix;
+		width: 100%;
+	}
+
+	.header-top {
+		height: 56px;
+		padding: 0 10px;
+		@include bp(m) {
+			height: 64px;
+			padding: 0 24px;
+		}
+		@include bp(l) {
+			padding: 0 16px;
+			background-color: white;
+			height: 72px;
+
+		}
+	}
+
+	.header-bottom {
+		display: none;
+		height: $baseline * 6;
+		background-color: $black300;
+		padding: 0 24px;
+		@include bp(l) {
+			display: block;
+		}
+	}
+
+	.header-brand {
+		float: left;
+
+		.logo {
+			height: 26px;
+			margin-top: 4px;
+			@include bp(m) {
+				height: 36px;
+			}
+			@include bp(l) {
+				position: relative;
+				z-index: 0;
+			}
+			@include bp(xl) {
+				height: 40px;
+			}
+		}
+
+		.network {
+			display: none;
+			width: auto;
+			font-family: $basefontfamily;
+			font-weight: 900;
+			@include font-size(12);
+			text-transform: lowercase;
+			letter-spacing: -0.3px;
+			color: $black500;
+			@include bp(l) {
+				position: relative;
+				z-index: 1;
+				display: block;
+				margin-top: -8px;
+				margin-bottom: -5px;
+			}
+		}
+	}
+
+	& .header-meta {
+		@include bp(l){
+			float: left;
+			margin-top: 13px;
+		}
+	}
+}
+
+.header.slim-header {
+	position: relative;
+	height: auto;
+	@include bp(l) {
+		height: 70px;
+	}
+	.header-slim-menu {
+		position: absolute;
+		top: $gutterwidth;
+		left: 0;
+	}
+	.section-name {
+		padding: 1.45em .4em 0;
+		@include bp(m) {
+			padding: 0;
+		}
+	}
+}
+
+.header-meta {
+	display: none;
+	@include bp(l) {
+		display: block;
+	}
+}
+
+// Advertising ===============================================================
+
+.adv-mbl {
+	display: block;
+
+	@include bp(l) {
+		display: none;
+	}
+
+}

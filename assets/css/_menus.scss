@@ -1,0 +1,212 @@
+/* ==========================================================================
+  Global Styles
+  ========================================================================== */
+
+.primary-nav,
+.secondary-nav,
+.nav-toolbar {
+	display: none;
+	@include bp(l) {
+		display: block;
+	}
+}
+
+.nav-item.current .link {
+	color: $black900;
+}
+
+.nav-item.current .link {
+	font-weight: 700;
+}
+
+.nav-toggle {
+	display: none;
+	float: left;
+	margin: 0 $gutterwidth;
+	line-height: 2.2em;
+	@include bp(l) {
+		display: block;
+	}
+}
+
+.nav-toolbar {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.nav-mobile {
+	position: absolute;
+	right: 10px;
+	display: block;
+	@include bp(m) {
+		top: 10px;
+	}
+	@include bp(l) {
+		display: none;
+	}
+}
+
+
+/* ==========================================================================
+  Primary Navigation
+  ========================================================================== */
+
+.primary-nav {
+	@include bp(l) {
+		position: absolute;
+		left: 35%;
+		top: 0;
+	}
+
+	.nav-item {
+		position: relative;
+		margin-right: $baseline * 4;
+		padding: $baseline * 3 0 0 0;
+		height: 72px;
+		font-family: $brandfontfamily;
+		font-weight: normal;
+		@include font-size(20);
+		text-transform: uppercase;
+	}
+
+	.nav-item .link {
+		color: $black600;
+
+		&:hover {
+			color: $black700;
+			text-decoration: none;
+		}
+	}
+
+	.nav-item.current:after {
+		display: inline-block;
+		position: absolute;
+		content: '';
+		margin: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		vertical-align: middle;
+		border-bottom: 10px dashed;
+		border-right: 16px solid transparent;
+		border-left: 16px solid transparent;
+		color: $black300;
+	}
+
+	.nav-item.current .link {
+		color: $black900;
+	}
+
+}
+
+/* Navigation Themes */
+/* @todo Fix this CSS */
+
+.header-slim .nav-toolbar {
+	top: 24px;
+}
+
+/* ==========================================================================
+  Secondary Navigation
+  ========================================================================== */
+
+.secondary-nav {
+	@include bp(l) {
+		position: absolute;
+		left: 35%;
+		top: 13px;
+	}
+
+	.nav-item {
+		margin-right: $baseline * 2;
+		font-family: $basefontfamily;
+		@include font-size(16);
+		@include bp(xl) {
+			@include font-size(18);
+		}
+
+		.link {
+			color: $black800;
+
+			&:hover {
+				color: $black900;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+  Mobile Navigation
+  ========================================================================== */
+
+.mobile-nav {
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	z-index: 10;
+	background: $black1000;
+	border-left-width: 3px;
+	border-left-style: solid;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	.nav-item {
+		border-bottom: 1px solid $black1000;
+		font-family: $basefontfamily;
+		font-weight: 700;
+		@include font-size(20);
+	}
+
+	.nav-item .link {
+		padding: $gutterwidth;
+		display: block;
+		color: white;
+		width: 100%;
+		background-color: $black900;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:active {
+			background-color: $black1000;
+		}
+	}
+
+	.search-button,
+	.login-button {
+		.icon {
+			fill: $bluegrey400;
+		}
+		.button-label {
+			color: $bluegrey400;
+		}
+	}
+
+	.close-button {
+		top: 14px;
+		right: $gutterwidth;
+	}
+}
+
+
+.content-blocker {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}

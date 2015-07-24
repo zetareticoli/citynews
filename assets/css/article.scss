@@ -1,0 +1,729 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+// Variables
+$entry-content-width	: 640px;
+$entry-content-offset	: 192px;
+
+.entry {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	@include clearfix;
+
+	@include bp(m) {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+/* ==========================================================================
+  Header
+  ========================================================================== */
+
+.entry-header {
+	@include clearfix;
+	margin-bottom: 16px;
+	position: relative;
+
+	@include bp(xl) {
+		margin-bottom: 40px;
+	}
+
+	& .entry-title,
+	& .entry-summary {
+		@include bp(xl) {
+			padding-left: $entry-content-offset;
+		}
+	}
+}
+
+.entry-label {
+	font-weight: 700;
+	@include font-size(18);
+	margin: 0 0 10px;
+	position: relative;
+
+	@include bp(xl) {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		width: $entry-content-offset;
+	}
+}
+
+.entry-byline {
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 8px 0;
+	@include font-size(12);
+	width: auto;
+	margin-bottom: 8px;
+	@include clearfix;
+
+	@include bp(m) {
+		border: none;
+		float: left;
+		padding: $gutterwidth 0;
+		width: 48%;
+		@include font-size(14);
+	}
+
+	@include bp(l) {
+		width: 60%;
+	}
+
+	@include bp(xl) {
+		padding: 0;
+		position: absolute;
+		top: 290px;
+		left: 0;
+		width: 170px;
+	}
+
+	& .author {
+		float: left;
+		margin-right: $gutterwidth / 2;
+		width: 50%;
+		@include bp(xl) {
+			width: 100%;
+		}
+	}
+
+	& .author-photo {
+		float: left;
+		margin: 0 8px 0 0;
+		width: 35px; 
+
+		@include bp(m) {
+			width: auto;
+		}
+
+		@include bp(xl) {
+			float: none;
+			margin: 0 0 10px 0;
+		}
+	}
+
+	& .author-name {
+		display: inline-block;
+		font-weight: 700;
+		margin-bottom: 4px;
+		@include bp(m) {
+			margin-bottom: 8px;
+		}
+
+		.link {
+			text-decoration: none;
+		}
+	}
+
+	& .author-role {
+		display: block;
+	}
+
+	& .author-twitter {
+		display: none;
+
+		@include bp(l) {
+			display: inline-block;
+		}
+
+		& > .icon {
+			margin: 0 5px;
+			width: 14px;
+			height: 14px;
+			fill: lightblue;
+		}
+	}
+
+	& .datetime {
+		float: left;
+		padding-top: $gutterwidth / 2;
+		@include font-size(12);
+		@include bp(m) {
+			@include font-size(14);
+		}
+	}
+}
+
+.entry-meta {
+	width: auto;
+	@include clearfix;
+
+	@include bp(m) {
+		padding: $gutterwidth 0;
+	}
+
+	@include bp(xl) {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		width: 170px;
+		top: 440px;
+		left: 0px;
+	}
+}
+
+.share-tools {
+	float: left;
+	width: 50%;
+	margin: 0 0 5px 0;
+	padding: 0;
+
+	@include bp(m) {
+		width: 20%;
+	}
+
+	@include bp(l) {
+		width: 15%;
+	}
+
+	@include bp(xl) {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	& li {
+		display: inline;
+		list-style: none;
+		margin: 0 0 0 0;
+		padding: 0;
+	}
+
+	& li .icon {
+		width: 32px;
+		height: 32px;
+	}
+
+	&.share-bottom {
+		float: none;
+		width: 100%;
+	}
+}
+
+.share-counter {
+	margin: 0 5px 0 0;
+
+	@include bp(xl) {
+		border-bottom: 1px solid #ccc;
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 0;
+	}
+}
+
+.share-counter,
+.comments-counter {
+	width: 23%;
+	display: block;
+	float: left;
+	text-align: right;
+
+	@include bp(m) {
+		width: 15%;
+	}
+
+	@include bp(l) {
+		width: 12%;
+	}
+
+	@include bp(xl) {
+		width: 100%;
+		text-align: left;
+	}
+
+	.number {
+		font-weight: 700;
+		@include font-size(18);
+		@include bp(m) {
+			@include font-size(24);
+		}
+		@include bp(xl) {
+			@include font-size(28);
+		}
+	}
+
+	.label {
+		display: none;
+		@include font-size(12);
+		font-weight: 700;
+
+		@include bp(m) {
+			display: block;
+		}
+
+		@include bp(l) {
+			display: inline-block;
+		}
+	}
+
+	.number {
+		@include bp(xl) {
+			display: block;
+		}
+	}
+
+	.icon {
+		display: inline-block;
+		margin-right: 5px;
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.entry-title {
+	@include font-size(24);
+	margin-bottom: 10px;
+
+	@include bp(m) {
+		@include font-size(46);
+	}
+}
+
+.entry-summary {
+	@include font-size(16);
+	line-height: 1.35em;
+	margin: 0 0 10px 0;
+
+	@include bp(l) {
+		width: auto;
+		@include font-size(20);
+	}
+}
+
+
+/* ==========================================================================
+  Content
+  ========================================================================== */
+
+.entry-content { 
+	@include clearfix;
+	float: left;
+	width: 100%;
+	position: relative;
+
+	& .container {
+		padding: 0 10px;
+
+		@include bp(m) {
+			padding: 0;
+		}
+	}
+}
+
+.content-body {
+	position: relative;
+	width: 100%;
+
+	@include bp(m) {
+		margin: 0 $gutterwidth / 2;
+		width: auto;
+	}
+
+	@include bp(l) {
+		float: left;
+		margin: 0 $gutterwidth 0 0;
+		width: $entry-content-width;
+	}
+
+	@include bp(xl) {
+		margin-left: $entry-content-offset;
+
+	}
+}
+
+.content-footer {
+	clear: both;
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+
+	@include bp(l) {
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	& .container {
+		padding: 0 10px;
+
+		@include bp(m) {
+			padding: 0 60px;
+		}
+
+		@include bp(l) {
+			padding: 0;
+		}
+	}
+}
+
+.content-paragraph {
+	@include font-size(16);
+	line-height: 1.45em;
+
+};
+
+
+.entry-figure {
+	background: rgb(240,240,240);
+	height: auto;
+	width: 106.5%;
+	margin-left: -10px;
+	margin-bottom: 20px;
+	display: block;
+
+	@include bp(m) {
+		float: right;
+		width: 60%;
+		margin-left: $gutterwidth * 2;
+	}
+
+	@include bp(l) {
+		float: left;
+		margin: 0 0 20px 0;
+
+		&.figure-sm {
+			width: 310px;
+			float: right;
+		}
+
+		&.figure-mid {
+			width: $entry-content-width;
+		}
+
+		&.figure-lg {
+			width: auto;
+		}
+	}
+
+	.img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.story-highlights {
+	list-style: none;
+	margin-left: 0;
+	margin-right: 30px;
+	padding: 0;
+	width: 250px;
+	float: left;
+
+	h4 {
+		margin-bottom: 10px;
+	}
+
+	li {
+		border-top: 1px solid #ccc;
+		font-size: 14px;
+		padding: 10px 0;
+	}
+}
+
+.entry-tags {
+	margin: 20px 0;
+	padding: 0;
+	font-size: 12px;
+
+	li {
+		display: inline;
+		margin-right: 10px;
+	}
+}
+
+.related-content {
+	margin: 20px 0;
+
+	&.related-top {
+		display: none;
+
+		@include bp(l) {
+			display: block;
+		}
+	}
+
+	@include bp(l) {
+		float: left;
+		clear: left;
+		margin: 0 20px 20px 0;
+		width: 40%;
+		
+		&.related-bottom {
+			display: none;
+		}
+	}
+
+	@include bp(xl) {
+		margin: 0 $gutterwidth * 2 0 -192px;
+		width: $gutterwidth * 17;
+	}
+
+	.section-title {
+		font-weight: 700;
+		margin-bottom: 10px;
+		@include font-size(10);
+		text-transform: uppercase;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		border-bottom: 1px solid #ccc;
+		list-style: none;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		overflow: auto;
+		width: 100%;
+
+		@include bp(m) {
+			margin: 0 5% 1% 0;
+			width: 100%;
+		}
+
+		@include bp(l) {
+			margin: 0 0 10px 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	figure {
+		float: right;
+		margin: 0 0 15px 15px;
+		width: 75px;
+
+		@include bp(m) {
+			width: 75px;
+		}
+
+		@include bp(l) {
+		}	
+	}
+
+	.story-heading {
+		font-weight: 400;
+		line-height: 1.2em;
+		margin-bottom: 0px;
+		@include font-size(12);
+
+		@include bp(l) {
+			@include font-size(14);
+		}
+	}
+}
+
+.next-entry {
+	margin-bottom: 40px;
+
+	@include bp(l) {
+		padding: 0;
+		text-align: right;
+	}
+
+	.section-title {
+		margin-bottom: 20px;
+		@include font-size(16);
+	}
+
+	.story-heading {
+		@include font-size(20);
+
+		@include bp(m) {
+			width: 100%;
+			@include font-size(28);
+			line-height: 1.35em;
+		}
+	}
+}
+
+.top-stories {
+	margin: 24px 0;
+
+	@include bp(l) {
+		margin: 0;
+	}
+
+	.section-title {
+		margin-bottom: 20px;
+		@include font-size(24);
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@include clearfix;
+	}
+
+	li {
+		border-bottom: 1px solid #ccc;
+		overflow: auto;
+
+		@include bp(m) {
+			border: 0;
+			float: left;
+		}
+
+		@include bp(l) {
+			border: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	figure {
+		float: left;
+		margin: 0 10px 10px 0;
+		width: 30%;
+
+		@include bp(m) {
+			width: 100%;
+		}	
+	}
+
+	.story-heading {
+		@include font-size(14);
+		margin-bottom: 0px;
+
+		@include bp(m) {
+			font-size: 16px;
+		}
+	}
+}
+
+
+/* ==========================================================================
+  Modules
+  ========================================================================== */
+
+.back-top {
+	clear: left;
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	@include bp(l) {
+		display: none;
+	}
+}
+
+.bottom-nav {
+	border-top: 1px solid #ccc;
+	@include bp(l) {
+		display: none;
+	}
+}
+
+.bottom-nav ul {
+	padding: 0;
+	width: 50%;
+	float: left;
+
+	& li {
+		margin-bottom: 10px;
+	}
+
+	& a {
+		@include font-size(12);
+	}
+
+}
+
+/* ==========================================================================
+  Advertising
+  ========================================================================== */
+
+.adv {
+	margin: 0 auto;
+}
+
+.pushbar {
+	margin: 0 auto 16px;
+	padding: 0 $gutterwidth;
+	text-align: center;
+	> * {
+		display: none;
+	}
+
+	@include max-bp(s) {
+		.mobile {
+			display: block;
+		}
+	}
+
+	@include bp(m) {
+		.desktop {
+			display: block;
+			> img {
+				height: 40px;
+				@include bp(l) {
+					height: 60px;	
+				}
+			}
+		}
+	}	
+}
+
+.leaderboard {
+	display: none;
+	margin: 10px auto;
+	width: 728px;
+}
+
+.billboard {
+	display: none;
+	width: 970px;
+	margin: 10px auto;
+}
+
+.medium-rectangle-mobile {
+	display: block;
+	margin: 0 auto 40px;
+	width: 300px;
+	@include bp(l) {
+		display: none;
+	}
+	
+}
+
+
+
+.medium-rectangle-inner {
+	display: none;
+
+	@include bp(m) {
+		display: block;
+		float: right;
+		clear: right;
+		margin: 0 0 40px 40px;
+	}
+
+	@include bp(l) {
+		display: none;
+	}
+
+	@include bp(xl) {
+		display: none;
+	}
+}
+
+.aside-adv {
+	display: none;
+	float: left;
+	width: 300px;
+
+	> img {
+		margin-bottom: 20px;
+	}
+
+	@include bp(l) {
+		display: block;
+	}
+}

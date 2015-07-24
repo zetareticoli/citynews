@@ -1,0 +1,114 @@
+
+.wrapper {
+	margin: 0 auto;
+	background-color: #fff;
+
+	@include bp(l) {
+		width: 1000px;
+	}
+
+	@include bp(xl) {
+		width: 1188px;
+	}
+}
+
+.line {
+	@include border-box;
+	@include clearfix;
+	padding: 0;
+	@include bp(m) {
+		padding: 0 8px;
+	}
+	position: relative;
+	zoom: 1;
+}
+
+.unit, .group, .lastUnit {
+	overflow: hidden;
+	background-clip: padding-box;
+}
+
+.unit, .group {
+	float: left;
+}
+
+.unit {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.group,
+.group .line {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.bg {
+	background: #b1e0ec;
+}
+
+.bg-y {
+	background-color:#ffe8aa
+}
+
+.grid-filler {
+	background: #52bad5;
+	padding: 24px 0;
+	max-width: inherit;
+	margin-top: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+.size1of1 {
+	width: 100%;
+}
+
+.size1of2 {
+	width: 100%;
+	@include bp(m) {
+		width: 50%;
+	}
+}
+
+.size1of3 {
+	width: 100%;
+	@include bp(m) {
+		width: 33.33%;
+	}
+}
+
+.size2of3 {
+	width: 100%;
+	@include bp(m) {
+		width: 66.66%;
+	}
+}
+
+.size1of4 {
+	width: 100%;
+	@include bp(m) {
+		width: 50%;
+	}
+	@include bp(l) {
+		width: 25%;
+	}
+}
+
+.size1of6 {
+	width: 100%;
+	@include bp(m) {
+		width: 33.33%;
+	}
+	@include bp(l) {
+		width: 16.66%
+	}
+}
+
+@include max-bp(m) {
+	.size4of6.full-size,
+	.size2of3.full-size {
+		width: 100%;
+	}
+}

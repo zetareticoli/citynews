@@ -1,0 +1,78 @@
+/* ==========================================================================
+  Modifiers
+  ========================================================================== */
+
+// Adjectives ===============================================================
+
+.centered {
+	@include flexbox;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	-moz-justify-content: center;
+	-moz-align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.h-centered {
+	@include flexbox;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content: center;
+}
+
+.v-centered {
+	@include flexbox;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;	
+}
+
+.inverted {
+	background: $black1000;
+}
+
+// States ===============================================================
+
+.is-animated {
+	&.mobile-nav {
+		@include transition(all .15s ease-in-out);
+	}
+}
+
+.is-mobile {
+	display: block;
+
+	@include bp(l) {
+		display: none;
+	}
+}
+
+.is-desktop {
+	@include bp(l) {
+		display: block;
+	}
+}
+
+.is-nav-open {
+	.mobile-nav {
+		-webkit-transform: translate3d(-250px,0,0);
+		-moz-transform: translate3d(-250px,0,0);
+		-ms-transform: translate3d(-250px,0,0);
+		-o-transform: translate3d(-250px,0,0);
+		transform: translate3d(-250px,0,0);
+		@include bp(l) {
+			display: none;
+		}
+	}
+	.content-blocker {
+		display: block;
+
+		@include bp(l) {
+			display: none;
+		}
+	}
+}
+
+
+

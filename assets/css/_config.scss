@@ -1,0 +1,125 @@
+// Sass mixins
+@import "mixins";
+
+// STEP ONE: BASICS ================================================
+
+
+// Start the ‘atmosphere’ of your design by defining the colours of your pages and text
+
+$bodycolor 						: rgb(234,231,229);
+$textcolor 						: rgb(66,66,66);
+
+// Next are two variables that will be used throughout your design;
+// $gutterwidth for horizontal spacing and $baselineheight for vertical rhythm
+
+$baseline 						: 8px;
+$gutterwidth 					: $baseline * 2;
+$baselineheight 				: 1.3em;
+
+// Does your design needs a maximum width to maintain readable line lengths? 
+
+$maxwidth						: 600px;
+
+// What is the class name that the media query mixin should use to target 
+// browsers not supporting media queries?
+
+$no-mq-classname 				: ".lt-ie9";
+
+
+// STEP TWO: TYPOGRAPHY ================================================
+
+
+// Now define your design’s typography by setting a base typeface and size
+$basefontfamily 				: "Neue Haas Grotesk W01 Disp","Helvetica Neue", Helvetica, Arial, sans-serif;
+$textfontfamily					: Publico, "Times New Roman", Georgia, serif;
+$brandfontfamily				: "Novecento Sans W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+$basefontsize 					: 16;
+$smallfontsize 					: $basefontsize * 0.875;
+$smallerfontsize 				: $basefontsize * 0.75;
+
+// Your headings may inherit the base typeface, or you may set a different font stack
+$baseheadingfont	 			: inherit;
+
+// Your headings may inherit the $textcolor, or you may set a different colour
+$baseheadingfontcolor 			: inherit;
+
+// Text font weight
+$textfontweight 				: 400;
+
+
+
+
+// STEP THREE: COLOURS ================================================
+
+
+// black1000
+$black100 						: #fafafa;
+$black200						: #f5f5f5;
+$black300 						: #eee;
+$black400 						: #e0e0e0;
+$black500 						: #bdbdbd;
+$black600 						: #9e9e9e;
+$black700 						: #757575;
+$black800 						: #616161;
+$black900 						: #424242;
+$black1000 						: #212121;
+
+// Blue Grey
+$bluegrey100					: #eceff1;
+$bluegrey200					: #cfd8dc;
+$bluegrey300 					: #b0bec5;
+$bluegrey400 					: #90a4ae;
+$bluegrey500 					: #78909c;
+$bluegrey600 					: #607d8b;
+$bluegrey700 					: #546e7a;
+$bluegrey800 					: #455a64;
+$bluegrey900 					: #37474f;
+$bluegrey1000 					: #263238;
+
+$bordercolor					: #eee;
+
+
+// Brand Colors
+$b-c-yellow						: #FFBE26;
+$b-c-red						: #F2463D;
+$b-c-green						: #50AE55;
+$b-c-blue						: #3277C7;
+$b-c-purple						: #B75DC7;
+$b-c-pink						: #F291B2;
+
+
+// Overlays
+$darkeroverlay					: rgba(19,5,2,.9);
+$darkoverlay					: rgba(51,45,44,.85);
+$overlay						: rgba(92,82,80,.85);
+$redoverlay						: rgba(188,48,16,.85);
+
+
+// Social
+$facebook						: rgb(59,89,152);
+$twitter						: rgb(85,172,238);
+$googleplus						: rgb(188,48,16);
+$instagram						: rgb(81,127,164);
+$flickr							: rgb(255,0,132);
+$youtube						: rgb(239,69,15);
+
+
+
+// STEP FOUR: SHAPES ================================================
+
+// Next set variables for your design’s borders. 
+// These will be inherited by many elements below 
+
+$defaultbordercolor    			: $black400;
+
+$borderstyle					: solid;
+$dottedborderstyle				: dotted;
+
+
+$borderwidth 					: 1px;
+$inputborderwidth      			: 2px;
+
+$inputradius					: 3px;
+$elementradius 					: 6px;

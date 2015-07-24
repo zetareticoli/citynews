@@ -1,0 +1,249 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+ 
+html,body {
+ 	font-family: $basefontfamily;
+	font-weight: $textfontweight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $basefontfamily;
+	font-style: normal;
+	line-height: $baselineheight;
+	margin: 0;
+}
+
+h1.story-heading {
+	font-weight: 900;
+	@include font-size(24);
+
+	@include bp(l) {
+		@include font-size(36);
+	}
+
+	@include bp(xl) {
+		@include font-size(46);
+		line-height: 1.15em;
+	}	
+}
+
+h2.story-heading {
+	font-weight: 900;
+	@include font-size(18);
+	
+	@include bp(m) {
+		@include font-size(21);
+	}
+
+	@include bp(xl) {
+		@include font-size(28);
+		line-height: 1.15em;
+	}	
+}
+
+h2.section-title {
+	margin-bottom: $gutterwidth;
+	color: $black500;
+	@include font-size(20);
+	@include bp(m) {
+		margin-bottom: $gutterwidth*2;
+		@include font-size(28);
+	}
+}
+
+h3.story-heading {
+	font-weight: 900;
+	@include font-size(15);
+	@include bp(m) {
+		@include font-size(18);
+	}
+	@include bp(l) {
+		@include font-size(20);
+	}
+}
+
+h3.story-subheading {
+	color: $black700;
+	padding-top: $gutterwidth/2;
+	@include font-size(16);
+	@include bp(m) {
+		@include font-size(18);
+	}
+}
+
+h3.inset-heading {
+	font-weight: 900;
+	@include font-size(18);
+	@include bp(xl) {
+		@include font-size(22s);
+	}
+	.link {
+		color: white;
+	}
+}
+
+h4.story-heading {
+	font-weight: 700;
+	@include font-size(14);
+}
+
+h5.story-heading {
+	font-weight: 700;
+	@include font-size($smallfontsize);
+}
+
+h6.story-heading {
+	font-weight: 700;
+	@include font-size($smallfontsize);
+}
+
+.story-heading .link {
+	color: $black700;
+}
+
+.story-heading:hover .link {
+	color: $black1000;
+}
+
+.story-subheading .link {
+	color: $black700;
+}
+
+.story-subheading:hover .link {
+	color: $black700;
+}
+
+.size2of3 h1.story-heading {
+	@include font-size(24);
+
+	@include bp(l) {
+		@include font-size(36);
+	}
+
+	@include bp(xl) {
+		@include font-size(38);
+		line-height: 1.15em;
+	}	
+}
+
+.size1of3 .story-summary {
+	@include font-size(14);
+}
+
+.uppercase-title {
+	text-transform: uppercase;
+}
+
+p,
+ol,
+ul,
+dl,
+address {
+	font-family: $textfontfamily;
+	margin-top: 0;
+	margin-bottom: $gutterwidth / 2;
+	@include font-size($basefontsize);
+	line-height: $baselineheight;
+	list-style-position: inside;
+}
+
+small {
+	@include font-size($smallfontsize);
+}
+
+strong {
+	font-weight: 700;
+}
+
+.label,
+time,
+.timestamp {
+	@include font-size(10);
+	@include bp(m) {
+		@include font-size(11);
+	}
+}
+
+.byline,
+.timestamp,
+a .byline,
+a .timestamp {
+	color: #999;
+}
+
+.byline {
+	margin-bottom: $gutterwidth / 8;
+}
+
+.label {
+	color: $black700;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+.link {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.kicker {
+	color: $black500;
+	font-family: "Publico-black1000";
+	font-style: italic;
+}
+
+.slim-header .site-logo {
+	@include font-size(24);
+}
+
+.section-name {
+	color: #fff;
+	@include font-size(28);
+	font-weight: 700;
+	@include bp(m) {
+		@include font-size(32);
+		text-align: center;
+	}
+}
+
+.site-date,
+.site-meteo {
+	display: inline-block;
+	margin-right: $gutterwidth;
+	color: $black700;
+	font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	@include font-size($smallerfontsize);
+}
+
+.site-meteo {
+	vertical-align: middle;
+	text-decoration: none;
+
+	span {
+		color: $black700;
+	}
+}
+
+.site-date {
+	line-height: 24px;
+}
+
+.edition {
+	color: $black500;
+	@include font-size($smallfontsize);
+}
+
+.list-count {
+	color: $black500;
+	@include font-size(32);
+	line-height: 1em;
+}
+
+.module-title {
+	padding: $gutterwidth 0;
+	@include font-size(18);
+}
