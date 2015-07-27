@@ -12,9 +12,12 @@ $(document).ready(function(){
 
   $(".nav-button").click(function(event){
   	$(".header").addClass("is-nav-open");
+    $("body").addClass("is-locked");
   });
   $(".close-button").click(function(event){
   	$(".header").removeClass("is-nav-open");
+    $("body").removeClass("is-locked");
+
   });
 
 

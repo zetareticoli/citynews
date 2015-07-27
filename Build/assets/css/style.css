@@ -873,6 +873,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
   -ms-text-size-adjust: 100%; }
 
 body {
@@ -1294,6 +1295,28 @@ ol, ul {
     top: 14px;
     right: 16px; }
 
+.zone,
+.alfabeto {
+  color: white;
+  float: left; }
+
+.alfabeto {
+  width: 20%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10; }
+
+.zone {
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  margin-left: 30%;
+  height: 95%;
+  overflow-y: scroll; }
+
 .content-blocker {
   position: fixed;
   top: 0;
@@ -1531,6 +1554,10 @@ ol, ul {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
+
+.is-locked {
+  height: 100%;
+  overflow: hidden; }
 
 .is-mobile {
   display: block; }

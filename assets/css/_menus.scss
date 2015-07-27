@@ -200,6 +200,29 @@
 	}
 }
 
+.zone,
+.alfabeto {
+	color: white;
+	float: left;
+}
+
+.alfabeto {
+	width: 20%;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+	z-index: 10;
+}
+.zone {
+	position: relative;
+	z-index: 10;
+	width: 70%;
+	margin-left: 30%;
+	height: 95%;
+	overflow-y: scroll;
+}
 
 .content-blocker {
 	position: fixed;
