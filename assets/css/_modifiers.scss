@@ -60,16 +60,30 @@
 }
 
 .is-nav-open {
+
 	.mobile-nav {
 		-webkit-transform: translate3d(-250px,0,0);
 		-moz-transform: translate3d(-250px,0,0);
 		-ms-transform: translate3d(-250px,0,0);
 		-o-transform: translate3d(-250px,0,0);
 		transform: translate3d(-250px,0,0);
-		@include bp(l) {
-			display: none;
+	}
+
+	.sliding-nav {
+		@include transition(transform .15s);	
+		@include transform(translateY(0));
+
+		.nav-item {
+			opacity: 1;
+			-webkit-transform: translateY(0);
+			-moz-transform: translateY(0);
+			-ms-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+			@include transition(transform .15s .15s, opacity .15s .15s);
 		}
 	}
+
 	.content-blocker {
 		display: block;
 
