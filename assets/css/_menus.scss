@@ -141,11 +141,7 @@
 	background: $black1000;
 	border-left-width: 3px;
 	border-left-style: solid;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	@include transform(translateX(0));
 	overflow-x: hidden;
 	overflow-y: scroll;
 
