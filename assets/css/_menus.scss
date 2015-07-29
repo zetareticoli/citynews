@@ -11,17 +11,22 @@
 	}
 }
 
-.nav-item .link {
-	color: $black800;
+.nav-item {
 
-	&:hover {
-		color: $black900;
-		text-decoration: none;
+	.link {
+		color: $black800;
+		
+		&.current {
+			color: $black1000;
+		}
+
+		&:hover {
+			color: $black900;
+			text-decoration: none;
+		}
 	}
-}
 
-.nav-item.current .link {
-	color: $black900;
+
 }
 
 .nav-toggle {
@@ -80,7 +85,6 @@
 
 		&:hover {
 			color: $black700;
-			text-decoration: none;
 		}
 	}
 
@@ -100,13 +104,6 @@
 		border-left: 16px solid transparent;
 		color: $black400;
 	}
-}
-
-/* Navigation Themes */
-/* @todo Fix this CSS */
-
-.header-slim .nav-toolbar {
-	top: 24px;
 }
 
 /* ==========================================================================
@@ -202,8 +199,8 @@
 	border-top-style: solid;
 	left: 0;
 	width: 100%;
-	@include transform(translateY(-72px));
-	@include transition(transform .15s .15s);
+	@include transform(translateY(-51px));
+	@include transition(transform .2s .15s);
 	z-index: 5;
 
 	.nav-item {
@@ -211,11 +208,12 @@
 		display: inline;
 		font-family: $basefontfamily;
 		font-weight: 700;
-		@include font-size(20);
-		padding: $baseline*3 $gutterwidth ;
+		@include font-size(18);
+		line-height: 16px;
+		padding: $gutterwidth ;
 		opacity: 0;
-		@include transform(translateY(-20px));
-		@include transition(transform .15s, opacity .15s);
+		@include transform(translateY(-10px));
+		@include transition(transform .2s, opacity .2s);
 	}
 }
 
