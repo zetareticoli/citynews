@@ -35,10 +35,12 @@ a.button {
 	right: 10px;
 	width: auto;
 	height: 56px;
-
 	@include bp(m) {
 		right: 24px;
 		height: 64px;
+	}
+	@include bp(l) {
+		visibility: hidden;
 	}
 
 	.button-label {
@@ -47,10 +49,6 @@ a.button {
 		@include bp(m) {
 			@include font-size(16);
 		}
-	}
-
-	@include bp(l) {
-		display: none !important;
 	}
 }
 
