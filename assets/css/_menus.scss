@@ -11,12 +11,17 @@
 	}
 }
 
-.nav-item.current .link {
-	color: $black900;
+.nav-item .link {
+	color: $black800;
+
+	&:hover {
+		color: $black900;
+		text-decoration: none;
+	}
 }
 
 .nav-item.current .link {
-	font-weight: 700;
+	color: $black900;
 }
 
 .nav-toggle {
@@ -93,13 +98,8 @@
 		border-bottom: 10px dashed;
 		border-right: 16px solid transparent;
 		border-left: 16px solid transparent;
-		color: $black300;
+		color: $black400;
 	}
-
-	.nav-item.current .link {
-		color: $black900;
-	}
-
 }
 
 /* Navigation Themes */
@@ -126,15 +126,6 @@
 		@include font-size(16);
 		@include bp(xl) {
 			@include font-size(18);
-		}
-
-		.link {
-			color: $black800;
-
-			&:hover {
-				color: $black900;
-				text-decoration: none;
-			}
 		}
 	}
 }
