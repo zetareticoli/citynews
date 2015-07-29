@@ -1,3 +1,5 @@
+@import 'bourbon'; // http://bourbon.io/
+
 // Typography =============================================
 
 @mixin font-size($font-size: 16){
@@ -239,6 +241,7 @@ transform : scale($ratio1,$ratio2); }
 -o-transform : skew($x, $y);
 transform : skew($x, $y); }
 
+/*
 // .translate(VALUE, VALUE)
 
 @mixin translate($x: 0, $y: 0) {
@@ -263,6 +266,7 @@ transform : translate($x, $y, $z); }
 -ms-transition : $transition;
 -o-transition : $transition;
 transition : $transition; }
+*/
 
 // .background-size(VALUE VALUE);
 
