@@ -70,17 +70,13 @@
 	}
 
 	.sliding-nav {
-		@include transition(transform .15s);	
+		@include transition(transform .2s);	
 		@include transform(translateY(0));
 
 		.nav-item {
 			opacity: 1;
-			-webkit-transform: translateY(0);
-			-moz-transform: translateY(0);
-			-ms-transform: translateY(0);
-			-o-transform: translateY(0);
-			transform: translateY(0);
-			@include transition(transform .15s .15s, opacity .15s .15s);
+			@include transform(translateY(0));
+			@include transition(transform .2s .15s, opacity .2s .15s);
 		}
 	}
 
