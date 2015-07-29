@@ -140,7 +140,7 @@
 }
 
 /* ==========================================================================
-  Mobile Navigation
+  Sliding Navigation
   ========================================================================== */
 
 .mobile-nav {
@@ -199,6 +199,38 @@
 		right: $gutterwidth;
 	}
 }
+
+/* ==========================================================================
+  Sliding Navigation
+  ========================================================================== */
+
+.sliding-nav {
+	position: absolute;
+	background-color: $black400;
+	border-top-width: 3px;
+	border-top-style: solid;
+	left: 0;
+	width: 100%;
+	@include transform(translateY(-72px));
+	@include transition(transform .15s .15s);
+	z-index: 5;
+
+	.nav-item {
+		float: left;
+		display: inline;
+		font-family: $basefontfamily;
+		font-weight: 700;
+		@include font-size(20);
+		padding: $baseline*3 $gutterwidth ;
+		opacity: 0;
+		@include transform(translateY(-20px));
+		@include transition(transform .15s, opacity .15s);
+	}
+}
+
+/* ==========================================================================
+  Submenu
+  ========================================================================== */
 
 .zone,
 .alfabeto {
