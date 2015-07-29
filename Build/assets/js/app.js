@@ -10,15 +10,22 @@ $(document).ready(function(){
       }
   });
 
-  $(".nav-button").click(function(event){
-  	$(".header").addClass("is-nav-open");
-    $("body").addClass("is-locked");
+  //sliding nav - open/close navigation
+  $('.sliding-nav-trigger').on('click', function(event){
+    event.preventDefault();    
+    $('.header').toggleClass('is-nav-open');
   });
-  $(".close-button").click(function(event){
-  	$(".header").removeClass("is-nav-open");
+
+  $('.mobile-nav-trigger').on('click', function(event){
+    event.preventDefault();    
+    $('.header').toggleClass('is-nav-open');
+    $("body").toggleClass("is-locked");
+  });
+
+    $('.close-button').on('click', function(event){
+    event.preventDefault();    
+    $(".header").removeClass("is-nav-open");
     $("body").removeClass("is-locked");
-
   });
-
 
 });

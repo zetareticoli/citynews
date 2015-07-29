@@ -607,17 +607,13 @@ a .timestamp {
   font-family: "Publico-black1000";
   font-style: italic; }
 
-.slim-header .site-logo {
-  font-size: 24px;
-  font-size: 1.5rem; }
-
-.section-name {
-  color: #fff;
+.section-title {
+  font-family: Publico, "Times New Roman", Georgia, serif;
   font-size: 28px;
   font-size: 1.75rem;
-  font-weight: 700; }
+  font-weight: 900; }
   @media (min-width: 46.25em) {
-    .section-name {
+    .section-title {
       font-size: 32px;
       font-size: 2rem;
       text-align: center; } }
@@ -708,6 +704,9 @@ a.button {
     .nav-button {
       right: 24px;
       height: 64px; } }
+  @media (min-width: 62.5em) {
+    .nav-button {
+      visibility: hidden; } }
   .nav-button .button-label {
     font-size: 14px;
     font-size: 0.875rem; }
@@ -715,9 +714,6 @@ a.button {
       .nav-button .button-label {
         font-size: 16px;
         font-size: 1rem; } }
-  @media (min-width: 62.5em) {
-    .nav-button {
-      display: none !important; } }
 
 .search-button,
 .login-button {
@@ -1053,7 +1049,8 @@ ol, ul {
       clear: both; }
   .header .header-top {
     height: 56px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    z-index: 10; }
     @media (min-width: 46.25em) {
       .header .header-top {
         height: 64px;
@@ -1066,7 +1063,7 @@ ol, ul {
   .header .header-bottom {
     display: none;
     height: 48px;
-    background-color: #eeeeee;
+    background-color: #e0e0e0;
     padding: 0 24px; }
     @media (min-width: 62.5em) {
       .header .header-bottom {
@@ -1110,19 +1107,41 @@ ol, ul {
 
 .header.slim-header {
   position: relative;
-  height: auto; }
+  height: 56px; }
   @media (min-width: 62.5em) {
     .header.slim-header {
-      height: 70px; } }
-  .header.slim-header .header-slim-menu {
+      height: 72px; } }
+  .header.slim-header .header-brand {
+    margin-right: 24px; }
+    .header.slim-header .header-brand .logo {
+      margin-top: 24px;
+      height: 24px; }
+  .header.slim-header .slim-header-nav {
+    float: left; }
+  .header.slim-header .section-title {
+    width: 50%;
     position: absolute;
-    top: 16px;
-    left: 0; }
-  .header.slim-header .section-name {
-    padding: 1.45em .4em 0; }
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 56px;
+    line-height: 56px; }
     @media (min-width: 46.25em) {
-      .header.slim-header .section-name {
-        padding: 0; } }
+      .header.slim-header .section-title {
+        height: 64px;
+        line-height: 64px; } }
+    @media (min-width: 62.5em) {
+      .header.slim-header .section-title {
+        height: 72px;
+        line-height: 72px; } }
+  @media (min-width: 62.5em) {
+    .header.slim-header .nav-button {
+      position: relative;
+      float: left;
+      right: 0;
+      top: 0;
+      height: 72px;
+      visibility: visible; } }
 
 .header-meta {
   display: none; }
@@ -1149,11 +1168,13 @@ ol, ul {
     .nav-toolbar {
       display: block; } }
 
-.nav-item.current .link {
-  color: #424242; }
-
-.nav-item.current .link {
-  font-weight: 700; }
+.nav-item .link {
+  color: #616161; }
+  .nav-item .link.current {
+    color: #212121; }
+  .nav-item .link:hover {
+    color: #424242;
+    text-decoration: none; }
 
 .nav-toggle {
   display: none;
@@ -1201,8 +1222,7 @@ ol, ul {
 .primary-nav .nav-item .link {
   color: #9e9e9e; }
   .primary-nav .nav-item .link:hover {
-    color: #757575;
-    text-decoration: none; }
+    color: #757575; }
 .primary-nav .nav-item.current:after {
   display: inline-block;
   position: absolute;
@@ -1217,14 +1237,7 @@ ol, ul {
   border-bottom: 10px dashed;
   border-right: 16px solid transparent;
   border-left: 16px solid transparent;
-  color: #eeeeee; }
-.primary-nav .nav-item.current .link {
-  color: #424242; }
-
-/* Navigation Themes */
-/* @todo Fix this CSS */
-.header-slim .nav-toolbar {
-  top: 24px; }
+  color: #e0e0e0; }
 
 /* ==========================================================================
   Secondary Navigation
@@ -1243,14 +1256,9 @@ ol, ul {
     .secondary-nav .nav-item {
       font-size: 18px;
       font-size: 1.125rem; } }
-  .secondary-nav .nav-item .link {
-    color: #616161; }
-    .secondary-nav .nav-item .link:hover {
-      color: #424242;
-      text-decoration: none; }
 
 /* ==========================================================================
-  Mobile Navigation
+  Sliding Navigation
   ========================================================================== */
 .mobile-nav {
   width: 250px;
@@ -1295,6 +1303,47 @@ ol, ul {
     top: 14px;
     right: 16px; }
 
+/* ==========================================================================
+  Sliding Navigation
+  ========================================================================== */
+.sliding-nav {
+  position: absolute;
+  background-color: #e0e0e0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-51px);
+  -moz-transform: translateY(-51px);
+  -ms-transform: translateY(-51px);
+  -o-transform: translateY(-51px);
+  transform: translateY(-51px);
+  -webkit-transition: transform 0.2s 0.15s;
+  -moz-transition: transform 0.2s 0.15s;
+  transition: transform 0.2s 0.15s;
+  z-index: 5; }
+  .sliding-nav .nav-item {
+    float: left;
+    display: inline;
+    font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 16px;
+    padding: 16px;
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transition: transform 0.2s, opacity 0.2s;
+    -moz-transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s; }
+
+/* ==========================================================================
+  Submenu
+  ========================================================================== */
 .zone,
 .alfabeto {
   color: white;
@@ -1551,8 +1600,6 @@ ol, ul {
 .is-animated.mobile-nav {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
 
 .is-locked {
@@ -1575,9 +1622,25 @@ ol, ul {
   -ms-transform: translate3d(-250px, 0, 0);
   -o-transform: translate3d(-250px, 0, 0);
   transform: translate3d(-250px, 0, 0); }
-  @media (min-width: 62.5em) {
-    .is-nav-open .mobile-nav {
-      display: none; } }
+.is-nav-open .sliding-nav {
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
+  .is-nav-open .sliding-nav .nav-item {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: transform 0.2s 0.15s, opacity 0.2s 0.15s;
+    -moz-transition: transform 0.2s 0.15s, opacity 0.2s 0.15s;
+    transition: transform 0.2s 0.15s, opacity 0.2s 0.15s; }
 .is-nav-open .content-blocker {
   display: block; }
   @media (min-width: 62.5em) {
