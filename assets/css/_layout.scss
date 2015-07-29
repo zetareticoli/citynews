@@ -211,6 +211,7 @@ ol, ul {
 	.header-top {
 		height: 56px;
 		padding: 0 10px;
+		z-index: 10;
 		@include bp(m) {
 			height: 64px;
 			padding: 0 24px;
@@ -219,14 +220,13 @@ ol, ul {
 			padding: 0 16px;
 			background-color: white;
 			height: 72px;
-
 		}
 	}
 
 	.header-bottom {
 		display: none;
 		height: $baseline * 6;
-		background-color: $black300;
+		background-color: $black400;
 		padding: 0 24px;
 		@include bp(l) {
 			display: block;
@@ -280,19 +280,52 @@ ol, ul {
 
 .header.slim-header {
 	position: relative;
-	height: auto;
+	height: 56px;
+
 	@include bp(l) {
-		height: 70px;
+		height: 72px;
 	}
-	.header-slim-menu {
+
+	.header-brand {
+		margin-right: $baseline * 3;
+
+		.logo {
+			margin-top: $baseline * 3;
+			height: $baseline * 3;
+		}
+	}
+
+	.slim-header-nav {
+		float: left;
+	}
+
+	.section-title {
+		width: 50%;
 		position: absolute;
-		top: $gutterwidth;
+		right: 0;
 		left: 0;
-	}
-	.section-name {
-		padding: 1.45em .4em 0;
+		margin: auto;
+		height: 56px;
+		line-height: 56px;
 		@include bp(m) {
-			padding: 0;
+			height: 64px;
+			line-height: 64px;
+		}
+		@include bp(l) {	
+			height: 72px;
+			line-height: 72px;
+		}
+	}
+
+	.nav-button {
+
+		@include bp(l) {
+			position: relative;
+			float: left;
+			right: 0;
+			top: 0;
+			height: 72px;
+			visibility: visible;
 		}
 	}
 }
