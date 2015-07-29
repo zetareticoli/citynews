@@ -196,14 +196,10 @@ a .timestamp {
 	font-style: italic;
 }
 
-.slim-header .site-logo {
-	@include font-size(24);
-}
-
-.section-name {
-	color: #fff;
+.section-title {
+	font-family: $textfontfamily;
 	@include font-size(28);
-	font-weight: 700;
+	font-weight: 900;
 	@include bp(m) {
 		@include font-size(32);
 		text-align: center;
