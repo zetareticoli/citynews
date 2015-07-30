@@ -755,6 +755,15 @@ a.button {
     font-size: 16px;
     font-size: 1rem; }
 
+.nav-button .button-label {
+  color: #757575; }
+.nav-button .icon {
+  fill: #757575; }
+.nav-button:hover .button-label {
+  color: #424242; }
+.nav-button:hover .icon {
+  fill: #424242; }
+
 .close-button {
   position: absolute;
   top: 0;

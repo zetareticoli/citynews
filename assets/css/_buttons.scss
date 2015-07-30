@@ -102,6 +102,28 @@ a.button {
 	}
 }
 
+// Nav Button
+
+.nav-button {
+
+	.button-label {
+		color: $black700;
+	}
+
+	.icon {
+		fill: $black700;
+	}
+
+	&:hover {
+		.button-label {
+			color: $black900;
+		}
+		.icon {
+			fill: $black900;
+		}
+	}
+}
+
 // Close
 
 .close-button {
