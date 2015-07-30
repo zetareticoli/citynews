@@ -281,7 +281,7 @@ ol, ul {
 	}
 }
 
-.header.slim-header {
+.slim-header {
 	position: relative;
 	height: 56px;
 
@@ -331,6 +331,39 @@ ol, ul {
 			height: 72px;
 			visibility: visible;
 		}
+	}
+}
+
+// Inverted Header
+
+.slim-header.inverted {
+
+	.nav-button {
+
+		.button-label {
+			color: $black500;
+		}
+		.icon {
+			fill: $black500;
+		}
+
+		&:hover {
+			.button-label {
+				color: white;
+			}
+			.icon {
+				fill: white;
+			}
+		}
+	}
+
+	.search-button {
+		border-color: $black900;
+	}
+	
+	.nav-button,
+	.section-title {
+		color: white;
 	}
 }
 
