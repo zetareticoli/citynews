@@ -1596,9 +1596,6 @@ ol, ul {
   -moz-align-items: center;
   align-items: center; }
 
-.inverted {
-  background: #212121; }
-
 .is-animated.mobile-nav {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
