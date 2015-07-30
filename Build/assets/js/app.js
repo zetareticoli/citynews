@@ -13,7 +13,7 @@ $(document).ready(function(){
   //sliding nav - open/close navigation
   $('.sliding-nav-trigger').on('click', function(event){
     event.preventDefault();    
-    $('.header').toggleClass('is-nav-open');
+    $('.header').toggleClass('is-nav-sliding');
   });
 
   $('.mobile-nav-trigger').on('click', function(event){

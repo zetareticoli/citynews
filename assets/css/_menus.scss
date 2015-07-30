@@ -194,11 +194,14 @@
 }
 
 /* ==========================================================================
-  Sliding Navigation - Desktop Only
+  Sliding Navigation
   ========================================================================== */
 
-@include bp(l) {
-	.sliding-nav {
+.sliding-nav {
+	display: none;
+	
+	@include bp(l) {
+		display: block;
 		position: absolute;
 		background-color: $black400;
 		border-top-width: 3px;

@@ -1,18 +1,20 @@
 .theme-yellow {
+
 	.theme-background {
 		background-color: $b-c-yellow;
 	}
+
 	.theme-border {
 		border-color: $b-c-yellow;
 	}
+
 	.theme-color {
 		color: $b-c-yellow;
 	}
+
 	.theme-header {
 		background-color: $b-c-yellow;
-		.logo-edition {
-			fill: white;
-		}
+
 		@include bp(l) {
 			background-color: white;
 
@@ -21,6 +23,161 @@
 			}
 		}
 	}
+}
+
+.theme-red {
+
+	.theme-background {
+		background-color: $b-c-red;
+	}
+
+	.theme-border {
+		border-color: $b-c-red;
+	}
+
+	.theme-color {
+		color: $b-c-red;
+	}
+
+	.theme-header {
+		background-color: $b-c-red;
+
+		@include bp(l) {
+			background-color: white;
+			.logo-edition {
+				fill: $b-c-red;
+			}
+		}
+	}
+}
+
+.theme-blue {
+
+	.theme-background {
+		background-color: $b-c-blue;
+	}
+
+	.theme-border {
+		border-color: $b-c-blue;
+	}
+
+	.theme-color {
+		color: $b-c-blue;
+	}
+
+	.theme-header {
+		background-color: $b-c-blue;
+
+		@include bp(l) {
+			background-color: white;
+			.logo-edition {
+				fill: $b-c-blue;
+			}
+		}
+	}
+}
+
+.theme-green {
+
+	.theme-background {
+		background-color: $b-c-green;
+	}
+
+	.theme-border {
+		border-color: $b-c-green;
+	}
+
+	.theme-color {
+		color: $b-c-green;
+	}
+
+	.theme-header {
+		background-color: $b-c-green;
+
+		@include bp(l) {
+			background-color: white;
+			.logo-edition {
+				fill: $b-c-green;
+			}
+		}
+	}
+}
+
+.theme-purple {
+
+	.theme-background {
+		background-color: $b-c-purple;
+	}
+
+	.theme-border {
+		border-color: $b-c-purple;
+	}
+
+	.theme-color {	
+		color: $b-c-purple;
+	}
+	.theme-header {
+		background-color: $b-c-purple;
+
+		@include bp(l) {
+			background-color: white;
+			.logo-edition {
+				fill: $b-c-purple;
+			}
+		}
+	}
+}
+
+.theme-pink {
+
+	.theme-background {
+		background-color: $b-c-pink;
+	}
+
+	.theme-border {
+		border-color: $b-c-pink;
+	}
+
+	.theme-color {
+		color: $b-c-pink;
+	}
+
+	.theme-header {
+		background-color: $b-c-pink;
+
+		@include bp(l) {
+			background-color: white;
+			.logo-edition {
+				fill: $b-c-pink;
+			}
+		}
+	}
+}
+
+.theme-yellow,
+.theme-red,
+.theme-blue,
+.theme-green,
+.theme-purple,
+.theme-pink {
+
+	.nav-button {
+		.button-label {
+			color: $black900;
+		}
+		.icon {
+			fill: $black900;
+		}
+	}
+
+	.logo-edition {
+		fill: white;
+	}
+
+	.logo-network {
+		fill: lighten($black1000, 10%);
+	}
+
 	@include bp(l) {
 		.inverted  {
 			.theme-header {
@@ -32,118 +189,4 @@
 		}
 	}
 }
-.theme-red {
-	.theme-background {
-		background-color: $b-c-red;
-	}
-	.theme-border {
-		border-color: $b-c-red;
-	}
-	.theme-color {
-		color: $b-c-red;
-	}
-	.theme-header {
-		background-color: $b-c-red;
-		.logo-edition {
-			fill: white;
-		}
-		@include bp(l) {
-			background-color: white;
-			.logo-edition {
-				fill: $b-c-red;
-			}
-		}
-	}
-}
-.theme-blue {
-	.theme-background {
-		background-color: $b-c-blue;
-	}
-	.theme-border {
-		border-color: $b-c-blue;
-	}
-	.theme-color {
-		color: $b-c-blue;
-	}
-	.theme-header {
-		background-color: $b-c-blue;
-		.logo-edition{
-			fill: white;
-		}
-		@include bp(l) {
-			background-color: white;
-			.logo-edition {
-				fill: $b-c-blue;
-			}
-		}
-	}
-}
-.theme-green {
-	.theme-background {
-		background-color: $b-c-green;
-	}
-	.theme-border {
-		border-color: $b-c-green;
-	}
-	.theme-color {
-		color: $b-c-green;
-	}
-	.theme-header {
-		background-color: $b-c-green;
-		.logo-edition {
-			fill: white;
-		}
-		@include bp(l) {
-			background-color: white;
-			.logo-edition {
-				fill: $b-c-green;
-			}
-		}
-	}
-}
-.theme-purple {
-	.theme-background {
-		background-color: $b-c-purple;
-	}
-	.theme-border {
-		border-color: $b-c-purple;
-	}
-	.theme-color {
-		color: $b-c-purple;
-	}
-	.theme-header {
-		background-color: $b-c-purple;
-		.logo-edition {
-			fill: white;
-		}
-		@include bp(l) {
-			background-color: white;
-			.logo-edition {
-				fill: $b-c-purple;
-			}
-		}
-	}
-}
-.theme-pink {
-	.theme-background {
-		background-color: $b-c-pink;
-	}
-	.theme-border {
-		border-color: $b-c-pink;
-	}
-	.theme-color {
-		color: $b-c-pink;
-	}
-	.theme-header {
-		background-color: $b-c-pink;
-		.logo-edition {
-			fill: white;
-		}
-		@include bp(l) {
-			background-color: white;
-			.logo-edition {
-				fill: $b-c-pink;
-			}
-		}
-	}
-}
+

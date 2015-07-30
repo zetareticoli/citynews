@@ -56,14 +56,23 @@
 }
 
 .is-nav-open {
-
-	&.header {
-		height: 123px;
-		@include transition(height .2s);
-	}
-
 	.mobile-nav {
 		@include transform(translateX(-250px));
+	}
+
+	.content-blocker {
+		display: block;
+
+		@include bp(l) {
+			display: none;
+		}
+	}
+}
+
+.is-nav-sliding {
+	&.slim-header {
+		height: 123px;
+		@include transition(height .2s);
 	}
 
 	.sliding-nav {
@@ -74,14 +83,6 @@
 			opacity: 1;
 			@include transform(translateY(0));
 			@include transition(transform .2s .15s, opacity .2s .15s);
-		}
-	}
-
-	.content-blocker {
-		display: block;
-
-		@include bp(l) {
-			display: none;
 		}
 	}
 }

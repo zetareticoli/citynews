@@ -211,14 +211,13 @@ ol, ul {
 
 	.header-top {
 		height: 56px;
-		padding: 0 10px;
-		z-index: 10;
+		padding: 0 $baseline+2;
 		@include bp(m) {
+			padding: 0 $baseline*3;
 			height: 64px;
-			padding: 0 24px;
 		}
 		@include bp(l) {
-			padding: 0 16px;
+			padding: 0 $gutterwidth;
 			background-color: white;
 			height: 72px;
 		}
@@ -282,36 +281,48 @@ ol, ul {
 }
 
 .slim-header {
-	position: relative;
 	height: 56px;
-
+	position: relative;
+	@include transition(height .2s .3s);
+	@include bp(m) {
+		height: 64px;
+	}
 	@include bp(l) {
 		height: 72px;
-		@include transition(height .2s .3s);
+	}
+	.header-top {
+		z-index: 6;
 	}
 
 	.header-brand {
 		margin-right: $baseline * 3;
 
 		.logo {
-			margin-top: $baseline * 3;
-			height: $baseline * 3;
+			margin-top: $baseline*2;
+			height: $baseline * 2;
+			@include bp(l) {
+				height: $baseline * 3;
+				margin-top: $baseline * 3;
+			}
 		}
 	}
 
 	.slim-header-nav {
-		float: left;
+		display: none;
+		@include bp(l) {
+			display: block;
+			float: left;
+		}
 	}
 
 	.section-title {
-		width: 50%;
-		position: absolute;
-		right: 0;
-		left: 0;
-		margin: auto;
-		height: 56px;
-		line-height: 56px;
+		float: left;
 		@include bp(m) {
+			width: 50%;
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
 			height: 64px;
 			line-height: 64px;
 		}
@@ -321,7 +332,8 @@ ol, ul {
 		}
 	}
 
-	.nav-button {
+	.nav-button.sliding-nav-trigger {
+		visibility: hidden;
 
 		@include bp(l) {
 			position: relative;
@@ -343,14 +355,17 @@ ol, ul {
 		.button-label {
 			color: $black500;
 		}
+
 		.icon {
 			fill: $black500;
 		}
 
 		&:hover {
+
 			.button-label {
 				color: white;
 			}
+			
 			.icon {
 				fill: white;
 			}
