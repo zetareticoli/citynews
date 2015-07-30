@@ -137,7 +137,7 @@
 }
 
 /* ==========================================================================
-  Sliding Navigation
+  Mobile Navigation
   ========================================================================== */
 
 .mobile-nav {
@@ -194,31 +194,33 @@
 }
 
 /* ==========================================================================
-  Sliding Navigation
+  Sliding Navigation - Desktop Only
   ========================================================================== */
 
-.sliding-nav {
-	position: absolute;
-	background-color: $black400;
-	border-top-width: 3px;
-	border-top-style: solid;
-	left: 0;
-	width: 100%;
-	@include transform(translateY(-49px));
-	@include transition(transform .2s .15s);
-	z-index: 5;
+@include bp(l) {
+	.sliding-nav {
+		position: absolute;
+		background-color: $black400;
+		border-top-width: 3px;
+		border-top-style: solid;
+		left: 0;
+		width: 100%;
+		@include transform(translateY(-49px));
+		@include transition(transform .2s .15s);
+		z-index: 5;
 
-	.nav-item {
-		float: left;
-		display: inline;
-		font-family: $basefontfamily;
-		font-weight: 700;
-		@include font-size(20);
-		line-height: 16px;
-		padding: $baseline * 2;
-		opacity: 0;
-		@include transform(translateY(-10px));
-		@include transition(transform .2s, opacity .2s);
+		.nav-item {
+			float: left;
+			display: inline;
+			font-family: $basefontfamily;
+			font-weight: 700;
+			@include font-size(20);
+			line-height: 16px;
+			padding: $baseline * 2;
+			opacity: 0;
+			@include transform(translateY(-10px));
+			@include transition(transform .2s, opacity .2s);
+		}
 	}
 }
 

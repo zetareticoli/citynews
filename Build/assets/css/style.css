@@ -1285,7 +1285,7 @@ ol, ul {
       font-size: 1.125rem; } }
 
 /* ==========================================================================
-  Sliding Navigation
+  Mobile Navigation
   ========================================================================== */
 .mobile-nav {
   width: 250px;
@@ -1331,43 +1331,43 @@ ol, ul {
     right: 16px; }
 
 /* ==========================================================================
-  Sliding Navigation
+  Sliding Navigation - Desktop Only
   ========================================================================== */
-.sliding-nav {
-  position: absolute;
-  background-color: #e0e0e0;
-  border-top-width: 3px;
-  border-top-style: solid;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translateY(-49px);
-  -moz-transform: translateY(-49px);
-  -ms-transform: translateY(-49px);
-  -o-transform: translateY(-49px);
-  transform: translateY(-49px);
-  -webkit-transition: transform 0.2s 0.15s;
-  -moz-transition: transform 0.2s 0.15s;
-  transition: transform 0.2s 0.15s;
-  z-index: 5; }
-  .sliding-nav .nav-item {
-    float: left;
-    display: inline;
-    font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 16px;
-    padding: 16px;
-    opacity: 0;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px);
-    -webkit-transition: transform 0.2s, opacity 0.2s;
-    -moz-transition: transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s; }
-
+@media (min-width: 62.5em) {
+  .sliding-nav {
+    position: absolute;
+    background-color: #e0e0e0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-49px);
+    -moz-transform: translateY(-49px);
+    -ms-transform: translateY(-49px);
+    -o-transform: translateY(-49px);
+    transform: translateY(-49px);
+    -webkit-transition: transform 0.2s 0.15s;
+    -moz-transition: transform 0.2s 0.15s;
+    transition: transform 0.2s 0.15s;
+    z-index: 5; }
+    .sliding-nav .nav-item {
+      float: left;
+      display: inline;
+      font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 16px;
+      padding: 16px;
+      opacity: 0;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      transform: translateY(-10px);
+      -webkit-transition: transform 0.2s, opacity 0.2s;
+      -moz-transition: transform 0.2s, opacity 0.2s;
+      transition: transform 0.2s, opacity 0.2s; } }
 /* ==========================================================================
   Submenu
   ========================================================================== */
