@@ -608,6 +608,7 @@ a .timestamp {
   font-style: italic; }
 
 .section-title {
+  color: #424242;
   font-family: Publico, "Times New Roman", Georgia, serif;
   font-size: 28px;
   font-size: 1.75rem;

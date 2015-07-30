@@ -197,6 +197,7 @@ a .timestamp {
 }
 
 .section-title {
+	color: $black900;
 	font-family: $textfontfamily;
 	@include font-size(28);
 	font-weight: 900;
