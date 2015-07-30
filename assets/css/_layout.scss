@@ -284,6 +284,7 @@ ol, ul {
 
 	@include bp(l) {
 		height: 72px;
+		@include transition(height .2s .3s);
 	}
 
 	.header-brand {

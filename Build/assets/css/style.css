@@ -1110,7 +1110,10 @@ ol, ul {
   height: 56px; }
   @media (min-width: 62.5em) {
     .header.slim-header {
-      height: 72px; } }
+      height: 72px;
+      -webkit-transition: height 0.2s 0.3s;
+      -moz-transition: height 0.2s 0.3s;
+      transition: height 0.2s 0.3s; } }
   .header.slim-header .header-brand {
     margin-right: 24px; }
     .header.slim-header .header-brand .logo {
@@ -1616,6 +1619,11 @@ ol, ul {
   .is-desktop {
     display: block; } }
 
+.is-nav-open.header {
+  height: 123px;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s; }
 .is-nav-open .mobile-nav {
   -webkit-transform: translateX(-250px);
   -moz-transform: translateX(-250px);
