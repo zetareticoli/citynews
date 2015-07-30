@@ -195,7 +195,7 @@
 	border-top-style: solid;
 	left: 0;
 	width: 100%;
-	@include transform(translateY(-51px));
+	@include transform(translateY(-49px));
 	@include transition(transform .2s .15s);
 	z-index: 5;
 
