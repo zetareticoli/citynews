@@ -15,9 +15,20 @@
 		}
 		@include bp(l) {
 			background-color: white;
+
 			.logo-edition {
 				fill: $b-c-yellow;
 			}
+		}
+	}
+	@include bp(l) {
+		.inverted  {
+			.theme-header {
+				background-color: $black1000;
+			}
+			.logo-network {
+				fill: white;
+			}	
 		}
 	}
 }

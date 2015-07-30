@@ -1669,6 +1669,11 @@ ol, ul {
       background-color: white; }
       .theme-yellow .theme-header .logo-edition {
         fill: #ffbe26; } }
+@media (min-width: 62.5em) {
+  .theme-yellow .inverted .theme-header {
+    background-color: #212121; }
+  .theme-yellow .inverted .logo-network {
+    fill: white; } }
 
 .theme-red .theme-background {
   background-color: #f2463d; }
