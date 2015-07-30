@@ -18,6 +18,10 @@ $entry-content-offset	: 192px;
 		padding-bottom: 40px;
 		margin-bottom: 40px;
 	}
+
+	@include bp(l) {
+		padding-top: $baseline * 3;
+	}
 }
 
 /* ==========================================================================
