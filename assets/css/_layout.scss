@@ -271,7 +271,9 @@ ol, ul {
 	}
 
 	& .header-meta {
+		display: none;
 		@include bp(l){
+			display: block;
 			float: left;
 			margin-top: 13px;
 		}
@@ -328,13 +330,6 @@ ol, ul {
 			height: 72px;
 			visibility: visible;
 		}
-	}
-}
-
-.header-meta {
-	display: none;
-	@include bp(l) {
-		display: block;
 	}
 }
 

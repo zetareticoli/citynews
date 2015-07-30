@@ -1100,10 +1100,13 @@ ol, ul {
           display: block;
           margin-top: -8px;
           margin-bottom: -5px; } }
-  @media (min-width: 62.5em) {
-    .header .header-meta {
-      float: left;
-      margin-top: 13px; } }
+  .header .header-meta {
+    display: none; }
+    @media (min-width: 62.5em) {
+      .header .header-meta {
+        display: block;
+        float: left;
+        margin-top: 13px; } }
 
 .header.slim-header {
   position: relative;
@@ -1145,12 +1148,6 @@ ol, ul {
       top: 0;
       height: 72px;
       visibility: visible; } }
-
-.header-meta {
-  display: none; }
-  @media (min-width: 62.5em) {
-    .header-meta {
-      display: block; } }
 
 .adv-mbl {
   display: block; }
