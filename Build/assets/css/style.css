@@ -1707,6 +1707,8 @@ ol, ul {
       background-color: white; }
       .theme-yellow .theme-header .logo-edition {
         fill: #ffbe26; } }
+.theme-yellow .inverted .theme-header .logo-edition {
+  fill: #ffbe26; }
 
 .theme-red .theme-background {
   background-color: #f2463d; }
@@ -1721,6 +1723,8 @@ ol, ul {
       background-color: white; }
       .theme-red .theme-header .logo-edition {
         fill: #f2463d; } }
+.theme-red .inverted .theme-header .logo-edition {
+  fill: #f2463d; }
 
 .theme-blue .theme-background {
   background-color: #3277c7; }
@@ -1735,6 +1739,8 @@ ol, ul {
       background-color: white; }
       .theme-blue .theme-header .logo-edition {
         fill: #3277c7; } }
+.theme-blue .inverted .theme-header .logo-edition {
+  fill: #3277c7; }
 
 .theme-green .theme-background {
   background-color: #50ae55; }
@@ -1749,6 +1755,8 @@ ol, ul {
       background-color: white; }
       .theme-green .theme-header .logo-edition {
         fill: #50ae55; } }
+.theme-green .inverted .theme-header .logo-edition {
+  fill: #50ae55; }
 
 .theme-purple .theme-background {
   background-color: #b75dc7; }
@@ -1763,6 +1771,8 @@ ol, ul {
       background-color: white; }
       .theme-purple .theme-header .logo-edition {
         fill: #b75dc7; } }
+.theme-purple .inverted .theme-header .logo-edition {
+  fill: #b75dc7; }
 
 .theme-pink .theme-background {
   background-color: #f291b2; }
@@ -1777,6 +1787,8 @@ ol, ul {
       background-color: white; }
       .theme-pink .theme-header .logo-edition {
         fill: #f291b2; } }
+.theme-pink .inverted .theme-header .logo-edition {
+  fill: #f291b2; }
 
 .theme-yellow .nav-button .button-label,
 .theme-red .nav-button .button-label,
