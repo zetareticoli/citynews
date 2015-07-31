@@ -166,6 +166,7 @@ ol, ul {
 	}
 }
 
+
 /* ==========================================================================
   Sections
   ========================================================================== */
@@ -281,8 +282,8 @@ ol, ul {
 }
 
 .slim-header {
-	height: 56px;
 	position: relative;
+	height: 56px;
 	@include transition(height .2s .3s);
 	@include bp(m) {
 		height: 64px;
@@ -290,6 +291,7 @@ ol, ul {
 	@include bp(l) {
 		height: 72px;
 	}
+
 	.header-top {
 		z-index: 6;
 	}
@@ -298,8 +300,11 @@ ol, ul {
 		margin-right: $baseline * 3;
 
 		.logo {
-			margin-top: $baseline*2;
-			height: $baseline * 2;
+			margin-top: 14px;
+			@include bp(m) {
+				margin-top: 22px;
+				height: $baseline * 2.5;
+			}
 			@include bp(l) {
 				height: $baseline * 3;
 				margin-top: $baseline * 3;
@@ -316,7 +321,8 @@ ol, ul {
 	}
 
 	.section-title {
-		float: left;
+		position: relative;
+		margin-top: $baseline * 9;
 		@include bp(m) {
 			width: 50%;
 			position: absolute;
@@ -342,6 +348,12 @@ ol, ul {
 			top: 0;
 			height: 72px;
 			visibility: visible;
+		}
+	}
+
+	@include max-bp(s) {
+		+ .section {
+			margin-top: $baseline * 7;
 		}
 	}
 }

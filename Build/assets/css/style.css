@@ -1119,8 +1119,8 @@ ol, ul {
         margin-top: 13px; } }
 
 .slim-header {
-  height: 56px;
   position: relative;
+  height: 56px;
   -webkit-transition: height 0.2s 0.3s;
   -moz-transition: height 0.2s 0.3s;
   transition: height 0.2s 0.3s; }
@@ -1135,8 +1135,11 @@ ol, ul {
   .slim-header .header-brand {
     margin-right: 24px; }
     .slim-header .header-brand .logo {
-      margin-top: 16px;
-      height: 16px; }
+      margin-top: 14px; }
+      @media (min-width: 46.25em) {
+        .slim-header .header-brand .logo {
+          margin-top: 22px;
+          height: 20px; } }
       @media (min-width: 62.5em) {
         .slim-header .header-brand .logo {
           height: 24px;
@@ -1148,7 +1151,8 @@ ol, ul {
         display: block;
         float: left; } }
   .slim-header .section-title {
-    float: left; }
+    position: relative;
+    margin-top: 72px; }
     @media (min-width: 46.25em) {
       .slim-header .section-title {
         width: 50%;
@@ -1172,6 +1176,9 @@ ol, ul {
         top: 0;
         height: 72px;
         visibility: visible; } }
+  @media (max-width: 46.188em) {
+    .slim-header + .section {
+      margin-top: 56px; } }
 
 .slim-header.inverted .nav-button .button-label {
   color: #bdbdbd; }
@@ -1818,18 +1825,17 @@ ol, ul {
 .theme-purple .logo-network,
 .theme-pink .logo-network {
   fill: #3b3b3b; }
-@media (min-width: 62.5em) {
-  .theme-yellow .inverted .theme-header,
-  .theme-red .inverted .theme-header,
-  .theme-blue .inverted .theme-header,
-  .theme-green .inverted .theme-header,
-  .theme-purple .inverted .theme-header,
-  .theme-pink .inverted .theme-header {
-    background-color: #212121; }
-  .theme-yellow .inverted .logo-network,
-  .theme-red .inverted .logo-network,
-  .theme-blue .inverted .logo-network,
-  .theme-green .inverted .logo-network,
-  .theme-purple .inverted .logo-network,
-  .theme-pink .inverted .logo-network {
-    fill: white; } }
+.theme-yellow .inverted .theme-header,
+.theme-red .inverted .theme-header,
+.theme-blue .inverted .theme-header,
+.theme-green .inverted .theme-header,
+.theme-purple .inverted .theme-header,
+.theme-pink .inverted .theme-header {
+  background-color: #212121; }
+.theme-yellow .inverted .logo-network,
+.theme-red .inverted .logo-network,
+.theme-blue .inverted .logo-network,
+.theme-green .inverted .logo-network,
+.theme-purple .inverted .logo-network,
+.theme-pink .inverted .logo-network {
+  fill: white; }
