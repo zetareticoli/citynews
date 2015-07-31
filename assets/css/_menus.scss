@@ -154,6 +154,10 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 
+	ul {
+		clear: left;
+	}
+
 	.nav-item {
 		border-bottom: 1px solid $black1000;
 		font-family: $basefontfamily;

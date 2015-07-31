@@ -56,10 +56,20 @@ a.button {
 
 .search-button,
 .login-button {
+	float: left;
 	padding: $gutterwidth;
+	width: 56px;
+	height: 56px;
+
+	@include bp(m) {
+		width: 64px;
+		height: 64px;
+	}
 
 	@include bp(l) {
 		float: left;
+		width: 72px;
+		height: 72px;
 	}
 
 	.icon {
@@ -72,19 +82,15 @@ a.button {
 }
 
 .search-button {
-	width: 100%;
+	border-right: 1px solid $black900;
+	border-left: 1px solid $black900;
 
 	@include bp(l) {
-		width: 72px;
-		height: 72px;
-		border-right: 1px solid $bordercolor;
-		border-left: 1px solid $bordercolor;
+		border-color: $bordercolor;
 	}
 }
 
 .login-button {
-	width: 45%;
-	height: 56px;
 
 	@include bp(m) {
 		height: 64px;
