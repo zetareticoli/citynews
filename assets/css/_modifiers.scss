@@ -38,6 +38,7 @@
 
 .is-locked {
 	height: 100%;
+	position: fixed;
 	overflow: hidden;
 }
 
@@ -84,6 +85,12 @@
 			@include transform(translateY(0));
 			@include transition(transform .2s .15s, opacity .2s .15s);
 		}
+	}
+}
+
+.is-hidden {
+	&.nav-children {
+		@include transform(translateX(-250px));
 	}
 }
 

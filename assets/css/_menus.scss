@@ -154,7 +154,7 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 
-	ul {
+	.nav-items-list {
 		clear: left;
 	}
 
@@ -195,6 +195,93 @@
 		top: 14px;
 		right: $gutterwidth;
 	}
+
+	.has-children > a, .go-back {
+	  position: relative;
+	}
+
+	.link.go-back {
+		background-color: $black1000;
+		padding-left: $baseline * 5;
+	}
+}
+
+.nav-children {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 10;
+	background: $black1000;
+
+	.alph-list {
+		width: 25%;
+		position: absolute;
+		top: 64px;
+		left: 0;
+		text-align: center;
+		overflow: hidden;
+		z-index: 10;
+	}
+
+	.alph-groups-container {
+		position: relative;
+		z-index: 10;
+		width: 70%;
+		margin-left: 25%;
+		height: 90%;
+		top: $gutterwidth;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+
+		h5 {
+			color: $black800;
+			@include font-size(12);
+			font-family: $basefontfamily;
+			text-transform: uppercase;
+			margin-bottom: $baseline;
+		}
+	}
+
+	.alph-group {
+		border-top: 1px solid $black900;
+		padding: $baseline 0;
+
+		li a {
+			color: white;
+			font-family: $basefontfamily;
+			display: block;
+			padding: $baseline / 2 0;
+		}
+	}
+
+	.alph-item {
+		width: 100%;
+		margin: $baseline auto;
+
+		a {
+			display: block;
+			padding: 4px 0;
+			@include font-size(14);
+			font-family: $basefontfamily;
+			line-height: 0.5em;
+			color: white;
+			text-align: center;
+			@include rounded(40px);
+		}
+	}
+}
+
+.content-blocker {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
 }
 
 /* ==========================================================================
@@ -229,42 +316,4 @@
 			@include transition(transform .2s, opacity .2s);
 		}
 	}
-}
-
-/* ==========================================================================
-  Submenu
-  ========================================================================== */
-
-.zone,
-.alfabeto {
-	color: white;
-	float: left;
-}
-
-.alfabeto {
-	width: 20%;
-	position: absolute;
-	top: 10px;
-	left: 0;
-	text-align: center;
-	overflow: hidden;
-	z-index: 10;
-}
-.zone {
-	position: relative;
-	z-index: 10;
-	width: 70%;
-	margin-left: 30%;
-	height: 95%;
-	overflow-y: scroll;
-}
-
-.content-blocker {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 9;
-	background-color: rgba(0,0,0,0.5);
-	display: none;
 }
