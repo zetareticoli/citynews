@@ -40,6 +40,18 @@
 	}
 }
 
+.is-desktop {
+	@include bp(l) {
+		display: block;
+	}
+}
+
+.is-hidden {
+	&.nav-children {
+		@include transform(translateX(-250px));
+	}
+}
+
 .is-locked {
 	height: 100%;
 	position: fixed;
@@ -51,12 +63,6 @@
 
 	@include bp(l) {
 		display: none;
-	}
-}
-
-.is-desktop {
-	@include bp(l) {
-		display: block;
 	}
 }
 
@@ -92,10 +98,8 @@
 	}
 }
 
-.is-hidden {
-	&.nav-children {
-		@include transform(translateX(-250px));
-	}
+.has-min-width {
+	min-width: 300px;
 }
 
 
