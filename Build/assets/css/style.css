@@ -1744,6 +1744,17 @@ ol, ul {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
 
+@media (min-width: 62.5em) {
+  .is-desktop {
+    display: block; } }
+
+.is-hidden.nav-children {
+  -webkit-transform: translateX(-250px);
+  -moz-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -o-transform: translateX(-250px);
+  transform: translateX(-250px); }
+
 .is-locked {
   height: 100%;
   position: fixed;
@@ -1754,10 +1765,6 @@ ol, ul {
   @media (min-width: 62.5em) {
     .is-mobile {
       display: none; } }
-
-@media (min-width: 62.5em) {
-  .is-desktop {
-    display: block; } }
 
 .is-nav-open .mobile-nav {
   -webkit-transform: translateX(-250px);
@@ -1796,12 +1803,8 @@ ol, ul {
     -moz-transition: transform 0.2s 0.15s, opacity 0.2s 0.15s;
     transition: transform 0.2s 0.15s, opacity 0.2s 0.15s; }
 
-.is-hidden.nav-children {
-  -webkit-transform: translateX(-250px);
-  -moz-transform: translateX(-250px);
-  -ms-transform: translateX(-250px);
-  -o-transform: translateX(-250px);
-  transform: translateX(-250px); }
+.has-min-width {
+  min-width: 300px; }
 
 .theme-yellow .theme-background {
   background-color: #ffbe26; }
