@@ -13,6 +13,9 @@
 		width: 32px;
 		height: 32px;
 	}
+  &.inverted {
+    fill: white;
+  }
 }
 
 .caret-icon {
@@ -75,6 +78,7 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .has-children > a::after, .go-back:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);

@@ -664,6 +664,8 @@ a .timestamp {
   .icon.large {
     width: 32px;
     height: 32px; }
+  .icon.inverted {
+    fill: white; }
 
 .caret-icon {
   display: inline-block;
@@ -739,9 +741,6 @@ a.button {
   a.button .button-label {
     font-family: 'Neue Haas Grotesk W01';
     font-weight: 700; }
-
-.inverted {
-  fill: white; }
 
 .nav-button {
   position: absolute;
@@ -1736,6 +1735,9 @@ ol, ul {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
+
+.inverted {
+  background-color: #212121; }
 
 .is-animated.mobile-nav {
   -webkit-transition: all 0.15s ease-in-out;
