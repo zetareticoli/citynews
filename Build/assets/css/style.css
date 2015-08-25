@@ -913,6 +913,12 @@ a.button {
     .size1of4 {
       width: 25%; } }
 
+.size3of4 {
+  width: 100%; }
+  @media (min-width: 62.5em) {
+    .size3of4 {
+      width: 75%; } }
+
 .size1of6 {
   width: 100%; }
   @media (min-width: 46.25em) {

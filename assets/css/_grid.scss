@@ -96,6 +96,13 @@
 	}
 }
 
+.size3of4 {
+	width: 100%;
+	@include bp(l) {
+		width: 75%;
+	}
+}
+
 .size1of6 {
 	width: 100%;
 	@include bp(m) {
