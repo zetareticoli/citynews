@@ -113,6 +113,13 @@
 	}
 }
 
+.size5of6 {
+	width: 100%;
+	@include bp(l) {
+		width: 83.34%;
+	}
+}
+
 @include max-bp(m) {
 	.size4of6.full-size,
 	.size2of3.full-size {
