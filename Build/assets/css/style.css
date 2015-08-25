@@ -574,14 +574,8 @@ strong {
 .label,
 time,
 .timestamp {
-  font-size: 10px;
-  font-size: 0.625rem; }
-  @media (min-width: 46.25em) {
-    .label,
-    time,
-    .timestamp {
-      font-size: 11px;
-      font-size: 0.6875rem; } }
+  font-size: 16px;
+  font-size: 1rem; }
 
 .byline,
 .timestamp,
@@ -593,9 +587,10 @@ a .timestamp {
   margin-bottom: 2px; }
 
 .label {
+  font-family: "Novecento Sans W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #757575;
   margin-right: 5px;
-  text-transform: uppercase; }
+  text-transform: lowercase; }
 
 .card-label {
   color: #E91F63;

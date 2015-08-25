@@ -159,10 +159,7 @@ strong {
 .label,
 time,
 .timestamp {
-	@include font-size(10);
-	@include bp(m) {
-		@include font-size(11);
-	}
+	@include font-size(16);
 }
 
 .byline,
@@ -177,9 +174,10 @@ a .timestamp {
 }
 
 .label {
+	font-family: $brandfontfamily;
 	color: $black700;
 	margin-right: 5px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 .card-label {
