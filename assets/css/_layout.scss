@@ -86,8 +86,7 @@ ol, ul {
 
 // Flexbox ===============================================================
 
-@include bp(l) {
-
+@include bp(m) {
 	.has-flex {
 		.l-row,
 		.l-list {
@@ -96,6 +95,10 @@ ol, ul {
 		}
 
 		.l-row {
+			@include flex-flow(row nowrap);
+		}
+
+		.l-row-grid {
 			@include flex-flow(row nowrap);
 		}
 
@@ -140,7 +143,8 @@ ol, ul {
 			@include flex-flow(wrap);
 
 			& > .l-row-item {
-				margin-bottom: $gutterwidth * 2;
+				@include flex(0 1 auto);
+				margin-bottom: $baseline * 4;
 			}
 		}
 	}
@@ -161,9 +165,7 @@ ol, ul {
 
 .l-row-item,
 .l-col-item {
-	@include bp(l) {
-		padding: 0 $gutterwidth/2;
-	}
+	padding: 0 $gutterwidth/2;
 }
 
 
