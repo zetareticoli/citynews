@@ -826,6 +826,21 @@ a.button {
   top: 0;
   right: 0; }
 
+/* ==========================================================================
+  Forms
+  ========================================================================== */
+.checkbox-label,
+.filter-block .link {
+  color: #424242;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+.filter-block {
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0; }
+  .filter-block .label {
+    font-size: 18px;
+    font-size: 1.125rem; }
+
 .wrapper {
   margin: 0 auto;
   background-color: #fff; }

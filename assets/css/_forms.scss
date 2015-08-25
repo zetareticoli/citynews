@@ -1,0 +1,22 @@
+/* ==========================================================================
+  Forms
+  ========================================================================== */
+
+// Global Styles ===============================================================
+
+.checkbox-label,
+.filter-block .link {
+	color: $black900;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+
+// Filters ===============================================================
+
+.filter-block {
+	padding: $baseline * 2 0;
+	border-bottom: $borderwidth $borderstyle $defaultbordercolor;
+
+	.label {
+		@include font-size(18);
+	}
+}
