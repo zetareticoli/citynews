@@ -1,4 +1,40 @@
+/* ==========================================================================
+  Card
+  ========================================================================== */
 
+.list-card-item {
+	margin-bottom: $baseline * 2;
+}
+
+.card {
+	background-color: $bluegrey100;
+	@include clearfix;
+}
+
+.card-header,
+.card-footer {
+	float: left;
+	padding: $baseline;
+}
+
+@include max-bp(s) {
+	.card-footer {
+		display: none;
+	}
+}
+
+.card-media {
+	width: 25%;
+	float: left;
+	margin-right: $gutterwidth;
+	@include bp(m) {
+		width: 100%;
+	}
+	> img {
+		width: 100%;
+		height: 100%;
+	}
+}
 
 /* ==========================================================================
   Story

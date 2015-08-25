@@ -597,6 +597,11 @@ a .timestamp {
   margin-right: 5px;
   text-transform: uppercase; }
 
+.card-label {
+  color: #E91F63;
+  font-family: "Novecento Sans W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: lowercase; }
+
 .link {
   text-decoration: none; }
   .link:hover {
@@ -1516,6 +1521,40 @@ ol, ul {
         -webkit-transition: transform 0.2s, opacity 0.2s;
         -moz-transition: transform 0.2s, opacity 0.2s;
         transition: transform 0.2s, opacity 0.2s; } }
+
+/* ==========================================================================
+  Card
+  ========================================================================== */
+.list-card-item {
+  margin-bottom: 16px; }
+
+.card {
+  background-color: #eceff1;
+  *zoom: 1; }
+  .card:before, .card:after {
+    content: " ";
+    display: table; }
+  .card:after {
+    clear: both; }
+
+.card-header,
+.card-footer {
+  float: left;
+  padding: 8px; }
+
+@media (max-width: 46.188em) {
+  .card-footer {
+    display: none; } }
+.card-media {
+  width: 25%;
+  float: left;
+  margin-right: 16px; }
+  @media (min-width: 46.25em) {
+    .card-media {
+      width: 100%; } }
+  .card-media > img {
+    width: 100%;
+    height: 100%; }
 
 /* ==========================================================================
   Story
