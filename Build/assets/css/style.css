@@ -593,9 +593,29 @@ a .timestamp {
   text-transform: lowercase; }
 
 .card-label {
-  color: #E91F63;
+  display: inline-block;
+  position: relative;
+  padding-top: 8px;
+  margin-bottom: 8px;
+  color: #e91f63;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1em;
   font-family: "Novecento Sans W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: lowercase; }
+  @media (min-width: 46.25em) {
+    .card-label {
+      font-size: 16px;
+      font-size: 1rem; }
+      .card-label:before {
+        position: absolute;
+        left: -8px;
+        top: 0;
+        content: '';
+        display: block;
+        width: 115%;
+        height: 6px;
+        background-color: #e91f63; } }
 
 .link {
   text-decoration: none; }
