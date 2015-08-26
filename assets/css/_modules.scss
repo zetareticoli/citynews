@@ -29,7 +29,6 @@
 	padding: 0 $gutterwidth / 2;
 	@include bp(m) {
 		padding-bottom: $gutterwidth / 2;
-		float: left;
 	}
 }
 
@@ -47,6 +46,7 @@
 	margin-right: $gutterwidth / 2;
 	@include bp(m) {
 		width: 100%;
+		float: none;
 	}
 	> img {
 		width: 100%;
