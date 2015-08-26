@@ -1,5 +1,6 @@
 .icon {
 	vertical-align: middle;
+  fill: $bluegrey500;
 
 	&.small {
 		width: 16px;
@@ -14,7 +15,10 @@
 		height: 32px;
 	}
   &.inverted {
-    fill: white;
+	fill: white;
+  }
+  &.inline-icon {
+	margin-right: 6px;
   }
 }
 
@@ -27,6 +31,20 @@
 	border-top: 4px dashed;
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
+}
+
+.star-icon {
+  @include max-bp(s) {
+  	&.medium {
+		width: 20px;
+  	}
+  }
+  &.star-icon--coloured {
+	fill: $accentpink;
+  }
+  &.star-icon--grey {
+	fill: $bluegrey300;
+  }
 }
 
 .site-meteo .icon {

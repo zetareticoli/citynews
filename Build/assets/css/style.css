@@ -674,7 +674,8 @@ a .timestamp {
   font-size: 1.125rem; }
 
 .icon {
-  vertical-align: middle; }
+  vertical-align: middle;
+  fill: #78909c; }
   .icon.small {
     width: 16px;
     height: 16px; }
@@ -686,6 +687,8 @@ a .timestamp {
     height: 32px; }
   .icon.inverted {
     fill: white; }
+  .icon.inline-icon {
+    margin-right: 6px; }
 
 .caret-icon {
   display: inline-block;
