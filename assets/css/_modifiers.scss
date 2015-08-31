@@ -61,7 +61,7 @@
 .is-mobile {
 	display: block;
 
-	@include bp(l) {
+	@include bp(m) {
 		display: none;
 	}
 }

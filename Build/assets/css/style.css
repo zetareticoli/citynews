@@ -1849,7 +1849,7 @@ ol, ul {
 
 .is-mobile {
   display: block; }
-  @media (min-width: 62.5em) {
+  @media (min-width: 46.25em) {
     .is-mobile {
       display: none; } }
 
