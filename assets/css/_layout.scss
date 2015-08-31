@@ -64,6 +64,7 @@ ol, ul {
 }
 
 .u-unstyled, .inline-list {
+	overflow: hidden;
 	margin: 0;
 	list-style: none;
 }
@@ -74,6 +75,10 @@ ol, ul {
 
 .wrapper {
 	position: relative;
+}
+
+.section {
+	padding: $gutterwidth 0;
 }
 
 /* ==========================================================================
@@ -156,23 +161,6 @@ ol, ul {
 .l-row-item,
 .l-col-item {
 	padding: 0 $gutterwidth/2;
-}
-
-
-/* ==========================================================================
-  Sections
-  ========================================================================== */
-
-.section {
-	padding: $gutterwidth 0;
-}
-
-.section-headlines {
-	padding: 0 $gutterwidth / 2;
-
-	@include bp(m) {
-		padding: 0;
-	}
 }
 
 /* ==========================================================================
@@ -260,6 +248,10 @@ ol, ul {
 	}
 }
 
+// Templates ===============================================================
+
+// Template Slim
+
 .slim-header {
 	position: relative;
 	height: 56px;
@@ -337,7 +329,7 @@ ol, ul {
 	}
 }
 
-// Inverted Header
+// Template inverted
 
 .slim-header.inverted {
 
@@ -373,3 +365,15 @@ ol, ul {
 	}
 }
 
+
+/* ==========================================================================
+  Headlines
+  ========================================================================== */
+
+.section-headlines {
+	padding: 0 $gutterwidth / 2;
+
+	@include bp(m) {
+		padding: 0;
+	}
+}

@@ -1033,6 +1033,7 @@ ol, ul {
   margin-left: 32px; }
 
 .u-unstyled, .inline-list {
+  overflow: hidden;
   margin: 0;
   list-style: none; }
 
@@ -1041,6 +1042,9 @@ ol, ul {
 
 .wrapper {
   position: relative; }
+
+.section {
+  padding: 16px 0; }
 
 /* ==========================================================================
   Flexbox
@@ -1133,18 +1137,6 @@ ol, ul {
 .l-row-item,
 .l-col-item {
   padding: 0 8px; }
-
-/* ==========================================================================
-  Sections
-  ========================================================================== */
-.section {
-  padding: 16px 0; }
-
-.section-headlines {
-  padding: 0 8px; }
-  @media (min-width: 46.25em) {
-    .section-headlines {
-      padding: 0; } }
 
 /* ==========================================================================
   Site Header
@@ -1299,6 +1291,15 @@ ol, ul {
 .slim-header.inverted .nav-button,
 .slim-header.inverted .section-title {
   color: white; }
+
+/* ==========================================================================
+  Headlines
+  ========================================================================== */
+.section-headlines {
+  padding: 0 8px; }
+  @media (min-width: 46.25em) {
+    .section-headlines {
+      padding: 0; } }
 
 /* ==========================================================================
   Global Styles
