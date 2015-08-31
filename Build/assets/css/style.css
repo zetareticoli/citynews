@@ -1307,7 +1307,7 @@ ol, ul {
     float: left;
     margin-right: 8px; }
   .headlines-main .newslist-module,
-  .headlines-main .sublinks,
+  .headlines-main .story-footer,
   .headlines-main .story-summary,
   .headlines-main .story-subheading {
     display: none; } }
