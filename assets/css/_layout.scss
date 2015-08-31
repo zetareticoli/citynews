@@ -106,10 +106,6 @@ ol, ul {
 			@include flex-flow(column nowrap);
 		}
 
-		.l-row-cols-2 {
-			@include flex-flow(row nowrap);
-		}
-
 		.l-row-item,
 		.l-list-item {
 			@include flexbox;
