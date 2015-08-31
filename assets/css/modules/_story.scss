@@ -16,12 +16,6 @@
 	.story-media {
 		margin-bottom: $gutterwidth / 2;
 	}
-	.story-summary {
-		display: none;
-		@include bp(m) {
-			display: block;
-		}
-	}
 }
 
 .story-heading,
@@ -52,12 +46,6 @@
 	position: relative;
 	.story-header {
 		padding: $gutterwidth / 2;
-	}
-	.story-summary {
-		display: none;
-		@include bp(m) {
-			display: block;
-		}
 	}
 	.story-media {
 		margin-bottom: 0;
