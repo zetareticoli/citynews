@@ -1756,17 +1756,6 @@ ol, ul {
     left: 0;
     z-index: 1; }
 
-@media (min-width: 46.25em) {
-  .size2of3 .featured-story .story-media {
-    width: 50%;
-    margin-right: 16px;
-    float: left; } }
-
-.size1of3 .featured-story .story-media {
-  float: right;
-  width: 35%;
-  margin-left: 8px; }
-
 .size1of2 .list-story .story-media {
   width: 50%;
   margin-right: 8px; }

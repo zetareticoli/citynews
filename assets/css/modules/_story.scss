@@ -121,26 +121,6 @@
 	}
 }
 
-.size2of3 .featured-story {
-
-	.story-media {
-		@include bp(m) {
-			width: 50%;
-			margin-right: $gutterwidth;
-			float: left;
-		}
-	}
-}
-
-.size1of3 .featured-story {
-
-	.story-media {
-		float: right;
-		width: 35%;
-		margin-left: $gutterwidth/2;
-	}
-}
-
 .size1of2 .list-story {
 
 	.story-media {
