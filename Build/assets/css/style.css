@@ -1309,6 +1309,10 @@ ol, ul {
   .headlines-main .newslist-module {
     display: none; } }
 
+@media (max-width: 46.188em) {
+  .headlines-aside {
+    display: none; } }
+
 /* ==========================================================================
   Global Styles
   ========================================================================== */

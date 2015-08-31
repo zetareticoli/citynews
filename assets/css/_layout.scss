@@ -397,3 +397,11 @@ ol, ul {
 		}
 	}
 }
+
+.headlines-aside {
+
+	@include max-bp(s) {
+		display: none;
+	}
+	
+}
