@@ -1142,14 +1142,6 @@ ol, ul {
   @media (min-width: 46.25em) {
     .section-headlines {
       padding: 0; } }
-  .section-headlines .main {
-    width: 100%; }
-    @media (min-width: 62.5em) {
-      .section-headlines .main {
-        width: 67.8%; } }
-    @media (min-width: 75em) {
-      .section-headlines .main {
-        width: 71.8%; } }
 
 .header {
   position: relative; }

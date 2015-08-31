@@ -172,21 +172,6 @@ ol, ul {
 	@include bp(m) {
 		padding: 0;
 	}
-
-	@include bp(xl) {
-		.l-row {
-		}
-	}
-
-	.main {
-		width: 100%;
-		@include bp(l) {
-			width: 67.8%;
-		}
-		@include bp(xl) {
-			width: 71.8%;
-		}
-	}
 }
 
 // Site Header ===============================================================
