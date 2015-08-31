@@ -377,3 +377,23 @@ ol, ul {
 		padding: 0;
 	}
 }
+
+.headlines-main {
+
+	@include max-bp(s) {
+
+		.featured-story {
+
+			.story-media {
+				width: 50%;
+				float: left;
+				margin-right: $gutterwidth / 2;
+			}
+
+		}
+
+		.newslist-module {
+			display: none;
+		}
+	}
+}

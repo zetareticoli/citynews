@@ -1301,6 +1301,14 @@ ol, ul {
     .section-headlines {
       padding: 0; } }
 
+@media (max-width: 46.188em) {
+  .headlines-main .featured-story .story-media {
+    width: 50%;
+    float: left;
+    margin-right: 8px; }
+  .headlines-main .newslist-module {
+    display: none; } }
+
 /* ==========================================================================
   Global Styles
   ========================================================================== */
@@ -1677,11 +1685,6 @@ ol, ul {
       color: #757575; }
   .story .story-media {
     margin-bottom: 8px; }
-  .story .story-summary {
-    display: none; }
-    @media (min-width: 46.25em) {
-      .story .story-summary {
-        display: block; } }
 
 .story-heading,
 .story-subheading {
@@ -1699,11 +1702,6 @@ ol, ul {
   position: relative; }
   .hero-story .story-header {
     padding: 8px; }
-  .hero-story .story-summary {
-    display: none; }
-    @media (min-width: 46.25em) {
-      .hero-story .story-summary {
-        display: block; } }
   .hero-story .story-media {
     margin-bottom: 0; }
   .hero-story.inverted .story-heading a,
