@@ -1306,7 +1306,10 @@ ol, ul {
     width: 50%;
     float: left;
     margin-right: 8px; }
-  .headlines-main .newslist-module {
+  .headlines-main .newslist-module,
+  .headlines-main .sublinks,
+  .headlines-main .story-summary,
+  .headlines-main .story-subheading {
     display: none; } }
 
 @media (max-width: 46.188em) {

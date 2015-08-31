@@ -392,7 +392,10 @@ ol, ul {
 
 		}
 
-		.newslist-module {
+		.newslist-module,
+		.sublinks,
+		.story-summary,
+		.story-subheading {
 			display: none;
 		}
 	}
@@ -403,5 +406,5 @@ ol, ul {
 	@include max-bp(s) {
 		display: none;
 	}
-	
+
 }
