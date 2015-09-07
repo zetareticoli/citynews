@@ -378,15 +378,19 @@ ol, ul {
 	}
 
 	.headlines-list {
-		@include flexbox;
+		@include bp(l) {
+			@include flexbox;
+		};
 	}
 }
 
 .headlines-main,
 .headlines-aside {
+
 	@include max-bp(m) {
 		width: 100%;
 	}
+	
 	@include bp(l) {
 		@include flexbox;
 		@include flex-flow(row nowrap);

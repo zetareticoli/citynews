@@ -1300,12 +1300,13 @@ ol, ul {
   @media (min-width: 46.25em) {
     .headlines-section {
       padding: 0; } }
-  .headlines-section .headlines-list {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
+  @media (min-width: 62.5em) {
+    .headlines-section .headlines-list {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; } }
 
 @media (max-width: 62.438em) {
   .headlines-main,
