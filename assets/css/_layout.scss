@@ -90,7 +90,7 @@ ol, ul {
 		.l-row,
 		.l-list {
 			width: 100%;
-			@include flexbox();
+			@include flexbox;
 		}
 
 		.l-row {
@@ -370,20 +370,34 @@ ol, ul {
   Headlines
   ========================================================================== */
 
-.section-headlines {
+.headlines-section {
 	padding: 0 $gutterwidth / 2;
 
 	@include bp(m) {
 		padding: 0;
 	}
+
+	.headlines-list {
+		@include flexbox;
+	}
+}
+
+.headlines-main,
+.headlines-aside {
+	@include max-bp(m) {
+		width: 100%;
+	}
+	@include bp(l) {
+		@include flexbox;
+		@include flex-flow(row nowrap);
+		@include flex(1 1 auto);
+	}
 }
 
 .headlines-main {
-
 	@include max-bp(s) {
 
 		.featured-story {
-
 			.story-media {
 				width: 50%;
 				float: left;
@@ -402,9 +416,14 @@ ol, ul {
 }
 
 .headlines-aside {
-
 	@include max-bp(s) {
 		display: none;
 	}
 
+}
+
+.headlines-main-list {
+	@include bp(l) {
+		@include flexbox;
+	}
 }

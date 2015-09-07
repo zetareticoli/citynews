@@ -1295,11 +1295,40 @@ ol, ul {
 /* ==========================================================================
   Headlines
   ========================================================================== */
-.section-headlines {
+.headlines-section {
   padding: 0 8px; }
   @media (min-width: 46.25em) {
-    .section-headlines {
+    .headlines-section {
       padding: 0; } }
+  .headlines-section .headlines-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+
+@media (max-width: 62.438em) {
+  .headlines-main,
+  .headlines-aside {
+    width: 100%; } }
+@media (min-width: 62.5em) {
+  .headlines-main,
+  .headlines-aside {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; } }
 
 @media (max-width: 46.188em) {
   .headlines-main .featured-story .story-media {
@@ -1315,6 +1344,14 @@ ol, ul {
 @media (max-width: 46.188em) {
   .headlines-aside {
     display: none; } }
+
+@media (min-width: 62.5em) {
+  .headlines-main-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; } }
 
 /* ==========================================================================
   Global Styles
