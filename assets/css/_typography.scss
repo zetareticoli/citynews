@@ -127,6 +127,18 @@ strong {
 
 // Headings =====================================================================
 
+// Latest News
+
+.latestnews-module {
+	
+	.story-heading {
+		@include font-size($fontsize200);
+		line-height: 1rem;
+	}
+}
+
+// Featured
+
 .featured-story {
 
 	&.featured-sm {
@@ -162,7 +174,9 @@ strong {
 			}
 		}
 	}
-} 
+}
+
+// Hero 
 
 .hero-story .story-heading {
 	@include bp(l) {
@@ -170,6 +184,8 @@ strong {
 		line-height: 2.5rem;
 	}
 }
+
+// Cover is an extension of Hero
 
 .cover-hero .story-heading {
 	@include bp(l) {
@@ -201,7 +217,7 @@ a .timestamp {
 }
 
 .label {
-	font-family: $brandfontfamily;
+	font-family: $brandtypeface;
 	color: $black700;
 	margin-right: 5px;
 	text-transform: lowercase;
@@ -215,7 +231,7 @@ a .timestamp {
 	color: $accentpink;
 	@include font-size(14);
 	line-height: 1em;
-	font-family: $brandfontfamily;
+	font-family: $brandtypeface;
 	text-transform: lowercase;
 
 	@include bp(m) {
@@ -237,8 +253,16 @@ a .timestamp {
 
 .kicker {
 	color: $black500;
-	font-family: $brandfontfamily;
+	font-family: $texttypeface;
 	font-style: italic;
+	font-weight: 700;
+}
+
+.location-kicker {
+	display: inline-block;
+	@include font-size($fontsize200);
+	color: $black600;
+	font-weight: 700;	
 }
 
 // Links ===============================================================
@@ -316,11 +340,26 @@ a .timestamp {
 	line-height: 1em;
 }
 
-.module-title {
-	padding: $gutterwidth 0;
-	@include font-size(18);
-}
+// Modules =====================================================================
 
-.uppercase-title {
-	text-transform: uppercase;
+.module-title {
+	margin-bottom: $baseline;
+	padding-bottom: $baseline;
+	@include font-size($fontsize600);
+	line-height: 2rem;
+	font-family: $titleseriftypeface;
+	font-style: italic;
+	font-weight: 900;
+	color: $black900;
+	border-bottom-width: 4px;
+	border-bottom-style: $borderstyle;
+
+	& > span {
+		display: block;
+		@include font-size($fontsize300);
+		line-height: 1rem;
+		font-style: normal;
+		font-weight: 500;
+		color: $black700;
+	}
 }
