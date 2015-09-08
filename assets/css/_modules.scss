@@ -10,20 +10,28 @@
 	width: 100%;
 }
 
-// Latest news ===============================================================
-
-.latestnews-module {
-
-	.story {
-		padding-bottom: $baseline / 2;
-	}
-}
-
 /* ==========================================================================
   Slots
   ========================================================================== */
 
-// Sizes ===============================================================
+.slots {
+	width: 100%;
+	background: $black200;
+
+}
+
+.slot {
+	padding: $baseline;
+	width: 100%;
+	@include bp(l) {
+		padding: 0;
+	}
+	@include bp(xl) {
+		padding: $baseline;
+	}
+}
+
+// Slot Sizes ===============================================================
 
 .medium-slot {
 	margin: 0 auto;
@@ -36,15 +44,7 @@
 	height: 600px;
 }
 
-.slots {
-	width: 100%;
-	background: $black300;
-}
-
-.slot {
-	padding: $gutterwidth;
-	width: 100%;
-}
+// Slot Templates ===============================================================
 
 .slots-headlines {
 	@include flexbox;
@@ -79,3 +79,25 @@
   ========================================================================== */
 
 @import "modules/story";
+
+
+/* ==========================================================================
+  Latest News
+  ========================================================================== */
+
+.latestnews-module {
+	@include flexbox;
+	@include flex-flow(column nowrap);
+
+	.module-title {
+		@include flex(1 1 auto);
+	}
+
+	.l-list {
+		@include flex(4 1 auto);
+	}
+
+	.story {
+		border-bottom: 1px solid $bordercolor;
+	}	
+}
