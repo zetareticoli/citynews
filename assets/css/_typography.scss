@@ -179,6 +179,14 @@ strong {
 // Hero 
 
 .hero-story .story-heading {
+	@include font-size($fontsize600);
+	line-height: 2rem;
+
+	@include bp(m) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
+
 	@include bp(l) {
 		@include font-size($fontsize900);
 		line-height: 2.5rem;
@@ -188,12 +196,48 @@ strong {
 // Cover is an extension of Hero
 
 .cover-hero .story-heading {
+
 	@include bp(l) {
 		@include font-size($fontsize900);
 	}
+
 	@include bp(xl) {
 		@include font-size($fontsize1000);
 		line-height: 3rem;
+	}
+}
+
+// Subheadings
+
+.story-subheading {
+	margin-bottom: $baseline;
+	
+	&:before {
+		display: inline-block;
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: relative;
+		margin-right: $gutterwidth / 2;
+		vertical-align: middle;
+	}
+	
+	& .link {
+		color: $bluegrey500;
+	}
+}
+
+.hero-story .story-subheading {
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
+
+	@include bp(l) {
+		@include font-size($fontsize500);
+		line-height: 2rem;
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize600);
 	}
 }
 
@@ -353,6 +397,10 @@ a .timestamp {
 	color: $black900;
 	border-bottom-width: 4px;
 	border-bottom-style: $borderstyle;
+
+	@include bp(xl) {
+		padding-bottom: 0;
+	}
 
 	& > span {
 		display: block;

@@ -565,11 +565,20 @@ strong {
       font-size: 1.75rem;
       line-height: 2rem; } }
 
-@media (min-width: 62.5em) {
-  .hero-story .story-heading {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 2.5rem; } }
+.hero-story .story-heading {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2rem; }
+  @media (min-width: 46.25em) {
+    .hero-story .story-heading {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 62.5em) {
+    .hero-story .story-heading {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
 
 @media (min-width: 62.5em) {
   .cover-hero .story-heading {
@@ -580,6 +589,33 @@ strong {
     font-size: 48px;
     font-size: 3rem;
     line-height: 3rem; } }
+
+.story-subheading {
+  margin-bottom: 8px; }
+  .story-subheading:before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle; }
+  .story-subheading .link {
+    color: #78909c; }
+
+.hero-story .story-subheading {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5rem; }
+  @media (min-width: 62.5em) {
+    .hero-story .story-subheading {
+      font-size: 21px;
+      font-size: 1.3125rem;
+      line-height: 2rem; } }
+  @media (min-width: 75em) {
+    .hero-story .story-subheading {
+      font-size: 24px;
+      font-size: 1.5rem; } }
 
 .label,
 time,
@@ -710,6 +746,9 @@ a .timestamp {
   color: #424242;
   border-bottom-width: 4px;
   border-bottom-style: solid; }
+  @media (min-width: 75em) {
+    .module-title {
+      padding-bottom: 0; } }
   .module-title > span {
     display: block;
     font-size: 16px;
