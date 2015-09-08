@@ -2,23 +2,15 @@
 
 .story {
 	@include clearfix;
-	border-bottom: 1px solid $bordercolor;
-	padding: 0 0 $gutterwidth;
 	width: 100%;
+	margin-bottom: $baseline;
 
-	.story-header {
-
-		.story-subhead {
-			margin: $gutterwidth / 2 0;
-
-			& a {
-				color: $black700;
-			}
-		}
+	@include bp(l) {
+		margin-bottom: $baseline * 2;
 	}
 
 	.story-media {
-		margin-bottom: $gutterwidth / 2;
+		margin-bottom: $baseline;
 	}
 }
 
@@ -48,13 +40,18 @@
 
 .hero-story {
 	position: relative;
-
-	.story-header {
-		padding: $gutterwidth / 2;
-	}
+	background-color: $bluegrey100;
 
 	.story-media {
-		margin-bottom: 0;
+		margin-bottom: $baseline;
+	}
+
+	.story-header {
+		padding: 0 $baseline;
+
+		@include bp(m) {
+			padding: 0 $baseline * 2 $baseline;
+		}
 	}
 
 	&.inverted {
