@@ -2077,6 +2077,8 @@ ol, ul {
 .has-min-width {
   min-width: 300px; }
 
+.theme-yellow .theme-element-bg:before {
+  background-color: #ffbe26; }
 .theme-yellow .theme-background {
   background-color: #ffbe26; }
 .theme-yellow .theme-border {
