@@ -77,6 +77,10 @@ ol, ul {
 	position: relative;
 }
 
+.main-content {
+	padding: $gutterwidth 0;
+}
+
 .section {
 	padding: $gutterwidth 0;
 }
@@ -207,6 +211,7 @@ ol, ul {
 		.logo {
 			height: 26px;
 			margin-top: 4px;
+			@include transition(all .3s ease);
 			@include bp(m) {
 				height: 36px;
 			}
@@ -222,7 +227,7 @@ ol, ul {
 		.network {
 			display: none;
 			width: auto;
-			font-family: $basefontfamily;
+			font-family: $texttypeface;
 			font-weight: 900;
 			@include font-size(12);
 			text-transform: lowercase;
@@ -371,16 +376,13 @@ ol, ul {
   ========================================================================== */
 
 .headlines-section {
-	padding: 0 $gutterwidth / 2;
-
-	@include bp(m) {
-		padding: 0;
-	}
+	padding-right: 0 $gutterwidth / 2;
+	padding-left: 0 $gutterwidth / 2;
 
 	.headlines-list {
 		@include bp(l) {
 			@include flexbox;
-		};
+		}
 	}
 }
 
@@ -400,16 +402,6 @@ ol, ul {
 
 .headlines-main {
 	@include max-bp(s) {
-
-		.featured-story {
-			.story-media {
-				width: 50%;
-				float: left;
-				margin-right: $gutterwidth / 2;
-			}
-
-		}
-
 		.newslist-module,
 		.story-footer,
 		.story-summary,

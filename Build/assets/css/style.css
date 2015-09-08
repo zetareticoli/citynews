@@ -13,6 +13,7 @@ figure,
 footer,
 header,
 hgroup,
+main,
 nav,
 section,
 summary {
@@ -421,147 +422,112 @@ table {
 /* ==========================================================================
    Typography
    ========================================================================== */
-html, body {
-  font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Publico Text", Georgia, "Times New Roman", serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-style: normal;
-  line-height: 1.3em;
-  margin: 0; }
+  margin-bottom: 16px; }
 
-h1.story-heading {
-  font-weight: 900;
-  font-size: 24px;
-  font-size: 1.5rem; }
+h1, h2 {
+  font-weight: 900; }
+
+h3, h4, h5, h6 {
+  font-weight: 700; }
+
+h1 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 2rem; }
+  @media (min-width: 46.25em) {
+    h1 {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
   @media (min-width: 62.5em) {
-    h1.story-heading {
+    h1 {
       font-size: 36px;
       font-size: 2.25rem; } }
   @media (min-width: 75em) {
-    h1.story-heading {
-      font-size: 46px;
-      font-size: 2.875rem;
-      line-height: 1.15em; } }
+    h1 {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
 
-h2.story-heading {
-  font-weight: 900;
-  font-size: 18px;
-  font-size: 1.125rem; }
+h2 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
   @media (min-width: 46.25em) {
-    h2.story-heading {
-      font-size: 21px;
-      font-size: 1.3125rem; } }
-  @media (min-width: 75em) {
-    h2.story-heading {
+    h2 {
       font-size: 28px;
       font-size: 1.75rem;
-      line-height: 1.15em; } }
+      line-height: 2rem; } }
+  @media (min-width: 75em) {
+    h2 {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
 
-h2.section-title {
-  margin-bottom: 16px;
-  color: #bdbdbd;
-  font-size: 20px;
-  font-size: 1.25rem; }
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5rem; }
   @media (min-width: 46.25em) {
-    h2.section-title {
-      margin-bottom: 32px;
+    h3 {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+  @media (min-width: 75em) {
+    h3 {
       font-size: 28px;
       font-size: 1.75rem; } }
 
-h3.story-heading {
-  font-weight: 900;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-  @media (min-width: 46.25em) {
-    h3.story-heading {
-      font-size: 18px;
-      font-size: 1.125rem; } }
-  @media (min-width: 62.5em) {
-    h3.story-heading {
-      font-size: 20px;
-      font-size: 1.25rem; } }
-
-h3.story-subheading {
-  color: #757575;
-  padding-top: 8px;
+h4 {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1rem; }
   @media (min-width: 46.25em) {
-    h3.story-subheading {
-      font-size: 18px;
-      font-size: 1.125rem; } }
-
-h3.inset-heading {
-  font-weight: 900;
-  font-size: 18px;
-  font-size: 1.125rem; }
+    h4 {
+      font-size: 21px;
+      font-size: 1.3125rem;
+      line-height: 1.5rem; } }
   @media (min-width: 75em) {
-    h3.inset-heading {
-      font-size: 22spx;
-      font-size: 1.375srem; } }
-  h3.inset-heading .link {
-    color: white; }
+    h4 {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
 
-h4.story-heading {
-  font-weight: 700;
+h5 {
   font-size: 14px;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  line-height: 1rem; }
 
-h5.story-heading {
-  font-weight: 700;
-  font-size: 14px;
-  font-size: 0.875rem; }
-
-h6.story-heading {
-  font-weight: 700;
-  font-size: 14px;
-  font-size: 0.875rem; }
-
-.story-heading .link {
-  color: #757575; }
-
-.story-heading:hover .link {
-  color: #212121; }
-
-.story-subheading .link {
-  color: #757575; }
-
-.story-subheading:hover .link {
-  color: #757575; }
-
-.size2of3 h1.story-heading {
-  font-size: 24px;
-  font-size: 1.5rem; }
-  @media (min-width: 62.5em) {
-    .size2of3 h1.story-heading {
-      font-size: 36px;
-      font-size: 2.25rem; } }
-  @media (min-width: 75em) {
-    .size2of3 h1.story-heading {
-      font-size: 38px;
-      font-size: 2.375rem;
-      line-height: 1.15em; } }
-
-.size1of3 .story-summary {
-  font-size: 14px;
-  font-size: 0.875rem; }
-
-.uppercase-title {
-  text-transform: uppercase; }
+h6 {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1rem; }
+  @media (min-width: 46.25em) {
+    h6 {
+      font-size: 14px;
+      font-size: 0.875rem; } }
 
 p,
 ol,
 ul,
 dl,
 address {
-  font-family: Publico, "Times New Roman", Georgia, serif;
+  font-family: "Publico Text", Georgia, "Times New Roman", serif;
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.3em;
+  line-height: 1.5em;
   list-style-position: inside; }
 
 small {
@@ -570,6 +536,45 @@ small {
 
 strong {
   font-weight: 700; }
+
+.featured-story.featured-sm .story-heading {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
+.featured-story.featured-mid .story-heading {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
+  @media (min-width: 46.25em) {
+    .featured-story.featured-mid .story-heading {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+.featured-story.featured-lg .story-heading {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
+  @media (min-width: 46.25em) {
+    .featured-story.featured-lg .story-heading {
+      font-size: 28px;
+      font-size: 1.75rem;
+      line-height: 2rem; } }
+
+@media (min-width: 62.5em) {
+  .hero-story .story-heading {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 2.5rem; } }
+
+@media (min-width: 62.5em) {
+  .cover-hero .story-heading {
+    font-size: 36px;
+    font-size: 2.25rem; } }
+@media (min-width: 75em) {
+  .cover-hero .story-heading {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 3rem; } }
 
 .label,
 time,
@@ -617,19 +622,31 @@ a .timestamp {
         height: 6px;
         background-color: #e91f63; } }
 
+.kicker {
+  color: #bdbdbd;
+  font-family: "Novecento Sans W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic; }
+
 .link {
   text-decoration: none; }
   .link:hover {
     text-decoration: underline; }
 
-.kicker {
-  color: #bdbdbd;
-  font-family: "Publico-black1000";
-  font-style: italic; }
+.story-heading .link {
+  color: #424242; }
+  .story-heading .link:hover {
+    color: #212121;
+    text-decoration: none; }
+
+.story-subheading .link {
+  color: #757575; }
+
+.story-subheading:hover .link {
+  color: #757575; }
 
 .section-title {
   color: #424242;
-  font-family: Publico, "Times New Roman", Georgia, serif;
+  font-family: "Publico Text", Georgia, "Times New Roman", serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 900; }
@@ -672,6 +689,9 @@ a .timestamp {
   padding: 16px 0;
   font-size: 18px;
   font-size: 1.125rem; }
+
+.uppercase-title {
+  text-transform: uppercase; }
 
 .icon {
   vertical-align: middle;
@@ -823,7 +843,7 @@ a.button {
   border-left: 1px solid #424242; }
   @media (min-width: 62.5em) {
     .search-button {
-      border-color: #eeeeee; } }
+      border-color: #e0e0e0; } }
 
 @media (min-width: 46.25em) {
   .login-button {
@@ -1043,6 +1063,9 @@ ol, ul {
 .wrapper {
   position: relative; }
 
+.main-content {
+  padding: 16px 0; }
+
 .section {
   padding: 16px 0; }
 
@@ -1180,7 +1203,10 @@ ol, ul {
     float: left; }
     .header .header-brand .logo {
       height: 26px;
-      margin-top: 4px; }
+      margin-top: 4px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
       @media (min-width: 46.25em) {
         .header .header-brand .logo {
           height: 36px; } }
@@ -1194,7 +1220,7 @@ ol, ul {
     .header .header-brand .network {
       display: none;
       width: auto;
-      font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Publico Text", Georgia, "Times New Roman", serif;
       font-weight: 900;
       font-size: 12px;
       font-size: 0.75rem;
@@ -1296,10 +1322,8 @@ ol, ul {
   Headlines
   ========================================================================== */
 .headlines-section {
-  padding: 0 8px; }
-  @media (min-width: 46.25em) {
-    .headlines-section {
-      padding: 0; } }
+  padding-right: 0 8px;
+  padding-left: 0 8px; }
   @media (min-width: 62.5em) {
     .headlines-section .headlines-list {
       display: -webkit-box;
@@ -1332,10 +1356,6 @@ ol, ul {
     flex: 1 1 auto; } }
 
 @media (max-width: 46.188em) {
-  .headlines-main .featured-story .story-media {
-    width: 50%;
-    float: left;
-    margin-right: 8px; }
   .headlines-main .newslist-module,
   .headlines-main .story-footer,
   .headlines-main .story-summary,
@@ -1450,7 +1470,7 @@ ol, ul {
     top: 13px; } }
 .secondary-nav .nav-item {
   margin-right: 16px;
-  font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Publico Text", Georgia, "Times New Roman", serif;
   font-size: 16px;
   font-size: 1rem; }
   @media (min-width: 75em) {
@@ -1482,7 +1502,7 @@ ol, ul {
     clear: left; }
   .mobile-nav .nav-item {
     border-bottom: 1px solid #212121;
-    font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Publico Text", Georgia, "Times New Roman", serif;
     font-weight: 700;
     font-size: 20px;
     font-size: 1.25rem; }
@@ -1541,7 +1561,7 @@ ol, ul {
       color: #616161;
       font-size: 12px;
       font-size: 0.75rem;
-      font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Publico Text", Georgia, "Times New Roman", serif;
       text-transform: uppercase;
       margin-bottom: 8px; }
   .nav-children .alph-group {
@@ -1549,7 +1569,7 @@ ol, ul {
     padding: 8px 0; }
     .nav-children .alph-group li a {
       color: white;
-      font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Publico Text", Georgia, "Times New Roman", serif;
       display: block;
       padding: 4px 0; }
   .nav-children .alph-item {
@@ -1560,7 +1580,7 @@ ol, ul {
       padding: 4px 0;
       font-size: 14px;
       font-size: 0.875rem;
-      font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Publico Text", Georgia, "Times New Roman", serif;
       line-height: 0.5em;
       color: white;
       text-align: center;
@@ -1603,7 +1623,7 @@ ol, ul {
       .sliding-nav .nav-item {
         float: left;
         display: inline;
-        font-family: "Neue Haas Grotesk W01 Disp", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Publico Text", Georgia, "Times New Roman", serif;
         font-weight: 700;
         font-size: 20px;
         font-size: 1.25rem;
@@ -1748,7 +1768,7 @@ ol, ul {
   ========================================================================== */
 .story {
   *zoom: 1;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e0e0e0;
   padding: 0 0 16px;
   width: 100%; }
   .story:before, .story:after {
@@ -1784,6 +1804,11 @@ ol, ul {
   .hero-story.inverted .story-heading a,
   .hero-story.inverted .story-summary {
     color: #fff; }
+
+.featured-story .story-media {
+  width: 50%;
+  float: left;
+  margin-right: 8px; }
 
 .list-story {
   *zoom: 1; }
@@ -1842,11 +1867,11 @@ ol, ul {
   text-transform: uppercase; }
 
 .newslist-module {
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #e0e0e0; }
   @media (min-width: 62.5em) {
     .newslist-module .l-list-item {
       margin-bottom: 8px;
-      border-bottom: 1px solid #eeeeee; }
+      border-bottom: 1px solid #e0e0e0; }
       .newslist-module .l-list-item:last-child {
         border-bottom: 0; }
     .newslist-module .story {
@@ -1890,7 +1915,7 @@ ol, ul {
   align-items: center; }
 
 .inverted {
-  background-color: #212121; }
+  background-color: #263238; }
 
 .is-animated.mobile-nav {
   -webkit-transition: all 0.15s ease-in-out;

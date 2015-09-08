@@ -1,138 +1,107 @@
 /* ==========================================================================
    Typography
    ========================================================================== */
+
+// Global Styles ===============================================================
+
+html {
+	font-size: 100%;
+}
  
-html,body {
- 	font-family: $basefontfamily;
-	font-weight: $textfontweight;
+body {
+ 	font-family: $texttypeface;
+	font-weight: $basetextweight;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $basefontfamily;
+	font-family: $headingstypeface;
 	font-style: normal;
-	line-height: $baselineheight;
-	margin: 0;
+	margin-bottom: $baseline * 2;
 }
 
-h1.story-heading {
-	font-weight: 900;
-	@include font-size(24);
+h1, h2 {
+	font-weight: $bigheadingeweight;
+}
+
+h3, h4, h5, h6 {
+	font-weight: $baseheadingweight;
+}
+
+h1 {
+	@include font-size($fontsize700);
+	line-height: 2rem;
+
+	@include bp(m) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
 
 	@include bp(l) {
-		@include font-size(36);
+		@include font-size($fontsize900);
 	}
 
 	@include bp(xl) {
-		@include font-size(46);
-		line-height: 1.15em;
+		@include font-size($fontsize1000);
+		line-height: 3.5rem;
 	}	
 }
 
-h2.story-heading {
-	font-weight: 900;
-	@include font-size(18);
-	
+h2 {
+	@include font-size($fontsize500);
+	line-height: 1.5rem;
+
 	@include bp(m) {
-		@include font-size(21);
+		@include font-size($fontsize700);
+		line-height: 2rem;
 	}
 
 	@include bp(xl) {
-		@include font-size(28);
-		line-height: 1.15em;
-	}	
+		@include font-size($fontsize900);
+		line-height: 2.5rem;
+	}
 }
 
-h2.section-title {
-	margin-bottom: $gutterwidth;
-	color: $black500;
-	@include font-size(20);
+h3 {
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
+
 	@include bp(m) {
-		margin-bottom: $gutterwidth*2;
-		@include font-size(28);
-	}
-}
-
-h3.story-heading {
-	font-weight: 900;
-	@include font-size(15);
-	@include bp(m) {
-		@include font-size(18);
-	}
-	@include bp(l) {
-		@include font-size(20);
-	}
-}
-
-h3.story-subheading {
-	color: $black700;
-	padding-top: $gutterwidth/2;
-	@include font-size(16);
-	@include bp(m) {
-		@include font-size(18);
-	}
-}
-
-h3.inset-heading {
-	font-weight: 900;
-	@include font-size(18);
-	@include bp(xl) {
-		@include font-size(22s);
-	}
-	.link {
-		color: white;
-	}
-}
-
-h4.story-heading {
-	font-weight: 700;
-	@include font-size(14);
-}
-
-h5.story-heading {
-	font-weight: 700;
-	@include font-size($smallfontsize);
-}
-
-h6.story-heading {
-	font-weight: 700;
-	@include font-size($smallfontsize);
-}
-
-.story-heading .link {
-	color: $black700;
-}
-
-.story-heading:hover .link {
-	color: $black1000;
-}
-
-.story-subheading .link {
-	color: $black700;
-}
-
-.story-subheading:hover .link {
-	color: $black700;
-}
-
-.size2of3 h1.story-heading {
-	@include font-size(24);
-
-	@include bp(l) {
-		@include font-size(36);
+		@include font-size($fontsize600);
+		line-height: 2rem;
 	}
 
 	@include bp(xl) {
-		@include font-size(38);
-		line-height: 1.15em;
-	}	
+		@include font-size($fontsize700);
+	}
 }
 
-.size1of3 .story-summary {
-	@include font-size(14);
+h4 {
+	@include font-size($fontsize300);
+	line-height: 1rem;
+
+	@include bp(m) {
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize600);
+		line-height: 2rem;
+	}
 }
 
-.uppercase-title {
-	text-transform: uppercase;
+h5 {
+	@include font-size($fontsize200);
+	line-height: 1rem;
+}
+
+h6 {
+	@include font-size($fontsize100);
+	line-height: 1rem;
+
+	@include bp(m) {
+		@include font-size($fontsize200);
+	}
 }
 
 p,
@@ -140,7 +109,7 @@ ol,
 ul,
 dl,
 address {
-	font-family: $textfontfamily;
+	font-family: $texttypeface;
 	margin-top: 0;
 	margin-bottom: $gutterwidth / 2;
 	@include font-size($basefontsize);
@@ -149,12 +118,70 @@ address {
 }
 
 small {
-	@include font-size($smallfontsize);
+	@include font-size($fontsize200);
 }
 
 strong {
 	font-weight: 700;
 }
+
+// Headings =====================================================================
+
+.featured-story {
+
+	&.featured-sm {
+
+		.story-heading {
+			@include font-size($fontsize500);
+			line-height: 1.5rem;
+		}
+	}
+
+	&.featured-mid {
+
+		.story-heading {
+			@include font-size($fontsize500);
+			line-height: 1.5rem;
+
+			@include bp(m) {
+				@include font-size($fontsize600);
+				line-height: 2rem;
+			}
+		}
+	}
+
+	&.featured-lg {
+
+		.story-heading {
+			@include font-size($fontsize500);
+			line-height: 1.5rem;
+
+			@include bp(m) {
+				@include font-size($fontsize700);
+				line-height: 2rem;
+			}
+		}
+	}
+} 
+
+.hero-story .story-heading {
+	@include bp(l) {
+		@include font-size($fontsize900);
+		line-height: 2.5rem;
+	}
+}
+
+.cover-hero .story-heading {
+	@include bp(l) {
+		@include font-size($fontsize900);
+	}
+	@include bp(xl) {
+		@include font-size($fontsize1000);
+		line-height: 3rem;
+	}
+}
+
+// Labels & Byline ===============================================================
 
 .label,
 time,
@@ -208,6 +235,14 @@ a .timestamp {
 	}
 }
 
+.kicker {
+	color: $black500;
+	font-family: $brandfontfamily;
+	font-style: italic;
+}
+
+// Links ===============================================================
+
 .link {
 	text-decoration: none;
 
@@ -216,15 +251,28 @@ a .timestamp {
 	}
 }
 
-.kicker {
-	color: $black500;
-	font-family: "Publico-black1000";
-	font-style: italic;
+.story-heading .link {
+	color: $black900;
+
+	&:hover {
+		color: $black1000;
+		text-decoration: none;
+	}
 }
+
+.story-subheading .link {
+	color: $black700;
+}
+
+.story-subheading:hover .link {
+	color: $black700;
+}
+
+
 
 .section-title {
 	color: $black900;
-	font-family: $textfontfamily;
+	font-family: $texttypeface;
 	@include font-size(28);
 	font-weight: 900;
 	@include bp(m) {
@@ -233,13 +281,15 @@ a .timestamp {
 	}
 }
 
+// Timestamp & Meteo ===============================================================
+
 .site-date,
 .site-meteo {
 	display: inline-block;
 	margin-right: $gutterwidth;
 	color: $black700;
 	font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	@include font-size($smallerfontsize);
+	@include font-size($fontsize100);
 }
 
 .site-meteo {
@@ -257,7 +307,7 @@ a .timestamp {
 
 .edition {
 	color: $black500;
-	@include font-size($smallfontsize);
+	@include font-size($fontsize200);
 }
 
 .list-count {
@@ -269,4 +319,8 @@ a .timestamp {
 .module-title {
 	padding: $gutterwidth 0;
 	@include font-size(18);
+}
+
+.uppercase-title {
+	text-transform: uppercase;
 }

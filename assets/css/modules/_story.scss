@@ -24,7 +24,7 @@
 
 .story-heading,
 .story-subheading {
-	margin-bottom: $gutterwidth/2;
+	margin-bottom: $gutterwidth / 2;
 }
 
 .story-summary {
@@ -66,6 +66,17 @@
 	}
 }
 
+// featured
+
+.featured-story {
+	
+	.story-media {
+		width: 50%;
+		float: left;
+		margin-right: $gutterwidth / 2;
+	}
+}
+
 // list
 
 .list-story {
@@ -93,7 +104,7 @@
 	}
 }
 
-// list
+// reportage
 
 .indepth-story {
 	position: relative;
@@ -135,8 +146,8 @@
 
 	.sublink {
 		font-weight: 700;
-		margin-bottom: $gutterwidth/2;
-		@include font-size($smallfontsize);
+		margin-bottom: $gutterwidth / 2;
+		@include font-size($fontsize200);
 	}
 
 	.sublink .link {
@@ -154,7 +165,7 @@
 	border-bottom: 1px solid $bordercolor;
 	@include bp(l) {
 		.l-list-item {
-			margin-bottom: $gutterwidth/2;
+			margin-bottom: $gutterwidth / 2;
 			border-bottom: 1px solid $bordercolor;
 			&:last-child {
 				border-bottom: 0;
@@ -163,7 +174,7 @@
 		}
 		.story {
 			border-bottom: 0;
-			padding-bottom: $gutterwidth/2;
+			padding-bottom: $gutterwidth / 2;
 		}
 	}
 }

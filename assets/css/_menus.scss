@@ -128,7 +128,7 @@
 
 	.nav-item {
 		margin-right: $baseline * 2;
-		font-family: $basefontfamily;
+		font-family: $texttypeface;
 		@include font-size(16);
 		@include bp(xl) {
 			@include font-size(18);
@@ -160,7 +160,7 @@
 
 	.nav-item {
 		border-bottom: 1px solid $black1000;
-		font-family: $basefontfamily;
+		font-family: $texttypeface;
 		font-weight: 700;
 		@include font-size(20);
 	}
@@ -239,7 +239,7 @@
 		h5 {
 			color: $black800;
 			@include font-size(12);
-			font-family: $basefontfamily;
+			font-family: $texttypeface;
 			text-transform: uppercase;
 			margin-bottom: $baseline;
 		}
@@ -251,7 +251,7 @@
 
 		li a {
 			color: white;
-			font-family: $basefontfamily;
+			font-family: $texttypeface;
 			display: block;
 			padding: $baseline / 2 0;
 		}
@@ -265,7 +265,7 @@
 			display: block;
 			padding: 4px 0;
 			@include font-size(14);
-			font-family: $basefontfamily;
+			font-family: $texttypeface;
 			line-height: 0.5em;
 			color: white;
 			text-align: center;
@@ -306,7 +306,7 @@
 		.nav-item {
 			float: left;
 			display: inline;
-			font-family: $basefontfamily;
+			font-family: $texttypeface;
 			font-weight: 700;
 			@include font-size(20);
 			line-height: 16px;
