@@ -149,22 +149,10 @@ ol, ul {
 	}
 }
 
-.l-list-item {
-	margin-bottom: $gutterwidth;
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
 .l-row {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-
-.l-row-item,
-.l-col-item {
-	padding: 0 $gutterwidth/2;
 }
 
 /* ==========================================================================

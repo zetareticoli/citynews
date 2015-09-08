@@ -1173,19 +1173,10 @@ ol, ul {
       -ms-flex: 0 1 auto;
       flex: 0 1 auto;
       margin-bottom: 32px; } }
-.l-list-item {
-  margin-bottom: 16px; }
-  .l-list-item:last-child {
-    margin-bottom: 0; }
-
 .l-row {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.l-row-item,
-.l-col-item {
-  padding: 0 8px; }
 
 /* ==========================================================================
   Site Header
