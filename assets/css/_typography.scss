@@ -245,7 +245,48 @@ strong {
 	}
 }
 
-// Labels & Byline ===============================================================
+// Module Title
+
+.module-title {
+	margin-bottom: $baseline;
+	padding-bottom: $baseline;
+	@include font-size($fontsize600);
+	line-height: 2rem;
+	font-family: $titleseriftypeface;
+	font-style: italic;
+	font-weight: 900;
+	color: $black900;
+	border-bottom-width: 4px;
+	border-bottom-style: $borderstyle;
+
+	@include bp(xl) {
+		padding-bottom: 0;
+	}
+
+	& > span {
+		display: block;
+		@include font-size($fontsize300);
+		line-height: 1rem;
+		font-style: normal;
+		font-weight: 500;
+		color: $black700;
+	}
+}
+
+// Text Elements ===============================================================
+
+// Summary
+
+.story-summary {
+	color: $black800;
+}
+
+.cover-hero .story-summary {
+	color: $black400;
+}
+
+
+// Label, Kicker & Byline
 
 .label,
 time,
@@ -317,6 +358,7 @@ a .timestamp {
 
 .link {
 	text-decoration: none;
+	@include transition(color .3s ease);
 
 	&:hover {
 		text-decoration: underline;
@@ -341,6 +383,38 @@ a .timestamp {
 		@include font-size(32);
 		text-align: center;
 	}
+}
+
+.inverted .link {
+	color: white;
+
+	&:hover {
+		color: $black500;
+	}
+}
+
+.theme-yellow .inverted .link:hover {
+	color: $b-c-yellow;
+}
+
+.theme-blue .inverted .link:hover {
+	color: $b-c-blue;
+}
+
+.theme-red .inverted .link:hover {
+	color: $b-c-red;
+}
+
+.theme-green .inverted .link:hover {
+	color: $b-c-green;
+}
+
+.theme-pink .inverted .link:hover {
+	color: $b-c-pink;
+}
+
+.theme-purple .inverted .link:hover {
+	color: $b-c-purple;
 }
 
 // Timestamp & Meteo ===============================================================
@@ -378,30 +452,3 @@ a .timestamp {
 	line-height: 1em;
 }
 
-// Modules =====================================================================
-
-.module-title {
-	margin-bottom: $baseline;
-	padding-bottom: $baseline;
-	@include font-size($fontsize600);
-	line-height: 2rem;
-	font-family: $titleseriftypeface;
-	font-style: italic;
-	font-weight: 900;
-	color: $black900;
-	border-bottom-width: 4px;
-	border-bottom-style: $borderstyle;
-
-	@include bp(xl) {
-		padding-bottom: 0;
-	}
-
-	& > span {
-		display: block;
-		@include font-size($fontsize300);
-		line-height: 1rem;
-		font-style: normal;
-		font-weight: 500;
-		color: $black700;
-	}
-}
