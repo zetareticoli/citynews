@@ -1,49 +1,33 @@
 @font-face {
     font-family: 'PublicoBannerBold';
-    src: url('assets/webfonts/PublicoBannerBold.eot');
-    src: url('assets/webfonts/PublicoBannerBold.eot') format('embedded-opentype'),
-         url('assets/webfonts/PublicoBannerBold.woff2') format('woff2'),
-         url('assets/webfonts/PublicoBannerBold.woff') format('woff'),
-         url('assets/webfonts/PublicoBannerBold.ttf') format('truetype'),
-         url('assets/webfonts/PublicoBannerBold.svg#PublicoBannerBold') format('svg');
+    src: url('assets/webfonts/PublicoBannerBold.woff2') format('woff2'),
+         url('assets/webfonts/PublicoBannerBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src: url('PublicoText-Italic.eot');
-	src: url('PublicoText-Italic.eot?#iefix') format('embedded-opentype'),
-		url('PublicoText-Italic.woff') format('woff'),
-		url('PublicoText-Italic.ttf')  format('truetype');
+	src: url('PublicoText-Italic.woff') format('woff');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src: url('PublicoText-BoldItalic.eot');
-	src: url('PublicoText-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('PublicoText-BoldItalic.woff') format('woff'),
-		url('PublicoText-BoldItalic.ttf')  format('truetype');
+	src:url('PublicoText-BoldItalic.woff') format('woff');
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src: url('PublicoText-Bold.eot');
-	src: url('PublicoText-Bold.eot?#iefix') format('embedded-opentype'),
-		url('PublicoText-Bold.woff') format('woff'),
-		url('PublicoText-Bold.ttf')  format('truetype');
+	src:url('PublicoText-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src: url('PublicoText-Roman.eot');
-	src: url('PublicoText-Roman.eot?#iefix') format('embedded-opentype'),
-		url('PublicoText-Roman.woff') format('woff'),
-		url('PublicoText-Roman.ttf')  format('truetype');
+	src:url('PublicoText-Roman.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }

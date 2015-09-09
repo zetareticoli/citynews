@@ -424,34 +424,29 @@ table {
    ========================================================================== */
 @font-face {
   font-family: 'PublicoBannerBold';
-  src: url(../webfonts/PublicoBannerBold.eot);
-  src: url(../webfonts/PublicoBannerBold.eot) format("embedded-opentype"), url(../webfonts/PublicoBannerBold.woff2) format("woff2"), url(../webfonts/PublicoBannerBold.woff) format("woff"), url(../webfonts/PublicoBannerBold.ttf) format("truetype"), url(../webfonts/PublicoBannerBold.svg#PublicoBannerBold) format("svg"); }
+  src: url(../webfonts/PublicoBannerBold.woff2) format("woff2"), url(../webfonts/PublicoBannerBold.woff) format("woff"); }
 
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Italic.eot);
-  src: url(../webfonts/PublicoText-Italic.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Italic.woff) format("woff"), url(../webfonts/PublicoText-Italic.ttf) format("truetype");
+  src: url(../webfonts/PublicoText-Italic.woff) format("woff");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-BoldItalic.eot);
-  src: url(../webfonts/PublicoText-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-BoldItalic.woff) format("woff"), url(../webfonts/PublicoText-BoldItalic.ttf) format("truetype");
+  src: url(../webfonts/PublicoText-BoldItalic.woff) format("woff");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Bold.eot);
-  src: url(../webfonts/PublicoText-Bold.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Bold.woff) format("woff"), url(../webfonts/PublicoText-Bold.ttf) format("truetype");
+  src: url(../webfonts/PublicoText-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Roman.eot);
-  src: url(../webfonts/PublicoText-Roman.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Roman.woff) format("woff"), url(../webfonts/PublicoText-Roman.ttf) format("truetype");
+  src: url(../webfonts/PublicoText-Roman.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 
