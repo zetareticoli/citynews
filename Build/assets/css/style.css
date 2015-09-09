@@ -1164,7 +1164,7 @@ ol, ul {
   padding: 16px 0; }
 
 .section {
-  padding: 16px 0; }
+  padding: 0 0 16px; }
 
 /* ==========================================================================
   Flexbox
@@ -1872,7 +1872,7 @@ ol, ul {
   margin-bottom: 8px; }
 
 .story-subheading {
-  margin-bottom: 0; }
+  margin-bottom: 8px; }
 
 .story-summary {
   margin-bottom: 16px; }
@@ -1890,6 +1890,8 @@ ol, ul {
     @media (min-width: 62.5em) {
       .hero-story .story-media {
         margin-bottom: 16px; } }
+    .hero-story .story-media img {
+      width: 100%; }
   .hero-story .story-header {
     padding: 0 8px; }
     @media (min-width: 46.25em) {
@@ -1940,6 +1942,8 @@ ol, ul {
       @media (min-width: 75em) {
         .hero-story.cover-hero .story-heading {
           padding: 0 24px; } }
+    .hero-story.cover-hero .story-footer .story-subheading:last-child {
+      margin-bottom: 16px; }
 
 .featured-story .story-media {
   width: 50%;
@@ -2017,15 +2021,8 @@ ol, ul {
   overflow: hidden; }
   .cover-hero .sublink:last-child {
     border: 0; }
-  @media (min-width: 46.25em) {
-    .cover-hero .sublink {
-      border-bottom: 0;
-      border-right: 1px solid #37474f;
-      padding-right: 16px;
-      margin-right: 16px; }
-      .cover-hero .sublink:last-child {
-        padding-right: 0;
-        margin-right: 0; } }
+  .cover-hero .sublink .link {
+    width: 100%; }
   .cover-hero .sublink .kicker {
     display: block; }
 
@@ -2040,9 +2037,20 @@ ol, ul {
   width: 40px;
   float: left;
   margin-right: 8px; }
-  @media (min-width: 46.25em) {
-    .sublink-media {
-      float: right; } }
+
+@media (min-width: 46.25em) {
+  .full-cover .sublink {
+    border-bottom: 0;
+    border-right: 1px solid #37474f;
+    padding-right: 16px;
+    margin-right: 16px; }
+    .full-cover .sublink:last-child {
+      padding-right: 0;
+      margin-right: 0; } }
+@media (min-width: 46.25em) {
+  .full-cover .sublink .sublink-media {
+    float: right;
+    margin: 0 0 0 8px; } }
 
 .latest-stories h6 {
   text-transform: uppercase; }

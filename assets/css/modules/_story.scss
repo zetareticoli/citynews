@@ -18,7 +18,7 @@
 }
 
 .story-subheading {
-	margin-bottom: 0;
+	margin-bottom: $baseline;
 }
 
 .story-summary {
@@ -49,6 +49,10 @@
 
 		@include bp(l) {
 			margin-bottom: $baseline * 2;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 
@@ -122,6 +126,12 @@
 
 			@include bp(xl) {
 				padding: 0 $baseline * 3;
+			}
+		}
+
+		.story-footer .story-subheading {
+			&:last-child {
+				margin-bottom: 16px;
 			}
 		}
 	}
@@ -239,16 +249,8 @@
 		border: 0;
 	}
 
-	@include bp(m) {
-		border-bottom: 0;
-		border-right: 1px solid $bluegrey900;
-		padding-right: $baseline * 2;
-		margin-right: $baseline * 2;
-
-		&:last-child {
-			padding-right: 0;
-			margin-right: 0;
-		}
+	.link {
+		width: 100%;
 	}
 
 	.kicker {
@@ -266,10 +268,31 @@
 	width: 40px;
 	float: left;
 	margin-right: $baseline;
+}
 
+// Full cover only styles
+
+
+.full-cover .sublink {
 	@include bp(m) {
-		float: right;
+		border-bottom: 0;
+		border-right: 1px solid $bluegrey900;
+		padding-right: $baseline * 2;
+		margin-right: $baseline * 2;
+
+		&:last-child {
+			padding-right: 0;
+			margin-right: 0;
+		}
 	}
+
+	.sublink-media {
+		@include bp(m) {
+			float: right;
+			margin: 0 0 0 $baseline;
+		}
+	}
+
 }
 
 // Boh ===============================================================
