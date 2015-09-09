@@ -281,6 +281,11 @@ strong {
 	color: $black800;
 }
 
+.hero-story .story-summary {
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
+}
+
 .cover-hero .story-summary {
 	color: $black400;
 }

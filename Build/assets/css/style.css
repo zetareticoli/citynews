@@ -624,7 +624,7 @@ strong {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "Publico", Georgia, "Times New Roman", serif;
+  font-family: "Publico Banner", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 900;
   color: #424242;
@@ -644,6 +644,11 @@ strong {
 
 .story-summary {
   color: #616161; }
+
+.hero-story .story-summary {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5rem; }
 
 .cover-hero .story-summary {
   color: #e0e0e0; }
@@ -1898,7 +1903,9 @@ ol, ul {
       width: 100%;
       height: 100%; }
     .hero-story.cover-hero .story-footer {
-      padding: 8px 0; }
+      padding: 8px 0;
+      margin-right: 8px;
+      margin-left: 8px; }
       @media (min-width: 46.25em) {
         .hero-story.cover-hero .story-footer {
           margin-right: 16px;
@@ -1923,13 +1930,13 @@ ol, ul {
           height: 100%;
           background-image: linear-gradient(-180deg, rgba(135, 147, 153, 0.35) 0%, rgba(94, 103, 107, 0.5) 48%, #263238 100%); } }
     .hero-story.cover-hero .story-heading {
-      padding: 8px; }
+      padding: 0 8px; }
       @media (min-width: 46.25em) {
         .hero-story.cover-hero .story-heading {
           position: absolute;
           bottom: 0;
           z-index: 1;
-          padding: 16px; } }
+          padding: 0 16px; } }
       @media (min-width: 75em) {
         .hero-story.cover-hero .story-heading {
           padding: 0 24px; } }
@@ -1985,12 +1992,57 @@ ol, ul {
   margin-right: 8px; }
 
 .sublinks .sublink {
-  font-weight: 700;
   margin-bottom: 8px;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1rem;
   font-size: 14px;
   font-size: 0.875rem; }
-.sublinks .sublink .link {
-  color: #757575; }
+
+.sublink .link {
+  color: #757575;
+  text-decoration: none; }
+
+.inverted .sublink .link {
+  color: white; }
+
+.cover-hero .sublinks {
+  border-top: 1px solid #37474f;
+  padding-top: 8px; }
+
+.cover-hero .sublink {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #37474f;
+  overflow: hidden; }
+  .cover-hero .sublink:last-child {
+    border: 0; }
+  @media (min-width: 46.25em) {
+    .cover-hero .sublink {
+      border-bottom: 0;
+      border-right: 1px solid #37474f;
+      padding-right: 16px;
+      margin-right: 16px; }
+      .cover-hero .sublink:last-child {
+        padding-right: 0;
+        margin-right: 0; } }
+  .cover-hero .sublink .kicker {
+    display: block; }
+
+.has-flex .cover-hero .sublinks .l-row--item-span-1 {
+  -webkit-box-flex: 1 1 0;
+  -moz-box-flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0; }
+
+.sublink-media {
+  width: 40px;
+  float: left;
+  margin-right: 8px; }
+  @media (min-width: 46.25em) {
+    .sublink-media {
+      float: right; } }
 
 .latest-stories h6 {
   text-transform: uppercase; }

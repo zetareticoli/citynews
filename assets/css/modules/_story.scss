@@ -74,6 +74,8 @@
 
 		.story-footer {
 			padding: $baseline 0;
+			margin-right: $baseline;
+			margin-left: $baseline;
 
 			@include bp(m) {
 				margin-right: $baseline * 2;
@@ -109,13 +111,13 @@
 		}
 
 		.story-heading {
-			padding: $baseline;
+			padding: 0 $baseline;
 
 			@include bp(m) {
 				position: absolute;
 				bottom: 0;
 				z-index: 1;
-				padding: $baseline * 2;
+				padding: 0 $baseline * 2;
 			}
 
 			@include bp(xl) {
@@ -204,15 +206,73 @@
 .sublinks {
 
 	.sublink {
-		font-weight: 700;
-		margin-bottom: $gutterwidth / 2;
+		margin-bottom: $baseline;
+		font-family: $headingstypeface;
+		@include font-size($fontsize200);
+		line-height: 1.1rem;
 		@include font-size($fontsize200);
 	}
+}
 
-	.sublink .link {
-		color: $black700;
+.sublink .link {
+	color: $black700;
+	text-decoration: none;
+}
+
+.inverted .sublink .link {
+	color: white;
+}
+
+// Cover hero & preview hero sublink
+
+.cover-hero .sublinks {
+	border-top: 1px solid $bluegrey900;
+	padding-top: $baseline;
+}
+
+.cover-hero .sublink {
+	padding-bottom: $baseline;
+	border-bottom: 1px solid $bluegrey900;
+	overflow: hidden;
+
+	&:last-child {
+		border: 0;
+	}
+
+	@include bp(m) {
+		border-bottom: 0;
+		border-right: 1px solid $bluegrey900;
+		padding-right: $baseline * 2;
+		margin-right: $baseline * 2;
+
+		&:last-child {
+			padding-right: 0;
+			margin-right: 0;
+		}
+	}
+
+	.kicker {
+		display: block;
 	}
 }
+
+.has-flex .cover-hero .sublinks .l-row--item-span-1 {
+	@include flex(1 1 0);
+}
+
+// Sublink Media
+
+.sublink-media {
+	width: 40px;
+	float: left;
+	margin-right: $baseline;
+
+	@include bp(m) {
+		float: right;
+	}
+}
+
+// Boh ===============================================================
 
 .latest-stories {
 	h6 {
