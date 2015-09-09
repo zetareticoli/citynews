@@ -72,6 +72,20 @@
 			height: 100%;
 		}
 
+		.story-footer {
+			padding: $baseline 0;
+
+			@include bp(m) {
+				margin-right: $baseline * 2;
+				margin-left: $baseline * 2;
+			}
+
+			@include bp(xl) {
+				margin-right: $baseline * 3;
+				margin-left: $baseline * 3;
+			}
+		}
+
 		.story-media {
 			position: relative;
 
@@ -102,6 +116,10 @@
 				bottom: 0;
 				z-index: 1;
 				padding: $baseline * 2;
+			}
+
+			@include bp(xl) {
+				padding: 0 $baseline * 3;
 			}
 		}
 	}

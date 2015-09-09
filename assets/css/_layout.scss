@@ -391,7 +391,6 @@ ol, ul {
 .headlines-main {
 	@include max-bp(s) {
 		.newslist-module,
-		.story-footer,
 		.story-summary,
 		.story-subheading {
 			display: none;
