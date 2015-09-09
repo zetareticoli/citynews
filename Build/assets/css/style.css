@@ -1824,14 +1824,8 @@ ol, ul {
   Story
   ========================================================================== */
 .story {
-  *zoom: 1;
   width: 100%;
   margin-bottom: 8px; }
-  .story:before, .story:after {
-    content: " ";
-    display: table; }
-  .story:after {
-    clear: both; }
   @media (min-width: 62.5em) {
     .story {
       margin-bottom: 16px; } }
@@ -1868,6 +1862,36 @@ ol, ul {
   .hero-story.inverted .story-heading a,
   .hero-story.inverted .story-summary {
     color: #fff; }
+  .hero-story.cover-hero {
+    position: relative; }
+    .hero-story.cover-hero .story-header {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      height: 100%; }
+    .hero-story.cover-hero .story-media {
+      position: relative; }
+      .hero-story.cover-hero .story-media img {
+        vertical-align: baseline; }
+      @media (min-width: 46.25em) {
+        .hero-story.cover-hero .story-media:after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(-180deg, rgba(135, 147, 153, 0.35) 0%, rgba(94, 103, 107, 0.5) 48%, #263238 100%); } }
+    .hero-story.cover-hero .story-heading {
+      padding: 8px; }
+      @media (min-width: 46.25em) {
+        .hero-story.cover-hero .story-heading {
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+          padding: 16px; } }
 
 .featured-story .story-media {
   width: 50%;

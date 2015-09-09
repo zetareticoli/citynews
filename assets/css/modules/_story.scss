@@ -1,7 +1,6 @@
 // Global Styles ===============================================================
 
 .story {
-	@include clearfix;
 	width: 100%;
 	margin-bottom: $baseline;
 
@@ -66,6 +65,52 @@
 		.story-heading a,
 		.story-summary {
 			color: #fff;
+		}
+	}
+
+	// cover hero
+
+	&.cover-hero {
+		position: relative;
+
+		.story-header {
+			position: relative;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.story-media {
+			position: relative;
+
+			img {
+				vertical-align: baseline;
+			}
+
+			@include bp(m) {
+				&:after {
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+					content: '';
+					width: 100%;
+					height: 100%;
+					background-image: linear-gradient(-180deg, rgba(135,147,153,0.35) 0%, rgba(94,103,107,0.50) 48%, #263238 100%);
+				}	
+			}
+		}
+
+		.story-heading {
+			padding: $baseline;
+
+			@include bp(m) {
+				position: absolute;
+				bottom: 0;
+				z-index: 1;
+				padding: $baseline * 2;
+			}
 		}
 	}
 }
