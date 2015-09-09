@@ -422,11 +422,44 @@ table {
 /* ==========================================================================
    Typography
    ========================================================================== */
+@font-face {
+  font-family: 'PublicoBannerBold';
+  src: url(../webfonts/PublicoBannerBold.eot);
+  src: url(../webfonts/PublicoBannerBold.eot) format("embedded-opentype"), url(../webfonts/PublicoBannerBold.woff2) format("woff2"), url(../webfonts/PublicoBannerBold.woff) format("woff"), url(../webfonts/PublicoBannerBold.ttf) format("truetype"), url(../webfonts/PublicoBannerBold.svg#PublicoBannerBold) format("svg"); }
+
+@font-face {
+  font-family: 'PublicoText';
+  src: url(../webfonts/PublicoText-Italic.eot);
+  src: url(../webfonts/PublicoText-Italic.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Italic.woff) format("woff"), url(../webfonts/PublicoText-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PublicoText';
+  src: url(../webfonts/PublicoText-BoldItalic.eot);
+  src: url(../webfonts/PublicoText-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-BoldItalic.woff) format("woff"), url(../webfonts/PublicoText-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PublicoText';
+  src: url(../webfonts/PublicoText-Bold.eot);
+  src: url(../webfonts/PublicoText-Bold.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Bold.woff) format("woff"), url(../webfonts/PublicoText-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PublicoText';
+  src: url(../webfonts/PublicoText-Roman.eot);
+  src: url(../webfonts/PublicoText-Roman.eot?#iefix) format("embedded-opentype"), url(../webfonts/PublicoText-Roman.woff) format("woff"), url(../webfonts/PublicoText-Roman.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
 html {
   font-size: 100%; }
 
 body {
-  font-family: "Publico Text", Georgia, "Times New Roman", serif;
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -522,7 +555,7 @@ ol,
 ul,
 dl,
 address {
-  font-family: "Publico Text", Georgia, "Times New Roman", serif;
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 16px;
@@ -624,7 +657,7 @@ strong {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "Publico Banner", Georgia, "Times New Roman", serif;
+  font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 900;
   color: #424242;
@@ -701,7 +734,7 @@ a .timestamp {
 
 .kicker {
   color: #bdbdbd;
-  font-family: "Publico Text", Georgia, "Times New Roman", serif;
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 700; }
 
@@ -728,7 +761,7 @@ a .timestamp {
 
 .section-title {
   color: #424242;
-  font-family: "Publico Text", Georgia, "Times New Roman", serif;
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 900; }
@@ -1308,7 +1341,7 @@ ol, ul {
     .header .header-brand .network {
       display: none;
       width: auto;
-      font-family: "Publico Text", Georgia, "Times New Roman", serif;
+      font-family: "PublicoText", Georgia, "Times New Roman", serif;
       font-weight: 900;
       font-size: 12px;
       font-size: 0.75rem;
@@ -1557,7 +1590,7 @@ ol, ul {
     top: 13px; } }
 .secondary-nav .nav-item {
   margin-right: 16px;
-  font-family: "Publico Text", Georgia, "Times New Roman", serif;
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-size: 16px;
   font-size: 1rem; }
   @media (min-width: 75em) {
@@ -1589,7 +1622,7 @@ ol, ul {
     clear: left; }
   .mobile-nav .nav-item {
     border-bottom: 1px solid #212121;
-    font-family: "Publico Text", Georgia, "Times New Roman", serif;
+    font-family: "PublicoText", Georgia, "Times New Roman", serif;
     font-weight: 700;
     font-size: 20px;
     font-size: 1.25rem; }
@@ -1648,7 +1681,7 @@ ol, ul {
       color: #616161;
       font-size: 12px;
       font-size: 0.75rem;
-      font-family: "Publico Text", Georgia, "Times New Roman", serif;
+      font-family: "PublicoText", Georgia, "Times New Roman", serif;
       text-transform: uppercase;
       margin-bottom: 8px; }
   .nav-children .alph-group {
@@ -1656,7 +1689,7 @@ ol, ul {
     padding: 8px 0; }
     .nav-children .alph-group li a {
       color: white;
-      font-family: "Publico Text", Georgia, "Times New Roman", serif;
+      font-family: "PublicoText", Georgia, "Times New Roman", serif;
       display: block;
       padding: 4px 0; }
   .nav-children .alph-item {
@@ -1667,7 +1700,7 @@ ol, ul {
       padding: 4px 0;
       font-size: 14px;
       font-size: 0.875rem;
-      font-family: "Publico Text", Georgia, "Times New Roman", serif;
+      font-family: "PublicoText", Georgia, "Times New Roman", serif;
       line-height: 0.5em;
       color: white;
       text-align: center;
@@ -1710,7 +1743,7 @@ ol, ul {
       .sliding-nav .nav-item {
         float: left;
         display: inline;
-        font-family: "Publico Text", Georgia, "Times New Roman", serif;
+        font-family: "PublicoText", Georgia, "Times New Roman", serif;
         font-weight: 700;
         font-size: 20px;
         font-size: 1.25rem;
