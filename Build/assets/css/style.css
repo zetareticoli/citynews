@@ -566,8 +566,8 @@ strong {
       line-height: 2rem; } }
 
 .hero-story .story-heading {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 2rem; }
   @media (min-width: 46.25em) {
     .hero-story .story-heading {
@@ -590,28 +590,29 @@ strong {
     font-size: 3rem;
     line-height: 3rem; } }
 
-.story-subheading {
-  margin-bottom: 8px; }
-  .story-subheading:before {
-    display: inline-block;
-    content: '';
-    width: 12px;
-    height: 12px;
-    position: relative;
-    margin-right: 8px;
-    vertical-align: middle; }
-  .story-subheading .link {
-    color: #78909c; }
+.story-subheading:before {
+  display: inline-block;
+  content: '';
+  position: relative;
+  margin-right: 8px;
+  vertical-align: middle;
+  top: -1px; }
+  @media (min-width: 46.25em) {
+    .story-subheading:before {
+      width: 8px;
+      height: 8px; } }
+  @media (min-width: 62.5em) {
+    .story-subheading:before {
+      width: 12px;
+      height: 12px;
+      top: -2px; } }
+.story-subheading .link {
+  color: #607d8b; }
 
 .hero-story .story-subheading {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.5rem; }
-  @media (min-width: 62.5em) {
-    .hero-story .story-subheading {
-      font-size: 21px;
-      font-size: 1.3125rem;
-      line-height: 2rem; } }
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 2rem; }
   @media (min-width: 75em) {
     .hero-story .story-subheading {
       font-size: 24px;
@@ -686,12 +687,6 @@ a .timestamp {
   .story-heading .link:hover {
     color: #212121;
     text-decoration: none; }
-
-.story-subheading .link {
-  color: #757575; }
-
-.story-subheading:hover .link {
-  color: #757575; }
 
 .section-title {
   color: #424242;
@@ -1843,9 +1838,11 @@ ol, ul {
   .story .story-media {
     margin-bottom: 8px; }
 
-.story-heading,
-.story-subheading {
+.story-heading {
   margin-bottom: 8px; }
+
+.story-subheading {
+  margin-bottom: 0; }
 
 .story-summary {
   margin-bottom: 16px; }
@@ -1860,11 +1857,14 @@ ol, ul {
   background-color: #eceff1; }
   .hero-story .story-media {
     margin-bottom: 8px; }
+    @media (min-width: 62.5em) {
+      .hero-story .story-media {
+        margin-bottom: 16px; } }
   .hero-story .story-header {
     padding: 0 8px; }
     @media (min-width: 46.25em) {
       .hero-story .story-header {
-        padding: 0 16px 8px; } }
+        padding: 0 16px 16px; } }
   .hero-story.inverted .story-heading a,
   .hero-story.inverted .story-summary {
     color: #fff; }

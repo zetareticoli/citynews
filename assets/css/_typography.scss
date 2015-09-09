@@ -179,7 +179,7 @@ strong {
 // Hero 
 
 .hero-story .story-heading {
-	@include font-size($fontsize600);
+	@include font-size($fontsize700);
 	line-height: 2rem;
 
 	@include bp(m) {
@@ -210,31 +210,35 @@ strong {
 // Subheadings
 
 .story-subheading {
-	margin-bottom: $baseline;
 	
 	&:before {
 		display: inline-block;
 		content: '';
-		width: 12px;
-		height: 12px;
 		position: relative;
 		margin-right: $gutterwidth / 2;
 		vertical-align: middle;
+		top: -1px;
+
+		@include bp(m) {
+			width: 8px;
+			height: 8px;
+		}
+
+		@include bp(l) {
+			width: 12px;
+			height: 12px;
+			top: -2px;
+		}
 	}
 	
 	& .link {
-		color: $bluegrey500;
+		color: $bluegrey600;
 	}
 }
 
 .hero-story .story-subheading {
-	@include font-size($fontsize400);
-	line-height: 1.5rem;
-
-	@include bp(l) {
-		@include font-size($fontsize500);
-		line-height: 2rem;
-	}
+	@include font-size($fontsize500);
+	line-height: 2rem;
 
 	@include bp(xl) {
 		@include font-size($fontsize600);
@@ -327,16 +331,6 @@ a .timestamp {
 		text-decoration: none;
 	}
 }
-
-.story-subheading .link {
-	color: $black700;
-}
-
-.story-subheading:hover .link {
-	color: $black700;
-}
-
-
 
 .section-title {
 	color: $black900;
