@@ -151,7 +151,7 @@ ol, ul {
 		}
 
 		.item-span-10 {
-			@include flex(10 0 600px);
+			@include flex(10 0 auto);
 		}
 
 		.centered-items {
