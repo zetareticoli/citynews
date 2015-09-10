@@ -63,6 +63,8 @@
 	background-color: $bluegrey100;
 
 	.story-media {
+		width: 100%;
+		max-width: none;
 
 		@include bp(l) {
 			margin-bottom: $baseline * 2;
