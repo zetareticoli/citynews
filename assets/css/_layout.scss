@@ -125,6 +125,34 @@ ol, ul {
 		.item-span-3 {
 			@include flex(3 1 auto);
 		}
+		
+		.item-span-4 {
+			@include flex(4 1 auto);
+		}
+		
+		.item-span-5 {
+			@include flex(5 1 auto);
+		}
+		
+		.item-span-6 {
+			@include flex(6 1 auto);
+		}
+		
+		.item-span-7 {
+			@include flex(7 1 auto);
+		}
+
+		.item-span-8 {
+			@include flex(8 1 auto);
+		}
+
+		.item-span-9 {
+			@include flex(9 1 auto);
+		}
+
+		.item-span-10 {
+			@include flex(10 0 600px);
+		}
 
 		.centered-items {
 			-webkit-justify-content: center;

@@ -49,20 +49,18 @@
 
 .slots-headlines {
 	@include flexbox;
-	margin-bottom: 0;
 
 	.l-list {
 		margin: 0 auto;
-		@include bp(xl) {
-			padding: $gutterwidth 0;
-		}
 	}
 }
 
 .slots-headlines {
 	.l-list,
 	.l-list-item {
+		
 		@include flex-flow(row nowrap);
+
 		@include bp(l) {
 			@include flex-flow(column nowrap);
 		}
