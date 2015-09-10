@@ -9,20 +9,38 @@
 	}
 
 	.story-media {
+		width: 30%;
+		max-width: 200px;
+		float: left;
+		margin-right: $baseline;
+
+		@include bp(m) {
+			width: auto;
+			max-width: none;
+			float: none;
+			margin: 0 0 $baseline 0;
+		}
+	}
+
+	.story-heading {
 		margin-bottom: $baseline;
+	}
+
+	.story-subheading {
+		margin-bottom: $baseline;
+	}
+
+	.story-summary {
+		margin-bottom: $gutterwidth;
 	}
 }
 
-.story-heading {
-	margin-bottom: $baseline;
-}
-
-.story-subheading {
-	margin-bottom: $baseline;
-}
-
-.story-summary {
-	margin-bottom: $gutterwidth;
+@include max-bp(s) {
+	.story-summary,
+	.story-subheading,
+	.featured-story .story-footer {
+		display: none;
+	}
 }
 
 // Themes ===============================================================
@@ -45,6 +63,7 @@
 	background-color: $bluegrey100;
 
 	.story-media {
+		width: auto;
 		margin-bottom: $baseline;
 
 		@include bp(l) {
@@ -140,12 +159,13 @@
 // featured
 
 .featured-story {
+	@include clearfix;
 	
-	.story-media {
-		width: 50%;
-		float: left;
-		margin-right: $gutterwidth / 2;
+
+	&.featured-lg {
+
 	}
+
 }
 
 // list

@@ -565,18 +565,23 @@ small {
 strong {
   font-weight: 700; }
 
+.story-heading {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.25rem; }
+
 .latestnews-module .story-heading {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1rem; }
 
 .featured-story.featured-sm .story-heading {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5rem; }
 .featured-story.featured-mid .story-heading {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5rem; }
   @media (min-width: 46.25em) {
     .featured-story.featured-mid .story-heading {
@@ -584,9 +589,9 @@ strong {
       font-size: 1.5rem;
       line-height: 2rem; } }
 .featured-story.featured-lg .story-heading {
-  font-size: 21px;
-  font-size: 1.3125rem;
-  line-height: 1.5rem; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.25rem; }
   @media (min-width: 46.25em) {
     .featured-story.featured-lg .story-heading {
       font-size: 28px;
@@ -1894,17 +1899,28 @@ ol, ul {
     .story {
       margin-bottom: 16px; } }
   .story .story-media {
+    width: 30%;
+    max-width: 200px;
+    float: left;
+    margin-right: 8px; }
+    @media (min-width: 46.25em) {
+      .story .story-media {
+        width: auto;
+        max-width: none;
+        float: none;
+        margin: 0 0 8px 0; } }
+  .story .story-heading {
     margin-bottom: 8px; }
+  .story .story-subheading {
+    margin-bottom: 8px; }
+  .story .story-summary {
+    margin-bottom: 16px; }
 
-.story-heading {
-  margin-bottom: 8px; }
-
-.story-subheading {
-  margin-bottom: 8px; }
-
-.story-summary {
-  margin-bottom: 16px; }
-
+@media (max-width: 46.188em) {
+  .story-summary,
+  .story-subheading,
+  .featured-story .story-footer {
+    display: none; } }
 .story.inverted .story-header {
   padding: 16px 16px 0; }
 .story.inverted .story-footer {
@@ -1914,6 +1930,7 @@ ol, ul {
   position: relative;
   background-color: #eceff1; }
   .hero-story .story-media {
+    width: auto;
     margin-bottom: 8px; }
     @media (min-width: 62.5em) {
       .hero-story .story-media {
@@ -1974,10 +1991,13 @@ height: 100%;*/ }
     .hero-story.cover-hero .story-footer .story-subheading:last-child {
       margin-bottom: 16px; }
 
-.featured-story .story-media {
-  width: 50%;
-  float: left;
-  margin-right: 8px; }
+.featured-story {
+  *zoom: 1; }
+  .featured-story:before, .featured-story:after {
+    content: " ";
+    display: table; }
+  .featured-story:after {
+    clear: both; }
 
 .list-story {
   *zoom: 1; }
