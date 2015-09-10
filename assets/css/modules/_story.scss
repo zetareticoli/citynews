@@ -63,8 +63,6 @@
 	background-color: $bluegrey100;
 
 	.story-media {
-		width: auto;
-		margin-bottom: $baseline;
 
 		@include bp(l) {
 			margin-bottom: $baseline * 2;
@@ -93,8 +91,8 @@
 			padding: 0;
 			width: 100%;/*
 			height: 100%;*/
-		}
 
+		}
 		.story-footer {
 			padding: $baseline 0;
 			margin-right: $baseline;
