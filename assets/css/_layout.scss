@@ -155,6 +155,15 @@ ol, ul {
 	list-style: none;
 }
 
+.l-row-item,
+.l-list-item {
+	margin-bottom: $baseline;
+
+	@include bp(m) {
+		margin-bottom: $baseline * 2;
+	}
+}
+
 /* ==========================================================================
   Site Header
   ========================================================================== */
@@ -406,5 +415,11 @@ ol, ul {
 .headlines-main-list {
 	@include bp(l) {
 		@include flexbox;
+	}
+
+	.l-row-item:last-child {
+		.l-list-item:last-child {
+			margin-bottom: 0;
+		}
 	}
 }

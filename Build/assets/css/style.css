@@ -1277,6 +1277,14 @@ ol, ul {
   padding: 0;
   list-style: none; }
 
+.l-row-item,
+.l-list-item {
+  margin-bottom: 8px; }
+  @media (min-width: 46.25em) {
+    .l-row-item,
+    .l-list-item {
+      margin-bottom: 16px; } }
+
 /* ==========================================================================
   Site Header
   ========================================================================== */
@@ -1486,6 +1494,8 @@ ol, ul {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; } }
+.headlines-main-list .l-row-item:last-child .l-list-item:last-child {
+  margin-bottom: 0; }
 
 /* ==========================================================================
   Global Styles
@@ -1888,10 +1898,14 @@ ol, ul {
   ========================================================================== */
 .story {
   width: 100%;
-  margin-bottom: 8px; }
-  @media (min-width: 62.5em) {
-    .story {
-      margin-bottom: 16px; } }
+  border-bottom: 1px solid #e0e0e0;
+  	/*
+  	margin-bottom: $baseline;
+  
+  	@include bp(l) {
+  		margin-bottom: $baseline * 2;
+  	}
+  	*/ }
   .story .story-media {
     width: 30%;
     max-width: 200px;

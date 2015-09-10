@@ -2,11 +2,14 @@
 
 .story {
 	width: 100%;
+	border-bottom: 1px solid $bordercolor;
+	/*
 	margin-bottom: $baseline;
 
 	@include bp(l) {
 		margin-bottom: $baseline * 2;
 	}
+	*/
 
 	.story-media {
 		width: 30%;
