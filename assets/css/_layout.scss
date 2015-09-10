@@ -434,6 +434,14 @@ ol, ul {
 		display: none;
 	}
 
+	// Hide Today module on mobile and tablet devices
+	> .l-list > .l-list-item:first-child {
+		display: none;
+
+		@include bp(l) {
+			display: block;
+		}
+	}
 }
 
 .headlines-main-list {

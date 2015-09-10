@@ -1522,6 +1522,11 @@ ol, ul {
 @media (max-width: 46.188em) {
   .headlines-aside {
     display: none; } }
+.headlines-aside > .l-list > .l-list-item:first-child {
+  display: none; }
+  @media (min-width: 62.5em) {
+    .headlines-aside > .l-list > .l-list-item:first-child {
+      display: block; } }
 
 @media (min-width: 62.5em) {
   .headlines-main-list {
