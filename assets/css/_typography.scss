@@ -303,15 +303,9 @@ time,
 	@include font-size(16);
 }
 
-.byline,
-.timestamp,
-a .byline,
-a .timestamp {
-	color: #999;
-}
-
 .byline {
-	margin-bottom: $gutterwidth / 8;
+	margin-bottom: 0;
+	line-height: .875rem;
 }
 
 .label {

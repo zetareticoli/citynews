@@ -692,14 +692,9 @@ time,
   font-size: 16px;
   font-size: 1rem; }
 
-.byline,
-.timestamp,
-a .byline,
-a .timestamp {
-  color: #999; }
-
 .byline {
-  margin-bottom: 2px; }
+  margin-bottom: 0;
+  line-height: .875rem; }
 
 .label {
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
