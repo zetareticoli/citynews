@@ -2056,8 +2056,7 @@ height: 100%;*/ }
 
 .cover-hero .sublink {
   padding-bottom: 8px;
-  border-bottom: 1px solid #37474f;
-  overflow: hidden; }
+  border-bottom: 1px solid #37474f; }
   .cover-hero .sublink:last-child {
     border: 0; }
   .cover-hero .sublink .link {
@@ -2065,7 +2064,7 @@ height: 100%;*/ }
   .cover-hero .sublink .kicker {
     display: block; }
 
-.has-flex .cover-hero .sublinks .l-row--item-span-1 {
+.has-flex .full-cover .sublinks .l-row--item-span-1 {
   -webkit-box-flex: 1 1 0;
   -moz-box-flex: 1 1 0;
   -webkit-flex: 1 1 0;

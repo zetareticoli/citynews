@@ -261,7 +261,6 @@
 .cover-hero .sublink {
 	padding-bottom: $baseline;
 	border-bottom: 1px solid $bluegrey900;
-	overflow: hidden;
 
 	&:last-child {
 		border: 0;
@@ -276,7 +275,7 @@
 	}
 }
 
-.has-flex .cover-hero .sublinks .l-row--item-span-1 {
+.has-flex .full-cover .sublinks .l-row--item-span-1 {
 	@include flex(1 1 0);
 }
 
