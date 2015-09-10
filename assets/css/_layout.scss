@@ -114,18 +114,15 @@ ol, ul {
 			@include flexbox;
 		}
 
-		.l-list--item-span-1,
-		.l-row--item-span-1 {
+		.item-span-1 {
 			@include flex(1 1 auto);
 		}
 
-		.l-list--item-span-2,
-		.l-row--item-span-2 {
+		.item-span-2 {
 			@include flex(2 1 auto);
 		}
 
-		.l-list--item-span-3,
-		.l-row--item-span-3 {
+		.item-span-3 {
 			@include flex(3 1 auto);
 		}
 
@@ -155,12 +152,11 @@ ol, ul {
 	list-style: none;
 }
 
-.l-row-item,
-.l-list-item {
-	margin-bottom: $baseline;
+.slice-item {
+	padding-bottom: $baseline;
 
 	@include bp(m) {
-		margin-bottom: $baseline * 2;
+		padding-bottom: $baseline * 3;
 	}
 }
 
