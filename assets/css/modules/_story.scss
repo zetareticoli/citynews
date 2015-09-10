@@ -244,13 +244,12 @@
 	}
 }
 
-.sublink .link {
-	color: $black700;
-	text-decoration: none;
-}
-
 .inverted .sublink .link {
 	color: white;
+}
+
+.sublink .kicker {
+	margin-right: $baseline / 2;
 }
 
 // Cover hero & preview hero sublink
@@ -274,6 +273,7 @@
 
 	.kicker {
 		display: block;
+		margin-right: 0;
 	}
 }
 

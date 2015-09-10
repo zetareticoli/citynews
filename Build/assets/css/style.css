@@ -745,14 +745,13 @@ time,
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   transition: color 0.3s ease; }
-  .link:hover {
-    text-decoration: underline; }
 
-.story-heading .link {
+.story-heading .link,
+.sublink .link {
   color: #424242; }
-  .story-heading .link:hover {
-    color: #212121;
-    text-decoration: none; }
+  .story-heading .link:hover,
+  .sublink .link:hover {
+    color: #212121; }
 
 .section-title {
   color: #424242;
@@ -2046,12 +2045,11 @@ height: 100%;*/ }
   font-size: 14px;
   font-size: 0.875rem; }
 
-.sublink .link {
-  color: #757575;
-  text-decoration: none; }
-
 .inverted .sublink .link {
   color: white; }
+
+.sublink .kicker {
+  margin-right: 4px; }
 
 .cover-hero .sublinks {
   border-top: 1px solid #37474f;
@@ -2065,7 +2063,8 @@ height: 100%;*/ }
   .cover-hero .sublink .link {
     width: 100%; }
   .cover-hero .sublink .kicker {
-    display: block; }
+    display: block;
+    margin-right: 0; }
 
 .has-flex .full-cover .sublinks .l-row--item-span-1 {
   -webkit-box-flex: 1 1 0;
@@ -2251,8 +2250,8 @@ height: 100%;*/ }
   border-color: #ffbe26; }
 .theme-yellow .theme-color {
   color: #ffbe26; }
-  .theme-yellow .theme-color.label {
-    color: #f2aa00; }
+  .theme-yellow .theme-color.label, .theme-yellow .theme-color.kicker {
+    color: #ffb507; }
 .theme-yellow .theme-header {
   background-color: #ffbe26; }
   @media (min-width: 62.5em) {

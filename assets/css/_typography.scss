@@ -370,18 +370,14 @@ time,
 .link {
 	text-decoration: none;
 	@include transition(color .3s ease);
-
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
-.story-heading .link {
+.story-heading .link,
+.sublink .link {
 	color: $black900;
 
 	&:hover {
 		color: $black1000;
-		text-decoration: none;
 	}
 }
 
