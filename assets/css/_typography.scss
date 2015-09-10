@@ -272,8 +272,7 @@ strong {
 	@include font-size($fontsize600);
 	line-height: 2rem;
 	font-family: $titleseriftypeface;
-	font-style: italic;
-	font-weight: 900;
+	font-weight: normal;
 	color: $black900;
 	
 	@include bp(xl) {
