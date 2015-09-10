@@ -575,10 +575,11 @@ strong {
   font-size: 0.875rem;
   line-height: 1rem; }
 
-.featured-story.featured-sm .story-heading {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.5rem; }
+@media (min-width: 46.25em) {
+  .featured-story.featured-sm .story-heading {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 1.75rem; } }
 .featured-story.featured-mid .story-heading {
   font-size: 18px;
   font-size: 1.125rem;
@@ -589,6 +590,11 @@ strong {
       font-size: 1.5rem;
       line-height: 2rem; } }
 @media (min-width: 46.25em) {
+  .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.75rem; } }
+@media (min-width: 75em) {
   .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {
     font-size: 28px;
     font-size: 1.75rem;
@@ -691,12 +697,12 @@ time,
 .byline {
   margin-bottom: 0;
   line-height: .875rem; }
-
-.label {
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
-  color: #757575;
-  margin-right: 5px;
-  text-transform: lowercase; }
+  .byline .label {
+    display: inline-block;
+    font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+    color: #757575;
+    margin: 0 4px 4px 0;
+    text-transform: lowercase; }
 
 .card-label {
   display: inline-block;
@@ -1922,14 +1928,16 @@ ol, ul {
     max-width: none; }
     @media (min-width: 62.5em) {
       .hero-story .story-media {
-        margin-bottom: 16px; } }
+        margin-bottom: 12px; } }
     .hero-story .story-media img {
       width: 100%; }
-  .hero-story .story-header {
+  .hero-story .story-header,
+  .hero-story .story-footer {
     padding: 0 8px; }
     @media (min-width: 46.25em) {
-      .hero-story .story-header {
-        padding: 0 16px 16px; } }
+      .hero-story .story-header,
+      .hero-story .story-footer {
+        padding: 0 12px 16px; } }
   .hero-story.cover-hero {
     position: relative; }
     .hero-story.cover-hero .story-header {
@@ -1987,7 +1995,7 @@ height: 100%;*/ }
   .featured-story:after {
     clear: both; }
   @media (min-width: 46.25em) {
-    .featured-story.featured-xl .story-media {
+    .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
       width: 50%;
       margin-right: 16px;
       float: left; } }

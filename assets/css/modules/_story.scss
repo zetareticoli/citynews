@@ -67,7 +67,7 @@
 		max-width: none;
 
 		@include bp(l) {
-			margin-bottom: $baseline * 2;
+			margin-bottom: 12px;
 		}
 
 		img {
@@ -75,11 +75,12 @@
 		}
 	}
 
-	.story-header {
+	.story-header,
+	.story-footer {
 		padding: 0 $baseline;
 
 		@include bp(m) {
-			padding: 0 $baseline * 2 $baseline * 2;
+			padding: 0 12px $baseline * 2;
 		}
 	}
 
@@ -160,11 +161,8 @@
 
 .featured-story {
 	@include clearfix;
-	
-	&.featured-lg {
 
-	}
-
+	&.featured-mid,
 	&.featured-xl {
 
 		.story-media {
