@@ -174,11 +174,10 @@ strong {
 		}
 	}
 
-	&.featured-lg {
+	&.featured-lg,
+	&.featured-xl {
 
 		.story-heading {
-			@include font-size($fontsize400);
-			line-height: 1.25rem;
 
 			@include bp(m) {
 				@include font-size($fontsize700);

@@ -588,15 +588,11 @@ strong {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 2rem; } }
-.featured-story.featured-lg .story-heading {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.25rem; }
-  @media (min-width: 46.25em) {
-    .featured-story.featured-lg .story-heading {
-      font-size: 28px;
-      font-size: 1.75rem;
-      line-height: 2rem; } }
+@media (min-width: 46.25em) {
+  .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 2rem; } }
 
 .hero-story .story-heading {
   font-size: 28px;
@@ -1990,6 +1986,11 @@ height: 100%;*/ }
     display: table; }
   .featured-story:after {
     clear: both; }
+  @media (min-width: 46.25em) {
+    .featured-story.featured-xl .story-media {
+      width: 50%;
+      margin-right: 16px;
+      float: left; } }
 
 .list-story {
   *zoom: 1; }

@@ -161,9 +161,20 @@
 .featured-story {
 	@include clearfix;
 	
-
 	&.featured-lg {
 
+	}
+
+	&.featured-xl {
+
+		.story-media {
+
+			@include bp(m) {
+				width: 50%;
+				margin-right: $baseline * 2;
+				float: left;
+			}
+		}
 	}
 
 }
