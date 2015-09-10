@@ -2252,6 +2252,8 @@ height: 100%;*/ }
   border-color: #ffbe26; }
 .theme-yellow .theme-color {
   color: #ffbe26; }
+  .theme-yellow .theme-color.label {
+    color: #f2aa00; }
 .theme-yellow .theme-header {
   background-color: #ffbe26; }
   @media (min-width: 62.5em) {

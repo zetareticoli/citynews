@@ -16,6 +16,10 @@
 
 	.theme-color {
 		color: $b-c-yellow;
+
+		&.label {
+			color: darken($b-c-yellow, 10%);
+		}
 	}
 
 	.theme-header {
