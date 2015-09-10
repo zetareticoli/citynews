@@ -268,15 +268,14 @@ strong {
 .module-title {
 	margin-bottom: $baseline;
 	padding-bottom: $baseline;
+	border-bottom: 1px solid $bordercolor;
 	@include font-size($fontsize600);
 	line-height: 2rem;
 	font-family: $titleseriftypeface;
 	font-style: italic;
 	font-weight: 900;
 	color: $black900;
-	border-bottom-width: 4px;
-	border-bottom-style: $borderstyle;
-
+	
 	@include bp(xl) {
 		padding-bottom: 0;
 	}

@@ -656,15 +656,14 @@ strong {
 .module-title {
   margin-bottom: 8px;
   padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 900;
-  color: #424242;
-  border-bottom-width: 4px;
-  border-bottom-style: solid; }
+  color: #424242; }
   @media (min-width: 75em) {
     .module-title {
       padding-bottom: 0; } }
@@ -1760,7 +1759,8 @@ ol, ul {
   Global Styles
   ========================================================================== */
 .module {
-  width: 100%; }
+  width: 100%;
+  border-top: 3px solid #e0e0e0; }
 
 /* ==========================================================================
   Slots
