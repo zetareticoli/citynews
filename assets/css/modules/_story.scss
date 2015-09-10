@@ -240,18 +240,14 @@
 // Sublinks ===============================================================
 
 .sublinks {
-	border-top: 1px solid $bluegrey200;
-	padding-top: $baseline;
 
 	.sublink {
 		margin-bottom: $baseline;
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bluegrey200;
 		font-family: $headingstypeface;
 		@include font-size($fontsize200);
 		line-height: 1.1rem;
 		@include font-size($fontsize200);
-		
+
 		&:last-child {
 			border-bottom: 0;
 		}
@@ -264,6 +260,18 @@
 
 .sublink .kicker {
 	margin-right: $baseline / 2;
+}
+
+// Default hero sublink
+
+.hero-story .sublinks {
+	border-top: 1px solid $bluegrey200;
+	padding-top: $baseline;
+}
+
+.hero-story .sublink {
+	padding-bottom: $baseline;
+	border-bottom: 1px solid $bluegrey200;
 }
 
 // Cover hero & preview hero sublink
@@ -291,19 +299,7 @@
 	}
 }
 
-.has-flex .full-cover .sublinks .l-row--item-span-1 {
-	@include flex(1 1 0);
-}
-
-// Sublink Media
-
-.sublink-media {
-	width: 40px;
-	float: left;
-	margin-right: $baseline;
-}
-
-// Full cover only styles
+// Full cover hero sublink
 
 .full-cover .sublink {
 	@include bp(m) {
@@ -325,6 +321,27 @@
 		}
 	}
 
+}
+
+.has-flex .full-cover .sublinks .l-row--item-span-1 {
+	@include flex(1 1 0);
+}
+
+// Sublink Media
+
+.sublink-media {
+	width: 40px;
+	float: left;
+	margin-right: $baseline;
+}
+
+// Module ===============================================================
+
+.module {
+	.story-media {
+		float: right;
+		width: 25%;
+	}
 }
 
 // Boh ===============================================================
