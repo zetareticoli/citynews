@@ -277,20 +277,32 @@
 	border-bottom: 1px solid $bluegrey200;
 }
 
-// Cover hero & preview hero sublink
+// Cover hero for preview headline sublink
 
 .cover-hero .sublinks {
 	border-top: 1px solid $bluegrey900;
 	padding-top: $baseline;
+
+	@include bp(m) {
+		border-top: 0;
+		@include flexbox;
+		@include flex-flow(row wrap);	
+	}
 }
 
 .cover-hero .sublink {
-	padding-bottom: $baseline;
 	border-bottom: 1px solid $bluegrey900;
 
-	&:last-child {
-		border: 0;
-	}
+	@include bp(m) {
+		@include flex(1 1 50%);
+		padding-top: $baseline;
+		border-top: 1px solid $bluegrey900;
+		border-bottom: 0;
+
+		&:nth-child(2n+1) {
+			padding-right: $baseline;
+		}
+	}	
 
 	.link {
 		width: 100%;
