@@ -1477,9 +1477,7 @@ ol, ul {
     flex: 1 1 auto; } }
 
 @media (max-width: 46.188em) {
-  .headlines-main .newslist-module,
-  .headlines-main .story-summary,
-  .headlines-main .story-subheading {
+  .headlines-main .newslist-module {
     display: none; } }
 
 @media (max-width: 46.188em) {

@@ -390,9 +390,7 @@ ol, ul {
 
 .headlines-main {
 	@include max-bp(s) {
-		.newslist-module,
-		.story-summary,
-		.story-subheading {
+		.newslist-module {
 			display: none;
 		}
 	}
