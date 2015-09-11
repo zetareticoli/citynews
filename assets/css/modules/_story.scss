@@ -17,6 +17,16 @@
 			float: none;
 			margin: 0 0 $baseline 0;
 		}
+
+		&.right {
+			float: right;
+			margin-left: $baseline;
+		}
+		
+		&.left {
+			float: left;
+			margin-right: $baseline;
+		}
 	}
 
 	.story-heading {
@@ -348,7 +358,6 @@
 
 .module {
 	.story-media {
-		float: right;
 		width: 25%;
 	}
 }

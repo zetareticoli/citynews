@@ -11,6 +11,18 @@
 	border-top: 3px solid $bordercolor;
 }
 
+.has-flex {
+	.module {
+		@include flexbox;
+		@include flex-flow(column nowrap);
+
+		.l-list {
+			@include flex(4 1 auto);
+		}
+	}
+}
+
+
 /* ==========================================================================
   Slots
   ========================================================================== */
@@ -78,25 +90,3 @@
   ========================================================================== */
 
 @import "modules/story";
-
-
-/* ==========================================================================
-  Latest News
-  ========================================================================== */
-
-.latestnews-module {
-	@include flexbox;
-	@include flex-flow(column nowrap);
-
-	.module-title {
-		@include flex(1 1 auto);
-	}
-
-	.l-list {
-		@include flex(4 1 auto);
-	}
-
-	.story {
-		border-bottom: 1px solid $bordercolor;
-	}	
-}

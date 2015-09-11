@@ -269,25 +269,22 @@ h4.story-heading {
 // Headings for any module title
 
 .module-title {
+	display: block;
 	margin-bottom: $baseline;
-	padding-bottom: $baseline;
+	padding: $baseline 0;
 	border-bottom: 1px solid $bordercolor;
 	@include font-size($fontsize600);
 	line-height: 2rem;
 	font-family: $titleseriftypeface;
 	font-weight: normal;
 	color: $black900;
-	
-	@include bp(xl) {
-		padding-bottom: 0;
-	}
 
 	& > span {
 		display: block;
+		font-family: $texttypeface;
 		@include font-size($fontsize300);
 		line-height: 1rem;
-		font-style: normal;
-		font-weight: 500;
+		font-weight: 400;
 		color: $black700;
 	}
 }

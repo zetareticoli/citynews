@@ -664,8 +664,9 @@ h4.story-heading {
       font-size: 1.5rem; } }
 
 .module-title {
+  display: block;
   margin-bottom: 8px;
-  padding-bottom: 8px;
+  padding: 8px 0;
   border-bottom: 1px solid #e0e0e0;
   font-size: 24px;
   font-size: 1.5rem;
@@ -673,16 +674,13 @@ h4.story-heading {
   font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
   font-weight: normal;
   color: #424242; }
-  @media (min-width: 75em) {
-    .module-title {
-      padding-bottom: 0; } }
   .module-title > span {
     display: block;
+    font-family: "PublicoText", Georgia, "Times New Roman", serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1rem;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     color: #757575; }
 
 .story-summary {
@@ -1826,6 +1824,24 @@ ol, ul {
   width: 100%;
   border-top: 3px solid #e0e0e0; }
 
+.has-flex .module {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  .has-flex .module .l-list {
+    -webkit-box-flex: 4 1 auto;
+    -moz-box-flex: 4 1 auto;
+    -webkit-flex: 4 1 auto;
+    -ms-flex: 4 1 auto;
+    flex: 4 1 auto; }
+
 /* ==========================================================================
   Slots
   ========================================================================== */
@@ -1961,6 +1977,12 @@ ol, ul {
         max-width: none;
         float: none;
         margin: 0 0 8px 0; } }
+    .story .story-media.right {
+      float: right;
+      margin-left: 8px; }
+    .story .story-media.left {
+      float: left;
+      margin-right: 8px; }
   .story .story-heading {
     margin-bottom: 8px; }
   .story .story-subheading {
@@ -2190,7 +2212,6 @@ height: 100%;*/ }
   margin-right: 8px; }
 
 .module .story-media {
-  float: right;
   width: 25%; }
 
 .latest-stories h6 {
@@ -2207,35 +2228,6 @@ height: 100%;*/ }
     .newslist-module .story {
       border-bottom: 0;
       padding-bottom: 8px; } }
-
-/* ==========================================================================
-  Latest News
-  ========================================================================== */
-.latestnews-module {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -moz-flex-flow: column nowrap;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap; }
-  .latestnews-module .module-title {
-    -webkit-box-flex: 1 1 auto;
-    -moz-box-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
-  .latestnews-module .l-list {
-    -webkit-box-flex: 4 1 auto;
-    -moz-box-flex: 4 1 auto;
-    -webkit-flex: 4 1 auto;
-    -ms-flex: 4 1 auto;
-    flex: 4 1 auto; }
-  .latestnews-module .story {
-    border-bottom: 1px solid #e0e0e0; }
 
 /* ==========================================================================
   Modifiers
