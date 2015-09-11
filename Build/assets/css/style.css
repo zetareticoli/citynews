@@ -568,9 +568,19 @@ strong {
 .story-heading {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.25rem; }
+  line-height: 1.35rem; }
 
-.latestnews-module .story-heading {
+h3.story-heading {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1rem; }
+  @media (min-width: 75em) {
+    h3.story-heading {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.35rem; } }
+
+h4.story-heading {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1rem; }
