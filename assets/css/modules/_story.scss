@@ -9,7 +9,7 @@
 		width: 30%;
 		max-width: 200px;
 		float: left;
-		margin-right: $baseline;
+		margin-right: 12px;
 
 		@include bp(m) {
 			width: auto;
@@ -186,19 +186,20 @@
 .list-story {
 	@include clearfix;
 
-	.story-media {
-		float: left;
-		width: 35%;
+	@include bp(m) {
+		padding-bottom: $baseline * 2;
 	}
 
-	.story-header,
-	.story-footer {
-		margin-left: 36.5%;
+	.story-media {
+		width: 35%;
+		float: left;
+		margin-right: 12px;
 	}
 
 	.story-footer {
 		display: none;
-		@include bp(l) {
+
+		@include bp(m) {
 			display: block;
 		}
 	}
