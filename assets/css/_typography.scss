@@ -436,7 +436,7 @@ time,
 	display: inline-block;
 	margin-right: $gutterwidth;
 	color: $black700;
-	font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: $headingstypeface;
 	@include font-size($fontsize100);
 }
 

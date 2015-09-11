@@ -128,7 +128,7 @@
 
 	.nav-item {
 		margin-right: $baseline * 2;
-		font-family: $texttypeface;
+		font-family: $headingstypeface;
 		@include font-size(16);
 		@include bp(xl) {
 			@include font-size(18);

@@ -252,18 +252,19 @@ ol, ul {
 		.network {
 			display: none;
 			width: auto;
-			font-family: $texttypeface;
-			font-weight: 900;
-			@include font-size(12);
-			text-transform: lowercase;
-			letter-spacing: -0.3px;
 			color: $black500;
+
 			@include bp(l) {
 				position: relative;
 				z-index: 1;
 				display: block;
 				margin-top: -8px;
 				margin-bottom: -5px;
+			}
+
+			.logo {
+				height: 12px;
+				vertical-align: top;
 			}
 		}
 	}

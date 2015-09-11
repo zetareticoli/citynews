@@ -801,7 +801,7 @@ time,
   display: inline-block;
   margin-right: 16px;
   color: #757575;
-  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem; }
 
@@ -1391,12 +1391,6 @@ ol, ul {
     .header .header-brand .network {
       display: none;
       width: auto;
-      font-family: "PublicoText", Georgia, "Times New Roman", serif;
-      font-weight: 900;
-      font-size: 12px;
-      font-size: 0.75rem;
-      text-transform: lowercase;
-      letter-spacing: -0.3px;
       color: #bdbdbd; }
       @media (min-width: 62.5em) {
         .header .header-brand .network {
@@ -1405,6 +1399,9 @@ ol, ul {
           display: block;
           margin-top: -8px;
           margin-bottom: -5px; } }
+      .header .header-brand .network .logo {
+        height: 12px;
+        vertical-align: top; }
   .header .header-meta {
     display: none; }
     @media (min-width: 62.5em) {
@@ -1645,7 +1642,7 @@ ol, ul {
     top: 13px; } }
 .secondary-nav .nav-item {
   margin-right: 16px;
-  font-family: "PublicoText", Georgia, "Times New Roman", serif;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem; }
   @media (min-width: 75em) {
