@@ -1331,6 +1331,9 @@ ol, ul {
     .slice-item {
       padding-bottom: 24px; } }
 
+.module .slice-item {
+  padding-bottom: 8px; }
+
 /* ==========================================================================
   Site Header
   ========================================================================== */
@@ -1946,13 +1949,7 @@ ol, ul {
 .story {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  	/*
-  	margin-bottom: $baseline;
-  
-  	@include bp(l) {
-  		margin-bottom: $baseline * 2;
-  	}
-  	*/ }
+  padding-bottom: 8px; }
   .story .story-media {
     width: 30%;
     max-width: 200px;

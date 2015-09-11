@@ -3,13 +3,7 @@
 .story {
 	width: 100%;
 	border-bottom: 1px solid $bordercolor;
-	/*
-	margin-bottom: $baseline;
-
-	@include bp(l) {
-		margin-bottom: $baseline * 2;
-	}
-	*/
+	padding-bottom: $baseline;
 
 	.story-media {
 		width: 30%;
