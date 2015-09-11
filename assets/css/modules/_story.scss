@@ -162,8 +162,8 @@
 		.story-media {
 
 			@include bp(m) {
-				width: 50%;
-				margin-right: $baseline * 2;
+				width: 45%;
+				margin-right: 12px;
 				float: left;
 			}
 		}

@@ -2052,8 +2052,8 @@ height: 100%;*/ }
     clear: both; }
   @media (min-width: 46.25em) {
     .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
-      width: 50%;
-      margin-right: 16px;
+      width: 45%;
+      margin-right: 12px;
       float: left; } }
 
 .list-story {
