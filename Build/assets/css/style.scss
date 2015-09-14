@@ -632,13 +632,13 @@ h4.story-heading {
   font-size: 0.875rem;
   line-height: 1rem; }
 
-.featured-story.featured-sm .story-heading {
+.featured-story .story-heading {
   font-weight: 700; }
-  @media (min-width: 46.25em) {
-    .featured-story.featured-sm .story-heading {
-      font-size: 21px;
-      font-size: 1.3125rem;
-      line-height: 1.75rem; } }
+@media (min-width: 46.25em) {
+  .featured-story.featured-sm .story-heading {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 1.75rem; } }
 .featured-story.featured-mid .story-heading {
   font-size: 18px;
   font-size: 1.125rem;
@@ -653,9 +653,7 @@ h4.story-heading {
   .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.75rem; } }
-@media (min-width: 62.5em) {
-  .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {
+    line-height: 1.75rem;
     font-weight: 900; } }
 @media (min-width: 75em) {
   .featured-story.featured-lg .story-heading, .featured-story.featured-xl .story-heading {

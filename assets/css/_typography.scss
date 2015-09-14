@@ -158,10 +158,13 @@ h4.story-heading {
 
 .featured-story {
 
+	.story-heading {
+		font-weight: 700;
+	}
+
 	&.featured-sm {
 
 		.story-heading {
-			font-weight: 700;
 
 			@include bp(m) {
 				@include font-size($fontsize500);
@@ -192,9 +195,6 @@ h4.story-heading {
 			@include bp(m) {
 				@include font-size($fontsize600);
 				line-height: 1.75rem;
-			}
-
-			@include bp(l) {
 				font-weight: 900;
 			}
 
