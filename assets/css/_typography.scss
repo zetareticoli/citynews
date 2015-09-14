@@ -242,7 +242,7 @@ h4.story-heading {
 		font-weight: 700;
 
 		@include bp(m) {
-			@include font-size($fontsize400);
+			@include font-size($fontsize500);
 			line-height: 1.5rem;
 		}
 
@@ -258,6 +258,7 @@ h4.story-heading {
 .story-subheading {
 	@include font-size($fontsize400);
 	line-height: 1.5rem;
+	font-weight: 700;
 
 	&:before {
 		display: inline-block;
@@ -287,6 +288,7 @@ h4.story-heading {
 .hero-story .story-subheading {
 	@include font-size($fontsize500);
 	line-height: 2rem;
+	font-weight: 900;
 
 	@include bp(xl) {
 		@include font-size($fontsize600);
@@ -390,7 +392,7 @@ time,
 
 .kicker {
 	color: $bluegrey500;
-	@include font-size($fontsize100);
+	@include font-size($fontsize200);
 	font-family: $texttypeface;
 	font-style: italic;
 	font-weight: 700;
@@ -420,10 +422,6 @@ time,
 
 .sublink .link {
 	color: $black800;
-
-	@include bp(m) {
-		@include font-size($fontsize100);
-	}
 
 	&:hover {
 		color: $black900;

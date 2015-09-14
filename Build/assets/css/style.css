@@ -1,3 +1,55 @@
+/*
+// .translate(VALUE, VALUE)
+
+@mixin translate($x: 0, $y: 0) {
+-webkit-transform : translate($x, $y);
+-moz-transform : translate($x, $y);
+-ms-transform : translate($x, $y);
+-o-transform : translate($x, $y);
+transform : translate($x, $y); }
+
+@mixin translated($x: 0, $y: 0, $z: 0) {
+-webkit-transform : translate($x, $y, $z);
+-moz-transform : translate($x, $y, $z);
+-ms-transform : translate($x, $y, $z);
+-o-transform : translate($x, $y, $z);
+transform : translate($x, $y, $z); }
+
+// @include transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
+
+@mixin transition($transition...) {
+-webkit-transition : $transition;
+-moz-transition : $transition;
+-ms-transition : $transition;
+-o-transition : $transition;
+transition : $transition; }
+*/
+/*
+// .translate(VALUE, VALUE)
+
+@mixin translate($x: 0, $y: 0) {
+-webkit-transform : translate($x, $y);
+-moz-transform : translate($x, $y);
+-ms-transform : translate($x, $y);
+-o-transform : translate($x, $y);
+transform : translate($x, $y); }
+
+@mixin translated($x: 0, $y: 0, $z: 0) {
+-webkit-transform : translate($x, $y, $z);
+-moz-transform : translate($x, $y, $z);
+-ms-transform : translate($x, $y, $z);
+-o-transform : translate($x, $y, $z);
+transform : translate($x, $y, $z); }
+
+// @include transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
+
+@mixin transition($transition...) {
+-webkit-transition : $transition;
+-moz-transition : $transition;
+-ms-transition : $transition;
+-o-transition : $transition;
+transition : $transition; }
+*/
 /*! normalize.css http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -425,31 +477,26 @@ table {
 @font-face {
   font-family: 'PublicoBannerBold';
   src: url(../webfonts/PublicoBannerBold.woff2) format("woff2"), url(../webfonts/PublicoBannerBold.woff) format("woff"); }
-
 @font-face {
   font-family: 'PublicoText';
   src: url(../webfonts/PublicoText-Italic.woff) format("woff");
   font-weight: 400;
   font-style: italic; }
-
 @font-face {
   font-family: 'PublicoText';
   src: url(../webfonts/PublicoText-BoldItalic.woff) format("woff");
   font-weight: 700;
   font-style: italic; }
-
 @font-face {
   font-family: 'PublicoText';
   src: url(../webfonts/PublicoText-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal; }
-
 @font-face {
   font-family: 'PublicoText';
   src: url(../webfonts/PublicoText-Roman.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
-
 html {
   font-size: 100%; }
 
@@ -646,8 +693,8 @@ h4.story-heading {
   font-weight: 700; }
   @media (min-width: 46.25em) {
     .list-story .story-heading {
-      font-size: 18px;
-      font-size: 1.125rem;
+      font-size: 21px;
+      font-size: 1.3125rem;
       line-height: 1.5rem; } }
   @media (min-width: 62.5em) {
     .list-story .story-heading {
@@ -658,7 +705,8 @@ h4.story-heading {
 .story-subheading {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  font-weight: 700; }
   .story-subheading:before {
     display: inline-block;
     content: '';
@@ -681,7 +729,8 @@ h4.story-heading {
 .hero-story .story-subheading {
   font-size: 21px;
   font-size: 1.3125rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-weight: 900; }
   @media (min-width: 75em) {
     .hero-story .story-subheading {
       font-size: 24px;
@@ -744,7 +793,7 @@ time,
   position: relative;
   padding-top: 8px;
   margin-bottom: 8px;
-  color: #e91f63;
+  color: #E91F63;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1em;
@@ -762,12 +811,12 @@ time,
         display: block;
         width: 115%;
         height: 6px;
-        background-color: #e91f63; } }
+        background-color: #E91F63; } }
 
 .kicker {
   color: #78909c;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 700; }
@@ -792,10 +841,6 @@ time,
 
 .sublink .link {
   color: #616161; }
-  @media (min-width: 46.25em) {
-    .sublink .link {
-      font-size: 12px;
-      font-size: 0.75rem; } }
   .sublink .link:hover {
     color: #424242; }
 
@@ -817,22 +862,22 @@ time,
     color: #bdbdbd; }
 
 .theme-yellow .inverted .link:hover {
-  color: #ffbe26; }
+  color: #FFBE26; }
 
 .theme-blue .inverted .link:hover {
-  color: #3277c7; }
+  color: #3277C7; }
 
 .theme-red .inverted .link:hover {
-  color: #f2463d; }
+  color: #F2463D; }
 
 .theme-green .inverted .link:hover {
-  color: #50ae55; }
+  color: #50AE55; }
 
 .theme-pink .inverted .link:hover {
-  color: #f291b2; }
+  color: #F291B2; }
 
 .theme-purple .inverted .link:hover {
-  color: #b75dc7; }
+  color: #B75DC7; }
 
 .site-date,
 .site-meteo {
@@ -894,7 +939,7 @@ time,
   .star-icon.medium {
     width: 20px; } }
 .star-icon.star-icon--coloured {
-  fill: #e91f63; }
+  fill: #E91F63; }
 .star-icon.star-icon--grey {
   fill: #b0bec5; }
 
@@ -1844,8 +1889,8 @@ ol, ul {
       -ms-transform: translateY(-49px);
       -o-transform: translateY(-49px);
       transform: translateY(-49px);
-      -webkit-transition: transform 0.2s 0.15s;
-      -moz-transition: transform 0.2s 0.15s;
+      -webkit-transition: -webkit-transform 0.2s 0.15s;
+      -moz-transition: -moz-transform 0.2s 0.15s;
       transition: transform 0.2s 0.15s;
       z-index: 5; }
       .sliding-nav .nav-item {
@@ -1863,8 +1908,8 @@ ol, ul {
         -ms-transform: translateY(-10px);
         -o-transform: translateY(-10px);
         transform: translateY(-10px);
-        -webkit-transition: transform 0.2s, opacity 0.2s;
-        -moz-transition: transform 0.2s, opacity 0.2s;
+        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.2s, opacity 0.2s;
         transition: transform 0.2s, opacity 0.2s; } }
 
 /* ==========================================================================
@@ -1900,7 +1945,7 @@ ol, ul {
   ========================================================================== */
 .slots {
   width: 100%;
-  background: whitesmoke; }
+  background: #f5f5f5; }
 
 .slot {
   padding: 8px;
@@ -2142,7 +2187,7 @@ height: 100%;*/ }
     .list-story {
       padding-bottom: 16px; } }
   .list-story .story-media {
-    width: 35%;
+    width: 30%;
     float: left;
     margin-right: 12px; }
   .list-story .story-footer {
@@ -2367,8 +2412,8 @@ height: 100%;*/ }
   -moz-transition: height 0.2s;
   transition: height 0.2s; }
 .is-nav-sliding .sliding-nav {
-  -webkit-transition: transform 0.2s;
-  -moz-transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -2382,112 +2427,112 @@ height: 100%;*/ }
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: transform 0.2s 0.15s, opacity 0.2s 0.15s;
-    -moz-transition: transform 0.2s 0.15s, opacity 0.2s 0.15s;
+    -webkit-transition: -webkit-transform 0.2s 0.15s, opacity 0.2s 0.15s;
+    -moz-transition: -moz-transform 0.2s 0.15s, opacity 0.2s 0.15s;
     transition: transform 0.2s 0.15s, opacity 0.2s 0.15s; }
 
 .has-min-width {
   min-width: 300px; }
 
 .theme-yellow .theme-element-bg:before {
-  background-color: #ffbe26; }
+  background-color: #FFBE26; }
 .theme-yellow .theme-background {
-  background-color: #ffbe26; }
+  background-color: #FFBE26; }
 .theme-yellow .theme-border {
-  border-color: #ffbe26; }
+  border-color: #FFBE26; }
 .theme-yellow .theme-color {
-  color: #ffbe26; }
+  color: #FFBE26; }
   .theme-yellow .theme-color.label, .theme-yellow .theme-color.kicker {
     color: #ffb507; }
 .theme-yellow .theme-header {
-  background-color: #ffbe26; }
+  background-color: #FFBE26; }
   @media (min-width: 62.5em) {
     .theme-yellow .theme-header {
       background-color: white; }
       .theme-yellow .theme-header .logo-edition {
-        fill: #ffbe26; } }
+        fill: #FFBE26; } }
 .theme-yellow .inverted .theme-header .logo-edition {
-  fill: #ffbe26; }
+  fill: #FFBE26; }
 
 .theme-red .theme-background {
-  background-color: #f2463d; }
+  background-color: #F2463D; }
 .theme-red .theme-border {
-  border-color: #f2463d; }
+  border-color: #F2463D; }
 .theme-red .theme-color {
-  color: #f2463d; }
+  color: #F2463D; }
 .theme-red .theme-header {
-  background-color: #f2463d; }
+  background-color: #F2463D; }
   @media (min-width: 62.5em) {
     .theme-red .theme-header {
       background-color: white; }
       .theme-red .theme-header .logo-edition {
-        fill: #f2463d; } }
+        fill: #F2463D; } }
 .theme-red .inverted .theme-header .logo-edition {
-  fill: #f2463d; }
+  fill: #F2463D; }
 
 .theme-blue .theme-background {
-  background-color: #3277c7; }
+  background-color: #3277C7; }
 .theme-blue .theme-border {
-  border-color: #3277c7; }
+  border-color: #3277C7; }
 .theme-blue .theme-color {
-  color: #3277c7; }
+  color: #3277C7; }
 .theme-blue .theme-header {
-  background-color: #3277c7; }
+  background-color: #3277C7; }
   @media (min-width: 62.5em) {
     .theme-blue .theme-header {
       background-color: white; }
       .theme-blue .theme-header .logo-edition {
-        fill: #3277c7; } }
+        fill: #3277C7; } }
 .theme-blue .inverted .theme-header .logo-edition {
-  fill: #3277c7; }
+  fill: #3277C7; }
 
 .theme-green .theme-background {
-  background-color: #50ae55; }
+  background-color: #50AE55; }
 .theme-green .theme-border {
-  border-color: #50ae55; }
+  border-color: #50AE55; }
 .theme-green .theme-color {
-  color: #50ae55; }
+  color: #50AE55; }
 .theme-green .theme-header {
-  background-color: #50ae55; }
+  background-color: #50AE55; }
   @media (min-width: 62.5em) {
     .theme-green .theme-header {
       background-color: white; }
       .theme-green .theme-header .logo-edition {
-        fill: #50ae55; } }
+        fill: #50AE55; } }
 .theme-green .inverted .theme-header .logo-edition {
-  fill: #50ae55; }
+  fill: #50AE55; }
 
 .theme-purple .theme-background {
-  background-color: #b75dc7; }
+  background-color: #B75DC7; }
 .theme-purple .theme-border {
-  border-color: #b75dc7; }
+  border-color: #B75DC7; }
 .theme-purple .theme-color {
-  color: #b75dc7; }
+  color: #B75DC7; }
 .theme-purple .theme-header {
-  background-color: #b75dc7; }
+  background-color: #B75DC7; }
   @media (min-width: 62.5em) {
     .theme-purple .theme-header {
       background-color: white; }
       .theme-purple .theme-header .logo-edition {
-        fill: #b75dc7; } }
+        fill: #B75DC7; } }
 .theme-purple .inverted .theme-header .logo-edition {
-  fill: #b75dc7; }
+  fill: #B75DC7; }
 
 .theme-pink .theme-background {
-  background-color: #f291b2; }
+  background-color: #F291B2; }
 .theme-pink .theme-border {
-  border-color: #f291b2; }
+  border-color: #F291B2; }
 .theme-pink .theme-color {
-  color: #f291b2; }
+  color: #F291B2; }
 .theme-pink .theme-header {
-  background-color: #f291b2; }
+  background-color: #F291B2; }
   @media (min-width: 62.5em) {
     .theme-pink .theme-header {
       background-color: white; }
       .theme-pink .theme-header .logo-edition {
-        fill: #f291b2; } }
+        fill: #F291B2; } }
 .theme-pink .inverted .theme-header .logo-edition {
-  fill: #f291b2; }
+  fill: #F291B2; }
 
 .theme-yellow .nav-button .button-label,
 .theme-red .nav-button .button-label,

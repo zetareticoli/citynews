@@ -693,8 +693,8 @@ h4.story-heading {
   font-weight: 700; }
   @media (min-width: 46.25em) {
     .list-story .story-heading {
-      font-size: 18px;
-      font-size: 1.125rem;
+      font-size: 21px;
+      font-size: 1.3125rem;
       line-height: 1.5rem; } }
   @media (min-width: 62.5em) {
     .list-story .story-heading {
@@ -705,7 +705,8 @@ h4.story-heading {
 .story-subheading {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  font-weight: 700; }
   .story-subheading:before {
     display: inline-block;
     content: '';
@@ -728,7 +729,8 @@ h4.story-heading {
 .hero-story .story-subheading {
   font-size: 21px;
   font-size: 1.3125rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-weight: 900; }
   @media (min-width: 75em) {
     .hero-story .story-subheading {
       font-size: 24px;
@@ -813,8 +815,8 @@ time,
 
 .kicker {
   color: #78909c;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 700; }
@@ -839,10 +841,6 @@ time,
 
 .sublink .link {
   color: #616161; }
-  @media (min-width: 46.25em) {
-    .sublink .link {
-      font-size: 12px;
-      font-size: 0.75rem; } }
   .sublink .link:hover {
     color: #424242; }
 
@@ -2189,7 +2187,7 @@ height: 100%;*/ }
     .list-story {
       padding-bottom: 16px; } }
   .list-story .story-media {
-    width: 35%;
+    width: 30%;
     float: left;
     margin-right: 12px; }
   .list-story .story-footer {
