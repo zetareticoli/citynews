@@ -2246,8 +2246,7 @@ height: 100%;*/ }
   border-bottom: 1px solid #cfd8dc; }
 
 .cover-hero .sublinks {
-  border-top: 1px solid #37474f;
-  padding-top: 8px; }
+  border-top: 1px solid #37474f; }
   @media (min-width: 46.25em) {
     .cover-hero .sublinks {
       border-top: 0;
@@ -2282,13 +2281,19 @@ height: 100%;*/ }
     display: block;
     margin-right: 0; }
 
+.full-cover .sublinks {
+  border-top: 1px solid #37474f;
+  padding-top: 8px; }
+
 @media (min-width: 46.25em) {
   .full-cover .sublink {
     border-bottom: 0;
+    border-top: 0;
     border-right: 1px solid #37474f;
     padding-right: 16px;
     margin-right: 16px; }
     .full-cover .sublink:last-child {
+      border-right: 0;
       padding-right: 0;
       margin-right: 0; } }
 @media (min-width: 46.25em) {

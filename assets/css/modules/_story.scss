@@ -286,7 +286,6 @@
 
 .cover-hero .sublinks {
 	border-top: 1px solid $bluegrey900;
-	padding-top: $baseline;
 
 	@include bp(m) {
 		border-top: 0;
@@ -321,14 +320,21 @@
 
 // Full cover hero sublink
 
+.full-cover .sublinks {
+	border-top: 1px solid $bluegrey900;
+	padding-top: $baseline;
+}
+
 .full-cover .sublink {
 	@include bp(m) {
 		border-bottom: 0;
+		border-top: 0;
 		border-right: 1px solid $bluegrey900;
 		padding-right: $baseline * 2;
 		margin-right: $baseline * 2;
 
 		&:last-child {
+			border-right: 0;
 			padding-right: 0;
 			margin-right: 0;
 		}
