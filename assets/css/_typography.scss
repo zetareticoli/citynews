@@ -287,11 +287,12 @@ h4.story-heading {
 
 .hero-story .story-subheading {
 	@include font-size($fontsize500);
-	line-height: 2rem;
+	line-height: 1.5rem;
 	font-weight: 900;
 
 	@include bp(xl) {
 		@include font-size($fontsize600);
+		line-height: 2rem;
 	}
 }
 

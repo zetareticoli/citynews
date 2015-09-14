@@ -727,12 +727,13 @@ h4.story-heading {
 .hero-story .story-subheading {
   font-size: 21px;
   font-size: 1.3125rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-weight: 900; }
   @media (min-width: 75em) {
     .hero-story .story-subheading {
       font-size: 24px;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      line-height: 2rem; } }
 
 .module-title {
   display: block;
