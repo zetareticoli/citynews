@@ -474,12 +474,17 @@ ol, ul {
 	@include bp(m) {
 		width: 60%;
 	}
+
+	@include bp(l) {
+		width: 66.66%;
+	}
 }
 
 .newslist-aside {
 	@include bp(m) {
 		width: 324px;
 	}
+
 	@include bp(l) {
 		width: 33.33%;
 	}

@@ -253,6 +253,26 @@ h4.story-heading {
 	}
 }
 
+// Headings for inset story
+
+.inset-story {
+
+	.story-heading {
+		font-family: $titleseriftypeface;
+		font-weight: 700;
+
+		@include bp(xl) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+	}
+
+	.story-heading .link {
+		color: white;
+	}
+}
+
+
 // Headings for subheadings
 
 .story-subheading {
@@ -397,6 +417,16 @@ time,
 	font-family: $texttypeface;
 	font-style: italic;
 	font-weight: 700;
+}
+
+.highlight-kicker {
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: $baseline $baseline * 2;
+	font-family: $headingstypeface;
+	@include font-size($fontsize400);
 }
 
 .location-kicker {

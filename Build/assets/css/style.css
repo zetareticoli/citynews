@@ -700,6 +700,17 @@ h4.story-heading {
       font-size: 1.5rem;
       line-height: 2rem; } }
 
+.inset-story .story-heading {
+  font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
+  font-weight: 700; }
+  @media (min-width: 75em) {
+    .inset-story .story-heading {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
+.inset-story .story-heading .link {
+  color: white; }
+
 .story-subheading {
   font-size: 18px;
   font-size: 1.125rem;
@@ -819,6 +830,16 @@ time,
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 700; }
+
+.highlight-kicker {
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 .location-kicker {
   display: inline-block;
@@ -1638,6 +1659,9 @@ ol, ul {
 @media (min-width: 46.25em) {
   .newslist-main {
     width: 60%; } }
+@media (min-width: 62.5em) {
+  .newslist-main {
+    width: 66.66%; } }
 
 @media (min-width: 46.25em) {
   .newslist-aside {
@@ -2197,25 +2221,40 @@ height: 100%;*/ }
   .list-story .byline {
     margin-bottom: 2px; }
 
-.indepth-story {
-  position: relative; }
-  .indepth-story .story-media {
+.inset-story {
+  position: relative;
+  border-bottom: 0;
+  padding-bottom: 0; }
+  .inset-story .story-media {
     position: relative;
     top: 0;
     left: 0;
     z-index: 0;
     height: 400px;
     width: 100%; }
-    .indepth-story .story-media > img {
+    .inset-story .story-media:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .inset-story .story-media > img {
       width: 100%;
       height: 100%; }
-  .indepth-story .story-header {
-    background: #212121;
-    padding: 8px;
+  .inset-story .story-header {
+    padding: 16px;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     z-index: 1; }
+    @media (min-width: 75em) {
+      .inset-story .story-header {
+        padding: 24px; } }
+  .inset-story .story-heading {
+    margin-top: 40px; }
 
 .size1of2 .list-story .story-media {
   width: 50%;
