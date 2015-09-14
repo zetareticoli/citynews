@@ -14,12 +14,13 @@
                 if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
                 ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
                 ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
                 ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
                       link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
                     }
                   }
@@ -135,7 +136,7 @@
 		</div>
 		<nav class="primary-nav">
 			<ul class="u-unstyled inline-list">
-				<li class="nav-item current"><a href="index.html" class="link">Notizie</a></li>
+				<li class="current-parent nav-item current"><a href="index.html" class="current-parent link">Notizie</a></li>
 				<li class="nav-item"><a href="events.html" class="link">Cosa fare in città</a></li>
 				<li class="nav-item"><a href="#" class="link">Zone</a></li>
 			</ul>
@@ -171,7 +172,7 @@
 	<a href="#" class="button search-button has-icon v-centered"><svg class="icon lens-icon medium"><use xlink:href="#icon-lens"></use></svg></a>	
 	<a href="#" class="button close-button"><svg class="icon cross-icon inverted medium"><use xlink:href="#icon-cross"></use></svg> </a>
 	<ul class="u-unstyled nav-items-list">
-		<li class="nav-item"><a href="index.html" class="link">Homepage</a></li>
+		<li class="current-parent nav-item"><a href="index.html" class="current-parent link">Homepage</a></li>
 		<li class="nav-item"><a href="cronaca.html" class="link">Cronaca</a></li>
 		<li class="nav-item"><a href="cronaca.html" class="link">Politica</a></li>
 		<li class="nav-item"><a href="cronaca.html" class="link">Sport</a></li>
@@ -290,7 +291,14 @@
 							<li class="unit size1of3 slice-item l-row-item item-span-1">
 								<article class="story featured-story featured-lg">
 									<header class="story-header">
-										<figure class="story-media"><a href="#"><img src="assets/images/figure-omicidio.jpg"></a></figure>
+										<figure class="story-media">
+											<a href="#">
+												<picture>
+													<source srcset="assets/images/featured-2-horizontal_mid.jpg" media="(min-width: 46.25em)">
+													<img srcset="assets/images/featured-2-square_low.jpg" alt="Incidente Moto">
+												</picture>
+											</a>
+										</figure>
 										<p class="byline"><span class="label theme-color">Cronaca</span></p>
 										<h1 class="story-heading"><a href="#" class="link">Ragazza violentata a Termini mentre aspetta il treno per l'aeroporto</a></h1>
 										<!-- No Mobile -->
