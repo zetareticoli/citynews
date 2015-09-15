@@ -1280,7 +1280,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  background-color: #EBEBEB; }
+  background-color: #e0e0e0; }
 
 * {
   -moz-box-sizing: border-box;
@@ -1497,7 +1497,7 @@ ol, ul {
   .header .header-bottom {
     display: none;
     height: 48px;
-    background-color: #e0e0e0;
+    background-color: #eeeeee;
     padding: 0 24px; }
     @media (min-width: 62.5em) {
       .header .header-bottom {
@@ -1783,7 +1783,7 @@ ol, ul {
   border-bottom: 10px dashed;
   border-right: 16px solid transparent;
   border-left: 16px solid transparent;
-  color: #e0e0e0; }
+  color: #eeeeee; }
 
 /* ==========================================================================
   Secondary Navigation

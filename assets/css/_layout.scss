@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background-color: #EBEBEB;
+	background-color: $black400;
 }
 
 * {
@@ -223,7 +223,7 @@ ol, ul {
 	.header-bottom {
 		display: none;
 		height: $baseline * 6;
-		background-color: $black400;
+		background-color: $black300;
 		padding: 0 24px;
 		@include bp(l) {
 			display: block;
