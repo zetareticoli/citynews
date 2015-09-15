@@ -1997,20 +1997,16 @@ ol, ul {
   ========================================================================== */
 .slots {
   width: 100%;
-  background: #f5f5f5; }
+  background: #f5f5f5;
+  border: 1px solid #eeeeee; }
 
 .slot {
-  padding: 8px;
+  margin: 8px;
   width: 100%; }
-  @media (min-width: 62.5em) {
-    .slot {
-      padding: 0; } }
-  @media (min-width: 75em) {
-    .slot {
-      padding: 8px; } }
 
 .medium-slot {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 300px; }
 
 .half-slot {
