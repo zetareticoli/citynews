@@ -213,48 +213,83 @@
 
 .inset-story {
 	position: relative;
+	padding: $baseline;
 	border-bottom: 0;
-	padding-bottom: 0;
+	background-color: $bluegrey1000;
+	overflow: hidden;
+
+	@include bp(m) {
+		padding: 0;
+	}
 
 	.story-media {
-		position: relative;
-		top: 0;
-		left: 0;
-		z-index: 0;
-		height: 400px;
-		width: 100%;
+		margin-bottom: 0;
 
-		&:after {
-			content: '';
-			display: block;
+		img {
 			width: 100%;
-			height: 100%;
-			position: absolute; 
-			top: 0;
-			left: 0;
-			background-color: rgba(0,0,0,0.5);
 		}
 
-		> img {
+		@include bp(l) {
+			position: relative;
+			top: 0;
+			left: 0;
+			z-index: 0;
 			width: 100%;
-			height: 100%;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute; 
+				top: 0;
+				left: 0;
+				background-color: rgba(38,50,56,.65);
+				@include transition(background-color .2s);
+			}
 		}
 	}
 
 	.story-header {
-		padding: $baseline * 2;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
+		margin-left: 33.8%;
+		background-color: $bluegrey1000;
 
-		@include bp(xl) {
-			padding: $baseline * 3;
+		@include bp(m) {
+			margin-left: 0;
+			padding: 0 $baseline *2;
+		}
+
+		@include bp(l) {
+			padding: $baseline * 2;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background: none;
 		}
 	}
 
-	.story-heading {
-		margin-top: 40px;
+	.story-summary {
+		height: 0;
+		opacity: 0;
+		@include transition(height .2s, opacity .2s);
+	}
+
+	@include bp(l) {
+		background: none;
+		max-height: 425px;
+
+		&:hover {
+
+			.story-media:after {
+				background-color: rgba(38,50,56,.85);
+			}
+
+			.story-summary {
+				opacity: 1;
+				height: 80px;
+			}
+		}
 	}
 }
 

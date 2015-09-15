@@ -133,7 +133,7 @@ strong {
 
 // Global heading styles
 
-// mobile default heading
+// mobile default heading style
 .story-heading {  
 	@include font-size($fontsize400);
 	line-height: 1.35rem;
@@ -153,6 +153,7 @@ h4.story-heading {
 	@include font-size($fontsize200);
 	line-height: 1rem;
 }
+//
 
 // Headings for featured stories
 
@@ -256,18 +257,26 @@ h4.story-heading {
 // Headings for inset story
 
 .inset-story {
-
 	.story-heading {
 		font-family: $titleseriftypeface;
-		font-weight: 700;
+		font-weight: normal;
+
+		@include font-size($fontsize300);
+		line-height: 1.25rem;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+			line-height: 1.5rem;
+		}
+
 
 		@include bp(xl) {
-			@include font-size($fontsize900);
+			@include font-size($fontsize800);
 			line-height: 2.5rem;
 		}
 	}
 
-	.story-heading .link {
+	.link {
 		color: white;
 	}
 }
@@ -352,13 +361,26 @@ h4.story-heading {
 	line-height: 1.5rem;
 }
 
-.cover-hero .story-summary {
+.cover-hero .story-summary,
+.inset-story .story-summary {
 	color: $black400;
 }
 
 .list-story .story-summary {
-	@include font-size($fontsize200);
+	@include font-size($fontsize300);
 	line-height: 1.35rem;
+}
+
+.inset-story .story-summary {
+	@include max-bp(m) {
+		display: none;
+	}
+
+	@include font-size($fontsize200);
+
+	@include bp(xl) {
+		@include font-size($fontsize300);
+	}
 }
 
 
@@ -420,13 +442,25 @@ time,
 }
 
 .highlight-kicker {
-	width: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: $baseline $baseline * 2;
+	display: inline-block;
 	font-family: $headingstypeface;
-	@include font-size($fontsize400);
+	@include font-size($fontsize300);
+
+	@include bp(m) {
+		margin-bottom: $baseline;
+	}
+
+	@include bp(l) {
+		@include font-size($fontsize500);
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		width: 2.5rem;
+		height: .35rem;
+		margin-bottom: $baseline / 2; 
+	}
 }
 
 .location-kicker {
