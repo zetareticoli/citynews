@@ -2311,7 +2311,7 @@ height: 100%;*/ }
         background-color: rgba(38, 50, 56, 0.85); }
       .inset-story:hover .story-summary {
         opacity: 1;
-        height: 80px; } }
+        height: 100px; } }
 
 .size1of2 .list-story .story-media {
   width: 50%;
