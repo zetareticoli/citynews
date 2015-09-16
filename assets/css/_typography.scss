@@ -225,16 +225,31 @@ h4.story-heading {
 	}
 }
 
-.cover-hero .story-heading {
-	@include bp(l) {
-		@include font-size($fontsize900);
+.hero-story h2.story-heading {
+	margin-bottom: 0;
+
+	@include font-size($fontsize500);
+	line-height: 1.5rem;
+
+	@include bp(m) {
+		@include font-size($fontsize600);
+		line-height: 2rem;
 	}
 
+	@include bp(l) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+		font-weight: 900;
+	}
+}
+
+.cover-hero .story-heading {
 	@include bp(xl) {
 		@include font-size($fontsize1000);
 		line-height: 3rem;
 	}
 }
+
 
 // Headings for list stories
 
@@ -325,7 +340,7 @@ h4.story-heading {
 	}
 }
 
-// Headings for any module title
+// Module heading title
 
 .module-title {
 	display: block;
@@ -346,6 +361,39 @@ h4.story-heading {
 		font-weight: 400;
 		color: $black700;
 	}
+}
+
+// Section heading title
+
+
+.section-title {
+	font-family: $titleseriftypeface;
+	font-weight: normal;
+	color: $black900;
+
+	.kicker {
+		display: block;
+		font-family: $titleseriftypeface;
+		font-style: normal;
+		font-weight: normal;
+		color: $black600;
+	}
+
+	&, .kicker {
+		@include font-size($fontsize500);
+	}
+
+	@include bp(m) {
+
+		&, .kicker {
+			@include font-size($fontsize800);
+		}
+
+		.kicker {
+			display: inline;
+		}
+	}
+	
 }
 
 // Text Elements ===============================================================
@@ -491,17 +539,6 @@ time,
 	&:hover {
 		color: $black900;
 	}	
-}
-
-.section-title {
-	color: $black900;
-	font-family: $texttypeface;
-	@include font-size(28);
-	font-weight: 900;
-	@include bp(m) {
-		@include font-size(32);
-		text-align: center;
-	}
 }
 
 .inverted .link {

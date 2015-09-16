@@ -91,13 +91,19 @@ ol, ul {
 
 @include bp(m) {
 	.has-flex {
+
+		.flx-container {
+			@include flexbox;
+		}
+
 		.l-row,
 		.l-list {
 			width: 100%;
 			@include flexbox;
 		}
 
-		.l-row {
+		.l-row,
+		.flx-row {
 			@include flex-flow(row nowrap);
 		}
 
@@ -105,7 +111,8 @@ ol, ul {
 			@include flex-flow(row nowrap);
 		}
 
-		.l-list {
+		.l-list,
+		.flx-col {
 			@include flex-flow(column nowrap);
 		}
 
