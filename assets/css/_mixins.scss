@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import 'bourbon/bourbon'; // http://bourbon.io/
 
 // Typography =============================================
 
@@ -240,33 +240,6 @@ transform : scale($ratio1,$ratio2); }
 -ms-transform : skew($x, $y);
 -o-transform : skew($x, $y);
 transform : skew($x, $y); }
-
-/*
-// .translate(VALUE, VALUE)
-
-@mixin translate($x: 0, $y: 0) {
--webkit-transform : translate($x, $y);
--moz-transform : translate($x, $y);
--ms-transform : translate($x, $y);
--o-transform : translate($x, $y);
-transform : translate($x, $y); }
-
-@mixin translated($x: 0, $y: 0, $z: 0) {
--webkit-transform : translate($x, $y, $z);
--moz-transform : translate($x, $y, $z);
--ms-transform : translate($x, $y, $z);
--o-transform : translate($x, $y, $z);
-transform : translate($x, $y, $z); }
-
-// @include transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
-
-@mixin transition($transition...) {
--webkit-transition : $transition;
--moz-transition : $transition;
--ms-transition : $transition;
--o-transition : $transition;
-transition : $transition; }
-*/
 
 // .background-size(VALUE VALUE);
 
