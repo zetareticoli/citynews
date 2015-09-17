@@ -7,6 +7,7 @@
 
 .button,
 a.button {
+	display: inline-block;
 	text-decoration: none;
 
 	&.has-icon {
@@ -20,6 +21,8 @@ a.button {
 		font-weight: 700;
 	}
 }
+
+// Sizes
 
 .small-button {
 	padding: $baseline $baseline * 2;
@@ -37,6 +40,14 @@ a.button {
 
 .light-button {
 	border: 2px solid $bordercolor;
+}
+
+.inverted .button {
+	color: white;
+}
+
+.inverted .light-button {
+	border-color: $bluegrey800;
 }
 
 // Button Types ===============================================================
