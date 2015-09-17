@@ -53,10 +53,6 @@
 // Themes ===============================================================
 
 .inverted {
-
-	.story-header {
-		padding: $baseline;
-	}
 	
 	.story-footer {
 		padding: 0 $gutterwidth;
@@ -366,7 +362,10 @@
 	}
 
 	.story-header {
+		padding: $baseline;
+
 		@include bp(m) {
+			padding: 0 $baseline * 2;
 			height: 100%;
 		}
 

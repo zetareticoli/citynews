@@ -589,8 +589,9 @@ time,
 
 .badge-kicker {
 	padding: 4px 4px;
-	line-height: 1rem;
 	margin-bottom: $baseline;
+	line-height: 1rem;
+	color: $black900;
 
 	@include bp(m) {
 		padding: 2px $baseline;
