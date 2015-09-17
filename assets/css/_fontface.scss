@@ -1,7 +1,15 @@
 @font-face {
-    font-family: 'PublicoBannerBold';
-    src: url('assets/webfonts/PublicoBannerBold.woff2') format('woff2'),
-         url('assets/webfonts/PublicoBannerBold.woff') format('woff');
+	font-family: 'PublicoBanner';
+	src: url('PublicoBanner-BoldItalic.woff')  format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PublicoBanner';
+	src: url('PublicoBanner-Bold.woff')  format('woff');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {

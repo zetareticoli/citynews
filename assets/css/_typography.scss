@@ -388,12 +388,12 @@ h4.story-heading {
 	position: relative;
 	font-family: $titleseriftypeface;
 	font-weight: normal;
+	font-style: italic;
 	color: $black900;
 
 	.kicker {
 		display: block;
 		font-family: $titleseriftypeface;
-		font-style: normal;
 		font-weight: normal;
 		color: $black600;
 	}
@@ -426,10 +426,6 @@ h4.story-heading {
 			background-color: $bordercolor;
 			z-index: 0;
 		}
-	}
-
-	@include bp(l) {
-		@include font-size($fontsize800);
 	}
 }
 
