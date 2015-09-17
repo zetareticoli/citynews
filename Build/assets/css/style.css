@@ -1466,7 +1466,13 @@ ol, ul {
   padding-bottom: 8px; }
   @media (min-width: 46.25em) {
     .slice-item {
+      padding-bottom: 16px; } }
+  @media (min-width: 75em) {
+    .slice-item {
       padding-bottom: 24px; } }
+
+.focus-section .slice-item {
+  padding-bottom: 8px; }
 
 .module .slice-item {
   padding-bottom: 8px; }
@@ -2261,7 +2267,7 @@ ol, ul {
     display: table; }
   .list-story:after {
     clear: both; }
-  @media (min-width: 46.25em) {
+  @media (min-width: 62.5em) {
     .list-story {
       padding-bottom: 16px; } }
   .list-story .story-media {
@@ -2281,6 +2287,9 @@ ol, ul {
         display: block; } }
   .list-story .byline {
     margin-bottom: 2px; }
+
+.focus-section .list-story {
+  padding-bottom: 8px; }
 
 .inset-story {
   position: relative;

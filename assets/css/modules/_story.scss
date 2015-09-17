@@ -215,7 +215,7 @@
 .list-story {
 	@include clearfix;
 
-	@include bp(m) {
+	@include bp(l) {
 		padding-bottom: $baseline * 2;
 	}
 
@@ -244,6 +244,10 @@
 	.byline {
 		margin-bottom: $gutterwidth / 8;
 	}
+}
+
+.focus-section .list-story {
+	padding-bottom: $baseline;
 }
 
 // reportage
