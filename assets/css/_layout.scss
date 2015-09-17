@@ -194,8 +194,16 @@ ol, ul {
 	padding-bottom: $baseline;
 
 	@include bp(m) {
+		padding-bottom: $baseline * 2;
+	}
+	
+	@include bp(xl) {
 		padding-bottom: $baseline * 3;
 	}
+}
+
+.focus-section .slice-item {
+	padding-bottom: $baseline;
 }
 
 .module .slice-item {
