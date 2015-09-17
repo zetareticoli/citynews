@@ -743,6 +743,7 @@ h4.story-heading {
     color: #757575; }
 
 .section-title {
+  position: relative;
   font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
   font-weight: normal;
   color: #424242; }
@@ -753,14 +754,36 @@ h4.story-heading {
     font-weight: normal;
     color: #9e9e9e; }
   .section-title, .section-title .kicker {
-    font-size: 21px;
-    font-size: 1.3125rem; }
+    font-size: 18px;
+    font-size: 1.125rem; }
   @media (min-width: 46.25em) {
     .section-title, .section-title .kicker {
-      font-size: 32px;
-      font-size: 2rem; }
+      font-size: 28px;
+      font-size: 1.75rem; }
     .section-title .kicker {
-      display: inline; } }
+      display: inline; }
+      .section-title .kicker:after {
+        content: ' / '; }
+    .section-title:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      background-color: #e0e0e0;
+      z-index: 0; } }
+  @media (min-width: 62.5em) {
+    .section-title {
+      font-size: 32px;
+      font-size: 2rem; } }
+
+@media (min-width: 46.25em) {
+  .section-heading {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    padding-right: 16px; } }
 
 .story-summary {
   color: #616161; }

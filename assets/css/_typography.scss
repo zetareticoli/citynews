@@ -375,8 +375,8 @@ h4.story-heading {
 
 // Section heading title
 
-
 .section-title {
+	position: relative;
 	font-family: $titleseriftypeface;
 	font-weight: normal;
 	color: $black900;
@@ -390,20 +390,48 @@ h4.story-heading {
 	}
 
 	&, .kicker {
-		@include font-size($fontsize500);
+		@include font-size($fontsize400);
 	}
 
 	@include bp(m) {
 
 		&, .kicker {
-			@include font-size($fontsize800);
+			@include font-size($fontsize700);
 		}
 
 		.kicker {
 			display: inline;
+
+			&:after {
+				content: ' / ';
+			}
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 4px;
+			position: absolute;
+			top: 50%;
+			background-color: $bordercolor;
+			z-index: 0;
 		}
 	}
-	
+
+	@include bp(l) {
+		@include font-size($fontsize800);
+	}
+}
+
+.section-heading {
+
+	@include bp(m) {
+		position: relative;
+		background-color: white;
+		z-index: 1;
+		padding-right: $baseline * 2;
+	}
 }
 
 // Text Elements ===============================================================
