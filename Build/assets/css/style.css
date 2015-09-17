@@ -625,28 +625,25 @@ h4.story-heading {
       line-height: 2.5rem;
       font-weight: 900; } }
 
-.hero-story h2.story-heading {
-  margin-bottom: 0;
-  font-size: 21px;
-  font-size: 1.3125rem;
-  line-height: 1.5rem; }
-  @media (min-width: 46.25em) {
-    .hero-story h2.story-heading {
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: 2rem; } }
-  @media (min-width: 62.5em) {
-    .hero-story h2.story-heading {
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 2.5rem;
-      font-weight: 900; } }
-
 @media (min-width: 75em) {
   .cover-hero .story-heading {
     font-size: 48px;
     font-size: 3rem;
     line-height: 3rem; } }
+
+.focus-section .hero-story .story-heading {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
+  @media (min-width: 46.25em) {
+    .focus-section .hero-story .story-heading {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+  @media (min-width: 62.5em) {
+    .focus-section .hero-story .story-heading {
+      font-size: 28px;
+      font-size: 1.75rem; } }
 
 .list-story .story-heading {
   font-weight: 700; }
@@ -660,6 +657,16 @@ h4.story-heading {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 2rem; } }
+
+.focus-section .list-story h3.story-heading {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.35rem; }
+  @media (min-width: 62.5em) {
+    .focus-section .list-story h3.story-heading {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
 
 .inset-story .story-heading {
   font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;

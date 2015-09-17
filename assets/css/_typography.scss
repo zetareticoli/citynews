@@ -134,6 +134,7 @@ strong {
 // Global heading styles
 
 // mobile default heading style
+
 .story-heading {  
 	@include font-size($fontsize400);
 	line-height: 1.35rem;
@@ -153,7 +154,6 @@ h4.story-heading {
 	@include font-size($fontsize200);
 	line-height: 1rem;
 }
-//
 
 // Headings for featured stories
 
@@ -225,9 +225,16 @@ h4.story-heading {
 	}
 }
 
-.hero-story h2.story-heading {
-	margin-bottom: 0;
+.cover-hero .story-heading {
+	@include bp(xl) {
+		@include font-size($fontsize1000);
+		line-height: 3rem;
+	}
+}
 
+// Focus hero story heading
+
+.focus-section .hero-story .story-heading {
 	@include font-size($fontsize500);
 	line-height: 1.5rem;
 
@@ -237,16 +244,7 @@ h4.story-heading {
 	}
 
 	@include bp(l) {
-		@include font-size($fontsize800);
-		line-height: 2.5rem;
-		font-weight: 900;
-	}
-}
-
-.cover-hero .story-heading {
-	@include bp(xl) {
-		@include font-size($fontsize1000);
-		line-height: 3rem;
+		@include font-size($fontsize700);
 	}
 }
 
@@ -266,6 +264,18 @@ h4.story-heading {
 			@include font-size($fontsize600);
 			line-height: 2rem;
 		}
+	}
+}
+
+// Focus list story heading
+
+.focus-section .list-story h3.story-heading {
+	@include font-size($fontsize300);
+	line-height: 1.35rem;
+
+	@include bp(l) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
 	}
 }
 
