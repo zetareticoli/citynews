@@ -249,7 +249,6 @@ h4.story-heading {
 	}
 }
 
-
 // Headings for list stories
 
 .list-story {
@@ -307,6 +306,30 @@ h4.story-heading {
 	}
 }
 
+// Headings for special story 
+
+.special-story {
+	.story-heading {
+		font-family: $titleseriftypeface;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
+		}
+	}
+}
 
 // Headings for subheadings
 
@@ -448,14 +471,19 @@ h4.story-heading {
 	color: $black800;
 }
 
-.hero-story .story-summary {
-	@include font-size($fontsize400);
-	line-height: 1.5rem;
+.inverted .story-summary {
+	color: $black400;
 }
 
-.cover-hero .story-summary,
-.inset-story .story-summary {
-	color: $black400;
+.hero-story .story-summary,
+.special-story .story-summary {
+	@include font-size($fontsize300);
+	line-height: 1.5rem;
+
+	@include bp(xl) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+	}
 }
 
 .list-story .story-summary {
@@ -533,17 +561,21 @@ time,
 	font-weight: 700;
 }
 
-.highlight-kicker {
+.highlight-kicker,
+.badge-kicker {
 	display: inline-block;
 	font-family: $headingstypeface;
 	@include font-size($fontsize300);
 
-	@include bp(m) {
-		margin-bottom: $baseline;
-	}
-
 	@include bp(l) {
 		@include font-size($fontsize500);
+	}
+}
+
+.highlight-kicker {
+
+	@include bp(m) {
+		margin-bottom: $baseline;
 	}
 
 	&:before {
@@ -553,6 +585,27 @@ time,
 		height: .35rem;
 		margin-bottom: $baseline / 2; 
 	}
+}
+
+.badge-kicker {
+	padding: 4px 4px;
+	line-height: 1rem;
+	margin-bottom: $baseline;
+
+	@include bp(m) {
+		padding: 2px $baseline;
+		margin-bottom: $baseline * 2;
+		line-height: 1.5rem;
+	}
+
+	@include bp(l) {
+		padding: 2px $baseline * 2;
+		line-height: 2rem;
+	}
+}
+
+.inverted .badge-kicker {
+	color: $bluegrey1000;
 }
 
 .location-kicker {
