@@ -1680,6 +1680,15 @@ ol, ul {
   .newslist-aside {
     width: 33.33%; } }
 
+.focus-section {
+  padding: 8px 0; }
+  @media (min-width: 46.25em) {
+    .focus-section {
+      padding: 16px 0; } }
+  @media (min-width: 62.5em) {
+    .focus-section {
+      padding: 24px 0; } }
+
 /* ==========================================================================
   Global Styles
   ========================================================================== */
@@ -2133,7 +2142,8 @@ ol, ul {
   .hero-story .story-media {
     width: 100%;
     max-width: none;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    margin-right: 0; }
     .hero-story .story-media img {
       width: 100%; }
   .hero-story .story-header,
@@ -2149,8 +2159,7 @@ ol, ul {
       position: relative;
       padding: 0;
       width: 100%;
-            /*
-height: 100%;*/ }
+      height: 100%; }
     .hero-story.cover-hero .story-footer {
       padding: 8px 0;
       margin-right: 8px;
@@ -2191,6 +2200,23 @@ height: 100%;*/ }
           padding: 0 24px; } }
     .hero-story.cover-hero .story-footer .story-subheading:last-child {
       margin-bottom: 16px; }
+  @media (max-width: 62.438em) {
+    .hero-story.focus-cover {
+      background-color: #eceff1; }
+      .hero-story.focus-cover .story-media:after {
+        display: none; } }
+    @media (max-width: 62.438em) and (min-width: 62.5em) {
+      .hero-story.focus-cover .story-media:after {
+        display: block; } }
+  @media (max-width: 62.438em) {
+      .hero-story.focus-cover .story-heading {
+        position: relative; } }
+    @media (max-width: 62.438em) and (min-width: 62.5em) {
+      .hero-story.focus-cover .story-heading {
+        position: absolute; } }
+  @media (max-width: 62.438em) {
+      .hero-story.focus-cover .link .story-heading {
+        color: #424242; } }
 
 .featured-story {
   *zoom: 1; }
@@ -2289,10 +2315,6 @@ height: 100%;*/ }
       .inset-story:hover .story-summary {
         opacity: 1;
         height: 100px; } }
-
-.size1of2 .list-story .story-media {
-  width: 50%;
-  margin-right: 8px; }
 
 .sublinks .sublink {
   margin-bottom: 8px;
