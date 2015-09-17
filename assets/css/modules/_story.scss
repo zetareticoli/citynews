@@ -52,10 +52,12 @@
 
 // Themes ===============================================================
 
-.story.inverted {
+.inverted {
+
 	.story-header {
-		padding: $gutterwidth $gutterwidth 0;
+		padding: $baseline;
 	}
+	
 	.story-footer {
 		padding: 0 $gutterwidth;
 	}
@@ -98,9 +100,8 @@
 			position: relative;
 			padding: 0;
 			width: 100%;
-			height: 100%;
-
 		}
+
 		.story-footer {
 			padding: $baseline 0;
 			margin-right: $baseline;
@@ -250,7 +251,7 @@
 	padding-bottom: $baseline;
 }
 
-// reportage
+// inset
 
 .inset-story {
 	position: relative;
