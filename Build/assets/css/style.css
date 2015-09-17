@@ -1066,6 +1066,18 @@ a.button {
     font-family: 'Neue Haas Grotesk W01';
     font-weight: 700; }
 
+.small-button {
+  padding: 8px 16px; }
+
+.mid-button {
+  padding: 10px 16px; }
+
+.large-button {
+  padding: 16px 24px; }
+
+.light-button {
+  border: 2px solid #e0e0e0; }
+
 .nav-button {
   position: absolute;
   top: 0;

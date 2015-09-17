@@ -21,6 +21,23 @@ a.button {
 	}
 }
 
+.small-button {
+	padding: $baseline $baseline * 2;
+}
+
+.mid-button {
+	padding: 10px $baseline * 2;
+}
+
+.large-button {
+	padding: $baseline * 2 $baseline * 3;
+}
+
+// Button Styles ===============================================================
+
+.light-button {
+	border: 2px solid $bordercolor;
+}
 
 // Button Types ===============================================================
 
