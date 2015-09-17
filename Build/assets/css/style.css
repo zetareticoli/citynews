@@ -787,10 +787,6 @@ h4.story-heading {
       top: 50%;
       background-color: #e0e0e0;
       z-index: 0; } }
-  @media (min-width: 62.5em) {
-    .section-title {
-      font-size: 32px;
-      font-size: 2rem; } }
 
 @media (min-width: 46.25em) {
   .section-heading {
