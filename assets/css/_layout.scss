@@ -340,7 +340,7 @@ ol, ul {
 		}
 	}
 
-	.section-title {
+	.page-title {
 		position: relative;
 		margin-top: $baseline * 9;
 		@include bp(m) {
@@ -351,6 +351,7 @@ ol, ul {
 			margin: auto;
 			height: 64px;
 			line-height: 64px;
+			text-align: center;
 		}
 		@include bp(l) {	
 			height: 72px;
@@ -409,7 +410,7 @@ ol, ul {
 	}
 	
 	.nav-button,
-	.section-title {
+	.page-title {
 		color: white;
 	}
 }

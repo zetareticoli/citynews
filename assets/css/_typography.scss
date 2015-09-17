@@ -373,6 +373,15 @@ h4.story-heading {
 	}
 }
 
+// Page heading title
+
+.page-title {
+	font-family: $titleseriftypeface;
+	font-weight: normal;
+	@include font-size($fontsize800);
+	color: $black1000;
+}
+
 // Section heading title
 
 .section-title {

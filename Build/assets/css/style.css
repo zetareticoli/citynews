@@ -742,6 +742,13 @@ h4.story-heading {
     font-weight: 400;
     color: #757575; }
 
+.page-title {
+  font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 32px;
+  font-size: 2rem;
+  color: #212121; }
+
 .section-title {
   position: relative;
   font-family: "PublicoBannerBold", Georgia, "Times New Roman", serif;
@@ -1587,20 +1594,21 @@ ol, ul {
       .slim-header .slim-header-nav {
         display: block;
         float: left; } }
-  .slim-header .section-title {
+  .slim-header .page-title {
     position: relative;
     margin-top: 72px; }
     @media (min-width: 46.25em) {
-      .slim-header .section-title {
+      .slim-header .page-title {
         width: 50%;
         position: absolute;
         right: 0;
         left: 0;
         margin: auto;
         height: 64px;
-        line-height: 64px; } }
+        line-height: 64px;
+        text-align: center; } }
     @media (min-width: 62.5em) {
-      .slim-header .section-title {
+      .slim-header .page-title {
         height: 72px;
         line-height: 72px; } }
   .slim-header .nav-button.sliding-nav-trigger {
@@ -1628,7 +1636,7 @@ ol, ul {
 .slim-header.inverted .search-button {
   border-color: #424242; }
 .slim-header.inverted .nav-button,
-.slim-header.inverted .section-title {
+.slim-header.inverted .page-title {
   color: white; }
 
 /* ==========================================================================
