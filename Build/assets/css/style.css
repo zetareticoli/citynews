@@ -2227,7 +2227,7 @@ ol, ul {
     clear: both; }
   @media (min-width: 46.25em) {
     .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
-      width: 45%;
+      width: 50%;
       margin-right: 12px;
       float: left; } }
 
@@ -2242,9 +2242,15 @@ ol, ul {
     .list-story {
       padding-bottom: 16px; } }
   .list-story .story-media {
-    width: 30%;
+    width: 25%;
     float: left;
     margin-right: 12px; }
+    @media (min-width: 62.5em) {
+      .list-story .story-media {
+        width: 36%; } }
+    @media (min-width: 75em) {
+      .list-story .story-media {
+        width: 32%; } }
   .list-story .story-footer {
     display: none; }
     @media (min-width: 46.25em) {
