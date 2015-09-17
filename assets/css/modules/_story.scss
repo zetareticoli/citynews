@@ -334,6 +334,56 @@
 	}
 }
 
+// special
+
+.special-story {
+	overflow: hidden;
+	padding-bottom: 0;
+	background-color: $bluegrey100;
+
+	.story-header,
+	.story-media {
+		width: 100%;
+		float: none;
+
+		@include bp(m) {
+			width: 50%;
+		}
+	}
+
+	.story-media {
+		max-width: none;
+
+		img {
+			width: 100%;
+		}
+
+		@include bp(m) {
+			float: right;
+			margin-bottom: 0;
+		}
+	}
+
+	.story-header {
+		@include bp(m) {
+			height: 100%;
+		}
+
+		@include bp(l) {
+			padding: 0 $baseline * 3;
+		}
+	}
+
+	.story-summary {
+		display: none;
+
+		@include bp(l) {
+			display: block;
+		}
+	}
+
+}
+
 // Sublinks ===============================================================
 
 .sublinks {

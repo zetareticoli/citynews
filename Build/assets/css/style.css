@@ -694,6 +694,27 @@ h4.story-heading {
 .inset-story .link {
   color: white; }
 
+.special-story .story-heading {
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.5rem; }
+  @media (min-width: 46.25em) {
+    .special-story .story-heading {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 62.5em) {
+    .special-story .story-heading {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 75em) {
+    .special-story .story-heading {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
+
 .story-subheading {
   font-size: 18px;
   font-size: 1.125rem;
