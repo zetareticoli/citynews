@@ -134,8 +134,6 @@ strong {
 
 // Global heading styles
 
-// mobile default heading style
-
 .story-heading {  
 	@include font-size($fontsize400);
 	line-height: 1.35rem;
@@ -189,14 +187,25 @@ h4.story-heading {
 		}
 	}
 
-	&.featured-lg,
+	&.featured-lg {
+
+		.story-heading {
+
+			@include bp(m) {
+				@include font-size($fontsize500);
+				line-height: 1.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+
 	&.featured-xl {
 
 		.story-heading {
 
 			@include bp(m) {
 				@include font-size($fontsize600);
-				line-height: 1.75rem;
+				line-height: 1.5rem;
 				font-weight: 900;
 			}
 
@@ -204,6 +213,17 @@ h4.story-heading {
 				@include font-size($fontsize700);
 				line-height: 2rem;
 			}
+		}
+	}
+}
+
+.headlines-section .featured-lg {
+
+	.story-heading {
+		@include bp(xl) {
+			@include font-size($fontsize700);
+			line-height: 2rem;
+			font-weight: 900;
 		}
 	}
 }
@@ -245,8 +265,8 @@ h4.story-heading {
 	}
 
 	@include bp(l) {
-		@include font-size($fontsize900);
-		line-height: 3rem;
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
 	}
 }
 
@@ -271,11 +291,11 @@ h4.story-heading {
 // Focus list story heading
 
 .focus-section .list-story h3.story-heading {
-	@include font-size($fontsize300);
-	line-height: 1.35rem;
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
 
 	@include bp(l) {
-		@include font-size($fontsize400);
+		@include font-size($fontsize500);
 		line-height: 1.5rem;
 	}
 }
