@@ -17,8 +17,7 @@ a.button {
 	}
 
 	.button-label {
-		font-family: 'Neue Haas Grotesk W01';
-		font-weight: 700;
+		font-family: $headingstypeface;
 	}
 }
 
@@ -54,16 +53,19 @@ a.button {
 
 // Nav
 
-.nav-button {
+.button.nav-button {
 	position: absolute;
 	top: 0;
 	right: 10px;
 	width: auto;
 	height: 56px;
+	@include flexbox;
+
 	@include bp(m) {
 		right: 24px;
 		height: 64px;
 	}
+	
 	@include bp(l) {
 		visibility: hidden;
 	}

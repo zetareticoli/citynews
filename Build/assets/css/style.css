@@ -1047,8 +1047,7 @@ a.button {
     padding-left: 4px; }
   .button .button-label,
   a.button .button-label {
-    font-family: 'Neue Haas Grotesk W01';
-    font-weight: 700; }
+    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
 .small-button {
   padding: 8px 16px; }
@@ -1068,24 +1067,29 @@ a.button {
 .inverted .light-button {
   border-color: #455a64; }
 
-.nav-button {
+.button.nav-button {
   position: absolute;
   top: 0;
   right: 10px;
   width: auto;
-  height: 56px; }
+  height: 56px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
   @media (min-width: 46.25em) {
-    .nav-button {
+    .button.nav-button {
       right: 24px;
       height: 64px; } }
   @media (min-width: 62.5em) {
-    .nav-button {
+    .button.nav-button {
       visibility: hidden; } }
-  .nav-button .button-label {
+  .button.nav-button .button-label {
     font-size: 14px;
     font-size: 0.875rem; }
     @media (min-width: 46.25em) {
-      .nav-button .button-label {
+      .button.nav-button .button-label {
         font-size: 16px;
         font-size: 1rem; } }
 
