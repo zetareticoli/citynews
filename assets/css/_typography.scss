@@ -92,7 +92,7 @@ h5 {
 	@include font-size($fontsize200);
 	line-height: 1rem;
 
-	@include bp(l) {
+	@include bp(xl) {
 		@include font-size($fontsize300);
 		line-height: 1.15rem;
 	}
