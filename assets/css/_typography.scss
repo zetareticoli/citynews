@@ -418,7 +418,7 @@ h4.story-heading {
 	}
 }
 
-// Page heading title
+// Page title
 
 .page-title {
 	font-family: $titleseriftypeface;
@@ -427,60 +427,55 @@ h4.story-heading {
 	color: $black1000;
 }
 
-// Section heading title
+// Section title
 
 .section-title {
 	position: relative;
+	padding-bottom: $baseline;
+	margin-bottom: $baseline;
+	border-bottom: 1px solid $black400;
 	font-family: $titleseriftypeface;
 	font-weight: normal;
 	font-style: italic;
 	color: $black900;
 
-	.kicker {
-		display: block;
-		font-family: $titleseriftypeface;
-		font-weight: normal;
-		color: $black600;
-	}
-
-	&, .kicker {
-		@include font-size($fontsize400);
-	}
-
 	@include bp(m) {
+		border-bottom: 0;
+		padding-bottom: 0;
+		margin-bottom: $baseline * 2;
+	}
 
-		&, .kicker {
+	&:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		position: absolute;
+		top: 0;
+		background-color: $black800;
+		z-index: 0;
+
+		@include bp(m) {
+			top: 50%;
+		}
+	}
+	
+	.kicker {
+		padding-top: 12px;
+		display: inline-block;
+		font-family: $titleseriftypeface;
+		@include font-size($fontsize400);
+		font-weight: normal;
+		color: $black900;
+
+		@include bp(m) {
+			position: relative;
+			padding-top: 0;
+			background-color: white;
+			z-index: 1;
+			padding-right: $baseline * 2;
 			@include font-size($fontsize700);
 		}
-
-		.kicker {
-			display: inline;
-
-			&:after {
-				content: ' / ';
-			}
-		}
-
-		&:before {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 4px;
-			position: absolute;
-			top: 50%;
-			background-color: $bordercolor;
-			z-index: 0;
-		}
-	}
-}
-
-.section-heading {
-
-	@include bp(m) {
-		position: relative;
-		background-color: white;
-		z-index: 1;
-		padding-right: $baseline * 2;
 	}
 }
 
