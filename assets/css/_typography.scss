@@ -71,12 +71,12 @@ h3 {
 	line-height: 1.5rem;
 
 	@include bp(m) {
-		@include font-size($fontsize600);
-		line-height: 2rem;
+		@include font-size($fontsize500);
 	}
 
 	@include bp(xl) {
 		@include font-size($fontsize700);
+		line-height: 2rem;
 	}
 }
 
@@ -84,14 +84,9 @@ h4 {
 	@include font-size($fontsize300);
 	line-height: 1rem;
 
-	@include bp(m) {
-		@include font-size($fontsize500);
+	@include bp(l) {
+		@include font-size($fontsize400);
 		line-height: 1.5rem;
-	}
-
-	@include bp(xl) {
-		@include font-size($fontsize600);
-		line-height: 2rem;
 	}
 }
 
@@ -143,26 +138,6 @@ strong {
 // Headings =====================================================================
 
 // Global heading styles
-
-.story-heading {  
-	@include font-size($fontsize400);
-	line-height: 1.35rem;
-}
-
-h3.story-heading { 
-	@include font-size($fontsize200);
-	line-height: 1rem;
-
-	@include bp(xl) {
-		@include font-size($fontsize300);
-		line-height: 1.35rem;
-	}
-}
-
-h4.story-heading {
-	@include font-size($fontsize200);
-	line-height: 1rem;
-}
 
 // Headings for featured stories
 
@@ -532,23 +507,23 @@ h4.story-heading {
 
 // Label, Kicker & Byline
 
-.label,
 time,
 .timestamp {
-	@include font-size(16);
+	@include font-size($fontsize200);
+	color: $black600;
 }
 
 .byline {
 	margin-bottom: 0;
 	line-height: .875rem;
+}
 
-	.label {
-		display: inline-block;
-		font-family: $brandtypeface;
-		color: $black700;
-		margin: 0 4px 4px 0;
-		text-transform: lowercase;
-	}
+.label {
+	margin: 0 4px 4px 0;
+	display: inline-block;
+	font-family: $brandtypeface;
+	color: $black600;
+	text-transform: lowercase;
 }
 
 .card-label {
