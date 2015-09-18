@@ -650,8 +650,9 @@ h4.story-heading {
       line-height: 2rem; } }
   @media (min-width: 62.5em) {
     .focus-section .hero-story .story-heading {
-      font-size: 28px;
-      font-size: 1.75rem; } }
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 3rem; } }
 
 .list-story .story-heading {
   font-weight: 700; }

@@ -245,7 +245,8 @@ h4.story-heading {
 	}
 
 	@include bp(l) {
-		@include font-size($fontsize700);
+		@include font-size($fontsize900);
+		line-height: 3rem;
 	}
 }
 
