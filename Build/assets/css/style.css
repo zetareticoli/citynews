@@ -574,11 +574,12 @@ strong {
     font-size: 1.25rem;
     line-height: 1.5rem; } }
 
-@media (min-width: 75em) {
-  .cover-hero .story-heading {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 3rem; } }
+@media (min-width: 62.5em) {
+  .hero-story .story-heading {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 900; } }
 
 .focus-section .hero-story .story-heading {
   font-size: 20px;
