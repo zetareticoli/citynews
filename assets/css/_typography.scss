@@ -24,12 +24,19 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: $baseline * 2;
 }
 
-h1, h2 {
+h1 {
 	font-weight: $bigheadingeweight;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
+}
+
+
+h2 {
+	@include bp(m) {
+		font-weight: $bigheadingeweight;
+	}
 }
 
 h1 {
@@ -56,52 +63,38 @@ h2 {
 	line-height: 1.5rem;
 
 	@include bp(m) {
-		@include font-size($fontsize700);
+		@include font-size($fontsize600);
 		line-height: 2rem;
 	}
 
 	@include bp(xl) {
-		@include font-size($fontsize900);
-		line-height: 2.5rem;
+		@include font-size($fontsize700);
+		line-height: 2rem;
 	}
 }
 
 h3 {
-	@include font-size($fontsize400);
+	@include font-size($fontsize500);
 	line-height: 1.5rem;
 
-	@include bp(m) {
-		@include font-size($fontsize500);
-	}
-
-	@include bp(xl) {
-		@include font-size($fontsize700);
+	@include bp(l) {
+		@include font-size($fontsize600);
 		line-height: 2rem;
 	}
 }
 
 h4 {
-	@include font-size($fontsize300);
-	line-height: 1rem;
-
-	@include bp(l) {
-		@include font-size($fontsize400);
-		line-height: 1.5rem;
-	}
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
 }
 
 h5 {
 	@include font-size($fontsize200);
 	line-height: 1rem;
 
-	@include bp(m) {
-		@include font-size($fontsize400);
-		line-height: 1.5rem;
-	}
-
-	@include bp(xl) {
-		@include font-size($fontsize500);
-		line-height: 1.5rem;
+	@include bp(l) {
+		@include font-size($fontsize300);
+		line-height: 1.15rem;
 	}
 }
 
@@ -143,31 +136,13 @@ strong {
 
 .featured-story {
 
-	.story-heading {
-		font-weight: 700;
-	}
-
 	&.featured-sm {
 
 		.story-heading {
 
 			@include bp(m) {
 				@include font-size($fontsize500);
-				line-height: 1.75rem;
-			}
-		}
-	}
-
-	&.featured-mid {
-
-		.story-heading {
-			@include font-size($fontsize400);
-			line-height: 1.5rem;
-			font-weight: 700;
-
-			@include bp(m) {
-				@include font-size($fontsize600);
-				line-height: 2rem;
+				line-height: 1.5rem;
 			}
 		}
 	}
@@ -179,36 +154,7 @@ strong {
 			@include bp(m) {
 				@include font-size($fontsize500);
 				line-height: 1.5rem;
-				font-weight: 700;
 			}
-		}
-	}
-
-	&.featured-xl {
-
-		.story-heading {
-
-			@include bp(m) {
-				@include font-size($fontsize600);
-				line-height: 1.5rem;
-				font-weight: 900;
-			}
-
-			@include bp(xl) {
-				@include font-size($fontsize700);
-				line-height: 2rem;
-			}
-		}
-	}
-}
-
-.headlines-section .featured-lg {
-
-	.story-heading {
-		@include bp(xl) {
-			@include font-size($fontsize700);
-			line-height: 2rem;
-			font-weight: 900;
 		}
 	}
 }
@@ -252,24 +198,6 @@ strong {
 	@include bp(l) {
 		@include font-size($fontsize800);
 		line-height: 2.5rem;
-	}
-}
-
-// Headings for list stories
-
-.list-story {
-	.story-heading {
-		font-weight: 700;
-
-		@include bp(m) {
-			@include font-size($fontsize500);
-			line-height: 1.5rem;
-		}
-
-		@include bp(l) {
-			@include font-size($fontsize600);
-			line-height: 2rem;
-		}
 	}
 }
 
@@ -340,9 +268,6 @@ strong {
 // Headings for subheadings
 
 .story-subheading {
-	@include font-size($fontsize400);
-	line-height: 1.5rem;
-	font-weight: 700;
 
 	&:before {
 		display: inline-block;
@@ -484,6 +409,12 @@ strong {
 	@include bp(xl) {
 		@include font-size($fontsize400);
 		line-height: 1.5rem;
+	}
+}
+
+.featured-sm {
+	.story-summary {
+		@include font-size($fontsize200);
 	}
 }
 
