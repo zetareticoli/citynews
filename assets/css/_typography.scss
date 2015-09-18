@@ -98,6 +98,16 @@ h4 {
 h5 {
 	@include font-size($fontsize200);
 	line-height: 1rem;
+
+	@include bp(m) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+	}
 }
 
 h6 {
@@ -627,9 +637,9 @@ time,
 
 .location-kicker {
 	display: inline-block;
-	@include font-size($fontsize200);
 	color: $black600;
-	font-weight: 700;	
+	font-family: $texttypeface;
+	font-weight: 700;
 }
 
 // Links ===============================================================
