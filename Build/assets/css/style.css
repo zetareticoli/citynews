@@ -574,22 +574,6 @@ strong {
     font-size: 1.25rem;
     line-height: 1.5rem; } }
 
-.hero-story .story-heading {
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 2rem; }
-  @media (min-width: 46.25em) {
-    .hero-story .story-heading {
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 2.5rem; } }
-  @media (min-width: 62.5em) {
-    .hero-story .story-heading {
-      font-size: 36px;
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      font-weight: 900; } }
-
 @media (min-width: 75em) {
   .cover-hero .story-heading {
     font-size: 48px;

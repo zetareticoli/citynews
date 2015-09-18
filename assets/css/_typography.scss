@@ -161,22 +161,6 @@ strong {
 
 // Headings for hero stories 
 
-.hero-story .story-heading {
-	@include font-size($fontsize700);
-	line-height: 2rem;
-
-	@include bp(m) {
-		@include font-size($fontsize800);
-		line-height: 2.5rem;
-	}
-
-	@include bp(l) {
-		@include font-size($fontsize900);
-		line-height: 2.5rem;
-		font-weight: 900;
-	}
-}
-
 .cover-hero .story-heading {
 	@include bp(xl) {
 		@include font-size($fontsize1000);
