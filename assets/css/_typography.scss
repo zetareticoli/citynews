@@ -135,9 +135,14 @@ strong {
 
 // Headings =====================================================================
 
-// Global heading styles
+// Specific Heading Styles
 
-// Headings for featured stories
+.list-story .story-heading {
+	@include max-bp(s) {
+		@include font-size($fontsize400);
+		line-height: 1.35rem;
+	}
+}
 
 .featured-story {
 
@@ -164,8 +169,6 @@ strong {
 	}
 }
 
-// Headings for hero stories 
-
 .hero-story .story-heading {
 	@include bp(l) {
 		@include font-size($fontsize900);
@@ -173,8 +176,6 @@ strong {
 		font-weight: 900;
 	}
 }
-
-// Headings for focus story
 
 .focus-section {
 	
@@ -185,6 +186,13 @@ strong {
 			line-height: 2.5rem;
 		}
 	}
+
+	.featured-story .story-heading {
+		@include bp(l) {
+			@include font-size($fontsize400);
+			line-height: 1.5rem;
+		}
+	}
 }
 
 .grid-section .story .story-heading,
@@ -193,13 +201,6 @@ strong {
 	@include bp(m) {
 		@include font-size($fontsize300);
 		line-height: 1.35rem;
-	}
-}
-
-.focus-section .featured-story .story-heading {
-	@include bp(l) {
-		@include font-size($fontsize400);
-		line-height: 1.5rem;
 	}
 }	
 

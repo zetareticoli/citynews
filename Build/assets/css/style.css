@@ -568,6 +568,12 @@ small {
 strong {
   font-weight: 700; }
 
+@media (max-width: 46.188em) {
+  .list-story .story-heading {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.35rem; } }
+
 @media (min-width: 46.25em) {
   .featured-story.featured-sm .story-heading {
     font-size: 20px;
@@ -591,6 +597,11 @@ strong {
     font-size: 32px;
     font-size: 2rem;
     line-height: 2.5rem; } }
+@media (min-width: 62.5em) {
+  .focus-section .featured-story .story-heading {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5rem; } }
 
 @media (min-width: 46.25em) {
   .grid-section .story .story-heading,
@@ -599,12 +610,6 @@ strong {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.35rem; } }
-
-@media (min-width: 62.5em) {
-  .focus-section .featured-story .story-heading {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.5rem; } }
 
 .inset-story .story-heading {
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
