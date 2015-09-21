@@ -7,7 +7,6 @@
 
 .button,
 a.button {
-	display: inline-block;
 	text-decoration: none;
 
 	&.has-icon {
@@ -35,6 +34,12 @@ a.button {
 	padding: $baseline * 2 $baseline * 3;
 }
 
+// Types
+
+.block-button {
+	display: inline-block;
+}
+
 // Button Styles ===============================================================
 
 .light-button {
@@ -53,7 +58,7 @@ a.button {
 
 // Nav
 
-.button.nav-button {
+.nav-button {
 	position: absolute;
 	top: 0;
 	right: 10px;
