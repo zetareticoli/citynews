@@ -424,32 +424,32 @@ table {
    ========================================================================== */
 @font-face {
   font-family: 'PublicoBanner';
-  src: url(../webfonts/PublicoBanner-BoldItalic.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoBanner-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic; }
 @font-face {
   font-family: 'PublicoBanner';
-  src: url(../webfonts/PublicoBanner-Bold.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoBanner-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Italic.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoText-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic; }
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-BoldItalic.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoText-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic; }
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Bold.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoText-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'PublicoText';
-  src: url(../webfonts/PublicoText-Roman.woff) format("woff");
+  src: url("/~shared/files/webfonts/PublicoText-Roman.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 html {
