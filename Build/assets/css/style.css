@@ -2769,3 +2769,10 @@ ol, ul {
 .theme-purple .inverted .logo-network,
 .theme-pink .inverted .logo-network {
   fill: white; }
+
+/* ==========================================================================
+  HIDERS
+  ========================================================================== */
+@media (max-width: 46.188em) {
+  .page-title {
+    display: none; } }
