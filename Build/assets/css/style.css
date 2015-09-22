@@ -832,6 +832,15 @@ time,
         height: 6px;
         background-color: #E91F63; } }
 
+.entry-label {
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  @media (min-width: 62.5em) {
+    .entry-label {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+
 .kicker {
   color: #78909c;
   font-size: 14px;

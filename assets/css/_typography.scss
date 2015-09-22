@@ -475,6 +475,15 @@ time,
 	}
 }
 
+.entry-label {
+	font-family: $texttypeface;
+	@include font-size($fontsize200);
+
+	@include bp(l) {
+		@include font-size($fontsize400);
+	}
+}
+
 .kicker {
 	color: $bluegrey500;
 	@include font-size($fontsize200);
