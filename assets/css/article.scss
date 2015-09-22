@@ -4,75 +4,97 @@
 // Sass mixins
 @import "mixins";
 
+/* ==========================================================================
+  ARTICLE
+  ========================================================================== */
+
 // Variables
 $entry-content-width	: 640px;
-$entry-content-offset	: 192px;
+$entry-content-offset	: 180px;
+
+/* ==========================================================================
+  Global Styles
+  ========================================================================== */
 
 .entry {
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	margin-bottom: $baseline * 2;
+	padding: 0 $baseline $baseline * 2;
 	@include clearfix;
 
 	@include bp(m) {
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 40px;
 		margin-bottom: 40px;
-	}
-
-	@include bp(l) {
-		padding-top: $baseline * 3;
+		padding: 0 $baseline * 3 $baseline * 4;
+		border-bottom: 1px solid #ccc;
 	}
 }
 
-/* ==========================================================================
-  Header
-  ========================================================================== */
+// Entry Header ===============================================================
+
+.entry-title {
+	margin-bottom: $baseline;
+	color: $black1000;
+}
+
+ .entry-summary {
+ 	color: $black800;
+}
+
+  .entry-title,
+  .entry-summary {
+
+  	@include bp(xl) {
+  		margin: 0 0 0 14rem; 	
+  	}
+  }
 
 .entry-header {
-	@include clearfix;
-	margin-bottom: 16px;
 	position: relative;
+	margin-bottom: $baseline;
+	padding-bottom: $baseline;
+	border-bottom: 1px solid $bordercolor;
+	@include clearfix;
+}
 
+.entry-labels {
 	@include bp(xl) {
-		margin-bottom: 40px;
-	}
-
-	& .entry-title,
-	& .entry-summary {
-		@include bp(xl) {
-			padding-left: $entry-content-offset;
-		}
+		float: left;
+		width: 14rem;
 	}
 }
 
 .entry-label {
-	font-weight: 700;
-	@include font-size(18);
-	margin: 0 0 10px;
 	position: relative;
+	margin: 0 0 $baseline;
+}
+
+// Entry Meta ===============================================================
+
+.entry-meta {
+	@include clearfix;
+
+	@include bp(l) {
+		border-top: none;
+	}
 
 	@include bp(xl) {
-		position: absolute;
-		top: 10px;
-		left: 0;
-		width: $entry-content-offset;
+		float: left;
+		width: 14rem;
 	}
 }
 
-.entry-byline {
-	border-top: 1px solid #e1e1e1;
-	border-bottom: 1px solid #e1e1e1;
-	padding: 8px 0;
-	@include font-size(12);
-	width: auto;
-	margin-bottom: 8px;
+.entry-byline,
+.entry-social {
+	border-bottom: 1px solid $bordercolor;
+	padding-bottom: $baseline;
+	margin-bottom: $baseline;
 	@include clearfix;
+}
+
+.entry-byline {
 
 	@include bp(m) {
 		border: none;
 		float: left;
-		padding: $gutterwidth 0;
-		width: 48%;
 		@include font-size(14);
 	}
 
@@ -80,24 +102,7 @@ $entry-content-offset	: 192px;
 		width: 60%;
 	}
 
-	@include bp(xl) {
-		padding: 0;
-		position: absolute;
-		top: 290px;
-		left: 0;
-		width: 170px;
-	}
-
-	& .author {
-		float: left;
-		margin-right: $gutterwidth / 2;
-		width: 50%;
-		@include bp(xl) {
-			width: 100%;
-		}
-	}
-
-	& .author-photo {
+	.author-photo {
 		float: left;
 		margin: 0 8px 0 0;
 		width: 35px; 
@@ -112,12 +117,14 @@ $entry-content-offset	: 192px;
 		}
 	}
 
-	& .author-name {
+	.author-name {
 		display: inline-block;
+		@include font-size($fontsize200);
 		font-weight: 700;
 		margin-bottom: 4px;
+
 		@include bp(m) {
-			margin-bottom: 8px;
+			margin-bottom: $baseline;
 		}
 
 		.link {
@@ -125,16 +132,18 @@ $entry-content-offset	: 192px;
 		}
 	}
 
-	& .author-role {
-		display: block;
+	.author-role {
+		font-style: italic;
 	}
 
-	& .author-twitter {
-		display: none;
+	.author-name,
+	.author-role,
+	.entry-timestamp {
+		@include font-size($fontsize200);
+		color: $black900;
+	}
 
-		@include bp(l) {
-			display: inline-block;
-		}
+	.author-twitter {
 
 		& > .icon {
 			margin: 0 5px;
@@ -144,164 +153,119 @@ $entry-content-offset	: 192px;
 		}
 	}
 
-	& .datetime {
+	.datetime {
 		float: left;
-		padding-top: $gutterwidth / 2;
-		@include font-size(12);
+	}
+}
+
+.entry-social {
+
+	.social-items {
+		float: left;
+		width: 50%;
+
 		@include bp(m) {
-			@include font-size(14);
+			width: 20%;
+		}
+
+		@include bp(l) {
+			width: 15%;
+		}
+
+		@include bp(xl) {
+			width: 100%;
+			margin-top: 0;
 		}
 	}
-}
 
-.entry-meta {
-	width: auto;
-	@include clearfix;
-
-	@include bp(m) {
-		padding: $gutterwidth 0;
-	}
-
-	@include bp(xl) {
-		margin: 0;
-		padding: 0;
-		position: absolute;
-		width: 170px;
-		top: 440px;
-		left: 0px;
-	}
-}
-
-.share-tools {
-	float: left;
-	width: 50%;
-	margin: 0 0 5px 0;
-	padding: 0;
-
-	@include bp(m) {
-		width: 20%;
-	}
-
-	@include bp(l) {
-		width: 15%;
-	}
-
-	@include bp(xl) {
-		width: 100%;
-		margin-top: 0;
-	}
-
-	& li {
+	.social-item {
 		display: inline;
 		list-style: none;
 		margin: 0 0 0 0;
 		padding: 0;
 	}
 
-	& li .icon {
+	.social-item .icon {
 		width: 32px;
 		height: 32px;
 	}
 
-	&.share-bottom {
+	&.bottom-social {
 		float: none;
 		width: 100%;
 	}
-}
 
-.share-counter {
-	margin: 0 5px 0 0;
+	.share-counter {
+		margin: 0 5px 0 0;
 
-	@include bp(xl) {
-		border-bottom: 1px solid #ccc;
-		margin: 0 0 10px 0;
-		padding: 0 0 10px 0;
-	}
-}
-
-.share-counter,
-.comments-counter {
-	width: 23%;
-	display: block;
-	float: left;
-	text-align: right;
-
-	@include bp(m) {
-		width: 15%;
-	}
-
-	@include bp(l) {
-		width: 12%;
-	}
-
-	@include bp(xl) {
-		width: 100%;
-		text-align: left;
-	}
-
-	.number {
-		font-weight: 700;
-		@include font-size(18);
-		@include bp(m) {
-			@include font-size(24);
-		}
 		@include bp(xl) {
-			@include font-size(28);
+			border-bottom: 1px solid #ccc;
+			margin: 0 0 10px 0;
+			padding: 0 0 10px 0;
 		}
 	}
 
-	.label {
-		display: none;
-		@include font-size(12);
-		font-weight: 700;
+	.share-counter,
+	.comments-counter {
+		width: 23%;
+		display: block;
+		float: left;
+		text-align: right;
 
 		@include bp(m) {
-			display: block;
+			width: 15%;
 		}
 
 		@include bp(l) {
-			display: inline-block;
+			width: 12%;
 		}
-	}
 
-	.number {
 		@include bp(xl) {
-			display: block;
+			width: 100%;
+			text-align: left;
+		}
+
+		.number {
+			font-weight: 700;
+			@include font-size(18);
+			@include bp(m) {
+				@include font-size(24);
+			}
+			@include bp(xl) {
+				@include font-size(28);
+			}
+		}
+
+		.label {
+			display: none;
+			@include font-size(12);
+			font-weight: 700;
+
+			@include bp(m) {
+				display: block;
+			}
+
+			@include bp(l) {
+				display: inline-block;
+			}
+		}
+
+		.number {
+			@include bp(xl) {
+				display: block;
+			}
+		}
+
+		.icon {
+			display: inline-block;
+			margin-right: 5px;
+			width: 16px;
+			height: 16px;
 		}
 	}
-
-	.icon {
-		display: inline-block;
-		margin-right: 5px;
-		width: 16px;
-		height: 16px;
-	}
 }
 
-.entry-title {
-	@include font-size(24);
-	margin-bottom: 10px;
-
-	@include bp(m) {
-		@include font-size(46);
-	}
-}
-
-.entry-summary {
-	@include font-size(16);
-	line-height: 1.35em;
-	margin: 0 0 10px 0;
-
-	@include bp(l) {
-		width: auto;
-		@include font-size(20);
-	}
-}
-
-
-/* ==========================================================================
-  Content
-  ========================================================================== */
+// Entry Content ===============================================================
 
 .entry-content { 
 	@include clearfix;
@@ -318,6 +282,24 @@ $entry-content-offset	: 192px;
 	}
 }
 
+.body-text {
+	max-width: 35rem;
+
+	@include bp(l) {
+		max-width: 40rem;
+	}
+
+	@include bp(xl) {
+		max-width: 40rem;
+		margin-left: 14rem;
+	}
+
+	> p {
+		margin-bottom: $baseline * 2;
+		color: $black1000;
+	}
+}
+
 .content-body {
 	position: relative;
 	width: 100%;
@@ -328,14 +310,7 @@ $entry-content-offset	: 192px;
 	}
 
 	@include bp(l) {
-		float: left;
 		margin: 0 $gutterwidth 0 0;
-		width: $entry-content-width;
-	}
-
-	@include bp(xl) {
-		margin-left: $entry-content-offset;
-
 	}
 }
 
@@ -363,14 +338,7 @@ $entry-content-offset	: 192px;
 	}
 }
 
-.content-paragraph {
-	@include font-size(16);
-	line-height: 1.45em;
-
-};
-
-
-.entry-figure {
+.entry-media {
 	background: rgb(240,240,240);
 	height: auto;
 	width: 106.5%;
@@ -388,23 +356,22 @@ $entry-content-offset	: 192px;
 		float: left;
 		margin: 0 0 20px 0;
 
-		&.figure-sm {
+		&.media-sm {
 			width: 310px;
 			float: right;
 		}
 
-		&.figure-mid {
+		&.media-mid {
 			width: $entry-content-width;
 		}
 
-		&.figure-lg {
+		&.media-lg {
 			width: auto;
 		}
 	}
 
-	.img {
+	img {
 		width: 100%;
-		height: 100%;
 	}
 }
 
@@ -461,8 +428,8 @@ $entry-content-offset	: 192px;
 	}
 
 	@include bp(xl) {
-		margin: 0 $gutterwidth * 2 0 -192px;
-		width: $gutterwidth * 17;
+		margin: 0 $baseline * 3 0 -14rem;
+		width: 20rem;
 	}
 
 	.section-title {
@@ -696,8 +663,6 @@ $entry-content-offset	: 192px;
 	}
 	
 }
-
-
 
 .medium-rectangle-inner {
 	display: none;
