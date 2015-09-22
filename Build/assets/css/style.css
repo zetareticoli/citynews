@@ -955,8 +955,7 @@ time,
   line-height: 1em; }
 
 .icon {
-  vertical-align: middle;
-  fill: #78909c; }
+  vertical-align: middle; }
   .icon.small {
     width: 16px;
     height: 16px; }
@@ -991,6 +990,20 @@ time,
 
 .site-meteo .icon {
   fill: #757575; }
+
+.email-icon {
+  fill: #757575; }
+
+.facebook-icon {
+  fill: #3b5998; }
+
+.twitter-icon {
+  fill: #55acee; }
+
+.whatsapp-icon .fill-color1 {
+  fill: #59cb3f; }
+.whatsapp-icon .fill-color2 {
+  fill: #fff; }
 
 .has-children > a::before, .has-children > a::after, .go-back:before, .go-back:after {
   /* arrow icon in CSS - for element with nested unordered lists */
@@ -2788,3 +2801,13 @@ ol, ul {
   @media (min-width: 46.25em) {
     .entry-label.category-label {
       display: none; } }
+
+.author-role,
+.author-twitter,
+.author-photo {
+  display: none; }
+  @media (min-width: 46.25em) {
+    .author-role,
+    .author-twitter,
+    .author-photo {
+      display: block; } }
