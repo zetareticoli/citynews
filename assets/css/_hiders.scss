@@ -16,3 +16,13 @@
 		display: none;
 	}
 }
+
+.author-role,
+.author-twitter,
+.author-photo {
+	display: none;
+
+	@include bp(m) {
+		display: block;
+	}
+}
