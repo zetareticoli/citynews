@@ -463,7 +463,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-style: normal;
-  margin-bottom: 16px; }
+  margin-bottom: 1rem; }
 
 h1 {
   font-weight: 900; }
@@ -555,10 +555,10 @@ dl,
 address {
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   list-style-position: inside; }
 
 small {
@@ -655,7 +655,7 @@ strong {
   display: inline-block;
   content: '';
   position: relative;
-  margin-right: 8px;
+  margin-right: 0.5rem;
   vertical-align: middle;
   top: -1px; }
   @media (min-width: 46.25em) {
@@ -683,8 +683,8 @@ strong {
 
 .module-title {
   display: block;
-  margin-bottom: 8px;
-  padding: 8px 0;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #e0e0e0;
   font-size: 24px;
   font-size: 1.5rem;
@@ -710,8 +710,8 @@ strong {
 
 .section-title {
   position: relative;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid #e0e0e0;
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -721,7 +721,7 @@ strong {
     .section-title {
       border-bottom: 0;
       padding-bottom: 0;
-      margin-bottom: 16px; } }
+      margin-bottom: 1rem; } }
   .section-title:before {
     content: '';
     display: block;
@@ -748,7 +748,7 @@ strong {
         padding-top: 0;
         background-color: white;
         z-index: 1;
-        padding-right: 16px;
+        padding-right: 1rem;
         font-size: 28px;
         font-size: 1.75rem; } }
 
@@ -810,8 +810,8 @@ time,
 .card-label {
   display: inline-block;
   position: relative;
-  padding-top: 8px;
-  margin-bottom: 8px;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
   color: #E91F63;
   font-size: 14px;
   font-size: 0.875rem;
@@ -863,27 +863,27 @@ time,
 
 @media (min-width: 46.25em) {
   .highlight-kicker {
-    margin-bottom: 8px; } }
+    margin-bottom: 0.5rem; } }
 .highlight-kicker:before {
   content: '';
   display: block;
   width: 2.5rem;
   height: .35rem;
-  margin-bottom: 4px; }
+  margin-bottom: 0.25rem; }
 
 .badge-kicker {
   padding: 4px 4px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   line-height: 1rem;
   color: #424242; }
   @media (min-width: 46.25em) {
     .badge-kicker {
-      padding: 2px 8px;
-      margin-bottom: 16px;
+      padding: 2px 0.5rem;
+      margin-bottom: 1rem;
       line-height: 1.5rem; } }
   @media (min-width: 62.5em) {
     .badge-kicker {
-      padding: 2px 16px;
+      padding: 2px 1rem;
       line-height: 2rem; } }
 
 .inverted .badge-kicker {
@@ -937,7 +937,7 @@ time,
 .site-date,
 .site-meteo {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 1rem;
   color: #757575;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -1076,13 +1076,13 @@ a.button {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
 .small-button {
-  padding: 8px 16px; }
+  padding: 0.5rem 1rem; }
 
 .mid-button {
-  padding: 10px 16px; }
+  padding: 10px 1rem; }
 
 .large-button {
-  padding: 16px 24px; }
+  padding: 1rem 1.5rem; }
 
 .block-button {
   display: inline-block; }
@@ -1125,7 +1125,7 @@ a.button {
 .search-button,
 .login-button {
   float: left;
-  padding: 16px;
+  padding: 1rem;
   width: 56px;
   height: 56px; }
   @media (min-width: 46.25em) {
@@ -1189,7 +1189,7 @@ a.button {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .filter-block {
-  padding: 16px 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #e0e0e0; }
   .filter-block .label {
     font-size: 18px;
@@ -1358,7 +1358,7 @@ textarea {
 
 ol, ul {
   padding: 0;
-  margin-left: 32px; }
+  margin-left: 2rem; }
 
 .u-unstyled, .inline-list {
   overflow: hidden;
@@ -1372,10 +1372,10 @@ ol, ul {
   position: relative; }
 
 .main-content {
-  padding: 16px 0; }
+  padding: 1rem 0; }
 
 .section {
-  padding: 0 0 16px; }
+  padding: 0 0 1rem; }
 
 /* ==========================================================================
   Flexbox
@@ -1501,26 +1501,26 @@ ol, ul {
       -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
       flex: 0 1 auto;
-      margin-bottom: 32px; } }
+      margin-bottom: 2rem; } }
 .l-row {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .slice-item {
-  padding-bottom: 8px; }
+  padding-bottom: 0.5rem; }
   @media (min-width: 46.25em) {
     .slice-item {
-      padding-bottom: 16px; } }
+      padding-bottom: 1rem; } }
   @media (min-width: 75em) {
     .slice-item {
-      padding-bottom: 24px; } }
+      padding-bottom: 1.5rem; } }
 
 .focus-section .slice-item {
-  padding-bottom: 8px; }
+  padding-bottom: 0.5rem; }
 
 .module .slice-item {
-  padding-bottom: 8px; }
+  padding-bottom: 0.5rem; }
 
 /* ==========================================================================
   Site Header
@@ -1542,19 +1542,19 @@ ol, ul {
       clear: both; }
   .header .header-top {
     height: 56px;
-    padding: 0 10px; }
+    padding: 0 2.5rem; }
     @media (min-width: 46.25em) {
       .header .header-top {
-        padding: 0 24px;
+        padding: 0 1.5rem;
         height: 64px; } }
     @media (min-width: 62.5em) {
       .header .header-top {
-        padding: 0 16px;
+        padding: 0 1rem;
         background-color: white;
         height: 72px; } }
   .header .header-bottom {
     display: none;
-    height: 48px;
+    height: 3rem;
     background-color: #eeeeee;
     padding: 0 24px; }
     @media (min-width: 62.5em) {
@@ -1615,17 +1615,17 @@ ol, ul {
   .slim-header .header-top {
     z-index: 6; }
   .slim-header .header-brand {
-    margin-right: 24px; }
+    margin-right: 1.5rem; }
     .slim-header .header-brand .logo {
       margin-top: 14px; }
       @media (min-width: 46.25em) {
         .slim-header .header-brand .logo {
           margin-top: 22px;
-          height: 20px; } }
+          height: 1.25rem; } }
       @media (min-width: 62.5em) {
         .slim-header .header-brand .logo {
-          height: 24px;
-          margin-top: 24px; } }
+          height: 1.5rem;
+          margin-top: 1.5rem; } }
   .slim-header .slim-header-nav {
     display: none; }
     @media (min-width: 62.5em) {
@@ -1634,7 +1634,7 @@ ol, ul {
         float: left; } }
   .slim-header .page-title {
     position: relative;
-    margin-top: 72px; }
+    margin-top: 4.5rem; }
     @media (min-width: 46.25em) {
       .slim-header .page-title {
         width: 50%;
@@ -1661,7 +1661,7 @@ ol, ul {
         visibility: visible; } }
   @media (max-width: 46.188em) {
     .slim-header + .section {
-      margin-top: 56px; } }
+      margin-top: 3.5rem; } }
 
 .slim-header.inverted .nav-button .button-label {
   color: #bdbdbd; }
@@ -1681,8 +1681,8 @@ ol, ul {
   Sections
   ========================================================================== */
 .headlines-section {
-  padding-right: 0 8px;
-  padding-left: 0 8px; }
+  padding-right: 0 0.5rem;
+  padding-left: 0 0.5rem; }
   @media (min-width: 62.5em) {
     .headlines-section .headlines-list {
       display: -webkit-box;
@@ -1756,13 +1756,13 @@ ol, ul {
     width: 33.33%; } }
 
 .focus-section {
-  padding: 8px 0; }
+  padding: 0.5rem 0; }
   @media (min-width: 46.25em) {
     .focus-section {
-      padding: 16px 0; } }
+      padding: 1rem 0; } }
   @media (min-width: 62.5em) {
     .focus-section {
-      padding: 24px 0; } }
+      padding: 1.5rem 0; } }
 
 /* ==========================================================================
   Global Styles
@@ -1788,7 +1788,7 @@ ol, ul {
 .nav-toggle {
   display: none;
   float: left;
-  margin: 0 16px;
+  margin: 0 1rem;
   line-height: 2.2em; }
   @media (min-width: 62.5em) {
     .nav-toggle {
@@ -1820,8 +1820,8 @@ ol, ul {
     top: 0; } }
 .primary-nav .nav-item {
   position: relative;
-  margin-right: 32px;
-  padding: 24px 0 0 0;
+  margin-right: 2rem;
+  padding: 1.5rem 0 0 0;
   height: 72px;
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -1859,7 +1859,7 @@ ol, ul {
     left: 35%;
     top: 13px; } }
 .secondary-nav .nav-item {
-  margin-right: 16px;
+  margin-right: 1rem;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem; }
@@ -1897,7 +1897,7 @@ ol, ul {
     font-size: 20px;
     font-size: 1.25rem; }
   .mobile-nav .nav-item .link {
-    padding: 16px;
+    padding: 1rem;
     display: block;
     color: white;
     width: 100%;
@@ -1914,12 +1914,12 @@ ol, ul {
     color: #90a4ae; }
   .mobile-nav .close-button {
     top: 14px;
-    right: 16px; }
+    right: 1rem; }
   .mobile-nav .has-children > a, .mobile-nav .go-back {
     position: relative; }
   .mobile-nav .link.go-back {
     background-color: #212121;
-    padding-left: 40px; }
+    padding-left: 2.5rem; }
 
 .nav-children {
   position: absolute;
@@ -1944,7 +1944,7 @@ ol, ul {
     width: 70%;
     margin-left: 25%;
     height: 90%;
-    top: 16px;
+    top: 1rem;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch; }
     .nav-children .alph-groups-container h5 {
@@ -1953,18 +1953,18 @@ ol, ul {
       font-size: 0.75rem;
       font-family: "PublicoText", Georgia, "Times New Roman", serif;
       text-transform: uppercase;
-      margin-bottom: 8px; }
+      margin-bottom: 0.5rem; }
   .nav-children .alph-group {
     border-top: 1px solid #424242;
-    padding: 8px 0; }
+    padding: 0.5rem 0; }
     .nav-children .alph-group li a {
       color: white;
       font-family: "PublicoText", Georgia, "Times New Roman", serif;
       display: block;
-      padding: 4px 0; }
+      padding: 0.25rem 0; }
   .nav-children .alph-item {
     width: 100%;
-    margin: 8px auto; }
+    margin: 0.5rem auto; }
     .nav-children .alph-item a {
       display: block;
       padding: 4px 0;
@@ -2018,7 +2018,7 @@ ol, ul {
         font-size: 20px;
         font-size: 1.25rem;
         line-height: 16px;
-        padding: 16px;
+        padding: 1rem;
         opacity: 0;
         -webkit-transform: translateY(-10px);
         -moz-transform: translateY(-10px);
@@ -2073,7 +2073,7 @@ ol, ul {
   border: 1px solid #eeeeee; }
 
 .slot {
-  margin: 8px;
+  margin: 0.5rem;
   width: 100%; }
 
 .medium-slot {
@@ -2116,7 +2116,7 @@ ol, ul {
   ========================================================================== */
 @media (max-width: 46.188em) {
   .cards-list-item {
-    margin-bottom: 16px; }
+    margin-bottom: 1rem; }
 
   .card-footer {
     display: none; } }
@@ -2137,14 +2137,14 @@ ol, ul {
 
 .card-header,
 .card-footer {
-  padding: 0 8px; }
+  padding: 0 0.5rem; }
   @media (min-width: 46.25em) {
     .card-header,
     .card-footer {
-      padding-bottom: 8px; } }
+      padding-bottom: 0.5rem; } }
 
 .card-heading {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-size: 16px;
   font-size: 1rem; }
   @media (min-width: 46.25em) {
@@ -2155,7 +2155,7 @@ ol, ul {
 .card-media {
   width: 30%;
   float: left;
-  margin-right: 8px; }
+  margin-right: 0.5rem; }
   @media (min-width: 46.25em) {
     .card-media {
       width: 100%;
@@ -2168,7 +2168,7 @@ ol, ul {
   overflow: hidden; }
   @media (min-width: 46.25em) {
     .card-rating {
-      margin-bottom: 8px; } }
+      margin-bottom: 0.5rem; } }
   .card-rating li {
     float: left; }
 
@@ -2183,7 +2183,7 @@ ol, ul {
 .story {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 8px; }
+  padding-bottom: 0.5rem; }
   .story .story-media {
     width: 30%;
     max-width: 200px;
@@ -2194,19 +2194,19 @@ ol, ul {
         width: auto;
         max-width: none;
         float: none;
-        margin: 0 0 8px 0; } }
+        margin: 0 0 0.5rem 0; } }
     .story .story-media.right {
       float: right;
-      margin-left: 8px; }
+      margin-left: 0.5rem; }
     .story .story-media.left {
       float: left;
-      margin-right: 8px; }
+      margin-right: 0.5rem; }
   .story .story-heading {
-    margin-bottom: 8px; }
+    margin-bottom: 0.5rem; }
   .story .story-subheading {
-    margin-bottom: 8px; }
+    margin-bottom: 0.5rem; }
   .story .story-summary {
-    margin-bottom: 16px; }
+    margin-bottom: 1rem; }
 
 @media (max-width: 46.188em) {
   .story-summary,
@@ -2214,7 +2214,7 @@ ol, ul {
   .featured-story .story-footer {
     display: none; } }
 .inverted .story-footer {
-  padding: 0 16px; }
+  padding: 0 1rem; }
 
 .hero-story {
   position: relative;
@@ -2228,11 +2228,11 @@ ol, ul {
       width: 100%; }
   .hero-story .story-header,
   .hero-story .story-footer {
-    padding: 0 8px 8px; }
+    padding: 0 0.5rem 0.5rem; }
     @media (min-width: 46.25em) {
       .hero-story .story-header,
       .hero-story .story-footer {
-        padding: 0 12px 8px; } }
+        padding: 0 12px 0.5rem; } }
   .hero-story.cover-hero {
     position: relative; }
     .hero-story.cover-hero .story-header {
@@ -2240,17 +2240,17 @@ ol, ul {
       padding: 0;
       width: 100%; }
     .hero-story.cover-hero .story-footer {
-      padding: 8px 0;
-      margin-right: 8px;
-      margin-left: 8px; }
+      padding: 0.5rem 0;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; }
       @media (min-width: 46.25em) {
         .hero-story.cover-hero .story-footer {
-          margin-right: 16px;
-          margin-left: 16px; } }
+          margin-right: 1rem;
+          margin-left: 1rem; } }
       @media (min-width: 75em) {
         .hero-story.cover-hero .story-footer {
-          margin-right: 24px;
-          margin-left: 24px; } }
+          margin-right: 1.5rem;
+          margin-left: 1.5rem; } }
     .hero-story.cover-hero .story-media {
       position: relative; }
       .hero-story.cover-hero .story-media img {
@@ -2267,16 +2267,16 @@ ol, ul {
           height: 100%;
           background-image: linear-gradient(-180deg, rgba(135, 147, 153, 0.35) 0%, rgba(94, 103, 107, 0.5) 48%, #263238 100%); } }
     .hero-story.cover-hero .story-heading {
-      padding: 0 8px; }
+      padding: 0 0.5rem; }
       @media (min-width: 46.25em) {
         .hero-story.cover-hero .story-heading {
           position: absolute;
           bottom: 0;
           z-index: 2;
-          padding: 0 16px; } }
+          padding: 0 1rem; } }
       @media (min-width: 75em) {
         .hero-story.cover-hero .story-heading {
-          padding: 0 24px; } }
+          padding: 0 1.5rem; } }
     .hero-story.cover-hero .story-footer .story-subheading:last-child {
       margin-bottom: 16px; }
   @media (max-width: 62.438em) {
@@ -2319,7 +2319,7 @@ ol, ul {
     clear: both; }
   @media (min-width: 62.5em) {
     .list-story {
-      padding-bottom: 16px; } }
+      padding-bottom: 1rem; } }
   .list-story .story-media {
     width: 25%;
     float: left;
@@ -2336,14 +2336,14 @@ ol, ul {
       .list-story .story-footer {
         display: block; } }
   .list-story .byline {
-    margin-bottom: 2px; }
+    margin-bottom: 0.125rem; }
 
 .focus-section .list-story {
-  padding-bottom: 8px; }
+  padding-bottom: 0.5rem; }
 
 .inset-story {
   position: relative;
-  padding: 8px;
+  padding: 0.5rem;
   border-bottom: 0;
   background-color: #263238;
   overflow: hidden; }
@@ -2379,10 +2379,10 @@ ol, ul {
     @media (min-width: 46.25em) {
       .inset-story .story-header {
         margin-left: 0;
-        padding: 0 16px; } }
+        padding: 0 1rem; } }
     @media (min-width: 62.5em) {
       .inset-story .story-header {
-        padding: 16px;
+        padding: 1rem;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -2425,14 +2425,14 @@ ol, ul {
         float: right;
         margin-bottom: 0; } }
   .special-story .story-header {
-    padding: 8px; }
+    padding: 0.5rem; }
     @media (min-width: 46.25em) {
       .special-story .story-header {
-        padding: 0 16px;
+        padding: 0 1rem;
         height: 100%; } }
     @media (min-width: 62.5em) {
       .special-story .story-header {
-        padding: 0 24px; } }
+        padding: 0 1.5rem; } }
   .special-story .story-summary {
     display: none; }
     @media (min-width: 62.5em) {
@@ -2440,7 +2440,7 @@ ol, ul {
         display: block; } }
 
 .sublinks .sublink {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
@@ -2454,14 +2454,14 @@ ol, ul {
   color: white; }
 
 .sublink .kicker {
-  margin-right: 4px; }
+  margin-right: 0.25rem; }
 
 .hero-story .sublinks {
   border-top: 1px solid #cfd8dc;
-  padding-top: 8px; }
+  padding-top: 0.5rem; }
 
 .hero-story .sublink {
-  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #cfd8dc; }
 
 .cover-hero .sublinks {
@@ -2489,11 +2489,11 @@ ol, ul {
       -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
       flex: 1 1 50%;
-      padding-top: 8px;
+      padding-top: 0.5rem;
       border-top: 1px solid #37474f;
       border-bottom: 0; }
       .cover-hero .sublink:nth-child(2n+1) {
-        padding-right: 8px; } }
+        padding-right: 0.5rem; } }
   .cover-hero .sublink .link {
     width: 100%; }
   .cover-hero .sublink .kicker {
@@ -2502,15 +2502,15 @@ ol, ul {
 
 .full-cover .sublinks {
   border-top: 1px solid #37474f;
-  padding-top: 8px; }
+  padding-top: 0.5rem; }
 
 @media (min-width: 46.25em) {
   .full-cover .sublink {
     border-bottom: 0;
     border-top: 0;
     border-right: 1px solid #37474f;
-    padding-right: 16px;
-    margin-right: 16px; }
+    padding-right: 1rem;
+    margin-right: 1rem; }
     .full-cover .sublink:last-child {
       border-right: 0;
       padding-right: 0;
@@ -2518,7 +2518,7 @@ ol, ul {
 @media (min-width: 46.25em) {
   .full-cover .sublink .sublink-media {
     float: right;
-    margin: 0 0 0 8px; } }
+    margin: 0 0 0 0.5rem; } }
 
 .has-flex .full-cover .sublinks .item-span-1 {
   -webkit-box-flex: 1 1 0;
@@ -2530,7 +2530,7 @@ ol, ul {
 .sublink-media {
   width: 40px;
   float: left;
-  margin-right: 8px; }
+  margin-right: 0.5rem; }
 
 .module .story-media {
   width: 25%; }
@@ -2542,13 +2542,13 @@ ol, ul {
   border-bottom: 1px solid #e0e0e0; }
   @media (min-width: 62.5em) {
     .newslist-module .l-list-item {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
       border-bottom: 1px solid #e0e0e0; }
       .newslist-module .l-list-item:last-child {
         border-bottom: 0; }
     .newslist-module .story {
       border-bottom: 0;
-      padding-bottom: 8px; } }
+      padding-bottom: 0.5rem; } }
 
 /* ==========================================================================
   Modifiers
