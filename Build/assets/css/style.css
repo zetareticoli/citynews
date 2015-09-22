@@ -2776,3 +2776,8 @@ ol, ul {
 @media (max-width: 46.188em) {
   .page-title {
     display: none; } }
+.entry-label.category-label {
+  display: inline-block; }
+  @media (min-width: 46.25em) {
+    .entry-label.category-label {
+      display: none; } }
