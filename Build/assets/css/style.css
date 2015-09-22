@@ -1979,11 +1979,11 @@ ol, ul {
       border-top-style: solid;
       left: 0;
       width: 100%;
-      -webkit-transform: translateY(-49px);
-      -moz-transform: translateY(-49px);
-      -ms-transform: translateY(-49px);
-      -o-transform: translateY(-49px);
-      transform: translateY(-49px);
+      -webkit-transform: translateY(-65px);
+      -moz-transform: translateY(-65px);
+      -ms-transform: translateY(-65px);
+      -o-transform: translateY(-65px);
+      transform: translateY(-65px);
       -webkit-transition: -webkit-transform 0.2s 0.15s;
       -moz-transition: -moz-transform 0.2s 0.15s;
       transition: transform 0.2s 0.15s;
@@ -2006,6 +2006,13 @@ ol, ul {
         -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
         -moz-transition: -moz-transform 0.2s, opacity 0.2s;
         transition: transform 0.2s, opacity 0.2s; } }
+  @media (min-width: 75em) {
+    .sliding-nav {
+      -webkit-transform: translateY(-49px);
+      -moz-transform: translateY(-49px);
+      -ms-transform: translateY(-49px);
+      -o-transform: translateY(-49px);
+      transform: translateY(-49px); } }
 
 /* ==========================================================================
   MODULES
