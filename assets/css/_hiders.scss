@@ -2,6 +2,16 @@
   HIDERS
   ========================================================================== */
 
+.entry-label.category-label {
+	display: inline-block;
+}
+
+.author-role,
+.author-photo,
+.author-twitter {
+	display: none;
+}
+
 @include max-bp(s) {
 	
 	.page-title {
@@ -9,20 +19,21 @@
 	}
 }
 
-.entry-label.category-label {
-	display: inline-block;
+@include bp(m) {
+	.author-role,
+	.author-photo {
+		display: block;
+	}
 
-	@include bp(m) {
+	.entry-label.category-label {
 		display: none;
 	}
 }
 
-.author-role,
-.author-twitter,
-.author-photo {
-	display: none;
-
-	@include bp(m) {
+@include bp(l) {
+	.author-role,
+	.author-photo {
 		display: block;
 	}
 }
+

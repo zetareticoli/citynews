@@ -2802,21 +2802,25 @@ ol, ul {
 /* ==========================================================================
   HIDERS
   ========================================================================== */
+.entry-label.category-label {
+  display: inline-block; }
+
+.author-role,
+.author-photo,
+.author-twitter {
+  display: none; }
+
 @media (max-width: 46.188em) {
   .page-title {
     display: none; } }
-.entry-label.category-label {
-  display: inline-block; }
-  @media (min-width: 46.25em) {
-    .entry-label.category-label {
-      display: none; } }
+@media (min-width: 46.25em) {
+  .author-role,
+  .author-photo {
+    display: block; }
 
-.author-role,
-.author-twitter,
-.author-photo {
-  display: none; }
-  @media (min-width: 46.25em) {
-    .author-role,
-    .author-twitter,
-    .author-photo {
-      display: block; } }
+  .entry-label.category-label {
+    display: none; } }
+@media (min-width: 62.5em) {
+  .author-role,
+  .author-photo {
+    display: block; } }
