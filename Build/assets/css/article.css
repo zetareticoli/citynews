@@ -73,7 +73,9 @@
   @media (min-width: 75em) {
     .entry-meta {
       float: left;
-      width: 11rem; } }
+      width: 11rem;
+      margin-bottom: 0;
+      padding-bottom: 0; } }
 
 .entry-byline,
 .entry-social {
@@ -103,7 +105,12 @@
 @media (min-width: 75em) {
   .entry-byline {
     width: 100%;
-    float: none; } }
+    float: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0; } }
+@media (min-width: 75em) {
+  .entry-byline .author {
+    margin-bottom: 0.5rem; } }
 .entry-byline .author-name,
 .entry-byline .author-role,
 .entry-byline .entry-timestamp {
@@ -116,7 +123,7 @@
   @media (min-width: 75em) {
     .entry-byline .author-photo {
       float: none;
-      margin: 0 0 1rem 0; } }
+      margin: 0; } }
 .entry-byline .author-name {
   display: inline-block;
   font-size: 14px;
@@ -124,15 +131,18 @@
   line-height: 1.5rem;
   font-weight: 700;
   color: #424242; }
-  .entry-byline .author-name .link {
-    text-decoration: none; }
+  @media (min-width: 75em) {
+    .entry-byline .author-name {
+      display: block; } }
 .entry-byline .author-role {
-  padding-left: 0.25rem;
   color: #616161;
   font-style: italic; }
   @media (min-width: 46.25em) {
     .entry-byline .author-role {
       margin-bottom: 0.25rem; } }
+  @media (max-width: 62.438em) {
+    .entry-byline .author-role {
+      padding-left: 0.25rem; } }
 .entry-byline .author-twitter {
   display: none; }
   .entry-byline .author-twitter > .icon {
@@ -159,7 +169,9 @@
       text-align: right; } }
   @media (min-width: 75em) {
     .entry-social .social-items {
+      float: none;
       width: 100%;
+      margin-bottom: 0.5rem;
       text-align: left; } }
 .entry-social .social-item {
   display: inline;
@@ -186,7 +198,7 @@
     .entry-social .social-counter {
       width: 100%;
       float: none;
-      margin: 0; } }
+      margin: 0 0 1rem 0; } }
   .entry-social .social-counter .number {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -202,9 +214,8 @@
         font-size: 1.5rem; } }
     @media (min-width: 75em) {
       .entry-social .social-counter .number {
-        display: block;
-        font-size: 28px;
-        font-size: 1.75rem; } }
+        font-size: 32px;
+        font-size: 2rem; } }
   .entry-social .social-counter .counter-label {
     display: none;
     font-size: 12px;

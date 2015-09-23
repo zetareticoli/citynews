@@ -89,6 +89,8 @@ $entry-content-offset	: 180px;
 	@include bp(xl) {
 		float: left;
 		width: 11rem;
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -116,6 +118,14 @@ $entry-content-offset	: 180px;
 	@include bp(xl) {
 		width: 100%;
 		float: none;
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
+	}
+
+	.author {
+		@include bp(xl) {
+			margin-bottom: $baseline;
+		}
 	}
 
 	.author-name,
@@ -131,7 +141,7 @@ $entry-content-offset	: 180px;
 
 		@include bp(xl) {
 			float: none;
-			margin: 0 0 $baseline * 2 0;
+			margin: 0;
 		}
 	}
 
@@ -142,18 +152,21 @@ $entry-content-offset	: 180px;
 		font-weight: 700;
 		color: $black900;
 
-		.link {
-			text-decoration: none;
+		@include bp(xl) {
+			display: block;
 		}
 	}
 
 	.author-role {
-		padding-left: $baseline / 2;
 		color: $black800;
 		font-style: italic;
 
 		@include bp(m) {
 			margin-bottom: $baseline / 2;
+		}
+
+		@include max-bp(m) {
+			padding-left: $baseline / 2;
 		}
 	}
 
@@ -192,7 +205,9 @@ $entry-content-offset	: 180px;
 		}
 
 		@include bp(xl) {
+			float: none;
 			width: 100%;
+			margin-bottom: $baseline;
 			text-align: left;
 		}
 	}
@@ -229,7 +244,7 @@ $entry-content-offset	: 180px;
 		@include bp(xl) {
 			width: 100%;
 			float: none;
-			margin: 0;
+			margin: 0 0 $baseline * 2 0;
 		}
 
 		.number {
@@ -242,11 +257,12 @@ $entry-content-offset	: 180px;
 
 			@include bp(m) {
 				display: block;
-				@include font-size(24);
+				@include font-size($fontsize600);
 			}
+
 			@include bp(xl) {
-				display: block;
-				@include font-size(28);
+				@include font-size($fontsize800);
+
 			}
 		}
 
