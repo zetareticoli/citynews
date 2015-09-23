@@ -314,13 +314,11 @@ $entry-content-offset	: 180px;
 }
 
 .entry-media {
-	background: rgb(240,240,240);
-	height: auto;
-	width: 106.5%;
-	margin: 0 0 $baseline * 3 -10px;
-	display: block;
+	position: relative;
+	margin: 0 -0.5rem $baseline * 2;
 
 	@include bp(m) {
+		margin-bottom: $baseline * 3;
 		margin-left: 0;
 		width: 100%;
 	}
@@ -341,6 +339,15 @@ $entry-content-offset	: 180px;
 		&.media-lg {
 			width: auto;
 		}
+	}
+
+	@include bp(l) {
+		float: none;
+		width: 40rem;
+	}
+
+	@include bp(xl) {
+		margin-left: 14rem;
 	}
 
 	img {

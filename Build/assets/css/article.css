@@ -257,13 +257,11 @@
         padding: 0; } }
 
 .entry-media {
-  background: #f0f0f0;
-  height: auto;
-  width: 106.5%;
-  margin: 0 0 1.5rem -10px;
-  display: block; }
+  position: relative;
+  margin: 0 -0.5rem 1rem; }
   @media (min-width: 46.25em) {
     .entry-media {
+      margin-bottom: 1.5rem;
       margin-left: 0;
       width: 100%; } }
   @media (min-width: 62.5em) {
@@ -277,6 +275,13 @@
         width: 640px; }
       .entry-media.media-lg {
         width: auto; } }
+  @media (min-width: 62.5em) {
+    .entry-media {
+      float: none;
+      width: 40rem; } }
+  @media (min-width: 75em) {
+    .entry-media {
+      margin-left: 14rem; } }
   .entry-media img {
     width: 100%; }
 
