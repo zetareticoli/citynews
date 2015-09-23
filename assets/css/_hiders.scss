@@ -22,7 +22,7 @@
 @include bp(m) {
 	.author-role,
 	.author-photo {
-		display: block;
+		display: inline-block;
 	}
 
 	.entry-label.category-label {

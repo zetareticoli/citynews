@@ -772,11 +772,13 @@ strong {
 .inverted .summary {
   color: #e0e0e0; }
 
-@media (min-width: 46.25em) {
-  .entry-summary {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 2rem; } }
+.entry-summary {
+  margin-bottom: 1rem; }
+  @media (min-width: 46.25em) {
+    .entry-summary {
+      font-size: 22px;
+      font-size: 1.375rem;
+      line-height: 2rem; } }
 
 .hero-story .story-summary,
 .special-story .story-summary {
