@@ -113,19 +113,19 @@ $entry-content-offset	: 180px;
 
 	.author-photo {
 		float: left;
-		margin: 0 8px 0 0;
-		width: 40px; 
+		margin: 0 $baseline 0 0;
+		width: $baseline * 6; 
 
 		@include bp(xl) {
 			float: none;
-			margin: 0 0 10px 0;
+			margin: 0 0 $baseline * 2 0;
 		}
 	}
 
 	.author-name {
 		display: inline-block;
 		@include font-size($fontsize200);
-		line-height: 1rem;
+		line-height: 1.5rem;
 		font-weight: 700;
 		color: $black900;
 
@@ -135,6 +135,7 @@ $entry-content-offset	: 180px;
 	}
 
 	.author-role {
+		padding-left: $baseline / 2;
 		color: $black800;
 		font-style: italic;
 

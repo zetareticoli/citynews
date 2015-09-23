@@ -2845,7 +2845,3 @@ ol, ul {
 
   .entry-label.category-label {
     display: none; } }
-@media (min-width: 62.5em) {
-  .author-role,
-  .author-photo {
-    display: block; } }

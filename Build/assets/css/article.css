@@ -101,22 +101,23 @@
   font-size: 0.875rem; }
 .entry-byline .author-photo {
   float: left;
-  margin: 0 8px 0 0;
-  width: 40px; }
+  margin: 0 0.5rem 0 0;
+  width: 3rem; }
   @media (min-width: 75em) {
     .entry-byline .author-photo {
       float: none;
-      margin: 0 0 10px 0; } }
+      margin: 0 0 1rem 0; } }
 .entry-byline .author-name {
   display: inline-block;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   color: #424242; }
   .entry-byline .author-name .link {
     text-decoration: none; }
 .entry-byline .author-role {
+  padding-left: 0.25rem;
   color: #616161;
   font-style: italic; }
   @media (min-width: 46.25em) {
