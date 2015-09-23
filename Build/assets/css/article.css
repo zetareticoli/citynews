@@ -244,10 +244,10 @@
   width: 100%; }
   @media (min-width: 62.5em) {
     .body-text {
-      max-width: 39.5rem; } }
+      max-width: 39rem; } }
   @media (min-width: 75em) {
     .body-text {
-      max-width: 39.5rem;
+      max-width: 39rem;
       margin-left: 12rem; } }
   .body-text > p {
     margin-bottom: 1rem;
@@ -305,7 +305,7 @@
   @media (min-width: 62.5em) {
     .entry-media {
       float: none;
-      width: 39.5rem; } }
+      width: 39rem; } }
   @media (min-width: 75em) {
     .entry-media {
       margin-left: 12rem; } }

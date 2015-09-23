@@ -298,11 +298,11 @@ $entry-content-offset	: 180px;
 	width: 100%;
 
 	@include bp(l) {
-		max-width: 39.5rem;
+		max-width: 39rem;
 	}
 
 	@include bp(xl) {
-		max-width: 39.5rem;
+		max-width: 39rem;
 		margin-left: 12rem;
 	}
 
@@ -380,7 +380,7 @@ $entry-content-offset	: 180px;
 
 	@include bp(l) {
 		float: none;
-		width: 39.5rem;
+		width: 39rem;
 	}
 
 	@include bp(xl) {
