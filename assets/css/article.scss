@@ -38,7 +38,7 @@ $entry-content-offset	: 180px;
 .entry-title,
 .entry-summary {
   	@include bp(xl) {
-  		margin-left: 12rem; 	
+  		margin-left: 13rem; 	
   	}
  }
 
@@ -69,10 +69,10 @@ $entry-content-offset	: 180px;
 .entry-label {
 	position: relative;
 	margin: 0 0 $baseline;
-}
 
-.entry-label.category-label {
-	display: inline-block;
+	&.category-label {
+		display: inline-block;
+	}
 }
 
 // Entry Meta ===============================================================
@@ -302,12 +302,12 @@ $entry-content-offset	: 180px;
 	width: 100%;
 
 	@include bp(l) {
-		max-width: 39rem;
+		max-width: 38rem;
 	}
 
 	@include bp(xl) {
-		max-width: 39rem;
-		margin-left: 12rem;
+		max-width: 38rem;
+		margin-left: 13rem;
 	}
 
 	> p {
@@ -384,11 +384,11 @@ $entry-content-offset	: 180px;
 
 	@include bp(l) {
 		float: none;
-		width: 39rem;
+		width: 38rem;
 	}
 
 	@include bp(xl) {
-		margin-left: 12rem;
+		margin-left: 13rem;
 	}
 
 	img {
@@ -449,7 +449,7 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(xl) {
-		margin: 0 $baseline * 3 0 -12rem;
+		margin: 0 $baseline * 3 0 -13rem;
 		width: 20rem;
 	}
 
