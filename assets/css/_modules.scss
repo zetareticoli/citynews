@@ -22,6 +22,43 @@
 	}
 }
 
+/* ==========================================================================
+  Related
+  ========================================================================== */
+
+.related-module {
+
+	&.top-related {
+		display: none;
+
+		@include bp(l) {
+			display: block;
+		}
+	}
+
+	@include bp(l) {
+		float: right;
+		clear: right;
+		margin: 4rem -22.5rem $baseline * 2 0;
+		width: 20rem;
+		
+		&.bottom-related {
+			display: none;
+		}
+	}
+
+	@include bp(xl) {
+		float: left;
+		clear: left;
+		margin: 0 $baseline * 3 0 -13rem;
+	}
+
+	.module-title {
+		color: $black700;
+		font-style: italic;
+	}
+}
+
 
 /* ==========================================================================
   Slots

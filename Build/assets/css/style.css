@@ -2098,6 +2098,31 @@ ol, ul {
     flex: 4 1 auto; }
 
 /* ==========================================================================
+  Related
+  ========================================================================== */
+.related-module.top-related {
+  display: none; }
+  @media (min-width: 62.5em) {
+    .related-module.top-related {
+      display: block; } }
+@media (min-width: 62.5em) {
+  .related-module {
+    float: right;
+    clear: right;
+    margin: 4rem -22.5rem 1rem 0;
+    width: 20rem; }
+    .related-module.bottom-related {
+      display: none; } }
+@media (min-width: 75em) {
+  .related-module {
+    float: left;
+    clear: left;
+    margin: 0 1.5rem 0 -13rem; } }
+.related-module .module-title {
+  color: #757575;
+  font-style: italic; }
+
+/* ==========================================================================
   Slots
   ========================================================================== */
 .slots {
