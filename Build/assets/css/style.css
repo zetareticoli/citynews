@@ -858,9 +858,6 @@ time,
         height: 6px;
         background-color: #E91F63; } }
 
-.category-label {
-  font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
-
 .entry-label {
   font-size: 14px;
   font-size: 0.875rem;
@@ -872,6 +869,12 @@ time,
   @media (min-width: 75em) {
     .entry-label {
       display: block; } }
+  .entry-label.category-label {
+    font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
+    @media (min-width: 62.5em) {
+      .entry-label.category-label {
+        font-size: 20px;
+        font-size: 1.25rem; } }
 
 .kicker {
   color: #78909c;

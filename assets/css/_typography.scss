@@ -508,10 +508,6 @@ time,
 	}
 }
 
-.category-label {
-	font-family: $titleseriftypeface;
-}
-
 .entry-label {
 	@include font-size($fontsize200);
 	color: $black700;
@@ -522,6 +518,14 @@ time,
 
 	@include bp(xl) {
 		display: block;
+	}
+
+	&.category-label {
+		font-family: $titleseriftypeface;
+
+		@include bp(l) {
+			@include font-size($fontsize500);
+		}
 	}
 }
 
