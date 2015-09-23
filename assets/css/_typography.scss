@@ -381,14 +381,30 @@ strong {
 
 // Text Elements ===============================================================
 
+// Content text 
+
+.text-paragraph {
+	@include bp(m) {
+		@include font-size($fontsize500);
+		line-height: 2rem;
+	}
+}
+
 // Summary
 
-.story-summary {
+.summary {
 	color: $black800;
 }
 
-.inverted .story-summary {
+.inverted .summary {
 	color: $black400;
+}
+
+.entry-summary {
+	@include bp(m) {
+		@include font-size(22);
+		line-height: 2rem;
+	}
 }
 
 .hero-story .story-summary,
@@ -432,6 +448,10 @@ time,
 .timestamp {
 	@include font-size($fontsize200);
 	color: $black600;
+}
+
+.entry-timestamp {
+	color: $black800;
 }
 
 .byline {
