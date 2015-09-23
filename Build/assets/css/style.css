@@ -1034,10 +1034,8 @@ time,
 .twitter-icon {
   fill: #55acee; }
 
-.whatsapp-icon .fill-color1 {
+.whatsapp-icon {
   fill: #59cb3f; }
-.whatsapp-icon .fill-color2 {
-  fill: #fff; }
 
 .has-children > a::before, .has-children > a::after, .go-back:before, .go-back:after {
   /* arrow icon in CSS - for element with nested unordered lists */
