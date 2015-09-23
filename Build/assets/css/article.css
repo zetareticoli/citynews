@@ -136,10 +136,8 @@
     float: right; } }
 .entry-social .social-items {
   float: left;
-  width: 50%; }
-  @media (min-width: 62.5em) {
-    .entry-social .social-items {
-      width: 15%; } }
+  width: 50%;
+  text-align: right; }
   @media (min-width: 75em) {
     .entry-social .social-items {
       width: 100%;
@@ -160,10 +158,6 @@
   width: 25%;
   display: block;
   float: left; }
-  @media (min-width: 62.5em) {
-    .entry-social .social-counter,
-    .entry-social .social-counter {
-      width: 12%; } }
   @media (min-width: 75em) {
     .entry-social .social-counter,
     .entry-social .social-counter {

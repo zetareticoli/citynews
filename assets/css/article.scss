@@ -165,10 +165,7 @@ $entry-content-offset	: 180px;
 	.social-items {
 		float: left;
 		width: 50%;
-
-		@include bp(l) {
-			width: 15%;
-		}
+		text-align: right;
 
 		@include bp(xl) {
 			width: 100%;
@@ -198,10 +195,6 @@ $entry-content-offset	: 180px;
 		width: 25%;
 		display: block;
 		float: left;
-
-		@include bp(l) {
-			width: 12%;
-		}
 
 		@include bp(xl) {
 			width: 100%;
