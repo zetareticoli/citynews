@@ -337,27 +337,35 @@
   .entry-tags li {
     display: inline;
     margin-right: 10px; }
+  @media (min-width: 75em) {
+    .entry-tags {
+      margin-left: 13rem; } }
 
+/*
 .next-entry {
-  margin-bottom: 40px; }
-  @media (min-width: 62.5em) {
-    .next-entry {
-      padding: 0;
-      text-align: right; } }
-  .next-entry .section-title {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-size: 1rem; }
-  .next-entry .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem; }
-    @media (min-width: 46.25em) {
-      .next-entry .story-heading {
-        width: 100%;
-        font-size: 28px;
-        font-size: 1.75rem;
-        line-height: 1.35em; } }
+	margin-bottom: 40px;
 
+	@include bp(l) {
+		padding: 0;
+		text-align: right;
+	}
+
+	.section-title {
+		margin-bottom: 20px;
+		@include font-size(16);
+	}
+
+	.story-heading {
+		@include font-size(20);
+
+		@include bp(m) {
+			width: 100%;
+			@include font-size(28);
+			line-height: 1.35em;
+		}
+	}
+}
+*/
 .top-stories {
   margin: 24px 0; }
   @media (min-width: 62.5em) {

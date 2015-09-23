@@ -426,8 +426,13 @@ $entry-content-offset	: 180px;
 		display: inline;
 		margin-right: 10px;
 	}
+
+	@include bp(xl) {
+		margin-left: 13rem;
+	}
 }
 
+/*
 .next-entry {
 	margin-bottom: 40px;
 
@@ -451,6 +456,7 @@ $entry-content-offset	: 180px;
 		}
 	}
 }
+*/
 
 .top-stories {
 	margin: 24px 0;
