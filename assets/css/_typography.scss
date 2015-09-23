@@ -302,11 +302,15 @@ strong {
 	margin-bottom: $baseline;
 	padding: $baseline 0;
 	border-bottom: 1px solid $bordercolor;
-	@include font-size($fontsize600);
+	@include font-size($fontsize500);
 	line-height: 2rem;
 	font-family: $titleseriftypeface;
 	font-weight: normal;
 	color: $black900;
+
+	@include bp(xl) {
+		@include font-size($fontsize600);
+	}
 
 	& > span {
 		display: block;
@@ -459,12 +463,8 @@ strong {
 
 time,
 .timestamp {
-	@include font-size($fontsize200);
-	color: $black600;
-}
-
-.entry-timestamp {
-	color: $black800;
+	@include font-size($fontsize100);
+	color: $black700;
 }
 
 .byline {
