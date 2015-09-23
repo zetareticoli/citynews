@@ -379,6 +379,17 @@ strong {
 	}
 }
 
+// Entry title
+
+.entry-title {
+	margin-bottom: $baseline;
+
+	@include bp(m) {
+		@include font-size($fontsize1000);
+		line-height: 3.5rem;
+	}
+}
+
 // Text Elements ===============================================================
 
 // Content text 
@@ -401,6 +412,8 @@ strong {
 }
 
 .entry-summary {
+	margin-bottom: $baseline * 2;
+	
 	@include bp(m) {
 		@include font-size(22);
 		line-height: 2rem;
@@ -440,7 +453,6 @@ strong {
 		@include font-size($fontsize300);
 	}
 }
-
 
 // Label, Kicker & Byline
 

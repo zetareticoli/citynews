@@ -752,6 +752,14 @@ strong {
         font-size: 28px;
         font-size: 1.75rem; } }
 
+.entry-title {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 46.25em) {
+    .entry-title {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
+
 @media (min-width: 46.25em) {
   .text-paragraph {
     font-size: 20px;
