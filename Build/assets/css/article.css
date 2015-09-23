@@ -212,11 +212,6 @@
     display: table; }
   .entry-content:after {
     clear: both; }
-  .entry-content .container {
-    padding: 0 10px; }
-    @media (min-width: 46.25em) {
-      .entry-content .container {
-        padding: 0; } }
 
 .body-text {
   width: 100%; }

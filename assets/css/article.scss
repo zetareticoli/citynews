@@ -255,14 +255,6 @@ $entry-content-offset	: 180px;
 	float: left;
 	width: 100%;
 	position: relative;
-
-	& .container {
-		padding: 0 10px;
-
-		@include bp(m) {
-			padding: 0;
-		}
-	}
 }
 
 .body-text {
