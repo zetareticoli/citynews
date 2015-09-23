@@ -91,6 +91,8 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(xl) {
+		position: relative;
+		z-index: 5;
 		float: left;
 		width: 11rem;
 		margin-bottom: 0;
