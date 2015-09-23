@@ -105,11 +105,6 @@ $entry-content-offset	: 180px;
 		float: left;
 	}
 
-	@include bp(l) {
-		width: 60%;
-	}
-
-
 	.author-name,
 	.author-role,
 	.entry-timestamp {

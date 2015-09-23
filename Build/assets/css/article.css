@@ -94,9 +94,6 @@
   .entry-byline {
     width: 50%;
     float: left; } }
-@media (min-width: 62.5em) {
-  .entry-byline {
-    width: 60%; } }
 .entry-byline .author-name,
 .entry-byline .author-role,
 .entry-byline .entry-timestamp {
