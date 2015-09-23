@@ -49,6 +49,10 @@ $entry-content-offset	: 180px;
 	padding-bottom: $baseline;
 	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
+
+	@include bp(xl) {
+		border-bottom: 0;
+	}
 }
 
 .entry-labels {
@@ -103,6 +107,11 @@ $entry-content-offset	: 180px;
 	@include bp(m) {
 		width: 50%;
 		float: left;
+	}
+
+	@include bp(xl) {
+		width: 100%;
+		float: none;
 	}
 
 	.author-name,
@@ -163,6 +172,11 @@ $entry-content-offset	: 180px;
 		float: right;
 	}
 
+	@include bp(xl) {
+		width: 100%;
+		float: none;
+	}
+
 	.social-items {
 		float: left;
 		width: 50%;
@@ -175,7 +189,7 @@ $entry-content-offset	: 180px;
 
 		@include bp(xl) {
 			width: 100%;
-			margin-top: 0;
+			text-align: left;
 		}
 	}
 
@@ -210,6 +224,8 @@ $entry-content-offset	: 180px;
 
 		@include bp(xl) {
 			width: 100%;
+			float: none;
+			margin: 0;
 		}
 
 		.number {

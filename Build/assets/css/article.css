@@ -39,6 +39,9 @@
     display: table; }
   .entry-header:after {
     clear: both; }
+  @media (min-width: 75em) {
+    .entry-header {
+      border-bottom: 0; } }
 
 @media (min-width: 75em) {
   .entry-labels {
@@ -94,6 +97,10 @@
   .entry-byline {
     width: 50%;
     float: left; } }
+@media (min-width: 75em) {
+  .entry-byline {
+    width: 100%;
+    float: none; } }
 .entry-byline .author-name,
 .entry-byline .author-role,
 .entry-byline .entry-timestamp {
@@ -135,6 +142,10 @@
   .entry-social {
     width: 50%;
     float: right; } }
+@media (min-width: 75em) {
+  .entry-social {
+    width: 100%;
+    float: none; } }
 .entry-social .social-items {
   float: left;
   width: 50%; }
@@ -146,7 +157,7 @@
   @media (min-width: 75em) {
     .entry-social .social-items {
       width: 100%;
-      margin-top: 0; } }
+      text-align: left; } }
 .entry-social .social-item {
   display: inline;
   list-style: none;
@@ -170,7 +181,9 @@
       text-align: left; } }
   @media (min-width: 75em) {
     .entry-social .social-counter {
-      width: 100%; } }
+      width: 100%;
+      float: none;
+      margin: 0; } }
   .entry-social .social-counter .number {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-weight: 700;
