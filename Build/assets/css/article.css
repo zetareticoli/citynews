@@ -136,8 +136,12 @@
     float: right; } }
 .entry-social .social-items {
   float: left;
-  width: 50%;
-  text-align: right; }
+  width: 50%; }
+  @media (min-width: 46.25em) {
+    .entry-social .social-items {
+      width: 42%;
+      line-height: 3rem;
+      text-align: right; } }
   @media (min-width: 75em) {
     .entry-social .social-items {
       width: 100%;
@@ -153,48 +157,45 @@
 .entry-social.bottom-social {
   float: none;
   width: 100%; }
-.entry-social .social-counter,
 .entry-social .social-counter {
   width: 25%;
   display: block;
-  float: left; }
-  @media (min-width: 75em) {
-    .entry-social .social-counter,
+  float: left;
+  text-align: right; }
+  @media (min-width: 46.25em) {
     .entry-social .social-counter {
-      width: 100%;
+      width: 24%;
+      margin-left: 1rem;
       text-align: left; } }
-  .entry-social .social-counter .number,
+  @media (min-width: 75em) {
+    .entry-social .social-counter {
+      width: 100%; } }
   .entry-social .social-counter .number {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
     font-size: 1.25rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: #546e7a;
     vertical-align: middle; }
     @media (min-width: 46.25em) {
-      .entry-social .social-counter .number,
       .entry-social .social-counter .number {
         display: block;
         font-size: 24px;
         font-size: 1.5rem; } }
     @media (min-width: 75em) {
-      .entry-social .social-counter .number,
       .entry-social .social-counter .number {
         display: block;
         font-size: 28px;
         font-size: 1.75rem; } }
-  .entry-social .social-counter .counter-label,
   .entry-social .social-counter .counter-label {
     display: none;
     font-size: 12px;
     font-size: 0.75rem;
     color: #546e7a; }
     @media (min-width: 46.25em) {
-      .entry-social .social-counter .counter-label,
       .entry-social .social-counter .counter-label {
         display: inline-block; } }
-  .entry-social .social-counter .icon,
   .entry-social .social-counter .icon {
     width: 12px;
     height: 12px;

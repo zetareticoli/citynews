@@ -165,7 +165,12 @@ $entry-content-offset	: 180px;
 	.social-items {
 		float: left;
 		width: 50%;
-		text-align: right;
+
+		@include bp(m) {
+			width: 42%;
+			line-height: 3rem;
+			text-align: right;
+		}
 
 		@include bp(xl) {
 			width: 100%;
@@ -190,22 +195,27 @@ $entry-content-offset	: 180px;
 		width: 100%;
 	}
 
-	.social-counter,
 	.social-counter {
 		width: 25%;
 		display: block;
 		float: left;
+		text-align: right;
+
+		@include bp(m) {
+			width: 24%;
+			margin-left: $baseline * 2;
+			text-align: left;
+		}
 
 		@include bp(xl) {
 			width: 100%;
-			text-align: left;
 		}
 
 		.number {
 			font-family: $headingstypeface;
 			font-weight: 700;
 			@include font-size($fontsize500);
-			line-height: 1.5rem;
+			line-height: 2rem;
 			color: $bluegrey700;
 			vertical-align: middle;
 
