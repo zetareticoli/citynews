@@ -22,14 +22,10 @@
     .entry {
       padding: 0 1rem 2rem; } }
 
-.entry-title {
-  margin-bottom: 0.5rem;
-  color: #212121; }
-
 @media (min-width: 75em) {
   .entry-title,
   .entry-summary {
-    margin: 0 0 0 12rem; } }
+    margin-left: 12rem; } }
 
 .entry-header {
   position: relative;
@@ -42,6 +38,12 @@
     display: table; }
   .entry-header:after {
     clear: both; }
+  @media (min-width: 46.25em) {
+    .entry-header {
+      padding: 1rem 0; } }
+  @media (min-width: 62.5em) {
+    .entry-header {
+      padding: 1.5rem 0; } }
   @media (min-width: 75em) {
     .entry-header {
       border-bottom: 0; } }

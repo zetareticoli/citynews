@@ -34,16 +34,12 @@ $entry-content-offset	: 180px;
 
 // Entry Header ===============================================================
 
-.entry-title {
-	margin-bottom: $baseline;
-	color: $black1000;
-}
 
   .entry-title,
   .entry-summary {
 
   	@include bp(xl) {
-  		margin: 0 0 0 12rem; 	
+  		margin-left: 12rem; 	
   	}
   }
 
@@ -53,6 +49,14 @@ $entry-content-offset	: 180px;
 	padding-bottom: $baseline;
 	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
+
+	@include bp(m) {
+		padding: $baseline * 2 0;
+	}
+
+	@include bp(l) {
+		padding: $baseline * 3 0;
+	}
 
 	@include bp(xl) {
 		border-bottom: 0;

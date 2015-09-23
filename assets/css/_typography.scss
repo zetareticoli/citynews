@@ -383,6 +383,7 @@ strong {
 
 .entry-title {
 	margin-bottom: $baseline;
+	color: $black1000;
 
 	@include bp(m) {
 		@include font-size($fontsize1000);
@@ -412,8 +413,8 @@ strong {
 }
 
 .entry-summary {
-	margin-bottom: $baseline * 2;
-	
+	margin-bottom: 0;
+
 	@include bp(m) {
 		@include font-size(22);
 		line-height: 2rem;
