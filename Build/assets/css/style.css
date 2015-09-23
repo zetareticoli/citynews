@@ -858,14 +858,20 @@ time,
         height: 6px;
         background-color: #E91F63; } }
 
+.category-label {
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
+
 .entry-label {
-  font-family: "PublicoText", Georgia, "Times New Roman", serif;
   font-size: 14px;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  color: #757575; }
   @media (min-width: 62.5em) {
     .entry-label {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media (min-width: 75em) {
+    .entry-label {
+      display: block; } }
 
 .kicker {
   color: #78909c;
@@ -2840,7 +2846,4 @@ ol, ul {
 @media (min-width: 46.25em) {
   .author-role,
   .author-photo {
-    display: inline-block; }
-
-  .entry-label.category-label {
-    display: none; } }
+    display: inline-block; } }

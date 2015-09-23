@@ -35,13 +35,12 @@ $entry-content-offset	: 180px;
 // Entry Header ===============================================================
 
 
-  .entry-title,
-  .entry-summary {
-
+.entry-title,
+.entry-summary {
   	@include bp(xl) {
   		margin-left: 12rem; 	
   	}
-  }
+ }
 
 .entry-header {
 	position: relative;
@@ -50,12 +49,8 @@ $entry-content-offset	: 180px;
 	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
 
-	@include bp(m) {
-		padding: $baseline * 2 0;
-	}
-
 	@include bp(l) {
-		padding: $baseline * 3 0;
+		padding: $baseline * 2 0;
 	}
 
 	@include bp(xl) {
@@ -67,12 +62,17 @@ $entry-content-offset	: 180px;
 	@include bp(xl) {
 		float: left;
 		width: 11rem;
+		padding-top: .5rem;
 	}
 }
 
 .entry-label {
 	position: relative;
 	margin: 0 0 $baseline;
+}
+
+.entry-label.category-label {
+	display: inline-block;
 }
 
 // Entry Meta ===============================================================

@@ -38,12 +38,9 @@
     display: table; }
   .entry-header:after {
     clear: both; }
-  @media (min-width: 46.25em) {
-    .entry-header {
-      padding: 1rem 0; } }
   @media (min-width: 62.5em) {
     .entry-header {
-      padding: 1.5rem 0; } }
+      padding: 1rem 0; } }
   @media (min-width: 75em) {
     .entry-header {
       border-bottom: 0; } }
@@ -51,11 +48,15 @@
 @media (min-width: 75em) {
   .entry-labels {
     float: left;
-    width: 11rem; } }
+    width: 11rem;
+    padding-top: .5rem; } }
 
 .entry-label {
   position: relative;
   margin: 0 0 0.5rem; }
+
+.entry-label.category-label {
+  display: inline-block; }
 
 .entry-meta {
   *zoom: 1; }

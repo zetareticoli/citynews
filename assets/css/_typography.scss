@@ -508,12 +508,20 @@ time,
 	}
 }
 
+.category-label {
+	font-family: $titleseriftypeface;
+}
+
 .entry-label {
-	font-family: $texttypeface;
 	@include font-size($fontsize200);
+	color: $black700;
 
 	@include bp(l) {
-		@include font-size($fontsize400);
+		@include font-size($fontsize300);
+	}
+
+	@include bp(xl) {
+		display: block;
 	}
 }
 
