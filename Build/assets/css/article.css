@@ -18,6 +18,9 @@
       margin-bottom: 40px;
       padding: 0 1.5rem 2rem;
       border-bottom: 1px solid #ccc; } }
+  @media (min-width: 62.5em) {
+    .entry {
+      padding: 0 1rem 2rem; } }
 
 .entry-title {
   margin-bottom: 0.5rem;
@@ -26,7 +29,7 @@
 @media (min-width: 75em) {
   .entry-title,
   .entry-summary {
-    margin: 0 0 0 14rem; } }
+    margin: 0 0 0 12rem; } }
 
 .entry-header {
   position: relative;
@@ -46,7 +49,7 @@
 @media (min-width: 75em) {
   .entry-labels {
     float: left;
-    width: 14rem; } }
+    width: 11rem; } }
 
 .entry-label {
   position: relative;
@@ -70,7 +73,7 @@
   @media (min-width: 75em) {
     .entry-meta {
       float: left;
-      width: 14rem; } }
+      width: 11rem; } }
 
 .entry-byline,
 .entry-social {
@@ -230,11 +233,11 @@
   width: 100%; }
   @media (min-width: 62.5em) {
     .body-text {
-      max-width: 40rem; } }
+      max-width: 39.5rem; } }
   @media (min-width: 75em) {
     .body-text {
-      max-width: 40rem;
-      margin-left: 14rem; } }
+      max-width: 39.5rem;
+      margin-left: 12rem; } }
   .body-text > p {
     margin-bottom: 1rem;
     color: #212121; }
@@ -291,10 +294,10 @@
   @media (min-width: 62.5em) {
     .entry-media {
       float: none;
-      width: 40rem; } }
+      width: 39.5rem; } }
   @media (min-width: 75em) {
     .entry-media {
-      margin-left: 14rem; } }
+      margin-left: 12rem; } }
   .entry-media img {
     width: 100%; }
 
@@ -337,7 +340,7 @@
         display: none; } }
   @media (min-width: 75em) {
     .related-content {
-      margin: 0 1.5rem 0 -14rem;
+      margin: 0 1.5rem 0 -12rem;
       width: 20rem; } }
   .related-content .section-title {
     font-weight: 700;
@@ -516,29 +519,28 @@
     .medium-rectangle-mobile {
       display: none; } }
 
-.entry-inner-slot {
+.entry-inner-slots {
   display: none;
   width: auto; }
   @media (min-width: 46.25em) {
-    .entry-inner-slot {
+    .entry-inner-slots {
       display: block;
       float: right;
       clear: right;
       padding: 1.5rem;
       margin: 0 0 1.5rem 1.5rem; } }
   @media (min-width: 62.5em) {
-    .entry-inner-slot {
+    .entry-inner-slots {
       display: none; } }
   @media (min-width: 75em) {
-    .entry-inner-slot {
+    .entry-inner-slots {
       display: none; } }
 
-.aside-adv {
+.entry-aside-slots {
   display: none;
-  float: left;
-  width: 300px; }
-  .aside-adv > img {
-    margin-bottom: 20px; }
+  float: right;
+  clear: right;
+  width: 20rem; }
   @media (min-width: 62.5em) {
-    .aside-adv {
+    .entry-aside-slots {
       display: block; } }

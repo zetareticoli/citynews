@@ -26,6 +26,10 @@ $entry-content-offset	: 180px;
 		padding: 0 $baseline * 3 $baseline * 4;
 		border-bottom: 1px solid #ccc;
 	}
+
+	@include bp(l) {
+		padding: 0 $baseline * 2 $baseline * 4;
+	}
 }
 
 // Entry Header ===============================================================
@@ -39,7 +43,7 @@ $entry-content-offset	: 180px;
   .entry-summary {
 
   	@include bp(xl) {
-  		margin: 0 0 0 14rem; 	
+  		margin: 0 0 0 12rem; 	
   	}
   }
 
@@ -58,7 +62,7 @@ $entry-content-offset	: 180px;
 .entry-labels {
 	@include bp(xl) {
 		float: left;
-		width: 14rem;
+		width: 11rem;
 	}
 }
 
@@ -84,7 +88,7 @@ $entry-content-offset	: 180px;
 
 	@include bp(xl) {
 		float: left;
-		width: 14rem;
+		width: 11rem;
 	}
 }
 
@@ -271,18 +275,19 @@ $entry-content-offset	: 180px;
 	float: left;
 	width: 100%;
 	position: relative;
+
 }
 
 .body-text {
 	width: 100%;
 
 	@include bp(l) {
-		max-width: 40rem;
+		max-width: 39.5rem;
 	}
 
 	@include bp(xl) {
-		max-width: 40rem;
-		margin-left: 14rem;
+		max-width: 39.5rem;
+		margin-left: 12rem;
 	}
 
 	> p {
@@ -359,11 +364,11 @@ $entry-content-offset	: 180px;
 
 	@include bp(l) {
 		float: none;
-		width: 40rem;
+		width: 39.5rem;
 	}
 
 	@include bp(xl) {
-		margin-left: 14rem;
+		margin-left: 12rem;
 	}
 
 	img {
@@ -424,7 +429,7 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(xl) {
-		margin: 0 $baseline * 3 0 -14rem;
+		margin: 0 $baseline * 3 0 -12rem;
 		width: 20rem;
 	}
 
@@ -660,7 +665,7 @@ $entry-content-offset	: 180px;
 	
 }
 
-.entry-inner-slot {
+.entry-inner-slots {
 	display: none;
 	width: auto;
 
@@ -681,14 +686,11 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.aside-adv {
+.entry-aside-slots {
 	display: none;
-	float: left;
-	width: 300px;
-
-	> img {
-		margin-bottom: 20px;
-	}
+	float: right;
+	clear: right;
+	width: 20rem;
 
 	@include bp(l) {
 		display: block;
