@@ -2235,7 +2235,13 @@ ol, ul {
 .story {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.5rem;
+  *zoom: 1; }
+  .story:before, .story:after {
+    content: " ";
+    display: table; }
+  .story:after {
+    clear: both; }
   .story .story-media {
     width: 30%;
     max-width: 200px;
@@ -2349,46 +2355,32 @@ ol, ul {
       .hero-story.focus-cover .link .story-heading {
         color: #424242; } }
 
-.featured-story {
-  *zoom: 1; }
-  .featured-story:before, .featured-story:after {
-    content: " ";
-    display: table; }
-  .featured-story:after {
-    clear: both; }
-  @media (min-width: 46.25em) {
-    .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
-      width: 50%;
-      margin-right: 12px;
-      float: left; } }
+@media (min-width: 46.25em) {
+  .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
+    width: 50%;
+    margin-right: 12px;
+    float: left; } }
 
-.list-story {
-  *zoom: 1; }
-  .list-story:before, .list-story:after {
-    content: " ";
-    display: table; }
-  .list-story:after {
-    clear: both; }
+@media (min-width: 62.5em) {
+  .list-story {
+    padding-bottom: 1rem; } }
+.list-story .story-media {
+  width: 25%;
+  float: left;
+  margin-right: 12px; }
   @media (min-width: 62.5em) {
-    .list-story {
-      padding-bottom: 1rem; } }
-  .list-story .story-media {
-    width: 25%;
-    float: left;
-    margin-right: 12px; }
-    @media (min-width: 62.5em) {
-      .list-story .story-media {
-        width: 36%; } }
-    @media (min-width: 75em) {
-      .list-story .story-media {
-        width: 32%; } }
-  .list-story .story-footer {
-    display: none; }
-    @media (min-width: 46.25em) {
-      .list-story .story-footer {
-        display: block; } }
-  .list-story .byline {
-    margin-bottom: 0.125rem; }
+    .list-story .story-media {
+      width: 36%; } }
+  @media (min-width: 75em) {
+    .list-story .story-media {
+      width: 32%; } }
+.list-story .story-footer {
+  display: none; }
+  @media (min-width: 46.25em) {
+    .list-story .story-footer {
+      display: block; } }
+.list-story .byline {
+  margin-bottom: 0.125rem; }
 
 .focus-section .list-story {
   padding-bottom: 0.5rem; }

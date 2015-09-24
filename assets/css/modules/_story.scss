@@ -4,6 +4,7 @@
 	width: 100%;
 	border-bottom: 1px solid $bordercolor;
 	padding-bottom: $baseline;
+	@include clearfix;
 
 	.story-media {
 		width: 30%;
@@ -190,7 +191,6 @@
 // featured
 
 .featured-story {
-	@include clearfix;
 
 	&.featured-mid,
 	&.featured-xl {
@@ -210,7 +210,6 @@
 // list
 
 .list-story {
-	@include clearfix;
 
 	@include bp(l) {
 		padding-bottom: $baseline * 2;
