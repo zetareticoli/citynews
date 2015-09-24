@@ -1139,6 +1139,16 @@ a.button {
 .block-button {
   display: inline-block; }
 
+.rounded-button {
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px; }
+
+.default-button {
+  background: #e0e0e0; }
+  .default-button:hover {
+    background: lightgray; }
+
 .light-button {
   border: 2px solid #e0e0e0; }
 
