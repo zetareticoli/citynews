@@ -604,7 +604,6 @@ strong {
     line-height: 1.5rem; } }
 
 @media (min-width: 46.25em) {
-  .grid-section .story .story-heading,
   .focus-section .list-story .story-heading,
   .focus-section .featured-story .story-heading {
     font-size: 16px;
