@@ -500,11 +500,13 @@
 	margin-right: $baseline;
 }
 
-// Module ===============================================================
+// Story inside a Module ===============================================================
 
 .module {
 	.story-media {
-		width: 25%;
+		width: 5rem;
+		float: right;
+		margin-left: $baseline;
 	}
 }
 

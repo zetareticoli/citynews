@@ -22,29 +22,12 @@
 	}
 }
 
-/* ==========================================================================
-  Related
-  ========================================================================== */
-
-.related-module {
-
-	&.top-related {
-		display: none;
-
-		@include bp(l) {
-			display: block;
-		}
-	}
-
+.inner-module {
 	@include bp(l) {
 		float: right;
 		clear: right;
 		margin: 4rem -22.5rem $baseline * 2 0;
 		width: 20rem;
-		
-		&.bottom-related {
-			display: none;
-		}
 	}
 
 	@include bp(xl) {
@@ -52,6 +35,13 @@
 		clear: left;
 		margin: 0 $baseline * 3 0 -13rem;
 	}
+}
+
+/* ==========================================================================
+  Related
+  ========================================================================== */
+
+.related-module {
 
 	.module-title {
 		color: $black700;

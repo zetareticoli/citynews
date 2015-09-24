@@ -2,10 +2,10 @@
   HIDERS
   ========================================================================== */
 
-
 .author-role,
 .author-photo,
-.author-twitter {
+.author-twitter,
+.related-module.inner-module {
 	display: none;
 }
 
@@ -20,6 +20,12 @@
 	.author-role,
 	.author-photo {
 		display: inline-block;
+	}
+}
+
+@include bp(l) {
+	.related-module.inner-module {
+		display: block;
 	}
 }
 
