@@ -998,6 +998,22 @@ time,
   font-size: 2rem;
   line-height: 1em; }
 
+.tag-item {
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  @media (min-width: 46.25em) {
+    .tag-item {
+      font-size: 16px;
+      font-size: 1rem; } }
+  .tag-item strong {
+    color: #757575;
+    margin-right: 4px; }
+  .tag-item .button {
+    padding: 0.2rem 0.6rem;
+    color: #607d8b; }
+
 .icon {
   vertical-align: middle; }
   .icon.small {
@@ -1100,7 +1116,10 @@ time,
   ========================================================================== */
 .button,
 a.button {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
   .button.has-icon .button-label,
   a.button.has-icon .button-label {
     padding-left: 4px; }
@@ -2595,6 +2614,12 @@ ol, ul {
     .newslist-module .story {
       border-bottom: 0;
       padding-bottom: 0.5rem; } }
+
+/* ==========================================================================
+  Story
+  ========================================================================== */
+.tags-list {
+  margin-bottom: 1rem; }
 
 /* ==========================================================================
   Modifiers

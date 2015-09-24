@@ -681,3 +681,24 @@ time,
 	line-height: 1em;
 }
 
+// Tags ===============================================================
+
+.tag-item {
+	font-family: $headingstypeface;
+	font-weight: 700;
+	@include font-size($fontsize200);
+
+	@include bp(m) {
+		@include font-size($fontsize300);
+	}
+
+	strong {
+		color: $black700;
+		margin-right: 4px;
+	}
+
+	.button {
+		padding: 0.2rem 0.6rem;
+		color: $bluegrey600;
+	}
+}

@@ -417,15 +417,7 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.entry-tags {
-	margin: 20px 0;
-	padding: 0;
-	font-size: 12px;
-
-	li {
-		display: inline;
-		margin-right: 10px;
-	}
+.tags-list {
 
 	@include bp(xl) {
 		margin-left: 13rem;
