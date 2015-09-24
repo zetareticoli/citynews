@@ -2854,6 +2854,9 @@ ol, ul {
 .related-module.inner-module {
   display: none; }
 
+.bottom-module {
+  display: block; }
+
 @media (max-width: 46.188em) {
   .page-title {
     display: none; } }
@@ -2863,4 +2866,7 @@ ol, ul {
     display: inline-block; } }
 @media (min-width: 62.5em) {
   .related-module.inner-module {
-    display: block; } }
+    display: block; }
+
+  .related-module.bottom-module {
+    display: none; } }

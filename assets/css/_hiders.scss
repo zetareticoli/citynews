@@ -9,6 +9,10 @@
 	display: none;
 }
 
+.bottom-module {
+	display: block;
+}
+
 @include max-bp(s) {
 	
 	.page-title {
@@ -26,6 +30,10 @@
 @include bp(l) {
 	.related-module.inner-module {
 		display: block;
+	}
+
+	.related-module.bottom-module {
+		display: none;
 	}
 }
 
