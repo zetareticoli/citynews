@@ -113,24 +113,6 @@
     .entry-content-main {
       margin: 0 1rem 0 0; } }
 
-.content-footer {
-  clear: both;
-  overflow: hidden;
-  border-top: 1px solid #ccc;
-  padding-top: 20px; }
-  @media (min-width: 62.5em) {
-    .content-footer {
-      border-top: 0;
-      padding-top: 0; } }
-  .content-footer .container {
-    padding: 0 10px; }
-    @media (min-width: 46.25em) {
-      .content-footer .container {
-        padding: 0 60px; } }
-    @media (min-width: 62.5em) {
-      .content-footer .container {
-        padding: 0; } }
-
 .entry-media {
   position: relative;
   margin: 0 -0.5rem 1rem; }

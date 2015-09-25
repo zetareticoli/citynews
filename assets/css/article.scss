@@ -137,30 +137,6 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.content-footer {
-	clear: both;
-	overflow: hidden;
-	border-top: 1px solid #ccc;
-	padding-top: 20px;
-
-	@include bp(l) {
-		border-top: 0;
-		padding-top: 0;
-	}
-
-	& .container {
-		padding: 0 10px;
-
-		@include bp(m) {
-			padding: 0 60px;
-		}
-
-		@include bp(l) {
-			padding: 0;
-		}
-	}
-}
-
 .entry-media {
 	position: relative;
 	margin: 0 -0.5rem $baseline * 2;
