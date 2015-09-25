@@ -2466,11 +2466,12 @@ ol, ul {
         z-index: 1;
         background: none; } }
   .inset-story .story-summary {
-    height: 0;
+    max-height: 0;
     opacity: 0;
-    -webkit-transition: height 0.2s, opacity 0.2s;
-    -moz-transition: height 0.2s, opacity 0.2s;
-    transition: height 0.2s, opacity 0.2s; }
+    overflow: hidden;
+    -webkit-transition: max-height 0.3s ease-in-out, opacity 0.2s;
+    -moz-transition: max-height 0.3s ease-in-out, opacity 0.2s;
+    transition: max-height 0.3s ease-in-out, opacity 0.2s; }
   @media (min-width: 62.5em) {
     .inset-story {
       background: none;
@@ -2479,7 +2480,7 @@ ol, ul {
         background-color: rgba(38, 50, 56, 0.85); }
       .inset-story:hover .story-summary {
         opacity: 1;
-        height: 100px; } }
+        max-height: 300px; } }
 
 .special-story {
   overflow: hidden;
