@@ -70,13 +70,22 @@ $entry-content-offset	: 180px;
 	position: relative;
 }
 
+.entry-content-main {
+	position: relative;
+	width: 100%;
+
+	@include bp(l) {
+		margin: 0 $gutterwidth 0 0;
+	}
+}
+
 .main-content-column {
 	@include bp(xl) {
 		margin-left: 13rem;
 	}
 }
 
-.body-text {
+.main-content-body {
 	width: 100%;
 
 	@include bp(l) {
@@ -95,15 +104,6 @@ $entry-content-offset	: 180px;
 			@include font-size($fontsize400);
 			line-height: 2rem;
 		}
-	}
-}
-
-.entry-content-main {
-	position: relative;
-	width: 100%;
-
-	@include bp(l) {
-		margin: 0 $gutterwidth 0 0;
 	}
 }
 
