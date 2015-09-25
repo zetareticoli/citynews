@@ -2794,6 +2794,31 @@ ol, ul {
   padding-top: 0.5rem;
   border-top: 1px solid #e0e0e0; }
 
+/* To Fix */
+.back-top {
+  clear: left;
+  padding: 10px 0;
+  border-top: 1px solid #ccc; }
+  @media (min-width: 62.5em) {
+    .back-top {
+      display: none; } }
+
+.bottom-nav {
+  border-top: 1px solid #ccc; }
+  @media (min-width: 62.5em) {
+    .bottom-nav {
+      display: none; } }
+
+.bottom-nav ul {
+  padding: 0;
+  width: 50%;
+  float: left; }
+  .bottom-nav ul li {
+    margin-bottom: 10px; }
+  .bottom-nav ul a {
+    font-size: 12px;
+    font-size: 0.75rem; }
+
 /* ==========================================================================
   Modifiers
   ========================================================================== */

@@ -331,3 +331,38 @@
 	padding-top: $baseline;
 	border-top: 1px solid $bordercolor;
 }
+
+
+
+/* To Fix */
+
+.back-top {
+	clear: left;
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	@include bp(l) {
+		display: none;
+	}
+}
+
+.bottom-nav {
+	border-top: 1px solid #ccc;
+	@include bp(l) {
+		display: none;
+	}
+}
+
+.bottom-nav ul {
+	padding: 0;
+	width: 50%;
+	float: left;
+
+	& li {
+		margin-bottom: 10px;
+	}
+
+	& a {
+		@include font-size(12);
+	}
+
+}
