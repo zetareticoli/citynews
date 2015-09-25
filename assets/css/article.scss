@@ -17,12 +17,10 @@ $entry-content-offset	: 180px;
   ========================================================================== */
 
 .entry {
-	margin-bottom: $baseline * 2;
 	padding: 0 $baseline;
 	@include clearfix;
 
 	@include bp(m) {
-		margin-bottom: $baseline * 3;
 		padding: 0 $baseline * 3 $baseline * 4;
 		border-bottom: 1px solid $bordercolor;
 	}

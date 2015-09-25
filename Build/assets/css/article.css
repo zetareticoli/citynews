@@ -5,7 +5,6 @@
   Global Styles
   ========================================================================== */
 .entry {
-  margin-bottom: 1rem;
   padding: 0 0.5rem;
   *zoom: 1; }
   .entry:before, .entry:after {
@@ -15,7 +14,6 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry {
-      margin-bottom: 1.5rem;
       padding: 0 1.5rem 2rem;
       border-bottom: 1px solid #e0e0e0; } }
   @media (min-width: 62.5em) {

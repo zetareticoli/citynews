@@ -59,6 +59,7 @@
 }
 
 .slots {
+	margin: $baseline * 2 0;
 	background: $black200;
 	border: 1px solid $black300;
 }
@@ -85,6 +86,7 @@
 
 .slots-headlines {
 	@include flexbox;
+	margin: 0;
 
 	.l-list {
 		margin: 0 auto;
