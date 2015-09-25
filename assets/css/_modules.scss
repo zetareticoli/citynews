@@ -84,9 +84,13 @@
 
 // Slot Templates ===============================================================
 
+.slots-headlines,
+.entry-aside-slots {
+	margin: 0;
+}
+
 .slots-headlines {
 	@include flexbox;
-	margin: 0;
 
 	.l-list {
 		margin: 0 auto;
