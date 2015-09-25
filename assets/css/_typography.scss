@@ -377,7 +377,7 @@ strong {
 			background-color: white;
 			z-index: 1;
 			padding-right: $baseline * 2;
-			@include font-size($fontsize700);
+			@include font-size($fontsize600);
 		}
 	}
 }
