@@ -28,8 +28,6 @@
 .entry-header {
   position: relative;
   margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e0e0e0;
   *zoom: 1; }
   .entry-header:before, .entry-header:after {
     content: " ";
@@ -39,9 +37,6 @@
   @media (min-width: 62.5em) {
     .entry-header {
       padding: 1rem 0; } }
-  @media (min-width: 75em) {
-    .entry-header {
-      border-bottom: 0; } }
 
 @media (min-width: 75em) {
   .entry-labels {
@@ -79,54 +74,31 @@
       margin-bottom: 0;
       padding-bottom: 0; } }
 
-.entry-byline,
-.entry-social {
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-  *zoom: 1; }
-  .entry-byline:before, .entry-byline:after,
-  .entry-social:before,
-  .entry-social:after {
-    content: " ";
-    display: table; }
-  .entry-byline:after,
-  .entry-social:after {
-    clear: both; }
-  @media (min-width: 46.25em) {
-    .entry-byline,
-    .entry-social {
-      border: 0;
-      padding-bottom: 0;
-      margin-bottom: 0; } }
-
 @media (min-width: 46.25em) {
-  .entry-byline {
+  .meta-byline {
     width: 50%;
     float: left; } }
 @media (min-width: 75em) {
-  .entry-byline {
+  .meta-byline {
     width: 100%;
-    float: none;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0; } }
+    float: none; } }
 @media (min-width: 75em) {
-  .entry-byline .author {
+  .meta-byline .author {
     margin-bottom: 0.5rem; } }
-.entry-byline .author-name,
-.entry-byline .author-role,
-.entry-byline .entry-timestamp {
+.meta-byline .author-name,
+.meta-byline .author-role,
+.meta-byline .entry-timestamp {
   font-size: 14px;
   font-size: 0.875rem; }
-.entry-byline .author-photo {
+.meta-byline .author-photo {
   float: left;
   margin: 0 0.5rem 0 0;
   width: 3rem; }
   @media (min-width: 75em) {
-    .entry-byline .author-photo {
+    .meta-byline .author-photo {
       float: none;
       margin: 0; } }
-.entry-byline .author-name {
+.meta-byline .author-name {
   display: inline-block;
   font-size: 14px;
   font-size: 0.875rem;
@@ -134,74 +106,74 @@
   font-weight: 700;
   color: #424242; }
   @media (min-width: 75em) {
-    .entry-byline .author-name {
+    .meta-byline .author-name {
       display: block; } }
-.entry-byline .author-role {
+.meta-byline .author-role {
   color: #616161;
   font-style: italic; }
   @media (min-width: 46.25em) {
-    .entry-byline .author-role {
+    .meta-byline .author-role {
       margin-bottom: 0.25rem; } }
   @media (max-width: 62.438em) {
-    .entry-byline .author-role {
+    .meta-byline .author-role {
       padding-left: 0.25rem; } }
-.entry-byline .author-twitter {
+.meta-byline .author-twitter {
   display: none; }
-  .entry-byline .author-twitter > .icon {
+  .meta-byline .author-twitter > .icon {
     margin: 0 5px;
     width: 14px;
     height: 14px;
     fill: lightblue; }
 
 @media (min-width: 46.25em) {
-  .entry-social {
+  .meta-social {
     width: 50%;
     float: right; } }
 @media (min-width: 75em) {
-  .entry-social {
+  .meta-social {
     width: 100%;
     float: none; } }
-.entry-social .social-items {
+.meta-social .social-items {
   float: left;
   width: 50%; }
   @media (min-width: 46.25em) {
-    .entry-social .social-items {
+    .meta-social .social-items {
       width: 42%;
       line-height: 3rem;
       text-align: right; } }
   @media (min-width: 75em) {
-    .entry-social .social-items {
+    .meta-social .social-items {
       float: none;
       width: 100%;
       margin-bottom: 0.5rem;
       text-align: left; } }
-.entry-social .social-item {
+.meta-social .social-item {
   display: inline;
   list-style: none;
   margin: 0 0 0 0;
   padding: 0; }
-.entry-social .social-item .icon {
+.meta-social .social-item .icon {
   width: 32px;
   height: 32px; }
-.entry-social.bottom-social {
+.meta-social.bottom-social {
   float: none;
   width: 100%; }
-.entry-social .social-counter {
+.meta-social .social-counter {
   width: 25%;
   display: block;
   float: left;
   text-align: right; }
   @media (min-width: 46.25em) {
-    .entry-social .social-counter {
+    .meta-social .social-counter {
       width: 24%;
       margin-left: 1rem;
       text-align: left; } }
   @media (min-width: 75em) {
-    .entry-social .social-counter {
+    .meta-social .social-counter {
       width: 100%;
       float: none;
       margin: 0 0 1rem 0; } }
-  .entry-social .social-counter .number {
+  .meta-social .social-counter .number {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -210,23 +182,23 @@
     color: #546e7a;
     vertical-align: middle; }
     @media (min-width: 46.25em) {
-      .entry-social .social-counter .number {
+      .meta-social .social-counter .number {
         display: block;
         font-size: 24px;
         font-size: 1.5rem; } }
     @media (min-width: 75em) {
-      .entry-social .social-counter .number {
+      .meta-social .social-counter .number {
         font-size: 32px;
         font-size: 2rem; } }
-  .entry-social .social-counter .counter-label {
+  .meta-social .social-counter .counter-label {
     display: none;
     font-size: 12px;
     font-size: 0.75rem;
     color: #546e7a; }
     @media (min-width: 46.25em) {
-      .entry-social .social-counter .counter-label {
+      .meta-social .social-counter .counter-label {
         display: inline-block; } }
-  .entry-social .social-counter .icon {
+  .meta-social .social-counter .icon {
     width: 12px;
     height: 12px;
     fill: #607d8b; }
@@ -242,6 +214,10 @@
   .entry-content:after {
     clear: both; }
 
+@media (min-width: 75em) {
+  .main-content-column {
+    margin-left: 13rem; } }
+
 .body-text {
   width: 100%; }
   @media (min-width: 62.5em) {
@@ -249,8 +225,7 @@
       max-width: 38rem; } }
   @media (min-width: 75em) {
     .body-text {
-      max-width: 38rem;
-      margin-left: 13rem; } }
+      max-width: 38rem; } }
   .body-text > p {
     margin-bottom: 1rem;
     color: #212121; }
@@ -260,11 +235,11 @@
         font-size: 1.125rem;
         line-height: 2rem; } }
 
-.content-body {
+.entry-content-main {
   position: relative;
   width: 100%; }
   @media (min-width: 62.5em) {
-    .content-body {
+    .entry-content-main {
       margin: 0 1rem 0 0; } }
 
 .content-footer {
@@ -308,9 +283,6 @@
     .entry-media {
       float: none;
       width: 38rem; } }
-  @media (min-width: 75em) {
-    .entry-media {
-      margin-left: 13rem; } }
   .entry-media img {
     width: 100%; }
 
@@ -327,10 +299,6 @@
     border-top: 1px solid #ccc;
     font-size: 14px;
     padding: 10px 0; }
-
-@media (min-width: 75em) {
-  .tags-list {
-    margin-left: 13rem; } }
 
 .top-stories {
   margin: 24px 0; }

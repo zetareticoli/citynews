@@ -32,7 +32,6 @@ $entry-content-offset	: 180px;
 
 // Entry Header ===============================================================
 
-
 .entry-title,
 .entry-summary {
   	@include bp(xl) {
@@ -43,16 +42,10 @@ $entry-content-offset	: 180px;
 .entry-header {
 	position: relative;
 	margin-bottom: $baseline;
-	padding-bottom: $baseline;
-	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
 
 	@include bp(l) {
 		padding: $baseline * 2 0;
-	}
-
-	@include bp(xl) {
-		border-bottom: 0;
 	}
 }
 
@@ -98,21 +91,7 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.entry-byline,
-.entry-social {
-	border-bottom: 1px solid $bordercolor;
-	padding-bottom: $baseline;
-	margin-bottom: $baseline;
-	@include clearfix;
-
-	@include bp(m) {
-		border: 0;
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-}
-
-.entry-byline {
+.meta-byline {
 
 	@include bp(m) {
 		width: 50%;
@@ -122,8 +101,6 @@ $entry-content-offset	: 180px;
 	@include bp(xl) {
 		width: 100%;
 		float: none;
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bordercolor;
 	}
 
 	.author {
@@ -186,7 +163,7 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.entry-social {
+.meta-social {
 
 	@include bp(m) {
 		width: 50%;
@@ -295,7 +272,12 @@ $entry-content-offset	: 180px;
 	float: left;
 	width: 100%;
 	position: relative;
+}
 
+.main-content-column {
+	@include bp(xl) {
+		margin-left: 13rem;
+	}
 }
 
 .body-text {
@@ -307,7 +289,6 @@ $entry-content-offset	: 180px;
 
 	@include bp(xl) {
 		max-width: 38rem;
-		margin-left: 13rem;
 	}
 
 	> p {
@@ -321,7 +302,7 @@ $entry-content-offset	: 180px;
 	}
 }
 
-.content-body {
+.entry-content-main {
 	position: relative;
 	width: 100%;
 
@@ -387,10 +368,6 @@ $entry-content-offset	: 180px;
 		width: 38rem;
 	}
 
-	@include bp(xl) {
-		margin-left: 13rem;
-	}
-
 	img {
 		width: 100%;
 	}
@@ -412,13 +389,6 @@ $entry-content-offset	: 180px;
 		border-top: 1px solid #ccc;
 		font-size: 14px;
 		padding: 10px 0;
-	}
-}
-
-.tags-list {
-
-	@include bp(xl) {
-		margin-left: 13rem;
 	}
 }
 

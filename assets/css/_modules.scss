@@ -117,10 +117,24 @@
 
 @import "modules/story";
 
+
 /* ==========================================================================
-  Story
+  Meta
+  ========================================================================== */
+
+.meta-byline,
+.meta-social {
+	border-top: 1px solid $bordercolor;
+	padding-top: $baseline;
+	margin-bottom: $baseline;
+	@include clearfix;
+}
+
+/* ==========================================================================
+  Tags
   ========================================================================== */
 
 .tags-list {
 	margin-bottom: $baseline * 2;
+	border-top: 1px solid $bordercolor;
 }

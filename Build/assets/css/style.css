@@ -2170,13 +2170,16 @@ ol, ul {
   width: 300px;
   height: 600px; }
 
+.slots-headlines,
+.entry-aside-slots {
+  margin: 0; }
+
 .slots-headlines {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  margin: 0; }
+  display: flex; }
   .slots-headlines .l-list {
     margin: 0 auto; }
 
@@ -2631,10 +2634,29 @@ ol, ul {
       padding-bottom: 0.5rem; } }
 
 /* ==========================================================================
-  Story
+  Meta
+  ========================================================================== */
+.meta-byline,
+.meta-social {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  *zoom: 1; }
+  .meta-byline:before, .meta-byline:after,
+  .meta-social:before,
+  .meta-social:after {
+    content: " ";
+    display: table; }
+  .meta-byline:after,
+  .meta-social:after {
+    clear: both; }
+
+/* ==========================================================================
+  Tags
   ========================================================================== */
 .tags-list {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-top: 1px solid #e0e0e0; }
 
 /* ==========================================================================
   Modifiers
