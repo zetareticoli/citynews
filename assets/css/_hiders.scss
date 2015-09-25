@@ -25,14 +25,18 @@
 	.author-photo {
 		display: inline-block;
 	}
-}
 
-@include bp(l) {
 	.related-module.inner-module {
 		display: block;
 	}
 
-	.related-module.bottom-module,
+	.related-module.bottom-module {
+		display: none;
+	}
+}
+
+@include bp(l) {
+
 	.entry-secondary-slot {
 		display: none;
 	}

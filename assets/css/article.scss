@@ -21,12 +21,12 @@ $entry-content-offset	: 180px;
 	@include clearfix;
 
 	@include bp(m) {
-		padding: 0 $baseline * 3 $baseline * 4;
-		border-bottom: 1px solid $bordercolor;
+		padding: 0 $baseline * 3;
 	}
 
 	@include bp(l) {
 		padding: 0 $baseline * 2 $baseline * 4;
+		border-bottom: 1px solid $bordercolor;
 	}
 }
 
@@ -69,12 +69,13 @@ $entry-content-offset	: 180px;
 // Entry Meta ===============================================================
 
 .entry-meta {
+	margin-bottom: $baseline;
 	@include clearfix;
 
 	@include bp(m) {
-		border-bottom: 1px solid $bordercolor;
-		padding-bottom: $baseline;
 		margin-bottom: $baseline * 2;
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
 	}
 
 	@include bp(l) {
@@ -274,6 +275,15 @@ $entry-content-offset	: 180px;
 	}
 }
 
+// Entry Footer ===============================================================
+
+.entry-footer {
+
+	@include bp(xl) {
+		margin-bottom: $baseline * 4;
+		width: 38rem;
+	}
+}
 
 /* ==========================================================================
   Modules

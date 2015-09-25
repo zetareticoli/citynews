@@ -14,11 +14,11 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry {
-      padding: 0 1.5rem 2rem;
-      border-bottom: 1px solid #e0e0e0; } }
+      padding: 0 1.5rem; } }
   @media (min-width: 62.5em) {
     .entry {
-      padding: 0 1rem 2rem; } }
+      padding: 0 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0; } }
 
 @media (min-width: 75em) {
   .entry-title,
@@ -51,6 +51,7 @@
     display: inline-block; }
 
 .entry-meta {
+  margin-bottom: 0.5rem;
   *zoom: 1; }
   .entry-meta:before, .entry-meta:after {
     content: " ";
@@ -59,9 +60,9 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry-meta {
-      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 1rem;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem; } }
+      border-bottom: 1px solid #e0e0e0; } }
   @media (min-width: 62.5em) {
     .entry-meta {
       border-top: none; } }
@@ -73,135 +74,6 @@
       width: 11rem;
       margin-bottom: 0;
       padding-bottom: 0; } }
-
-@media (min-width: 46.25em) {
-  .meta-byline {
-    width: 50%;
-    float: left; } }
-@media (min-width: 75em) {
-  .meta-byline {
-    width: 100%;
-    float: none; } }
-@media (min-width: 75em) {
-  .meta-byline .author {
-    margin-bottom: 0.5rem; } }
-.meta-byline .author-name,
-.meta-byline .author-role,
-.meta-byline .entry-timestamp {
-  font-size: 14px;
-  font-size: 0.875rem; }
-.meta-byline .author-photo {
-  float: left;
-  margin: 0 0.5rem 0 0;
-  width: 3rem; }
-  @media (min-width: 75em) {
-    .meta-byline .author-photo {
-      float: none;
-      margin: 0; } }
-.meta-byline .author-name {
-  display: inline-block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 700;
-  color: #424242; }
-  @media (min-width: 75em) {
-    .meta-byline .author-name {
-      display: block; } }
-.meta-byline .author-role {
-  color: #616161;
-  font-style: italic; }
-  @media (min-width: 46.25em) {
-    .meta-byline .author-role {
-      margin-bottom: 0.25rem; } }
-  @media (max-width: 62.438em) {
-    .meta-byline .author-role {
-      padding-left: 0.25rem; } }
-.meta-byline .author-twitter {
-  display: none; }
-  .meta-byline .author-twitter > .icon {
-    margin: 0 5px;
-    width: 14px;
-    height: 14px;
-    fill: lightblue; }
-
-@media (min-width: 46.25em) {
-  .meta-social {
-    width: 50%;
-    float: right; } }
-@media (min-width: 75em) {
-  .meta-social {
-    width: 100%;
-    float: none; } }
-.meta-social .social-items {
-  float: left;
-  width: 50%; }
-  @media (min-width: 46.25em) {
-    .meta-social .social-items {
-      width: 42%;
-      line-height: 3rem;
-      text-align: right; } }
-  @media (min-width: 75em) {
-    .meta-social .social-items {
-      float: none;
-      width: 100%;
-      margin-bottom: 0.5rem;
-      text-align: left; } }
-.meta-social .social-item {
-  display: inline;
-  list-style: none;
-  margin: 0 0 0 0;
-  padding: 0; }
-.meta-social .social-item .icon {
-  width: 32px;
-  height: 32px; }
-.meta-social.bottom-social {
-  float: none;
-  width: 100%; }
-.meta-social .social-counter {
-  width: 25%;
-  display: block;
-  float: left;
-  text-align: right; }
-  @media (min-width: 46.25em) {
-    .meta-social .social-counter {
-      width: 24%;
-      margin-left: 1rem;
-      text-align: left; } }
-  @media (min-width: 75em) {
-    .meta-social .social-counter {
-      width: 100%;
-      float: none;
-      margin: 0 0 1rem 0; } }
-  .meta-social .social-counter .number {
-    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color: #546e7a;
-    vertical-align: middle; }
-    @media (min-width: 46.25em) {
-      .meta-social .social-counter .number {
-        display: block;
-        font-size: 24px;
-        font-size: 1.5rem; } }
-    @media (min-width: 75em) {
-      .meta-social .social-counter .number {
-        font-size: 32px;
-        font-size: 2rem; } }
-  .meta-social .social-counter .counter-label {
-    display: none;
-    font-size: 12px;
-    font-size: 0.75rem;
-    color: #546e7a; }
-    @media (min-width: 46.25em) {
-      .meta-social .social-counter .counter-label {
-        display: inline-block; } }
-  .meta-social .social-counter .icon {
-    width: 12px;
-    height: 12px;
-    fill: #607d8b; }
 
 .entry-content {
   *zoom: 1;
@@ -344,6 +216,11 @@
     @media (min-width: 46.25em) {
       .top-stories .story-heading {
         font-size: 16px; } }
+
+@media (min-width: 75em) {
+  .entry-footer {
+    margin-bottom: 2rem;
+    width: 38rem; } }
 
 /* ==========================================================================
   Modules

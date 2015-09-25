@@ -23,6 +23,11 @@
 }
 
 .inner-module {
+	width: 18rem;
+	float: left;
+	clear: left;
+	margin: 0 2rem 2rem 0;
+
 	@include bp(l) {
 		float: right;
 		clear: right;
@@ -134,35 +139,9 @@
 	@include clearfix;
 }
 
+// Meta Social ===============================================================
+
 .meta-social {
-
-	@include bp(m) {
-		width: 50%;
-		float: right;
-	}
-
-	@include bp(xl) {
-		width: 100%;
-		float: none;
-	}
-
-	.social-items {
-		float: left;
-		width: 50%;
-
-		@include bp(m) {
-			width: 42%;
-			line-height: 3rem;
-			text-align: right;
-		}
-
-		@include bp(xl) {
-			float: none;
-			width: 100%;
-			margin-bottom: $baseline;
-			text-align: left;
-		}
-	}
 
 	.social-item {
 		display: inline;
@@ -235,6 +214,42 @@
 		}
 	}
 }
+
+// Entry Meta
+
+
+.entry-meta .meta-social {
+
+	@include bp(m) {
+		width: 50%;
+		float: right;
+	}
+
+	@include bp(xl) {
+		width: 100%;
+		float: none;
+	}
+
+	.social-items {
+		float: left;
+		width: 50%;
+
+		@include bp(m) {
+			width: 42%;
+			line-height: 3rem;
+			text-align: right;
+		}
+
+		@include bp(xl) {
+			float: none;
+			width: 100%;
+			margin-bottom: $baseline;
+			text-align: left;
+		}
+	}
+}
+
+// Meta Byline ===============================================================
 
 .meta-byline {
 
