@@ -6,7 +6,7 @@
   ========================================================================== */
 .entry {
   margin-bottom: 1rem;
-  padding: 0 0.5rem 1rem;
+  padding: 0 0.5rem;
   *zoom: 1; }
   .entry:before, .entry:after {
     content: " ";
@@ -15,7 +15,7 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry {
-      margin-bottom: 40px;
+      margin-bottom: 1.5rem;
       padding: 0 1.5rem 2rem;
       border-bottom: 1px solid #e0e0e0; } }
   @media (min-width: 62.5em) {
@@ -334,31 +334,6 @@
   .tags-list {
     margin-left: 13rem; } }
 
-/*
-.next-entry {
-	margin-bottom: 40px;
-
-	@include bp(l) {
-		padding: 0;
-		text-align: right;
-	}
-
-	.section-title {
-		margin-bottom: 20px;
-		@include font-size(16);
-	}
-
-	.story-heading {
-		@include font-size(20);
-
-		@include bp(m) {
-			width: 100%;
-			@include font-size(28);
-			line-height: 1.35em;
-		}
-	}
-}
-*/
 .top-stories {
   margin: 24px 0; }
   @media (min-width: 62.5em) {

@@ -18,11 +18,11 @@ $entry-content-offset	: 180px;
 
 .entry {
 	margin-bottom: $baseline * 2;
-	padding: 0 $baseline $baseline * 2;
+	padding: 0 $baseline;
 	@include clearfix;
 
 	@include bp(m) {
-		margin-bottom: 40px;
+		margin-bottom: $baseline * 3;
 		padding: 0 $baseline * 3 $baseline * 4;
 		border-bottom: 1px solid $bordercolor;
 	}
@@ -423,32 +423,6 @@ $entry-content-offset	: 180px;
 		margin-left: 13rem;
 	}
 }
-
-/*
-.next-entry {
-	margin-bottom: 40px;
-
-	@include bp(l) {
-		padding: 0;
-		text-align: right;
-	}
-
-	.section-title {
-		margin-bottom: 20px;
-		@include font-size(16);
-	}
-
-	.story-heading {
-		@include font-size(20);
-
-		@include bp(m) {
-			width: 100%;
-			@include font-size(28);
-			line-height: 1.35em;
-		}
-	}
-}
-*/
 
 .top-stories {
 	margin: 24px 0;
