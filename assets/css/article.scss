@@ -61,32 +61,6 @@ $entry-content-offset	: 180px;
 	}
 }
 
-// Entry Meta ===============================================================
-
-.entry-meta {
-	margin-bottom: $baseline;
-	@include clearfix;
-
-	@include bp(m) {
-		margin-bottom: $baseline * 2;
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bordercolor;
-	}
-
-	@include bp(l) {
-		border-top: none;
-	}
-
-	@include bp(xl) {
-		position: relative;
-		z-index: 5;
-		float: left;
-		width: 11rem;
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-}
-
 // Entry Content ===============================================================
 
 .entry-content { 
@@ -133,6 +107,34 @@ $entry-content-offset	: 180px;
 	}
 }
 
+// Entry Meta
+
+.entry-meta {
+	margin-bottom: $baseline;
+	@include clearfix;
+
+	@include bp(m) {
+		margin-bottom: $baseline * 2;
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
+	}
+
+	@include bp(l) {
+		border-top: none;
+	}
+
+	@include bp(xl) {
+		position: relative;
+		z-index: 5;
+		float: left;
+		width: 11rem;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
+// Entry Media
+
 .entry-media {
 	position: relative;
 	margin: 0 -0.5rem $baseline * 2;
@@ -168,81 +170,6 @@ $entry-content-offset	: 180px;
 
 	img {
 		width: 100%;
-	}
-}
-
-.story-highlights {
-	list-style: none;
-	margin-left: 0;
-	margin-right: 30px;
-	padding: 0;
-	width: 250px;
-	float: left;
-
-	h4 {
-		margin-bottom: 10px;
-	}
-
-	li {
-		border-top: 1px solid #ccc;
-		font-size: 14px;
-		padding: 10px 0;
-	}
-}
-
-.top-stories {
-	margin: 24px 0;
-
-	@include bp(l) {
-		margin: 0;
-	}
-
-	.section-title {
-		margin-bottom: 20px;
-		@include font-size(24);
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-		@include clearfix;
-	}
-
-	li {
-		border-bottom: 1px solid #ccc;
-		overflow: auto;
-
-		@include bp(m) {
-			border: 0;
-			float: left;
-		}
-
-		@include bp(l) {
-			border: 0;
-		}
-
-		&:last-child {
-			border-bottom: 0;
-		}
-	}
-
-	figure {
-		float: left;
-		margin: 0 10px 10px 0;
-		width: 30%;
-
-		@include bp(m) {
-			width: 100%;
-		}	
-	}
-
-	.story-heading {
-		@include font-size(14);
-		margin-bottom: 0px;
-
-		@include bp(m) {
-			font-size: 16px;
-		}
 	}
 }
 
