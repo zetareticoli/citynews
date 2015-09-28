@@ -182,6 +182,13 @@ strong {
 	}
 }
 
+.cover-hero .story-heading {
+	@include bp(xl) {
+		@include font-size($fontsize1000);
+		line-height: 3rem;
+	}
+}
+
 .focus-section {
 	
 	.hero-story .story-heading {
