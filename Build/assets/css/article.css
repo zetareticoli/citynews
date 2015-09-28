@@ -129,29 +129,3 @@
   .entry-footer {
     margin-bottom: 2rem;
     width: 38rem; } }
-
-.entry-inner-slots {
-  display: none;
-  width: auto; }
-  @media (min-width: 46.25em) {
-    .entry-inner-slots {
-      display: block;
-      float: right;
-      clear: right;
-      padding: 1rem;
-      margin: 0 0 1.5rem 1.5rem; } }
-  @media (min-width: 62.5em) {
-    .entry-inner-slots {
-      display: none; } }
-  @media (min-width: 75em) {
-    .entry-inner-slots {
-      display: none; } }
-
-.entry-aside-slots {
-  display: none;
-  float: right;
-  clear: right;
-  width: 20rem; }
-  @media (min-width: 62.5em) {
-    .entry-aside-slots {
-      display: block; } }

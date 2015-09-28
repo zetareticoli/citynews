@@ -168,37 +168,3 @@ $entry-content-offset	: 180px;
 		width: 38rem;
 	}
 }
-
-// Entry Footer ===============================================================
-
-.entry-inner-slots {
-	display: none;
-	width: auto;
-
-	@include bp(m) {
-		display: block;
-		float: right;
-		clear: right;
-		padding: $baseline * 2;
-		margin: 0 0 $baseline * 3 $baseline * 3 ;
-	}
-
-	@include bp(l) {
-		display: none;
-	}
-
-	@include bp(xl) {
-		display: none;
-	}
-}
-
-.entry-aside-slots {
-	display: none;
-	float: right;
-	clear: right;
-	width: 20rem;
-
-	@include bp(l) {
-		display: block;
-	}
-}
