@@ -39,8 +39,16 @@ $entry-content-offset	: 180px;
 	margin-bottom: $baseline;
 	@include clearfix;
 
+	@include bp(m) {
+		margin-bottom: $baseline * 2;
+	}
+
 	@include bp(l) {
 		padding: $baseline * 2 0;
+	}
+
+	@include bp(xl) {
+		margin-bottom: 0;
 	}
 }
 
@@ -70,31 +78,32 @@ $entry-content-offset	: 180px;
 	position: relative;
 }
 
-.entry-content-main {
+.content-main-column {
 	position: relative;
-	width: 100%;
 
 	@include bp(l) {
-		margin: 0 $gutterwidth 0 0;
-	}
-}
-
-.main-content-column {
-	@include bp(xl) {
-		margin-left: 13rem;
-	}
-}
-
-.main-content-body {
-	width: 100%;
-
-	@include bp(l) {
-		max-width: 38rem;
+		width: 37.5rem;
+		margin-right: 22rem;
 	}
 
 	@include bp(xl) {
-		max-width: 38rem;
+		margin: 0 $gutterwidth 0 13rem;
 	}
+}
+
+.content-secondary-column {
+	display: none;
+	width: 22rem;
+
+	@include bp(l) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.entry-content-body {
 
 	> p {
 		margin-bottom: $baseline * 2;
@@ -110,25 +119,25 @@ $entry-content-offset	: 180px;
 // Entry Meta
 
 .entry-meta {
-	margin-bottom: $baseline;
+	margin-top: $baseline;
 	@include clearfix;
 
 	@include bp(m) {
-		margin-bottom: $baseline * 2;
+		margin-top: $baseline * 2;
 		padding-bottom: $baseline;
 		border-bottom: 1px solid $bordercolor;
 	}
 
 	@include bp(l) {
-		border-top: none;
+
 	}
 
 	@include bp(xl) {
-		position: relative;
-		z-index: 5;
-		float: left;
+		position: absolute;
+		top: 100%;
+		left: 0;
 		width: 11rem;
-		margin-bottom: 0;
+		margin-top: 0;
 		padding-bottom: 0;
 	}
 }
@@ -138,34 +147,11 @@ $entry-content-offset	: 180px;
 .entry-media {
 	position: relative;
 	margin: 0 -0.5rem $baseline * 2;
+	width: 100%;
 
 	@include bp(m) {
-		margin-bottom: $baseline * 3;
-		margin-left: 0;
-		width: 100%;
-	}
-
-	@include bp(l) {
 		float: left;
-		margin: 0 0 20px 0;
-
-		&.media-sm {
-			width: 310px;
-			float: right;
-		}
-
-		&.media-mid {
-			width: $entry-content-width;
-		}
-
-		&.media-lg {
-			width: auto;
-		}
-	}
-
-	@include bp(l) {
-		float: none;
-		width: 38rem;
+		margin: 0 0 $baseline * 2;
 	}
 
 	img {
@@ -191,10 +177,10 @@ $entry-content-offset	: 180px;
 
 	@include bp(m) {
 		display: block;
-		float: right;
-		clear: right;
-		padding: $baseline * 3;
-		margin: 0 0 $baseline * 3 $baseline * 3;
+		float: left;
+		clear: left;
+		padding: $baseline * 2;
+		margin: 0 $baseline * 3 $baseline * 3 0;
 	}
 
 	@include bp(l) {
