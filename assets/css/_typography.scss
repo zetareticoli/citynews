@@ -183,6 +183,11 @@ strong {
 }
 
 .cover-hero .story-heading {
+	@include bp(m) {
+		@include font-size($fontsize900);
+		line-height: 2.5rem;
+	}
+
 	@include bp(xl) {
 		@include font-size($fontsize1000);
 		line-height: 3rem;
