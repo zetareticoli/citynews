@@ -177,10 +177,10 @@ $entry-content-offset	: 180px;
 
 	@include bp(m) {
 		display: block;
-		float: left;
-		clear: left;
+		float: right;
+		clear: right;
 		padding: $baseline * 2;
-		margin: 0 $baseline * 3 $baseline * 3 0;
+		margin: 0 0 $baseline * 3 $baseline * 3 ;
 	}
 
 	@include bp(l) {

@@ -136,10 +136,10 @@
   @media (min-width: 46.25em) {
     .entry-inner-slots {
       display: block;
-      float: left;
-      clear: left;
+      float: right;
+      clear: right;
       padding: 1rem;
-      margin: 0 1.5rem 1.5rem 0; } }
+      margin: 0 0 1.5rem 1.5rem; } }
   @media (min-width: 62.5em) {
     .entry-inner-slots {
       display: none; } }
