@@ -135,6 +135,11 @@ strong {
 
 // Headings =====================================================================
 
+.story-heading,
+.story-subheading {
+	word-wrap: break-word;
+}
+
 // Specific Heading Styles
 
 .list-story .story-heading {
@@ -257,6 +262,9 @@ strong {
 // Headings for subheadings
 
 .story-subheading {
+	display: inline-block;
+	font-family: $headingstypeface;
+	@include font-size($fontsize400);
 
 	&:before {
 		display: inline-block;
@@ -269,12 +277,6 @@ strong {
 		@include bp(m) {
 			width: 8px;
 			height: 8px;
-		}
-
-		@include bp(l) {
-			width: 12px;
-			height: 12px;
-			top: -2px;
 		}
 	}
 	
@@ -291,6 +293,15 @@ strong {
 	@include bp(xl) {
 		@include font-size($fontsize600);
 		line-height: 2rem;
+	}
+
+	&:before {
+
+		@include bp(l) {
+			width: 12px;
+			height: 12px;
+			top: -2px;
+		}
 	}
 }
 

@@ -568,6 +568,10 @@ small {
 strong {
   font-weight: 700; }
 
+.story-heading,
+.story-subheading {
+  word-wrap: break-word; }
+
 @media (max-width: 46.188em) {
   .list-story .story-heading {
     font-size: 18px;
@@ -650,24 +654,24 @@ strong {
       font-size: 3rem;
       line-height: 3.5rem; } }
 
-.story-subheading:before {
+.story-subheading {
   display: inline-block;
-  content: '';
-  position: relative;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-  top: -1px; }
-  @media (min-width: 46.25em) {
-    .story-subheading:before {
-      width: 8px;
-      height: 8px; } }
-  @media (min-width: 62.5em) {
-    .story-subheading:before {
-      width: 12px;
-      height: 12px;
-      top: -2px; } }
-.story-subheading .link {
-  color: #607d8b; }
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem; }
+  .story-subheading:before {
+    display: inline-block;
+    content: '';
+    position: relative;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    top: -1px; }
+    @media (min-width: 46.25em) {
+      .story-subheading:before {
+        width: 8px;
+        height: 8px; } }
+  .story-subheading .link {
+    color: #607d8b; }
 
 .hero-story .story-subheading {
   font-size: 20px;
@@ -679,6 +683,11 @@ strong {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 2rem; } }
+  @media (min-width: 62.5em) {
+    .hero-story .story-subheading:before {
+      width: 12px;
+      height: 12px;
+      top: -2px; } }
 
 .module-title {
   display: block;
