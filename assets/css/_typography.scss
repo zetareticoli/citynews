@@ -462,6 +462,8 @@ strong {
 
 time,
 .timestamp {
+	font-family: $texttypeface;
+	font-weight: 400;
 	@include font-size($fontsize100);
 	color: $black700;
 }

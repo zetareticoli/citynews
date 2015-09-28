@@ -818,6 +818,8 @@ strong {
 
 time,
 .timestamp {
+  font-family: "PublicoText", Georgia, "Times New Roman", serif;
+  font-weight: 400;
   font-size: 12px;
   font-size: 0.75rem;
   color: #757575; }
@@ -2162,18 +2164,20 @@ ol, ul {
     position: absolute;
     top: 0;
     left: 0; }
+.related-stories .story {
+  border-bottom: 0;
+  margin-bottom: .5rem; }
 .related-stories .story-heading {
-  display: inline;
   margin-right: .25rem;
   font-size: 16px;
   font-size: 1rem;
-  line-height: .5rem; }
+  line-height: 1.15rem; }
 .related-stories .story-media {
   width: 4rem;
   float: left;
   margin-right: .5rem; }
 .related-stories .timestamp {
-  display: inline;
+  padding-left: .375rem;
   white-space: nowrap; }
 
 /* ==========================================================================

@@ -68,11 +68,15 @@
 		}
 	}
 
+	.story {
+		border-bottom: 0;
+		margin-bottom: .5rem;
+	}
+
 	.story-heading {
-		display: inline;
 		margin-right: .25rem;
 		@include font-size($fontsize300);
-		line-height: .5rem;
+		line-height: 1.15rem;
 	}
 
 	.story-media {
@@ -82,7 +86,7 @@
 	}
 
 	.timestamp {
-		display: inline;
+		padding-left: .375rem;
 		white-space: nowrap;
 	}
 }
