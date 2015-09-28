@@ -5,7 +5,7 @@
 .author-role,
 .author-photo,
 .author-twitter,
-.related-module.inner-module {
+.related-stories.inner {
 	display: none;
 }
 
@@ -26,11 +26,11 @@
 		display: inline-block;
 	}
 
-	.related-module.inner-module {
+	.related-stories.inner {
 		display: block;
 	}
 
-	.related-module.bottom-module {
+	.related-stories.bottom {
 		display: none;
 	}
 }

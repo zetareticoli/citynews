@@ -5,42 +5,42 @@
 	border-bottom: 1px solid $bordercolor;
 	padding-bottom: $baseline;
 	@include clearfix;
+}
 
-	.story-media {
-		width: 30%;
-		max-width: 200px;
+.story-media {
+	width: 30%;
+	max-width: 200px;
+	float: left;
+	margin-right: 12px;
+
+	@include bp(m) {
+		width: auto;
+		max-width: none;
+		float: none;
+		margin: 0 0 $baseline 0;
+	}
+
+	&.right {
+		float: right;
+		margin-left: $baseline;
+	}
+	
+	&.left {
 		float: left;
-		margin-right: 12px;
-
-		@include bp(m) {
-			width: auto;
-			max-width: none;
-			float: none;
-			margin: 0 0 $baseline 0;
-		}
-
-		&.right {
-			float: right;
-			margin-left: $baseline;
-		}
-		
-		&.left {
-			float: left;
-			margin-right: $baseline;
-		}
+		margin-right: $baseline;
 	}
+}
 
-	.story-heading {
-		margin-bottom: $baseline;
-	}
+.story-heading {
+	margin-bottom: $baseline;
+}
 
-	.story-subheading {
-		margin-bottom: $baseline;
-	}
+.story-subheading {
+	margin-bottom: $baseline;
+}
 
-	.story-summary {
-		margin-bottom: $gutterwidth;
-	}
+.story-summary {
+	margin-bottom: $gutterwidth;
 }
 
 @include max-bp(s) {

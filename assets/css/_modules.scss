@@ -22,35 +22,68 @@
 	}
 }
 
-.inner-module {
-	width: 18rem;
-	float: left;
-	clear: left;
-	margin: 0 2rem 2rem 0;
-
-	@include bp(l) {
-		float: right;
-		clear: right;
-		margin: 4rem -22.5rem $baseline * 2 0;
-		width: 20rem;
-	}
-
-	@include bp(xl) {
-		float: left;
-		clear: left;
-		margin: 0 $baseline * 3 0 -13rem;
-	}
-}
-
 /* ==========================================================================
   Related
   ========================================================================== */
 
-.related-module {
+.related-stories {
 
-	.module-title {
+	&.inner {
+		width: 18rem;
+		float: left;
+		clear: left;
+		margin: 0 2rem 2rem 0;
+
+		@include bp(l) {
+			float: right;
+			clear: right;
+			margin: 4rem -23rem $baseline * 2 0;
+			width: 20rem;
+		}
+
+		@include bp(xl) {
+			float: left;
+			clear: left;
+			margin: 0 $baseline * 3 0 -13rem;
+		}
+	}
+
+	h5 {
+		margin-bottom: .25rem;
+		font-family: $brandtypeface;
+		@include font-size($fontsize200);
+		line-height: 3rem;
 		color: $black700;
-		font-style: italic;
+		text-transform: uppercase;
+		position: relative;
+
+		&:before {
+			display: block;
+			content: '';
+			height: .25rem;
+			width: 2.5rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.story-heading {
+		display: inline;
+		margin-right: .25rem;
+		@include font-size($fontsize300);
+		line-height: .5rem;
+	}
+
+	.story-media {
+		width: 4rem;
+		float: left;
+		margin-right: .5rem;
+	}
+
+	.timestamp {
+		display: inline;
+		white-space: nowrap;
 	}
 }
 

@@ -2126,29 +2126,55 @@ ol, ul {
     -ms-flex: 4 1 auto;
     flex: 4 1 auto; }
 
-.inner-module {
+/* ==========================================================================
+  Related
+  ========================================================================== */
+.related-stories.inner {
   width: 18rem;
   float: left;
   clear: left;
   margin: 0 2rem 2rem 0; }
   @media (min-width: 62.5em) {
-    .inner-module {
+    .related-stories.inner {
       float: right;
       clear: right;
-      margin: 4rem -22.5rem 1rem 0;
+      margin: 4rem -23rem 1rem 0;
       width: 20rem; } }
   @media (min-width: 75em) {
-    .inner-module {
+    .related-stories.inner {
       float: left;
       clear: left;
       margin: 0 1.5rem 0 -13rem; } }
-
-/* ==========================================================================
-  Related
-  ========================================================================== */
-.related-module .module-title {
+.related-stories h5 {
+  margin-bottom: .25rem;
+  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 3rem;
   color: #757575;
-  font-style: italic; }
+  text-transform: uppercase;
+  position: relative; }
+  .related-stories h5:before {
+    display: block;
+    content: '';
+    height: .25rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+.related-stories .story-heading {
+  display: inline;
+  margin-right: .25rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: .5rem; }
+.related-stories .story-media {
+  width: 4rem;
+  float: left;
+  margin-right: .5rem; }
+.related-stories .timestamp {
+  display: inline;
+  white-space: nowrap; }
 
 /* ==========================================================================
   Slots
@@ -2283,29 +2309,33 @@ ol, ul {
     display: table; }
   .story:after {
     clear: both; }
-  .story .story-media {
-    width: 30%;
-    max-width: 200px;
+
+.story-media {
+  width: 30%;
+  max-width: 200px;
+  float: left;
+  margin-right: 12px; }
+  @media (min-width: 46.25em) {
+    .story-media {
+      width: auto;
+      max-width: none;
+      float: none;
+      margin: 0 0 0.5rem 0; } }
+  .story-media.right {
+    float: right;
+    margin-left: 0.5rem; }
+  .story-media.left {
     float: left;
-    margin-right: 12px; }
-    @media (min-width: 46.25em) {
-      .story .story-media {
-        width: auto;
-        max-width: none;
-        float: none;
-        margin: 0 0 0.5rem 0; } }
-    .story .story-media.right {
-      float: right;
-      margin-left: 0.5rem; }
-    .story .story-media.left {
-      float: left;
-      margin-right: 0.5rem; }
-  .story .story-heading {
-    margin-bottom: 0.5rem; }
-  .story .story-subheading {
-    margin-bottom: 0.5rem; }
-  .story .story-summary {
-    margin-bottom: 1rem; }
+    margin-right: 0.5rem; }
+
+.story-heading {
+  margin-bottom: 0.5rem; }
+
+.story-subheading {
+  margin-bottom: 0.5rem; }
+
+.story-summary {
+  margin-bottom: 1rem; }
 
 @media (max-width: 46.188em) {
   .story-summary,
@@ -3074,7 +3104,7 @@ ol, ul {
 .author-role,
 .author-photo,
 .author-twitter,
-.related-module.inner-module {
+.related-stories.inner {
   display: none; }
 
 .bottom-module {
@@ -3088,10 +3118,10 @@ ol, ul {
   .author-photo {
     display: inline-block; }
 
-  .related-module.inner-module {
+  .related-stories.inner {
     display: block; }
 
-  .related-module.bottom-module {
+  .related-stories.bottom {
     display: none; } }
 @media (min-width: 62.5em) {
   .entry-secondary-slot {
