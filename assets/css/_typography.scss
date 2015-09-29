@@ -372,10 +372,11 @@ strong {
 	padding-bottom: $baseline;
 	margin-bottom: $baseline;
 	border-bottom: 1px solid $black400;
-	font-family: $titleseriftypeface;
+	font-family: $brandtypeface;
 	font-weight: normal;
-	font-style: italic;
-	color: $black900;
+	@include font-size($fontsize600);
+	text-transform: uppercase;
+	color: $black800;
 
 	@include bp(m) {
 		border-bottom: 0;
@@ -386,30 +387,9 @@ strong {
 	&:before {
 		content: '';
 		display: block;
-		width: 4rem;
-		height: .5rem;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: $black800;
-		z-index: 0;
-	}
-	
-	.kicker {
-		padding-top: $baseline;
-		display: inline-block;
-		font-family: $titleseriftypeface;
-		@include font-size($fontsize400);
-		font-weight: normal;
-		color: $black900;
-
-		@include bp(m) {
-			position: relative;
-			background-color: white;
-			z-index: 1;
-			padding-right: $baseline * 2;
-			@include font-size($fontsize600);
-		}
+		width: 3rem;
+		height: .35rem;
+		background-color: $bluegrey200;
 	}
 }
 
@@ -593,9 +573,13 @@ time,
 		&:before {
 			content: '';
 			display: block;
-			width: 2.5rem;
+			width: 2rem;
 			height: .35rem;
 			margin-bottom: $baseline / 2; 
+
+			@include bp(m) {
+				width: 3rem;
+			}
 		}
 	}
 
@@ -608,11 +592,6 @@ time,
 
 		@include bp(l) {
 			@include font-size($fontsize700);
-		}
-
-		&:before {
-			width: 4rem;
-			height: .5rem;
 		}
 	}
 
