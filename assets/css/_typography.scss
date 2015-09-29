@@ -374,7 +374,7 @@ strong {
 	border-bottom: 1px solid $black400;
 	font-family: $brandtypeface;
 	font-weight: normal;
-	@include font-size($fontsize600);
+	@include font-size($fontsize400);
 	text-transform: uppercase;
 	color: $black800;
 
@@ -382,6 +382,11 @@ strong {
 		border-bottom: 0;
 		padding-bottom: 0;
 		margin-bottom: $baseline * 2;
+		@include font-size($fontsize500);
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize600);
 	}
 
 	&:before {

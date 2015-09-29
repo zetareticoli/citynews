@@ -741,15 +741,21 @@ strong {
   border-bottom: 1px solid #e0e0e0;
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: uppercase;
   color: #616161; }
   @media (min-width: 46.25em) {
     .section-title {
       border-bottom: 0;
       padding-bottom: 0;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media (min-width: 75em) {
+    .section-title {
+      font-size: 24px;
+      font-size: 1.5rem; } }
   .section-title:before {
     content: '';
     display: block;
