@@ -744,7 +744,7 @@ strong {
   font-size: 18px;
   font-size: 1.125rem;
   text-transform: uppercase;
-  color: #616161; }
+  color: #757575; }
   @media (min-width: 46.25em) {
     .section-title {
       border-bottom: 0;
@@ -840,8 +840,10 @@ time,
   margin: 0 4px 4px 0;
   display: inline-block;
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #9e9e9e;
-  text-transform: lowercase; }
+  text-transform: uppercase; }
 
 .card-label {
   display: inline-block;

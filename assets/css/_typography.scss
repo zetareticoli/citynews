@@ -376,7 +376,7 @@ strong {
 	font-weight: normal;
 	@include font-size($fontsize400);
 	text-transform: uppercase;
-	color: $black800;
+	color: $black700;
 
 	@include bp(m) {
 		border-bottom: 0;
@@ -496,8 +496,9 @@ time,
 	margin: 0 4px 4px 0;
 	display: inline-block;
 	font-family: $brandtypeface;
+	@include font-size($fontsize200);
 	color: $black600;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 	.card-label {
