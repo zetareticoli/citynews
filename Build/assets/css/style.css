@@ -1600,9 +1600,7 @@ ol, ul {
     .slice-item {
       padding-bottom: 1.5rem; } }
 
-.focus-section .slice-item {
-  padding-bottom: 0.5rem; }
-
+.focus-section .slice-item,
 .module .slice-item {
   padding-bottom: 0.5rem; }
 

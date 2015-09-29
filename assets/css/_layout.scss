@@ -190,6 +190,8 @@ ol, ul {
 	list-style: none;
 }
 
+// Slice Item
+
 .slice-item {
 	padding-bottom: $baseline;
 
@@ -202,13 +204,11 @@ ol, ul {
 	}
 }
 
-.focus-section .slice-item {
-	padding-bottom: $baseline;
-}
-
-.module .slice-item {
-	padding-bottom: $baseline;
-}
+	.focus-section .slice-item,
+	.module .slice-item {
+		padding-bottom: $baseline;
+	}
+	
 
 /* ==========================================================================
   Site Header
