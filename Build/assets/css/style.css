@@ -1441,7 +1441,10 @@ ol, ul {
   padding: 1rem 0; }
 
 .section {
-  padding: 0 0 1rem; }
+  margin-bottom: 1rem; }
+  @media (min-width: 62.5em) {
+    .section {
+      margin-bottom: 1.5rem; } }
 
 /* ==========================================================================
   Flexbox
@@ -1745,8 +1748,8 @@ ol, ul {
   Sections
   ========================================================================== */
 .headlines-section {
-  padding-right: 0 0.5rem;
-  padding-left: 0 0.5rem; }
+  margin-bottom: 0;
+  padding: 0 0.5rem; }
   @media (min-width: 62.5em) {
     .headlines-section .headlines-list {
       display: -webkit-box;
@@ -1818,15 +1821,6 @@ ol, ul {
 @media (min-width: 62.5em) {
   .newslist-aside {
     width: 33.33%; } }
-
-.focus-section {
-  padding: 0.5rem 0; }
-  @media (min-width: 46.25em) {
-    .focus-section {
-      padding: 1rem 0; } }
-  @media (min-width: 62.5em) {
-    .focus-section {
-      padding: 1.5rem 0; } }
 
 /* ==========================================================================
   Global Styles

@@ -82,7 +82,11 @@ ol, ul {
 }
 
 .section {
-	padding: 0 0 $gutterwidth;
+	margin-bottom: $baseline * 2;
+
+	@include bp(l) {
+		margin-bottom: $baseline * 3;
+	}
 }
 
 /* ==========================================================================
@@ -208,7 +212,6 @@ ol, ul {
 	.module .slice-item {
 		padding-bottom: $baseline;
 	}
-	
 
 /* ==========================================================================
   Site Header
@@ -423,8 +426,8 @@ ol, ul {
 // Headlines ===============================================================
 
 .headlines-section {
-	padding-right: 0 $gutterwidth / 2;
-	padding-left: 0 $gutterwidth / 2;
+	margin-bottom: 0;
+	padding: 0 $baseline;
 
 	.headlines-list {
 		@include bp(l) {
@@ -510,15 +513,3 @@ ol, ul {
 }
 
 // Focus ===============================================================
-
-.focus-section {
-	padding: $baseline 0;
-
-	@include bp(m) {
-		padding: $baseline * 2 0;
-	}
-
-	@include bp(l) {
-		padding: $baseline * 3 0;
-	}
-}
