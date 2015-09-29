@@ -634,11 +634,20 @@ strong {
     line-height: 1.5rem; } }
 
 @media (min-width: 46.25em) {
-  .focus-section .list-story .story-heading,
-  .focus-section .featured-story .story-heading {
+  .focus-section .list-story .story-heading {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.35rem; } }
+
+@media (min-width: 46.25em) {
+  .focus-section .featured-story .story-heading {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5rem; } }
+@media (min-width: 75em) {
+  .focus-section .featured-story .story-heading {
+    font-size: 20px;
+    font-size: 1.25rem; } }
 
 .inset-story .story-heading {
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
@@ -742,17 +751,15 @@ strong {
   .section-title:before {
     content: '';
     display: block;
-    width: 100%;
-    height: 4px;
+    width: 4rem;
+    height: .5rem;
     position: absolute;
     top: 0;
+    left: 0;
     background-color: #616161;
     z-index: 0; }
-    @media (min-width: 46.25em) {
-      .section-title:before {
-        top: 50%; } }
   .section-title .kicker {
-    padding-top: 12px;
+    padding-top: 0.5rem;
     display: inline-block;
     font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
     font-size: 18px;
@@ -762,7 +769,6 @@ strong {
     @media (min-width: 46.25em) {
       .section-title .kicker {
         position: relative;
-        padding-top: 0;
         background-color: white;
         z-index: 1;
         padding-right: 1rem;
