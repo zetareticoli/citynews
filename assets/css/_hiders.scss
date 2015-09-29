@@ -5,7 +5,8 @@
 .author-role,
 .author-photo,
 .author-twitter,
-.related-stories.inner {
+.related-stories.inner,
+.special-story .story-summary {
 	display: none;
 }
 
@@ -14,7 +15,9 @@
 }
 
 @include max-bp(s) {
-	
+	.story-summary,
+	.story-subheading,
+	.featured-story .story-footer,
 	.page-title {
 		display: none;
 	}
@@ -36,6 +39,10 @@
 }
 
 @include bp(l) {
+
+	.special-story .story-summary {
+		display: block;
+	}
 
 	.entry-secondary-slot {
 		display: none;

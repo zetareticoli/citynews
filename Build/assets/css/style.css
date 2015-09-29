@@ -3154,13 +3154,17 @@ ol, ul {
 .author-role,
 .author-photo,
 .author-twitter,
-.related-stories.inner {
+.related-stories.inner,
+.special-story .story-summary {
   display: none; }
 
 .bottom-module {
   display: block; }
 
 @media (max-width: 46.188em) {
+  .story-summary,
+  .story-subheading,
+  .featured-story .story-footer,
   .page-title {
     display: none; } }
 @media (min-width: 46.25em) {
@@ -3174,5 +3178,8 @@ ol, ul {
   .related-stories.bottom {
     display: none; } }
 @media (min-width: 62.5em) {
+  .special-story .story-summary {
+    display: block; }
+
   .entry-secondary-slot {
     display: none; } }
