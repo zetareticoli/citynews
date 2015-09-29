@@ -109,11 +109,6 @@
       margin-top: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #e0e0e0; } }
-  @media (min-width: 62.5em) {
-    .entry-meta {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: 0; } }
   @media (min-width: 75em) {
     .entry-meta {
       position: absolute;
@@ -121,7 +116,9 @@
       left: 0;
       width: 11rem;
       margin-top: 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      padding-top: 0;
+      border-top: 0; } }
 
 .entry-media {
   position: relative;

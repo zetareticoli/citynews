@@ -236,14 +236,11 @@
 		border-bottom: 0;
 	}
 
-	@include bp(l) {
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bordercolor;
-	}
-
 	@include bp(xl) {
 		width: 100%;
 		float: none;
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
 	}
 
 	.author {

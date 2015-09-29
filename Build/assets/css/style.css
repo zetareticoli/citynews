@@ -2701,14 +2701,12 @@ ol, ul {
       float: left;
       padding-bottom: 0;
       border-bottom: 0; } }
-  @media (min-width: 62.5em) {
-    .meta-byline {
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #e0e0e0; } }
   @media (min-width: 75em) {
     .meta-byline {
       width: 100%;
-      float: none; } }
+      float: none;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e0e0e0; } }
   @media (min-width: 75em) {
     .meta-byline .author {
       margin-bottom: 0.5rem; } }

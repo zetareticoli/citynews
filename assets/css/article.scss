@@ -133,9 +133,6 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(l) {
-		margin-top: 0;
-		padding-top: 0;
-		border-top: 0;
 	}
 
 	@include bp(xl) {
@@ -145,6 +142,8 @@ $entry-content-offset	: 180px;
 		width: 11rem;
 		margin-top: 0;
 		padding-bottom: 0;
+		padding-top: 0;
+		border-top: 0;
 	}
 }
 
