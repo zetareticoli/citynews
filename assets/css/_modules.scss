@@ -110,8 +110,6 @@
 
 .meta-byline,
 .meta-social {
-	border-top: 1px solid $bordercolor;
-	padding-top: $baseline;
 	margin-bottom: $baseline;
 	@include clearfix;
 }
@@ -228,10 +226,19 @@
 // Meta Byline ===============================================================
 
 .meta-byline {
+	padding-bottom: $baseline;
+	border-bottom: 1px solid $bordercolor;
 
 	@include bp(m) {
 		width: 50%;
 		float: left;
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	@include bp(l) {
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
 	}
 
 	@include bp(xl) {
@@ -304,11 +311,16 @@
   ========================================================================== */
 
 .tags-list {
-	margin: $baseline * 3 0;
-	padding-top: $baseline;
-	border-top: 1px solid $bordercolor;
-}
+	margin: $baseline * 2 0;
 
+	@include bp(m) {
+		margin: $baseline * 3 0;
+	}
+
+	@include bp(xl) {
+		margin: $baseline * 4 0;
+	}
+}
 
 
 /* To Fix */

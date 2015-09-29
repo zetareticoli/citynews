@@ -13,14 +13,16 @@ $entry-content-offset	: 180px;
   ========================================================================== */
 
 .entry {
-	padding: 0 $baseline;
+	padding: 0 $baseline $baseline * 2;
+	border-bottom: .15rem solid $bordercolor;
 	@include clearfix;
 
 	@include bp(m) {
-		padding: 0 $baseline * 3;
+		padding: 0 $baseline * 3 $baseline * 2;
 	}
 
 	@include bp(l) {
+		margin-bottom: $baseline * 2;
 		padding: 0 $baseline * 2;
 	}
 }
@@ -120,6 +122,8 @@ $entry-content-offset	: 180px;
 
 .entry-meta {
 	margin-top: $baseline;
+	padding-top: $baseline;
+	border-top: 1px solid $bordercolor;
 	@include clearfix;
 
 	@include bp(m) {
@@ -129,7 +133,9 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(l) {
-
+		margin-top: 0;
+		padding-top: 0;
+		border-top: 0;
 	}
 
 	@include bp(xl) {

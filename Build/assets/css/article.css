@@ -2,7 +2,8 @@
   Article
   ========================================================================== */
 .entry {
-  padding: 0 0.5rem;
+  padding: 0 0.5rem 1rem;
+  border-bottom: 0.15rem solid #e0e0e0;
   *zoom: 1; }
   .entry:before, .entry:after {
     content: " ";
@@ -11,9 +12,10 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry {
-      padding: 0 1.5rem; } }
+      padding: 0 1.5rem 1rem; } }
   @media (min-width: 62.5em) {
     .entry {
+      margin-bottom: 1rem;
       padding: 0 1rem; } }
 
 @media (min-width: 75em) {
@@ -94,6 +96,8 @@
 
 .entry-meta {
   margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e0e0e0;
   *zoom: 1; }
   .entry-meta:before, .entry-meta:after {
     content: " ";
@@ -105,6 +109,11 @@
       margin-top: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #e0e0e0; } }
+  @media (min-width: 62.5em) {
+    .entry-meta {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0; } }
   @media (min-width: 75em) {
     .entry-meta {
       position: absolute;
