@@ -43,14 +43,6 @@
 	margin-bottom: $gutterwidth;
 }
 
-@include max-bp(s) {
-	.story-summary,
-	.story-subheading,
-	.featured-story .story-footer {
-		display: none;
-	}
-}
-
 // Themes ===============================================================
 
 .inverted {
@@ -331,57 +323,25 @@
 	}
 }
 
-// special
+// full page
 
-.special-story {
-	overflow: hidden;
-	padding-bottom: 0;
-	background-color: $bluegrey100;
+.fullpage-story {
+	padding: $baseline;
 
-	.story-header,
-	.story-media {
-		width: 100%;
-		float: none;
+	@include bp(m) {
+		padding: $baseline * 2;
+	}
 
-		@include bp(m) {
+	@include bp(l) {
+		@include clearfix;
+		padding: $baseline * 3;
+
+		.story-media {
 			width: 50%;
-		}
-	}
-
-	.story-media {
-		max-width: none;
-
-		img {
-			width: 100%;
-		}
-
-		@include bp(m) {
+			margin-left: $baseline * 3;
 			float: right;
-			margin-bottom: 0;
 		}
 	}
-
-	.story-header {
-		padding: $baseline;
-
-		@include bp(m) {
-			padding: 0 $baseline * 2;
-			height: 100%;
-		}
-
-		@include bp(l) {
-			padding: 0 $baseline * 3;
-		}
-	}
-
-	.story-summary {
-		display: none;
-
-		@include bp(l) {
-			display: block;
-		}
-	}
-
 }
 
 // Sublinks ===============================================================
