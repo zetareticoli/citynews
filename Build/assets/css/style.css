@@ -596,11 +596,6 @@ strong {
     line-height: 2.5rem;
     font-weight: 900; } }
 
-@media (min-width: 46.25em) {
-  .cover-hero .story-heading {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 2.5rem; } }
 @media (min-width: 75em) {
   .cover-hero .story-heading {
     font-size: 48px;
@@ -612,6 +607,26 @@ strong {
     font-size: 32px;
     font-size: 2rem;
     line-height: 2.5rem; } }
+.focus-section .hero-story.fullpage-story .story-heading {
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5rem; }
+  @media (min-width: 46.25em) {
+    .focus-section .hero-story.fullpage-story .story-heading {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 62.5em) {
+    .focus-section .hero-story.fullpage-story .story-heading {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 75em) {
+    .focus-section .hero-story.fullpage-story .story-heading {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
 @media (min-width: 62.5em) {
   .focus-section .featured-story .story-heading {
     font-size: 18px;
@@ -643,27 +658,6 @@ strong {
       line-height: 2.5rem; } }
 .inset-story .link {
   color: white; }
-
-.special-story .story-heading {
-  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.5rem; }
-  @media (min-width: 46.25em) {
-    .special-story .story-heading {
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 2.5rem; } }
-  @media (min-width: 62.5em) {
-    .special-story .story-heading {
-      font-size: 36px;
-      font-size: 2.25rem;
-      line-height: 2.5rem; } }
-  @media (min-width: 75em) {
-    .special-story .story-heading {
-      font-size: 48px;
-      font-size: 3rem;
-      line-height: 3.5rem; } }
 
 .story-subheading {
   display: inline-block;
@@ -805,13 +799,13 @@ strong {
       line-height: 2rem; } }
 
 .hero-story .story-summary,
-.special-story .story-summary {
+.fullpage-story .story-summary {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem; }
   @media (min-width: 75em) {
     .hero-story .story-summary,
-    .special-story .story-summary {
+    .fullpage-story .story-summary {
       font-size: 18px;
       font-size: 1.125rem;
       line-height: 1.5rem; } }
@@ -906,15 +900,13 @@ time,
   font-style: italic;
   font-weight: 700; }
 
-.highlight-kicker,
-.badge-kicker {
+.highlight-kicker {
   display: inline-block;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem; }
   @media (min-width: 62.5em) {
-    .highlight-kicker,
-    .badge-kicker {
+    .highlight-kicker {
       font-size: 20px;
       font-size: 1.25rem; } }
 
@@ -928,23 +920,19 @@ time,
   height: .35rem;
   margin-bottom: 0.25rem; }
 
-.badge-kicker {
-  padding: 4px 4px;
-  margin-bottom: 0.5rem;
-  line-height: 1rem;
-  color: #424242; }
+.fullpage-story .highlight-kicker {
+  font-weight: 900; }
   @media (min-width: 46.25em) {
-    .badge-kicker {
-      padding: 2px 0.5rem;
-      margin-bottom: 1rem;
-      line-height: 1.5rem; } }
+    .fullpage-story .highlight-kicker {
+      font-size: 24px;
+      font-size: 1.5rem; } }
   @media (min-width: 62.5em) {
-    .badge-kicker {
-      padding: 2px 1rem;
-      line-height: 2rem; } }
-
-.inverted .badge-kicker {
-  color: #263238; }
+    .fullpage-story .highlight-kicker {
+      font-size: 28px;
+      font-size: 1.75rem; } }
+  .fullpage-story .highlight-kicker:before {
+    width: 4rem;
+    height: .5rem; }
 
 .location-kicker {
   display: inline-block;

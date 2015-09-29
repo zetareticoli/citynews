@@ -133,6 +133,7 @@ strong {
 	font-weight: 700;
 }
 
+
 // Headings =====================================================================
 
 .story-heading,
@@ -140,7 +141,7 @@ strong {
 	word-wrap: break-word;
 }
 
-// Specific Heading Styles
+// list story headings
 
 .list-story .story-heading {
 	@include max-bp(s) {
@@ -148,6 +149,8 @@ strong {
 		line-height: 1.35rem;
 	}
 }
+
+// featured story headings
 
 .featured-story {
 
@@ -174,6 +177,8 @@ strong {
 	}
 }
 
+// hero story headings
+
 .hero-story .story-heading {
 	@include bp(l) {
 		@include font-size($fontsize900);
@@ -182,17 +187,17 @@ strong {
 	}
 }
 
+// cover hero story headings
+
 .cover-hero .story-heading {
-	@include bp(m) {
-		@include font-size($fontsize900);
-		line-height: 2.5rem;
-	}
 
 	@include bp(xl) {
 		@include font-size($fontsize1000);
 		line-height: 3rem;
 	}
 }
+
+// focus section story headings
 
 .focus-section {
 	
@@ -201,6 +206,27 @@ strong {
 		@include bp(l) {
 			@include font-size($fontsize800);
 			line-height: 2.5rem;
+		}
+	}
+
+	.hero-story.fullpage-story .story-heading {
+		font-family: $titleseriftypeface;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
 		}
 	}
 
@@ -243,31 +269,6 @@ strong {
 
 	.link {
 		color: white;
-	}
-}
-
-// Headings for special story 
-
-.special-story {
-	.story-heading {
-		font-family: $titleseriftypeface;
-		@include font-size($fontsize500);
-		line-height: 1.5rem;
-
-		@include bp(m) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
-
-		@include bp(l) {
-			@include font-size($fontsize900);
-			line-height: 2.5rem;
-		}
-
-		@include bp(xl) {
-			@include font-size($fontsize1000);
-			line-height: 3.5rem;
-		}
 	}
 }
 
@@ -417,6 +418,7 @@ strong {
 	}
 }
 
+
 // Text Elements ===============================================================
 
 // Content text 
@@ -448,7 +450,7 @@ strong {
 }
 
 .hero-story .story-summary,
-.special-story .story-summary {
+.fullpage-story .story-summary {
 	@include font-size($fontsize300);
 	line-height: 1.5rem;
 
@@ -481,7 +483,7 @@ strong {
 	}
 }
 
-// Label, Kicker & Byline
+// Timestamp
 
 time,
 .timestamp {
@@ -496,6 +498,8 @@ time,
 	line-height: .875rem;
 }
 
+// Label
+
 .label {
 	margin: 0 4px 4px 0;
 	display: inline-block;
@@ -504,54 +508,56 @@ time,
 	text-transform: lowercase;
 }
 
-.card-label {
-	display: inline-block;
-	position: relative;
-	padding-top: $gutterwidth / 2;
-	margin-bottom: $baseline;
-	color: $accentpink;
-	@include font-size(14);
-	line-height: 1em;
-	font-family: $brandtypeface;
-	text-transform: lowercase;
+	.card-label {
+		display: inline-block;
+		position: relative;
+		padding-top: $gutterwidth / 2;
+		margin-bottom: $baseline;
+		color: $accentpink;
+		@include font-size(14);
+		line-height: 1em;
+		font-family: $brandtypeface;
+		text-transform: lowercase;
 
-	@include bp(m) {
+		@include bp(m) {
 
-		@include font-size(16);
-	
-		&:before {
-			position: absolute;
-			left: -8px;
-			top: 0;
-			content: '';
-			display: block;
-			width: 115%;
-			height: 6px;
-			background-color: $accentpink;
+			@include font-size(16);
+		
+			&:before {
+				position: absolute;
+				left: -8px;
+				top: 0;
+				content: '';
+				display: block;
+				width: 115%;
+				height: 6px;
+				background-color: $accentpink;
+			}
 		}
 	}
-}
 
-.entry-label {
-	@include font-size($fontsize200);
-	color: $black700;
-
-	@include bp(l) {
-		@include font-size($fontsize300);
-	}
-
-	@include bp(xl) {
-		display: block;
-	}
-
-	&.category-label {
-		font-family: $titleseriftypeface;
+	.entry-label {
+		@include font-size($fontsize200);
+		color: $black700;
 
 		@include bp(l) {
-			@include font-size($fontsize500);
+			@include font-size($fontsize300);
+		}
+
+		@include bp(xl) {
+			display: block;
+		}
+
+		&.category-label {
+			font-family: $titleseriftypeface;
+
+			@include bp(l) {
+				@include font-size($fontsize500);
+			}
 		}
 	}
-}
+
+// Kicker
 
 .kicker {
 	color: $bluegrey500;
@@ -561,60 +567,55 @@ time,
 	font-weight: 700;
 }
 
-.highlight-kicker,
-.badge-kicker {
-	display: inline-block;
-	font-family: $headingstypeface;
-	@include font-size($fontsize300);
+	.highlight-kicker {
+		display: inline-block;
+		font-family: $headingstypeface;
+		@include font-size($fontsize300);
 
-	@include bp(l) {
-		@include font-size($fontsize500);
-	}
-}
-
-.highlight-kicker {
-
-	@include bp(m) {
-		margin-bottom: $baseline;
+		@include bp(l) {
+			@include font-size($fontsize500);
+		}
 	}
 
-	&:before {
-		content: '';
-		display: block;
-		width: 2.5rem;
-		height: .35rem;
-		margin-bottom: $baseline / 2; 
-	}
-}
+	.highlight-kicker {
 
-.badge-kicker {
-	padding: 4px 4px;
-	margin-bottom: $baseline;
-	line-height: 1rem;
-	color: $black900;
+		@include bp(m) {
+			margin-bottom: $baseline;
+		}
 
-	@include bp(m) {
-		padding: 2px $baseline;
-		margin-bottom: $baseline * 2;
-		line-height: 1.5rem;
+		&:before {
+			content: '';
+			display: block;
+			width: 2.5rem;
+			height: .35rem;
+			margin-bottom: $baseline / 2; 
+		}
 	}
 
-	@include bp(l) {
-		padding: 2px $baseline * 2;
-		line-height: 2rem;
+	.fullpage-story .highlight-kicker {
+		font-weight: 900;
+
+		@include bp(m) {
+			@include font-size($fontsize600);
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize700);
+		}
+
+		&:before {
+			width: 4rem;
+			height: .5rem;
+		}
 	}
-}
 
-.inverted .badge-kicker {
-	color: $bluegrey1000;
-}
+	.location-kicker {
+		display: inline-block;
+		color: $black600;
+		font-family: $texttypeface;
+		font-weight: 700;
+	}
 
-.location-kicker {
-	display: inline-block;
-	color: $black600;
-	font-family: $texttypeface;
-	font-weight: 700;
-}
 
 // Links ===============================================================
 
@@ -623,53 +624,53 @@ time,
 	@include transition(color .3s ease);
 }
 
-.story-heading .link {
-	color: $black900;
-
-	&:hover {
-		color: $black1000;
-	}
-}
-
-.sublink .link {
-	color: $black800;
-
-	&:hover {
+	.story-heading .link {
 		color: $black900;
-	}	
-}
 
-.inverted .link {
-	color: white;
-
-	&:hover {
-		color: $black500;
+		&:hover {
+			color: $black1000;
+		}
 	}
-}
 
-.theme-yellow .inverted .link:hover {
-	color: $b-c-yellow;
-}
+	.sublink .link {
+		color: $black800;
 
-.theme-blue .inverted .link:hover {
-	color: $b-c-blue;
-}
+		&:hover {
+			color: $black900;
+		}	
+	}
 
-.theme-red .inverted .link:hover {
-	color: $b-c-red;
-}
+	.inverted .link {
+		color: white;
 
-.theme-green .inverted .link:hover {
-	color: $b-c-green;
-}
+		&:hover {
+			color: $black500;
+		}
+	}
 
-.theme-pink .inverted .link:hover {
-	color: $b-c-pink;
-}
+	.theme-yellow .inverted .link:hover {
+		color: $b-c-yellow;
+	}
 
-.theme-purple .inverted .link:hover {
-	color: $b-c-purple;
-}
+	.theme-blue .inverted .link:hover {
+		color: $b-c-blue;
+	}
+
+	.theme-red .inverted .link:hover {
+		color: $b-c-red;
+	}
+
+	.theme-green .inverted .link:hover {
+		color: $b-c-green;
+	}
+
+	.theme-pink .inverted .link:hover {
+		color: $b-c-pink;
+	}
+
+	.theme-purple .inverted .link:hover {
+		color: $b-c-purple;
+	}
 
 // Timestamp & Meteo ===============================================================
 
