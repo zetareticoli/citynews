@@ -492,37 +492,15 @@ time,
 	margin: 0 4px 4px 0;
 	display: inline-block;
 	font-family: $brandtypeface;
-	@include font-size($fontsize100);
+	@include font-size($fontsize200);
 	color: $black600;
 	text-transform: uppercase;
 }
 
 	.card-label {
-		display: inline-block;
 		position: relative;
-		padding-top: $gutterwidth / 2;
-		margin-bottom: $baseline;
+		margin-bottom: $baseline / 2;
 		color: $accentpink;
-		@include font-size(14);
-		line-height: 1em;
-		font-family: $brandtypeface;
-		text-transform: lowercase;
-
-		@include bp(m) {
-
-			@include font-size(16);
-		
-			&:before {
-				position: absolute;
-				left: -8px;
-				top: 0;
-				content: '';
-				display: block;
-				width: 115%;
-				height: 6px;
-				background-color: $accentpink;
-			}
-		}
 	}
 
 	.entry-label {

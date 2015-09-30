@@ -1,17 +1,18 @@
-@include max-bp(s) {
-	.cards-list-item {
-		margin-bottom: $baseline * 2;
+.cards-list-item {
+	margin-bottom: $baseline * 2;
+
+	@include bp(m) {
+		width: 33.33%;
 	}
 
-	.card-footer {
-		display: none;
+	@include bp(xl) {
+		width: 25%;
 	}
 }
 
-.cards-list-item {
-	width: 100%;
-	@include bp(m) {
-		width: 25%;
+@include max-bp(s) {
+	.card-footer {
+		display: none;
 	}
 }
 
@@ -30,9 +31,11 @@
 
 .card-heading {
 	margin-bottom: $baseline;
-	@include font-size(16);
+	@include font-size($fontsize400);
+	line-height: 1.5rem;
+
 	@include bp(m) {
-		@include font-size(18);
+		@include font-size($fontsize500);
 	}
 }
 
@@ -40,10 +43,14 @@
 	width: 30%;
 	float: left;
 	margin-right: $gutterwidth / 2;
+
 	@include bp(m) {
 		width: 100%;
+		margin-right: 0;
+		margin-bottom: $baseline;
 		float: none;
 	}
+
 	> img {
 		width: 100%;
 		height: 100%;
