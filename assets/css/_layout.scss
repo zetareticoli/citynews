@@ -228,16 +228,18 @@ ol, ul {
 	}
 
 	.header-top {
-		height: 56px;
-		padding: 0 $baseline+2;
+		height: $smallheadersize;
+		padding: 0 $baseline;
+
 		@include bp(m) {
-			padding: 0 $baseline*3;
-			height: 64px;
+			padding: 0 $baseline * 3;
+			height: $mediumheadersize;
 		}
+
 		@include bp(l) {
 			padding: 0 $gutterwidth;
 			background-color: white;
-			height: 72px;
+			height: $largeheadersize;
 		}
 	}
 
@@ -246,6 +248,7 @@ ol, ul {
 		height: $baseline * 6;
 		background-color: $black300;
 		padding: 0 24px;
+
 		@include bp(l) {
 			display: block;
 		}
@@ -258,13 +261,16 @@ ol, ul {
 			height: 26px;
 			margin-top: 4px;
 			@include transition(all .3s ease);
+
 			@include bp(m) {
 				height: 36px;
 			}
+
 			@include bp(l) {
 				position: relative;
 				z-index: 0;
 			}
+
 			@include bp(xl) {
 				height: 40px;
 			}
@@ -306,17 +312,23 @@ ol, ul {
 
 .slim-header {
 	position: relative;
-	height: 56px;
+	height: $smallheadersize;
 	@include transition(height .2s .3s);
+
 	@include bp(m) {
-		height: 64px;
+		height: $mediumheadersize;
 	}
+
 	@include bp(l) {
-		height: 72px;
+		height: $largeheadersize;
 	}
 
 	.header-top {
 		z-index: 6;
+
+		@include bp(l) {
+			border-bottom: 3px solid $bordercolor;
+		}
 	}
 
 	.header-brand {
@@ -324,12 +336,13 @@ ol, ul {
 
 		.logo {
 			margin-top: 14px;
+
 			@include bp(m) {
-				margin-top: 22px;
-				height: $baseline * 2.5;
-			}
-			@include bp(l) {
+				margin-top: 1.2rem;
 				height: $baseline * 3;
+			}
+
+			@include bp(l) {
 				margin-top: $baseline * 3;
 			}
 		}
@@ -337,28 +350,30 @@ ol, ul {
 
 	.slim-header-nav {
 		display: none;
+
 		@include bp(l) {
 			display: block;
 			float: left;
+			height: 100%;
 		}
 	}
 
 	.page-title {
 		position: relative;
 		margin-top: $baseline * 9;
+
 		@include bp(m) {
 			width: 50%;
 			position: absolute;
 			right: 0;
 			left: 0;
 			margin: auto;
-			height: 64px;
-			line-height: 64px;
+			line-height: $mediumheadersize;
 			text-align: center;
 		}
-		@include bp(l) {	
-			height: 72px;
-			line-height: 72px;
+
+		@include bp(l) {
+			line-height: $largeheadersize;
 		}
 	}
 
@@ -370,7 +385,7 @@ ol, ul {
 			float: left;
 			right: 0;
 			top: 0;
-			height: 72px;
+			height: 100%;
 			visibility: visible;
 		}
 	}

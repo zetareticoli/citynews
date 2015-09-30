@@ -1201,19 +1201,18 @@ a.button {
 .login-button {
   float: left;
   padding: 1rem;
-  width: 56px;
-  height: 56px; }
+  width: 3.5rem; }
   @media (min-width: 46.25em) {
     .search-button,
     .login-button {
-      width: 64px;
-      height: 64px; } }
+      width: 4rem;
+      height: 4rem; } }
   @media (min-width: 62.5em) {
     .search-button,
     .login-button {
       float: left;
       width: 72px;
-      height: 72px; } }
+      height: 4.5rem; } }
   .search-button .icon,
   .login-button .icon {
     fill: #bdbdbd; }
@@ -1228,13 +1227,9 @@ a.button {
     .search-button {
       border-color: #e0e0e0; } }
 
-@media (min-width: 46.25em) {
-  .login-button {
-    height: 64px; } }
 @media (min-width: 62.5em) {
   .login-button {
     width: auto;
-    height: 72px;
     padding: 0 24px; } }
 .login-button .button-label {
   color: #9e9e9e;
@@ -1616,17 +1611,17 @@ ol, ul {
     .header .header-bottom:after {
       clear: both; }
   .header .header-top {
-    height: 56px;
-    padding: 0 2.5rem; }
+    height: 3.5rem;
+    padding: 0 0.5rem; }
     @media (min-width: 46.25em) {
       .header .header-top {
         padding: 0 1.5rem;
-        height: 64px; } }
+        height: 4rem; } }
     @media (min-width: 62.5em) {
       .header .header-top {
         padding: 0 1rem;
         background-color: white;
-        height: 72px; } }
+        height: 4.5rem; } }
   .header .header-bottom {
     display: none;
     height: 3rem;
@@ -1677,36 +1672,39 @@ ol, ul {
 
 .slim-header {
   position: relative;
-  height: 56px;
+  height: 3.5rem;
   -webkit-transition: height 0.2s 0.3s;
   -moz-transition: height 0.2s 0.3s;
   transition: height 0.2s 0.3s; }
   @media (min-width: 46.25em) {
     .slim-header {
-      height: 64px; } }
+      height: 4rem; } }
   @media (min-width: 62.5em) {
     .slim-header {
-      height: 72px; } }
+      height: 4.5rem; } }
   .slim-header .header-top {
     z-index: 6; }
+    @media (min-width: 62.5em) {
+      .slim-header .header-top {
+        border-bottom: 3px solid #e0e0e0; } }
   .slim-header .header-brand {
     margin-right: 1.5rem; }
     .slim-header .header-brand .logo {
       margin-top: 14px; }
       @media (min-width: 46.25em) {
         .slim-header .header-brand .logo {
-          margin-top: 22px;
-          height: 1.25rem; } }
+          margin-top: 1.2rem;
+          height: 1.5rem; } }
       @media (min-width: 62.5em) {
         .slim-header .header-brand .logo {
-          height: 1.5rem;
           margin-top: 1.5rem; } }
   .slim-header .slim-header-nav {
     display: none; }
     @media (min-width: 62.5em) {
       .slim-header .slim-header-nav {
         display: block;
-        float: left; } }
+        float: left;
+        height: 100%; } }
   .slim-header .page-title {
     position: relative;
     margin-top: 4.5rem; }
@@ -1717,13 +1715,11 @@ ol, ul {
         right: 0;
         left: 0;
         margin: auto;
-        height: 64px;
-        line-height: 64px;
+        line-height: 4rem;
         text-align: center; } }
     @media (min-width: 62.5em) {
       .slim-header .page-title {
-        height: 72px;
-        line-height: 72px; } }
+        line-height: 4.5rem; } }
   .slim-header .nav-button.sliding-nav-trigger {
     visibility: hidden; }
     @media (min-width: 62.5em) {
@@ -1732,7 +1728,7 @@ ol, ul {
         float: left;
         right: 0;
         top: 0;
-        height: 72px;
+        height: 100%;
         visibility: visible; } }
   @media (max-width: 46.188em) {
     .slim-header + .section {
@@ -1863,7 +1859,8 @@ ol, ul {
 .nav-toolbar {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  height: 100%; }
 
 .nav-mobile {
   position: absolute;
@@ -1888,7 +1885,7 @@ ol, ul {
   position: relative;
   margin-right: 2rem;
   padding: 1.5rem 0 0 0;
-  height: 72px;
+  height: 4.5rem;
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -1927,12 +1924,8 @@ ol, ul {
 .secondary-nav .nav-item {
   margin-right: 1rem;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1rem; }
-  @media (min-width: 75em) {
-    .secondary-nav .nav-item {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 /* ==========================================================================
   Mobile Navigation
@@ -1999,7 +1992,7 @@ ol, ul {
   .nav-children .alph-list {
     width: 25%;
     position: absolute;
-    top: 64px;
+    top: 4rem;
     left: 0;
     text-align: center;
     overflow: hidden;
@@ -2062,9 +2055,7 @@ ol, ul {
     .sliding-nav {
       display: block;
       position: absolute;
-      background-color: #e0e0e0;
-      border-top-width: 3px;
-      border-top-style: solid;
+      background-color: #eeeeee;
       left: 0;
       width: 100%;
       -webkit-transform: translateY(-65px);
@@ -2079,11 +2070,10 @@ ol, ul {
       .sliding-nav .nav-item {
         float: left;
         display: inline;
-        font-family: "PublicoText", Georgia, "Times New Roman", serif;
-        font-weight: 700;
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 16px;
+        font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1rem;
         padding: 1rem;
         opacity: 0;
         -webkit-transform: translateY(-10px);
@@ -2872,6 +2862,9 @@ ol, ul {
   -webkit-transition: height 0.2s;
   -moz-transition: height 0.2s;
   transition: height 0.2s; }
+.is-nav-sliding .header-top {
+  border-bottom: 3px solid #e0e0e0;
+  z-index: 6; }
 .is-nav-sliding .sliding-nav {
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
@@ -2888,9 +2881,9 @@ ol, ul {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: -webkit-transform 0.2s 0.15s, opacity 0.2s 0.15s;
-    -moz-transition: -moz-transform 0.2s 0.15s, opacity 0.2s 0.15s;
-    transition: transform 0.2s 0.15s, opacity 0.2s 0.15s; }
+    -webkit-transition: -webkit-transform 0.2s 0.25s, opacity 0.2s 0.25s;
+    -moz-transition: -moz-transform 0.2s 0.25s, opacity 0.2s 0.25s;
+    transition: transform 0.2s 0.25s, opacity 0.2s 0.25s; }
 
 .has-min-width {
   min-width: 300px; }

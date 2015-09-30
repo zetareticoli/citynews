@@ -103,18 +103,17 @@ a.button {
 .login-button {
 	float: left;
 	padding: $gutterwidth;
-	width: 56px;
-	height: 56px;
+	width: $smallheadersize;
 
 	@include bp(m) {
-		width: 64px;
-		height: 64px;
+		width: $mediumheadersize;
+		height: $mediumheadersize;
 	}
 
 	@include bp(l) {
 		float: left;
 		width: 72px;
-		height: 72px;
+		height: $largeheadersize;
 	}
 
 	.icon {
@@ -136,14 +135,9 @@ a.button {
 }
 
 .login-button {
-
-	@include bp(m) {
-		height: 64px;
-	}
 	
 	@include bp(l) {
 		width: auto;
-		height: 72px;
 		padding: 0 24px;
 	}
 	

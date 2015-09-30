@@ -6,6 +6,7 @@
 .secondary-nav,
 .nav-toolbar {
 	display: none;
+
 	@include bp(l) {
 		display: block;
 	}
@@ -36,6 +37,7 @@
 	float: left;
 	margin: 0 $gutterwidth;
 	line-height: 2.2em;
+
 	@include bp(l) {
 		display: block;
 	}
@@ -45,15 +47,18 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	height: 100%;
 }
 
 .nav-mobile {
 	position: absolute;
 	right: 10px;
 	display: block;
+
 	@include bp(m) {
 		top: 10px;
 	}
+
 	@include bp(l) {
 		display: none;
 	}
@@ -75,10 +80,10 @@
 		position: relative;
 		margin-right: $baseline * 4;
 		padding: $baseline * 3 0 0 0;
-		height: 72px;
+		height: $largeheadersize;
 		font-family: $brandtypeface;
 		font-weight: normal;
-		@include font-size(20);
+		@include font-size($fontsize500);
 		text-transform: uppercase;
 
 		.link {
@@ -129,10 +134,7 @@
 	.nav-item {
 		margin-right: $baseline * 2;
 		font-family: $headingstypeface;
-		@include font-size(16);
-		@include bp(xl) {
-			@include font-size(18);
-		}
+		@include font-size($fontsize400);
 	}
 }
 
@@ -219,7 +221,7 @@
 	.alph-list {
 		width: 25%;
 		position: absolute;
-		top: 64px;
+		top: $mediumheadersize;
 		left: 0;
 		text-align: center;
 		overflow: hidden;
@@ -294,9 +296,7 @@
 	@include bp(l) {
 		display: block;
 		position: absolute;
-		background-color: $black400;
-		border-top-width: 3px;
-		border-top-style: solid;
+		background-color: $black300;
 		left: 0;
 		width: 100%;
 		@include transform(translateY(-65px));
@@ -306,10 +306,9 @@
 		.nav-item {
 			float: left;
 			display: inline;
-			font-family: $texttypeface;
-			font-weight: 700;
-			@include font-size(20);
-			line-height: 16px;
+			font-family: $headingstypeface;
+			@include font-size($fontsize400);
+			line-height: 1rem;
 			padding: $baseline * 2;
 			opacity: 0;
 			@include transform(translateY(-10px));
