@@ -182,7 +182,6 @@ ol, ul {
 
 			& > .l-row-item {
 				@include flex(0 1 auto);
-				margin-bottom: $baseline * 4;
 			}
 		}
 	}
@@ -193,6 +192,7 @@ ol, ul {
 	padding: 0;
 	list-style: none;
 }
+
 
 // Slice Item
 

@@ -369,9 +369,7 @@ strong {
 
 .section-title {
 	position: relative;
-	padding-bottom: $baseline;
 	margin-bottom: $baseline;
-	border-bottom: 1px solid $black400;
 	font-family: $brandtypeface;
 	font-weight: normal;
 	@include font-size($fontsize400);
@@ -379,8 +377,6 @@ strong {
 	color: $black700;
 
 	@include bp(m) {
-		border-bottom: 0;
-		padding-bottom: 0;
 		margin-bottom: $baseline * 2;
 		@include font-size($fontsize500);
 	}
@@ -496,7 +492,7 @@ time,
 	margin: 0 4px 4px 0;
 	display: inline-block;
 	font-family: $brandtypeface;
-	@include font-size($fontsize200);
+	@include font-size($fontsize100);
 	color: $black600;
 	text-transform: uppercase;
 }
@@ -603,9 +599,16 @@ time,
 
 	.location-kicker {
 		display: inline-block;
+		@include font-size($fontsize300);
 		color: $black600;
-		font-family: $texttypeface;
-		font-weight: 700;
+		font-style: normal;
+	}
+
+	h5.location-kicker {
+		width: 100%;
+		margin: $baseline * 2 0 $baseline;
+		padding-bottom: $baseline;
+		border-bottom: 2px solid $bordercolor;
 	}
 
 
