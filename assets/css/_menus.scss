@@ -183,17 +183,17 @@
 		}
 	}
 
-	.search-button,
-	.login-button {
+	.search-btn,
+	.login-btn {
 		.icon {
 			fill: $bluegrey400;
 		}
-		.button-label {
+		.btn-label {
 			color: $bluegrey400;
 		}
 	}
 
-	.close-button {
+	.close-btn {
 		top: 14px;
 		right: $gutterwidth;
 	}

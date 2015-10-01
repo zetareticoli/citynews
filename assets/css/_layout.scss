@@ -377,7 +377,7 @@ ol, ul {
 		}
 	}
 
-	.nav-button.sliding-nav-trigger {
+	.nav-btn.sliding-nav-trigger {
 		visibility: hidden;
 
 		@include bp(l) {
@@ -401,9 +401,9 @@ ol, ul {
 
 .slim-header.inverted {
 
-	.nav-button {
+	.nav-btn {
 
-		.button-label {
+		.btn-label {
 			color: $black500;
 		}
 
@@ -413,7 +413,7 @@ ol, ul {
 
 		&:hover {
 
-			.button-label {
+			.btn-label {
 				color: white;
 			}
 			
@@ -423,11 +423,11 @@ ol, ul {
 		}
 	}
 
-	.search-button {
+	.search-btn {
 		border-color: $black900;
 	}
 	
-	.nav-button,
+	.nav-btn,
 	.page-title {
 		color: white;
 	}

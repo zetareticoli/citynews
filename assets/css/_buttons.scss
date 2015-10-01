@@ -1,53 +1,53 @@
 /* ==========================================================================
-  Buttons
+  btns
   ========================================================================== */
 
 // Global Styles ===============================================================
 
 
-.button,
-a.button {
+.btn,
+a.btn {
 	text-decoration: none;
 	@include transition(all .2s);
 
 	&.has-icon {
-		.button-label {
+		.btn-label {
 			padding-left: 4px;
 		}
 	}
 
-	.button-label {
+	.btn-label {
 		font-family: $headingstypeface;
 	}
 }
 
 // Sizes
 
-.small-button {
+.small-btn {
 	padding: $baseline $baseline * 2;
 }
 
-.mid-button {
+.mid-btn {
 	padding: 10px $baseline * 2;
 }
 
-.large-button {
+.large-btn {
 	padding: $baseline * 2 $baseline * 3;
 }
 
 // Types
 
-.block-button {
+.block-btn {
 	display: inline-block;
 }
 
-.rounded-button {
+.rounded-btn {
 	@include rounded(40px);
 }
 
-// Button Styles ===============================================================
+// btn Styles ===============================================================
 
-.default-button {
+.default-btn {
 	background: $black400;
 
 	&:hover {
@@ -55,23 +55,24 @@ a.button {
 	}
 }
 
-.light-button {
+.light-btn {
 	border: 2px solid $bordercolor;
 }
 
-.inverted .button {
+.inverted .btn {
 	color: white;
 }
 
-.inverted .light-button {
+.inverted .light-btn {
 	border-color: $bluegrey800;
 }
 
-// Button Types ===============================================================
+// btn Types ===============================================================
+
 
 // Nav
 
-.nav-button {
+.nav-btn {
 	position: absolute;
 	top: 0;
 	right: 10px;
@@ -88,7 +89,7 @@ a.button {
 		visibility: hidden;
 	}
 
-	.button-label {
+	.btn-label {
 		@include font-size(14);
 
 		@include bp(m) {
@@ -99,8 +100,8 @@ a.button {
 
 // Search & Login
 
-.search-button,
-.login-button {
+.search-btn,
+.login-btn {
 	float: left;
 	padding: $gutterwidth;
 	width: $smallheadersize;
@@ -125,7 +126,7 @@ a.button {
 	}
 }
 
-.search-button {
+.search-btn {
 	border-right: 1px solid $black900;
 	border-left: 1px solid $black900;
 
@@ -134,24 +135,24 @@ a.button {
 	}
 }
 
-.login-button {
+.login-btn {
 	
 	@include bp(l) {
 		width: auto;
 		padding: 0 24px;
 	}
 	
-	.button-label {
+	.btn-label {
 		color: $black600;
 		@include font-size(16);
 	}
 }
 
-// Nav Button
+// Nav btn
 
-.nav-button {
+.nav-btn {
 
-	.button-label {
+	.btn-label {
 		color: $black700;
 	}
 
@@ -160,7 +161,7 @@ a.button {
 	}
 
 	&:hover {
-		.button-label {
+		.btn-label {
 			color: $black900;
 		}
 		.icon {
@@ -171,7 +172,7 @@ a.button {
 
 // Close
 
-.close-button {
+.close-btn {
 	position: absolute;
 	top: 0;
 	right: 0;

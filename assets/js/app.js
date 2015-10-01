@@ -33,8 +33,8 @@ $(document).ready(function(){
     $('.nav-children').addClass('is-hidden');
   });
 
-  //mobile nav close button
-  $('.close-button').on('click', function(event){
+  //mobile nav close btn
+  $('.close-btn').on('click', function(event){
     event.preventDefault();    
     $(".header").removeClass("is-nav-open");
     $("body").removeClass("is-locked");
