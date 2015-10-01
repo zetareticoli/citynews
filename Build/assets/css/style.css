@@ -1272,7 +1272,6 @@ a.button {
       padding: 0 8px; } }
 
 .unit, .group, .lastUnit {
-  overflow: hidden;
   background-clip: padding-box; }
 
 .unit, .group {
