@@ -1,9 +1,8 @@
 /* ==========================================================================
-  btns
+  BUTTONS
   ========================================================================== */
 
 // Global Styles ===============================================================
-
 
 .btn,
 a.btn {
@@ -15,6 +14,10 @@ a.btn {
 
 	&:hover {
 		color: $black800;
+	}
+
+	&:active {
+		color: $black1000;
 	}
 
 	&.has-icon {
@@ -42,27 +45,13 @@ a.btn {
 	padding: $baseline * 2 $baseline * 3;
 }
 
-// Types
-
-.block-btn {
-	display: inline-block;
-}
-
-.rounded-btn {
-	@include rounded(40px);
-}
-
-// btn Styles ===============================================================
+// Button Styles ===============================================================
 
 .default-btn {
 	background-color: $black400;
 
 	&:hover {
 		background: darken($black400, 5%);
-	}
-
-	&:active {
-		color: $black1000;
 	}
 }
 
@@ -83,6 +72,10 @@ a.btn {
 .light-btn {
 	background-color: white;
 	border: 2px solid $bordercolor;
+
+	&:hover {
+		border-color: darken($bordercolor, 5%);
+	}
 }
 
 .link-btn {
@@ -106,6 +99,7 @@ a.btn {
 		width: 100%;
 		border-bottom: 2px solid $black400;
 		margin-top: 6px;
+		@include transition(border-color .15s);
 	}
 
 	&:hover {
@@ -123,8 +117,11 @@ a.btn {
 	border-color: $bluegrey800;
 }
 
-// btn Types ===============================================================
+.rounded-btn {
+	@include rounded(40px);
+}
 
+// Custom Types ===============================================================
 
 // Nav
 
