@@ -56,12 +56,12 @@ a.btn {
 }
 
 .primary-btn {
-	background-color: $bluegrey600;
+	background-color: #00BFA5;
 	color: white;
 
 	&:hover {
 		color: white;
-		background-color: darken($bluegrey600, 5%);
+		background-color: darken(#00BFA5, 5%);
 	}
 
 	&:active {
@@ -69,12 +69,13 @@ a.btn {
 	}
 }
 
-.light-btn {
-	background-color: white;
-	border: 2px solid $bordercolor;
+.inverse-btn {
+	background-color: $bluegrey900;
+	color: white;
 
 	&:hover {
-		border-color: darken($bordercolor, 5%);
+		color: white;
+		background-color: darken($bluegrey900, 5%);
 	}
 }
 
