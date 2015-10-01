@@ -7,8 +7,15 @@
 
 .btn,
 a.btn {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	text-decoration: none;
+	color: $black800;
 	@include transition(all .2s);
+
+	&:hover {
+		color: $black800;
+	}
 
 	&.has-icon {
 		.btn-label {
@@ -48,15 +55,64 @@ a.btn {
 // btn Styles ===============================================================
 
 .default-btn {
-	background: $black400;
+	background-color: $black400;
 
 	&:hover {
 		background: darken($black400, 5%);
 	}
+
+	&:active {
+		color: $black1000;
+	}
+}
+
+.primary-btn {
+	background-color: $bluegrey600;
+	color: white;
+
+	&:hover {
+		color: white;
+		background-color: darken($bluegrey600, 5%);
+	}
+
+	&:active {
+		color: $bluegrey200;
+	}
 }
 
 .light-btn {
+	background-color: white;
 	border: 2px solid $bordercolor;
+}
+
+.link-btn {
+	padding: 0;
+	position: relative;
+	background-color: transparent;
+
+	&:active {
+		background: none;
+		box-shadow: none;
+		position: relative;
+		top: 1px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		display: inline-block;
+		height: 1em;
+		width: 100%;
+		border-bottom: 2px solid $black400;
+		margin-top: 6px;
+	}
+
+	&:hover {
+		&:after {
+			border-bottom-color: $black600;
+		}
+	}
 }
 
 .inverted .btn {
@@ -129,6 +185,9 @@ a.btn {
 .search-btn {
 	border-right: 1px solid $black900;
 	border-left: 1px solid $black900;
+	@include rounded(0);
+	border-bottom: 0;
+	border-top: 0;
 
 	@include bp(l) {
 		border-color: $bordercolor;
