@@ -4,31 +4,223 @@
 
 // Global Styles ===============================================================
 
-.form-control {
-	height: 40px;
-	padding: 8px 12px;
+input[type='search'],
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: .8em;
+	@include appearance(none);
+	box-shadow: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+label,
+.form-control,
+.help-block {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
+	@include font-size($fontsize200);
+}
+
+.help-block {
+	@include font-size($fontsize200);
+}
+
+
+// Supported Controls ===============================================================
+
+// Form Control
+
+.form-control {
+	height: 2.5rem;
+	padding: .5rem .875rem;
 	line-height: 1.467;
-	color: #34495e;
-	border: 2px solid #bdc3c7;
-	border-radius: 6px;
+	color: $black900;
+	border: 2px solid $bordercolor;
+	@include rounded(6px);
 	box-shadow: none;
 	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
 	transition: border .25s linear, color .25s linear, background-color .25s linear;
 
 	&:focus {
-		border-color: #1abc9c;
-		outline: 0;
+		border-color: darken($bordercolor, 30%);
 		box-shadow: none;
+	}
+
+	&:disabled {
+		color: $black400;
 	}
 }
 
-.checkbox-label,
-.filter-block .link {
-	color: $black900;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-} 
+// Form Select
+
+.form-select {
+	/* select element wrapper */
+	position: relative;
+}
+
+.form-select::after {
+	/* switcher arrow for select element */
+	content: '';
+	position: absolute;
+	z-index: 1;
+	right: 14px;
+	top: 50%;
+	@include transform(translateY(-50%));
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('icon-arrow.svg') no-repeat center center;
+	pointer-events: none;
+}
+
+// Radio & Checkbox
+
+.radio input[type="radio"], 
+.radio-inline input[type="radio"], 
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"] {
+	/* hide original check and radio buttons */
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	margin-left: 0;
+	padding: 0;
+	opacity: 0;
+	z-index: 2;
+}
+
+.radio-label:before,
+.checkbox-label:before {
+	/* shared style for input elements */
+	background-color: white;
+	border: 2px solid $bordercolor;
+}
+
+.checkbox .checkbox-label,
+.radio .radio-label {
+	display: inline;
+	padding-left: 1.5rem;
+	@include user-select(none);
+
+	&:before,
+	&:after {
+		/* custom radio and check boxes */
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+
+	&::before {
+		width: 1rem;
+		height: 1rem;
+		left: 0;
+	}
+
+	&::after {
+		/* check mark - hidden */
+		display: none;
+	}
+}
+
+.checkbox-label:before {
+	@include rounded(3px);
+}
+
+.checkbox-label:after {
+	/* check mark style for check boxes */
+	width: 1rem;
+	height: 1rem;
+	background: url('icon-check.svg') no-repeat center center;
+}
+
+input[type=radio]:checked + label::before,
+input[type=checkbox]:checked + label::before {
+	border-color: $formprimarycolor;
+	background-color: $formprimarycolor;
+}
+
+input[type=radio]:checked + label::after,
+input[type=checkbox]:checked + label::after {
+	display: block;
+}
+
+.radio-label::before,
+.radio-label::after {
+	@include rounded(50%);
+}
+
+.radio-label:before {
+	border: 3px solid $bordercolor;
+}
+
+.radio-label::after {
+	/* check mark style for radio buttons */
+	width: 6px;
+	height: 6px;
+	background-color: white;
+	left: 5px;
+}
+
+.checkbox.disabled,
+.radio.disabled {
+
+	.checkbox-label,
+	.radio-label {
+		color: $black600;
+	}
+
+	.checkbox-label:before,
+	.radio-label:before {
+		background-color: $black300;
+		border-color: $black300;
+	}
+}
+
+
+// Validation States ===============================================================
+
+.has-error .form-control,
+.has-success .form-control,
+.has-error .form-control:focus,
+.has-success .form-control:focus {
+	box-shadow: none;
+}
+
+.has-error .form-control {
+	color: #e74c3c;
+	border-color: #e74c3c;
+}
+
+.has-error .form-control:focus {
+	border-color: darken(#e74c3c, 10%)
+}
+
+.has-success .form-control,
+.has-success .form-control:focus {
+	color: #2ecc71;
+	border-color: #2ecc71;
+}
+
+.has-success .form-control:focus {
+	border-color: darken(#2ecc71, 10%)
+}
+
+// Forms ===============================================================
+
+// Form Horizontal
+
+.form-horizontal {
+	.horizontal-offset {
+		padding-left: 17.5%;
+	}
+}
 
 // Filters ===============================================================
 

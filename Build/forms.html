@@ -46,7 +46,7 @@
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
   
-  <title>Citynews | Typography</title>
+  <title>Citynews | Form Elements</title>
   
 </head>
 
@@ -296,51 +296,42 @@
 		<main class="main-content">
 
 			<div class="line">
-
 				<div class="unit size1of1">
-
 					<h2>Buttons</h2>
-
 					<h3>Tags</h3>
-										
+				</div>
+				<div class="unit size1of1">
 					<a class="btn default-btn" href="#" role="btn">Link</a>
 					<button class="btn default-btn" type="submit">Button</button>
 					<input class="btn default-btn" type="button" value="Input">
 					<input class="btn default-btn" type="submit" value="Submit">
+				</div>
+			</div>
 
-					<br><br><br>
+			<br>
+			<br>
 
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Styles</h3>
-
-					<!-- Standard btn -->
+				</div>
+				<div class="unit size1of1">
 					<button type="button" class="btn default-btn">Default</button>
-
 					<button type="button" class="btn primary-btn">Primary</button>
-
 					<button type="button" class="btn inverse-btn">Inverse</button>
-
 					<button type="button" class="btn link-btn">Link</button>
+					
+				</div>
+			</div>
 
-					<br><br><br>
+			<br>
+			<br>
 
-					<h3>Types</h3>
-
-					<p>
-						<button type="button" class="btn default-btn">Default</button>
-						<button type="button" class="btn primary-btn">Primary</button>
-						<button type="button" class="btn inverse-btn">Inverse</button>
-					</p>
-
-					<p>
-						<button type="button" class="btn default-btn rounded-btn">Default</button>
-						<button type="button" class="btn primary-btn rounded-btn">Primary</button>
-						<button type="button" class="btn light-btn rounded-btn">Light</button>
-					</p>
-
-					<br><br>
-
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Sizes</h3>
-
+				</div>
+				<div class="unit size1of1">
 					<p>
 					  <button type="button" class="btn primary-btn btn-lg">Large btn</button>
 					  <button type="button" class="btn default-btn btn-lg">Large btn</button>
@@ -357,14 +348,40 @@
 					  <button type="button" class="btn primary-btn btn-xs">Extra small btn</button>
 					  <button type="button" class="btn default-btn btn-xs">Extra small btn</button>
 					</p>
-					
+				</div>
+			</div>
 
-					<br><br>
+			<br>
+			<br>
 
+			<div class="line">
+				<div class="unit size1of1">
+					<h3>Rounded Type</h3>
+				</div>
+				<div class="unit size1of1">
+				<p>
+					<button type="button" class="btn default-btn rounded-btn">Default Rounded</button>
+					<button type="button" class="btn primary-btn rounded-btn">Primary Rounded</button>
+					<button type="button" class="btn inverse-btn rounded-btn">Inverse Rounded</button>
+				</p>
+
+				<p>
+					<button type="button" class="btn default-btn btn-lg rounded-btn">Large Rounded</button>
+					<button type="button" class="btn default-btn btn rounded-btn">Default Rounded</button>
+					<button type="button" class="btn default-btn btn-sm rounded-btn">Small Rounded</button>
+				</p>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="line">
+				<div class="unit size1of1">
 					<h2>Forms</h2>
-
 					<h3>Basic example</h3>
-
+				</div>
+				<div class="unit size1of1">
 					<form>
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Email address</label>
@@ -379,19 +396,23 @@
 					    <input type="file" id="exampleInputFile">
 					    <p class="help-block">Example block-level help text here.</p>
 					  </div>
-					  <div class="checkbox">
-					    <label>
-					      <input type="checkbox"> Check me out
-					    </label>
+					  <div class="checkbox">			  
+					      <input type="checkbox" value="" id="checkbox1">
+					  	<label class="checkbox-label" for="checkbox1">Check me out</label>
 					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
+					  <button type="submit" class="btn default-btn">Submit</button>
 					</form>
+				</div>
+			</div>
 
-					<br>
-					<br>
+			<br>
+			<br>
 
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Form Inline with labels</h3>
-
+				</div>
+				<div class="unit size1of1">
 					<form class="form-inline">
 					  <div class="form-group">
 					    <label for="exampleInputName2">Name</label>
@@ -401,14 +422,19 @@
 					    <label for="exampleInputEmail2">Email</label>
 					    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
 					  </div>
-					  <button type="submit" class="btn btn-default">Send invitation</button>
+					  <button type="submit" class="btn default-btn">Send invitation</button>
 					</form>
+				</div>
+			</div>
 
-					<br>
-					<br>
+			<br>
+			<br>
 
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Form Inline</h3>
-
+				</div>
+				<div class="unit size1of1">
 					<form class="form-inline">
 					  <div class="form-group">
 					    <label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -418,78 +444,227 @@
 					    <label class="sr-only" for="exampleInputPassword3">Password</label>
 					    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
 					  </div>
-					  <div class="checkbox">
-					    <label>
-					      <input type="checkbox"> Remember me
-					    </label>
+					  <div class="checkbox">			  
+					      <input type="checkbox" value="" id="checkbox2">
+					  	<label class="checkbox-label" for="checkbox2">Remember me</label>
 					  </div>
-					  <button type="submit" class="btn btn-default">Sign in</button>
+					  <button type="submit" class="btn default-btn">Sign in</button>
 					</form>
+				</div>
+			</div>
 
-					<br><br>
+			<br>
+			<br>
 
+			<div class="line">
+				<div class="unit size1of1">
+					<h3>Horizontal Form</h3>
+				</div>
+				<div class="unit size1of1">
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="unit size1of6 control-label">Email</label>
+					    <div class="unit size5of6">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="unit size1of6 control-label">Password</label>
+					    <div class="unit size5of6">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="horizontal-offset">
+						    <div class="checkbox">			  
+						        <input type="checkbox" value="" id="checkbox">
+						    	<label class="checkbox-label" for="checkbox">Remember me</label>
+						    </div>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="horizontal-offset">
+					      <button type="submit" class="btn default-btn">Sign in</button>
+					    </div>
+					  </div>
+					</form>
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="line">
+				<div class="unit size1of1">
 					<h2>Form Controls</h2>
+				</div>
+			</div>
 
-					<br><br>
-
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Inputs</h3>
+				</div>						
+			</div>
 
-					<input type="text" class="form-control" placeholder="Text input">
+			<div class="line">
+				<div class="unit size1of4">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Digit a text">
+					</div>
+				</div>
+				<div class="unit size1of4">
+					<div class="form-group has-error">
+						<input type="text" class="form-control" placeholder="Text input" value="Error">
+					</div>
+				</div>
+				<div class="unit size1of4">
+					<div class="form-group has-success">
+						<input type="text" class="form-control" placeholder="Text input" value="Success">
+					</div>
+				</div>
+				<div class="unit size1of4">
+					<div class="form-group">
+						<input type="text" disabled="disabled" class="form-control" value="Disabled">
+					</div>
+				</div>
+			</div>
 
-					<br><br>
 
+			<br><br>
+
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Textarea</h3>
-
 					<textarea class="form-control" rows="3"></textarea>
+				</div>
+			</div>
 
-					<br><br>
+			<br><br>
 
+			<div class="line">
+				<div class="unit size1of1">
 					<h3>Select</h3>
 
-					<select class="form-control">
-					  <option>1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
-					</select>
+					<div class="form-select">
+						<select class="form-control">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+					</div>
+				</div>
+			</div>
 
-					<br><br>
+			<br><br>
 
+			<div class="line">
+				<div class="unit size1of1">
+					<h3>Dropdown</h3>
+				</div>
+			</div>
+
+			<div class="line">
+
+				<div class="unit size1of3">
+					<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Dropdown
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li><a href="#">Separated link</a></li>
+					  </ul>
+					</div>					
+				</div>
+
+				<div class="unit size1of3">
+
+					<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    Dropdown with scrollable menu
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu is-fixed" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li><a href="#">Separated link</a></li>
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li><a href="#">Separated link</a></li>
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li><a href="#">Separated link</a></li>
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li><a href="#">Separated link</a></li>
+					  </ul>
+					</div>					
+				</div>
+
+				<div class="unit size1of3">
+
+					<div class="date-dropdown">
+						<div class="date-dropdown-timestamp">
+							<span class="timestamp-label">Oggi</span>
+							<time class="timestamp">Venerdì 4 Novembre</time>
+						</div>
+						<div class="dropdown">
+						  <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Date dropdown
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">Oggi</a></li>
+						    <li><a href="#">Domani</a></li>
+						    <li><a href="#">Questa Settimana</a></li>
+						    <li><a href="#">Prossimi 7 Giorni</a></li>
+						    <li><a href="#">Prossimi 15 Giorni</a></li>
+						    <li><a href="#">Prossimi 30 Giorni</a></li>
+						  </ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="line">
+				<div class="unit size1fo1">
 					<h3>Checkboxes and radios</h3>
 
-					<div class="checkbox">
-					  <label>
-					    <input type="checkbox" value="">
-					    Option one is this and that&mdash;be sure to include why it's great
-					  </label>
+					<div class="checkbox">			  
+					    <input type="checkbox" value="" id="checkbox3">
+						<label class="checkbox-label" for="checkbox3">Option one</label>
+					</div>
+					<div class="checkbox">			  
+					    <input type="checkbox" value="" id="checkbox4">
+						<label class="checkbox-label" for="checkbox4">Option two can be something else</label>
 					</div>
 					<div class="checkbox disabled">
-					  <label>
-					    <input type="checkbox" value="" disabled>
-					    Option two is disabled
-					  </label>
+					    <input type="checkbox" value="" id="checkbox5" disabled>
+						<label class="checkbox-label" for="checkbox5">Option is disabled</label>
 					</div>
 
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-					    Option one is this and that&mdash;be sure to include why it's great
-					  </label>
+						<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1">
+						<label class="radio-label" for="radio1">Option one</label>
 					</div>
 					<div class="radio">
-					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-					    Option two can be something else and selecting it will deselect option one
-					  </label>
+						<input class="filter" data-filter="" type="radio" name="radioButton" id="radio2">
+						<label class="radio-label" for="radio2">Option two</label>
 					</div>
 					<div class="radio disabled">
-					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-					    Option three is disabled
-					  </label>
+						<input class="filter" data-filter="" type="radio" name="radioButton" id="radio3">
+						<label class="radio-label" for="radio3">Option three is disabled</label>
 					</div>
-
 				</div>
 			</div>
 		</main>

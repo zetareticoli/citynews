@@ -5,11 +5,16 @@
 // Global Styles ===============================================================
 
 .btn,
-a.btn {
+a.btn,
+.dropdown-menu {
 	font-family: Helvetica, Arial, sans-serif;
+	color: $black800;
+}
+
+.btn,
+a.btn {
 	font-weight: 700;
 	text-decoration: none;
-	color: $black800;
 	@include transition(all .2s);
 
 	&:hover {
@@ -33,16 +38,8 @@ a.btn {
 
 // Sizes
 
-.small-btn {
-	padding: $baseline $baseline * 2;
-}
-
-.mid-btn {
-	padding: 10px $baseline * 2;
-}
-
-.large-btn {
-	padding: $baseline * 2 $baseline * 3;
+.btn-lg {
+	@include font-size($fontsize300);
 }
 
 // Button Styles ===============================================================
@@ -56,12 +53,12 @@ a.btn {
 }
 
 .primary-btn {
-	background-color: #00BFA5;
+	background-color: $formprimarycolor;
 	color: white;
 
 	&:hover {
 		color: white;
-		background-color: darken(#00BFA5, 5%);
+		background-color: darken($formprimarycolor, 5%);
 	}
 
 	&:active {
@@ -119,10 +116,95 @@ a.btn {
 }
 
 .rounded-btn {
+	padding-left: 1rem;
+	padding-right: 1rem;
 	@include rounded(40px);
+
+	&.btn-lg {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 }
 
 // Custom Types ===============================================================
+
+// Dropdown 
+
+.dropdown {
+
+	.dropdown-toggle {
+		background-color: white;
+		border: 2px solid $bordercolor;
+		font-weight: 400;
+	}
+
+	.dropdown-menu {
+		border-width: 2px;
+		border-color: $black500;
+
+		&.is-fixed {
+			max-height: 10rem;
+			overflow-y: auto;
+		}
+	}
+
+	.caret {
+		display: inline-block;
+		width: 10px;
+		height: 6px;
+		line-height: 1.5rem;
+		margin-left: .25rem;
+		background: url('icon-arrow.svg') 0 0 no-repeat;
+		border: 0;
+		@include transition(transform .2s ease-in);
+	}
+
+	&.open {
+
+		.caret {
+			@include transform(rotateZ(180deg));
+		}
+	}	
+}
+
+.date-dropdown {
+	width: 100%;
+
+	.date-dropdown-timestamp {
+		border-top: 2px solid $bordercolor;
+		border-left: 2px solid $bordercolor;
+		border-right: 2px solid $bordercolor;
+		@include border-top-radius(6px);
+		padding: .875rem;
+
+		.timestamp,
+		.timestamp-label {
+			display: block;
+		}
+
+		.timestamp-label {
+			@include font-size($fontsize500);
+			font-weight: 700;
+		}
+
+		.timestamp {
+			@include font-size($fontsize200);
+		}
+	}
+
+	.dropdown-toggle {
+		width: 100%;
+		@include border-top-radius(0);
+		text-align: left;
+
+		.caret {
+			position: absolute;
+			right: 1rem;
+			top: 45%;
+		}
+	}
+}
+
 
 // Nav
 
