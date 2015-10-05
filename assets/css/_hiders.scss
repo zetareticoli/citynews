@@ -7,7 +7,8 @@
 .author-twitter,
 .related-stories.inner,
 .special-story .story-summary,
-.events-search {
+.events-search,
+.aside-filters {
 	display: none;
 }
 
@@ -42,12 +43,13 @@
 @include bp(l) {
 
 	.special-story .story-summary,
-	.events-search {
+	.events-search,
+	.aside-filters {
 		display: block;
 	}
 
 	.entry-secondary-slot,
-	.mobile-filters {
+	.top-filters {
 		display: none;
 	}
 }

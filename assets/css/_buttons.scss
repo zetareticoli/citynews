@@ -163,9 +163,25 @@ a.primary-btn {
 		border-width: 2px;
 		border-color: $black500;
 
-		&.is-fixed {
+		&.has-fixed-height {
 			max-height: 10rem;
 			overflow-y: auto;
+		}
+
+		.link {
+			padding-left: 1rem;
+			@include font-size($fontsize200);
+
+			@include bp(m) {
+				@include font-size($fontsize300);
+			}
+		}
+
+		.dropdown-header {
+			padding-left: 1rem;
+			color: $black600;
+			font-family: $headingstypeface;
+			@include font-size($fontsize200);
 		}
 	}
 

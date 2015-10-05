@@ -8,176 +8,255 @@
 
     <main class="main-content">
     	
-    	    <section class="section">
+        <div class="line">
 
-    	      <div class="line">
+          	<div class="group size1of1 filters-group top-filters">
 
-    	      	<div class="group size1of1 filters-group mobile-filters">
+                <div class="unit filter-block">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Scegli cosa fare
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li class="dropdown-header">Filtra gli Eventi</li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox1">
+                                     <label class="checkbox-label" for="mcheckbox1">Concerti</label>
+                                 </div>   
+                            </li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox2">
+                                     <label class="checkbox-label" for="mcheckbox2">Mostre</label>
+                                 </div>   
+                            </li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox3">
+                                     <label class="checkbox-label" for="mcheckbox3">Teatri</label>
+                                 </div>   
+                            </li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox4">
+                                     <label class="checkbox-label" for="mcheckbox4">Sport</label>
+                                 </div>   
+                            </li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox5">
+                                     <label class="checkbox-label" for="mcheckbox5">Sagre</label>
+                                 </div>   
+                            </li>
+                            <li>
+                                <div class="checkbox">             
+                                     <input type="checkbox" value="" id="mcheckbox5">
+                                     <label class="checkbox-label" for="mcheckbox5">Discoteche/Feste</label>
+                                 </div>   
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="link">Cinema</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="link">Ristoranti</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="link">Shopping</a></li>
+                        </ul>
+                    </div>  
+                </div>
 
-                    <div class="unit filter-block">
+                <div class="unit filter-block">
+                   <div class="dropdown">
+                     <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       Quando
+                       <span class="caret"></span>
+                     </button>
+                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                       <li><a href="#">Oggi</a></li>
+                       <li><a href="#">Domani</a></li>
+                       <li><a href="#">Questa Settimana</a></li>
+                       <li><a href="#">Prossimi 7 Giorni</a></li>
+                       <li><a href="#">Prossimi 15 Giorni</a></li>
+                       <li><a href="#">Prossimi 30 Giorni</a></li>
+                     </ul>
+                   </div> 
+                </div>
+          	</div>
+
+            <div class="unit size1of4 filters-group aside-filters">
+
+                <!-- Start Form for ajax results -->
+              	<form>
+    	            <div class="date-dropdown">
+                        <div class="date-dropdown-timestamp">
+                            <span class="timestamp-label">Oggi</span>
+                            <time class="timestamp">Venerdì 4 Novembre</time>
+                        </div>
                         <div class="dropdown">
                           <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Scegli cosa fare
+                            Seleziona una data
                             <span class="caret"></span>
                           </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li><a href="#">Separated link</a></li>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <li><a href="#">Oggi</a></li>
+                            <li><a href="#">Domani</a></li>
+                            <li><a href="#">Questa Settimana</a></li>
+                            <li><a href="#">Prossimi 7 Giorni</a></li>
+                            <li><a href="#">Prossimi 15 Giorni</a></li>
+                            <li><a href="#">Prossimi 30 Giorni</a></li>
                           </ul>
                         </div>  
                     </div>
 
-                    <div class="unit filter-block">
-                       <div class="dropdown">
-                         <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                           Quando
-                           <span class="caret"></span>
-                         </button>
-                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                           <li><a href="#">Action</a></li>
-                           <li><a href="#">Another action</a></li>
-                           <li><a href="#">Something else here</a></li>
-                           <li><a href="#">Separated link</a></li>
-                         </ul>
-                       </div> 
-                    </div>
-    	      	</div>
-
-    	        <div class="unit size1of4 filters-group is-desktop">
-
-                    <!-- Start Form for ajax results -->
-    	          	<form>
-    		            <div class="date-dropdown">
-                            <div class="date-dropdown-timestamp">
-                                <span class="timestamp-label">Oggi</span>
-                                <time class="timestamp">Venerdì 4 Novembre</time>
-                            </div>
-                            <div class="dropdown">
-                              <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Seleziona una data
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Oggi</a></li>
-                                <li><a href="#">Domani</a></li>
-                                <li><a href="#">Questa Settimana</a></li>
-                                <li><a href="#">Prossimi 7 Giorni</a></li>
-                                <li><a href="#">Prossimi 15 Giorni</a></li>
-                                <li><a href="#">Prossimi 30 Giorni</a></li>
-                              </ul>
-                            </div>  
+    	            <div class="filter-block grouped-filters">
+    		            <h6>Filtra gli eventi:</h6>
+    		            <div class="checkbox">             
+                            <input type="checkbox" value="" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">Concerti</label>
                         </div>
-
-    		            <div class="filter-block grouped-filters">
-    			            <h6>Filtra gli eventi:</h6>
-    			            <div class="checkbox">             
-                                <input type="checkbox" value="" id="checkbox1">
-                                <label class="checkbox-label" for="checkbox1">Concerti</label>
-                            </div>
-                            <div class="checkbox">            
-                                <input type="checkbox" value="" id="checkbox2">
-                                <label class="checkbox-label" for="checkbox2">Mostre</label>
-                            </div>
-                            <div class="checkbox">            
-                                <input type="checkbox" value="" id="checkbox3">
-                                <label class="checkbox-label" for="checkbox3">Teatri</label>
-                            </div>
-                            <div class="checkbox">            
-                                <input type="checkbox" value="" id="checkbox4">
-                                <label class="checkbox-label" for="checkbox4">Sport</label>
-                            </div>
-                            <div class="checkbox">            
-                                <input type="checkbox" value="" id="checkbox5">
-                                <label class="checkbox-label" for="checkbox5">Sagre</label>
-                            </div>
-                            <div class="checkbox">            
-                                <input type="checkbox" value="" id="checkbox6">
-                                <label class="checkbox-label" for="checkbox6">Discoteche/Feste</label>
-                            </div>
-    		            </div>
-    	          	</form>
-
-    			    <div class="filter-block">
-    			    	<h6>Cinema</h6>
-    			    	<ul class="u-unstyled filters-list">
-    			    		<li><a href="#" class="link">Film di oggi</a></li>
-    			    		<li><a href="#" class="link">Nuove uscite</a></li>
-    			    	</ul>
-    			    </div>
-    			    <div class="filter-block">
-    			    	<h6>Ristoranti</h6>
-    			    	<ul class="u-unstyled filters-list">
-    			    		<li><a href="#" class="link">Cucina Italiana</a></li>
-    			    		<li><a href="#" class="link">Cucina Indiana</a></li>
-    			    		<li><a href="#" class="link">Cucina Giapponese</a></li>
-                            <li><a href="#" class="link">Panini/Sandwich</a></li>
-                            <li><a href="#" class="link">Steak House</a></li>
-                            <li><a href="#" class="link">Sushi Bar</a></li>
-                            <li><a href="#" class="link">Pizza</a></li>
-    			    	</ul>
-    			    </div>
-
-    			    <p><em>Vuoi segnalare un evento?</em></p>
-
-    	    		<a href="#" class="btn default-btn">Segnala un Evento</a>
-
-    	        </div>
-
-    	        <div class="group size3of4">
-
-                    <div class="group size1of1">
-
-                        <div class="unit size1of3">
-                            <h1 class="page-title">Eventi</h1>
+                        <div class="checkbox">            
+                            <input type="checkbox" value="" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">Mostre</label>
                         </div>
-
-                        <div class="unit size2of3 align-right events-search">
-                            <form class="form-inline">
-                                <input type="search" class="form-control" placeholder="Cerca un evento">
-                                <button type="submit" class="btn default-btn">Cerca</button>
-                            </form>
+                        <div class="checkbox">            
+                            <input type="checkbox" value="" id="checkbox3">
+                            <label class="checkbox-label" for="checkbox3">Teatri</label>
                         </div>
+                        <div class="checkbox">            
+                            <input type="checkbox" value="" id="checkbox4">
+                            <label class="checkbox-label" for="checkbox4">Sport</label>
+                        </div>
+                        <div class="checkbox">            
+                            <input type="checkbox" value="" id="checkbox5">
+                            <label class="checkbox-label" for="checkbox5">Sagre</label>
+                        </div>
+                        <div class="checkbox">            
+                            <input type="checkbox" value="" id="checkbox6">
+                            <label class="checkbox-label" for="checkbox6">Discoteche/Feste</label>
+                        </div>
+    	            </div>
+              	</form>
+
+    		    <div class="filter-block">
+    		    	<h6>Cinema</h6>
+    		    	<ul class="u-unstyled filters-list">
+    		    		<li><a href="#" class="link">Film di oggi</a></li>
+    		    		<li><a href="#" class="link">Nuove uscite</a></li>
+    		    	</ul>
+    		    </div>
+    		    <div class="filter-block">
+    		    	<h6>Ristoranti</h6>
+    		    	<ul class="u-unstyled filters-list">
+    		    		<li><a href="#" class="link">Cucina Italiana</a></li>
+    		    		<li><a href="#" class="link">Cucina Indiana</a></li>
+    		    		<li><a href="#" class="link">Cucina Giapponese</a></li>
+                        <li><a href="#" class="link">Panini/Sandwich</a></li>
+                        <li><a href="#" class="link">Steak House</a></li>
+                        <li><a href="#" class="link">Sushi Bar</a></li>
+                        <li><a href="#" class="link">Pizza</a></li>
+    		    	</ul>
+    		    </div>
+
+    		    <p><em>Vuoi segnalare un evento?</em></p>
+
+        		<a href="#" class="btn default-btn">Segnala un Evento</a>
+
+            </div>
+
+            <div class="group size3of4 cards-list-container">
+
+                <div class="group size1of1">
+
+                    <div class="unit size1of3">
+                        <h1 class="page-title">Eventi</h1>
                     </div>
 
-    		        <ul class="group size1of1 u-unstyled l-row multirow cards-list">
+                    <div class="unit size2of3 align-right events-search">
+                        <form class="form-inline">
+                            <input type="search" class="form-control" placeholder="Cerca un evento">
+                            <button type="submit" class="btn default-btn">Cerca</button>
+                        </form>
+                    </div>
+                </div>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	        <ul class="group size1of1 u-unstyled l-row multirow cards-list">
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    		            <li class="unit l-row-item item-span-1 cards-list-item">
-    		            	<!-- @include _block-event -->  
-    		            </li>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    	            </ul>
+    	            <li class="unit l-row-item item-span-1 cards-list-item">
+    	            	<!-- @include _block-event -->  
+    	            </li>
 
-    	        </div>
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
 
-    	      </div>
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
 
-    	    </section>
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+                    <li class="unit l-row-item item-span-1 cards-list-item">
+                        <!-- @include _block-event -->  
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
 
     </main>
     

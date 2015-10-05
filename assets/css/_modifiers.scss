@@ -46,10 +46,27 @@
 	}
 }
 
-.is-locked {
-	height: 100%;
-	position: fixed;
-	overflow: hidden;
+.is-fixed {
+
+	@include bp(l) {
+		.aside-filters {
+			position: fixed;
+			width: 246px;
+			top: 1rem;
+
+			@include bp(xl) {
+				width: 293px;
+			}
+		}
+
+		.cards-list-container {
+			margin-left: 246px;
+
+			@include bp(xl) {
+				margin-left: 293px;
+			}
+		}
+	}
 }
 
 .is-desktop {
