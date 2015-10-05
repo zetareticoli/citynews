@@ -38,7 +38,24 @@ a.btn {
 
 // Sizes
 
+.btn {
+	padding: .675rem 1rem;
+	line-height: 1rem;
+}
+
+.btn-xs {
+	padding: .25rem .45rem;
+}
+
+.btn-sm {
+	padding: .45rem .5rem;
+	@include font-size($fontsize100);
+	line-height: .875rem;
+}
+
 .btn-lg {
+	padding: .875rem 1.5rem;
+	line-height: 1.15rem;
 	@include font-size($fontsize300);
 }
 
@@ -52,7 +69,8 @@ a.btn {
 	}
 }
 
-.primary-btn {
+.primary-btn,
+a.primary-btn {
 	background-color: $formprimarycolor;
 	color: white;
 
@@ -174,8 +192,7 @@ a.btn {
 		border-top: 2px solid $bordercolor;
 		border-left: 2px solid $bordercolor;
 		border-right: 2px solid $bordercolor;
-		@include border-top-radius(6px);
-		padding: .875rem;
+		padding: .875rem .875rem 0;
 
 		.timestamp,
 		.timestamp-label {
@@ -183,25 +200,37 @@ a.btn {
 		}
 
 		.timestamp-label {
-			@include font-size($fontsize500);
+			@include font-size($fontsize400);
 			font-weight: 700;
 		}
 
 		.timestamp {
+			padding-bottom: .5rem;
 			@include font-size($fontsize200);
+			border-bottom: 1px solid $bordercolor;
 		}
 	}
 
 	.dropdown-toggle {
 		width: 100%;
+		padding: .875rem;
+		border-top: 0;
+		border-bottom: 0;
 		@include border-top-radius(0);
+		@include border-bottom-radius(0);
 		text-align: left;
+		color: $black700;
+		@include font-size($fontsize300);
 
 		.caret {
 			position: absolute;
 			right: 1rem;
 			top: 45%;
 		}
+	}
+
+	.dropdown-menu {
+		width: 100%;
 	}
 }
 
