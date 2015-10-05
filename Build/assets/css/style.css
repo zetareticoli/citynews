@@ -1397,7 +1397,7 @@ input[type='text'],
 select,
 textarea {
   width: 100%;
-  padding: .8em;
+  padding: .5rem .875rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -1426,8 +1426,7 @@ label,
 
 .form-control {
   height: 2.5rem;
-  padding: .5rem .875rem;
-  line-height: 1.467;
+  line-height: 1.35rem;
   color: #424242;
   border: 2px solid #e0e0e0;
   -webkit-border-radius: 6px;

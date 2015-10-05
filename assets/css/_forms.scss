@@ -9,7 +9,7 @@ input[type='text'],
 select,
 textarea {
 	width: 100%;
-	padding: .8em;
+	padding: .5rem .875rem;
 	@include appearance(none);
 	box-shadow: none;
 	@include border-box;
@@ -38,8 +38,7 @@ label,
 
 .form-control {
 	height: 2.5rem;
-	padding: .5rem .875rem;
-	line-height: 1.467;
+	line-height: 1.35rem;
 	color: $black900;
 	border: 2px solid $bordercolor;
 	@include rounded(6px);
