@@ -12,6 +12,7 @@ textarea {
 	padding: .8em;
 	@include appearance(none);
 	box-shadow: none;
+	box-sizing: border-box;
 
 	&:focus {
 		outline: none;
@@ -226,9 +227,18 @@ input[type=checkbox]:checked + label::after {
 // Filters ===============================================================
 
 .filter-block {
-	margin-bottom: .5rem;
-	padding: .5rem 0;
-	border-bottom: $borderwidth $borderstyle $defaultbordercolor;
+	float: left;
+	width: auto;
+	margin: 0;
+
+	@include bp(l) {
+		width: auto;
+		float: none;
+		margin: 0 0 .5rem 0;
+		padding: .5rem 0;
+		border-bottom: $borderwidth $borderstyle $defaultbordercolor;
+	
+	}
 
 	h6 {
 		margin-bottom: .5rem;
@@ -245,5 +255,33 @@ input[type=checkbox]:checked + label::after {
 .filters-list {
 	> li {
 		padding: .25rem 0;
+	}
+}
+
+// Mobile filters
+
+.mobile-filters {
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $bordercolor;
+
+	.filter-block {
+		width: 50%;
+		padding-bottom: 1rem;
+
+		@include bp(m) {
+			width: 33.33%;
+		}
+	}
+
+	.dropdown-toggle {
+		display: block;
+		width: 100%;
+		text-align: left;
+
+		.caret {
+			position: absolute;
+			top: 1.25rem;
+			right: 1rem;
+		}
 	}
 }

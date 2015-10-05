@@ -730,9 +730,15 @@ strong {
 .page-title {
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
   font-weight: normal;
-  font-size: 32px;
-  font-size: 2rem;
-  color: #212121; }
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #424242; }
+  @media (min-width: 46.25em) {
+    .page-title {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
 
 .section-title {
   position: relative;
@@ -1381,7 +1387,8 @@ textarea {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  box-shadow: none; }
+  box-shadow: none;
+  box-sizing: border-box; }
   input[type='search']:focus,
   input[type='text']:focus,
   select:focus,
@@ -1564,9 +1571,16 @@ input[type=checkbox]:checked + label::after {
   padding-left: 17.5%; }
 
 .filter-block {
-  margin-bottom: .5rem;
-  padding: .5rem 0;
-  border-bottom: 1px solid #e0e0e0; }
+  float: left;
+  width: auto;
+  margin: 0; }
+  @media (min-width: 62.5em) {
+    .filter-block {
+      width: auto;
+      float: none;
+      margin: 0 0 .5rem 0;
+      padding: .5rem 0;
+      border-bottom: 1px solid #e0e0e0; } }
   .filter-block h6 {
     margin-bottom: .5rem;
     font-size: 16px;
@@ -1578,6 +1592,24 @@ input[type=checkbox]:checked + label::after {
 
 .filters-list > li {
   padding: .25rem 0; }
+
+.mobile-filters {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0; }
+  .mobile-filters .filter-block {
+    width: 50%;
+    padding-bottom: 1rem; }
+    @media (min-width: 46.25em) {
+      .mobile-filters .filter-block {
+        width: 33.33%; } }
+  .mobile-filters .dropdown-toggle {
+    display: block;
+    width: 100%;
+    text-align: left; }
+    .mobile-filters .dropdown-toggle .caret {
+      position: absolute;
+      top: 1.25rem;
+      right: 1rem; }
 
 .wrapper {
   margin: 0 auto;
@@ -1762,6 +1794,12 @@ ol, ul {
   @media (min-width: 62.5em) {
     .section {
       margin-bottom: 1.5rem; } }
+
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
 
 /* ==========================================================================
   Flexbox
@@ -3147,10 +3185,6 @@ ol, ul {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
 
-@media (min-width: 62.5em) {
-  .is-desktop {
-    display: block; } }
-
 .is-hidden.nav-children {
   -webkit-transform: translateX(-250px);
   -moz-transform: translateX(-250px);
@@ -3162,6 +3196,12 @@ ol, ul {
   height: 100%;
   position: fixed;
   overflow: hidden; }
+
+.is-desktop {
+  display: none; }
+  @media (min-width: 62.5em) {
+    .is-desktop {
+      display: block; } }
 
 .is-mobile {
   display: block; }
@@ -3442,7 +3482,8 @@ ol, ul {
 .author-photo,
 .author-twitter,
 .related-stories.inner,
-.special-story .story-summary {
+.special-story .story-summary,
+.events-search {
   display: none; }
 
 .bottom-module {
@@ -3452,7 +3493,7 @@ ol, ul {
   .story-summary,
   .story-subheading,
   .featured-story .story-footer,
-  .page-title {
+  .slim-header .page-title {
     display: none; } }
 @media (min-width: 46.25em) {
   .author-role,
@@ -3465,8 +3506,10 @@ ol, ul {
   .related-stories.bottom {
     display: none; } }
 @media (min-width: 62.5em) {
-  .special-story .story-summary {
+  .special-story .story-summary,
+  .events-search {
     display: block; }
 
-  .entry-secondary-slot {
+  .entry-secondary-slot,
+  .mobile-filters {
     display: none; } }

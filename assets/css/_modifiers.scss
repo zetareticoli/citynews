@@ -40,12 +40,6 @@
 	}
 }
 
-.is-desktop {
-	@include bp(l) {
-		display: block;
-	}
-}
-
 .is-hidden {
 	&.nav-children {
 		@include transform(translateX(-250px));
@@ -56,6 +50,14 @@
 	height: 100%;
 	position: fixed;
 	overflow: hidden;
+}
+
+.is-desktop {
+	display: none;
+	
+	@include bp(l) {
+		display: block;
+	}
 }
 
 .is-mobile {

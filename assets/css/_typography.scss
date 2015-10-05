@@ -361,8 +361,14 @@ strong {
 .page-title {
 	font-family: $titleseriftypeface;
 	font-weight: normal;
-	@include font-size($fontsize800);
-	color: $black1000;
+	@include font-size($fontsize700);
+	line-height: 1.75rem;
+	color: $black900;
+
+	@include bp(m) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
 }
 
 // Section title

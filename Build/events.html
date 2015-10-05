@@ -299,12 +299,40 @@
 
     	      <div class="line">
 
-    	      	<div class="unit filters-group is-mobile">
-    	      		<div class="">Cosa vuoi fare</div>
-    	      		<div class="">Quando</div>
+    	      	<div class="group size1of1 filters-group mobile-filters">
+
+                    <div class="unit filter-block">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Scegli cosa fare
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>  
+                    </div>
+
+                    <div class="unit filter-block">
+                       <div class="dropdown">
+                         <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                           Quando
+                           <span class="caret"></span>
+                         </button>
+                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                           <li><a href="#">Action</a></li>
+                           <li><a href="#">Another action</a></li>
+                           <li><a href="#">Something else here</a></li>
+                           <li><a href="#">Separated link</a></li>
+                         </ul>
+                       </div> 
+                    </div>
     	      	</div>
 
-    	        <div class="unit size1of4 filters-group">
+    	        <div class="unit size1of4 filters-group is-desktop">
 
                     <!-- Start Form for ajax results -->
     	          	<form>
@@ -386,9 +414,21 @@
 
     	        <div class="group size3of4">
 
-    	        	<h1 class="unit page-title">Eventi</h1>
+                    <div class="group size1of1">
 
-    		        <ul class="u-unstyled l-row multirow cards-list">
+                        <div class="unit size1of3">
+                            <h1 class="page-title">Eventi</h1>
+                        </div>
+
+                        <div class="unit size2of3 align-right events-search">
+                            <form class="form-inline">
+                                <input type="search" class="form-control" placeholder="Cerca un evento">
+                                <button type="submit" class="btn default-btn">Cerca</button>
+                            </form>
+                        </div>
+                    </div>
+
+    		        <ul class="group size1of1 u-unstyled l-row multirow cards-list">
 
     		            <li class="unit l-row-item item-span-1 cards-list-item">
     		            	<article class="card event-card">
