@@ -1,5 +1,8 @@
+// Global styles ===============================================================
+
 .cards-list-item {
 	margin-bottom: $baseline * 2;
+	width: 100%;
 
 	@include bp(m) {
 		width: 33.33%;
@@ -18,14 +21,13 @@
 
 .card {
 	background-color: $bluegrey100;
-	@include clearfix;
 }
 
 .card-header,
 .card-footer {
-	padding: 0 $gutterwidth / 2;
+	padding: $baseline;
 	@include bp(m) {
-		padding-bottom: $gutterwidth / 2;
+		padding-bottom: $baseline;
 	}
 }
 
@@ -39,37 +41,52 @@
 	}
 }
 
-.card-media {
-	width: 30%;
-	float: left;
-	margin-right: $gutterwidth / 2;
+.card .link {
+	display: block;
+	@include clearfix;
 
-	@include bp(m) {
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: $baseline;
-		float: none;
-	}
-
-	> img {
-		width: 100%;
-		height: 100%;
+	&:hover {
+		background-color: darken($bluegrey100, 5%);
+		@include transition(background-color .2s);
 	}
 }
 
-.card-rating {
-	overflow: hidden;
+// Event card ===============================================================
 
-	@include bp(m) {
-		margin-bottom: $baseline; 
-	}
-
-	li {
+.event-card {
+	.card-media {
+		width: 30%;
+		max-width: 150px;
 		float: left;
-	}
-}
+		margin-right: $gutterwidth / 2;
 
-.card-info {
-	@include font-size(14);
-	color: $bluegrey700;
+		@include bp(m) {
+			width: 100%;
+			max-width: none;
+			margin-right: 0;
+			float: none;
+		}
+
+		> img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.card-rating {
+		overflow: hidden;
+
+		@include bp(m) {
+			margin-bottom: $baseline; 
+		}
+
+		li {
+			float: left;
+		}
+	}
+
+	.card-info {
+		@include font-size(14);
+		color: $bluegrey700;
+	}
 }

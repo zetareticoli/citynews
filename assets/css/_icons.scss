@@ -39,14 +39,16 @@
 .star-icon {
 	@include max-bp(s) {
 		&.medium {
-		width: 20px;
+			width: 20px;
 		}
 	}
+
 	&.star-icon--coloured {
-	fill: $accentpink;
+		fill: $accentpink;
 	}
+
 	&.star-icon--grey {
-	fill: $bluegrey300;
+		fill: $bluegrey200;
 	}
 }
 

@@ -1039,7 +1039,7 @@ h5.location-kicker {
 .star-icon.star-icon--coloured {
   fill: #E91F63; }
 .star-icon.star-icon--grey {
-  fill: #b0bec5; }
+  fill: #cfd8dc; }
 
 .site-meteo .icon {
   fill: #757575; }
@@ -2489,7 +2489,8 @@ ol, ul {
   Cards
   ========================================================================== */
 .cards-list-item {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
   @media (min-width: 46.25em) {
     .cards-list-item {
       width: 33.33%; } }
@@ -2501,17 +2502,11 @@ ol, ul {
   .card-footer {
     display: none; } }
 .card {
-  background-color: #eceff1;
-  *zoom: 1; }
-  .card:before, .card:after {
-    content: " ";
-    display: table; }
-  .card:after {
-    clear: both; }
+  background-color: #eceff1; }
 
 .card-header,
 .card-footer {
-  padding: 0 0.5rem; }
+  padding: 0.5rem; }
   @media (min-width: 46.25em) {
     .card-header,
     .card-footer {
@@ -2527,29 +2522,42 @@ ol, ul {
       font-size: 20px;
       font-size: 1.25rem; } }
 
-.card-media {
+.card .link {
+  display: block;
+  *zoom: 1; }
+  .card .link:before, .card .link:after {
+    content: " ";
+    display: table; }
+  .card .link:after {
+    clear: both; }
+  .card .link:hover {
+    background-color: #dde3e6;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+
+.event-card .card-media {
   width: 30%;
+  max-width: 150px;
   float: left;
   margin-right: 0.5rem; }
   @media (min-width: 46.25em) {
-    .card-media {
+    .event-card .card-media {
       width: 100%;
+      max-width: none;
       margin-right: 0;
-      margin-bottom: 0.5rem;
       float: none; } }
-  .card-media > img {
+  .event-card .card-media > img {
     width: 100%;
     height: 100%; }
-
-.card-rating {
+.event-card .card-rating {
   overflow: hidden; }
   @media (min-width: 46.25em) {
-    .card-rating {
+    .event-card .card-rating {
       margin-bottom: 0.5rem; } }
-  .card-rating li {
+  .event-card .card-rating li {
     float: left; }
-
-.card-info {
+.event-card .card-info {
   font-size: 14px;
   font-size: 0.875rem;
   color: #546e7a; }
