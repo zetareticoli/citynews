@@ -1,14 +1,14 @@
 $(document).ready(function(){
   
-  $(window).scroll(function() {    
-      var scroll = $(window).scrollTop();
-      if (scroll >= 486) {
-          $(".meta-share").addClass("affixed");
-      }
-      else {
-      	$(".meta-share").removeClass("affixed");
-      }
-  });
+    $(window).on('scroll', function(){
+      (!window.requestAnimationFrame) ? fixContent() : window.requestAnimationFrame(fixContent);
+    });
+
+    function fixContent() {
+      var offsetTop = $('.main-content').offset().top,
+        scrollTop = $(window).scrollTop();
+      ( scrollTop >= offsetTop ) ? $('.main-content').addClass('is-fixed') : $('.main-content').removeClass('is-fixed');
+    }
 
   //sliding nav - open/close navigation
   $('.sliding-nav-trigger').on('click', function(event){
