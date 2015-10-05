@@ -1223,6 +1223,8 @@ a.primary-btn {
     padding-right: 1.5rem; }
 
 .dropdown .dropdown-toggle {
+  padding-left: .75rem;
+  padding-right: .75rem;
   background-color: white;
   border: 2px solid #e0e0e0;
   font-weight: 400; }
