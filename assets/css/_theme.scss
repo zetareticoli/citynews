@@ -1,3 +1,62 @@
+/* ==========================================================================
+  THEME COLORS
+  ========================================================================== */
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+// Accent Colors ===============================================================
+
+.accent-color-pink {
+	color: $accentpink;
+}
+
+.accent-color-mint {
+	color: $accentmint;
+}
+
+// Header styles common for all themes ==========================================
+
+.theme-yellow,
+.theme-red,
+.theme-blue,
+.theme-green,
+.theme-purple,
+.theme-pink {
+
+	.nav-btn {
+		.btn-label {
+			color: $black900;
+		}
+
+		.icon {
+			fill: $black900;
+		}
+	}
+
+	.logo-edition {
+		fill: white;
+	}
+
+	.logo-network {
+		fill: lighten($black1000, 10%);
+	}
+
+	.inverted  {
+		.theme-header {
+			background-color: $black1000;
+		}
+		.logo-network {
+			fill: white;
+		}	
+	}
+}
+
+/* ==========================================================================
+  Theme Yellow
+  ========================================================================== */
+
 .theme-yellow {
 
 	.theme-element-bg {
@@ -34,10 +93,19 @@
 			}
 		}
 	}
+
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-yellow;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-yellow;
+	}
 }
+
+/* ==========================================================================
+  Theme Red
+  ========================================================================== */
 
 .theme-red {
 
@@ -67,7 +135,15 @@
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-red;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-red;
+	}
 }
+
+/* ==========================================================================
+  Theme Blue
+  ========================================================================== */
 
 .theme-blue {
 
@@ -97,7 +173,15 @@
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-blue;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-blue;
+	}
 }
+
+/* ==========================================================================
+  Theme Green
+  ========================================================================== */
 
 .theme-green {
 
@@ -127,7 +211,15 @@
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-green;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-green;
+	}
 }
+
+/* ==========================================================================
+  Theme Purple
+  ========================================================================== */
 
 .theme-purple {
 
@@ -157,7 +249,15 @@
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-purple;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-purple;
+	}
 }
+
+/* ==========================================================================
+  Theme Pink
+  ========================================================================== */
 
 .theme-pink {
 
@@ -187,39 +287,10 @@
 	.inverted .theme-header .logo-edition {
 		fill: $b-c-pink;
 	}
+
+	.expand-image:hover .rounded-icon {
+		background-color: $b-c-pink;
+	}
 }
 
-.theme-yellow,
-.theme-red,
-.theme-blue,
-.theme-green,
-.theme-purple,
-.theme-pink {
-
-	.nav-btn {
-		.btn-label {
-			color: $black900;
-		}
-		.icon {
-			fill: $black900;
-		}
-	}
-
-	.logo-edition {
-		fill: white;
-	}
-
-	.logo-network {
-		fill: lighten($black1000, 10%);
-	}
-
-		.inverted  {
-			.theme-header {
-				background-color: $black1000;
-			}
-			.logo-network {
-				fill: white;
-			}	
-		}
-}
 

@@ -1,3 +1,7 @@
+/* ==========================================================================
+  ICONS
+  ========================================================================== */
+
 .icon {
 	vertical-align: middle;
 
@@ -23,6 +27,24 @@
 	&.inline-icon {
 		margin-right: 6px;
 	}
+}
+
+// Use to overlay an icon over content
+.overlay-icon {
+	display: block;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	padding: 0;
+}
+
+// Create an oval shape 
+.rounded-icon {
+	@include rounded(50%);
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: $overlay;
+	@include transition(background-color .2s ease);
 }
 
 .caret-icon {

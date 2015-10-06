@@ -565,7 +565,7 @@ small {
   font-size: 14px;
   font-size: 0.875rem; }
 
-strong {
+strong, dt {
   font-weight: 700; }
 
 .story-heading,
@@ -1013,6 +1013,14 @@ h5.location-kicker {
     padding: 0.2rem 0.6rem;
     color: #607d8b; }
 
+.description-list dt {
+  margin-bottom: 0; }
+.description-list dd {
+  margin: 0 0 .5rem 0; }
+
+/* ==========================================================================
+  ICONS
+  ========================================================================== */
 .icon {
   vertical-align: middle; }
   .icon.small {
@@ -1028,6 +1036,24 @@ h5.location-kicker {
     fill: white; }
   .icon.inline-icon {
     margin-right: 6px; }
+
+.overlay-icon {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0; }
+
+.rounded-icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(66, 66, 66, 0.25);
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
 
 .caret-icon {
   display: inline-block;
@@ -1745,13 +1771,16 @@ a:hover, a:active, a:focus {
   outline: inherit; }
 
 a, a:visited {
-  color: inherit;
+  cursor: pointer;
   text-decoration: none; }
+  a.underline, a:visited.underline {
+    border-bottom: 0.0625rem solid #dcdcdc; }
 
 .wrap-link {
   text-decoration: none; }
 
 img {
+  width: 100%;
   max-width: 100%;
   border-width: 0;
   vertical-align: middle; }
@@ -3306,105 +3335,17 @@ ol, ul {
 .has-min-width {
   min-width: 300px; }
 
-.theme-yellow .theme-element-bg:before {
-  background-color: #FFBE26; }
-.theme-yellow .theme-background {
-  background-color: #FFBE26; }
-.theme-yellow .theme-border {
-  border-color: #FFBE26; }
-.theme-yellow .theme-color {
-  color: #FFBE26; }
-  .theme-yellow .theme-color.label, .theme-yellow .theme-color.kicker {
-    color: #ffb507; }
-.theme-yellow .theme-header {
-  background-color: #FFBE26; }
-  @media (min-width: 62.5em) {
-    .theme-yellow .theme-header {
-      background-color: white; }
-      .theme-yellow .theme-header .logo-edition {
-        fill: #FFBE26; } }
-.theme-yellow .inverted .theme-header .logo-edition {
-  fill: #FFBE26; }
+/* ==========================================================================
+  THEME COLORS
+  ========================================================================== */
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+.accent-color-pink {
+  color: #E91F63; }
 
-.theme-red .theme-background {
-  background-color: #F2463D; }
-.theme-red .theme-border {
-  border-color: #F2463D; }
-.theme-red .theme-color {
-  color: #F2463D; }
-.theme-red .theme-header {
-  background-color: #F2463D; }
-  @media (min-width: 62.5em) {
-    .theme-red .theme-header {
-      background-color: white; }
-      .theme-red .theme-header .logo-edition {
-        fill: #F2463D; } }
-.theme-red .inverted .theme-header .logo-edition {
-  fill: #F2463D; }
-
-.theme-blue .theme-background {
-  background-color: #3277C7; }
-.theme-blue .theme-border {
-  border-color: #3277C7; }
-.theme-blue .theme-color {
-  color: #3277C7; }
-.theme-blue .theme-header {
-  background-color: #3277C7; }
-  @media (min-width: 62.5em) {
-    .theme-blue .theme-header {
-      background-color: white; }
-      .theme-blue .theme-header .logo-edition {
-        fill: #3277C7; } }
-.theme-blue .inverted .theme-header .logo-edition {
-  fill: #3277C7; }
-
-.theme-green .theme-background {
-  background-color: #50AE55; }
-.theme-green .theme-border {
-  border-color: #50AE55; }
-.theme-green .theme-color {
-  color: #50AE55; }
-.theme-green .theme-header {
-  background-color: #50AE55; }
-  @media (min-width: 62.5em) {
-    .theme-green .theme-header {
-      background-color: white; }
-      .theme-green .theme-header .logo-edition {
-        fill: #50AE55; } }
-.theme-green .inverted .theme-header .logo-edition {
-  fill: #50AE55; }
-
-.theme-purple .theme-background {
-  background-color: #B75DC7; }
-.theme-purple .theme-border {
-  border-color: #B75DC7; }
-.theme-purple .theme-color {
-  color: #B75DC7; }
-.theme-purple .theme-header {
-  background-color: #B75DC7; }
-  @media (min-width: 62.5em) {
-    .theme-purple .theme-header {
-      background-color: white; }
-      .theme-purple .theme-header .logo-edition {
-        fill: #B75DC7; } }
-.theme-purple .inverted .theme-header .logo-edition {
-  fill: #B75DC7; }
-
-.theme-pink .theme-background {
-  background-color: #F291B2; }
-.theme-pink .theme-border {
-  border-color: #F291B2; }
-.theme-pink .theme-color {
-  color: #F291B2; }
-.theme-pink .theme-header {
-  background-color: #F291B2; }
-  @media (min-width: 62.5em) {
-    .theme-pink .theme-header {
-      background-color: white; }
-      .theme-pink .theme-header .logo-edition {
-        fill: #F291B2; } }
-.theme-pink .inverted .theme-header .logo-edition {
-  fill: #F291B2; }
+.accent-color-mint {
+  color: mint; }
 
 .theme-yellow .nav-btn .btn-label,
 .theme-red .nav-btn .btn-label,
@@ -3448,6 +3389,136 @@ ol, ul {
 .theme-purple .inverted .logo-network,
 .theme-pink .inverted .logo-network {
   fill: white; }
+
+/* ==========================================================================
+  Theme Yellow
+  ========================================================================== */
+.theme-yellow .theme-element-bg:before {
+  background-color: #FFBE26; }
+.theme-yellow .theme-background {
+  background-color: #FFBE26; }
+.theme-yellow .theme-border {
+  border-color: #FFBE26; }
+.theme-yellow .theme-color {
+  color: #FFBE26; }
+  .theme-yellow .theme-color.label, .theme-yellow .theme-color.kicker {
+    color: #ffb507; }
+.theme-yellow .theme-header {
+  background-color: #FFBE26; }
+  @media (min-width: 62.5em) {
+    .theme-yellow .theme-header {
+      background-color: white; }
+      .theme-yellow .theme-header .logo-edition {
+        fill: #FFBE26; } }
+.theme-yellow .inverted .theme-header .logo-edition {
+  fill: #FFBE26; }
+.theme-yellow .expand-image:hover .rounded-icon {
+  background-color: #FFBE26; }
+
+/* ==========================================================================
+  Theme Red
+  ========================================================================== */
+.theme-red .theme-background {
+  background-color: #F2463D; }
+.theme-red .theme-border {
+  border-color: #F2463D; }
+.theme-red .theme-color {
+  color: #F2463D; }
+.theme-red .theme-header {
+  background-color: #F2463D; }
+  @media (min-width: 62.5em) {
+    .theme-red .theme-header {
+      background-color: white; }
+      .theme-red .theme-header .logo-edition {
+        fill: #F2463D; } }
+.theme-red .inverted .theme-header .logo-edition {
+  fill: #F2463D; }
+.theme-red .expand-image:hover .rounded-icon {
+  background-color: #F2463D; }
+
+/* ==========================================================================
+  Theme Blue
+  ========================================================================== */
+.theme-blue .theme-background {
+  background-color: #3277C7; }
+.theme-blue .theme-border {
+  border-color: #3277C7; }
+.theme-blue .theme-color {
+  color: #3277C7; }
+.theme-blue .theme-header {
+  background-color: #3277C7; }
+  @media (min-width: 62.5em) {
+    .theme-blue .theme-header {
+      background-color: white; }
+      .theme-blue .theme-header .logo-edition {
+        fill: #3277C7; } }
+.theme-blue .inverted .theme-header .logo-edition {
+  fill: #3277C7; }
+.theme-blue .expand-image:hover .rounded-icon {
+  background-color: #3277C7; }
+
+/* ==========================================================================
+  Theme Green
+  ========================================================================== */
+.theme-green .theme-background {
+  background-color: #50AE55; }
+.theme-green .theme-border {
+  border-color: #50AE55; }
+.theme-green .theme-color {
+  color: #50AE55; }
+.theme-green .theme-header {
+  background-color: #50AE55; }
+  @media (min-width: 62.5em) {
+    .theme-green .theme-header {
+      background-color: white; }
+      .theme-green .theme-header .logo-edition {
+        fill: #50AE55; } }
+.theme-green .inverted .theme-header .logo-edition {
+  fill: #50AE55; }
+.theme-green .expand-image:hover .rounded-icon {
+  background-color: #50AE55; }
+
+/* ==========================================================================
+  Theme Purple
+  ========================================================================== */
+.theme-purple .theme-background {
+  background-color: #B75DC7; }
+.theme-purple .theme-border {
+  border-color: #B75DC7; }
+.theme-purple .theme-color {
+  color: #B75DC7; }
+.theme-purple .theme-header {
+  background-color: #B75DC7; }
+  @media (min-width: 62.5em) {
+    .theme-purple .theme-header {
+      background-color: white; }
+      .theme-purple .theme-header .logo-edition {
+        fill: #B75DC7; } }
+.theme-purple .inverted .theme-header .logo-edition {
+  fill: #B75DC7; }
+.theme-purple .expand-image:hover .rounded-icon {
+  background-color: #B75DC7; }
+
+/* ==========================================================================
+  Theme Pink
+  ========================================================================== */
+.theme-pink .theme-background {
+  background-color: #F291B2; }
+.theme-pink .theme-border {
+  border-color: #F291B2; }
+.theme-pink .theme-color {
+  color: #F291B2; }
+.theme-pink .theme-header {
+  background-color: #F291B2; }
+  @media (min-width: 62.5em) {
+    .theme-pink .theme-header {
+      background-color: white; }
+      .theme-pink .theme-header .logo-edition {
+        fill: #F291B2; } }
+.theme-pink .inverted .theme-header .logo-edition {
+  fill: #F291B2; }
+.theme-pink .expand-image:hover .rounded-icon {
+  background-color: #F291B2; }
 
 /* ==========================================================================
   SLOTS

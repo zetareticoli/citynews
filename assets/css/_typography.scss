@@ -129,9 +129,11 @@ small {
 	@include font-size($fontsize200);
 }
 
-strong {
+strong,dt {
 	font-weight: 700;
 }
+
+
 
 
 // Headings =====================================================================
@@ -714,3 +716,19 @@ time,
 		color: $bluegrey600;
 	}
 }
+
+// Lists =====================================================================
+
+// Description List
+
+.description-list {
+	
+	dt {
+		margin-bottom: 0;
+	}
+
+	dd {
+		margin: 0 0 .5rem 0;
+	}
+}
+

@@ -34,8 +34,12 @@ a:hover, a:active, a:focus {
 }
 
 a,a:visited {
-	color: inherit;
+	cursor: pointer;
 	text-decoration: none;
+
+	&.underline {
+		border-bottom: 0.0625rem solid #dcdcdc;
+	}
 }
 
 .wrap-link {
@@ -43,6 +47,7 @@ a,a:visited {
 }
 
 img {
+	width: 100%;
 	max-width: 100%;
 	border-width: 0;
 	vertical-align: middle;

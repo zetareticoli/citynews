@@ -106,6 +106,7 @@ $entry-content-offset	: 180px;
 }
 
 .entry-content-body {
+	clear: left;
 
 	> p {
 		margin-bottom: $baseline * 2;
@@ -154,6 +155,14 @@ $entry-content-offset	: 180px;
 	margin: 0 -0.5rem $baseline * 2;
 	width: 100%;
 
+	&.small-media {
+		width: 50%;
+
+		@include bp(m) {
+			width: 15rem;
+		}
+	}
+
 	@include bp(m) {
 		float: left;
 		margin: 0 0 $baseline * 2;
@@ -171,5 +180,87 @@ $entry-content-offset	: 180px;
 	@include bp(xl) {
 		margin-bottom: $baseline * 4;
 		width: 38rem;
+	}
+}
+
+// Entry Map ===============================================================
+
+.static-map {
+	float: left;
+	overflow: hidden;
+
+	@include bp(l) {
+		.map-thumbnail {
+			@include transform(scale(1,1));
+			@include transition(transform .2s ease);
+		}
+
+		&:hover {
+
+			.map-thumbnail {
+				@include transform(scale(1.25,1.25));
+				@include transition(transform .2s ease);
+			}
+		}
+	}
+}
+
+// Event Meta ===============================================================
+
+.event-details {
+	margin-bottom: 1rem;
+	background: $black200;
+	@include clearfix;
+
+	@include bp(xl) {
+		margin-left: 13rem;
+	}
+
+	.entry-media {
+		margin: 0;
+		float: left;
+	}
+
+	.static-map {
+		position: relative;
+		width: 50%;
+
+		@include bp(m) {
+			width: auto;
+		}
+	}
+
+	.description-list {
+		width: 100%;
+		padding: .5rem;
+		float: left;
+
+		@include bp(m) {
+			width: 15rem;
+		}
+
+		@include bp(l) {
+			padding: 1rem 2rem;
+			width: 25rem;
+		}
+
+		dt {
+			font-family: $brandtypeface;
+			text-transform: lowercase;
+			color: $black600;
+		}
+
+		dd {
+			color: $black900;
+			@include font-size($fontsize200);
+
+			@include bp(l) {
+				@include font-size($fontsize400);
+			}
+
+			span {
+				display: block;
+			}
+		}
 	}
 }
