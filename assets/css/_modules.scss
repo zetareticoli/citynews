@@ -99,6 +99,80 @@
 }
 
 /* ==========================================================================
+  Discussion
+  ========================================================================== */
+
+.discussion-section{
+    .discussion-login{
+            margin-top: 1.5rem;
+            @include bp(l){
+                margin-top: 0;
+            }
+            figure{
+                display: none;
+                @include bp(l){
+                    display: block;
+                }
+            }
+            form{
+                margin-bottom: 2.5rem;
+                textarea{
+                    border: 0.125rem solid #666666;
+                }
+            }
+        }
+    .discussion-single{
+        margin-bottom: 4rem;
+        p{
+            margin-top: 2rem;
+            @include bp(l) {
+                margin-top: 1rem;
+                margin-left: 4.5rem;
+	        }
+        }
+        h4{
+            font-size: 0.850rem;
+            margin-bottom: 0;
+            padding-top: 0.750rem;
+            @include bp(m) {
+                font-size: 1rem;
+            }
+        }
+    }
+    .entry-labels{
+        a{
+            font-size: 0.750rem;
+            display: block;
+            line-height: 1.250rem;
+        }
+    }
+
+    .group-link{
+        @include bp(l) {
+            margin-left: 4.5rem;
+	    }
+        a{
+            font-size: 0.750rem;
+            margin-right: 0.500rem;
+            line-height: 1.250rem;
+        }
+    }
+    span{ /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
+        display: inline;
+        margin: 0;
+        top: 0.600rem;
+        position: relative;
+        right: -0.500rem;
+    }
+    .load-discussion{
+        margin: 0 auto;
+        @include bp(l){
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+/* ==========================================================================
   Related
   ========================================================================== */
 

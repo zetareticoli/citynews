@@ -2545,6 +2545,62 @@ ol, ul {
       right: 1rem; }
 
 /* ==========================================================================
+  Discussion
+  ========================================================================== */
+.discussion-section .discussion-login {
+  margin-top: 1.5rem; }
+  @media (min-width: 62.5em) {
+    .discussion-section .discussion-login {
+      margin-top: 0; } }
+  .discussion-section .discussion-login figure {
+    display: none; }
+    @media (min-width: 62.5em) {
+      .discussion-section .discussion-login figure {
+        display: block; } }
+  .discussion-section .discussion-login form {
+    margin-bottom: 2.5rem; }
+    .discussion-section .discussion-login form textarea {
+      border: 0.125rem solid #666666; }
+.discussion-section .discussion-single {
+  margin-bottom: 4rem; }
+  .discussion-section .discussion-single p {
+    margin-top: 2rem; }
+    @media (min-width: 62.5em) {
+      .discussion-section .discussion-single p {
+        margin-top: 1rem;
+        margin-left: 4.5rem; } }
+  .discussion-section .discussion-single h4 {
+    font-size: 0.850rem;
+    margin-bottom: 0;
+    padding-top: 0.750rem; }
+    @media (min-width: 46.25em) {
+      .discussion-section .discussion-single h4 {
+        font-size: 1rem; } }
+.discussion-section .entry-labels a {
+  font-size: 0.750rem;
+  display: block;
+  line-height: 1.250rem; }
+@media (min-width: 62.5em) {
+  .discussion-section .group-link {
+    margin-left: 4.5rem; } }
+.discussion-section .group-link a {
+  font-size: 0.750rem;
+  margin-right: 0.500rem;
+  line-height: 1.250rem; }
+.discussion-section span {
+  /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
+  display: inline;
+  margin: 0;
+  top: 0.600rem;
+  position: relative;
+  right: -0.500rem; }
+.discussion-section .load-discussion {
+  margin: 0 auto; }
+  @media (min-width: 62.5em) {
+    .discussion-section .load-discussion {
+      padding-bottom: 1rem; } }
+
+/* ==========================================================================
   Related
   ========================================================================== */
 .related-stories.inner {
