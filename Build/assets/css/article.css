@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Article
+  Entry
   ========================================================================== */
 .entry {
   padding: 0 0.5rem 1rem;
@@ -127,6 +127,9 @@
     width: 50%; }
     @media (min-width: 46.25em) {
       .entry-media.small-media {
+        width: 14rem; } }
+    @media (min-width: 62.5em) {
+      .entry-media.small-media {
         width: 15rem; } }
   @media (min-width: 46.25em) {
     .entry-media {
@@ -139,73 +142,3 @@
   .entry-footer {
     margin-bottom: 2rem;
     width: 38rem; } }
-
-.static-map {
-  float: left;
-  overflow: hidden; }
-  @media (min-width: 62.5em) {
-    .static-map .map-thumbnail {
-      -webkit-transform: scale(1, 1);
-      -moz-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-      -o-transform: scale(1, 1);
-      transform: scale(1, 1);
-      -webkit-transition: -webkit-transform 0.2s ease;
-      -moz-transition: -moz-transform 0.2s ease;
-      transition: transform 0.2s ease; }
-    .static-map:hover .map-thumbnail {
-      -webkit-transform: scale(1.25, 1.25);
-      -moz-transform: scale(1.25, 1.25);
-      -ms-transform: scale(1.25, 1.25);
-      -o-transform: scale(1.25, 1.25);
-      transform: scale(1.25, 1.25);
-      -webkit-transition: -webkit-transform 0.2s ease;
-      -moz-transition: -moz-transform 0.2s ease;
-      transition: transform 0.2s ease; } }
-
-.event-details {
-  margin-bottom: 1rem;
-  background: #f5f5f5;
-  *zoom: 1; }
-  .event-details:before, .event-details:after {
-    content: " ";
-    display: table; }
-  .event-details:after {
-    clear: both; }
-  @media (min-width: 75em) {
-    .event-details {
-      margin-left: 13rem; } }
-  .event-details .entry-media {
-    margin: 0;
-    float: left; }
-  .event-details .static-map {
-    position: relative;
-    width: 50%; }
-    @media (min-width: 46.25em) {
-      .event-details .static-map {
-        width: auto; } }
-  .event-details .description-list {
-    width: 100%;
-    padding: .5rem;
-    float: left; }
-    @media (min-width: 46.25em) {
-      .event-details .description-list {
-        width: 15rem; } }
-    @media (min-width: 62.5em) {
-      .event-details .description-list {
-        padding: 1rem 2rem;
-        width: 25rem; } }
-    .event-details .description-list dt {
-      font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
-      text-transform: lowercase;
-      color: #9e9e9e; }
-    .event-details .description-list dd {
-      color: #424242;
-      font-size: 14px;
-      font-size: 0.875rem; }
-      @media (min-width: 62.5em) {
-        .event-details .description-list dd {
-          font-size: 18px;
-          font-size: 1.125rem; } }
-      .event-details .description-list dd span {
-        display: block; }
