@@ -23,7 +23,7 @@ $entry-content-offset	: 180px;
 
 	@include bp(l) {
 		margin-bottom: $baseline * 2;
-		padding: 0 $baseline * 2;
+		padding: 0 $baseline * 2 $baseline * 3;
 	}
 }
 
@@ -84,24 +84,21 @@ $entry-content-offset	: 180px;
 	position: relative;
 
 	@include bp(l) {
+		float: left;
+		margin-right: 2rem;
 		width: 37.5rem;
-		margin-right: 22rem;
 	}
 
 	@include bp(xl) {
-		margin: 0 $gutterwidth 0 13rem;
+		margin: 0 1rem 0 13rem;
 	}
 }
 
 .content-secondary-column {
-	display: none;
-	width: 22rem;
+	width: 20rem;
 
 	@include bp(l) {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
+		float: left;
 	}
 }
 

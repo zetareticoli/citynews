@@ -16,7 +16,7 @@
   @media (min-width: 62.5em) {
     .entry {
       margin-bottom: 1rem;
-      padding: 0 1rem; } }
+      padding: 0 1rem 1.5rem; } }
 
 @media (min-width: 75em) {
   .entry-title,
@@ -69,21 +69,18 @@
   position: relative; }
   @media (min-width: 62.5em) {
     .content-main-column {
-      width: 37.5rem;
-      margin-right: 22rem; } }
+      float: left;
+      margin-right: 2rem;
+      width: 37.5rem; } }
   @media (min-width: 75em) {
     .content-main-column {
       margin: 0 1rem 0 13rem; } }
 
 .content-secondary-column {
-  display: none;
-  width: 22rem; }
+  width: 20rem; }
   @media (min-width: 62.5em) {
     .content-secondary-column {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0; } }
+      float: left; } }
 
 .entry-content-body {
   clear: left; }
