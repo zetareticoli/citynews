@@ -339,7 +339,7 @@ ol, ul {
 		z-index: 6;
 
 		@include bp(l) {
-			border-bottom: 3px solid $bordercolor;
+			border-bottom: 2px solid $bordercolor;
 		}
 	}
 

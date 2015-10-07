@@ -732,13 +732,19 @@ strong, dt {
   font-weight: normal;
   font-size: 28px;
   font-size: 1.75rem;
-  line-height: 1.75rem;
-  color: #424242; }
+  line-height: 1.75rem; }
   @media (min-width: 46.25em) {
     .page-title {
       font-size: 32px;
       font-size: 2rem;
       line-height: 2.5rem; } }
+
+.page-title,
+.page-title .link {
+  color: #424242; }
+  .page-title:hover,
+  .page-title .link:hover {
+    text-decoration: none; }
 
 .section-title {
   position: relative;
@@ -924,25 +930,34 @@ h5.location-kicker {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #e0e0e0; }
 
-.link {
-  text-decoration: none;
+.link,
+.link:hover .story-heading,
+.block-link:hover {
+  text-decoration: none; }
+
+.story-heading .link,
+.block-link .story-heading,
+.block-link .card-heading {
+  color: #424242;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   transition: color 0.3s ease; }
 
-.story-heading .link {
-  color: #424242; }
-  .story-heading .link:hover {
-    color: #212121; }
+.story-heading .link:hover,
+.block-link:hover .story-heading,
+.block-link:hover .card-heading {
+  color: #212121; }
 
 .sublink .link {
   color: #616161; }
   .sublink .link:hover {
     color: #424242; }
 
-.inverted .link {
+.inverted .link,
+.inverted .block-link .story-heading {
   color: white; }
-  .inverted .link:hover {
+  .inverted .link:hover,
+  .inverted .block-link .story-heading:hover {
     color: #bdbdbd; }
 
 .location-kicker .link {
@@ -950,22 +965,28 @@ h5.location-kicker {
   .location-kicker .link:hover {
     color: #616161; }
 
-.theme-yellow .inverted .link:hover {
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading {
   color: #FFBE26; }
 
-.theme-blue .inverted .link:hover {
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading {
   color: #3277C7; }
 
-.theme-red .inverted .link:hover {
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading {
   color: #F2463D; }
 
-.theme-green .inverted .link:hover {
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading {
   color: #50AE55; }
 
-.theme-pink .inverted .link:hover {
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading {
   color: #F291B2; }
 
-.theme-purple .inverted .link:hover {
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading {
   color: #B75DC7; }
 
 .site-date,
@@ -2058,7 +2079,7 @@ ol, ul {
     z-index: 6; }
     @media (min-width: 62.5em) {
       .slim-header .header-top {
-        border-bottom: 3px solid #e0e0e0; } }
+        border-bottom: 2px solid #e0e0e0; } }
   .slim-header .header-brand {
     margin-right: 1.5rem; }
     .slim-header .header-brand .logo {
@@ -2790,15 +2811,15 @@ ol, ul {
       font-size: 20px;
       font-size: 1.25rem; } }
 
-.card .link {
+.card .block-link {
   display: block;
   *zoom: 1; }
-  .card .link:before, .card .link:after {
+  .card .block-link:before, .card .block-link:after {
     content: " ";
     display: table; }
-  .card .link:after {
+  .card .block-link:after {
     clear: both; }
-  .card .link:hover {
+  .card .block-link:hover {
     background-color: #dde3e6;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;

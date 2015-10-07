@@ -365,11 +365,19 @@ strong,dt {
 	font-weight: normal;
 	@include font-size($fontsize700);
 	line-height: 1.75rem;
-	color: $black900;
 
 	@include bp(m) {
 		@include font-size($fontsize800);
 		line-height: 2.5rem;
+	}
+}
+
+.page-title,
+.page-title .link {
+	color: $black900;
+
+	&:hover {
+		text-decoration: none;
 	}
 }
 
@@ -599,66 +607,79 @@ time,
 
 // Links ===============================================================
 
-.link {
+.link,
+.link:hover .story-heading,
+.block-link:hover {
 	text-decoration: none;
+}
+
+.story-heading .link,
+.block-link .story-heading,
+.block-link .card-heading {
+	color: $black900;
 	@include transition(color .3s ease);
 }
 
-	.story-heading .link {
+.story-heading .link:hover,
+.block-link:hover .story-heading,
+.block-link:hover .card-heading {
+	color: $black1000;
+}
+
+.sublink .link {
+	color: $black800;
+
+	&:hover {
 		color: $black900;
+	}	
+}
 
-		&:hover {
-			color: $black1000;
-		}
+.inverted .link,
+.inverted .block-link .story-heading {
+	color: white;
+
+	&:hover {
+		color: $black500;
 	}
+}
 
-	.sublink .link {
+.location-kicker .link {
+	color: $black600;
+
+	&:hover {
 		color: $black800;
-
-		&:hover {
-			color: $black900;
-		}	
 	}
+}
 
-	.inverted .link {
-		color: white;
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading {
+	color: $b-c-yellow;
+}
 
-		&:hover {
-			color: $black500;
-		}
-	}
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading  {
+	color: $b-c-blue;
+}
 
-	.location-kicker .link {
-		color: $black600;
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading  {
+	color: $b-c-red;
+}
 
-		&:hover {
-			color: $black800;
-		}
-	}
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading  {
+	color: $b-c-green;
+}
 
-	.theme-yellow .inverted .link:hover {
-		color: $b-c-yellow;
-	}
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading  {
+	color: $b-c-pink;
+}
 
-	.theme-blue .inverted .link:hover {
-		color: $b-c-blue;
-	}
-
-	.theme-red .inverted .link:hover {
-		color: $b-c-red;
-	}
-
-	.theme-green .inverted .link:hover {
-		color: $b-c-green;
-	}
-
-	.theme-pink .inverted .link:hover {
-		color: $b-c-pink;
-	}
-
-	.theme-purple .inverted .link:hover {
-		color: $b-c-purple;
-	}
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading  {
+	color: $b-c-purple;
+}
 
 // Timestamp & Meteo ===============================================================
 
