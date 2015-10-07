@@ -427,7 +427,7 @@ strong,dt {
 
 // Content text 
 
-.text-paragraph {
+.entry-content-body > p {
 	@include bp(m) {
 		@include font-size($fontsize500);
 		line-height: 2rem;
@@ -607,6 +607,16 @@ time,
 
 // Links ===============================================================
 
+.entry-content-body > p > a {
+	text-decoration: none !important;
+	border-bottom: 0.0625rem solid $bordercolor;
+	@include transition(border .2s ease-out);
+
+	&:hover {
+		border-bottom-color: darken($bordercolor, 15%);
+	}
+}
+
 .link,
 .link:hover .story-heading,
 .block-link:hover {
@@ -626,7 +636,8 @@ time,
 	color: $black1000;
 }
 
-.sublink .link {
+.sublink .link,
+.entry-label .link {
 	color: $black800;
 
 	&:hover {

@@ -64,7 +64,6 @@ $entry-content-offset	: 180px;
 
 .entry-label {
 	position: relative;
-	margin: 0 0 $baseline;
 
 	&.category-label {
 		display: inline-block;
@@ -130,9 +129,6 @@ $entry-content-offset	: 180px;
 		border-bottom: 1px solid $bordercolor;
 	}
 
-	@include bp(l) {
-	}
-
 	@include bp(xl) {
 		position: absolute;
 		top: 100%;
@@ -142,6 +138,7 @@ $entry-content-offset	: 180px;
 		padding-bottom: 0;
 		padding-top: 0;
 		border-top: 0;
+		z-index: 1;
 	}
 }
 

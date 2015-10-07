@@ -8,11 +8,13 @@
 
 // Accent Colors ===============================================================
 
-.accent-color-pink {
+.accent-color-pink,
+.accent-color-pink .link {
 	color: $accentpink;
 }
 
-.accent-color-mint {
+.accent-color-mint,
+.accent-color-mint .link {
 	color: $accentmint;
 }
 
@@ -73,7 +75,8 @@
 		border-color: $b-c-yellow;
 	}
 
-	.theme-color {
+	.theme-color,
+	.theme-color .link {
 		color: $b-c-yellow;
 
 		&.label,
@@ -117,7 +120,8 @@
 		border-color: $b-c-red;
 	}
 
-	.theme-color {
+	.theme,
+	.theme-color .link {
 		color: $b-c-red;
 	}
 
@@ -155,7 +159,8 @@
 		border-color: $b-c-blue;
 	}
 
-	.theme-color {
+	.theme-color,
+	.theme-color .link {
 		color: $b-c-blue;
 	}
 
@@ -193,7 +198,8 @@
 		border-color: $b-c-green;
 	}
 
-	.theme-color {
+	.theme-color,
+	.theme-color .link {
 		color: $b-c-green;
 	}
 
@@ -231,7 +237,8 @@
 		border-color: $b-c-purple;
 	}
 
-	.theme-color {	
+	.theme-color,
+	.theme-color .link {	
 		color: $b-c-purple;
 	}
 
@@ -269,7 +276,8 @@
 		border-color: $b-c-pink;
 	}
 
-	.theme-color {
+	.theme-color,
+	.theme-color .link {
 		color: $b-c-pink;
 	}
 
