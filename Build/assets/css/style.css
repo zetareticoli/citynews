@@ -3513,6 +3513,12 @@ ol, ul {
     .is-mobile {
       display: none; } }
 
+.is-up-to-tablet {
+  display: block; }
+  @media (min-width: 62.5em) {
+    .is-up-to-tablet {
+      display: none; } }
+
 .is-nav-open .mobile-nav {
   -webkit-transform: translateX(-250px);
   -moz-transform: translateX(-250px);

@@ -85,6 +85,14 @@
 	}
 }
 
+.is-up-to-tablet {
+	display: block;
+
+	@include bp(l) {
+		display: none;
+	}
+}
+
 .is-nav-open {
 	.mobile-nav {
 		@include transform(translateX(-250px));
