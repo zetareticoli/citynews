@@ -3368,6 +3368,37 @@ ol, ul {
       fill: lightblue; }
 
 /* ==========================================================================
+  Pagination
+  ========================================================================== */
+.pagination.default-pagination, .pagination.loadmore-pagination {
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center; }
+.pagination.default-pagination > li {
+  border-right: 1px solid #e0e0e0;
+  display: inline-block;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem; }
+  .pagination.default-pagination > li:last-child {
+    border-right: 0; }
+.pagination.default-pagination > li > a {
+  margin-left: -.25rem;
+  padding: .475rem 1.15rem;
+  border: 0;
+  color: #9e9e9e;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+  .pagination.default-pagination > li > a:hover {
+    background: none;
+    color: #858585; }
+.pagination.default-pagination > li.active > a {
+  background: none;
+  color: #212121; }
+
+/* ==========================================================================
   Tags
   ========================================================================== */
 .tags-list {
