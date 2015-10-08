@@ -1,64 +1,61 @@
-<section class="section discussion-section entry">
-    <div class="line">
-        <div class="unit size1of1">
+<!-- @todo Review Discussion -->
+<section class="section discussion-section">
+    <div class="line">        
+        <div class="group size1of1">
             <div class="unit size1of6">
-                <div class="entry-labels">
-                    <h3>12<br> Commenti</h3>
-                    <a class="link" href="#">Aggiorna ultimi commenti</a>
-                    <a class="link" href="#">Feed RSS</a>
+                <div class="discussion-head">
+                    <h3>Commenti <span class="discussion-counter">(35)</span></h3>
+                    <ul class="u-unstyled discussion-actions is-desktop">
+                        <li><a class="btn link-btn discussion-action" href="#">Aggiorna discussione</a></li>
+                        <li><a class="btn link-btn discussion-action" href="#">Feed RSS</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="unit size5of6">
-                    <div class="size5of6 discussion-login">
-                        <figure class="unit">
-                            <picture>
-                                <source srcset="assets/images/author-photo.png" media="(min-width: 62.5em)">
-                                <img srcset="assets/images/author-photo.png" alt="Autore commento">
-                            </picture>
-                        </figure>
-                        <form class="unit size5of6">
-                            <textarea placeholder="Registrati o Accedi per lasciare il tuo commento"></textarea>
-                        </form>
+            <div class="group size5of6">
+                <div class="unit size3of4">
+                    <div class="discussion-comment-box">
+                        <div class="comment-box-author">
+                            <figure class="comment-author-photo is-desktop">
+                                    <img srcset="assets/images/author-photo.png" alt="Autore commento">
+                            </figure>
+                            <div class="comment-box-meta">
+                                <span class="comment-author-label">Sei connesso come</span>
+                                <span class="comment-author-name">John Doe</span>
+                            </div>
+                        </div> 
+                        <div class="comment-box-content">
+                            <form class="inline-form">
+                                    <textarea class="form-control" placeholder="Registrati o Accedi per lasciare il tuo commento"></textarea>
+                                    <button class="btn primary-btn comment-submit-btn">Invia Commento</button>
+                                    <span class="comment-box-options"><a href="#" class="btn link-btn">Opzioni Avanzate</a></span>
+                            </form>
+                        </div>                                   
                     </div>
-                    <ul class="u-unstyled lr-row multirow size3of4">
-                        
-                        <li class="discussion-single">
-                            <article>
-                                <figure class="unit">
-                                        <picture>
-                                            <source srcset="assets/images/author-photo.png">
-                                            <img srcset="assets/images/author-photo.png" alt="Autore commento">
-                                        </picture>
-                                </figure>
-                                <h4 class="unit">Megan Hernandez</h4> <span class="timestamp">21 Giu 2015</span>
-                                <p>Madrid sta in Europa e non &egrave; all'indice come paese da pratiche poliziesche crudeli quindi perch&egrave; a Madrid i vigilantes accorrrono danno una scarica di legnate e arrestano e qui non si vuole fare? A questo punto se non si vuole fare i vigilanti cosa vigilano? Meglio licenziare e risparmiare gli stipendi.</p>
-                                <div class="group-link">
-                                    <a href="#" class="link">Rispondi</a>
-                                    <a href="#" class="link">Cita</a>
-                                    <a href="#" class="link">Segnala</a>
-                                </div>
-                            </article>
+                    <ul class="u-unstyled discussion-thread">    
+                        <li class="thread-comment">
+                            <!-- @include _comment -->
+
+                            <ul class="u-unstyled nested-thread">
+                                <li class="thread-comment">
+                                    <!-- @include _comment -->
+                                </li>
+                                <li class="thread-comment">
+                                    <!-- @include _comment -->
+
+                                    <ul class="u-unstyled discussion-thread">
+                                        <li class="thread-comment">
+                                            <!-- @include _comment -->
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="discussion-single">
-                            <article>
-                                <figure class="unit">
-                                        <picture>
-                                            <source srcset="assets/images/author-photo.png">
-                                            <img srcset="assets/images/author-photo.png" alt="Autore commento">
-                                        </picture>
-                                </figure>
-                                <h4 class="unit">Megan Hernandez</h4> <span class="timestamp">21 Giu 2015</span>
-                                <p>Madrid sta in Europa e non &egrave; all'indice come paese da pratiche poliziesche crudeli quindi perch&egrave; a Madrid i vigilantes accorrrono danno una scarica di legnate e arrestano e qui non si vuole fare? A questo punto se non si vuole fare i vigilanti cosa vigilano? Meglio licenziare e risparmiare gli stipendi.</p>
-                                <div class="group-link">
-                                    <a href="#" class="link">Rispondi</a>
-                                    <a href="#" class="link">Cita</a>
-                                    <a href="#" class="link">Segnala</a>
-                                </div>
-                            </article>
+                        <li class="thread-comment">
+                            <!-- @include _comment -->        
                         </li>
-                        
                     </ul>
-                <div class="size5of6 load-discussion"><a class="size3of4 btn btn-lg default-btn" href="">Carica altri commenti</a></div>
+                    <button class="btn btn-lg btn-block default-btn thread-load" href="">Carica altri commenti</button>
+                </div>
             </div>
         </div>
     </div>

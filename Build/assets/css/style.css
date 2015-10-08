@@ -1254,7 +1254,8 @@ a.primary-btn {
     color: white;
     background-color: #2d3940; }
 
-.link-btn {
+.link-btn,
+a.link-btn {
   padding: 0;
   position: relative;
   background-color: transparent; }
@@ -2640,77 +2641,123 @@ ol, ul {
 /* ==========================================================================
   Discussion
   ========================================================================== */
-.discussion-section .discussion-login {
-  margin-top: 1.5rem; }
-  @media (min-width: 62.5em) {
-    .discussion-section .discussion-login {
-      margin-top: 0; } }
-  .discussion-section .discussion-login figure {
-    display: none; }
-    @media (min-width: 62.5em) {
-      .discussion-section .discussion-login figure {
-        display: block; } }
-  .discussion-section .discussion-login form {
-    margin-bottom: 2.5rem; }
-    .discussion-section .discussion-login form textarea {
-      border: 0.125rem solid #666666; }
-.discussion-section .discussion-single {
-  margin-bottom: 4rem;
-  *zoom: 1; }
-  .discussion-section .discussion-single:before, .discussion-section .discussion-single:after {
-    content: " ";
-    display: table; }
-  .discussion-section .discussion-single:after {
-    clear: both; }
-  .discussion-section .discussion-single p {
-    margin-top: 2rem; }
-    @media (min-width: 62.5em) {
-      .discussion-section .discussion-single p {
-        margin-top: 1rem;
-        margin-left: 4.5rem; } }
-  .discussion-section .discussion-single h4 {
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-size: 14;
-    margin-bottom: 0;
-    padding-top: 0.750rem; }
-    @media (min-width: 46.25em) {
-      .discussion-section .discussion-single h4 {
-        font-size: 16px;
-        font-size: 1rem; } }
-  .discussion-section .discussion-single .discussion-reply {
-    margin-top: 1rem; }
-    @media (min-width: 46.25em) {
-      .discussion-section .discussion-single .discussion-reply {
-        margin-left: 4rem; } }
-    .discussion-section .discussion-single .discussion-reply .discussion-single {
-      margin-bottom: 1rem; }
+.discussion-section {
+  border-bottom: 0.15rem solid #e0e0e0; }
+  .discussion-section .discussion-thread {
+    width: 100%; }
+    .discussion-section .discussion-thread .nested-thread {
+      padding-left: 2rem; }
       @media (min-width: 46.25em) {
-        .discussion-section .discussion-single .discussion-reply .discussion-single {
-          margin-bottom: 0; } }
-.discussion-section .entry-labels a {
-  font-size: 0.750rem;
-  display: block;
-  line-height: 1.250rem; }
-@media (min-width: 62.5em) {
-  .discussion-section .group-link {
-    margin-left: 4.5rem; } }
-.discussion-section .group-link a {
-  font-size: 0.750rem;
-  margin-right: 0.500rem;
-  line-height: 1.250rem; }
-.discussion-section .timestamp {
-  /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
-  display: inline;
-  margin: 0;
-  top: 0.600rem;
-  position: relative;
-  right: -0.500rem; }
-.discussion-section .load-discussion {
-  margin: 0 auto; }
-  @media (min-width: 62.5em) {
-    .discussion-section .load-discussion {
-      padding-bottom: 1rem; } }
+        .discussion-section .discussion-thread .nested-thread {
+          padding-left: 4rem; } }
+  .discussion-section .discussion-comment-box {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0; }
+  .discussion-section .comment-box-author {
+    *zoom: 1;
+    margin-bottom: .5rem; }
+    .discussion-section .comment-box-author:before, .discussion-section .comment-box-author:after {
+      content: " ";
+      display: table; }
+    .discussion-section .comment-box-author:after {
+      clear: both; }
+    .discussion-section .comment-box-author .comment-author-label,
+    .discussion-section .comment-box-author .comment-author-name {
+      display: inline; }
+      @media (min-width: 62.5em) {
+        .discussion-section .comment-box-author .comment-author-label,
+        .discussion-section .comment-box-author .comment-author-name {
+          display: block; } }
+    .discussion-section .comment-box-author .comment-author-name {
+      font-weight: 700;
+      color: #616161; }
+    .discussion-section .comment-box-author .comment-author-label {
+      color: #9e9e9e; }
+    .discussion-section .comment-box-author .comment-author-photo {
+      display: none; }
+      @media (min-width: 62.5em) {
+        .discussion-section .comment-box-author .comment-author-photo {
+          display: block;
+          float: left;
+          margin-right: 1rem; } }
+  .discussion-section .comment-box-content {
+    *zoom: 1; }
+    .discussion-section .comment-box-content:before, .discussion-section .comment-box-content:after {
+      content: " ";
+      display: table; }
+    .discussion-section .comment-box-content:after {
+      clear: both; }
+    .discussion-section .comment-box-content form textarea {
+      width: 100%;
+      margin: 0 auto 0.5rem; }
+    .discussion-section .comment-box-content form .comment-submit-btn {
+      width: 100%;
+      margin: 0 auto; }
+      @media (min-width: 46.25em) {
+        .discussion-section .comment-box-content form .comment-submit-btn {
+          width: auto;
+          float: left;
+          margin-right: .5rem; } }
+    .discussion-section .comment-box-content form .comment-box-options {
+      display: inline-block;
+      line-height: 2.5rem; }
+      .discussion-section .comment-box-content form .comment-box-options .btn {
+        font-size: 12px;
+        font-size: 0.75rem; }
+  .discussion-section .comment-info-author {
+    margin-bottom: 1rem; }
+    .discussion-section .comment-info-author h4 {
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-size: 14;
+      display: inline;
+      margin-bottom: 2rem;
+      padding-top: 0.750rem; }
+      @media (min-width: 46.25em) {
+        .discussion-section .comment-info-author h4 {
+          font-size: 16px;
+          font-size: 1rem;
+          margin-bottom: 1rem; } }
+    .discussion-section .comment-info-author .timestamp {
+      /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
+      display: block; }
+  .discussion-section .comment {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    *zoom: 1; }
+    .discussion-section .comment:before, .discussion-section .comment:after {
+      content: " ";
+      display: table; }
+    .discussion-section .comment:after {
+      clear: both; }
+    @media (min-width: 46.25em) {
+      .discussion-section .comment {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem; } }
+    .discussion-section .comment .author-photo {
+      display: block;
+      float: left;
+      margin-right: .5rem; }
+    @media (max-width: 46.188em) {
+      .discussion-section .comment .comment-content {
+        font-size: 14px;
+        font-size: 0.875rem; } }
+    .discussion-section .comment .comment-actions .btn {
+      font-size: .75rem;
+      margin-right: .5rem;
+      line-height: 1.25rem; }
+  .discussion-section .discussion-head h3 {
+    color: #607d8b; }
+  .discussion-section .discussion-head .discussion-counter {
+    color: #90a4ae; }
+  .discussion-section .discussion-head .discussion-action {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.25rem; }
+  .discussion-section .thread-load {
+    margin: 1rem 0 2rem; }
 
 /* ==========================================================================
   Event Details

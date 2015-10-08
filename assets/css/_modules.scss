@@ -27,104 +27,162 @@
   ========================================================================== */
 
 .discussion-section {
+    border-bottom: 0.15rem solid $bordercolor;
+    
+    .discussion-thread {
+        width: 100%;
+        
+        .nested-thread {
+            padding-left: 2rem;
 
-    .discussion-login {
-            margin-top: 1.5rem;
-            
-            @include bp(l){
-                margin-top: 0;
-            }
-
-            figure{
-                display: none;
-                @include bp(l){
-                    display: block;
-                }
-            }
-
-            form{
-                margin-bottom: 2.5rem;
-                textarea{
-                    border: 0.125rem solid #666666;
-                }
+            @include bp(m) {
+                padding-left: 4rem;
             }
         }
-    .discussion-single {
-        margin-bottom: 4rem;
-        @include clearfix;
+    }
+    
+    .discussion-comment-box {
+    	margin-bottom: 1rem;
+    	padding-bottom: 2rem;
+    	border-bottom: 1px solid $bordercolor;
+    }
 
-        p {
-            margin-top: 2rem;
-            @include bp(l) {
-                margin-top: 1rem;
-                margin-left: 4.5rem;
-	        }
-        }
+    .comment-box-author {
+    	@include clearfix;
+    	margin-bottom: .5rem;
 
+    	.comment-author-label,
+    	.comment-author-name {
+    		display: inline;
+
+    		@include bp(l) {
+    			display: block;
+    		}
+    	}
+
+    	.comment-author-name {
+    		font-weight: 700;
+    		color: $black800;
+    	}
+
+    	.comment-author-label {
+    		color: $black600;
+    	}
+
+    	.comment-author-photo {
+    	    display: none;
+    	        
+    	    @include bp(l) {
+    	        display: block;
+    	        float: left;
+    	        margin-right: 1rem;
+    	    }
+    	}
+    }
+
+    .comment-box-content {
+    	@include clearfix;
+
+    	form {
+    	    textarea {
+    	        width: 100%;
+    	        margin: 0 auto 0.5rem;
+    	    }
+
+    	    .comment-submit-btn {
+    	        width: 100%;
+    	        margin: 0 auto;
+    	        
+    	        @include bp(m) {
+    	            width: auto;
+    	            float: left;
+	    	    	margin-right: .5rem;
+    	        }
+    	    }
+
+    	    .comment-box-options {
+    	    	display: inline-block;
+				line-height: 2.5rem;
+
+				.btn {
+	    	    	@include font-size($fontsize100);
+				}
+    	    }
+    	}
+    }
+    
+    .comment-info-author {
+        margin-bottom: 1rem;
+        
         h4 {
         	@include font-size($fontsize200);
             font-size: $fontsize200;
-            margin-bottom: 0;
+            display: inline;
+            margin-bottom: 2rem;
             padding-top: 0.750rem;
 
             @include bp(m) {
 	        	@include font-size($fontsize300);
-            }
-        }
-
-        .discussion-reply {
-            margin-top: 1rem;
-
-            @include bp(m) {
-                margin-left: 4rem;
-            }
-
-            .discussion-single {
                 margin-bottom: 1rem;
+            }
+        }
+        
+        .timestamp { /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
+            display: block;
+        }
+    }
+    
+    .comment {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $bordercolor;
+        @include clearfix;
 
-                @include bp(m){
-                    margin-bottom: 0;
-                }
+    	@include bp(m) {
+    		padding-bottom: 1.5rem;
+    		margin-bottom: 1.5rem;
+    	}
+
+        .author-photo {
+            display: block;
+            float: left;
+            margin-right: .5rem;
+        }
+
+        .comment-content {
+        	@include max-bp(s) {
+	        	@include font-size($fontsize200);
+        	}
+        }
+
+        .comment-actions {
+
+            .btn {
+                font-size: .75rem;
+                margin-right: .5rem;
+                line-height: 1.25rem;
             }
         }
     }
 
-    .entry-labels {
+    .discussion-head {
 
-        a {
-	        font-size: 0.750rem;
-	        display: block;
-	        line-height: 1.250rem;
+    	h3 {
+    		color: $bluegrey600;
+    	}
+
+    	.discussion-counter {
+    		color: $bluegrey400;
+    	}
+
+        .discussion-action {
+	        @include font-size($fontsize100);
+	        line-height: 1.25rem;
         }
     }
 
-    .group-link{
-
-        @include bp(l) {
-            margin-left: 4.5rem;
-	    }
-
-        a {
-            font-size: 0.750rem;
-            margin-right: 0.500rem;
-            line-height: 1.250rem;
-        }
-    }
-
-    .timestamp { /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
-        display: inline;
-        margin: 0;
-        top: 0.600rem;
-        position: relative;
-        right: -0.500rem;
-    }
-
-    .load-discussion {
-        margin: 0 auto;
-
-        @include bp(l){
-            padding-bottom: 1rem;
-        }
+    .thread-load {
+    	margin: 1rem 0 2rem;
     }
 }
 
