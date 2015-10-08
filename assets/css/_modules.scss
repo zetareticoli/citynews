@@ -584,53 +584,6 @@
 }
 
 /* ==========================================================================
-  Pagination
-  ========================================================================== */
-
-.pagination {
-
-	&.default-pagination,
-	&.loadmore-pagination {
-		width: 100%;
-		margin: 2rem auto;
-		text-align: center;
-	}
-
-	&.default-pagination {
-
-		> li {
-			border-right: 1px solid $bordercolor;
-			display: inline-block;
-			font-family: $headingstypeface;
-			font-weight: 700;
-			@include font-size($fontsize400);
-
-			&:last-child {
-				border-right: 0;
-			}
-		}
-
-		> li > a {
-			margin-left: -.25rem;
-			padding: .475rem 1.15rem;
-			border: 0;
-			color: $black600;
-			@include transition(color .2s ease);
-
-			&:hover {
-				background: none;
-				color: darken($black600, 10%);
-			}
-		}
-
-		> li.active > a {
-			background: none;
-			color: $black1000;
-		}
-	}
-}
-
-/* ==========================================================================
   Tags
   ========================================================================== */
 

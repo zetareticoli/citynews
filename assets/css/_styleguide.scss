@@ -1,0 +1,15 @@
+.example {
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+	border-bottom: 1px solid $bordercolor;
+}
+
+.example-modal .modal {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+	display: block;
+}

@@ -9,15 +9,164 @@
 		<main class="main-content">
 			<div class="line">
 				<div class="unit size1of1">
+
 					<h1>Components</h1>
 
 					<h2>Pagination</h2>
 
-					<!-- @include _pagination-default -->
+					<div class="example">
+						<!-- @include _pagination-default -->
+					</div>
 
-					<br>
+					<div class="example">
+						<!-- @include _pagination-loadmore -->
+					</div>
 
-					<!-- @include _pagination-loadmore -->
+					<h2>Modal</h2>
+
+					<h3>Default Modal</h3>
+
+					<div class="example example-modal">
+
+						<div class="modal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+										<h3 class="modal-title">Modal title</h3>
+									</div>
+									<div class="modal-body">
+										<p>One fine body&hellip;</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+										<button type="button" class="btn primary-btn">Save changes</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+
+					</div>
+
+					<h3>Modal with Form</h3>
+
+					<div class="example example-modal">
+
+						<div class="modal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+										<h3 class="modal-title">Modal title</h3>
+									</div>
+									<form>
+										<div class="modal-body">
+											  <div class="form-group">
+											    <label for="exampleInputEmail1">Email address</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Password</label>
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputFile">File input</label>
+											    <input type="file" id="exampleInputFile">
+											    <p class="help-block">Example block-level help text here.</p>
+											  </div>
+											  <div class="checkbox">			  
+											      <input type="checkbox" value="" id="checkbox1">
+											  	<label class="checkbox-label" for="checkbox1">Check me out</label>
+											  </div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+											<button type="button" class="btn primary-btn">Save changes</button>
+										</div>
+										</form>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						
+					</div>
+
+					<h3>Live Examples</h3>
+
+					<div class="example">
+
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+						  Demo modal
+						</button>
+
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-lg" data-toggle="modal" data-target=".small-modal">
+						  Small demo modal
+						</button>
+
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-lg" data-toggle="modal" data-target=".large-modal">
+						  Large demo modal
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+						        <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+						      </div>
+						      <div class="modal-body">
+						        <p>This is a modal</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn primary-btn">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal large-modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+						        <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+						      </div>
+						      <div class="modal-body">
+						        <p>This is a modal</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn primary-btn">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal small-modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+						        <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+						      </div>
+						      <div class="modal-body">
+						        <p>This is a modal</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn primary-btn">Save changes</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+					</div>
 
 				</div>
 			</div>
