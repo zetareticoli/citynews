@@ -1070,18 +1070,19 @@ h5.location-kicker {
 .icon {
   vertical-align: middle; }
   .icon.small {
-    width: 16px;
-    height: 16px; }
+    width: 1rem;
+    height: 1rem; }
   .icon.medium {
-    width: 24px;
-    height: 24px; }
+    width: 1.5rem;
+    height: 1.5rem; }
   .icon.large {
-    width: 32px;
-    height: 32px; }
+    width: 2rem;
+    height: 2rem; }
   .icon.inverted {
     fill: white; }
   .icon.inline-icon {
-    margin-right: 6px; }
+    margin-right: .25rem;
+    vertical-align: text-top; }
 
 .overlay-icon {
   display: block;
