@@ -132,7 +132,9 @@
 
 <div class="wrapper">
 
-    <header class="header slim-header">
+    <div class="search-overlay"></div>
+
+<header class="header slim-header">
 	<div class="header-top theme-header">
 		<div class="header-brand">
 			<a class='current-parent' href="index.html">
@@ -152,7 +154,7 @@
 		<h1 class="page-title"><a href="cronaca.html" class="link">Cronaca</a></h1>
 		
 		<div class="nav-toolbar">
-			<a href="#" class="btn search-btn centered"><svg class="icon lens-icon medium"><use xlink:href="#icon-lens"></use></svg></a>
+			<a href="#start-search" class="btn search-btn start-search-trigger"><span></span></a>
 			<a href="#" class="btn login-btn has-icon centered"><svg class="icon user-icon medium"><use xlink:href="#icon-user"></use></svg><span class="btn-label">Accedi</span></a>
 		</div>
 		
@@ -171,6 +173,16 @@
 			<li class="nav-item"><a href="events.html" class="link">Cosa fare in città</a></li>
 		</ul>
 	</nav>
+
+	<!-- Site Search -->
+	<!-- Search Box -->
+<div id="star-search" class="start-search is-desktop">
+	<form>
+		<label class="start-search-label">Premi invio per effettuare la ricerca</label>	
+		<input type="search" placeholder="Cerca nel sito..." class="start-search-input">
+		<button type="submit" class="btn"><svg class="icon large"><use xlink:href="#icon-lens"></use></svg></button>
+	</form>
+</div> 
 
 	<!-- Mobile Navigation -->
 	<nav class="mobile-nav theme-border is-animated">

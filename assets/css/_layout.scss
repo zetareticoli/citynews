@@ -316,6 +316,12 @@ ol, ul {
 			margin-top: 13px;
 		}
 	}
+
+	&.search-is-visible {
+		.primary-nav li.current:after {
+			border: none;
+		}
+	}
 }
 
 // Templates ===============================================================
@@ -339,7 +345,7 @@ ol, ul {
 		z-index: 6;
 
 		@include bp(l) {
-			border-bottom: 2px solid $bordercolor;
+			@include box-shadow(0 2px 0 $bordercolor);
 		}
 	}
 
