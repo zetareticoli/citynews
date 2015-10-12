@@ -715,11 +715,9 @@
 			visibility: visible;
 			@include transition(opacity .25s 0s, visibility 0s 0s, transform .25s 0s);
 			
-			@include bp(l){				
-				.search-is-visible {
-					@include transform(translateX(0));
-				}				
-			}
+			.search-is-visible {
+				@include transform(translateX(0));
+			}	
 		}
 	}
 }
