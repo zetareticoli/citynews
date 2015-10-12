@@ -67,6 +67,7 @@ $(document).ready(function(){
 		} else {
 			//toggle search visibility
 			$('html').toggleClass("is-locked");
+			$('.header').removeClass('is-nav-open');
 			$('.header').toggleClass('search-is-visible');
 			$('.start-search').toggleClass('is-visible');
 			$('.start-search-trigger').toggleClass('search-is-visible');

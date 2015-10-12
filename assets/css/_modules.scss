@@ -647,100 +647,133 @@
 
 // Start search ===============================================================
 
-@include bp(l) {
+.start-search {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(opacity .25s 0s, visibility 0s .25s);
 
-	.start-search {
-		position: absolute;
-		height: 7.5rem;
+	@include bp(m) {
+		top: 3rem;
+	}
+
+	@include bp(l) {
 		top: 4.5rem;
+	}
+	
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .25s 0s, visibility 0s 0s);
+	}
+
+	form {
+		height: 100%;
 		width: 100%;
-		left: 0;
-		z-index: 999;
+	}
+
+	label {
 		opacity: 0;
-		visibility: hidden;
-		@include transition(opacity .25s 0s, visibility 0s .25s);
-		
-		&.is-visible {
-			opacity: 1;
-			visibility: visible;
-			@include transition(opacity .25s 0s, visibility 0s 0s);
-		}
+	}
 
-		form {
-			height: 100%;
-			width: 100%;
-		}
+	input[type="search"] {
+		border-radius: 0;
+		border: none;
+		background: transparent;
+		width: 75%;
+		@include appearance(none);
+		padding: 1rem;
+		@include font-size($fontsize500);
+		font-weight: 300;
+		line-height: 2.5rem;
+		color: white;
+		vertical-align: middle;
 
-		label {
-			opacity: 0;
-		}
-
-		input[type="search"] {
-			border-radius: 0;
-			border: none;
-			background: transparent;
-			width: 92%;
-			@include appearance(none);
-			padding: .5rem 2rem;
+		@include bp(m) {
+			padding: 2rem;
 			@include font-size($fontsize800);
-			font-weight: 300;
 			letter-spacing: -1px;
-			color: white;
-			vertical-align: top;
-		}
-		
-		input[type="search"]::-webkit-input-placeholder,
-		input[type="search"]::-moz-placeholder,
-		input[type="search"]:-ms-input-placeholder {
-			color: $black500;
-		}
-		
-		input[type="search"]:focus {
-			outline: none;
 		}
 
-		.btn {
-			background: transparent;
+		@include bp(l) {
+			width: 92%;
+		}
+	}
+	
+	input[type="search"]::-webkit-input-placeholder,
+	input[type="search"]::-moz-placeholder,
+	input[type="search"]:-ms-input-placeholder {
+		color: $black500;
+	}
+	
+	input[type="search"]:focus {
+		outline: none;
+	}
 
+	.btn {
+		position: absolute;	
+		top: .75rem;
+		right: 2rem;
+		background: transparent;
+
+		@include bp(m){
+			top: 1.5rem;
+		}
+
+		@include bp(l) {
 			&:hover {
-				background-color: $bluegrey1000;
+				background-color: $black1000;
 			}
+		}
 
-			&:active {
-				position: relative;
-				top: 1px;
-				box-shadow: none;
-			}
+		&:active {
+			box-shadow: none;
+		}
 
-			.icon {
-				fill: white;
+		.icon {
+			fill: white;
+			width: 24px;
+			height: 24px;
+
+			@include bp(m) {
+				width: 32px;
+				height: 32px
 			}
 		}
 	}
+}
 
-	.search-overlay {
-		/* shadow layer visible when navigation is active */
-		position: absolute;
-		z-index: 999;
-		height: 100%;
-		width: 100%;
+.search-overlay {
+	/* shadow layer visible when navigation is active */
+	position: absolute;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: $focusoverlay;
+	visibility: hidden;
+	opacity: 0;
+	@include backface-visibility(hidden);
+	@include transition(opacity .25s 0s, visibility 0s .25s, transform .25s 0s);
+
+	@include bp(l) {
 		top: 4.5rem;
-		left: 0;
-		background-color: $focusoverlay;
-		visibility: hidden;
-		opacity: 0;
-		@include backface-visibility(hidden);
-		@include transition(opacity .25s 0s, visibility 0s .25s, transform .25s 0s);
-			
-		&.is-visible {
-			opacity: 1;
-			visibility: visible;
-			@include transition(opacity .25s 0s, visibility 0s 0s, transform .25s 0s);
-			
-			.search-is-visible {
-				@include transform(translateX(0));
-			}	
-		}
+	}
+		
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .25s 0s, visibility 0s 0s, transform .25s 0s);
+		
+		.search-is-visible {
+			@include transform(translateX(0));
+		}	
 	}
 }
 
@@ -748,13 +781,18 @@
 
 .start-search-trigger {
 	position: relative;
+	width: 4rem;
+	height: 4rem;
 	display: block;
-	width: 4.5rem;
-	height: 4.5rem;
 	overflow: hidden;
 	white-space: nowrap;
 	color: transparent; /* hide text */
-	background-color: white;
+
+	@include bp(l) {
+		width: 4.5rem;
+		height: 4.5rem;
+		background-color: white;	
+	}
 
 	&::before, &::after {
 		/* search icon */
@@ -768,13 +806,18 @@
 
 	&::before {
 		/* lens */
-		top: 25px;
-		left: 26px;
+		top: 23px;
+		left: 22px;
 		width: 18px;
 		height: 18px;
 		border-radius: 50%;
 		border: 3px solid $black500;
 		@include transition(border-color .2s);
+
+		@include bp(l) {
+			top: 25px;
+			left: 26px;
+		}
 	}
 
 	&::after {
@@ -782,10 +825,15 @@
 		height: 3px;
 		width: 8px;
 		background: $black500;
-		bottom: 27px;
-		right: 23px;
+		bottom: 21px;
+		right: 19px;
 		@include transform(rotate(45deg));
 		@include transition(background .2s);
+
+		@include bp(l) {
+			bottom: 27px;
+			right: 23px;
+		}
 	}
 
 	&:hover {
@@ -835,7 +883,7 @@
 
 	&.search-is-visible {
 		@include transition(background-color .2s);
-		background-color: rgba(38,50,56,.91);
+		background-color: $focusoverlay;
 
 		&::before, &::after {
 			/* hide search icon */
