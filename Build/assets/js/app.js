@@ -47,6 +47,7 @@ $(document).ready(function(){
 		toggleSearch();
 	});
 
+	// hide search when clicking on overlay
     $('.search-overlay').on('click', function(){
 		toggleSearch('close')
 		$(this).removeClass('is-visible');
