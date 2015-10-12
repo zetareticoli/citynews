@@ -21,6 +21,11 @@ a.btn {
 		color: $black800;
 	}
 
+	&:focus,
+	&::-moz-focus-inner {
+		outline: none;
+	}
+
 	&:active {
 		color: $black1000;
 	}

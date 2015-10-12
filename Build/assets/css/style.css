@@ -1205,6 +1205,10 @@ a.btn {
   .btn:hover,
   a.btn:hover {
     color: #616161; }
+  .btn:focus, .btn::-moz-focus-inner,
+  a.btn:focus,
+  a.btn::-moz-focus-inner {
+    outline: none; }
   .btn:active,
   a.btn:active {
     color: #212121; }
@@ -1828,11 +1832,10 @@ body {
   box-sizing: border-box; }
 
 a {
-  color: #2E6D9D;
-  outline: 0; }
+  color: #2E6D9D; }
 
 a:hover, a:active, a:focus {
-  outline: inherit; }
+  outline: 0; }
 
 a, a:visited {
   cursor: pointer;
