@@ -46,6 +46,7 @@ $(document).ready(function(){
 
 	// search function
 	$('.start-search-trigger').on('click', function(event){
+		event.stopPropagation();
 		event.preventDefault();
 		toggleSearch();
 	});

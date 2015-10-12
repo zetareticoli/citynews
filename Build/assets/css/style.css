@@ -3550,60 +3550,48 @@ ol, ul {
   ========================================================================== */
 @media (min-width: 62.5em) {
   .start-search {
+    /* search input for desktop devices only */
     position: absolute;
-    height: 4rem;
+    height: 7.5rem;
+    top: 4.5rem;
     width: 100%;
-    top: 4rem;
     left: 0;
     z-index: 3;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-    -moz-transition: opacity .3s 0s, visibility 0s .3s;
-    transition: opacity .3s 0s, visibility 0s .3s; } }
-  @media (min-width: 62.5em) and (min-width: 62.5em) {
-    .start-search {
-      height: 120px;
-      top: 120px; } }
-@media (min-width: 62.5em) {
+    -webkit-transition: opacity 0.25s 0s, visibility 0s 0.25s;
+    -moz-transition: opacity 0.25s 0s, visibility 0s 0.25s;
+    transition: opacity 0.25s 0s, visibility 0s 0.25s; }
     .start-search.is-visible {
       opacity: 1;
       visibility: visible;
-      -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-      -moz-transition: opacity .3s 0s, visibility 0s 0s;
-      transition: opacity .3s 0s, visibility 0s 0s; }
+      -webkit-transition: opacity 0.25s 0s, visibility 0s 0s;
+      -moz-transition: opacity 0.25s 0s, visibility 0s 0s;
+      transition: opacity 0.25s 0s, visibility 0s 0s; }
     .start-search form {
       height: 100%;
       width: 100%; }
-    .start-search input {
+    .start-search input[type="search"] {
       border-radius: 0;
       border: none;
       background: #ffffff;
       height: 100%;
       width: 100%;
-      padding: 0 5%;
-      box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 0 #e0e0e0, 0 3px 6px rgba(0, 0, 0, 0.05);
       -webkit-appearance: none;
       -moz-appearance: none;
       -ms-appearance: none;
       -o-appearance: none;
-      appearance: none; } }
-    @media (min-width: 62.5em) and (min-width: 62.5em) {
-      .start-search input {
-        padding: 0 2rem;
-        font-size: 36px;
-        font-size: 2.25rem;
-        font-weight: 300; } }
-@media (min-width: 62.5em) {
-    .start-search input::-webkit-input-placeholder {
-      color: #c9cbc4; }
-    .start-search input::-moz-placeholder {
-      color: #c9cbc4; }
-    .start-search input:-moz-placeholder {
-      color: #c9cbc4; }
-    .start-search input:-ms-input-placeholder {
-      color: #c9cbc4; }
-    .start-search input:focus {
+      appearance: none;
+      padding: 0 2rem;
+      font-size: 32px;
+      font-size: 2rem;
+      font-weight: 300; }
+    .start-search input[type="search"]::-webkit-input-placeholder,
+    .start-search input[type="search"]::-moz-placeholder,
+    .start-search input[type="search"]:-ms-input-placeholder {
+      color: #bdbdbd; }
+    .start-search input[type="search"]:focus {
       outline: none; }
 
   .search-overlay {
@@ -3612,23 +3600,23 @@ ol, ul {
     z-index: 2;
     height: 100%;
     width: 100%;
-    top: 240px;
+    top: 4.5rem;
     left: 0;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(38, 50, 56, 0.85);
     visibility: hidden;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s; }
+    -webkit-transition: opacity 0.25s 0s, visibility 0s 0.25s, -webkit-transform 0.25s 0s;
+    -moz-transition: opacity 0.25s 0s, visibility 0s 0.25s, -moz-transform 0.25s 0s;
+    transition: opacity 0.25s 0s, visibility 0s 0.25s, transform 0.25s 0s; }
     .search-overlay.is-visible {
       opacity: 1;
       visibility: visible;
-      -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s;
-      -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s;
-      transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s; } }
+      -webkit-transition: opacity 0.25s 0s, visibility 0s 0s, -webkit-transform 0.25s 0s;
+      -moz-transition: opacity 0.25s 0s, visibility 0s 0s, -moz-transform 0.25s 0s;
+      transition: opacity 0.25s 0s, visibility 0s 0s, transform 0.25s 0s; } }
     @media (min-width: 62.5em) and (min-width: 62.5em) {
       .search-overlay.is-visible .search-is-visible {
         -webkit-transform: translateX(0);
@@ -3636,6 +3624,123 @@ ol, ul {
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
         transform: translateX(0); } }
+
+.start-search-trigger {
+  position: relative;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  /* hide text */ }
+
+.start-search-trigger::before, .start-search-trigger::after {
+  /* search icon */
+  content: '';
+  position: absolute;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+.start-search-trigger::before {
+  /* lens */
+  top: 25px;
+  left: 26px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #bdbdbd;
+  -webkit-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  transition: border-color 0.2s; }
+.start-search-trigger::after {
+  /* handle */
+  height: 3px;
+  width: 8px;
+  background: #bdbdbd;
+  bottom: 27px;
+  right: 23px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s; }
+.start-search-trigger:hover:before {
+  border-color: #9e9e9e; }
+.start-search-trigger:hover:after {
+  background: #9e9e9e; }
+.start-search-trigger span {
+  /* container for the X icon */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+.start-search-trigger span::before, .start-search-trigger span::after {
+  /* close icon */
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 3px;
+  width: 22px;
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  margin-left: -11px;
+  background: #9e9e9e;
+  opacity: 0;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s; }
+.start-search-trigger span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+.start-search-trigger span::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+.start-search-trigger.search-is-visible::before, .start-search-trigger.search-is-visible::after {
+  /* hide search icon */
+  opacity: 0; }
+.start-search-trigger.search-is-visible span::before, .start-search-trigger.search-is-visible span::after {
+  /* show close icon */
+  opacity: 1; }
+.start-search-trigger.search-is-visible span::before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+.start-search-trigger.search-is-visible span::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .search-section form .search-input {
   width: 100%;
