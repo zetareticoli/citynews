@@ -85,6 +85,10 @@
 		}
 	}
 
+	.theme-fill {
+		fill: $b-c-yellow;
+	}
+
 	.theme-header {
 		background-color: $b-c-yellow;
 
@@ -123,6 +127,10 @@
 	.theme,
 	.theme-color .link {
 		color: $b-c-red;
+	}
+
+	.theme-fill {
+		fill: $b-c-red;
 	}
 
 	.theme-header {
@@ -164,6 +172,10 @@
 		color: $b-c-blue;
 	}
 
+	.theme-fill {
+		fill: $b-c-blue;
+	}
+
 	.theme-header {
 		background-color: $b-c-blue;
 
@@ -201,6 +213,10 @@
 	.theme-color,
 	.theme-color .link {
 		color: $b-c-green;
+	}
+
+	.theme-fill {
+		fill: $b-c-green;
 	}
 
 	.theme-header {
@@ -242,6 +258,10 @@
 		color: $b-c-purple;
 	}
 
+	.theme-fill {
+		fill: $b-c-purple;
+	}
+
 	.theme-header {
 		background-color: $b-c-purple;
 
@@ -279,6 +299,10 @@
 	.theme-color,
 	.theme-color .link {
 		color: $b-c-pink;
+	}
+
+	.theme-fill {
+		fill: $b-c-pink;
 	}
 
 	.theme-header {

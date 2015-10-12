@@ -3937,6 +3937,8 @@ ol, ul {
   .theme-yellow .theme-color .link.label,
   .theme-yellow .theme-color .link.kicker {
     color: #ffb507; }
+.theme-yellow .theme-fill {
+  fill: #FFBE26; }
 .theme-yellow .theme-header {
   background-color: #FFBE26; }
   @media (min-width: 62.5em) {
@@ -3959,6 +3961,8 @@ ol, ul {
 .theme-red .theme,
 .theme-red .theme-color .link {
   color: #F2463D; }
+.theme-red .theme-fill {
+  fill: #F2463D; }
 .theme-red .theme-header {
   background-color: #F2463D; }
   @media (min-width: 62.5em) {
@@ -3981,6 +3985,8 @@ ol, ul {
 .theme-blue .theme-color,
 .theme-blue .theme-color .link {
   color: #3277C7; }
+.theme-blue .theme-fill {
+  fill: #3277C7; }
 .theme-blue .theme-header {
   background-color: #3277C7; }
   @media (min-width: 62.5em) {
@@ -4003,6 +4009,8 @@ ol, ul {
 .theme-green .theme-color,
 .theme-green .theme-color .link {
   color: #50AE55; }
+.theme-green .theme-fill {
+  fill: #50AE55; }
 .theme-green .theme-header {
   background-color: #50AE55; }
   @media (min-width: 62.5em) {
@@ -4025,6 +4033,8 @@ ol, ul {
 .theme-purple .theme-color,
 .theme-purple .theme-color .link {
   color: #B75DC7; }
+.theme-purple .theme-fill {
+  fill: #B75DC7; }
 .theme-purple .theme-header {
   background-color: #B75DC7; }
   @media (min-width: 62.5em) {
@@ -4047,6 +4057,8 @@ ol, ul {
 .theme-pink .theme-color,
 .theme-pink .theme-color .link {
   color: #F291B2; }
+.theme-pink .theme-fill {
+  fill: #F291B2; }
 .theme-pink .theme-header {
   background-color: #F291B2; }
   @media (min-width: 62.5em) {
