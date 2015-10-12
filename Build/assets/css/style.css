@@ -1082,7 +1082,10 @@ h5.location-kicker {
     fill: white; }
   .icon.inline-icon {
     margin-right: .25rem;
-    vertical-align: text-top; }
+    vertical-align: text-bottom; }
+    @media (min-width: 62.5em) {
+      .icon.inline-icon {
+        vertical-align: text-top; } }
 
 .overlay-icon {
   display: block;
