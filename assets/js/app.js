@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	/* ------ Variabile per effetto ricerca ------ */  
-	var MqL = 1170;
-	/* ------------------------------------------- */
-	
 	$(window).on('scroll', function(){
 		(!window.requestAnimationFrame) ? fixContent() : window.requestAnimationFrame(fixContent);
 	});
@@ -72,7 +68,7 @@ $(document).ready(function(){
 			$('.start-search').toggleClass('is-visible');
 			$('.start-search-trigger').toggleClass('search-is-visible');
 			$('.search-overlay').toggleClass('search-is-visible');
-			if($(window).width() > MqL && $('.start-search').hasClass('is-visible')) $('.start-search').find('input[type="search"]').focus();
+			$('.start-search').find('input[type="search"]').focus();
 			($('.start-search').hasClass('is-visible')) ? $('.search-overlay').addClass('is-visible') : $('.search-overlay').removeClass('is-visible') ;
 		}
 	}	
