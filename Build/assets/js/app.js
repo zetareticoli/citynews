@@ -51,6 +51,11 @@ $(document).ready(function(){
 		toggleSearch();
 	});
 
+    $('.search-overlay').on('click', function(){
+		toggleSearch('close')
+		$(this).removeClass('is-visible');
+	});
+
 	function toggleSearch(type) {
 		if(type=="close") {
 			//close serach 

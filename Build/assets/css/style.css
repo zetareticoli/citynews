@@ -3601,6 +3601,8 @@ ol, ul {
       outline: none; }
     .start-search .btn {
       background: transparent; }
+      .start-search .btn:hover {
+        background-color: #263238; }
       .start-search .btn:active {
         position: relative;
         top: 1px;
@@ -3616,7 +3618,6 @@ ol, ul {
     width: 100%;
     top: 4.5rem;
     left: 0;
-    cursor: pointer;
     background-color: rgba(38, 50, 56, 0.92);
     visibility: hidden;
     opacity: 0;

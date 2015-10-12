@@ -702,6 +702,10 @@
 		.btn {
 			background: transparent;
 
+			&:hover {
+				background-color: $bluegrey1000;
+			}
+
 			&:active {
 				position: relative;
 				top: 1px;
@@ -722,7 +726,6 @@
 		width: 100%;
 		top: 4.5rem;
 		left: 0;
-		cursor: pointer;
 		background-color: $focusoverlay;
 		visibility: hidden;
 		opacity: 0;
