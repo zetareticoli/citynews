@@ -24,7 +24,7 @@ $(document).ready(function(){
 	$('.mobile-nav-trigger').on('click', function(event){
 		event.preventDefault();    
 		$('.header').toggleClass('is-nav-open');
-		$("body").toggleClass("is-locked");
+		$('html').toggleClass("is-locked");
 	});
 
 	$('.has-children').children('a').on('click', function(event){
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	$('.close-btn').on('click', function(event){
 		event.preventDefault();    
 		$(".header").removeClass("is-nav-open");
-		$("body").removeClass("is-locked");
+		$('html').removeClass("is-locked");
 	});
 
 	// search function
@@ -57,8 +57,12 @@ $(document).ready(function(){
 			$('.start-search').removeClass('is-visible');
 			$('.start-search-trigger').removeClass('search-is-visible');
 			$('.search-overlay').removeClass('search-is-visible');
+			$('html').removeClass("is-locked");
+
 		} else {
 			//toggle search visibility
+			$('html').toggleClass("is-locked");
+			$('.header').toggleClass('search-is-visible');
 			$('.start-search').toggleClass('is-visible');
 			$('.start-search-trigger').toggleClass('search-is-visible');
 			$('.search-overlay').toggleClass('search-is-visible');
