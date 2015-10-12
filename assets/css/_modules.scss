@@ -649,7 +649,6 @@
 
 .start-search {
 	position: absolute;
-	height: 100%;
 	top: 0;
 	width: 100%;
 	left: 0;
@@ -657,10 +656,6 @@
 	opacity: 0;
 	visibility: hidden;
 	@include transition(opacity .25s 0s, visibility 0s .25s);
-
-	@include bp(m) {
-		top: 3rem;
-	}
 
 	@include bp(l) {
 		top: 4.5rem;
@@ -695,6 +690,7 @@
 		vertical-align: middle;
 
 		@include bp(m) {
+			width: 92%;
 			padding: 2rem;
 			@include font-size($fontsize800);
 			letter-spacing: -1px;
@@ -718,7 +714,7 @@
 	.btn {
 		position: absolute;	
 		top: .75rem;
-		right: 2rem;
+		right: 1rem;
 		background: transparent;
 
 		@include bp(m){

@@ -3563,9 +3563,6 @@ ol, ul {
   -webkit-transition: opacity 0.25s 0s, visibility 0s 0.25s;
   -moz-transition: opacity 0.25s 0s, visibility 0s 0.25s;
   transition: opacity 0.25s 0s, visibility 0s 0.25s; }
-  @media (min-width: 46.25em) {
-    .start-search {
-      top: 3rem; } }
   @media (min-width: 62.5em) {
     .start-search {
       top: 4.5rem; } }
@@ -3599,6 +3596,7 @@ ol, ul {
     vertical-align: middle; }
     @media (min-width: 46.25em) {
       .start-search input[type="search"] {
+        width: 92%;
         padding: 2rem;
         font-size: 32px;
         font-size: 2rem;
