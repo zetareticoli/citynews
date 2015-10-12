@@ -210,15 +210,33 @@
 	.story-media {
 		width: 25%;
 		float: left;
-		margin-right: 12px;
+		margin-right: 1rem;
 
 		@include bp(l) {
-			width: 36%;
+			width: 15rem;
+		}
+	}
+
+	.story-header {
+		@include bp(m) {
+			margin-left: 25%;
 		}
 
-		@include bp(xl) {
-			width: 32%;
+		@include bp(l) {
+			margin-left: 16rem;
 		}
+	}
+
+	.story-heading {
+		@include max-bp(s) {
+			@include font-size($fontsize400);
+			line-height: 1.35rem;
+		}
+	}
+
+	.story-summary {
+		@include font-size($fontsize300);
+		line-height: 1.5rem;
 	}
 
 	.story-footer {
@@ -236,6 +254,13 @@
 
 .focus-section .list-story {
 	padding-bottom: $baseline;
+}
+
+.focus-section .list-story .story-heading {
+	@include bp(m) {
+		@include font-size($fontsize300);
+		line-height: 1.35rem;
+	}
 }
 
 // inset
