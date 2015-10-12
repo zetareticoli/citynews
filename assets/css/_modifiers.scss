@@ -46,6 +46,11 @@
 	}
 }
 
+html.is-locked  body {
+	height: 100%;
+	overflow: hidden;
+}
+
 .is-fixed {
 
 	@include bp(l) {
