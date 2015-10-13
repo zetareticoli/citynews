@@ -248,10 +248,6 @@
 
 			.location-label {
 				@include font-size($fontsize100);
-
-				.icon {
-					vertical-align: top;
-				}
 			}
 		}
 	}

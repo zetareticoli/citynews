@@ -143,14 +143,6 @@ strong,dt {
 	word-wrap: break-word;
 }
 
-// list story headings
-
-.list-story .story-heading {
-	@include max-bp(s) {
-		@include font-size($fontsize400);
-		line-height: 1.35rem;
-	}
-}
 
 // featured story headings
 
@@ -237,13 +229,6 @@ strong,dt {
 			@include font-size($fontsize400);
 			line-height: 1.5rem;
 		}
-	}
-}
-
-.focus-section .list-story .story-heading {
-	@include bp(m) {
-		@include font-size($fontsize300);
-		line-height: 1.35rem;
 	}
 }
 
@@ -470,11 +455,6 @@ strong,dt {
 	}
 }
 
-.list-story .story-summary {
-	@include font-size($fontsize300);
-	line-height: 1.5rem;
-}
-
 .inset-story .story-summary {
 	@include max-bp(m) {
 		display: none;
@@ -494,7 +474,7 @@ time,
 	font-family: $texttypeface;
 	font-weight: 400;
 	@include font-size($fontsize100);
-	color: $black700;
+	color: $black600;
 }
 
 .byline {
@@ -539,6 +519,31 @@ time,
 			}
 		}
 	}
+
+.location-label {
+	font-family: $texttypeface;
+	@include font-size($fontsize200);
+	font-weight: 900;
+
+	> .link {
+		color: $bluegrey500;
+
+		&:hover {
+			color: $bluegrey600;
+		}
+	}
+
+	.icon {
+		vertical-align: text-bottom;
+	}
+}
+
+h5.location-label {
+	margin: 1.5rem 0 .5rem;
+	padding-bottom: .5rem;
+	border-bottom: 3px solid $bordercolor;
+	@include font-size($fontsize300);
+}
 
 // Kicker
 
@@ -591,19 +596,6 @@ time,
 		}
 	}
 
-	.location-kicker {
-		display: inline-block;
-		@include font-size($fontsize300);
-		font-style: normal;
-	}
-
-	h5.location-kicker {
-		width: 100%;
-		margin: $baseline * 2 0 $baseline;
-		padding-bottom: $baseline;
-		border-bottom: 2px solid $bordercolor;
-	}
-
 
 // Links ===============================================================
 
@@ -651,14 +643,6 @@ time,
 
 	&:hover {
 		color: $black500;
-	}
-}
-
-.location-kicker .link {
-	color: $black600;
-
-	&:hover {
-		color: $black800;
 	}
 }
 
