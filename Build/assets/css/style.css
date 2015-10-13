@@ -1711,7 +1711,7 @@ input[type=checkbox]:checked + label::after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  padding: 0;
+  padding: 0 0.5rem;
   position: relative;
   zoom: 1; }
   .line:before, .line:after {
@@ -1719,9 +1719,6 @@ input[type=checkbox]:checked + label::after {
     display: table; }
   .line:after {
     clear: both; }
-  @media (min-width: 46.25em) {
-    .line {
-      padding: 0 8px; } }
 
 .unit, .group, .lastUnit {
   background-clip: padding-box; }
@@ -1730,8 +1727,8 @@ input[type=checkbox]:checked + label::after {
   float: left; }
 
 .unit {
-  padding-left: 8px;
-  padding-right: 8px; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
 
 .group,
 .group .line {

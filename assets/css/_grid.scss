@@ -15,10 +15,7 @@
 .line {
 	@include border-box;
 	@include clearfix;
-	padding: 0;
-	@include bp(m) {
-		padding: 0 8px;
-	}
+	padding: 0 $baseline;
 	position: relative;
 	zoom: 1;
 }
@@ -32,8 +29,8 @@
 }
 
 .unit {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-left: $baseline;
+	padding-right: $baseline;
 }
 
 .group,
