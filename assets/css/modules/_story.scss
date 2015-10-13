@@ -3,8 +3,7 @@
 .story {
 	width: 100%;
 	border-bottom: 1px solid $bordercolor;
-	padding-bottom: $baseline;
-	@include clearfix;
+	padding-bottom: $baseline * 2;
 }
 
 .story-media {
@@ -31,16 +30,10 @@
 	}
 }
 
-.story-heading {
-	margin-bottom: $baseline;
-}
-
-.story-subheading {
-	margin-bottom: $baseline;
-}
-
+.story-heading,
+.story-subheading,
 .story-summary {
-	margin-bottom: $gutterwidth;
+	margin-bottom: $baseline;
 }
 
 // Themes ===============================================================
@@ -196,34 +189,33 @@
 			}
 		}
 	}
-
 }
 
 // list
 
 .list-story {
-
-	@include bp(l) {
-		padding-bottom: $baseline * 2;
-	}
+	@include flexbox;
+	@include flex-flow(row nowrap);
+	align-items: flex-start;
 
 	.story-media {
 		width: 25%;
+		height: auto;
 		float: left;
 		margin-right: 1rem;
 
 		@include bp(l) {
-			width: 15rem;
+			width: 14rem;
 		}
 	}
 
-	.story-header {
-		@include bp(m) {
-			margin-left: 25%;
-		}
+	.story-content {
+		@include flex(1);
+	}
 
-		@include bp(l) {
-			margin-left: 16rem;
+	.story-header {
+		.byline {
+			margin-bottom: $gutterwidth / 8;
 		}
 	}
 
@@ -235,8 +227,12 @@
 	}
 
 	.story-summary {
-		@include font-size($fontsize300);
+		@include font-size($fontsize200);
 		line-height: 1.5rem;
+
+		@include bp(l) {
+			@include font-size($fontsize300);
+		}
 	}
 
 	.story-footer {
@@ -245,10 +241,19 @@
 		@include bp(m) {
 			display: block;
 		}
-	}
 
-	.byline {
-		margin-bottom: $gutterwidth / 8;
+		.byline {
+			margin: 1rem 0 .5rem;
+			color: $black600;
+
+			.location-label {
+				@include font-size($fontsize100);
+
+				.icon {
+					vertical-align: top;
+				}
+			}
+		}
 	}
 }
 
