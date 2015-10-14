@@ -227,7 +227,7 @@ ol, ul {
 
 // Layout Masonry ===============================================================
 
-.masonry { /* Masonry container */
+.l-masonry { /* Masonry container */
 	@include column-count(2);
 	@include column-gap(1rem);
 
@@ -240,7 +240,7 @@ ol, ul {
 	}
 }
 
-.item { /* Masonry bricks or child elements */
+.l-m-item { /* Masonry bricks or child elements */
 	width: 100%;
 	display:inline-block;
 	margin: 0 0 1rem;
