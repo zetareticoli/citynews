@@ -599,6 +599,10 @@ h5.location-label {
 
 // Links ===============================================================
 
+.link {
+	@include transition(color .3s);
+}
+
 .entry-content-body > p > a {
 	text-decoration: none !important;
 	border-bottom: 0.0625rem solid $bordercolor;
@@ -619,7 +623,6 @@ h5.location-label {
 .block-link .story-heading,
 .block-link .card-heading {
 	color: $black900;
-	@include transition(color .3s ease);
 }
 
 .story-heading .link:hover,

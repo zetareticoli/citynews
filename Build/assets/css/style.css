@@ -934,6 +934,11 @@ h5.location-label {
       font-size: 28px;
       font-size: 1.75rem; } }
 
+.link {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s; }
+
 .entry-content-body > p > a {
   text-decoration: none !important;
   border-bottom: 0.0625rem solid #e0e0e0;
@@ -951,10 +956,7 @@ h5.location-label {
 .story-heading .link,
 .block-link .story-heading,
 .block-link .card-heading {
-  color: #424242;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  transition: color 0.3s ease; }
+  color: #424242; }
 
 .story-heading .link:hover,
 .block-link:hover .story-heading,
