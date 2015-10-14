@@ -225,6 +225,30 @@ ol, ul {
 		padding-bottom: $baseline;
 	}
 
+// Layout Masonry ===============================================================
+
+.masonry { /* Masonry container */
+	@include column-count(2);
+	@include column-gap(1rem);
+
+	@include bp(m) {
+		@include column-count(3);
+	}
+
+	@include bp(xl) {
+		@include column-count(4);
+	}
+}
+
+.item { /* Masonry bricks or child elements */
+	width: 100%;
+	display:inline-block;
+	margin: 0 0 1rem;
+	padding: 10px;
+	border: 1px solid red;
+}
+
+
 /* ==========================================================================
   Site Header
   ========================================================================== */
