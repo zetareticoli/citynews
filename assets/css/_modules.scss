@@ -996,7 +996,7 @@
 		margin-bottom: 2rem;
 
 		.list-story {
-			padding-bottom: 1rem;
+			padding-bottom: .5rem;
 			border-bottom-width: 3px;
 
 			.story-heading strong {
@@ -1017,8 +1017,8 @@
 				border-top: 1px solid $bordercolor;
 				padding-top: 1rem;
 				line-height: 1rem;
-				color: $black700;
-				@include font-size($fontsize200);
+				@include font-size($fontsize100);
+				font-weight: 700;
 			}
 		}
 	}

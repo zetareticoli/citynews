@@ -3199,6 +3199,10 @@ ol, ul {
     .list-story .story-footer .byline {
       margin: 1rem 0 .5rem;
       color: #9e9e9e; }
+      .list-story .story-footer .byline .link {
+        color: #9e9e9e; }
+        .list-story .story-footer .byline .link:hover {
+          color: #757575; }
       .list-story .story-footer .byline .location-label {
         font-size: 12px;
         font-size: 0.75rem; }
@@ -3871,7 +3875,7 @@ ol, ul {
 .search-section .result-item {
   margin-bottom: 2rem; }
   .search-section .result-item .list-story {
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom-width: 3px; }
     .search-section .result-item .list-story .story-heading strong {
       color: #78909c; }
@@ -3886,9 +3890,9 @@ ol, ul {
       border-top: 1px solid #e0e0e0;
       padding-top: 1rem;
       line-height: 1rem;
-      color: #757575;
-      font-size: 14px;
-      font-size: 0.875rem; }
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-weight: 700; }
 .search-section .search-results {
   width: 100%; }
 

@@ -246,6 +246,14 @@
 			margin: 1rem 0 .5rem;
 			color: $black600;
 
+			.link {
+				color: $black600;
+
+				&:hover {
+					color: $black700;
+				}
+			}
+
 			.location-label {
 				@include font-size($fontsize100);
 			}
