@@ -2211,8 +2211,7 @@ ol, ul {
   Sections
   ========================================================================== */
 .headlines-section {
-  margin-bottom: 0;
-  padding: 0 0.5rem; }
+  margin-bottom: 0; }
   @media (min-width: 62.5em) {
     .headlines-section .headlines-list {
       display: -webkit-box;
