@@ -39,18 +39,6 @@
 		}
 	}
 
-	.card-header {
-		@include transition(background-color .2s);
-		@include border-right-radius($elementradius);
-
-		@include bp(l) {
-			&:hover {
-				background-color: darken($bluegrey100, 5%);
-				cursor: pointer;
-			}
-		}
-	}
-
 	.card-heading {
 		margin-bottom: $baseline / 2;
 		@include font-size($fontsize400);

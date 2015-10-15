@@ -3026,16 +3026,6 @@ ol, ul {
       .card .card-header,
       .card .card-footer {
         padding-bottom: 0.5rem; } }
-  .card .card-header {
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px; }
-    @media (min-width: 62.5em) {
-      .card .card-header:hover {
-        background-color: #dde3e6;
-        cursor: pointer; } }
   .card .card-heading {
     margin-bottom: 0.25rem;
     font-size: 18px;
