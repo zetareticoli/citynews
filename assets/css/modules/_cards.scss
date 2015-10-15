@@ -33,6 +33,13 @@
 		@include transition(background-color .2s);
 		@include border-bottom-radius(6px);
 		background-color: $bluegrey100;
+
+		@include bp(l) {
+			&:hover {
+				background-color: darken($bluegrey100, 5%);
+				cursor: pointer;
+			}
+		}
 	}
 
 	.card-heading {
@@ -43,18 +50,17 @@
 		@include bp(m) {
 			@include font-size($fontsize500);
 		}
+
+		.link {
+			color: $black900;
+			&:hover {
+				color: $black1000;
+			}
+		}
 	}
 
 	.card-media img {
 		@include border-top-radius(6px);
-	}
-
-	.block-link {
-		display: block;
-
-		&:hover .card-header {
-			background-color: darken($bluegrey100, 5%);
-		}
 	}
 }
 
@@ -110,24 +116,18 @@
 	}
 
 	.tile-icon,
-	.tile-author {
+	.author-photo {
 		position: absolute;
 		top: 0;
 		z-index: 2;
 	}
 
-	.tile-author {
+	.author-photo {
 		left: 1rem;
+	}
 
-		img {
-			float: left;
-			margin-right: .5rem;
-		}
-
-		.author-name {
-			@include font-size($fontsize200);
-			color: $black600;
-		}
+	.author-photo {
+		width: 3rem;
 	}
 
 	.tile-icon {
@@ -138,6 +138,11 @@
 		.icon {
 			fill: white;
 		}
+	}
+
+	.author-name {
+		color: $black600;
+		@include font-size($fontsize200);
 	}
 
 	.location-label {
