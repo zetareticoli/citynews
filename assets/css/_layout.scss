@@ -237,7 +237,6 @@ ol, ul {
 
 	@include bp(m) {
 		@include column-count(3);
-		@include column-gap(2rem);
 	}
 }
 

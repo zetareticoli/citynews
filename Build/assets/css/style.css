@@ -2044,10 +2044,7 @@ ol, ul {
     .l-masonry {
       -webkit-column-count: 3;
       -moz-column-count: 3;
-      column-count: 3;
-      -webkit-column-gap: 2rem;
-      -moz-column-gap: 2rem;
-      column-gap: 2rem; } }
+      column-count: 3; } }
 
 .l-m-item {
   /* Masonry bricks or child elements */
@@ -3072,7 +3069,7 @@ ol, ul {
 .tile-card {
   position: relative;
   margin-bottom: 1.5rem;
-  padding-top: 1.5rem; }
+  padding-top: 1.25rem; }
   .tile-card .card-header {
     padding: 1rem; }
   .tile-card .tile-icon,
