@@ -20,6 +20,16 @@
 }
 
 .card {
+	width: 100%;
+	background-color: $bluegrey100;
+	@include border-left-radius($elementradius);
+	@include border-right-radius($elementradius);
+	@include clearfix;
+
+	@include bp(m) {
+		@include border-right-radius(0);
+		@include border-bottom-radius($elementradius);
+	}
 
 	.card-header,
 	.card-footer {
@@ -31,8 +41,7 @@
 
 	.card-header {
 		@include transition(background-color .2s);
-		@include border-bottom-radius(6px);
-		background-color: $bluegrey100;
+		@include border-right-radius($elementradius);
 
 		@include bp(l) {
 			&:hover {
@@ -43,12 +52,13 @@
 	}
 
 	.card-heading {
-		margin-bottom: $baseline;
+		margin-bottom: $baseline / 2;
 		@include font-size($fontsize400);
-		line-height: 1.5rem;
+		line-height: 1.15rem;
 
 		@include bp(m) {
 			@include font-size($fontsize500);
+			line-height: 1.5rem;
 		}
 
 		.link {
@@ -59,8 +69,30 @@
 		}
 	}
 
+	.card-label {
+		position: relative;
+		margin-bottom: 0;
+		@include font-size($fontsize100);
+		color: $accentpink;
+
+		@include bp(m) {
+			margin-bottom: $baseline / 2;
+		}
+	}
+
 	.card-media img {
-		@include border-top-radius(6px);
+		@include border-left-radius($elementradius); 
+
+		@include bp(m) {
+			@include border-left-radius(0);
+			@include border-top-radius($elementradius);
+		}
+
+		@include bp(m) {
+			@include border-left-radius(0);
+			@include border-top-radius($elementradius);
+		}
+
 	}
 }
 
@@ -71,7 +103,7 @@
 		width: 30%;
 		max-width: 150px;
 		float: left;
-		margin-right: $gutterwidth / 2;
+		margin-right: $baseline;
 
 		@include bp(m) {
 			width: 100%;
@@ -107,11 +139,13 @@
 // Tile card ===============================================================
 
 .tile-card {
+	background-color: transparent;
 	position: relative;
 	margin-bottom: 1.5rem;
 	padding-top: 1.25rem;
 
 	.card-header {
+		background-color: $bluegrey100;
 		padding: 1rem;
 	}
 

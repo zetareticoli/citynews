@@ -485,19 +485,13 @@ time,
 // Label
 
 .label {
-	margin: 0 4px 4px 0;
+	margin: 0 $baseline / 2 $baseline / 2 0;
 	display: inline-block;
 	font-family: $brandtypeface;
 	@include font-size($fontsize200);
 	color: $black600;
 	text-transform: uppercase;
 }
-
-	.card-label {
-		position: relative;
-		margin-bottom: $baseline / 2;
-		color: $accentpink;
-	}
 
 	.entry-label {
 		@include font-size($fontsize200);
