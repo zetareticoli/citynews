@@ -46,10 +46,16 @@
 // Create an oval shape 
 .rounded-icon {
 	@include rounded(50%);
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: $overlay;
 	@include transition(background-color .2s ease);
+
+	&.medium {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	&.icon-color--mint {
+		background-image: linear-gradient(134deg, #17BF95 0%, #34DFB4 100%);
+	}
 }
 
 .caret-icon {

@@ -1085,12 +1085,14 @@ h5.location-label {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: rgba(66, 66, 66, 0.25);
   -webkit-transition: background-color 0.2s ease;
   -moz-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
+  .rounded-icon.medium {
+    width: 3rem;
+    height: 3rem; }
+  .rounded-icon.icon-color--mint {
+    background-image: linear-gradient(134deg, #17BF95 0%, #34DFB4 100%); }
 
 .caret-icon {
   display: inline-block;
@@ -2020,27 +2022,20 @@ ol, ul {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem; }
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem; }
   @media (min-width: 46.25em) {
     .l-masonry {
       -webkit-column-count: 3;
       -moz-column-count: 3;
       column-count: 3; } }
-  @media (min-width: 75em) {
-    .l-masonry {
-      -webkit-column-count: 4;
-      -moz-column-count: 4;
-      column-count: 4; } }
 
 .l-m-item {
   /* Masonry bricks or child elements */
   width: 100%;
   display: inline-block;
-  margin: 0 0 1rem;
-  padding: 10px;
-  border: 1px solid red; }
+  margin: 0 0 1rem; }
 
 /* ==========================================================================
   Site Header
@@ -2995,40 +2990,36 @@ ol, ul {
 @media (max-width: 46.188em) {
   .card-footer {
     display: none; } }
-.card {
-  background-color: #eceff1; }
-
-.card-header,
-.card-footer {
+.card .card-header,
+.card .card-footer {
   padding: 0.5rem; }
   @media (min-width: 46.25em) {
-    .card-header,
-    .card-footer {
+    .card .card-header,
+    .card .card-footer {
       padding-bottom: 0.5rem; } }
-
-.card-heading {
+.card .card-header {
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #eceff1; }
+.card .card-heading {
   margin-bottom: 0.5rem;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5rem; }
   @media (min-width: 46.25em) {
-    .card-heading {
+    .card .card-heading {
       font-size: 20px;
       font-size: 1.25rem; } }
-
+.card .card-media img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
 .card .block-link {
-  display: block;
-  *zoom: 1; }
-  .card .block-link:before, .card .block-link:after {
-    content: " ";
-    display: table; }
-  .card .block-link:after {
-    clear: both; }
-  .card .block-link:hover {
-    background-color: #dde3e6;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s; }
+  display: block; }
+  .card .block-link:hover .card-header {
+    background-color: #dde3e6; }
 
 .event-card .card-media {
   width: 30%;
@@ -3055,6 +3046,43 @@ ol, ul {
   font-size: 14px;
   font-size: 0.875rem;
   color: #546e7a; }
+
+.tile-card {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+  .tile-card .card-header {
+    padding: 1rem; }
+  .tile-card .tile-icon,
+  .tile-card .tile-author {
+    position: absolute;
+    top: 0;
+    z-index: 2; }
+  .tile-card .tile-author {
+    left: 1rem; }
+    .tile-card .tile-author img {
+      float: left;
+      margin-right: .5rem; }
+    .tile-card .tile-author .author-name {
+      font-size: 14px;
+      font-size: 0.875rem;
+      color: #9e9e9e; }
+  .tile-card .tile-icon {
+    -webkit-box-shadow: 0 0 0 3px white;
+    -moz-box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px white;
+    right: 1rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .tile-card .tile-icon .icon {
+      fill: white; }
+  .tile-card .location-label {
+    color: #607d8b; }
+    .tile-card .location-label .icon {
+      fill: #90a4ae; }
 
 /* ==========================================================================
   Story

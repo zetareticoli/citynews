@@ -20,34 +20,41 @@
 }
 
 .card {
-	background-color: $bluegrey100;
-}
 
-.card-header,
-.card-footer {
-	padding: $baseline;
-	@include bp(m) {
-		padding-bottom: $baseline;
+	.card-header,
+	.card-footer {
+		padding: $baseline;
+		@include bp(m) {
+			padding-bottom: $baseline;
+		}
 	}
-}
 
-.card-heading {
-	margin-bottom: $baseline;
-	@include font-size($fontsize400);
-	line-height: 1.5rem;
-
-	@include bp(m) {
-		@include font-size($fontsize500);
-	}
-}
-
-.card .block-link {
-	display: block;
-	@include clearfix;
-
-	&:hover {
-		background-color: darken($bluegrey100, 5%);
+	.card-header {
 		@include transition(background-color .2s);
+		@include border-bottom-radius(6px);
+		background-color: $bluegrey100;
+	}
+
+	.card-heading {
+		margin-bottom: $baseline;
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+		}
+	}
+
+	.card-media img {
+		@include border-top-radius(6px);
+	}
+
+	.block-link {
+		display: block;
+
+		&:hover .card-header {
+			background-color: darken($bluegrey100, 5%);
+		}
 	}
 }
 
@@ -88,5 +95,56 @@
 	.card-info {
 		@include font-size(14);
 		color: $bluegrey700;
+	}
+}
+
+// Tile card ===============================================================
+
+.tile-card {
+	position: relative;
+	margin-bottom: 1.5rem;
+	padding-top: 1.5rem;
+
+	.card-header {
+		padding: 1rem;
+	}
+
+	.tile-icon,
+	.tile-author {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+	}
+
+	.tile-author {
+		left: 1rem;
+
+		img {
+			float: left;
+			margin-right: .5rem;
+		}
+
+		.author-name {
+			@include font-size($fontsize200);
+			color: $black600;
+		}
+	}
+
+	.tile-icon {
+		@include box-shadow(0 0 0 3px white);
+		right: 1rem;
+		@include flexbox;
+
+		.icon {
+			fill: white;
+		}
+	}
+
+	.location-label {
+		color: $bluegrey600;
+
+		.icon {
+			fill: $bluegrey400;
+		}
 	}
 }
