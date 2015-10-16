@@ -4137,33 +4137,29 @@ html.is-locked body {
     .is-nav-open .content-blocker {
       display: none; } }
 
-.is-nav-sliding.slim-header {
-  height: 123px;
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  transition: height 0.2s; }
-.is-nav-sliding .header-top {
-  z-index: 6; }
-.is-nav-sliding .sliding-nav {
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0); }
-  .is-nav-sliding .sliding-nav .nav-item {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: -webkit-transform 0.2s 0.25s, opacity 0.2s 0.25s;
-    -moz-transition: -moz-transform 0.2s 0.25s, opacity 0.2s 0.25s;
-    transition: transform 0.2s 0.25s, opacity 0.2s 0.25s; }
+/*
+.is-nav-sliding {
+	&.slim-header {
+		height: 123px;
+		@include transition(height .2s);
+	}
 
+	.header-top {
+		z-index: 6;
+	}
+
+	.sliding-nav {
+		@include transition(transform .2s);	
+		@include transform(translateY(0));
+
+		.nav-item {
+			opacity: 1;
+			@include transform(translateY(0));
+			@include transition(transform .2s .25s, opacity .2s .25s);
+		}
+	}
+}
+*/
 .has-min-width {
   min-width: 300px; }
 
