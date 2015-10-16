@@ -3102,14 +3102,20 @@ ol, ul {
     position: absolute;
     top: 0;
     z-index: 2; }
-  .tile-card .author-photo {
-    left: 1rem; }
-  .tile-card .author-photo {
-    width: 3rem; }
+  .tile-card .author-photo,
   .tile-card .tile-icon {
     -webkit-box-shadow: 0 0 0 3px white;
     -moz-box-shadow: 0 0 0 3px white;
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px white; }
+  .tile-card .author-photo {
+    width: 2.5rem;
+    left: 1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+    .tile-card .author-photo img {
+      vertical-align: top; }
+  .tile-card .tile-icon {
     right: 1rem;
     display: -webkit-box;
     display: -moz-box;
