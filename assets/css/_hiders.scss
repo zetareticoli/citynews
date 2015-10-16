@@ -27,8 +27,8 @@
 }
 
 @include bp(m) {
-	.author-role,
-	.author-photo {
+	.entry-meta .author-role,
+	.entry-meta .author-photo {
 		display: inline-block;
 	}
 

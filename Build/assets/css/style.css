@@ -4478,8 +4478,8 @@ html.is-locked body {
   .slim-header .page-title {
     display: none; } }
 @media (min-width: 46.25em) {
-  .author-role,
-  .author-photo {
+  .entry-meta .author-role,
+  .entry-meta .author-photo {
     display: inline-block; }
 
   .related-stories.inner {
