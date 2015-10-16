@@ -352,19 +352,19 @@ ol, ul {
 
 .slim-header {
 	position: relative;
-	height: $smallheadersize;
-	@include transition(height .2s .3s);
-
-	@include bp(m) {
-		height: $mediumheadersize;
-	}
-
-	@include bp(l) {
-		height: $largeheadersize;
-	}
+	@include transition(height .2s);
 
 	.header-top {
 		z-index: 6;
+		height: $smallheadersize;
+
+		@include bp(m) {
+			height: $mediumheadersize;
+		}
+
+		@include bp(l) {
+			height: $largeheadersize;
+		}
 
 		@include bp(l) {
 			@include box-shadow(0 2px 0 $bordercolor);
