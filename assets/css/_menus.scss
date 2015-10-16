@@ -64,11 +64,6 @@
 	}
 }
 
-.nav-back-link {
-	position: absolute;
-	left: 0;
-}
-
 
 /* ==========================================================================
   Primary Navigation
@@ -145,6 +140,14 @@
 		margin: 0 $baseline;
 		font-family: $headingstypeface;
 		@include font-size($fontsize400);
+
+		&.nav-back-link {
+			position: absolute;
+			left: 0;
+			line-height: 3rem;
+			@include font-size($fontsize200);
+			color: $black600;
+		}
 	}
 }
 

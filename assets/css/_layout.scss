@@ -275,6 +275,18 @@ ol, ul {
 			background-color: white;
 			height: $largeheadersize;
 		}
+
+		.follow-btn {
+			display: none;
+
+			@include bp(l) {
+				display: block;
+				position: absolute;
+				right: 14rem;
+				top: 1.25rem;
+			}
+		}
+
 	}
 
 	.header-bottom {
