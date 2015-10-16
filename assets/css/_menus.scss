@@ -125,14 +125,19 @@
   ========================================================================== */
 
 .secondary-nav {
-	@include bp(l) {
+	position: relative;
+	text-align: center;
+
+	&.absolute-position {
 		position: absolute;
 		left: 35%;
-		top: 13px;
+		padding: 0;
+		text-align: none;
 	}
 
 	.nav-item {
-		margin-right: $baseline * 2;
+		line-height: 3rem;
+		margin: 0 $baseline;
 		font-family: $headingstypeface;
 		@include font-size($fontsize400);
 	}
