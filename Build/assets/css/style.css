@@ -3093,8 +3093,7 @@ ol, ul {
 .tile-card {
   background-color: transparent;
   position: relative;
-  margin-bottom: 1.5rem;
-  padding-top: 1.25rem; }
+  padding-top: 1.5rem; }
   .tile-card .card-header {
     background-color: #eceff1;
     padding: 1rem; }
