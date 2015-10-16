@@ -4143,7 +4143,6 @@ html.is-locked body {
   -moz-transition: height 0.2s;
   transition: height 0.2s; }
 .is-nav-sliding .header-top {
-  border-bottom: 3px solid #e0e0e0;
   z-index: 6; }
 .is-nav-sliding .sliding-nav {
   -webkit-transition: -webkit-transform 0.2s;
