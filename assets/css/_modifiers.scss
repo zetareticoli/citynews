@@ -100,7 +100,12 @@ html.is-locked  body {
 
 .is-nav-open {
 	.mobile-nav {
+		visibility: visible;
 		@include transform(translateX(-250px));
+
+		@include bp(l) {
+			@include transform(translateX(250px));
+		}
 	}
 
 	.content-blocker {

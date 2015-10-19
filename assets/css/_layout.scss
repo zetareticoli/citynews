@@ -407,6 +407,20 @@ ol, ul {
 			float: left;
 			height: 100%;
 		}
+
+		> .mobile-nav-trigger {
+			visibility: hidden;
+
+			@include bp(l) {
+				position: relative;
+				float: left;
+				right: 0;
+				top: 0;
+				height: 100%;
+				visibility: visible;
+			}
+		}
+
 	}
 
 	.page-title {
@@ -425,19 +439,6 @@ ol, ul {
 
 		@include bp(l) {
 			line-height: $largeheadersize;
-		}
-	}
-
-	.nav-btn.sliding-nav-trigger {
-		visibility: hidden;
-
-		@include bp(l) {
-			position: relative;
-			float: left;
-			right: 0;
-			top: 0;
-			height: 100%;
-			visibility: visible;
 		}
 	}
 

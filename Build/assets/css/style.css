@@ -2182,6 +2182,16 @@ ol, ul {
         display: block;
         float: left;
         height: 100%; } }
+    .slim-header .slim-header-nav > .mobile-nav-trigger {
+      visibility: hidden; }
+      @media (min-width: 62.5em) {
+        .slim-header .slim-header-nav > .mobile-nav-trigger {
+          position: relative;
+          float: left;
+          right: 0;
+          top: 0;
+          height: 100%;
+          visibility: visible; } }
   .slim-header .page-title {
     position: relative;
     margin-top: 4.5rem; }
@@ -2197,16 +2207,6 @@ ol, ul {
     @media (min-width: 62.5em) {
       .slim-header .page-title {
         line-height: 4.5rem; } }
-  .slim-header .nav-btn.sliding-nav-trigger {
-    visibility: hidden; }
-    @media (min-width: 62.5em) {
-      .slim-header .nav-btn.sliding-nav-trigger {
-        position: relative;
-        float: left;
-        right: 0;
-        top: 0;
-        height: 100%;
-        visibility: visible; } }
   @media (max-width: 46.188em) {
     .slim-header + .section {
       margin-top: 3.5rem; } }
@@ -2421,31 +2421,11 @@ ol, ul {
 .nav-item.current .link {
   color: #212121; }
 
-.nav-toggle {
-  display: none;
-  float: left;
-  margin: 0 1rem;
-  line-height: 2.2em; }
-  @media (min-width: 62.5em) {
-    .nav-toggle {
-      display: block; } }
-
 .nav-toolbar {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%; }
-
-.nav-mobile {
-  position: absolute;
-  right: 10px;
-  display: block; }
-  @media (min-width: 46.25em) {
-    .nav-mobile {
-      top: 10px; } }
-  @media (min-width: 62.5em) {
-    .nav-mobile {
-      display: none; } }
 
 /* ==========================================================================
   Primary Navigation
@@ -2528,7 +2508,6 @@ ol, ul {
   height: 100%;
   position: fixed;
   top: 0;
-  right: -250px;
   z-index: 1000;
   background: #212121;
   border-left-width: 3px;
@@ -2539,7 +2518,14 @@ ol, ul {
   -o-transform: translateX(0);
   transform: translateX(0);
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  visibility: hidden; }
+  @media (max-width: 62.438em) {
+    .mobile-nav {
+      right: -250px; } }
+  @media (min-width: 62.5em) {
+    .mobile-nav {
+      left: -250px; } }
   .mobile-nav .nav-items-list {
     clear: left; }
   .mobile-nav .nav-item {
@@ -2638,52 +2624,6 @@ ol, ul {
   z-index: 9;
   background-color: rgba(33, 33, 33, 0.92);
   display: none; }
-
-/* ==========================================================================
-  Sliding Navigation
-  ========================================================================== */
-.sliding-nav {
-  display: none; }
-  @media (min-width: 62.5em) {
-    .sliding-nav {
-      display: block;
-      position: absolute;
-      background-color: #eeeeee;
-      left: 0;
-      width: 100%;
-      -webkit-transform: translateY(-65px);
-      -moz-transform: translateY(-65px);
-      -ms-transform: translateY(-65px);
-      -o-transform: translateY(-65px);
-      transform: translateY(-65px);
-      -webkit-transition: -webkit-transform 0.2s 0.15s;
-      -moz-transition: -moz-transform 0.2s 0.15s;
-      transition: transform 0.2s 0.15s;
-      z-index: 5; }
-      .sliding-nav .nav-item {
-        float: left;
-        display: inline;
-        font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-        font-size: 1.125rem;
-        line-height: 1rem;
-        padding: 1rem;
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        -o-transform: translateY(-10px);
-        transform: translateY(-10px);
-        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-        -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-        transition: transform 0.2s, opacity 0.2s; } }
-  @media (min-width: 75em) {
-    .sliding-nav {
-      -webkit-transform: translateY(-49px);
-      -moz-transform: translateY(-49px);
-      -ms-transform: translateY(-49px);
-      -o-transform: translateY(-49px);
-      transform: translateY(-49px); } }
 
 /* ==========================================================================
   MODULES
@@ -4229,11 +4169,19 @@ html.is-locked body {
       display: none; } }
 
 .is-nav-open .mobile-nav {
+  visibility: visible;
   -webkit-transform: translateX(-250px);
   -moz-transform: translateX(-250px);
   -ms-transform: translateX(-250px);
   -o-transform: translateX(-250px);
   transform: translateX(-250px); }
+  @media (min-width: 62.5em) {
+    .is-nav-open .mobile-nav {
+      -webkit-transform: translateX(250px);
+      -moz-transform: translateX(250px);
+      -ms-transform: translateX(250px);
+      -o-transform: translateX(250px);
+      transform: translateX(250px); } }
 .is-nav-open .content-blocker {
   display: block; }
   @media (min-width: 62.5em) {
