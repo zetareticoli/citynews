@@ -4188,29 +4188,6 @@ html.is-locked body {
     .is-nav-open .content-blocker {
       display: none; } }
 
-/*
-.is-nav-sliding {
-	&.slim-header {
-		height: 123px;
-		@include transition(height .2s);
-	}
-
-	.header-top {
-		z-index: 6;
-	}
-
-	.sliding-nav {
-		@include transition(transform .2s);	
-		@include transform(translateY(0));
-
-		.nav-item {
-			opacity: 1;
-			@include transform(translateY(0));
-			@include transition(transform .2s .25s, opacity .2s .25s);
-		}
-	}
-}
-*/
 .has-min-width {
   min-width: 300px; }
 
