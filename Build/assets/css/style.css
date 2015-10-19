@@ -2510,7 +2510,7 @@ ol, ul {
   top: 0;
   z-index: 1000;
   background: #212121;
-  border-left-width: 3px;
+  border-left-width: 4px;
   border-left-style: solid;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -2525,7 +2525,10 @@ ol, ul {
       right: -250px; } }
   @media (min-width: 62.5em) {
     .mobile-nav {
-      left: -250px; } }
+      left: -250px;
+      border-left-width: 0;
+      border-right-style: solid;
+      border-right-width: 4px; } }
   .mobile-nav .nav-items-list {
     clear: left; }
   .mobile-nav .nav-item {
