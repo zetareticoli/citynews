@@ -2745,6 +2745,7 @@ ol, ul {
     .custom-subheader .secondary-nav .nav-item {
       margin: 0; }
       .custom-subheader .secondary-nav .nav-item a {
+        display: inline-block;
         padding-left: 1rem;
         line-height: 2.5rem; }
       .custom-subheader .secondary-nav .nav-item span {
