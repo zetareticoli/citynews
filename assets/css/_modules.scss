@@ -23,6 +23,107 @@
 }
 
 /* ==========================================================================
+  Custom Sub-Headers
+  ========================================================================== */
+
+.custom-subheader {
+	position: relative;
+	background-color: $bluegrey100;
+
+	.page-title {
+		display: inline-block;
+		margin: .5rem 0;
+		@include font-size($fontsize600);
+		line-height: 2.5rem;
+
+		@include bp(m) {
+			margin: 1rem .5rem 1rem 0;
+			@include font-size($fontsize900);
+		}
+
+		@include bp(l) {
+			margin: 1.5rem .5rem 1.5rem 0;
+		}
+	}
+
+	.secondary-nav {
+		background-color: darken($bluegrey100, 0);
+		text-align: left;
+
+		@include bp(m) {
+			display: block;
+		}
+
+		.nav-item {
+			margin: 0;
+
+			a {
+				padding-left: 1rem;
+				line-height: 2.5rem;
+			}
+
+			span {
+				padding-right: 1rem;
+				border-right: 1px solid $bluegrey200;
+			}
+
+			&:hover {
+				box-shadow: inset 0 -.35rem 0 white;
+			}
+
+			&:last-child {
+				span {
+					border-right: 0;
+				}
+			}
+		}
+
+		.nav-item.current {
+			background-color: white;
+
+			span {
+				border-right: 0;
+			}
+		}
+	}
+
+	.byline {
+		display: none;
+
+		@include bp(m) {
+			display: inline-block;
+		}
+
+		em {
+			color: $black700;
+		}
+	}
+
+	.follow-btn {
+		position: absolute;
+		top: .5rem;
+		right: 1rem;
+
+		@include bp(m) {
+			top: 1rem;
+		}
+
+		@include bp(l) {
+			top: 1.5rem;
+		}
+	}
+
+	.subheader-nav-dropdown {
+		margin-bottom: .5rem;
+
+		@include bp(m) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+/* ==========================================================================
   Discussion
   ========================================================================== */
 

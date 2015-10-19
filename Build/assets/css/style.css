@@ -2706,6 +2706,72 @@ ol, ul {
     flex: 4 1 auto; }
 
 /* ==========================================================================
+  Custom Sub-Headers
+  ========================================================================== */
+.custom-subheader {
+  position: relative;
+  background-color: #eceff1; }
+  .custom-subheader .page-title {
+    display: inline-block;
+    margin: .5rem 0;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+    @media (min-width: 46.25em) {
+      .custom-subheader .page-title {
+        margin: 1rem .5rem 1rem 0;
+        font-size: 36px;
+        font-size: 2.25rem; } }
+    @media (min-width: 62.5em) {
+      .custom-subheader .page-title {
+        margin: 1.5rem .5rem 1.5rem 0; } }
+  .custom-subheader .secondary-nav {
+    background-color: #eceff1;
+    text-align: left; }
+    @media (min-width: 46.25em) {
+      .custom-subheader .secondary-nav {
+        display: block; } }
+    .custom-subheader .secondary-nav .nav-item {
+      margin: 0; }
+      .custom-subheader .secondary-nav .nav-item a {
+        padding-left: 1rem;
+        line-height: 2.5rem; }
+      .custom-subheader .secondary-nav .nav-item span {
+        padding-right: 1rem;
+        border-right: 1px solid #cfd8dc; }
+      .custom-subheader .secondary-nav .nav-item:hover {
+        box-shadow: inset 0 -.35rem 0 white; }
+      .custom-subheader .secondary-nav .nav-item:last-child span {
+        border-right: 0; }
+    .custom-subheader .secondary-nav .nav-item.current {
+      background-color: white; }
+      .custom-subheader .secondary-nav .nav-item.current span {
+        border-right: 0; }
+  .custom-subheader .byline {
+    display: none; }
+    @media (min-width: 46.25em) {
+      .custom-subheader .byline {
+        display: inline-block; } }
+    .custom-subheader .byline em {
+      color: #757575; }
+  .custom-subheader .follow-btn {
+    position: absolute;
+    top: .5rem;
+    right: 1rem; }
+    @media (min-width: 46.25em) {
+      .custom-subheader .follow-btn {
+        top: 1rem; } }
+    @media (min-width: 62.5em) {
+      .custom-subheader .follow-btn {
+        top: 1.5rem; } }
+  .custom-subheader .subheader-nav-dropdown {
+    margin-bottom: .5rem; }
+    @media (min-width: 46.25em) {
+      .custom-subheader .subheader-nav-dropdown {
+        display: none;
+        visibility: hidden; } }
+
+/* ==========================================================================
   Discussion
   ========================================================================== */
 .discussion-section {
