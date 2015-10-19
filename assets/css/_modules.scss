@@ -50,7 +50,7 @@
 	}
 
 	.secondary-nav {
-		background-color: darken($bluegrey100, 0);
+		background-color: darken($bluegrey100, 3%);
 		text-align: left;
 
 		@include bp(m) {
@@ -67,7 +67,7 @@
 
 			span {
 				padding-right: 1rem;
-				border-right: 1px solid $bluegrey200;
+
 			}
 
 			&:hover {

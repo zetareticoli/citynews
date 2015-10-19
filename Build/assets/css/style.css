@@ -2729,7 +2729,7 @@ ol, ul {
       .custom-subheader .page-title {
         margin: 1.5rem .5rem 1.5rem 0; } }
   .custom-subheader .secondary-nav {
-    background-color: #eceff1;
+    background-color: #e3e8eb;
     text-align: left; }
     @media (min-width: 46.25em) {
       .custom-subheader .secondary-nav {
@@ -2740,8 +2740,7 @@ ol, ul {
         padding-left: 1rem;
         line-height: 2.5rem; }
       .custom-subheader .secondary-nav .nav-item span {
-        padding-right: 1rem;
-        border-right: 1px solid #cfd8dc; }
+        padding-right: 1rem; }
       .custom-subheader .secondary-nav .nav-item:hover {
         box-shadow: inset 0 -.35rem 0 white; }
       .custom-subheader .secondary-nav .nav-item:last-child span {
