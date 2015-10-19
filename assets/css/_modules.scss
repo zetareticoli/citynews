@@ -29,6 +29,9 @@
 .custom-subheader {
 	position: relative;
 	background-color: $bluegrey100;
+	border-top-width: 2px;
+	border-top-style: solid;
+	z-index: 7;
 
 	.page-title {
 		display: inline-block;
@@ -80,10 +83,7 @@
 
 		.nav-item.current {
 			background-color: white;
-
-			span {
-				border-right: 0;
-			}
+			border-top: 2px solid $bluegrey200;
 		}
 	}
 
