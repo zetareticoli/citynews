@@ -109,10 +109,11 @@ html.is-locked  body {
 	}
 
 	.content-blocker {
-		display: block;
+		opacity: 1;
+		z-index: 9;
 
 		@include bp(l) {
-			display: none;
+			opacity: 0;
 		}
 	}
 }
