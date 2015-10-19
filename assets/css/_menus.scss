@@ -141,6 +141,14 @@
 		font-family: $headingstypeface;
 		@include font-size($fontsize400);
 
+		&:hover {
+			@include box-shadow(inset 0 -.35rem 0 darken($black300,5%));
+		}
+
+		&.current {
+			@include box-shadow(inset 0 -.35rem 0 white);
+		}
+
 		&.nav-back-link {
 			position: absolute;
 			left: 0;
