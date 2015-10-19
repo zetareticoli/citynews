@@ -142,7 +142,7 @@
 		@include font-size($fontsize400);
 
 		&:hover {
-			@include box-shadow(inset 0 -.35rem 0 darken($black300,5%));
+			@include box-shadow(inset 0 -.35rem 0 $black400);
 		}
 
 		&.current {
