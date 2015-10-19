@@ -263,10 +263,9 @@ ol, ul {
 
 	.header-top {
 		height: $smallheadersize;
-		padding: 0 $baseline;
+		padding: 0 $baseline * 2;
 
 		@include bp(m) {
-			padding: 0 $baseline * 3;
 			height: $mediumheadersize;
 		}
 

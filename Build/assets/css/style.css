@@ -2078,10 +2078,9 @@ ol, ul {
       clear: both; }
   .header .header-top {
     height: 3.5rem;
-    padding: 0 0.5rem; }
+    padding: 0 1rem; }
     @media (min-width: 46.25em) {
       .header .header-top {
-        padding: 0 1.5rem;
         height: 4rem; } }
     @media (min-width: 62.5em) {
       .header .header-top {
