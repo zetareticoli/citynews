@@ -10,12 +10,6 @@ $(document).ready(function(){
 		( scrollTop >= offsetTop ) ? $('.main-content').addClass('is-fixed') : $('.main-content').removeClass('is-fixed');
 	}
 
-	//sliding nav - open/close navigation
-	$('.sliding-nav-trigger').on('click', function(event){
-		event.preventDefault();    
-		$('.header').toggleClass('is-nav-sliding');
-	});
-
 	//mobile nav - open/close navigation
 	$('.mobile-nav-trigger').on('click', function(event){
 		event.preventDefault();    
