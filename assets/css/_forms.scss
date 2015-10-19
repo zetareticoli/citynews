@@ -54,6 +54,11 @@ label,
 	&:disabled {
 		color: $black400;
 	}
+
+	&.input-sm {
+		@include font-size($fontsize200);
+		line-height: 1rem;
+	}
 }
 
 // Form Select

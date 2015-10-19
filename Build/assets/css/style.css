@@ -1534,6 +1534,10 @@ label,
     box-shadow: none; }
   .form-control:disabled {
     color: #e0e0e0; }
+  .form-control.input-sm {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1rem; }
 
 .form-select {
   /* select element wrapper */
