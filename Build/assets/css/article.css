@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Entry
+  ENTRY
   ========================================================================== */
 .entry {
   padding: 0 0.5rem 1rem;
@@ -133,7 +133,6 @@
         width: 15rem; } }
   @media (min-width: 46.25em) {
     .entry-media {
-      float: left;
       margin: 0 0 1rem; } }
   .entry-media img {
     width: 100%; }
@@ -142,3 +141,31 @@
   .entry-footer {
     margin-bottom: 2rem;
     width: 38rem; } }
+
+.entry-gallery {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  @media (min-width: 46.25em) {
+    .entry-gallery {
+      margin: 1.5rem 0; } }
+  @media (min-width: 75em) {
+    .entry-gallery {
+      margin: 2rem 0; } }
+  .entry-gallery .gallery-item {
+    padding: .25rem;
+    width: 25%;
+    text-align: center;
+    -webkit-box-flex: 0 1 auto;
+    -moz-box-flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }

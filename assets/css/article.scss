@@ -4,12 +4,8 @@
 // Sass mixins
 @import "mixins";
 
-// Variables
-$entry-content-width	: 640px;
-$entry-content-offset	: 180px;
-
 /* ==========================================================================
-  Entry
+  ENTRY
   ========================================================================== */
 
 .entry {
@@ -162,7 +158,6 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(m) {
-		float: left;
 		margin: 0 0 $baseline * 2;
 	}
 
@@ -180,3 +175,27 @@ $entry-content-offset	: 180px;
 		width: 38rem;
 	}
 }
+
+// Entry Gallery ===============================================================
+
+.entry-gallery {
+	margin: $baseline * 2 0;
+	@include flexbox;
+	@include flex-flow(row wrap);
+
+	@include bp(m) {
+		margin: $baseline * 3 0;
+	}
+
+	@include bp(xl) {
+		margin: $baseline * 4 0;
+	}
+
+	.gallery-item {
+		padding: .25rem;
+		width: 25%;
+		text-align: center;
+		@include flex(0 1 auto);
+	}
+}
+
