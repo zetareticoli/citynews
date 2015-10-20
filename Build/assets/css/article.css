@@ -133,7 +133,6 @@
         width: 15rem; } }
   @media (min-width: 46.25em) {
     .entry-media {
-      float: left;
       margin: 0 0 1rem; } }
   .entry-media img {
     width: 100%; }

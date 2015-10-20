@@ -162,7 +162,6 @@ $entry-content-offset	: 180px;
 	}
 
 	@include bp(m) {
-		float: left;
 		margin: 0 0 $baseline * 2;
 	}
 
