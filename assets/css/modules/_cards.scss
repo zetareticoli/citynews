@@ -161,10 +161,6 @@
 	.tile-icon {
 		right: 1rem;
 		@include flexbox;
-
-		.icon {
-			fill: white;
-		}
 	}
 
 	.author-name {
