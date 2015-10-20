@@ -130,6 +130,14 @@
 			line-height: 3rem;
 			@include font-size($fontsize200);
 			color: $black600;
+			fill: $black600;
+
+			&:hover {
+				@include box-shadow(none);
+				color: $black700;
+				fill: $black700;
+				text-decoration: none;
+			}
 		}
 	}
 }
