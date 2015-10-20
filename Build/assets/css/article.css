@@ -52,6 +52,12 @@
   position: relative; }
   .entry-label.category-label {
     display: inline-block; }
+  .entry-label .tile-icon {
+    float: left;
+    margin-right: .5rem; }
+    @media (max-width: 62.438em) {
+      .entry-label .tile-icon {
+        display: none; } }
 
 .entry-content {
   *zoom: 1;
