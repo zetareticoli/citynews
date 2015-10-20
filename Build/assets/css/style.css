@@ -2087,6 +2087,15 @@ ol, ul {
         padding: 0 1rem;
         background-color: white;
         height: 4.5rem; } }
+    .header .header-top .nav-toolbar {
+      display: none; }
+      @media (min-width: 62.5em) {
+        .header .header-top .nav-toolbar {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%; } }
     .header .header-top .follow-btn {
       display: none; }
       @media (min-width: 62.5em) {
@@ -2164,17 +2173,17 @@ ol, ul {
         -webkit-box-shadow: 0 2px 0 #e0e0e0;
         -moz-box-shadow: 0 2px 0 #e0e0e0;
         box-shadow: 0 2px 0 #e0e0e0; } }
-  .slim-header .header-brand {
-    margin-right: 1.5rem; }
-    .slim-header .header-brand .logo {
-      margin-top: 14px; }
-      @media (min-width: 46.25em) {
-        .slim-header .header-brand .logo {
-          margin-top: 1.2rem;
-          height: 1.5rem; } }
-      @media (min-width: 62.5em) {
-        .slim-header .header-brand .logo {
-          margin-top: 1.5rem; } }
+    .slim-header .header-top .header-brand {
+      margin-right: 1rem; }
+      .slim-header .header-top .header-brand .logo {
+        margin-top: 14px; }
+        @media (min-width: 46.25em) {
+          .slim-header .header-top .header-brand .logo {
+            margin-top: 1.2rem;
+            height: 1.5rem; } }
+        @media (min-width: 62.5em) {
+          .slim-header .header-top .header-brand .logo {
+            margin-top: 1.5rem; } }
   .slim-header .slim-header-nav {
     display: none; }
     @media (min-width: 62.5em) {
@@ -2404,13 +2413,11 @@ ol, ul {
   Global Styles
   ========================================================================== */
 .primary-nav,
-.secondary-nav,
-.nav-toolbar {
+.secondary-nav {
   display: none; }
   @media (min-width: 62.5em) {
     .primary-nav,
-    .secondary-nav,
-    .nav-toolbar {
+    .secondary-nav {
       display: block; } }
 
 .nav-item .link {
@@ -2420,12 +2427,6 @@ ol, ul {
     text-decoration: none; }
 .nav-item.current .link {
   color: #212121; }
-
-.nav-toolbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%; }
 
 /* ==========================================================================
   Primary Navigation
@@ -2537,6 +2538,20 @@ ol, ul {
       border-left-width: 0;
       border-right-style: solid;
       border-right-width: 4px; } }
+  .mobile-nav .mobile-nav-header {
+    position: relative; }
+    .mobile-nav .mobile-nav-header .header-brand {
+      padding: 1rem; }
+      @media (max-width: 62.438em) {
+        .mobile-nav .mobile-nav-header .header-brand {
+          display: none; } }
+      .mobile-nav .mobile-nav-header .header-brand .logo {
+        height: 1rem; }
+    .mobile-nav .mobile-nav-header .close-btn {
+      top: .5rem; }
+    @media (min-width: 62.5em) {
+      .mobile-nav .mobile-nav-header .nav-toolbar {
+        display: none; } }
   .mobile-nav .nav-items-list {
     clear: left; }
   .mobile-nav .nav-item {
@@ -2561,9 +2576,6 @@ ol, ul {
   .mobile-nav .search-btn .btn-label,
   .mobile-nav .login-btn .btn-label {
     color: #90a4ae; }
-  .mobile-nav .close-btn {
-    top: 14px;
-    right: 1rem; }
   .mobile-nav .has-children > a, .mobile-nav .go-back {
     position: relative; }
   .mobile-nav .link.go-back {

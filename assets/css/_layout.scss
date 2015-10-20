@@ -275,6 +275,18 @@ ol, ul {
 			height: $largeheadersize;
 		}
 
+		.nav-toolbar {
+			display: none;
+
+			@include bp(l) {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+			}
+		}
+
 		.follow-btn {
 			display: none;
 
@@ -380,21 +392,21 @@ ol, ul {
 		@include bp(l) {
 			@include box-shadow(0 2px 0 $bordercolor);
 		}
-	}
 
-	.header-brand {
-		margin-right: $baseline * 3;
+		.header-brand {
+			margin-right: $baseline * 2;
 
-		.logo {
-			margin-top: 14px;
+			.logo {
+				margin-top: 14px;
 
-			@include bp(m) {
-				margin-top: 1.2rem;
-				height: $baseline * 3;
-			}
+				@include bp(m) {
+					margin-top: 1.2rem;
+					height: $baseline * 3;
+				}
 
-			@include bp(l) {
-				margin-top: $baseline * 3;
+				@include bp(l) {
+					margin-top: $baseline * 3;
+				}
 			}
 		}
 	}

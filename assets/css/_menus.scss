@@ -3,8 +3,7 @@
   ========================================================================== */
 
 .primary-nav,
-.secondary-nav,
-.nav-toolbar {
+.secondary-nav {
 	display: none;
 
 	@include bp(l) {
@@ -31,14 +30,6 @@
 	}
 
 }
-
-.nav-toolbar {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-}
-
 
 /* ==========================================================================
   Primary Navigation
@@ -171,6 +162,33 @@
 		border-right-width: 4px;
 	}
 
+	.mobile-nav-header {
+		position: relative;
+
+		.header-brand {
+			padding: 1rem;
+			
+			@include max-bp(m) {
+				display: none;
+			}
+
+			.logo {
+				height: 1rem;
+			}
+		}
+
+		.close-btn {
+			top: .5rem;
+		}
+
+		.nav-toolbar {
+
+			@include bp(l) {
+				display: none;
+			}
+		}
+	}
+
 	.nav-items-list {
 		clear: left;
 	}
@@ -206,11 +224,6 @@
 		.btn-label {
 			color: $bluegrey400;
 		}
-	}
-
-	.close-btn {
-		top: 14px;
-		right: $gutterwidth;
 	}
 
 	.has-children > a, .go-back {
