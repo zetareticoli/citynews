@@ -511,7 +511,6 @@ time,
 
 			@include bp(l) {
 				@include font-size($fontsize500);
-				line-height: 1.5rem;
 			}
 		}
 	}

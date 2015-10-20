@@ -64,15 +64,6 @@
 	&.category-label {
 		display: inline-block;
 	}
-
-	.tile-icon {
-		float: left;
-		margin-right: .5rem;
-
-		@include max-bp(m) {
-			display: none;
-		}
-	}
 }
 
 // Entry Content ===============================================================

@@ -866,8 +866,7 @@ time,
     @media (min-width: 62.5em) {
       .entry-label.category-label {
         font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.5rem; } }
+        font-size: 1.25rem; } }
 
 .location-label {
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
