@@ -4,16 +4,12 @@
 	width: 100%;
 	border-bottom: 1px solid $bordercolor;
 
-	.card-header {
-		margin-bottom: $baseline * 3;
+	.card-media img {
+		width: 100%;
 	}
 
-	.card-media {
-		margin-bottom: $baseline;
-
-		img {
-			width: 100%;
-		}
+	.card-header {
+		margin-bottom: $baseline * 3;
 	}
 
 	.card-heading {
@@ -72,7 +68,9 @@
 
 		.card-media {
 			width: 30%;
-			max-width: 150px;
+			max-width: 10rem;
+			margin-bottom: 0;
+			margin-right: $baseline;
 			float: left;
 
 			@include bp(m) {
@@ -97,6 +95,19 @@
 
 		@include bp(xl) {
 			width: 25%;
+		}
+	}
+
+	&.card-item-lg {
+
+		.card-media {
+			width: 20%;
+			float: left;
+			margin-right: $baseline * 2;
+
+			@include bp(l) {
+				width: 10rem;
+			}
 		}
 	}
 }

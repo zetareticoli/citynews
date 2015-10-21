@@ -3060,12 +3060,10 @@ ol, ul {
 .card {
   width: 100%;
   border-bottom: 1px solid #e0e0e0; }
+  .card .card-media img {
+    width: 100%; }
   .card .card-header {
     margin-bottom: 1.5rem; }
-  .card .card-media {
-    margin-bottom: 0.5rem; }
-    .card .card-media img {
-      width: 100%; }
   .card .card-heading {
     margin-bottom: 0.25rem;
     font-size: 18px;
@@ -3106,7 +3104,9 @@ ol, ul {
   width: 100%; }
   .card-item.card-item-sm .card-media, .card-item.card-item-mid .card-media {
     width: 30%;
-    max-width: 150px;
+    max-width: 10rem;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
     float: left; }
     @media (min-width: 46.25em) {
       .card-item.card-item-sm .card-media, .card-item.card-item-mid .card-media {
@@ -3123,6 +3123,13 @@ ol, ul {
   @media (min-width: 75em) {
     .card-item.card-item-mid {
       width: 25%; } }
+  .card-item.card-item-lg .card-media {
+    width: 20%;
+    float: left;
+    margin-right: 1rem; }
+    @media (min-width: 62.5em) {
+      .card-item.card-item-lg .card-media {
+        width: 10rem; } }
 
 @media (max-width: 46.188em) {
   .card-footer {
