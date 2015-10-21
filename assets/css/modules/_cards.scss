@@ -1,66 +1,20 @@
 // Global styles ===============================================================
 
-.card-item {
-	margin-bottom: $baseline * 2;
-	width: 100%;
-
-	.card-media {
-		float: left;
-		margin-right: $baseline;
-
-		> img {
-			width: 100%;
-			height: 100%;
-		}
-	}	
-
-	&.card-item-sm,
-	&.card-item-mid {
-		.card-media {
-			width: 30%;
-			max-width: 150px;
-			float: left;
-			margin-right: $baseline;
-
-			@include bp(m) {
-				width: 100%;
-				max-width: none;
-				margin-right: 0;
-				float: none;
-			}
-
-			> img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
-
-	&.card-item-sm {
-		@include bp(m) {
-			width: 25%;
-		}
-	}
-
-	&.card-item-mid {
-		@include bp(m) {
-			width: 33.33%;
-		}
-
-		@include bp(xl) {
-			width: 25%;
-		}
-	}
-}
-
-@include max-bp(s) {
-	.card-footer {
-		display: none;
-	}
-}
-
 .card {
 	width: 100%;
+	border-bottom: 1px solid $bordercolor;
+
+	.card-header {
+		margin-bottom: $baseline * 3;
+	}
+
+	.card-media {
+		margin-bottom: $baseline;
+
+		img {
+			width: 100%;
+		}
+	}
 
 	.card-heading {
 		margin-bottom: $baseline / 2;
@@ -109,6 +63,50 @@
 	}
 }
 
+.card-item {
+	margin-bottom: $baseline * 3;
+	width: 100%;	
+
+	&.card-item-sm,
+	&.card-item-mid {
+
+		.card-media {
+			width: 30%;
+			max-width: 150px;
+			float: left;
+
+			@include bp(m) {
+				width: 100%;
+				max-width: none;
+				margin-right: 0;
+				float: none;
+			}
+		}
+	}
+
+	&.card-item-sm {
+		@include bp(m) {
+			width: 25%;
+		}
+	}
+
+	&.card-item-mid {
+		@include bp(m) {
+			width: 33.33%;
+		}
+
+		@include bp(xl) {
+			width: 25%;
+		}
+	}
+}
+
+@include max-bp(s) {
+	.card-footer {
+		display: none;
+	}
+}
+
 // Rounded card ===============================================================
 
 .rounded-card {
@@ -124,10 +122,15 @@
 
 	.card-header,
 	.card-footer {
-		padding: $baseline;
+		padding: 0 $baseline;
+
 		@include bp(m) {
 			padding-bottom: $baseline;
 		}
+	}
+
+	.card-header {
+		margin-bottom: 0;
 	}
 
 	.card-media img {
