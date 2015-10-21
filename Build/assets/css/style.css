@@ -4161,17 +4161,19 @@ html.is-locked body {
   height: 100%;
   overflow: hidden; }
 
-@media (min-width: 62.5em) {
-  .is-fixed .aside-filters {
-    position: fixed;
-    width: 246px;
-    top: 1rem; } }
+.is-fixed {
+  /* Fixed filters when scrolling down the viewport - desktop only */ }
+  @media (min-width: 62.5em) {
+    .is-fixed .aside-filters {
+      position: fixed;
+      width: 246px;
+      top: 1rem; } }
   @media (min-width: 62.5em) and (min-width: 75em) {
     .is-fixed .aside-filters {
       width: 293px; } }
-@media (min-width: 62.5em) {
-  .is-fixed .cards-list-container {
-    margin-left: 246px; } }
+  @media (min-width: 62.5em) {
+    .is-fixed .cards-list-container {
+      margin-left: 246px; } }
   @media (min-width: 62.5em) and (min-width: 75em) {
     .is-fixed .cards-list-container {
       margin-left: 293px; } }

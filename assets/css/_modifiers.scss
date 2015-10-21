@@ -53,6 +53,7 @@ html.is-locked  body {
 
 .is-fixed {
 
+	/* Fixed filters when scrolling down the viewport - desktop only */
 	@include bp(l) {
 		.aside-filters {
 			position: fixed;
