@@ -1,15 +1,55 @@
 // Global styles ===============================================================
 
-.cards-list-item {
+.card-item {
 	margin-bottom: $baseline * 2;
 	width: 100%;
 
-	@include bp(m) {
-		width: 33.33%;
+	.card-media {
+		float: left;
+		margin-right: $baseline;
+
+		> img {
+			width: 100%;
+			height: 100%;
+		}
+	}	
+
+	&.card-item-sm,
+	&.card-item-mid {
+		.card-media {
+			width: 30%;
+			max-width: 150px;
+			float: left;
+			margin-right: $baseline;
+
+			@include bp(m) {
+				width: 100%;
+				max-width: none;
+				margin-right: 0;
+				float: none;
+			}
+
+			> img {
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
 
-	@include bp(xl) {
-		width: 25%;
+	&.card-item-sm {
+		@include bp(m) {
+			width: 25%;
+		}
+	}
+
+	&.card-item-mid {
+		@include bp(m) {
+			width: 33.33%;
+		}
+
+		@include bp(xl) {
+			width: 25%;
+		}
 	}
 }
 
@@ -21,23 +61,6 @@
 
 .card {
 	width: 100%;
-	background-color: $bluegrey100;
-	@include border-left-radius($elementradius);
-	@include border-right-radius($elementradius);
-	@include clearfix;
-
-	@include bp(m) {
-		@include border-right-radius(0);
-		@include border-bottom-radius($elementradius);
-	}
-
-	.card-header,
-	.card-footer {
-		padding: $baseline;
-		@include bp(m) {
-			padding-bottom: $baseline;
-		}
-	}
 
 	.card-heading {
 		margin-bottom: $baseline / 2;
@@ -68,44 +91,6 @@
 		}
 	}
 
-	.card-media img {
-		@include border-left-radius($elementradius); 
-
-		@include bp(m) {
-			@include border-left-radius(0);
-			@include border-top-radius($elementradius);
-		}
-
-		@include bp(m) {
-			@include border-left-radius(0);
-			@include border-top-radius($elementradius);
-		}
-
-	}
-}
-
-// Event card ===============================================================
-
-.event-card {
-	.card-media {
-		width: 30%;
-		max-width: 150px;
-		float: left;
-		margin-right: $baseline;
-
-		@include bp(m) {
-			width: 100%;
-			max-width: none;
-			margin-right: 0;
-			float: none;
-		}
-
-		> img {
-			width: 100%;
-			height: 100%;
-		}
-	}
-
 	.card-rating {
 		overflow: hidden;
 
@@ -124,6 +109,42 @@
 	}
 }
 
+// Rounded card ===============================================================
+
+.rounded-card {
+	background-color: $bluegrey100;
+	@include border-left-radius($elementradius);
+	@include border-right-radius($elementradius);
+	@include clearfix;
+
+	@include bp(m) {
+		@include border-right-radius(0);
+		@include border-bottom-radius($elementradius);
+	}
+
+	.card-header,
+	.card-footer {
+		padding: $baseline;
+		@include bp(m) {
+			padding-bottom: $baseline;
+		}
+	}
+
+	.card-media img {
+		@include border-left-radius($elementradius); 
+
+		@include bp(m) {
+			@include border-left-radius(0);
+			@include border-top-radius($elementradius);
+		}
+
+		@include bp(m) {
+			@include border-left-radius(0);
+			@include border-top-radius($elementradius);
+		}
+	}
+}
+
 // Tile card ===============================================================
 
 .tile-card {
@@ -133,6 +154,7 @@
 
 	.card-header {
 		background-color: $bluegrey100;
+		@include border-bottom-radius($elementradius);
 		padding: 1rem;
 	}
 
