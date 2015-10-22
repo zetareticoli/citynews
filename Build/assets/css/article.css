@@ -169,3 +169,19 @@
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
+
+/* ==========================================================================
+  Business Entry
+  ========================================================================== */
+.business-entry .content-main-column {
+  margin: 0 5rem 0 0; }
+.business-entry .entry-media {
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 30em) {
+    .business-entry .entry-media {
+      width: 10rem;
+      float: left; } }
+.business-entry .entry-meta {
+  clear: left;
+  position: relative; }

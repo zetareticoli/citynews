@@ -199,3 +199,28 @@
 	}
 }
 
+/* ==========================================================================
+  Business Entry
+  ========================================================================== */
+
+.business-entry {
+
+	.content-main-column {
+		margin: 0 5rem 0 0;
+	}
+
+	.entry-media {
+		width: 100%;
+		margin: 0 auto;
+
+		@include bp(s) {
+			width: 10rem;
+			float: left;
+		}
+	}	
+
+	.entry-meta {
+		clear: left;
+		position: relative;
+	}
+}
