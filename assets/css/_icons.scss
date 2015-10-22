@@ -4,6 +4,7 @@
 
 .icon {
 	vertical-align: middle;
+	fill: $black800;
 
 	&.small {
 		width: 1rem;
@@ -122,6 +123,10 @@
 
 .whatsapp-icon {
 	fill: #59cb3f;	
+}
+
+.euro-icon {
+	margin-right: -$baseline;
 }
 
 .has-children > a::before, .has-children > a::after, .go-back:before, .go-back:after {
