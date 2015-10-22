@@ -3059,11 +3059,16 @@ ol, ul {
   ========================================================================== */
 .card {
   width: 100%;
-  border-bottom: 1px solid #e0e0e0; }
+  *zoom: 1; }
+  .card:before, .card:after {
+    content: " ";
+    display: table; }
+  .card:after {
+    clear: both; }
   .card .card-media img {
     width: 100%; }
   .card .card-header {
-    margin-bottom: 1.5rem; }
+    padding: .5rem 0; }
   .card .card-heading {
     margin-bottom: 0.25rem;
     font-size: 18px;
@@ -3097,7 +3102,7 @@ ol, ul {
   .card .card-info {
     font-size: 14px;
     font-size: 0.875rem;
-    color: #546e7a; }
+    color: #616161; }
 
 .card-item {
   margin-bottom: 1.5rem;
@@ -3116,7 +3121,7 @@ ol, ul {
         float: none; } }
   @media (min-width: 46.25em) {
     .card-item.card-item-sm {
-      width: 25%; } }
+      width: 20%; } }
   @media (min-width: 46.25em) {
     .card-item.card-item-mid {
       width: 33.33%; } }
@@ -3152,15 +3157,8 @@ ol, ul {
       border-top-right-radius: 0;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px; } }
-  .rounded-card .card-header,
-  .rounded-card .card-footer {
-    padding: 0 0.5rem; }
-    @media (min-width: 46.25em) {
-      .rounded-card .card-header,
-      .rounded-card .card-footer {
-        padding-bottom: 0.5rem; } }
   .rounded-card .card-header {
-    margin-bottom: 0; }
+    padding: .5rem; }
   .rounded-card .card-media img {
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px; }

@@ -2,14 +2,14 @@
 
 .card {
 	width: 100%;
-	border-bottom: 1px solid $bordercolor;
+	@include clearfix;
 
 	.card-media img {
 		width: 100%;
 	}
 
 	.card-header {
-		margin-bottom: $baseline * 3;
+		padding: .5rem 0;
 	}
 
 	.card-heading {
@@ -54,8 +54,8 @@
 	}
 
 	.card-info {
-		@include font-size(14);
-		color: $bluegrey700;
+		@include font-size($fontsize200);
+		color: $black800;
 	}
 }
 
@@ -84,7 +84,7 @@
 
 	&.card-item-sm {
 		@include bp(m) {
-			width: 25%;
+			width: 20%;
 		}
 	}
 
@@ -131,17 +131,8 @@
 		@include border-bottom-radius($elementradius);
 	}
 
-	.card-header,
-	.card-footer {
-		padding: 0 $baseline;
-
-		@include bp(m) {
-			padding-bottom: $baseline;
-		}
-	}
-
 	.card-header {
-		margin-bottom: 0;
+		padding: .5rem;
 	}
 
 	.card-media img {
