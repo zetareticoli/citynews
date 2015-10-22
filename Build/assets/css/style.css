@@ -2491,6 +2491,8 @@ ol, ul {
     font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-size: 1.125rem; }
+    .secondary-nav .nav-item:first-child {
+      margin-left: 0; }
     .secondary-nav .nav-item:hover {
       -webkit-box-shadow: inset 0 -0.35rem 0 #e0e0e0;
       -moz-box-shadow: inset 0 -0.35rem 0 #e0e0e0;
