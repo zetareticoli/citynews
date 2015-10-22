@@ -59,7 +59,7 @@
 
 	.card-info,
 	.summary {
-		@include font-size($fontsize100);
+		@include font-size(13);
 		color: $black800;
 
 		@include bp(s) {
@@ -145,11 +145,10 @@
 			}
 
 			li {
-				line-height: 1rem;
+				line-height: 1.25rem;
 
 				@include bp(s) {
 					margin-bottom: $baseline;
-					line-height: 1.25rem;
 				}
 			}
 		}

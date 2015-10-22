@@ -3107,8 +3107,8 @@ ol, ul {
       float: left; }
   .card .card-info,
   .card .summary {
-    font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
     color: #616161; }
     @media (min-width: 30em) {
       .card .card-info,
@@ -3163,11 +3163,10 @@ ol, ul {
     .card.inline-card .card-meta {
       width: 30%; } }
   .card.inline-card .card-meta li {
-    line-height: 1rem; }
+    line-height: 1.25rem; }
     @media (min-width: 30em) {
       .card.inline-card .card-meta li {
-        margin-bottom: 0.5rem;
-        line-height: 1.25rem; } }
+        margin-bottom: 0.5rem; } }
 .card.stacked-card .card-media {
   width: 30%;
   max-width: 10rem;
