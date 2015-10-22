@@ -4,8 +4,12 @@
 	width: 100%;
 	@include clearfix;
 
-	.card-media img {
-		width: 100%;
+	.card-media {
+		float: left;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.card-header {
@@ -53,25 +57,91 @@
 		}
 	}
 
-	.card-info {
-		@include font-size($fontsize200);
+	.card-info,
+	.summary {
+		@include font-size($fontsize100);
 		color: $black800;
+
+		@include bp(s) {
+			@include font-size($fontsize200);
+		}
 	}
 }
 
-.card-item {
-	margin-bottom: $baseline * 3;
-	width: 100%;	
+// Card Layouts ===============================================================
 
-	&.card-item-sm,
-	&.card-item-mid {
 
+.card {
+
+	// Inline Card 
+
+	&.inline-card {
+		padding-top: 1.5rem;
+		border-top: 1px solid $bordercolor;
+
+		.card-media {
+			width: 3rem;
+			margin-right: $baseline;
+
+			@include bp(s) {
+				width: 6rem;
+				margin-right: $baseline * 2;
+			}
+		}
+
+		.card-header,
+		.card-meta {
+			width: 100%;
+
+			@include bp(m) {
+				float: left;
+			}
+		}
+
+		.card-header {
+			padding: 0;
+
+			@include bp(m) {
+				width: 50%;
+				margin-right: $baseline * 3;
+			}
+		}
+
+		.summary {
+			display: none;
+
+			@include bp(m) {
+				display: block;
+			}
+		}
+
+		.card-meta {
+			@include bp(m) {
+				width: 20%;
+			}
+
+			@include bp(l) {
+				width: 30%;
+			}
+
+			li {
+				line-height: 1rem;
+
+				@include bp(s) {
+					margin-bottom: $baseline;
+				}
+			}
+		}
+	}
+
+	// Stacked Card
+
+	&.stacked-card {
 		.card-media {
 			width: 30%;
 			max-width: 10rem;
 			margin-bottom: 0;
 			margin-right: $baseline;
-			float: left;
 
 			@include bp(m) {
 				width: 100%;
@@ -81,6 +151,103 @@
 			}
 		}
 	}
+
+	// Rounded Card
+
+	&.rounded-card {
+		background-color: $bluegrey100;
+		@include border-left-radius($elementradius);
+		@include border-right-radius($elementradius);
+		@include clearfix;
+
+		@include bp(m) {
+			@include border-right-radius(0);
+			@include border-bottom-radius($elementradius);
+		}
+
+		.card-header {
+			padding: .5rem;
+		}
+
+		.card-media img {
+			@include border-left-radius($elementradius); 
+
+			@include bp(m) {
+				@include border-left-radius(0);
+				@include border-top-radius($elementradius);
+			}
+
+			@include bp(m) {
+				@include border-left-radius(0);
+				@include border-top-radius($elementradius);
+			}
+		}
+	}
+
+	// Tile Card
+
+	&.tile-card {
+		background-color: transparent;
+		position: relative;
+		padding-top: 1.5rem;
+
+		.card-media {
+			float: none;
+		}
+
+		.card-header {
+			background-color: $bluegrey100;
+			@include border-bottom-radius($elementradius);
+			padding: 1rem;
+		}
+
+		.tile-icon,
+		.author-photo {
+			position: absolute;
+			top: 0;
+			z-index: 2;
+		}
+
+		.author-photo,
+		.tile-icon {
+			@include box-shadow(0 0 0 3px white);
+		}
+
+		.author-photo {
+			width: 2.5rem;
+			left: 1rem;
+			@include rounded(50%);
+
+			img {
+				vertical-align: top;
+			}
+		}
+
+		.tile-icon {
+			right: 1rem;
+			@include flexbox;
+		}
+
+		.author-name {
+			color: $black600;
+			@include font-size($fontsize200);
+		}
+
+		.location-label {
+			color: $bluegrey600;
+
+			.icon {
+				fill: $bluegrey400;
+			}
+		}
+	}
+}
+
+// Card Item ===============================================================
+
+.card-item {
+	margin-bottom: $baseline * 3;
+	width: 100%;	
 
 	&.card-item-sm {
 		@include bp(m) {
@@ -97,109 +264,10 @@
 			width: 25%;
 		}
 	}
-
-	&.card-item-lg {
-
-		.card-media {
-			width: 20%;
-			float: left;
-			margin-right: $baseline * 2;
-
-			@include bp(l) {
-				width: 10rem;
-			}
-		}
-	}
 }
 
 @include max-bp(s) {
 	.card-footer {
 		display: none;
-	}
-}
-
-// Rounded card ===============================================================
-
-.rounded-card {
-	background-color: $bluegrey100;
-	@include border-left-radius($elementradius);
-	@include border-right-radius($elementradius);
-	@include clearfix;
-
-	@include bp(m) {
-		@include border-right-radius(0);
-		@include border-bottom-radius($elementradius);
-	}
-
-	.card-header {
-		padding: .5rem;
-	}
-
-	.card-media img {
-		@include border-left-radius($elementradius); 
-
-		@include bp(m) {
-			@include border-left-radius(0);
-			@include border-top-radius($elementradius);
-		}
-
-		@include bp(m) {
-			@include border-left-radius(0);
-			@include border-top-radius($elementradius);
-		}
-	}
-}
-
-// Tile card ===============================================================
-
-.tile-card {
-	background-color: transparent;
-	position: relative;
-	padding-top: 1.5rem;
-
-	.card-header {
-		background-color: $bluegrey100;
-		@include border-bottom-radius($elementradius);
-		padding: 1rem;
-	}
-
-	.tile-icon,
-	.author-photo {
-		position: absolute;
-		top: 0;
-		z-index: 2;
-	}
-
-	.author-photo,
-	.tile-icon {
-		@include box-shadow(0 0 0 3px white);
-	}
-
-	.author-photo {
-		width: 2.5rem;
-		left: 1rem;
-		@include rounded(50%);
-
-		img {
-			vertical-align: top;
-		}
-	}
-
-	.tile-icon {
-		right: 1rem;
-		@include flexbox;
-	}
-
-	.author-name {
-		color: $black600;
-		@include font-size($fontsize200);
-	}
-
-	.location-label {
-		color: $bluegrey600;
-
-		.icon {
-			fill: $bluegrey400;
-		}
 	}
 }
