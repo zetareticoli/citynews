@@ -2660,6 +2660,39 @@ ol, ul {
   transition: opacity 0.2s ease; }
 
 /* ==========================================================================
+  Tabbed Navigation
+  ========================================================================== */
+.nav-tabs {
+  border-bottom: 0; }
+  @media (min-width: 46.25em) {
+    .nav-tabs {
+      display: none; } }
+  .nav-tabs ul {
+    *zoom: 1; }
+    .nav-tabs ul:before, .nav-tabs ul:after {
+      content: " ";
+      display: table; }
+    .nav-tabs ul:after {
+      clear: both; }
+  .nav-tabs .tab {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #eeeeee;
+    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
+    .nav-tabs .tab a {
+      display: block;
+      width: 100%;
+      color: #757575;
+      line-height: 3rem; }
+      .nav-tabs .tab a:hover {
+        text-decoration: none; }
+    .nav-tabs .tab.current {
+      background-color: white; }
+      .nav-tabs .tab.current a {
+        color: #212121; }
+
+/* ==========================================================================
   MODULES
   ========================================================================== */
 /* ==========================================================================

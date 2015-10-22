@@ -319,3 +319,46 @@
 	@include transition(opacity .2s ease);
 
 }
+
+/* ==========================================================================
+  Tabbed Navigation
+  ========================================================================== */
+
+.nav-tabs {
+	border-bottom: 0;
+
+	@include bp(m) {
+		display: none;
+	}
+
+	ul {
+		@include clearfix;
+	}
+
+	.tab {
+		float: left;
+		width: 50%;
+		text-align: center;
+		background-color: $black300;
+		font-family: $headingstypeface;
+
+		a {
+			display: block;
+			width: 100%;
+			color: $black700;
+			line-height: 3rem;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&.current {
+			background-color: white;
+
+			a {
+				color: $black1000;
+			}
+		}
+	}
+}
