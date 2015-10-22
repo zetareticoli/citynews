@@ -83,12 +83,10 @@
 
 	.card-info-address {
 		display: block;
-		line-height: 1rem;
 		color: $black600;
 
 		@include bp(s) {
 			margin-left: 1.25rem;
-			line-height: 1.5rem;
 		}
 	}
 }
@@ -105,11 +103,13 @@
 		border-top: 1px solid $bordercolor;
 
 		.card-media {
-			width: 3rem;
+			width: 30%;
+			max-width: 10rem;
 			margin-right: $baseline * 2;
 
 			@include bp(s) {
 				width: 6rem;
+				max-width: none;
 			}
 		}
 

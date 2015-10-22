@@ -3125,22 +3125,22 @@ ol, ul {
       margin-right: 0.5rem; } }
   .card .card-info-address {
     display: block;
-    line-height: 1rem;
     color: #9e9e9e; }
     @media (min-width: 30em) {
       .card .card-info-address {
-        margin-left: 1.25rem;
-        line-height: 1.5rem; } }
+        margin-left: 1.25rem; } }
 
 .card.inline-card {
   padding-top: 1.5rem;
   border-top: 1px solid #e0e0e0; }
   .card.inline-card .card-media {
-    width: 3rem;
+    width: 30%;
+    max-width: 10rem;
     margin-right: 1rem; }
     @media (min-width: 30em) {
       .card.inline-card .card-media {
-        width: 6rem; } }
+        width: 6rem;
+        max-width: none; } }
   .card.inline-card .card-header,
   .card.inline-card .card-meta {
     width: 100%; }
