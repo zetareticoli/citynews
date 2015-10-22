@@ -66,6 +66,31 @@
 			@include font-size($fontsize200);
 		}
 	}
+
+	.card-info .icon {
+		display: none;
+
+		@include bp(s) {
+			display: inline-block;
+		}
+	}
+
+	.card-info-price {
+		@include bp(s) {
+			margin-right: $baseline;
+		}
+	}
+
+	.card-info-address {
+		display: block;
+		line-height: 1rem;
+		color: $black600;
+
+		@include bp(s) {
+			margin-left: 1.25rem;
+			line-height: 1.5rem;
+		}
+	}
 }
 
 // Card Layouts ===============================================================
@@ -81,11 +106,10 @@
 
 		.card-media {
 			width: 3rem;
-			margin-right: $baseline;
+			margin-right: $baseline * 2;
 
 			@include bp(s) {
 				width: 6rem;
-				margin-right: $baseline * 2;
 			}
 		}
 
@@ -103,7 +127,7 @@
 
 			@include bp(m) {
 				width: 50%;
-				margin-right: $baseline * 3;
+				padding-right: $baseline * 4;
 			}
 		}
 
@@ -117,10 +141,6 @@
 
 		.card-meta {
 			@include bp(m) {
-				width: 20%;
-			}
-
-			@include bp(l) {
 				width: 30%;
 			}
 
@@ -129,6 +149,7 @@
 
 				@include bp(s) {
 					margin-bottom: $baseline;
+					line-height: 1.25rem;
 				}
 			}
 		}
