@@ -74,4 +74,7 @@ $(document).ready(function(){
 		}
 	}	
 
+	if ( 'ontouchstart' in window )
+		$('body').addClass( 'touchevents' );
+
 });

@@ -34,7 +34,7 @@ $(document).ready(function(){
 		$('html').removeClass("is-locked");
 	});
 
-	// mobile nav click outside
+	// mobile nav click outside to close menu
     $('.content-blocker').on('click', function(){
 		$('.header').removeClass('is-nav-open');
 		$('html').removeClass("is-locked");
@@ -73,5 +73,8 @@ $(document).ready(function(){
 			($('.start-search').hasClass('is-visible')) ? $('.search-overlay').addClass('is-visible') : $('.search-overlay').removeClass('is-visible') ;
 		}
 	}	
+
+	if ( 'ontouchstart' in window )
+		$('body').addClass( 'touchevents' );
 
 });
