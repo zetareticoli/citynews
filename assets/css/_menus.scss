@@ -199,17 +199,21 @@
 
 	.nav-item {
 		border-bottom: 1px solid $black1000;
-		font-family: $texttypeface;
+		font-family: $headingstypeface;
 		font-weight: 700;
-		@include font-size(20);
+		@include font-size($fontsize500);
 	}
 
 	.nav-item .link {
-		padding: $gutterwidth;
+		padding: .75rem 1rem;
 		display: block;
 		color: white;
 		width: 100%;
 		background-color: $black900;
+
+		@include bp(s) {
+			padding: 1rem;
+		}
 
 		&:hover {
 			text-decoration: none;

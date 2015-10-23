@@ -2564,16 +2564,19 @@ ol, ul {
     clear: left; }
   .mobile-nav .nav-item {
     border-bottom: 1px solid #212121;
-    font-family: "PublicoText", Georgia, "Times New Roman", serif;
+    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
     font-size: 1.25rem; }
   .mobile-nav .nav-item .link {
-    padding: 1rem;
+    padding: .75rem 1rem;
     display: block;
     color: white;
     width: 100%;
     background-color: #424242; }
+    @media (min-width: 30em) {
+      .mobile-nav .nav-item .link {
+        padding: 1rem; } }
     .mobile-nav .nav-item .link:hover {
       text-decoration: none; }
     .mobile-nav .nav-item .link:active {
