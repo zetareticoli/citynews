@@ -34,6 +34,12 @@ $(document).ready(function(){
 		$('html').removeClass("is-locked");
 	});
 
+	// mobile nav click outside
+    $('.content-blocker').on('click', function(){
+		$('.header').removeClass('is-nav-open');
+		$('html').removeClass("is-locked");
+	});
+
 	// search function
 	$('.start-search-trigger').on('click', function(event){
 		event.stopPropagation();
