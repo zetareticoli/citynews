@@ -3537,7 +3537,6 @@ ol, ul {
           -moz-transition: background-color 0.2s;
           transition: background-color 0.2s; } }
   .inset-story .story-header {
-    margin-left: 33.8%;
     background-color: #263238; }
     @media (min-width: 46.25em) {
       .inset-story .story-header {
