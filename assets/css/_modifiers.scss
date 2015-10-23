@@ -2,6 +2,18 @@
   Modifiers
   ========================================================================== */
 
+// Touch Events Detect ===============================================================
+
+.touchevents {
+	a:hover {
+		text-decoration: none !important;
+	}
+
+	.inset-story .block-link:hover .story-heading {
+		color: white !important;
+	}
+}
+
 // Adjectives ===============================================================
 
 .centered {
