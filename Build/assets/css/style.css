@@ -3684,6 +3684,18 @@ ol, ul {
   float: right;
   margin-left: 0.5rem; }
 
+.gallery-story {
+  border-bottom: 0;
+  padding-bottom: 0; }
+  @media (min-width: 62.5em) {
+    .gallery-story {
+      margin-bottom: 1rem; } }
+  .gallery-story .story-media {
+    margin-bottom: 0; }
+  .gallery-story .story-header {
+    padding: 1rem;
+    background-color: #292929; }
+
 .latest-stories h6 {
   text-transform: uppercase; }
 

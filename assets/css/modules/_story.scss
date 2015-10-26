@@ -503,6 +503,26 @@
 	}
 }
 
+// Gallery Story ===============================================================
+
+.gallery-story {
+	border-bottom: 0;
+	padding-bottom: 0;
+
+	@include bp(l) {
+		margin-bottom: 1rem;
+	}
+
+	.story-media {
+		margin-bottom: 0;
+	}
+
+	.story-header {
+		padding: 1rem;
+		background-color: lighten($black1000,3%);
+	}
+}
+
 // Boh ===============================================================
 
 .latest-stories {
