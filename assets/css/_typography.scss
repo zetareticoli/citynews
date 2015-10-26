@@ -24,14 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: $baseline * 2;
 }
 
-h1 {
-	font-weight: $bigheadingeweight;
-}
-
 h2, h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
 }
 
+h1 {
+	font-weight: $bigheadingeweight;
+}
 
 h2 {
 	@include bp(m) {
@@ -67,7 +66,7 @@ h2 {
 		line-height: 2rem;
 	}
 
-	@include bp(xl) {
+	@include bp(l) {
 		@include font-size($fontsize700);
 		line-height: 2rem;
 	}
