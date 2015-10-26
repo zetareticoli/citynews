@@ -132,8 +132,11 @@ strong,dt {
 	font-weight: 700;
 }
 
-
-
+.wrapper.inverted {
+	h1,h2,h3,h4,h5 {
+		color: $black800;
+	}
+}
 
 // Headings =====================================================================
 

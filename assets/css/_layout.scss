@@ -79,6 +79,11 @@ ol, ul {
 
 .wrapper {
 	position: relative;
+	background-color: white;
+
+	&.inverted {
+		background-color: $black1000;
+	}
 }
 
 .main-content {
@@ -465,6 +470,10 @@ ol, ul {
 
 .slim-header.inverted {
 
+	.header-top {
+		background-color: $black1000;
+	}
+
 	.nav-btn {
 
 		.btn-label {
@@ -492,7 +501,8 @@ ol, ul {
 	}
 	
 	.nav-btn,
-	.page-title {
+	.page-title,
+	.page-title a {
 		color: white;
 	}
 }
