@@ -513,8 +513,28 @@
 		margin-bottom: 1rem;
 	}
 
-	.story-media {
+	.gallery-counter {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		@include rounded(3px);
+		background-color: $black1000;
+		padding: $baseline $baseline * 2;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		@include font-size($fontsize100);
+		font-weight: 700;
+	}
+
+	.story-heading {
 		margin-bottom: 0;
+	}
+
+	.story-media {
+		position: relative;
+		margin-bottom: 0;
+		float: none;
+		width: 100%;
+		max-width: none;
 	}
 
 	.story-header {

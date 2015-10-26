@@ -472,6 +472,7 @@ ol, ul {
 
 	.header-top {
 		background-color: $black1000;
+		@include box-shadow(0 2px 0 $black900);
 	}
 
 	.nav-btn {
@@ -497,6 +498,7 @@ ol, ul {
 	}
 
 	.search-btn {
+		background-color: $black1000;
 		border-color: $black900;
 	}
 	

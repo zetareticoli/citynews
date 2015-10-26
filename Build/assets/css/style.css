@@ -2232,7 +2232,10 @@ ol, ul {
       margin-top: 3.5rem; } }
 
 .slim-header.inverted .header-top {
-  background-color: #212121; }
+  background-color: #212121;
+  -webkit-box-shadow: 0 2px 0 #424242;
+  -moz-box-shadow: 0 2px 0 #424242;
+  box-shadow: 0 2px 0 #424242; }
 .slim-header.inverted .nav-btn .btn-label {
   color: #bdbdbd; }
 .slim-header.inverted .nav-btn .icon {
@@ -2242,6 +2245,7 @@ ol, ul {
 .slim-header.inverted .nav-btn:hover .icon {
   fill: white; }
 .slim-header.inverted .search-btn {
+  background-color: #212121;
   border-color: #424242; }
 .slim-header.inverted .nav-btn,
 .slim-header.inverted .page-title,
