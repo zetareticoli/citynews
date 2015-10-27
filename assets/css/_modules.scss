@@ -291,10 +291,11 @@
 	padding: 1rem;
 	background: $black200;
 	@include clearfix;
-	@include flexbox;
-	@include flex-flow(row nowrap);
 
-	@include bp(l) {
+
+	@include bp(m) {
+		@include flexbox;
+		@include flex-flow(row nowrap);
 		margin-bottom: 2rem;
 	}
 
@@ -321,10 +322,16 @@
 	}
 
 	.details-list {
-		@include flex(1 1 auto);
+		padding: .5rem;
+
+		@include bp(s) {
+			float: left;
+			width: 50%;
+		}
 
 		@include bp(m) {
 			width: 25%;
+			@include flex(1 1 auto);
 		}
 	}
 
