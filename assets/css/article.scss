@@ -205,6 +205,26 @@
 
 .shop-entry {
 
+	.entry-summary {
+		font-family: $alttexttypeface;
+
+		@include bp(m) {
+			@include font-size($fontsize400);
+		}
+
+		@include bp(xl) {
+			margin-left: 0;
+		}
+	}
+
+	.rating {
+
+		li {
+			margin-right: -2px;
+			display: inline-block;
+		}
+	}
+
 	.entry-labels {
 		float: none;
 		width: 100%;

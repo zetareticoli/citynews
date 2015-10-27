@@ -173,6 +173,18 @@
 /* ==========================================================================
   Shop Entry
   ========================================================================== */
+.shop-entry .entry-summary {
+  font-family: Helvetica, Arial, sans-serif; }
+  @media (min-width: 46.25em) {
+    .shop-entry .entry-summary {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media (min-width: 75em) {
+    .shop-entry .entry-summary {
+      margin-left: 0; } }
+.shop-entry .rating li {
+  margin-right: -2px;
+  display: inline-block; }
 .shop-entry .entry-labels {
   float: none;
   width: 100%; }
