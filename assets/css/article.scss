@@ -200,27 +200,83 @@
 }
 
 /* ==========================================================================
-  Business Entry
+  Shop Entry
   ========================================================================== */
 
-.business-entry {
+.shop-entry {
+
+	.entry-labels {
+		float: none;
+		width: 100%;
+
+		.entry-label {
+			display: inline;
+		}
+	}
 
 	.content-main-column {
 		margin: 0 5rem 0 0;
 	}
 
 	.entry-media {
-		width: 100%;
-		margin: 0 auto;
+		width: 25%;
+		float: left;
+		float: left;
+		margin: 0 $baseline $baseline 0;
 
 		@include bp(s) {
 			width: 10rem;
-			float: left;
+			margin-right: $baseline * 2;
+			margin-bottom: $baseline * 2;
 		}
 	}	
 
+	.entry-title {
+		margin-left: 0;
+	}
+
 	.entry-meta {
 		clear: left;
-		position: relative;
+	}
+
+	.entry-details {
+		margin-left: 0;
+	}
+
+	.details-list {
+		@include bp(s) {
+			float: left;
+		}
+
+		.details-list-title {
+			@include font-size($fontsize400);
+			color: $black800;
+		}
+	}
+
+	@include bp(l) {
+		.entry-meta {
+			position: absolute;
+			top: 1rem;
+			left: auto;
+			right: 0;
+			border: 0;
+			width: 15rem;
+
+			.meta-social {
+				width: 100%;
+
+				.social-counter {
+					width: 50%;
+					margin: 0;
+					float: left;
+				}
+
+				.social-items {
+					width: 100%;
+					text-align: left;
+				}
+			}
+		}
 	}
 }
