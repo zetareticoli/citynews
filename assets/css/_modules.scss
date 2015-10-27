@@ -291,6 +291,8 @@
 	padding: 1rem;
 	background: $black200;
 	@include clearfix;
+	@include flexbox;
+	@include flex-flow(row nowrap);
 
 	@include bp(l) {
 		margin-bottom: 2rem;
@@ -319,15 +321,22 @@
 	}
 
 	.details-list {
+		@include flex(1 1 auto);
+
+		@include bp(m) {
+			width: 25%;
+		}
+	}
+
+	.details-list > * {
 		margin-bottom: 1rem;
+		font-family: $alttexttypeface;
 	}
 
 	.details-list-title {
 		margin-bottom: .5rem;
-	}
-
-	.details-list li {
-		font-family: $alttexttypeface;
+		@include font-size($fontsize400);
+		color: $black800;
 	}
 }
 

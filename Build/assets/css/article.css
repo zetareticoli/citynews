@@ -196,13 +196,6 @@
   clear: left; }
 .shop-entry .entry-details {
   margin-left: 0; }
-@media (min-width: 30em) {
-  .shop-entry .details-list {
-    float: left; } }
-.shop-entry .details-list .details-list-title {
-  font-size: 18px;
-  font-size: 1.125rem;
-  color: #616161; }
 @media (min-width: 62.5em) {
   .shop-entry .entry-meta {
     position: absolute;

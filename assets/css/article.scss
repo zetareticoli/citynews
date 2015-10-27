@@ -243,17 +243,6 @@
 		margin-left: 0;
 	}
 
-	.details-list {
-		@include bp(s) {
-			float: left;
-		}
-
-		.details-list-title {
-			@include font-size($fontsize400);
-			color: $black800;
-		}
-	}
-
 	@include bp(l) {
 		.entry-meta {
 			position: absolute;
