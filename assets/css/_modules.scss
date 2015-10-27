@@ -283,11 +283,12 @@
 }
 
 /* ==========================================================================
-  Event Details
+  Entry Details
   ========================================================================== */
 
-.event-details {
+.entry-details {
 	margin-bottom: 1rem;
+	padding: 1rem;
 	background: $black200;
 	@include clearfix;
 
@@ -317,40 +318,16 @@
 		}
 	}
 
-	.description-list {
-		width: 100%;
-		margin: 0;
-		padding: .5rem;
-		float: left;
+	.details-list {
+		margin-bottom: 1rem;
+	}
 
-		@include bp(m) {
-			width: 35%;
-			padding: .5rem 1rem;
-		}
+	.details-list-title {
+		margin-bottom: .5rem;
+	}
 
-		@include bp(l) {
-			padding: 1rem 2rem;
-			width: 25rem;
-		}
-
-		dt {
-			font-family: $brandtypeface;
-			text-transform: lowercase;
-			color: $black600;
-		}
-
-		dd {
-			color: $black900;
-			@include font-size($fontsize200);
-
-			@include bp(l) {
-				@include font-size($fontsize400);
-			}
-
-			span {
-				display: block;
-			}
-		}
+	.details-list li {
+		font-family: $alttexttypeface;
 	}
 }
 
