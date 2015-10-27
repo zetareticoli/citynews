@@ -286,64 +286,132 @@
   Entry Details
   ========================================================================== */
 
-.entry-details {
-	margin-bottom: 1rem;
+.detailed-entry-header {
 	padding: 1rem;
-	background: $black200;
-	@include clearfix;
-
+	background-color: $bluegrey100;
 
 	@include bp(m) {
-		@include flexbox;
-		@include flex-flow(row nowrap);
-		margin-bottom: 2rem;
+		margin-top: 1rem;
 	}
 
-	@include bp(xl) {
-		margin-left: 13rem;
+	.entry-title {
+		margin-bottom: $baseline;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize700);
+			line-height: 1.5rem;
+		}
+	}
+
+	.entry-summary {
+		margin-bottom: 1rem;
+		font-family: $alttexttypeface;
+		@include font-size($fontsize200);
+
+		@include bp(m) {
+			margin-bottom: 1.5rem;
+
+			@include font-size($fontsize300);
+			line-height: 1.5rem;
+
+			li {
+				margin-right: .5rem;
+				display: inline;
+			}
+		}
+
+		@include bp(xl) {
+			margin-left: 0;
+		}
+	}
+
+	.rating {
+		margin-bottom: $baseline;
+
+		li {
+			margin-right: -2px;
+			display: inline-block;
+		}
 	}
 
 	.entry-media {
-		margin: 0;
-		float: left;
-	}
-
-	.static-map {
-		position: relative;
-		width: 50%;
-
-		@include bp(m) {
-			width: 14rem;
-		}
-
-		@include bp(l) {
-			width: auto;
-		}
-	}
-
-	.details-list {
-		padding: .5rem;
+		width: 4rem;
+		float: right;
+		margin: 0 0 $baseline $baseline;
 
 		@include bp(s) {
-			float: left;
-			width: 50%;
+			width: 6rem;
 		}
 
 		@include bp(m) {
-			width: 25%;
-			@include flex(1 1 auto);
+			float: left;
+			width: 8rem;
+			margin: -2rem $baseline * 2 $baseline 0;
 		}
 	}
 
-	.details-list > * {
+	.entry-details {
 		margin-bottom: 1rem;
-		font-family: $alttexttypeface;
-	}
+		@include clearfix;
 
-	.details-list-title {
-		margin-bottom: .5rem;
-		@include font-size($fontsize400);
-		color: $black800;
+		@include bp(m) {
+			clear: left;
+			@include flexbox;
+			@include flex-flow(row nowrap);
+			margin-bottom: 2rem;
+		}
+
+		.entry-media {
+			margin: 0;
+			float: left;
+		}
+
+		.static-map {
+			position: relative;
+			width: 50%;
+
+			@include bp(m) {
+				width: 14rem;
+			}
+
+			@include bp(l) {
+				width: auto;
+			}
+		}
+
+		.details-list {
+			padding-top: $baseline;
+			border-top: 1px solid $bluegrey200;
+
+			@include bp(s) {
+				float: left;
+				width: 50%;
+			}
+
+			@include bp(m) {
+				padding-top: $baseline * 2;
+				width: 25%;
+				@include flex(1 1 auto);
+			}
+		}
+
+		.details-list > * {
+			margin-bottom: 1rem;
+			font-family: $alttexttypeface;
+		}
+
+		.details-list-title {
+			margin-bottom: .25rem;
+			@include font-size($fontsize300);
+			color: $black800;
+		}
+
+		.details-list li,
+		.details-list p {
+			@include font-size($fontsize200);
+		}
 	}
 }
 

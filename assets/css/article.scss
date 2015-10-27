@@ -205,26 +205,6 @@
 
 .shop-entry {
 
-	.entry-summary {
-		font-family: $alttexttypeface;
-
-		@include bp(m) {
-			@include font-size($fontsize400);
-		}
-
-		@include bp(xl) {
-			margin-left: 0;
-		}
-	}
-
-	.rating {
-
-		li {
-			margin-right: -2px;
-			display: inline-block;
-		}
-	}
-
 	.entry-labels {
 		float: none;
 		width: 100%;
@@ -236,41 +216,26 @@
 
 	.content-main-column {
 		margin: 0 5rem 0 0;
-	}
-
-	.entry-media {
-		width: 25%;
-		float: left;
-		float: left;
-		margin: 0 $baseline $baseline 0;
-
-		@include bp(s) {
-			width: 10rem;
-			margin-right: $baseline * 2;
-			margin-bottom: $baseline * 2;
-		}
 	}	
 
 	.entry-title {
 		margin-left: 0;
 	}
 
-	.entry-meta {
-		clear: left;
-	}
-
 	.entry-details {
 		margin-left: 0;
 	}
 
-	@include bp(l) {
+	@include bp(m) {
 		.entry-meta {
 			position: absolute;
-			top: 1rem;
+			top: 0;
 			left: auto;
 			right: 0;
 			border: 0;
 			width: 15rem;
+			margin: 0;
+			padding: 0;
 
 			.meta-social {
 				width: 100%;

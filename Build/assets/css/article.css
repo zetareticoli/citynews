@@ -173,18 +173,6 @@
 /* ==========================================================================
   Shop Entry
   ========================================================================== */
-.shop-entry .entry-summary {
-  font-family: Helvetica, Arial, sans-serif; }
-  @media (min-width: 46.25em) {
-    .shop-entry .entry-summary {
-      font-size: 18px;
-      font-size: 1.125rem; } }
-  @media (min-width: 75em) {
-    .shop-entry .entry-summary {
-      margin-left: 0; } }
-.shop-entry .rating li {
-  margin-right: -2px;
-  display: inline-block; }
 .shop-entry .entry-labels {
   float: none;
   width: 100%; }
@@ -192,30 +180,20 @@
     display: inline; }
 .shop-entry .content-main-column {
   margin: 0 5rem 0 0; }
-.shop-entry .entry-media {
-  width: 25%;
-  float: left;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0; }
-  @media (min-width: 30em) {
-    .shop-entry .entry-media {
-      width: 10rem;
-      margin-right: 1rem;
-      margin-bottom: 1rem; } }
 .shop-entry .entry-title {
   margin-left: 0; }
-.shop-entry .entry-meta {
-  clear: left; }
 .shop-entry .entry-details {
   margin-left: 0; }
-@media (min-width: 62.5em) {
+@media (min-width: 46.25em) {
   .shop-entry .entry-meta {
     position: absolute;
-    top: 1rem;
+    top: 0;
     left: auto;
     right: 0;
     border: 0;
-    width: 15rem; }
+    width: 15rem;
+    margin: 0;
+    padding: 0; }
     .shop-entry .entry-meta .meta-social {
       width: 100%; }
       .shop-entry .entry-meta .meta-social .social-counter {
