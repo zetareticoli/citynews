@@ -324,17 +324,23 @@
       font-size: 14px;
       font-size: 0.875rem; }
 
-.entry-map img {
-  width: 100%;
-  border: 3px solid white; }
-.entry-map .map-address {
-  position: relative;
-  padding: .5rem;
-  background-color: white;
-  font-size: 12px;
-  font-size: 0.75rem;
-  color: #757575; }
-  .entry-map .map-address .directions-icon {
-    position: absolute;
-    right: .5rem;
-    bottom: 1.5rem; }
+.entry-map {
+  position: relative; }
+  .entry-map img {
+    width: 100%;
+    border: 3px solid white; }
+  .entry-map .directions-btn {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 0.5rem; }
+  .entry-map .directions-btn > .directions-icon {
+    fill: #90a4ae; }
+  .entry-map .directions-btn:hover > .directions-icon {
+    fill: #78909c; }
+  .entry-map .map-address {
+    padding: .5rem;
+    background-color: white;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #757575; }
+    .entry-map .map-address span {
+      margin-left: 0.5rem; }
