@@ -472,22 +472,6 @@
 	}
 
 	.social-counter {
-		width: 25%;
-		display: block;
-		float: left;
-		text-align: right;
-
-		@include bp(m) {
-			width: 24%;
-			margin-left: $baseline * 2;
-			text-align: left;
-		}
-
-		@include bp(xl) {
-			width: 100%;
-			float: none;
-			margin: 0 0 $baseline * 2 0;
-		}
 
 		.number {
 			font-family: $headingstypeface;
@@ -522,39 +506,6 @@
 			width: 12px;
 			height: 12px;
 			fill: $bluegrey600;
-		}
-	}
-}
-
-// Entry Meta
-
-.entry-meta .meta-social {
-
-	@include bp(m) {
-		width: 50%;
-		float: right;
-	}
-
-	@include bp(xl) {
-		width: 100%;
-		float: none;
-	}
-
-	.social-items {
-		float: left;
-		width: 50%;
-
-		@include bp(m) {
-			width: 42%;
-			line-height: 3rem;
-			text-align: right;
-		}
-
-		@include bp(xl) {
-			float: none;
-			width: 100%;
-			margin-bottom: $baseline;
-			text-align: left;
 		}
 	}
 }

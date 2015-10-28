@@ -90,6 +90,7 @@
         line-height: 2rem; } }
 
 .entry-meta {
+  border-top: 1px solid #e0e0e0;
   margin-bottom: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid #e0e0e0;
@@ -106,6 +107,50 @@
   @media (min-width: 75em) {
     .entry-meta {
       position: absolute;
+      top: 0;
+      left: 0;
+      width: 11rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      border-top: 0;
+      z-index: 1; } }
+  .entry-meta .meta-social {
+    width: 100%;
+    text-align: left; }
+    .entry-meta .meta-social .social-items {
+      width: 50%;
+      float: left; }
+      @media (min-width: 46.25em) {
+        .entry-meta .meta-social .social-items {
+          line-height: 3rem; } }
+      @media (min-width: 75em) {
+        .entry-meta .meta-social .social-items {
+          width: 100%;
+          float: none;
+          margin-bottom: 0.5rem; } }
+    .entry-meta .meta-social .social-counter {
+      float: right;
+      width: 25%;
+      text-align: right; }
+      @media (min-width: 46.25em) {
+        .entry-meta .meta-social .social-counter {
+          text-align: left; } }
+      @media (min-width: 75em) {
+        .entry-meta .meta-social .social-counter {
+          width: 100%;
+          float: none;
+          margin: 0 0 1rem 0; } }
+      @media (min-width: 75em) {
+        .entry-meta .meta-social .social-counter {
+          float: none;
+          text-align: left; } }
+  @media (min-width: 46.25em) {
+    .entry-meta.has-author {
+      margin-bottom: 1rem; } }
+  @media (min-width: 75em) {
+    .entry-meta.has-author {
+      position: absolute;
       top: 100%;
       left: 0;
       width: 11rem;
@@ -114,6 +159,23 @@
       padding-top: 0;
       border-top: 0;
       z-index: 1; } }
+  @media (min-width: 46.25em) {
+    .entry-meta.has-author .meta-social {
+      width: 50%;
+      float: right; } }
+  @media (min-width: 75em) {
+    .entry-meta.has-author .meta-social {
+      width: 100%;
+      float: none; } }
+  .entry-meta.has-author .meta-social .social-counter {
+    float: left; }
+  @media (min-width: 46.25em) {
+    .entry-meta.has-author .meta-social .social-items {
+      width: 42%;
+      margin-right: 1rem; } }
+  @media (min-width: 75em) {
+    .entry-meta.has-author .meta-social .social-items {
+      width: 100%; } }
 
 .entry-media {
   position: relative;
@@ -169,26 +231,6 @@
 /* ==========================================================================
   Classic Entry
   ========================================================================== */
-.classic-entry .entry-meta {
-  top: 0;
-  border-top: 1px solid #e0e0e0; }
-  .classic-entry .entry-meta .meta-social {
-    width: 100%;
-    text-align: left; }
-    .classic-entry .entry-meta .meta-social .social-items {
-      width: 50%;
-      text-align: left; }
-      @media (min-width: 75em) {
-        .classic-entry .entry-meta .meta-social .social-items {
-          width: 100%; } }
-    .classic-entry .entry-meta .meta-social .social-counter {
-      width: 6rem;
-      float: right; }
-      @media (min-width: 75em) {
-        .classic-entry .entry-meta .meta-social .social-counter {
-          float: none;
-          width: 100%; } }
-
 .detailed-entry-header {
   margin-bottom: 0.5rem;
   padding: 1rem;

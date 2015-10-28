@@ -110,6 +110,7 @@
 // Entry Meta ===============================================================
 
 .entry-meta {
+	border-top: 1px solid $bordercolor;
 	margin-bottom: $baseline;
 	padding-top: $baseline;
 	border-top: 1px solid $bordercolor;
@@ -122,7 +123,7 @@
 
 	@include bp(xl) {
 		position: absolute;
-		top: 100%;
+		top: 0;
 		left: 0;
 		width: 11rem;
 		margin-bottom: 0;
@@ -130,6 +131,95 @@
 		padding-top: 0;
 		border-top: 0;
 		z-index: 1;
+	}
+
+	.meta-social {
+		width: 100%;
+		text-align: left; 
+		
+		.social-items {
+			width: 50%;
+			float: left;
+			
+			@include bp(m) {
+				line-height: 3rem;
+
+			}
+			
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+				margin-bottom: $baseline;
+			}
+		}
+
+		.social-counter {
+			float: right;
+			width: 25%;
+			text-align: right;
+
+			@include bp(m) {
+				text-align: left;
+			}
+
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+				margin: 0 0 $baseline * 2 0;
+			}
+
+			@include bp(xl) {
+				float: none;
+				text-align: left;
+			}
+		}
+	}
+
+	&.has-author {
+		
+		@include bp(m) {
+			margin-bottom: $baseline * 2;
+		}
+
+		@include bp(xl) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 11rem;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			padding-top: 0;
+			border-top: 0;
+			z-index: 1;
+		}
+
+		.meta-social {
+			@include bp(m) {
+				width: 50%;
+				float: right;
+			}
+
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+			}
+
+			.social-counter {
+				float: left;
+			}
+
+			.social-items {
+
+				@include bp(m) {
+					width: 42%;
+					margin-right: 1rem;
+				}
+
+				@include bp(xl) {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -197,40 +287,6 @@
 /* ==========================================================================
   Classic Entry
   ========================================================================== */
-
-// Global Styles ===============================================================
-
-.classic-entry {
-
-	.entry-meta {
-		top: 0;
-		border-top: 1px solid $bordercolor;
-
-		.meta-social {
-			width: 100%;
-			text-align: left; 
-			
-			.social-items {
-				width: 50%;
-				text-align: left;
-
-				@include bp(xl) {
-					width: 100%;
-				}
-			}
-
-			.social-counter {
-				width: 6rem;
-				float: right;
-
-				@include bp(xl) {
-					float: none;
-					width: 100%;
-				}
-			}
-		}
-	}
-}
 
 // Detailed Header ===============================================================
 
