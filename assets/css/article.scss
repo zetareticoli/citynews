@@ -44,10 +44,6 @@
 	@include bp(l) {
 		padding: $baseline * 2 0;
 	}
-
-	@include bp(xl) {
-		margin-bottom: 0;
-	}
 }
 
 .entry-labels {
@@ -200,57 +196,215 @@
 }
 
 /* ==========================================================================
-  Shop Entry
+  Classic Entry
   ========================================================================== */
 
-.shop-entry {
+// Global Styles ===============================================================
 
-	.entry-labels {
-		float: none;
-		width: 100%;
+.classic-entry {
 
-		.entry-label {
-			display: inline;
-		}
-	}
+	.entry-meta {
+		top: 0;
+		border-top: 1px solid $bordercolor;
+		border-bottom: 1px solid $bordercolor;
 
-	.content-main-column {
-		margin: 0 5rem 0 0;
-	}	
+		.meta-social {
+			width: 100%;
+			text-align: left; 
+			
+			.social-items {
+				width: 50%;
+				text-align: left;
 
-	.entry-title {
-		margin-left: 0;
-	}
-
-	.entry-details {
-		margin-left: 0;
-	}
-
-	@include bp(m) {
-		.entry-meta {
-			position: absolute;
-			top: 0;
-			left: auto;
-			right: 0;
-			border: 0;
-			width: 15rem;
-			margin: 0;
-			padding: 0;
-
-			.meta-social {
-				width: 100%;
-
-				.social-counter {
-					width: 50%;
-					margin: 0;
-					float: left;
-				}
-
-				.social-items {
+				@include bp(xl) {
 					width: 100%;
-					text-align: left;
+				}
+			}
+
+			.social-counter {
+				width: 6rem;
+				float: right;
+
+				@include bp(xl) {
+					float: none;
+					width: 100%;
 				}
 			}
 		}
+	}
+}
+
+// Detailed Header ===============================================================
+
+.detailed-entry-header {
+	padding: 1rem;
+	background-color: $black200;
+
+	@include bp(m) {
+		margin-top: 1rem;
+	}
+
+	.entry-title {
+		margin-bottom: $baseline;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize700);
+			line-height: 1.5rem;
+		}
+
+		@include bp(l) {
+			margin-left: 0;
+			@include font-size($fontsize900);
+			line-height: 2rem;
+		}
+	}
+
+	.entry-summary {
+		margin-bottom: 1rem;
+		font-family: $alttexttypeface;
+		@include font-size($fontsize200);
+
+		@include bp(m) {
+			margin-bottom: 1.5rem;
+
+			@include font-size($fontsize300);
+			line-height: 1.5rem;
+
+			li {
+				margin-right: .5rem;
+				display: inline;
+			}
+		}
+
+		@include bp(xl) {
+			margin-left: 0;
+		}
+	}
+
+	.rating {
+		margin-bottom: $baseline;
+
+		li {
+			margin-right: -2px;
+			display: inline-block;
+		}
+	}
+
+	.entry-media {
+		width: 4rem;
+		float: right;
+		margin: 0 0 $baseline $baseline;
+
+		@include bp(s) {
+			width: 6rem;
+		}
+
+		@include bp(m) {
+			float: left;
+			width: 8rem;
+			margin: -2rem $baseline * 2 $baseline 0;
+		}
+	}
+
+	.entry-details {
+		margin-bottom: 1rem;
+		@include clearfix;
+
+		@include bp(m) {
+			clear: left;
+			@include flexbox;
+			@include flex-flow(row wrap);
+		}
+
+		@include bp(l) {
+			@include flex-flow(row nowrap);
+		}
+
+		.entry-media {
+			margin: 0;
+			float: left;
+		}
+
+		.static-map {
+			position: relative;
+			width: 50%;
+
+			@include bp(m) {
+				width: 14rem;
+			}
+
+			@include bp(l) {
+				width: auto;
+			}
+		}
+
+		.details-list {
+			margin-bottom: $baseline;
+			padding-top: $baseline;
+			border-top: 1px solid $bluegrey200;
+
+			@include bp(m) {
+				width: 45%;
+				@include flex(1 1 auto);
+			}
+
+			@include bp(l) {
+				width: 25%;
+				border-top: 0;
+				padding-top: 0;
+				margin-bottom: 0;
+				margin-right: $baseline * 2;
+				padding-right: $baseline * 2;
+				border-right: 1px solid $bluegrey200;
+
+				&:last-child {
+					border-right: 0;
+					padding-right: 0;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.details-list > * {
+			font-family: $alttexttypeface;
+		}
+
+		.details-list-title {
+			margin-bottom: .25rem;
+			@include font-size($fontsize300);
+			color: $black800;
+		}
+
+		.details-list li,
+		.details-list p {
+			@include font-size($fontsize200);
+		}
+	}
+}
+
+// Entry Map ===============================================================
+
+.entry-map {
+
+	img {
+		width: 100%;
+		border: 3px solid white;
+	}
+
+	.map-address {
+		position: relative;
+		padding: .5rem;
+		background-color: white;
+		@include font-size($fontsize100);
+		color: $black700;
+		
+		.directions-icon {
+			position: absolute;
+			right: .5rem;
+			bottom: 1.5rem;
+		}
+
 	}
 }
