@@ -563,23 +563,34 @@ h6 {
       font-size: 0.875rem; } }
 
 p,
+span,
 ol,
 ul,
 dl,
 address {
-  font-family: "PublicoText", Georgia, "Times New Roman", serif;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5rem; }
+
+p,
+ol,
+ul,
+dl,
+address {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+ol,
+ul,
+dl {
   list-style-position: inside; }
 
-small {
-  font-size: 14px;
-  font-size: 0.875rem; }
+.entry-content-body > p {
+  font-family: "PublicoText", Georgia, "Times New Roman", serif; }
 
-strong, dt {
+strong,
+dt {
   font-weight: 700; }
 
 .story-heading,
