@@ -23,21 +23,21 @@
   .entry-summary {
     margin-left: 13rem; } }
 
+.entry-summary {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 62.5em) {
+    .entry-summary {
+      margin-bottom: 1rem; } }
+
 .entry-header {
   position: relative;
-  margin-bottom: 0.5rem;
+  padding-top: .5rem;
   *zoom: 1; }
   .entry-header:before, .entry-header:after {
     content: " ";
     display: table; }
   .entry-header:after {
     clear: both; }
-  @media (min-width: 46.25em) {
-    .entry-header {
-      margin-bottom: 1rem; } }
-  @media (min-width: 62.5em) {
-    .entry-header {
-      padding: 1rem 0; } }
 
 @media (min-width: 75em) {
   .entry-labels {
@@ -90,9 +90,10 @@
         line-height: 2rem; } }
 
 .entry-meta {
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   *zoom: 1; }
   .entry-meta:before, .entry-meta:after {
     content: " ";
@@ -101,16 +102,14 @@
     clear: both; }
   @media (min-width: 46.25em) {
     .entry-meta {
-      margin-top: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #e0e0e0; } }
+      margin-bottom: 1rem; } }
   @media (min-width: 75em) {
     .entry-meta {
       position: absolute;
       top: 100%;
       left: 0;
       width: 11rem;
-      margin-top: 0;
+      margin-bottom: 0;
       padding-bottom: 0;
       padding-top: 0;
       border-top: 0;
@@ -172,8 +171,7 @@
   ========================================================================== */
 .classic-entry .entry-meta {
   top: 0;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0; }
+  border-top: 1px solid #e0e0e0; }
   .classic-entry .entry-meta .meta-social {
     width: 100%;
     text-align: left; }
@@ -192,11 +190,13 @@
           width: 100%; } }
 
 .detailed-entry-header {
+  margin-bottom: 0.5rem;
   padding: 1rem;
   background-color: #f5f5f5; }
   @media (min-width: 46.25em) {
     .detailed-entry-header {
-      margin-top: 1rem; } }
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
   .detailed-entry-header .entry-title {
     margin-bottom: 0.5rem;
     font-size: 20px;

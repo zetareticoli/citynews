@@ -32,18 +32,18 @@
   	}
  }
 
+.entry-summary {
+ 	margin-bottom: $baseline;
+
+ 	@include bp(l) {
+ 		margin-bottom: $baseline * 2;
+ 	}
+}
+
 .entry-header {
 	position: relative;
-	margin-bottom: $baseline;
+	padding-top: .5rem;
 	@include clearfix;
-
-	@include bp(m) {
-		margin-bottom: $baseline * 2;
-	}
-
-	@include bp(l) {
-		padding: $baseline * 2 0;
-	}
 }
 
 .entry-labels {
@@ -107,18 +107,17 @@
 	}
 }
 
-// Entry Meta
+// Entry Meta ===============================================================
 
 .entry-meta {
-	margin-top: $baseline;
+	margin-bottom: $baseline;
 	padding-top: $baseline;
 	border-top: 1px solid $bordercolor;
+	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
 
 	@include bp(m) {
-		margin-top: $baseline * 2;
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bordercolor;
+		margin-bottom: $baseline * 2;
 	}
 
 	@include bp(xl) {
@@ -126,7 +125,7 @@
 		top: 100%;
 		left: 0;
 		width: 11rem;
-		margin-top: 0;
+		margin-bottom: 0;
 		padding-bottom: 0;
 		padding-top: 0;
 		border-top: 0;
@@ -134,7 +133,7 @@
 	}
 }
 
-// Entry Media
+// Entry Media ===============================================================
 
 .entry-media {
 	position: relative;
@@ -206,7 +205,6 @@
 	.entry-meta {
 		top: 0;
 		border-top: 1px solid $bordercolor;
-		border-bottom: 1px solid $bordercolor;
 
 		.meta-social {
 			width: 100%;
@@ -237,11 +235,13 @@
 // Detailed Header ===============================================================
 
 .detailed-entry-header {
+	margin-bottom: $baseline;
 	padding: 1rem;
 	background-color: $black200;
 
 	@include bp(m) {
 		margin-top: 1rem;
+		margin-bottom: $baseline * 2;
 	}
 
 	.entry-title {
