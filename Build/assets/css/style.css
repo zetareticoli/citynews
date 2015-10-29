@@ -3222,12 +3222,12 @@ ol, ul {
     margin-bottom: 0.5rem; }
   .card.tile-card .tile-icon {
     position: absolute;
-    top: -1.5rem;
-    right: 1rem;
+    top: 3rem;
+    left: 1.5rem;
     z-index: 2;
-    -webkit-box-shadow: 0 0 0 3px #eceff1;
-    -moz-box-shadow: 0 0 0 3px #eceff1;
-    box-shadow: 0 0 0 3px #eceff1; }
+    -webkit-box-shadow: 0 0 0 3px white;
+    -moz-box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px white; }
   .card.tile-card .author {
     margin-right: 1rem; }
   .card.tile-card .author-name {

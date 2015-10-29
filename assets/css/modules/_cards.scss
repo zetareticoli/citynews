@@ -228,10 +228,10 @@
 
 		.tile-icon {
 			position: absolute;
-			top: -1.5rem;
-			right: 1rem;
+			top: 3rem;
+			left: 1.5rem;
 			z-index: 2;
-			@include box-shadow(0 0 0 3px $bluegrey100);
+			@include box-shadow(0 0 0 3px white);
 
 		}
 
