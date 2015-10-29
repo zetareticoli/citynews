@@ -3213,37 +3213,24 @@ ol, ul {
   .card.tile-card .card-media {
     float: none; }
   .card.tile-card .card-header {
+    position: relative;
     background-color: #eceff1;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding: 1rem; }
-  .card.tile-card .tile-icon,
-  .card.tile-card .author-photo {
+  .card.tile-card .card-heading {
+    margin-bottom: 0.5rem; }
+  .card.tile-card .tile-icon {
     position: absolute;
-    top: 0;
-    z-index: 2; }
-  .card.tile-card .author-photo,
-  .card.tile-card .tile-icon {
-    -webkit-box-shadow: 0 0 0 3px white;
-    -moz-box-shadow: 0 0 0 3px white;
-    box-shadow: 0 0 0 3px white; }
-  .card.tile-card .author-photo {
-    width: 2.5rem;
-    left: 1rem;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
-    .card.tile-card .author-photo img {
-      vertical-align: top; }
-  .card.tile-card .tile-icon {
+    top: -1.5rem;
     right: 1rem;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
+    z-index: 2;
+    -webkit-box-shadow: 0 0 0 3px #eceff1;
+    -moz-box-shadow: 0 0 0 3px #eceff1;
+    box-shadow: 0 0 0 3px #eceff1; }
+  .card.tile-card .author {
+    margin-right: 1rem; }
   .card.tile-card .author-name {
-    color: #9e9e9e;
     font-size: 14px;
     font-size: 0.875rem; }
   .card.tile-card .location-label {

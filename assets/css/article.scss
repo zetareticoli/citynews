@@ -552,7 +552,8 @@
 		margin-bottom: 1rem;
 	}
 
-	.byline > * {
+	.byline > *,
+	.author-name {
 		color: $black600;
 		@include font-size($fontsize200);
 	}
