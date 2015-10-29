@@ -893,8 +893,6 @@ time {
     color: #78909c; }
     .location-label > .link:hover {
       color: #607d8b; }
-  .location-label .icon {
-    vertical-align: text-bottom; }
 
 h5.location-label {
   margin: 1.5rem 0 .5rem;
