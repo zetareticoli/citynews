@@ -3175,10 +3175,10 @@ ol, ul {
       float: none; } }
 .card.rounded-card {
   background-color: #eceff1;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
   *zoom: 1; }
   .card.rounded-card:before, .card.rounded-card:after {
     content: " ";
@@ -3189,25 +3189,25 @@ ol, ul {
     .card.rounded-card {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px; } }
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; } }
   .card.rounded-card .card-header {
     padding: .5rem; }
   .card.rounded-card .card-media img {
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px; }
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
     @media (min-width: 46.25em) {
       .card.rounded-card .card-media img {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px; } }
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; } }
     @media (min-width: 46.25em) {
       .card.rounded-card .card-media img {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px; } }
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; } }
 .card.tile-card {
   background-color: transparent;
   position: relative;
@@ -3216,8 +3216,8 @@ ol, ul {
     float: none; }
   .card.tile-card .card-header {
     background-color: #eceff1;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     padding: 1rem; }
   .card.tile-card .tile-icon,
   .card.tile-card .author-photo {

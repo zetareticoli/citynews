@@ -282,6 +282,7 @@
 	margin-bottom: $baseline;
 	padding: 1rem;
 	background-color: $bluegrey100;
+	@include rounded($elementradius);
 
 	@include bp(m) {
 		margin-top: 1rem;
