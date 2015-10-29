@@ -480,23 +480,6 @@ dt {
 	}
 }
 
-// Timestamp
-
-time {
-	color: $black600;
-}
-
-.timestamp {
-	font-family: $alttexttypeface;
-}
-
-.datestamp {
-	@include font-size($fontsize400);
-	font-family: $brandtypeface;
-	font-weight: 500;
-	text-transform: lowercase;
-}
-
 .byline {
 	margin-bottom: 0;
 	line-height: .875rem;
@@ -691,6 +674,22 @@ h5.location-label {
 
 // Timestamp & Meteo ===============================================================
 
+time {
+	color: $black600;
+}
+
+.timestamp {
+	font-family: $alttexttypeface;
+}
+
+.datestamp {
+	@include font-size($fontsize300);
+	line-height: 1.1rem;
+	font-family: $brandtypeface;
+	font-weight: 500;
+	text-transform: lowercase;
+}
+
 .site-date,
 .site-meteo {
 	display: inline-block;
@@ -724,6 +723,23 @@ h5.location-label {
 	line-height: 1em;
 }
 
+// Users & Authors ===============================================================
+
+.author-name,
+.author-role {
+	@include font-size($fontsize200);
+}
+
+.author-name {
+	font-weight: 700;
+	line-height: 1.15rem;
+	color: $black900;
+}
+
+.author-role {
+	font-family: $texttypeface;
+}
+
 // Tags ===============================================================
 
 .tag-item {
@@ -745,19 +761,3 @@ h5.location-label {
 		color: $bluegrey600;
 	}
 }
-
-// Lists =====================================================================
-
-
-// Description List
-
-.description-list {
-	dt {
-		margin-bottom: 0;
-	}
-
-	dd {
-		margin: 0 0 .5rem 0;
-	}
-}
-
