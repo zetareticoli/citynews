@@ -541,19 +541,19 @@
 
 .report-entry {
 
-	.byline,
-	.author {
-		color: $black600;
-		@include font-size($fontsize200);
+	.tile-icon {
+		width: 2rem;
+		height: 2rem;
+		vertical-align: middle;
 	}
 
 	.byline {
-		line-height: 1.5rem;
 		margin-bottom: 1rem;
+	}
 
-		@include bp(m) {
-			margin-bottom: 0;
-		}
+	.byline > * {
+		color: $black600;
+		@include font-size($fontsize200);
 	}
 
 	.timestamp {
@@ -562,16 +562,6 @@
 		@include bp(s) {
 			display: inline;
 		}
-	}
-
-	.entry-labels {
-		float: none;
-		width: auto;
-	}
-
-	.tile-icon {
-		width: 2rem;
-		height: 2rem;
 	}
 
 	.report-details,
@@ -589,6 +579,13 @@
 
 		@include bp(l) {
 			width: 75%;
+		}
+	}
+
+	.entry-title {
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
 		}
 	}
 
