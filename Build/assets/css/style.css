@@ -1106,12 +1106,14 @@ h5.location-label {
     height: 2rem; }
 
 .tile-icon {
+  display: inline-block;
   width: 2.5rem;
   height: 2.5rem; }
   .tile-icon .icon {
-    fill: white; }
-  .tile-icon.icon-color--mint {
-    background-image: linear-gradient(134deg, #17BF95 0%, #34DFB4 100%); }
+    display: block;
+    margin: 6px auto 0;
+    fill: white;
+    background-image: linear-gradient(-134deg, #17BF95 0%, #34DFB4 100%); }
 
 .caret-icon {
   display: inline-block;
@@ -4241,7 +4243,13 @@ html.is-locked body {
 
 .accent-color-mint,
 .accent-color-mint .link {
-  color: mint; }
+  color: #20C99E; }
+
+.mint-background-color {
+  background-color: #20C99E; }
+
+.mint-fill {
+  fill: #20C99E; }
 
 .theme-yellow .nav-btn .btn-label,
 .theme-red .nav-btn .btn-label,
