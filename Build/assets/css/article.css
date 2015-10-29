@@ -424,8 +424,31 @@
   Report Entry 
   ========================================================================== */
 .report-entry .byline,
+.report-entry .author {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-size: 0.875rem; }
+.report-entry .byline {
+  line-height: 1.5rem; }
 .report-entry .timestamp {
-  color: #757575; }
+  display: block; }
+  @media (min-width: 30em) {
+    .report-entry .timestamp {
+      display: inline; } }
+.report-entry .entry-labels {
+  float: none;
+  width: auto; }
+.report-entry .tile-icon {
+  width: 2rem;
+  height: 2rem; }
+@media (min-width: 46.25em) {
+  .report-entry .report-details,
+  .report-entry .entry-map {
+    float: left; } }
+@media (min-width: 46.25em) {
+  .report-entry .report-details {
+    width: 70%;
+    padding-right: 1rem; } }
 @media (min-width: 46.25em) {
   .report-entry .entry-map {
-    float: right; } }
+    width: 30%; } }

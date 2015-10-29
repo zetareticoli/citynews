@@ -542,13 +542,50 @@
 .report-entry {
 
 	.byline,
+	.author {
+		color: $black600;
+		@include font-size($fontsize200);
+	}
+
+	.byline {
+		line-height: 1.5rem;
+	}
+
 	.timestamp {
-		color: $black700;
+		display: block;
+
+		@include bp(s) {
+			display: inline;
+		}
+	}
+
+	.entry-labels {
+		float: none;
+		width: auto;
+	}
+
+	.tile-icon {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.report-details,
+	.entry-map {
+		@include bp(m) {
+			float: left;
+		}
+	}
+
+	.report-details {
+		@include bp(m) {
+			width: 70%;
+			padding-right: 1rem;
+		}
 	}
 
 	.entry-map {
 		@include bp(m) {
-			float: right;
+			width: 30%;
 		}
 	}
 }
