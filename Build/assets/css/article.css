@@ -419,3 +419,13 @@
   @media (min-width: 62.5em) {
     .event-entry .entry-map {
       width: auto; } }
+
+/* ==========================================================================
+  Report Entry 
+  ========================================================================== */
+.report-entry .byline,
+.report-entry .timestamp {
+  color: #757575; }
+@media (min-width: 46.25em) {
+  .report-entry .entry-map {
+    float: right; } }
