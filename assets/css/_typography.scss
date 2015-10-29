@@ -482,12 +482,19 @@ dt {
 
 // Timestamp
 
-time,
-.timestamp {
-	font-family: $texttypeface;
-	font-weight: 400;
-	@include font-size($fontsize100);
+time {
 	color: $black600;
+}
+
+.timestamp {
+	font-family: $alttexttypeface;
+}
+
+.datestamp {
+	@include font-size($fontsize400);
+	font-family: $brandtypeface;
+	font-weight: 500;
+	text-transform: lowercase;
 }
 
 .byline {
