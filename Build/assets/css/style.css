@@ -1884,8 +1884,6 @@ ol, ul {
 .wrapper {
   position: relative;
   background-color: white; }
-  .wrapper.inverted {
-    background-color: #212121; }
 
 .main-content {
   padding: 1rem 0; }
@@ -2070,6 +2068,12 @@ ol, ul {
   margin: 0 0 1rem; }
 
 /* ==========================================================================
+  Inverted layout
+  ========================================================================== */
+.inverted {
+  background-color: #263238; }
+
+/* ==========================================================================
   Site Header
   ========================================================================== */
 .header {
@@ -2232,10 +2236,10 @@ ol, ul {
       margin-top: 3.5rem; } }
 
 .slim-header.inverted .header-top {
-  background-color: #212121;
-  -webkit-box-shadow: 0 2px 0 #424242;
-  -moz-box-shadow: 0 2px 0 #424242;
-  box-shadow: 0 2px 0 #424242; }
+  background-color: #263238;
+  -webkit-box-shadow: 0 2px 0 #37474f;
+  -moz-box-shadow: 0 2px 0 #37474f;
+  box-shadow: 0 2px 0 #37474f; }
 .slim-header.inverted .nav-btn .btn-label {
   color: #bdbdbd; }
 .slim-header.inverted .nav-btn .icon {
@@ -3698,15 +3702,34 @@ ol, ul {
 
 .gallery-story {
   border-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-color: #191919; }
   @media (min-width: 62.5em) {
     .gallery-story {
       margin-bottom: 1rem; } }
-  .gallery-story .story-media {
+  .gallery-story .gallery-counter {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #212121;
+    padding: 0.5rem 1rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 700; }
+  .gallery-story .story-heading {
     margin-bottom: 0; }
+  .gallery-story .story-media {
+    position: relative;
+    margin-bottom: 0;
+    float: none;
+    width: 100%;
+    max-width: none; }
   .gallery-story .story-header {
-    padding: 1rem;
-    background-color: #292929; }
+    padding: 1rem; }
 
 .latest-stories h6 {
   text-transform: uppercase; }
@@ -4284,9 +4307,6 @@ ol, ul {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
-
-.inverted {
-  background-color: #263238; }
 
 .is-animated.mobile-nav {
   -webkit-transition: all 0.15s ease-in-out;

@@ -508,6 +508,7 @@
 .gallery-story {
 	border-bottom: 0;
 	padding-bottom: 0;
+	background-color: darken($black1000, 3%);
 
 	@include bp(l) {
 		margin-bottom: 1rem;
@@ -539,7 +540,6 @@
 
 	.story-header {
 		padding: 1rem;
-		background-color: lighten($black1000,3%);
 	}
 }
 

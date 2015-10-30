@@ -80,10 +80,6 @@ ol, ul {
 .wrapper {
 	position: relative;
 	background-color: white;
-
-	&.inverted {
-		background-color: $black1000;
-	}
 }
 
 .main-content {
@@ -251,6 +247,13 @@ ol, ul {
 	margin: 0 0 1rem;
 }
 
+/* ==========================================================================
+  Inverted layout
+  ========================================================================== */
+
+.inverted {
+	background-color: $bluegrey1000;
+}
 
 /* ==========================================================================
   Site Header
@@ -374,9 +377,9 @@ ol, ul {
 	}
 }
 
-// Templates ===============================================================
+// Header templates ===============================================================
 
-// Template Slim
+// Slim header
 
 .slim-header {
 	position: relative;
@@ -466,13 +469,13 @@ ol, ul {
 	}
 }
 
-// Template inverted
+// Slim inverted
 
 .slim-header.inverted {
 
 	.header-top {
-		background-color: $black1000;
-		@include box-shadow(0 2px 0 $black900);
+		background-color: $bluegrey1000;
+		@include box-shadow(0 2px 0 $bluegrey900);
 	}
 
 	.nav-btn {
