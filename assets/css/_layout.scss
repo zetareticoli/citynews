@@ -248,14 +248,6 @@ ol, ul {
 }
 
 /* ==========================================================================
-  Inverted layout
-  ========================================================================== */
-
-.inverted {
-	background-color: $bluegrey1000;
-}
-
-/* ==========================================================================
   Site Header
   ========================================================================== */
 
@@ -481,11 +473,11 @@ ol, ul {
 	.nav-btn {
 
 		.btn-label {
-			color: $black500;
+			color: $bluegrey500;
 		}
 
 		.icon {
-			fill: $black500;
+			fill: $bluegrey500;
 		}
 
 		&:hover {
@@ -501,8 +493,8 @@ ol, ul {
 	}
 
 	.search-btn {
-		background-color: $black1000;
-		border-color: $black900;
+		background-color: $bluegrey1000;
+		border-color: $bluegrey900;
 	}
 	
 	.nav-btn,
