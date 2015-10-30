@@ -586,9 +586,6 @@ ul,
 dl {
   list-style-position: inside; }
 
-.wrapper.inverted h1, .wrapper.inverted h2, .wrapper.inverted h3, .wrapper.inverted h4, .wrapper.inverted h5 {
-  color: #616161; }
-
 .entry-content-body > p {
   font-family: "PublicoText", Georgia, "Times New Roman", serif; }
 
