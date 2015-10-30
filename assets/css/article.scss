@@ -8,6 +8,10 @@
   ENTRY
   ========================================================================== */
 
+/* ==========================================================================
+  Global Styles
+========================================================================== */  
+
 .entry {
 	padding: 0 $baseline $baseline * 2;
 	border-bottom: .15rem solid $bordercolor;
@@ -181,18 +185,6 @@
 			margin-bottom: $baseline * 2;
 		}
 
-		@include bp(xl) {
-			position: absolute;
-			top: 100%;
-			left: 0;
-			width: 11rem;
-			margin-bottom: 0;
-			padding-bottom: 0;
-			padding-top: 0;
-			border-top: 0;
-			z-index: 1;
-		}
-
 		.meta-social {
 			@include bp(m) {
 				width: 50%;
@@ -284,16 +276,13 @@
 	}
 }
 
-/* ==========================================================================
-  Classic Entry
-  ========================================================================== */
-
 // Detailed Header ===============================================================
 
 .detailed-entry-header {
 	margin-bottom: $baseline;
 	padding: 1rem;
-	background-color: $black200;
+	background-color: $bluegrey100;
+	@include rounded($elementradius);
 
 	@include bp(m) {
 		margin-top: 1rem;
@@ -304,16 +293,16 @@
 		margin-bottom: $baseline;
 		@include font-size($fontsize500);
 		line-height: 1.5rem;
+		margin-left: 0;
 
 		@include bp(m) {
 			@include font-size($fontsize700);
-			line-height: 1.5rem;
+			line-height: 2rem;
 		}
 
 		@include bp(l) {
-			margin-left: 0;
 			@include font-size($fontsize900);
-			line-height: 2rem;
+			line-height: 2.5rem;
 		}
 	}
 
@@ -451,8 +440,8 @@
 	}
 
 	.directions-btn {
-		border-right: 1px solid $bordercolor;
-		padding-right: $baseline;
+		margin-left: $baseline;
+		float: right;
 	}
 
 	.directions-btn > .directions-icon {
@@ -466,11 +455,152 @@
 	.map-address {
 		padding: .5rem;
 		background-color: white;
-		@include font-size($fontsize100);
-		color: $black700;
 
 		span {
-			margin-left: $baseline;
+			@include font-size($fontsize100);
+			color: $black700;
+		}
+	}
+}
+
+/* ==========================================================================
+  Event Entry 
+  ========================================================================== */
+
+.event-entry {
+
+	.event-details,
+	.entry-map {
+		@include bp(s) {
+			float: left;
+		}
+	}
+
+	.event-details {
+		width: auto;
+
+		@include bp(m) {
+			width: 42%;
+		}
+
+		@include bp(l) {
+			width: 22rem;
+			margin-right: 1rem;
+		}
+
+		@include bp(xl) {
+			width: 34rem;
+		}
+	}
+
+
+	.entry-media {
+		width: 25%;
+
+		@include bp(l) {
+			width: 15rem;
+		}
+	}
+
+	.entry-labels {
+		width: auto;
+		float: none;
+	}
+
+	.event-details {
+
+		.details-list {
+
+			li {
+				@include font-size($fontsize200);
+
+				@include bp(l) {
+					@include font-size($fontsize300);
+					line-height: 1.75rem;
+				}
+			}
+		}
+	}
+
+	.entry-map {
+		width: 100%;
+		margin-top: $baseline;
+
+		@include bp(m) {
+			width: 30%;
+		}
+
+		@include bp(l) {
+			width: auto;
+		}
+	}
+}
+
+/* ==========================================================================
+  Report Entry 
+  ========================================================================== */
+
+.report-entry {
+
+	.tile-icon {
+		width: 2rem;
+		height: 2rem;
+		vertical-align: middle;
+	}
+
+	.byline {
+		margin-bottom: 1rem;
+
+		@include bp(m) {
+			margin-bottom: 0;
+		}
+	}
+
+	.byline,
+	.author-name {
+		@include font-size($fontsize200);
+	}
+
+	.timestamp {
+		display: block;
+
+		@include bp(s) {
+			display: inline;
+		}
+	}
+
+	.report-details,
+	.entry-map {
+		@include bp(m) {
+			float: left;
+		}
+	}
+
+	.report-details {
+		@include bp(m) {
+			width: 70%;
+			padding-right: 1rem;
+		}
+
+		@include bp(l) {
+			width: 75%;
+		}
+	}
+
+	.entry-title {
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
+		}
+	}
+
+	.entry-map {
+		@include bp(m) {
+			width: 30%;
+		}
+
+		@include bp(l) {
+			width: 25%;
 		}
 	}
 }

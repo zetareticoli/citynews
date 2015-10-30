@@ -187,6 +187,10 @@
   <title>globe</title>
   <path class="path1" d="M512 20.48c-271.104 0-491.571 220.518-491.571 491.52s220.467 491.52 491.571 491.52c271.002 0 491.52-220.518 491.52-491.52s-220.518-491.52-491.52-491.52zM931.226 512c0 95.898-32.563 184.32-86.835 254.976-15.36-11.981-31.693-44.39-16.333-77.978 15.514-33.792 19.558-112.026 15.974-142.49-3.379-30.413-19.2-103.68-62.157-104.397-42.906-0.614-72.346-14.797-97.843-65.69-52.89-105.882 99.277-126.208 46.387-184.781-14.797-16.486-91.29 67.686-102.502-44.493-0.717-8.038 6.912-20.070 17.203-32.563 166.093 55.808 286.106 212.838 286.106 397.414zM454.4 96.922c-10.035 19.558-36.506 27.494-52.582 42.189-35.021 31.693-50.074 27.29-68.915 57.702-18.995 30.413-80.23 74.189-80.23 96.205s30.925 47.923 46.387 42.906c15.462-5.12 56.269-4.813 80.23 3.584 24.013 8.499 200.397 16.998 144.179 166.093-17.818 47.411-95.898 39.424-116.685 117.914-3.123 11.52-13.926 60.723-14.592 76.8-1.28 24.883 17.613 118.682-6.4 118.682-24.115 0-88.986-83.917-88.986-99.123s-16.794-68.506-16.794-114.176c0-45.619-77.722-44.902-77.722-105.574 0-54.682 42.138-81.92 32.666-108.186-9.267-26.112-83.302-26.982-114.176-30.208 53.914-139.827 180.736-243.61 333.619-264.806zM380.109 909.824c25.19-13.312 27.75-30.515 50.586-31.386 26.112-1.178 47.36-10.189 76.8-16.691 26.112-5.683 72.858-32.205 113.971-35.584 34.714-2.816 103.168 1.792 121.6 35.277-66.304 44.083-145.818 69.786-231.117 69.786-46.029 0-90.368-7.629-131.84-21.402z"></path>
 </symbol>
+<symbol id="time-icon" viewBox="0 0 1024 1024">
+  <title>time</title>
+  <path class="path1" d="M534 298v224l192 114-32 54-224-136v-256h64zM512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"></path>
+</symbol>
 </defs>
 </svg>
 
@@ -343,29 +347,77 @@
 
     <main class="main-content">
             
-        <article class="entry " role="main">
+        <article class="entry event-entry" role="main">
 
-            <header class="entry-header">  
+            <header class="entry-header detailed-entry-header">  
 
-                <div class="entry-labels">
-                    <span class="entry-label category-label accent-color-pink"><a href="timeoff-events.html" class="link">Concerto</a></span> 
-                </div>
+                <figure class="entry-media">
+                    <img srcset="assets/images/event-vertical_mid.jpg" alt="Concerto Subsonica">    
+                </figure>
 
+                <span class="label accent-color-pink"><a href="timeoff-events.html" class="link">Concerto</a></span> 
                 <h1 class="entry-title">Subsonica a Rock in Roma, 20 luglio 2015</h1>
 
-                <div class="entry-meta has-author">
+                <div class="event-details">
 
-                    <div class="meta-byline">
-
-                        <div class="author">
-                            <figure class="author-photo"><a href="#"><img src="assets/images/author-photo.jpg"></a></figure>
-                            <span class="author-name">Redazione <span class="author-twitter"><svg class="icon twitter"><use xlink:href="#twitter-icon"></use></svg>
-                            </span></span>
-                        </div>
-
-                        <time class="entry-timestamp">17 Maggio, 2015</time>
-
+                    <ul class="u-unstyled rating">
+                        <li><svg class="icon medium star-icon star-icon--coloured"><use xlink:href="#star-icon"></use></svg></li>
+                        <li><svg class="icon medium star-icon star-icon--coloured"><use xlink:href="#star-icon"></use></svg></li>
+                        <li><svg class="icon medium star-icon star-icon--coloured"><use xlink:href="#star-icon"></use></svg></li>
+                        <li><svg class="icon medium star-icon star-icon--grey"><use xlink:href="#star-icon"></use></svg></li>
+                        <li><svg class="icon medium star-icon star-icon--grey"><use xlink:href="#star-icon"></use></svg></li>
+                    </ul>
+                    
+                    <div class="details-list">
+                        <ul class="u-unstyled">
+                            <li>
+                                <svg class="icon inline-icon small location-icon"><use xlink:href="#location-pin-icon"></use></svg>
+                                Ippodromo delle Capannelle
+                            </li>
+                            <li>
+                                <svg class="icon inline-icon small time-icon"><use xlink:href="#time-icon"></use></svg>
+                                20 Luglio 2015
+                            </li>
+                            <li>
+                                <svg class="icon inline-icon small euro-icon"><use xlink:href="#euro-icon"></use></svg>
+                                €18 + €2 d.p.
+                            </li>
+                            <li>
+                                <svg class="icon inline-icon small globe-icon"><use xlink:href="#globe-icon"></use></svg>
+                                wwww.rockinroma.it
+                            </li>
+                        </ul>
                     </div>
+                </div>
+
+                <figure class="entry-map">
+                    <img src="assets/images/entry-map.jpg">
+
+                    <figcaption class="map-address">
+                        <a href="#" class="directions-btn"><svg class="icon medium directions-icon"><use xlink:href="#directions-icon"></use></svg></a>
+                        <span>Via Carlo Mirabello, 8 &middot; Prati</span>
+                    </figcaption>
+                </figure>
+
+            </header>
+
+            <section class="entry-content">
+
+                <div class="entry-meta has-author">
+                    
+                    <div class="meta-byline">
+    <div class="author">
+        <figure class="author-photo"><a href="#"><img class="avatar large" src="assets/images/avatar-author.jpg"></a></figure>
+
+        <span class="author-name"><a href="#" class="link">Matteo Scarlino</a></span>
+
+        <em class="author-role">Capo Redattore</em>
+
+        <span class="author-twitter"><svg class="icon twitter"><use xlink:href="#twitter-icon"></use></svg></span>
+    </div>
+
+    <time class="datestamp">17 Mag, 2015</time>
+</div>
 
                     <div class="meta-social">
 
@@ -402,44 +454,7 @@
     </div>
 
 </div>
-
-                </div>
-
-            </header>
-
-            <section class="entry-content">
-
-                <div class="entry-details">
-
-                    <figure class="entry-media small-media">
-                        <img srcset="assets/images/event-vertical_mid.jpg" alt="Concerto Subsonica">    
-                    </figure>
-                    <!--
-                    <div class="static-map">
-                        <a href="#" class="expand-image">
-                            <img class="map-thumbnail" srcset="<!- @path staticmap.jpg --" alt="Mappa">    
-                            <span class="overlay-icon rounded-icon centered"><svg class="icon small enlarge-icon"><use xlink:href="#enlarge-icon"></use></svg>
-                        </a>
-                    </div>
-                    -->
-
-                    <dl class="description-list">
-                        <dt>Dove</dt>
-                        <dd>
-                            <span>Ippodromo delle Capannelle</span>
-                            <span>Via Appia Nuova 1255 - Roma</span>
-                            <span><a href="#" class="btn link-btn">Ottieni Indicazioni</a></p>
-                        </dd>
-                        <dt>Quando</dt>
-                        <dd>
-                            <span>20 Luglio 2015 - 21:45</span>
-                        </dd>
-                        <dt>Costo</dt>
-                        <dd>€18 + €2 d.p.</dd>
-                        <dt>Link</dt>
-                        <dd><a href="#">www.rockinroma.it</a></dd>
-                    </dl>
-
+                    
                 </div>
 
                 <div class="content-main-column">
