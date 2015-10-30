@@ -974,30 +974,6 @@ h5.location-label {
   .inverted .block-link .story-heading:hover {
     color: #bdbdbd; }
 
-.theme-yellow .inverted .block-link:hover,
-.theme-yellow .inverted .block-link:hover .story-heading {
-  color: #FFBE26; }
-
-.theme-blue .inverted .block-link:hover,
-.theme-blue .inverted .block-link:hover .story-heading {
-  color: #3277C7; }
-
-.theme-red .inverted .block-link:hover,
-.theme-red .inverted .block-link:hover .story-heading {
-  color: #F2463D; }
-
-.theme-green .inverted .block-link:hover,
-.theme-green .inverted .block-link:hover .story-heading {
-  color: #50AE55; }
-
-.theme-pink .inverted .block-link:hover,
-.theme-pink .inverted .block-link:hover .story-heading {
-  color: #F291B2; }
-
-.theme-purple .inverted .block-link:hover,
-.theme-purple .inverted .block-link:hover .story-heading {
-  color: #B75DC7; }
-
 time {
   color: #9e9e9e; }
 
@@ -2108,12 +2084,6 @@ ol, ul {
   margin: 0 0 1rem; }
 
 /* ==========================================================================
-  Inverted layout
-  ========================================================================== */
-.inverted {
-  background-color: #263238; }
-
-/* ==========================================================================
   Site Header
   ========================================================================== */
 .header {
@@ -2281,16 +2251,16 @@ ol, ul {
   -moz-box-shadow: 0 2px 0 #37474f;
   box-shadow: 0 2px 0 #37474f; }
 .slim-header.inverted .nav-btn .btn-label {
-  color: #bdbdbd; }
+  color: #78909c; }
 .slim-header.inverted .nav-btn .icon {
-  fill: #bdbdbd; }
+  fill: #78909c; }
 .slim-header.inverted .nav-btn:hover .btn-label {
   color: white; }
 .slim-header.inverted .nav-btn:hover .icon {
   fill: white; }
 .slim-header.inverted .search-btn {
-  background-color: #212121;
-  border-color: #424242; }
+  background-color: #263238;
+  border-color: #37474f; }
 .slim-header.inverted .nav-btn,
 .slim-header.inverted .page-title,
 .slim-header.inverted .page-title a {
@@ -3642,35 +3612,36 @@ ol, ul {
   float: right;
   margin-left: 0.5rem; }
 
-.gallery-story {
+.media-story {
   border-bottom: 0;
   padding-bottom: 0;
   background-color: #1c2429; }
   @media (min-width: 62.5em) {
-    .gallery-story {
+    .media-story {
       margin-bottom: 1rem; } }
-  .gallery-story .media-badge {
+  .media-story .media-badge {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #263238;
+    background-color: #1c2429;
     padding: 0.5rem 1rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-size: 0.75rem;
     font-weight: 700; }
-  .gallery-story .story-heading {
-    margin-bottom: 0; }
-  .gallery-story .story-media {
+  .media-story .story-heading {
+    margin-bottom: 0;
+    color: white; }
+  .media-story .story-media {
     position: relative;
     margin-bottom: 0;
     float: none;
     width: 100%;
     max-width: none; }
-  .gallery-story .story-header {
+  .media-story .story-header {
     padding: 1rem; }
 
 .latest-stories h6 {
@@ -4299,6 +4270,58 @@ html.is-locked body {
 .mint-fill {
   fill: #20C99E; }
 
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading,
+.theme-yellow .theme-inverted .block-link:hover .story-heading {
+  color: #FFBE26; }
+
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading,
+.theme-blue .theme-inverted .block-link:hover .story-heading {
+  color: #3277C7; }
+
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading,
+.theme-red .theme-inverted .block-link:hover .story-heading {
+  color: #F2463D; }
+
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading,
+.theme-green .theme-inverted .block-link:hover .story-heading {
+  color: #50AE55; }
+
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading,
+.theme-pink .theme-inverted .block-link:hover .story-heading {
+  color: #F291B2; }
+
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading,
+.theme-purple .theme-inverted .block-link:hover .story-heading {
+  color: #B75DC7; }
+
+/* ==========================================================================
+   Inverted Theme
+   ========================================================================== */
+.theme-inverted,
+.inverted {
+  background-color: #263238; }
+
+.theme-inverted h1, .theme-inverted h2, .theme-inverted h3, .theme-inverted h4, .theme-inverted h5, .theme-inverted h6 {
+  color: white; }
+.theme-inverted p,
+.theme-inverted span,
+.theme-inverted .social-counter .number,
+.theme-inverted .author-role {
+  color: #b0bec5; }
+.theme-inverted .timestamp,
+.theme-inverted .datestamp,
+.theme-inverted .social-counter .counter-label {
+  color: #90a4ae; }
+
+/* ==========================================================================
+   Brand Themes
+   ========================================================================== */
 .theme-yellow .nav-btn .btn-label,
 .theme-red .nav-btn .btn-label,
 .theme-blue .nav-btn .btn-label,

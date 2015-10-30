@@ -26,6 +26,76 @@
 	fill: $accentmint;
 }
 
+// Theme Colors for hover on block links ===============================================================
+
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading,
+.theme-yellow .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-yellow;
+}
+
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading,
+.theme-blue .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-blue;
+}
+
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading,
+.theme-red .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-red;
+}
+
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading,
+.theme-green .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-green;
+}
+
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading,
+.theme-pink .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-pink;
+}
+
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading,
+.theme-purple .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-purple;
+}
+
+/* ==========================================================================
+   Inverted Theme
+   ========================================================================== */
+
+.theme-inverted,
+.inverted {
+	background-color: $bluegrey1000;
+}
+
+.theme-inverted {
+	h1,	h2,	h3,	h4,	h5,	h6 {
+		color: white;
+	}
+
+	p,
+	span,
+	.social-counter .number,
+	.author-role {
+		color: $bluegrey300;
+	}
+
+	.timestamp,
+	.datestamp,
+	.social-counter .counter-label {
+		color: $bluegrey400;
+	}
+}
+
+/* ==========================================================================
+   Brand Themes
+   ========================================================================== */
+
 // Header styles common for all themes ==========================================
 
 .theme-yellow,
