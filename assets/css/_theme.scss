@@ -74,6 +74,9 @@
 }
 
 .theme-inverted {
+
+	// Global Styles
+
 	h1,	h2,	h3,	h4,	h5,	h6 {
 		color: white;
 	}
@@ -90,6 +93,68 @@
 	.social-counter .counter-label {
 		color: $bluegrey400;
 	}
+
+	// Slim Header
+
+	.slim-header {
+		.header-top {
+			background-color: $bluegrey1000;
+			@include box-shadow(0 2px 0 $bluegrey900);
+		}
+
+		.header-bottom {
+			background-color: $bluegrey900;
+		}
+
+		.nav-btn {
+			.btn-label {
+				color: $bluegrey500;
+			}
+
+			.icon {
+				fill: $bluegrey500;
+			}
+
+			&:hover {
+				.btn-label {
+					color: white;
+				}
+				.icon {
+					fill: white;
+				}
+			}
+		}
+
+		.search-btn {
+			background-color: $bluegrey1000;
+			border-color: $bluegrey900;
+		}
+		
+		.nav-btn,
+		.page-title,
+		.page-title a {
+			color: white;
+		}
+	}
+
+	// Secondary Nav
+
+	.secondary-nav {
+		.nav-item {
+			&.current .link {
+				color: white;
+			}
+
+			&:hover {
+				@include box-shadow(inset 0 -.35rem 0 $bluegrey400);
+			}
+
+			.link {
+				color: $bluegrey400;
+			}
+		}
+	}
+
 }
 
 /* ==========================================================================
@@ -122,12 +187,12 @@
 	.logo-network {
 		fill: lighten($black1000, 10%);
 	}
+}
 
-	.inverted  {
-		.logo-network {
-			fill: white;
-		}	
-	}
+.theme-inverted  {
+	.logo-network {
+		fill: white;
+	}	
 }
 
 /* ==========================================================================

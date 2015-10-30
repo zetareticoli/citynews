@@ -461,50 +461,6 @@ ol, ul {
 	}
 }
 
-// Slim inverted
-
-.slim-header.inverted {
-
-	.header-top {
-		background-color: $bluegrey1000;
-		@include box-shadow(0 2px 0 $bluegrey900);
-	}
-
-	.nav-btn {
-
-		.btn-label {
-			color: $bluegrey500;
-		}
-
-		.icon {
-			fill: $bluegrey500;
-		}
-
-		&:hover {
-
-			.btn-label {
-				color: white;
-			}
-			
-			.icon {
-				fill: white;
-			}
-		}
-	}
-
-	.search-btn {
-		background-color: $bluegrey1000;
-		border-color: $bluegrey900;
-	}
-	
-	.nav-btn,
-	.page-title,
-	.page-title a {
-		color: white;
-	}
-}
-
-
 /* ==========================================================================
   Sections
   ========================================================================== */

@@ -2245,27 +2245,6 @@ ol, ul {
     .slim-header + .section {
       margin-top: 3.5rem; } }
 
-.slim-header.inverted .header-top {
-  background-color: #263238;
-  -webkit-box-shadow: 0 2px 0 #37474f;
-  -moz-box-shadow: 0 2px 0 #37474f;
-  box-shadow: 0 2px 0 #37474f; }
-.slim-header.inverted .nav-btn .btn-label {
-  color: #78909c; }
-.slim-header.inverted .nav-btn .icon {
-  fill: #78909c; }
-.slim-header.inverted .nav-btn:hover .btn-label {
-  color: white; }
-.slim-header.inverted .nav-btn:hover .icon {
-  fill: white; }
-.slim-header.inverted .search-btn {
-  background-color: #263238;
-  border-color: #37474f; }
-.slim-header.inverted .nav-btn,
-.slim-header.inverted .page-title,
-.slim-header.inverted .page-title a {
-  color: white; }
-
 /* ==========================================================================
   Sections
   ========================================================================== */
@@ -4318,6 +4297,36 @@ html.is-locked body {
 .theme-inverted .datestamp,
 .theme-inverted .social-counter .counter-label {
   color: #90a4ae; }
+.theme-inverted .slim-header .header-top {
+  background-color: #263238;
+  -webkit-box-shadow: 0 2px 0 #37474f;
+  -moz-box-shadow: 0 2px 0 #37474f;
+  box-shadow: 0 2px 0 #37474f; }
+.theme-inverted .slim-header .header-bottom {
+  background-color: #37474f; }
+.theme-inverted .slim-header .nav-btn .btn-label {
+  color: #78909c; }
+.theme-inverted .slim-header .nav-btn .icon {
+  fill: #78909c; }
+.theme-inverted .slim-header .nav-btn:hover .btn-label {
+  color: white; }
+.theme-inverted .slim-header .nav-btn:hover .icon {
+  fill: white; }
+.theme-inverted .slim-header .search-btn {
+  background-color: #263238;
+  border-color: #37474f; }
+.theme-inverted .slim-header .nav-btn,
+.theme-inverted .slim-header .page-title,
+.theme-inverted .slim-header .page-title a {
+  color: white; }
+.theme-inverted .secondary-nav .nav-item.current .link {
+  color: white; }
+.theme-inverted .secondary-nav .nav-item:hover {
+  -webkit-box-shadow: inset 0 -0.35rem 0 #90a4ae;
+  -moz-box-shadow: inset 0 -0.35rem 0 #90a4ae;
+  box-shadow: inset 0 -0.35rem 0 #90a4ae; }
+.theme-inverted .secondary-nav .nav-item .link {
+  color: #90a4ae; }
 
 /* ==========================================================================
    Brand Themes
@@ -4350,12 +4359,8 @@ html.is-locked body {
 .theme-purple .logo-network,
 .theme-pink .logo-network {
   fill: #3b3b3b; }
-.theme-yellow .inverted .logo-network,
-.theme-red .inverted .logo-network,
-.theme-blue .inverted .logo-network,
-.theme-green .inverted .logo-network,
-.theme-purple .inverted .logo-network,
-.theme-pink .inverted .logo-network {
+
+.theme-inverted .logo-network {
   fill: white; }
 
 /* ==========================================================================
