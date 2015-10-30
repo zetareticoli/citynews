@@ -3431,22 +3431,20 @@ ol, ul {
     .hero-story.cover-hero .story-footer .story-subheading:last-child {
       margin-bottom: 16px; }
   @media (max-width: 62.438em) {
-    .hero-story.focus-cover {
-      background-color: #eceff1; }
-      .hero-story.focus-cover .story-media:after {
-        display: none; } }
-    @media (max-width: 62.438em) and (min-width: 62.5em) {
-      .hero-story.focus-cover .story-media:after {
-        display: block; } }
+    .hero-story.focus-cover .story-media:after {
+      display: none; } }
+  @media (max-width: 62.438em) and (min-width: 62.5em) {
+    .hero-story.focus-cover .story-media:after {
+      display: block; } }
   @media (max-width: 62.438em) {
-      .hero-story.focus-cover .story-heading {
-        position: relative; } }
-    @media (max-width: 62.438em) and (min-width: 62.5em) {
-      .hero-story.focus-cover .story-heading {
-        position: absolute; } }
+    .hero-story.focus-cover .story-heading {
+      position: relative; } }
+  @media (max-width: 62.438em) and (min-width: 62.5em) {
+    .hero-story.focus-cover .story-heading {
+      position: absolute; } }
   @media (max-width: 62.438em) {
-      .hero-story.focus-cover .link .story-heading {
-        color: #424242; } }
+    .hero-story.focus-cover .link .story-heading {
+      color: #424242; } }
 
 @media (min-width: 46.25em) {
   .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
@@ -3703,18 +3701,18 @@ ol, ul {
 .gallery-story {
   border-bottom: 0;
   padding-bottom: 0;
-  background-color: #191919; }
+  background-color: #1c2429; }
   @media (min-width: 62.5em) {
     .gallery-story {
       margin-bottom: 1rem; } }
-  .gallery-story .gallery-counter {
+  .gallery-story .media-badge {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #212121;
+    background-color: #263238;
     padding: 0.5rem 1rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;

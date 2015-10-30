@@ -148,7 +148,6 @@
 
 	@include max-bp(m) {
 		&.focus-cover {
-			background-color: $bluegrey100;
 
 			.story-media:after {
 				display: none;
@@ -508,18 +507,18 @@
 .gallery-story {
 	border-bottom: 0;
 	padding-bottom: 0;
-	background-color: darken($black1000, 3%);
+	background-color: darken($bluegrey1000, 5%);
 
 	@include bp(l) {
 		margin-bottom: 1rem;
 	}
 
-	.gallery-counter {
+	.media-badge {
 		position: absolute;
 		bottom: 1rem;
 		left: 1rem;
 		@include rounded(3px);
-		background-color: $black1000;
+		background-color: $bluegrey1000;
 		padding: $baseline $baseline * 2;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		@include font-size($fontsize100);
