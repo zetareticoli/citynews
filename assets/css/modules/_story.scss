@@ -502,9 +502,9 @@
 	}
 }
 
-// Gallery Story ===============================================================
+// Media Story ===============================================================
 
-.gallery-story {
+.media-story {
 	border-bottom: 0;
 	padding-bottom: 0;
 	background-color: darken($bluegrey1000, 5%);
@@ -518,7 +518,7 @@
 		bottom: 1rem;
 		left: 1rem;
 		@include rounded(3px);
-		background-color: $bluegrey1000;
+		background-color: darken($bluegrey1000, 5%);
 		padding: $baseline $baseline * 2;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		@include font-size($fontsize100);
@@ -527,6 +527,7 @@
 
 	.story-heading {
 		margin-bottom: 0;
+		color: white;
 	}
 
 	.story-media {
