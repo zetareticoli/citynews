@@ -8,6 +8,10 @@
   ENTRY
   ========================================================================== */
 
+/* ==========================================================================
+  Global Styles
+========================================================================== */  
+
 .entry {
 	padding: 0 $baseline $baseline * 2;
 	border-bottom: .15rem solid $bordercolor;
@@ -32,22 +36,18 @@
   	}
  }
 
+.entry-summary {
+ 	margin-bottom: $baseline;
+
+ 	@include bp(l) {
+ 		margin-bottom: $baseline * 2;
+ 	}
+}
+
 .entry-header {
 	position: relative;
-	margin-bottom: $baseline;
+	padding-top: .5rem;
 	@include clearfix;
-
-	@include bp(m) {
-		margin-bottom: $baseline * 2;
-	}
-
-	@include bp(l) {
-		padding: $baseline * 2 0;
-	}
-
-	@include bp(xl) {
-		margin-bottom: 0;
-	}
 }
 
 .entry-labels {
@@ -111,34 +111,111 @@
 	}
 }
 
-// Entry Meta
+// Entry Meta ===============================================================
 
 .entry-meta {
-	margin-top: $baseline;
+	border-top: 1px solid $bordercolor;
+	margin-bottom: $baseline;
 	padding-top: $baseline;
 	border-top: 1px solid $bordercolor;
+	border-bottom: 1px solid $bordercolor;
 	@include clearfix;
 
 	@include bp(m) {
-		margin-top: $baseline * 2;
-		padding-bottom: $baseline;
-		border-bottom: 1px solid $bordercolor;
+		margin-bottom: $baseline * 2;
 	}
 
 	@include bp(xl) {
 		position: absolute;
-		top: 100%;
+		top: 0;
 		left: 0;
 		width: 11rem;
-		margin-top: 0;
+		margin-bottom: 0;
 		padding-bottom: 0;
 		padding-top: 0;
 		border-top: 0;
 		z-index: 1;
 	}
+
+	.meta-social {
+		width: 100%;
+		text-align: left; 
+		
+		.social-items {
+			width: 50%;
+			float: left;
+			
+			@include bp(m) {
+				line-height: 3rem;
+
+			}
+			
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+				margin-bottom: $baseline;
+			}
+		}
+
+		.social-counter {
+			float: right;
+			width: 25%;
+			text-align: right;
+
+			@include bp(m) {
+				text-align: left;
+			}
+
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+				margin: 0 0 $baseline * 2 0;
+			}
+
+			@include bp(xl) {
+				float: none;
+				text-align: left;
+			}
+		}
+	}
+
+	&.has-author {
+		
+		@include bp(m) {
+			margin-bottom: $baseline * 2;
+		}
+
+		.meta-social {
+			@include bp(m) {
+				width: 50%;
+				float: right;
+			}
+
+			@include bp(xl) {
+				width: 100%;
+				float: none;
+			}
+
+			.social-counter {
+				float: left;
+			}
+
+			.social-items {
+
+				@include bp(m) {
+					width: 42%;
+					margin-right: 1rem;
+				}
+
+				@include bp(xl) {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
-// Entry Media
+// Entry Media ===============================================================
 
 .entry-media {
 	position: relative;
@@ -199,28 +276,331 @@
 	}
 }
 
-/* ==========================================================================
-  Business Entry
-  ========================================================================== */
+// Detailed Header ===============================================================
 
-.business-entry {
+.detailed-entry-header {
+	margin-bottom: $baseline;
+	padding: 1rem;
+	background-color: $bluegrey100;
+	@include rounded($elementradius);
 
-	.content-main-column {
-		margin: 0 5rem 0 0;
+	@include bp(m) {
+		margin-top: 1rem;
+		margin-bottom: $baseline * 2;
+	}
+
+	.entry-title {
+		margin-bottom: $baseline;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+		margin-left: 0;
+
+		@include bp(m) {
+			@include font-size($fontsize700);
+			line-height: 2rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+	}
+
+	.entry-summary {
+		margin-bottom: 1rem;
+		font-family: $alttexttypeface;
+		@include font-size($fontsize200);
+
+		@include bp(m) {
+			margin-bottom: 1.5rem;
+
+			@include font-size($fontsize300);
+			line-height: 1.5rem;
+
+			li {
+				margin-right: .5rem;
+				display: inline;
+			}
+		}
+
+		@include bp(xl) {
+			margin-left: 0;
+		}
+	}
+
+	.rating {
+		margin-bottom: $baseline;
+
+		li {
+			margin-right: -2px;
+			display: inline-block;
+		}
 	}
 
 	.entry-media {
-		width: 100%;
-		margin: 0 auto;
+		width: 4rem;
+		float: right;
+		margin: 0 0 $baseline $baseline;
 
 		@include bp(s) {
-			width: 10rem;
+			width: 6rem;
+		}
+
+		@include bp(m) {
+			float: left;
+			width: 8rem;
+			margin: -2rem $baseline * 2 $baseline 0;
+		}
+	}
+
+	.entry-details {
+		margin-bottom: 1rem;
+		@include clearfix;
+
+		@include bp(m) {
+			clear: left;
+			@include flexbox;
+			@include flex-flow(row wrap);
+		}
+
+		@include bp(l) {
+			@include flex-flow(row nowrap);
+		}
+
+		.entry-media {
+			margin: 0;
 			float: left;
 		}
-	}	
 
-	.entry-meta {
-		clear: left;
-		position: relative;
+		.static-map {
+			position: relative;
+			width: 50%;
+
+			@include bp(m) {
+				width: 14rem;
+			}
+
+			@include bp(l) {
+				width: auto;
+			}
+		}
+
+		.details-list {
+			margin-bottom: $baseline;
+			padding-top: $baseline;
+			border-top: 1px solid $bluegrey200;
+
+			@include bp(m) {
+				width: 45%;
+				@include flex(1 1 auto);
+			}
+
+			@include bp(l) {
+				width: 25%;
+				border-top: 0;
+				padding-top: 0;
+				margin-bottom: 0;
+				margin-right: $baseline * 2;
+				padding-right: $baseline * 2;
+				border-right: 1px solid $bluegrey200;
+
+				&:last-child {
+					border-right: 0;
+					padding-right: 0;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.details-list > * {
+			font-family: $alttexttypeface;
+		}
+
+		.details-list-title {
+			margin-bottom: .25rem;
+			@include font-size($fontsize300);
+			color: $black800;
+		}
+
+		.details-list li,
+		.details-list p {
+			@include font-size($fontsize200);
+		}
+	}
+}
+
+// Entry Map ===============================================================
+
+.entry-map {
+	position: relative;
+
+	img {
+		width: 100%;
+		border: 3px solid white;
+	}
+
+	.directions-btn {
+		margin-left: $baseline;
+		float: right;
+	}
+
+	.directions-btn > .directions-icon {
+		fill: $bluegrey400;
+	}
+
+	.directions-btn:hover > .directions-icon {
+		fill: $bluegrey500;
+	}
+
+	.map-address {
+		padding: .5rem;
+		background-color: white;
+
+		span {
+			@include font-size($fontsize100);
+			color: $black700;
+		}
+	}
+}
+
+/* ==========================================================================
+  Event Entry 
+  ========================================================================== */
+
+.event-entry {
+
+	.event-details,
+	.entry-map {
+		@include bp(s) {
+			float: left;
+		}
+	}
+
+	.event-details {
+		width: auto;
+
+		@include bp(m) {
+			width: 42%;
+		}
+
+		@include bp(l) {
+			width: 22rem;
+			margin-right: 1rem;
+		}
+
+		@include bp(xl) {
+			width: 34rem;
+		}
+	}
+
+
+	.entry-media {
+		width: 25%;
+
+		@include bp(l) {
+			width: 15rem;
+		}
+	}
+
+	.entry-labels {
+		width: auto;
+		float: none;
+	}
+
+	.event-details {
+
+		.details-list {
+
+			li {
+				@include font-size($fontsize200);
+
+				@include bp(l) {
+					@include font-size($fontsize300);
+					line-height: 1.75rem;
+				}
+			}
+		}
+	}
+
+	.entry-map {
+		width: 100%;
+		margin-top: $baseline;
+
+		@include bp(m) {
+			width: 30%;
+		}
+
+		@include bp(l) {
+			width: auto;
+		}
+	}
+}
+
+/* ==========================================================================
+  Report Entry 
+  ========================================================================== */
+
+.report-entry {
+
+	.tile-icon {
+		width: 2rem;
+		height: 2rem;
+		vertical-align: middle;
+	}
+
+	.byline {
+		margin-bottom: 1rem;
+
+		@include bp(m) {
+			margin-bottom: 0;
+		}
+	}
+
+	.byline,
+	.author-name {
+		@include font-size($fontsize200);
+	}
+
+	.timestamp {
+		display: block;
+
+		@include bp(s) {
+			display: inline;
+		}
+	}
+
+	.report-details,
+	.entry-map {
+		@include bp(m) {
+			float: left;
+		}
+	}
+
+	.report-details {
+		@include bp(m) {
+			width: 70%;
+			padding-right: 1rem;
+		}
+
+		@include bp(l) {
+			width: 75%;
+		}
+	}
+
+	.entry-title {
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
+		}
+	}
+
+	.entry-map {
+		@include bp(m) {
+			width: 30%;
+		}
+
+		@include bp(l) {
+			width: 25%;
+		}
 	}
 }

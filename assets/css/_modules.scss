@@ -283,104 +283,6 @@
 }
 
 /* ==========================================================================
-  Event Details
-  ========================================================================== */
-
-.event-details {
-	margin-bottom: 1rem;
-	background: $black200;
-	@include clearfix;
-
-	@include bp(l) {
-		margin-bottom: 2rem;
-	}
-
-	@include bp(xl) {
-		margin-left: 13rem;
-	}
-
-	.entry-media {
-		margin: 0;
-		float: left;
-	}
-
-	.static-map {
-		position: relative;
-		width: 50%;
-
-		@include bp(m) {
-			width: 14rem;
-		}
-
-		@include bp(l) {
-			width: auto;
-		}
-	}
-
-	.description-list {
-		width: 100%;
-		margin: 0;
-		padding: .5rem;
-		float: left;
-
-		@include bp(m) {
-			width: 35%;
-			padding: .5rem 1rem;
-		}
-
-		@include bp(l) {
-			padding: 1rem 2rem;
-			width: 25rem;
-		}
-
-		dt {
-			font-family: $brandtypeface;
-			text-transform: lowercase;
-			color: $black600;
-		}
-
-		dd {
-			color: $black900;
-			@include font-size($fontsize200);
-
-			@include bp(l) {
-				@include font-size($fontsize400);
-			}
-
-			span {
-				display: block;
-			}
-		}
-	}
-}
-
-// Static Map ===============================================================
-
-.static-map {
-	float: left;
-	overflow: hidden;
-
-	.map-thumbnail {
-		width: 100%;
-	}
-
-	@include bp(l) {
-		.map-thumbnail {
-			@include transform(scale(1,1));
-			@include transition(transform .2s ease);
-		}
-
-		&:hover {
-
-			.map-thumbnail {
-				@include transform(scale(1.25,1.25));
-				@include transition(transform .2s ease);
-			}
-		}
-	}
-}
-
-/* ==========================================================================
   Filters
   ========================================================================== */
 
@@ -570,22 +472,6 @@
 	}
 
 	.social-counter {
-		width: 25%;
-		display: block;
-		float: left;
-		text-align: right;
-
-		@include bp(m) {
-			width: 24%;
-			margin-left: $baseline * 2;
-			text-align: left;
-		}
-
-		@include bp(xl) {
-			width: 100%;
-			float: none;
-			margin: 0 0 $baseline * 2 0;
-		}
 
 		.number {
 			font-family: $headingstypeface;
@@ -624,39 +510,6 @@
 	}
 }
 
-// Entry Meta
-
-.entry-meta .meta-social {
-
-	@include bp(m) {
-		width: 50%;
-		float: right;
-	}
-
-	@include bp(xl) {
-		width: 100%;
-		float: none;
-	}
-
-	.social-items {
-		float: left;
-		width: 50%;
-
-		@include bp(m) {
-			width: 42%;
-			line-height: 3rem;
-			text-align: right;
-		}
-
-		@include bp(xl) {
-			float: none;
-			width: 100%;
-			margin-bottom: $baseline;
-			text-align: left;
-		}
-	}
-}
-
 // Meta Byline ===============================================================
 
 .meta-byline {
@@ -683,12 +536,6 @@
 		}
 	}
 
-	.author-name,
-	.author-role,
-	.entry-timestamp {
-		@include font-size($fontsize200);
-	}
-
 	.author-photo {
 		float: left;
 		margin: 0 $baseline 0 0;
@@ -703,9 +550,6 @@
 	.author-name {
 		display: inline-block;
 		@include font-size($fontsize200);
-		line-height: 1.15rem;
-		font-weight: 700;
-		color: $black900;
 
 		@include bp(xl) {
 			display: block;

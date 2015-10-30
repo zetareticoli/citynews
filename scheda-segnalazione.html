@@ -8,37 +8,40 @@
 
     <main class="main-content">
             
-        <article class="entry" role="main">
+        <article class="entry report-entry" role="main">
 
-            <header class="entry-header">  
+            <header class="entry-header detailed-entry-header">
+                <div class="report-details">
+                    <span class="label accent-color-mint"><a href="<!-- @path segnalazioni.html -->" class="link">Degrado Urbano</a> </span> 
+                    <span class="tile-icon rounded-icon mint-background-color"><svg class="icon small"><use xlink:href="#trash-icon"></use></svg></span>
 
-                <div class="entry-labels">
-                    <span class="entry-label category-label"><a href="<!-- @path segnalazioni.html -->" class="link">Degrado Urbano</a> </span> 
-                </div>
+                    <h1 class="entry-title">Allagamento Stazione di Colle Mattia dopo le pioggie</h1>
 
-                <h1 class="entry-title">Allagamento Stazione di Colle Mattia dopo le pioggie</h1>
+                    <p class="byline">
+                        <span class="author">
+                            <a href="#"><img class="avatar small" src="<!-- @path avatar-user.jpg -->"></img></a>
+                            <span class="author-name"><a href="#">Marco</a></span>
+                            &middot;
+                        </span>
+                        <time class="timestamp">Ieri pomeriggio alle 16:57</time>
+                    </p>
+                </div>  
 
-                <div class="entry-meta">
+                <figure class="entry-map">
+                    <img src="<!-- @path entry-map.jpg -->">
 
-                    <div class="meta-byline">
-
-                        <div class="author">
-                            <figure class="author-photo"><a href="#"><img src="<!-- @path author-photo.jpg -->"></a></figure>
-                            <span class="author-name"><a href="#" class="link">Comitato di quartiere Colle Mattia</a> <span class="author-twitter"><svg class="icon twitter"><use xlink:href="#twitter-icon"></use></svg>
-                            </span></span>
-                        </div>
-
-                        <time class="entry-timestamp">14 Ottobre, 2015 alle 19:11</time>
-
-                    </div>
-
-                    <!-- @include _social -->
-
-                </div>
-
+                    <figcaption class="map-address">
+                        <a href="#" class="directions-btn"><svg class="icon medium directions-icon"><use xlink:href="#directions-icon"></use></svg></a>
+                        <span>Via Carlo Mirabello, 8 &middot; Prati</span>
+                    </figcaption>
+                </figure>
             </header>
 
             <section class="entry-content">
+
+                <div class="entry-meta">
+                    <!-- @include _social -->
+                </div>
 
                 <div class="content-main-column">
 

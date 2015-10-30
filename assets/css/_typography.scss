@@ -112,30 +112,43 @@ h6 {
 }
 
 p,
+span,
 ol,
 ul,
 dl,
 address {
-	font-family: $texttypeface;
-	margin-top: 0;
-	margin-bottom: $gutterwidth / 2;
+	font-family: $alttexttypeface;
 	@include font-size($basefontsize);
 	line-height: $baselineheight;
+}
+
+p,
+ol,
+ul,
+dl,
+address {
+	margin-top: 0;
+	margin-bottom: $baseline;
+}
+
+ol,
+ul,
+dl {
 	list-style-position: inside;
-}
-
-small {
-	@include font-size($fontsize200);
-}
-
-strong,dt {
-	font-weight: 700;
 }
 
 .wrapper.inverted {
 	h1,h2,h3,h4,h5 {
 		color: $black800;
-	}
+}
+
+.entry-content-body > p {
+	font-family: $texttypeface;
+}
+
+strong, 
+dt {
+	font-weight: 700;
 }
 
 // Headings =====================================================================
@@ -470,17 +483,8 @@ strong,dt {
 	}
 }
 
-// Timestamp
-
-time,
-.timestamp {
-	font-family: $texttypeface;
-	font-weight: 400;
-	@include font-size($fontsize100);
-	color: $black600;
-}
-
 .byline {
+	color: $black700;
 	margin-bottom: 0;
 	line-height: .875rem;
 }
@@ -528,10 +532,6 @@ time,
 		&:hover {
 			color: $bluegrey600;
 		}
-	}
-
-	.icon {
-		vertical-align: text-bottom;
 	}
 }
 
@@ -678,6 +678,22 @@ h5.location-label {
 
 // Timestamp & Meteo ===============================================================
 
+time {
+	color: $black600;
+}
+
+.timestamp {
+	font-family: $alttexttypeface;
+}
+
+.datestamp {
+	@include font-size($fontsize300);
+	line-height: 1.1rem;
+	font-family: $brandtypeface;
+	font-weight: 500;
+	text-transform: lowercase;
+}
+
 .site-date,
 .site-meteo {
 	display: inline-block;
@@ -711,6 +727,23 @@ h5.location-label {
 	line-height: 1em;
 }
 
+// Users & Authors ===============================================================
+
+.author-name,
+.author-role {
+	@include font-size($fontsize200);
+}
+
+.author-name {
+	font-weight: 700;
+	line-height: 1.15rem;
+	color: $black900;
+}
+
+.author-role {
+	font-family: $texttypeface;
+}
+
 // Tags ===============================================================
 
 .tag-item {
@@ -732,19 +765,3 @@ h5.location-label {
 		color: $bluegrey600;
 	}
 }
-
-// Lists =====================================================================
-
-// Description List
-
-.description-list {
-	
-	dt {
-		margin-bottom: 0;
-	}
-
-	dd {
-		margin: 0 0 .5rem 0;
-	}
-}
-
