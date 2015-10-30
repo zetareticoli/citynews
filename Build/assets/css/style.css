@@ -3591,13 +3591,20 @@ ol, ul {
   float: right;
   margin-left: 0.5rem; }
 
+.media-item {
+  width: 100%;
+  padding: 1rem; }
+  @media (min-width: 30em) {
+    .media-item {
+      width: 50%; } }
+  @media (min-width: 62.5em) {
+    .media-item {
+      width: 33%; } }
+
 .media-story {
   border-bottom: 0;
   padding-bottom: 0;
   background-color: #1c2429; }
-  @media (min-width: 62.5em) {
-    .media-story {
-      margin-bottom: 1rem; } }
   .media-story .media-badge {
     position: absolute;
     bottom: 1rem;
