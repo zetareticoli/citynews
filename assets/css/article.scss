@@ -550,11 +550,14 @@
 
 	.byline {
 		margin-bottom: 1rem;
+
+		@include bp(m) {
+			margin-bottom: 0;
+		}
 	}
 
-	.byline > *,
+	.byline,
 	.author-name {
-		color: $black600;
 		@include font-size($fontsize200);
 	}
 
