@@ -2419,6 +2419,16 @@ ol, ul {
 .pagination.default-pagination > li.active > a {
   background: none;
   color: #212121; }
+.pagination.inverted.default-pagination > li {
+  border-right-color: #546e7a; }
+.pagination.inverted.default-pagination > li > a {
+  background: transparent;
+  color: #90a4ae; }
+  .pagination.inverted.default-pagination > li > a:hover {
+    background: none;
+    color: #738c98; }
+.pagination.inverted.default-pagination > li.active > a {
+  color: white; }
 
 /* ==========================================================================
   Global Styles
@@ -4303,14 +4313,14 @@ html.is-locked body {
   color: #B75DC7; }
 
 /* ==========================================================================
-   Inverted Theme
+   Theme Inverted
    ========================================================================== */
 .theme-inverted,
 .inverted {
   background-color: #263238; }
 
 .theme-inverted a, .theme-inverted a:link, .theme-inverted .link {
-  color: #eceff1; }
+  color: #90a4ae; }
 .theme-inverted h1, .theme-inverted h2, .theme-inverted h3, .theme-inverted h4, .theme-inverted h5, .theme-inverted h6 {
   color: white; }
 .theme-inverted p,

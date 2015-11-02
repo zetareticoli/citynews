@@ -133,4 +133,28 @@
 			color: $black1000;
 		}
 	}
+
+	&.inverted {
+		&.default-pagination {
+
+			> li {
+				border-right-color: $bluegrey700;
+
+			}
+
+			> li > a {
+				background: transparent;
+				color: $bluegrey400;
+
+				&:hover {
+					background: none;
+					color: darken($bluegrey400, 10%);
+				}
+			}
+
+			> li.active > a {
+				color: white;
+			}
+		}
+	}
 }
