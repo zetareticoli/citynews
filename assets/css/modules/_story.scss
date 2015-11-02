@@ -505,9 +505,6 @@
 // Media Story ===============================================================
 
 .media-item {
-	width: 100%;
-	margin-bottom: 1rem;
-	padding: 0 $baseline;
 
 	@include bp(s) {
 		width: 50%;
