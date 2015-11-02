@@ -506,7 +506,8 @@
 
 .media-item {
 	width: 100%;
-	padding: 1rem;
+	margin-bottom: 1rem;
+	padding: 0 $baseline;
 
 	@include bp(s) {
 		width: 50%;
@@ -515,16 +516,20 @@
 	@include bp(l) {
 		width: 33%;
 	}
+
+	&.size1of2 {
+		width: 100%;
+
+		@include bp(s) {
+			width: 50%;
+		}
+	}
 }
 
 .media-story {
 	border-bottom: 0;
 	padding-bottom: 0;
 	background-color: darken($bluegrey1000, 5%);
-
-	@include bp(l) {
-
-	}
 
 	.media-badge {
 		position: absolute;
@@ -541,6 +546,11 @@
 	.story-heading {
 		margin-bottom: 0;
 		color: white;
+		@include font-size($fontsize400);
+
+		@include bp(l) {
+			@include font-size($fontsize500);
+		}
 	}
 
 	.story-media {
@@ -553,6 +563,16 @@
 
 	.story-header {
 		padding: 1rem;
+	}
+
+	// featured media story
+
+	&.featured-story {
+		.story-heading {
+			@include bp(l) {
+				@include font-size($fontsize600);
+			}
+		}
 	}
 }
 
