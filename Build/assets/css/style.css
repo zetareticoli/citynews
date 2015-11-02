@@ -4309,6 +4309,8 @@ html.is-locked body {
 .inverted {
   background-color: #263238; }
 
+.theme-inverted a, .theme-inverted a:link, .theme-inverted .link {
+  color: #eceff1; }
 .theme-inverted h1, .theme-inverted h2, .theme-inverted h3, .theme-inverted h4, .theme-inverted h5, .theme-inverted h6 {
   color: white; }
 .theme-inverted p,
