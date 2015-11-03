@@ -4279,12 +4279,12 @@ html.is-locked body {
   .site-footer:after {
     clear: both; }
   .site-footer p, .site-footer ul, .site-footer ol, .site-footer li, .site-footer span {
-    color: #546e7a; }
+    color: #546e7a;
+    font-size: 12px;
+    font-size: 0.75rem; }
   .site-footer .link {
     color: #bdbdbd;
     text-decoration: none;
-    font-size: 14px;
-    font-size: 0.875rem;
     line-height: 1.5rem;
     font-weight: 700; }
     .site-footer .link:hover {
@@ -4305,23 +4305,27 @@ html.is-locked body {
       .site-footer .footer-col {
         margin-bottom: 1rem; } }
     .site-footer .footer-col .footer-col-title {
-      display: none;
       margin: 0.5rem 0;
       font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
-      @media (min-width: 46.25em) {
-        .site-footer .footer-col .footer-col-title {
-          display: block; } }
     .site-footer .footer-col.footer-list-link .list-link li {
       line-height: 1.75rem; }
       @media (min-width: 62.5em) {
         .site-footer .footer-col.footer-list-link .list-link li {
           line-height: 1.5rem; } }
+    .site-footer .footer-col.footer-nav li {
+      font-size: 14px;
+      font-size: 0.875rem; }
     @media (max-width: 62.438em) {
       .site-footer .footer-col.footer-nav .list-link {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2; } }
+  .site-footer .footer-network-map {
+    width: 30%;
+    margin-right: .5rem;
+    float: left;
+    opacity: .4; }
   .site-footer .footer-col-social {
     text-align: center; }
     @media (min-width: 46.25em) {
@@ -4331,11 +4335,16 @@ html.is-locked body {
       margin-right: .5rem; }
     .site-footer .footer-col-social .icon {
       fill: white; }
+    @media (max-width: 46.188em) {
+      .site-footer .footer-col-social .footer-col-title {
+        display: none; } }
     .site-footer .footer-col-social .footer-network-dropdown {
       margin-top: 1rem; }
       @media (min-width: 62.5em) {
         .site-footer .footer-col-social .footer-network-dropdown {
           display: none; } }
+  .site-footer .footer-app-links {
+    margin-top: 1rem; }
   .site-footer .footer-note {
     width: 100%;
     float: left;
@@ -4353,9 +4362,6 @@ html.is-locked body {
       font-size: 0.6875rem;
       color: #757575;
       line-height: 1rem; }
-      @media (min-width: 46.25em) {
-        .site-footer .footer-note .footer-copy {
-          text-align: right; } }
 
 /* ==========================================================================
   THEME COLORS
