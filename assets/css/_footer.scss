@@ -100,7 +100,7 @@
 	}
 
 	.footer-network-map {
-		width: 30%;
+		width: 4rem;
 		margin-right: .5rem;
 		float: left;
 		opacity: .4;
@@ -132,6 +132,13 @@
 
 			@include bp(l) {
 				display: none;
+			}
+		}
+
+		.footer-app-links {
+			img {
+				width: 6rem;
+				opacity: .75;
 			}
 		}
 	}

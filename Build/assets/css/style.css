@@ -4322,7 +4322,7 @@ html.is-locked body {
         -moz-column-count: 2;
         column-count: 2; } }
   .site-footer .footer-network-map {
-    width: 30%;
+    width: 4rem;
     margin-right: .5rem;
     float: left;
     opacity: .4; }
@@ -4343,6 +4343,9 @@ html.is-locked body {
       @media (min-width: 62.5em) {
         .site-footer .footer-col-social .footer-network-dropdown {
           display: none; } }
+    .site-footer .footer-col-social .footer-app-links img {
+      width: 6rem;
+      opacity: .75; }
   .site-footer .footer-app-links {
     margin-top: 1rem; }
   .site-footer .footer-note {
