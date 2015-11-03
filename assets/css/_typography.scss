@@ -14,7 +14,7 @@ html {
 }
  
 body {
- 	font-family: $texttypeface;
+ 	font-family: $alttexttypeface;
 	font-weight: $basetextweight;
 }
 
@@ -146,6 +146,10 @@ dl {
 strong, 
 dt {
 	font-weight: 700;
+}
+
+.middot {
+	margin: 0 4px;
 }
 
 // Headings =====================================================================
