@@ -53,6 +53,20 @@
   .entry-label.category-label {
     display: inline-block; }
 
+.gallery-title {
+  margin: 1rem 0; }
+  @media (min-width: 75em) {
+    .gallery-title {
+      padding-left: 13rem; }
+      .gallery-title .entry-title {
+        margin-left: 0; } }
+  .gallery-title .gallery-related-story {
+    margin-bottom: 0.5rem; }
+    .gallery-title .gallery-related-story > .label {
+      color: #78909c;
+      font-size: 14px;
+      font-size: 0.875rem; }
+
 .entry-content {
   *zoom: 1;
   float: left;
@@ -70,10 +84,12 @@
     .content-main-column {
       float: left;
       margin-right: 2rem;
-      width: 37.5rem; } }
+      max-width: 37.5rem; } }
   @media (min-width: 75em) {
     .content-main-column {
       margin: 0 1rem 0 13rem; } }
+  .content-main-column.gallery-content-main-column {
+    max-width: none; }
 
 .content-secondary-column {
   width: 20rem; }

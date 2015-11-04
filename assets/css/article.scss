@@ -66,6 +66,29 @@
 	}
 }
 
+// Gallery Title
+
+.gallery-title {
+	margin: 1rem 0;
+	
+	@include bp(xl) {
+		padding-left: 13rem;
+
+		.entry-title {
+			margin-left: 0;
+		}
+	}
+
+	.gallery-related-story {
+		margin-bottom: $baseline;
+
+		> .label {
+			color: $bluegrey500;
+			@include font-size($fontsize200);
+		}
+	}
+}
+
 // Entry Content ===============================================================
 
 .entry-content { 
@@ -81,11 +104,15 @@
 	@include bp(l) {
 		float: left;
 		margin-right: 2rem;
-		width: 37.5rem;
+		max-width: 37.5rem;
 	}
 
 	@include bp(xl) {
 		margin: 0 1rem 0 13rem;
+	}
+
+	&.gallery-content-main-column {
+		max-width: none;
 	}
 }
 

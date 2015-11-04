@@ -359,6 +359,82 @@
 }
 
 /* ==========================================================================
+  Photo Gallery
+  ========================================================================== */
+
+.photo-gallery {
+	
+	&.list-photo-gallery {
+		
+		.photo-gallery-item {
+			position: relative;
+			margin-bottom: $baseline;
+			text-align: center;
+
+			@include max-bp(s) {
+				padding-bottom: 1rem;
+				border-bottom: 1px solid $bluegrey900;
+			}
+
+			@include bp(m) {
+				margin-bottom: 2rem;
+			}
+
+			@include bp(l) {
+				padding-right: 15rem;
+			}
+		}
+
+		figure {
+			margin-bottom: $baseline;
+			background-color: lighten($bluegrey1000, 3%);
+		}
+
+		.photo-img {
+			cursor: pointer;
+			width: auto;
+			margin: auto;
+			max-height: 20rem;
+
+			@include bp(m) {
+				max-height: 37.5rem;
+			}
+		}
+
+		.photo-caption {
+			width: auto;
+			text-align: left;
+
+			@include bp(l) {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 14rem;
+
+				&:before {
+					display: block;
+					width: 30px;
+					height: 1px;
+					margin-bottom: $baseline;
+					background: $bluegrey800;
+					content: '';
+				}
+			}
+
+			> p {
+				@include font-size($fontsize200);
+			}
+
+			.photo-credit {
+				display: block;
+				@include font-size($fontsize100);
+				color: $bluegrey600;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
   Related
   ========================================================================== */
 

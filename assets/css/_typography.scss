@@ -118,8 +118,6 @@ ul,
 dl,
 address {
 	font-family: $alttexttypeface;
-	@include font-size($basefontsize);
-	line-height: $baselineheight;
 }
 
 p,
@@ -129,6 +127,8 @@ dl,
 address {
 	margin-top: 0;
 	margin-bottom: $baseline;
+	@include font-size($basefontsize);
+	line-height: $baselineheight;
 }
 
 ol,
@@ -490,6 +490,7 @@ dt {
 	margin: 0 $baseline / 2 $baseline / 2 0;
 	display: inline-block;
 	font-family: $brandtypeface;
+	font-weight: 500;
 	@include font-size($fontsize200);
 	color: $black600;
 	text-transform: uppercase;

@@ -79,6 +79,10 @@
 
 	a, a:link, .link {
 		color: $bluegrey400;
+
+		&:hover {
+			color: white;
+		}
 	}
 
 	h1,	h2,	h3,	h4,	h5,	h6 {
@@ -89,13 +93,13 @@
 	span,
 	.social-counter .number,
 	.author-role {
-		color: $bluegrey300;
+		color: white;
 	}
 
 	.timestamp,
 	.datestamp,
 	.social-counter .counter-label {
-		color: $bluegrey400;
+		color: $bluegrey600;
 	}
 
 	// Slim Header
@@ -158,6 +162,11 @@
 				color: $bluegrey400;
 			}
 		}
+	}
+
+	.entry-meta,
+	.meta-byline {
+		border-color: $bluegrey800;
 	}
 }
 
