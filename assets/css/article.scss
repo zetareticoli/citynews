@@ -30,7 +30,8 @@
 // Entry Header ===============================================================
 
 .entry-title,
-.entry-summary {
+.entry-summary,
+.gallery-related-story {
   	@include bp(xl) {
   		margin-left: 13rem; 	
   	}
@@ -66,20 +67,21 @@
 	}
 }
 
-// Gallery Title
+// Media Entry Header
 
-.gallery-title {
-	margin: 1rem 0;
-	
+.media-entry-header {
+	padding-top: 1rem;
+
 	@include bp(xl) {
-		padding-left: 13rem;
-
-		.entry-title {
-			margin-left: 0;
-		}
+		padding-top: 2rem;
+		margin-left: 13rem;
 	}
 
-	.gallery-related-story {
+	.entry-title {
+		margin: 0 0 1rem 0;
+	}
+
+	.media-related-story {
 		margin-bottom: $baseline;
 
 		> .label {

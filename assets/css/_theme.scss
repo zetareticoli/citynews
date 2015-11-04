@@ -90,6 +90,7 @@
 	}
 
 	p,
+	.entry-content-body > p,
 	span,
 	.social-counter .number,
 	.author-role {
@@ -167,6 +168,11 @@
 	.entry-meta,
 	.meta-byline {
 		border-color: $bluegrey800;
+	}
+
+	.slots {
+		border-color: $bluegrey900;
+		background-color: $bluegrey900;
 	}
 }
 
