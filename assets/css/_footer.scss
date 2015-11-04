@@ -1,0 +1,175 @@
+.back-to-top-link {
+	width: 100%;
+	display: block;
+	background-color: $bluegrey600;
+	padding: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-family: $brandtypeface;
+	text-transform: uppercase;
+
+	@include bp(m) {
+		display: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: white;
+	}
+
+	.icon {
+		fill: white;
+	}
+}
+
+.site-footer {
+	width: 100%;
+	padding: 1.5rem 0;
+	@include clearfix;
+	background-color: $bluegrey1000;
+	border-top: 8px solid $bluegrey700;
+
+	p, ul, ol, li, span {
+		color: $bluegrey700;
+		@include font-size($fontsize100);
+	}
+
+	.link {
+		color: $black500;
+		text-decoration:none;
+		line-height: 1.5rem;
+		font-weight: 700;
+		
+		&:hover {
+			color: white;
+		}
+	}
+	
+	.site-brand {
+		display: none;
+		margin-bottom: .3rem;
+
+		@include bp(m) {
+			display: block;
+		}
+
+		.logo-network {
+			fill: white;
+		}
+
+		.logo {
+			width: 8rem;
+		}
+	}
+
+	.footer-col {
+		margin-bottom: 2rem;
+
+		@include bp(m) {
+			margin-bottom: 1rem;
+		}
+
+		.footer-col-title {
+			margin: $baseline 0;
+			font-family: $brandtypeface;
+			text-transform: uppercase;
+		}
+
+		&.footer-list-link {
+			.list-link li {
+				line-height: 1.75rem;
+				@include bp(l) {
+					line-height: 1.5rem;
+				}	
+			}
+		}
+
+		&.footer-nav {
+			li {
+				@include font-size($fontsize200);			
+			}
+
+			@include max-bp(m) {
+				.list-link {
+					@include column-count(2);
+				}
+			}
+		}
+	}
+
+	.footer-network-map {
+		width: 4rem;
+		margin-right: .5rem;
+		float: left;
+		opacity: .4;
+	}
+
+	.footer-col-social {
+		text-align: center;
+
+		@include bp(m) {
+			text-align: left;
+		}
+
+		li {
+			margin-right: .5rem;
+		}
+
+		.icon {
+			fill: white;
+		}
+
+		.footer-col-title {
+			@include max-bp(s) {
+				display: none;
+			}
+		}
+
+		.footer-network-dropdown {
+			margin-top: 1rem;
+
+			@include bp(l) {
+				display: none;
+			}
+		}
+
+		.footer-app-links {
+			img {
+				width: 6rem;
+				opacity: .75;
+			}
+		}
+	}
+
+	.footer-app-links {
+		margin-top: 1rem;
+	}
+	
+	.footer-note {
+		width: 100%;
+		float: left;
+		text-align: center;
+
+		@include bp(m) {
+			text-align: right;
+		}
+		
+		.company-logo {
+			margin-bottom: $baseline;
+			opacity: .3;
+		}
+
+		.list-link {
+			margin-bottom: $baseline;
+		}
+		
+		.footer-copy {
+			@include font-size(11);
+			color: $black700;
+			line-height: 1rem;
+		}
+	}
+}
+

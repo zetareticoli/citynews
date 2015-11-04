@@ -471,7 +471,7 @@ html {
   text-rendering: optimizeLegibility; }
 
 body {
-  font-family: "PublicoText", Georgia, "Times New Roman", serif;
+  font-family: Helvetica, "SegoeUI", Arial, sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -568,7 +568,7 @@ ol,
 ul,
 dl,
 address {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "SegoeUI", Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem; }
@@ -592,6 +592,9 @@ dl {
 strong,
 dt {
   font-weight: 700; }
+
+.middot {
+  margin: 0 4px; }
 
 .story-heading,
 .story-subheading {
@@ -1002,7 +1005,7 @@ time {
   color: #9e9e9e; }
 
 .timestamp {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, "SegoeUI", Arial, sans-serif; }
 
 .datestamp {
   font-size: 16px;
@@ -1923,7 +1926,8 @@ ol, ul {
   display: inline-block; }
 
 .wrapper {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .main-content {
   padding: 1rem 0; }
@@ -2284,6 +2288,9 @@ ol, ul {
   color: white; }
 
 /* ==========================================================================
+  Site Footer
+  ========================================================================== */
+/* ==========================================================================
   Sections
   ========================================================================== */
 .headlines-section {
@@ -2359,6 +2366,125 @@ ol, ul {
 @media (min-width: 62.5em) {
   .newslist-aside {
     width: 33.33%; } }
+
+.back-to-top-link {
+  width: 100%;
+  display: block;
+  background-color: #607d8b;
+  padding: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  @media (min-width: 46.25em) {
+    .back-to-top-link {
+      display: none; } }
+  .back-to-top-link:hover {
+    text-decoration: none;
+    color: white; }
+  .back-to-top-link .icon {
+    fill: white; }
+
+.site-footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  *zoom: 1;
+  background-color: #263238;
+  border-top: 8px solid #546e7a; }
+  .site-footer:before, .site-footer:after {
+    content: " ";
+    display: table; }
+  .site-footer:after {
+    clear: both; }
+  .site-footer p, .site-footer ul, .site-footer ol, .site-footer li, .site-footer span {
+    color: #546e7a;
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .site-footer .link {
+    color: #bdbdbd;
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-weight: 700; }
+    .site-footer .link:hover {
+      color: white; }
+  .site-footer .site-brand {
+    display: none;
+    margin-bottom: .3rem; }
+    @media (min-width: 46.25em) {
+      .site-footer .site-brand {
+        display: block; } }
+    .site-footer .site-brand .logo-network {
+      fill: white; }
+    .site-footer .site-brand .logo {
+      width: 8rem; }
+  .site-footer .footer-col {
+    margin-bottom: 2rem; }
+    @media (min-width: 46.25em) {
+      .site-footer .footer-col {
+        margin-bottom: 1rem; } }
+    .site-footer .footer-col .footer-col-title {
+      margin: 0.5rem 0;
+      font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+      text-transform: uppercase; }
+    .site-footer .footer-col.footer-list-link .list-link li {
+      line-height: 1.75rem; }
+      @media (min-width: 62.5em) {
+        .site-footer .footer-col.footer-list-link .list-link li {
+          line-height: 1.5rem; } }
+    .site-footer .footer-col.footer-nav li {
+      font-size: 14px;
+      font-size: 0.875rem; }
+    @media (max-width: 62.438em) {
+      .site-footer .footer-col.footer-nav .list-link {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2; } }
+  .site-footer .footer-network-map {
+    width: 4rem;
+    margin-right: .5rem;
+    float: left;
+    opacity: .4; }
+  .site-footer .footer-col-social {
+    text-align: center; }
+    @media (min-width: 46.25em) {
+      .site-footer .footer-col-social {
+        text-align: left; } }
+    .site-footer .footer-col-social li {
+      margin-right: .5rem; }
+    .site-footer .footer-col-social .icon {
+      fill: white; }
+    @media (max-width: 46.188em) {
+      .site-footer .footer-col-social .footer-col-title {
+        display: none; } }
+    .site-footer .footer-col-social .footer-network-dropdown {
+      margin-top: 1rem; }
+      @media (min-width: 62.5em) {
+        .site-footer .footer-col-social .footer-network-dropdown {
+          display: none; } }
+    .site-footer .footer-col-social .footer-app-links img {
+      width: 6rem;
+      opacity: .75; }
+  .site-footer .footer-app-links {
+    margin-top: 1rem; }
+  .site-footer .footer-note {
+    width: 100%;
+    float: left;
+    text-align: center; }
+    @media (min-width: 46.25em) {
+      .site-footer .footer-note {
+        text-align: right; } }
+    .site-footer .footer-note .company-logo {
+      margin-bottom: 0.5rem;
+      opacity: .3; }
+    .site-footer .footer-note .list-link {
+      margin-bottom: 0.5rem; }
+    .site-footer .footer-note .footer-copy {
+      font-size: 11px;
+      font-size: 0.6875rem;
+      color: #757575;
+      line-height: 1rem; }
 
 /* ==========================================================================
   COMPONENTS
@@ -4332,6 +4458,8 @@ html.is-locked body {
   fill: #FFBE26; }
 .theme-yellow .expand-image:hover .rounded-icon {
   background-color: #FFBE26; }
+.theme-yellow .site-footer .logo-edition {
+  fill: #FFBE26; }
 
 /* ==========================================================================
   Theme Red
@@ -4356,6 +4484,8 @@ html.is-locked body {
   fill: #F2463D; }
 .theme-red .expand-image:hover .rounded-icon {
   background-color: #F2463D; }
+.theme-red .site-footer .logo-edition {
+  fill: #F2463D; }
 
 /* ==========================================================================
   Theme Blue
@@ -4380,6 +4510,8 @@ html.is-locked body {
   fill: #3277C7; }
 .theme-blue .expand-image:hover .rounded-icon {
   background-color: #3277C7; }
+.theme-blue .site-footer .logo-edition {
+  fill: #3277C7; }
 
 /* ==========================================================================
   Theme Green
@@ -4404,6 +4536,8 @@ html.is-locked body {
   fill: #50AE55; }
 .theme-green .expand-image:hover .rounded-icon {
   background-color: #50AE55; }
+.theme-green .site-footer .logo-edition {
+  fill: #50AE55; }
 
 /* ==========================================================================
   Theme Purple
@@ -4428,6 +4562,8 @@ html.is-locked body {
   fill: #B75DC7; }
 .theme-purple .expand-image:hover .rounded-icon {
   background-color: #B75DC7; }
+.theme-purple .site-footer .logo-edition {
+  fill: #B75DC7; }
 
 /* ==========================================================================
   Theme Pink
@@ -4452,6 +4588,8 @@ html.is-locked body {
   fill: #F291B2; }
 .theme-pink .expand-image:hover .rounded-icon {
   background-color: #F291B2; }
+.theme-pink .site-footer .logo-edition {
+  fill: #F291B2; }
 
 /* ==========================================================================
   SLOTS

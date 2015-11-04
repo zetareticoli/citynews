@@ -249,7 +249,7 @@
         line-height: 2.5rem; } }
   .detailed-entry-header .entry-summary {
     margin-bottom: 1rem;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, "SegoeUI", Arial, sans-serif;
     font-size: 14px;
     font-size: 0.875rem; }
     @media (min-width: 46.25em) {
@@ -347,7 +347,7 @@
             padding-right: 0;
             margin-right: 0; } }
     .detailed-entry-header .entry-details .details-list > * {
-      font-family: Helvetica, Arial, sans-serif; }
+      font-family: Helvetica, "SegoeUI", Arial, sans-serif; }
     .detailed-entry-header .entry-details .details-list-title {
       margin-bottom: .25rem;
       font-size: 16px;
