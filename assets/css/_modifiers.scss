@@ -14,7 +14,7 @@
 	}
 }
 
-// Adjectives ===============================================================
+// Global modifiers ===============================================================
 
 .centered {
 	@include flexbox;
@@ -38,6 +38,29 @@
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	align-items: center;	
+}
+
+.unspaced {
+	margin: 0;
+	padding: 0;
+}
+
+.u-unstyled, .inline-list {
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+}
+
+.inline-list li {
+	display: inline-block;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
 }
 
 // States ===============================================================
