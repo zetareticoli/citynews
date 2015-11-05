@@ -72,8 +72,22 @@ $(document).ready(function(){
 			$('.start-search').find('input[type="search"]').focus();
 			($('.start-search').hasClass('is-visible')) ? $('.search-overlay').addClass('is-visible') : $('.search-overlay').removeClass('is-visible') ;
 		}
-	}	
+	}
 
+	$('.gallery-image-link').magnificPopup({
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			tPrev: 'Previous (Left arrow key)', // title for left button
+			tNext: 'Next (Right arrow key)', // title for right button
+			tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade',
+		type:'image'}
+	);
+
+	// check if device supports touchevents
 	if ( 'ontouchstart' in window )
 		$('body').addClass('touchevents');
 

@@ -364,6 +364,8 @@
 
 .photo-gallery {
 	
+	// List Photo Gallery
+
 	&.list-photo-gallery {
 		
 		.photo-gallery-item {
@@ -394,6 +396,7 @@
 			cursor: pointer;
 			width: auto;
 			margin: auto;
+			min-height: 10rem;
 			max-height: 20rem;
 
 			@include bp(m) {
