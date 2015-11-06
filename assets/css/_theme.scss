@@ -68,7 +68,7 @@
    Theme Inverted
    ========================================================================== */
 
-.theme-inverted,
+.theme-inverted .main-content,
 .inverted {
 	background-color: $bluegrey1000;
 }
@@ -77,90 +77,40 @@
 
 	// Global Styles
 
-	a, a:link, .link {
-		color: $bluegrey400;
-
-		&:hover {
-			color: white;
-		}
-	}
-
-	h1,	h2,	h3,	h4,	h5,	h6 {
-		color: white;
-	}
-
-	p,
-	.entry-content-body > p,
-	span,
-	.social-counter .number,
-	.author-role {
-		color: white;
-	}
-
-	.timestamp,
-	.datestamp,
-	.social-counter .counter-label {
-		color: $bluegrey600;
-	}
-
-	// Slim Header
-
-	.slim-header,
-	&.slim-header {
-		.header-top {
-			background-color: $bluegrey1000;
-			@include box-shadow(0 2px 0 $bluegrey900);
-		}
-
-		.header-bottom {
-			background-color: $bluegrey900;
-		}
-
-		.nav-btn {
-			.btn-label {
-				color: $bluegrey500;
-			}
-
-			.icon {
-				fill: $bluegrey500;
-			}
+	.main-content {
+		a, a:link, .link {
+			color: $bluegrey400;
 
 			&:hover {
-				.btn-label {
-					color: white;
-				}
-				.icon {
-					fill: white;
-				}
+				color: white;
 			}
 		}
 
-		.search-btn {
-			background-color: $bluegrey1000;
-			border-color: $bluegrey900;
-		}
-		
-		.nav-btn,
-		.page-title,
-		.page-title a {
+		h1,	h2,	h3,	h4,	h5,	h6 {
 			color: white;
 		}
+
+		p,
+		.entry-content-body > p,
+		span,
+		.social-counter .number,
+		.author-role {
+			color: white;
+		}
+
+		.timestamp,
+		.datestamp,
+		.social-counter .counter-label {
+			color: $bluegrey600;
+		}	
 	}
 
 	// Secondary Nav
 
 	.secondary-nav {
 		.nav-item {
-			&.current .link {
-				color: white;
-			}
-
-			&:hover {
-				@include box-shadow(inset 0 -.35rem 0 $bluegrey400);
-			}
-
-			.link {
-				color: $bluegrey400;
+			&.current {
+				box-shadow: inset 0 -0.35rem 0 $bluegrey1000;
 			}
 		}
 	}
@@ -206,12 +156,6 @@
 	.logo-network {
 		fill: lighten($black1000, 10%);
 	}
-}
-
-.theme-inverted  {
-	.logo-network {
-		fill: white;
-	}	
 }
 
 /* ==========================================================================
