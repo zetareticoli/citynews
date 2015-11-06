@@ -2991,12 +2991,7 @@ ol, ul {
 .photo-gallery.list-photo-gallery .photo-img {
   cursor: pointer;
   width: auto;
-  margin: auto;
-  min-height: 10rem;
-  max-height: 20rem; }
-  @media (min-width: 46.25em) {
-    .photo-gallery.list-photo-gallery .photo-img {
-      max-height: 37.5rem; } }
+  margin: auto; }
 .photo-gallery.list-photo-gallery .photo-caption {
   width: auto;
   text-align: left; }

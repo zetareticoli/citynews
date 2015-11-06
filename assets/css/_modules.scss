@@ -396,12 +396,6 @@
 			cursor: pointer;
 			width: auto;
 			margin: auto;
-			min-height: 10rem;
-			max-height: 20rem;
-
-			@include bp(m) {
-				max-height: 37.5rem;
-			}
 		}
 
 		.photo-caption {
