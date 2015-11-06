@@ -203,12 +203,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-yellow;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-yellow;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-yellow;
+		}
 	}
 }
 
@@ -246,12 +248,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-red;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-red;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-red;
+		}
 	}
 }
 
@@ -289,12 +293,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-blue;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-blue;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-blue;
+		}
 	}
 }
 
@@ -332,12 +338,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-green;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-green;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-green;
+		}
 	}
 }
 
@@ -375,12 +383,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-purple;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-purple;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-purple;
+		}
 	}
 }
 
@@ -418,12 +428,14 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-pink;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-pink;
+	}
+
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-pink;
+		}
 	}
 }
 
