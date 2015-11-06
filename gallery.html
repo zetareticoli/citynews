@@ -27,64 +27,123 @@
                 <div class="content-main-column gallery-content-main-column">
 
                     <div class="entry-content-body">
-                        <ul id="lightbox" class="u-unstyled photo-gallery list-photo-gallery">
-                            <li class="photo-gallery-item">
-                                <figure>
-                                    <a href="<!-- @path lightbox-rectangle-large.png -->" class="gallery-image-link">
-                                        <img
-                                            sizes="(max-width: 999px) 100vw, 70vw"
-                                            srcset="<!-- @path lightbox-rectangle-medium.png --> 600w, <!-- @path lightbox-rectangle-large.png --> 1000w,"
-                                            class="photo-img" 
-                                            alt="Placeholder Image">
-                                    </a>
-                                </figure>
-                                <div class="photo-caption">
+
+                        <div class="u-unstyled photo-gallery list-photo-gallery" itemscope>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-rectangle-large.png -->" itemprop="contentUrl" data-size="1000x750">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-rectangle-medium.png --> 600w, <!-- @path lightbox-rectangle-large.png --> 1000w,"
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
                                     <p>La nuova fontana di Trevi <span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                  <a href="<!-- @path lightbox-horiz-large.png -->" itemprop="contentUrl" data-size="1000x563">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-horiz-medium.png --> 600w, <!-- @path lightbox-horiz-large.png --> 1000w, "
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                  </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 2<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-square-large.png -->" itemprop="contentUrl" data-size="600x600">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-square-large.png --> 600w, "
+                                        class="photo-img"
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 3<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-vertical-large.png -->" itemprop="contentUrl" data-size="450x600">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-vertical-medium.png --> 240w, <!-- @path lightbox-vertical-large.png --> 450w, "
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 4<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                        </div>
+
+                        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                            <!-- Background of PhotoSwipe. 
+                                 It's a separate element, as animating opacity is faster than rgba(). -->
+                            <div class="pswp__bg"></div>
+
+                            <!-- Slides wrapper with overflow:hidden. -->
+                            <div class="pswp__scroll-wrap">
+
+                                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                                <div class="pswp__container">
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
                                 </div>
-                            </li>
-                            <li class="photo-gallery-item">
-                                <figure>
-                                    <a href="<!-- @path lightbox-horiz-large.png -->" class="gallery-image-link">
-                                        <img
-                                            sizes="(max-width: 999px) 100vw, 70vw"
-                                            srcset="<!-- @path lightbox-horiz-medium.png --> 600w, <!-- @path lightbox-horiz-large.png --> 1000w, "
-                                            class="photo-img" 
-                                            alt="Placeholder Image">
-                                    </a>
-                                </figure>
-                                <div class="photo-caption">
-                                    <p>La nuova fontana di Trevi <span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+
+                                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                                <div class="pswp__ui pswp__ui--hidden">
+
+                                    <div class="pswp__top-bar">
+
+                                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                        <div class="pswp__counter"></div>
+
+                                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                                        <div class="pswp__preloader">
+                                            <div class="pswp__preloader__icn">
+                                              <div class="pswp__preloader__cut">
+                                                <div class="pswp__preloader__donut"></div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                        <div class="pswp__share-tooltip"></div> 
+                                    </div>
+
+                                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                                    </button>
+
+                                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                                    </button>
+
+                                    <div class="pswp__caption">
+                                        <div class="pswp__caption__center"></div>
+                                    </div>
+
+                                  </div>
+
                                 </div>
-                            </li>
-                            <li class="photo-gallery-item">
-                                <figure>
-                                    <a href="<!-- @path lightbox-square-large.png -->" class="gallery-image-link">
-                                        <img
-                                            sizes="(max-width: 999px) 100vw, 70vw"
-                                            srcset="<!-- @path lightbox-square-large.png --> 600w, "
-                                            class="photo-img" 
-                                            alt="Placeholder Image">
-                                    </a>
-                                </figure>
-                                <div class="photo-caption">
-                                    <p>La nuova fontana di Trevi <span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
-                                </div>
-                            </li>
-                            <li class="photo-gallery-item">
-                                <figure>
-                                    <a href="<!-- @path lightbox-vertical-large.png -->" class="gallery-image-link">
-                                        <img
-                                            sizes="(max-width: 999px) 100vw, 70vw"
-                                            srcset="<!-- @path lightbox-vertical-medium.png --> 240w, <!-- @path lightbox-vertical-large.png --> 450w, "
-                                            class="photo-img" 
-                                            alt="Placeholder Image">
-                                    </a>
-                                </figure>
-                                <div class="photo-caption">
-                                    <p>La nuova fontana di Trevi <span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
-                                </div>
-                            </li>
-                        </ul>
+
+                        </div>
                     </div>  
 
                     <div class="entry-footer">

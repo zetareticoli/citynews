@@ -383,7 +383,7 @@
 			}
 
 			@include bp(l) {
-				padding-right: 15rem;
+				padding-right: 14rem;
 			}
 		}
 
@@ -400,6 +400,7 @@
 
 		.photo-caption {
 			width: auto;
+			background-color: $bluegrey1000;
 			text-align: left;
 
 			@include bp(l) {
@@ -407,6 +408,8 @@
 				right: 0;
 				top: 0;
 				width: 14rem;
+				height: 100%;
+				padding-left: 1rem;
 
 				&:before {
 					display: block;
