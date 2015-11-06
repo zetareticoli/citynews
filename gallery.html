@@ -1,0 +1,260 @@
+<!-- $title Foto -->
+
+<!-- @include _head -->
+
+<div class="wrapper theme-inverted">
+
+    <!-- @include _header-slim -->
+
+    <main class="main-content unspaced">
+            
+        <article class="entry" role="main">
+
+            <header class="entry-header media-entry-header"> 
+                <h4 class="media-related-story"><span class="label">Da articolo:</span><a href="#" class="link">Completato il restyling della storia fontana di Roma</a></h4>
+                <h1 class="entry-title">La nuova Fontana di Trevi</h1>
+            </header>
+
+            <section class="entry-content">
+                <div class="entry-meta has-author">
+                    <div class="meta-byline">
+                        <span class="theme-color">10 foto</span> <time class="datestamp"> &middot; 17 Nov 2015</time>
+                    </div>
+
+                    <!-- @include _social -->
+                </div>
+
+                <div class="content-main-column gallery-content-main-column">
+
+                    <div class="entry-content-body">
+
+                        <div class="u-unstyled photo-gallery list-photo-gallery" itemscope>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-rectangle-large.png -->" itemprop="contentUrl" data-size="1000x750">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-rectangle-medium.png --> 600w, <!-- @path lightbox-rectangle-large.png --> 1000w,"
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi <span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                  <a href="<!-- @path lightbox-horiz-large.png -->" itemprop="contentUrl" data-size="1000x563">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-horiz-medium.png --> 600w, <!-- @path lightbox-horiz-large.png --> 1000w, "
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                  </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 2<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-square-large.png -->" itemprop="contentUrl" data-size="600x600">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-square-large.png --> 600w, "
+                                        class="photo-img"
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 3<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                            <figure class="photo-gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="<!-- @path lightbox-vertical-large.png -->" itemprop="contentUrl" data-size="450x600">
+                                    <img
+                                        sizes="(max-width: 999px) 100vw, 70vw"
+                                        srcset="<!-- @path lightbox-vertical-medium.png --> 240w, <!-- @path lightbox-vertical-large.png --> 450w, "
+                                        class="photo-img" 
+                                        alt="Placeholder Image" title="My Caption Title" itemprop="thumbnail">
+                                </a>
+                                <figcaption class="photo-caption" itemprop="caption description">
+                                    <p>La nuova fontana di Trevi 4<span class="photo-credit">Foto di: Ronchini/InfoPhoto</span></p>
+                                </figcaption>                                    
+                            </figure>
+                        </div>
+
+                        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                            <!-- Background of PhotoSwipe. 
+                                 It's a separate element, as animating opacity is faster than rgba(). -->
+                            <div class="pswp__bg"></div>
+
+                            <!-- Slides wrapper with overflow:hidden. -->
+                            <div class="pswp__scroll-wrap">
+
+                                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                                <div class="pswp__container">
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
+                                    <div class="pswp__item"></div>
+                                </div>
+
+                                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                                <div class="pswp__ui pswp__ui--hidden">
+
+                                    <div class="pswp__top-bar">
+
+                                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                        <div class="pswp__counter"></div>
+
+                                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                                        <div class="pswp__preloader">
+                                            <div class="pswp__preloader__icn">
+                                              <div class="pswp__preloader__cut">
+                                                <div class="pswp__preloader__donut"></div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                        <div class="pswp__share-tooltip"></div> 
+                                    </div>
+
+                                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                                    </button>
+
+                                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                                    </button>
+
+                                    <div class="pswp__caption">
+                                        <div class="pswp__caption__center"></div>
+                                    </div>
+
+                                  </div>
+
+                                </div>
+
+                        </div>
+                    </div>  
+
+                    <div class="entry-footer">
+
+                        <ul class="u-unstyled inline-list tags-list">
+                            <li class="tag-item"><strong>Argomenti:</strong></li>
+                            <li class="tag-item"><a href="#" class="btn block-btn default-btn rounded-btn">Incendio</a></li>
+                            <li class="tag-item"><a href="#" class="btn block-btn default-btn rounded-btn">Fiumicino</a></li>                        
+                        </ul>
+
+                        <div class="meta-social">
+                            <ul class="u-unstyled social-items">
+
+                                <li class="social-item">
+                                    <a href="#"><svg class="icon facebook-icon"><use xlink:href="#facebook-with-circle-icon"></use></svg></a>
+                                </li>
+
+                                <li class="social-item">
+                                    <a href="#"><svg class="icon twitter-icon"><use xlink:href="#twitter-with-circle-icon"></use></svg></a>
+                                </li>
+
+                                <li class="social-item">
+                                    <a href="#"><svg class="icon whatsapp-icon"><use xlink:href="#whatsapp-icon"></use></svg></a>
+                                </li>
+
+                                <li class="social-item">
+                                    <a href="#"><svg class="icon email-icon"><use xlink:href="#email-icon"></use></svg></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>        
+
+    </main>
+
+    <div class="slots entry-secondary-slot">
+        <div class="slot medium-slot"><img src="<!-- @path medium-rectangle-1 -->"></div>
+    </div>
+
+    <!-- @include _discussion -->
+
+    <section class="section grid-section">
+
+        <div class="line">
+    
+            <div class="unit size1of1">
+    
+                <h2 class="section-title theme-element-bg">Potrebbe Interessarti</h2>
+
+                <ul class="u-unstyled l-row multirow">
+
+                    <li class="unit size1of3 slice-item l-row-item item-span-1">
+                        <article class="story">
+                            <figure class="story-media">
+                                <a href="<!-- @path article.html -->">
+                                    <picture>
+                                        <source srcset="<!-- @path related-1-horizontal_mid.jpg -->" media="(min-width: 46.25em)">
+                                        <img srcset="<!-- @path related-1-square_low.jpg -->" alt="Incendio Fiumicino">
+                                    </picture>
+                                </a>
+                            </figure>
+                            <p class="byline"><span class="label theme-color">Cronaca</span> <span class="timestamp">21 Giu 2015</span></p>
+                            <h3 class="story-heading"><a href="<!-- @path article.html -->" class="link">Incendio all'aeroporto: il Terminal 3 non esiste più. Cronaca di 12 ore di caos</a></h3>
+                        </article>
+                    </li>
+
+                    <li class="unit size1of3 slice-item l-row-item item-span-1">
+                        <article class="story">
+                            <figure class="story-media">
+                                <a href="<!-- @path article.html -->">
+                                    <picture>
+                                        <source srcset="<!-- @path related-2-horizontal_mid.jpg -->" media="(min-width: 46.25em)">
+                                        <img srcset="<!-- @path related-2-square_low.jpg -->" alt="Incendio Fiumicino">
+                                    </picture>
+                                </a>
+                            </figure>
+                            <p class="byline"><span class="label theme-color">Politica</span> <span class="timestamp">21 Giu 2015</span></p>
+                            <h3 class="story-heading"><a href="<!-- @path article.html -->" class="link">Incendio: "Attentato? No, un corto circuito nell'area commerciale"</a></h3>
+                        </article>
+                    </li>
+
+                    <li class="unit size1of3 slice-item l-row-item item-span-1">
+                        <article class="story">
+                            <figure class="story-media">
+                                <a href="<!-- @path article.html -->">
+                                    <picture>
+                                        <source srcset="<!-- @path related-3-horizontal_mid.jpg -->" media="(min-width: 46.25em)">
+                                        <img srcset="<!-- @path related-3-square_low.jpg -->" alt="Incendio Fiumicino">
+                                    </picture>
+                                </a>
+                            </figure>
+                            <p class="byline"><span class="label theme-color">Economia</span> <span class="timestamp">21 Giu 2015</span></p>
+                            <h3 class="story-heading"><a href="<!-- @path article.html -->" class="link">Incendio Fiumicino, mascherine obbligatorie e turni dimezzati al T3“</a></h3>
+                        </article>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+  
+<!-- @include _footer -->

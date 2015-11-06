@@ -26,6 +26,109 @@
 	fill: $accentmint;
 }
 
+// Theme Colors for hover on block links ===============================================================
+
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading,
+.theme-yellow .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-yellow;
+}
+
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading,
+.theme-blue .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-blue;
+}
+
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading,
+.theme-red .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-red;
+}
+
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading,
+.theme-green .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-green;
+}
+
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading,
+.theme-pink .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-pink;
+}
+
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading,
+.theme-purple .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-purple;
+}
+
+/* ==========================================================================
+   Theme Inverted
+   ========================================================================== */
+
+.theme-inverted .main-content,
+.inverted {
+	background-color: $bluegrey1000;
+}
+
+.theme-inverted {
+
+	// Global Styles
+
+	.main-content {
+		a, a:link, .link {
+			color: $bluegrey400;
+
+			&:hover {
+				color: white;
+			}
+		}
+
+		h1,	h2,	h3,	h4,	h5,	h6 {
+			color: white;
+		}
+
+		p,
+		.entry-content-body > p,
+		.social-counter .number,
+		.author-role {
+			color: white;
+		}
+
+		.timestamp,
+		.datestamp,
+		.social-counter .counter-label {
+			color: $bluegrey600;
+		}	
+	}
+
+	// Secondary Nav
+
+	.secondary-nav {
+		.nav-item {
+			&.current {
+				box-shadow: inset 0 -0.35rem 0 $bluegrey1000;
+			}
+		}
+	}
+
+	.entry-meta,
+	.meta-byline {
+		border-color: $bluegrey800;
+	}
+
+	.slots {
+		border-color: $bluegrey900;
+		background-color: $bluegrey900;
+	}
+}
+
+/* ==========================================================================
+   Brand Themes
+   ========================================================================== */
+
 // Header styles common for all themes ==========================================
 
 .theme-yellow,
@@ -51,16 +154,6 @@
 
 	.logo-network {
 		fill: lighten($black1000, 10%);
-	}
-
-	.inverted  {
-		.theme-header {
-			background-color: $black1000;
-		}
-
-		.logo-network {
-			fill: white;
-		}	
 	}
 }
 
@@ -110,10 +203,6 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-yellow;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-yellow;
 	}
@@ -157,10 +246,6 @@
 				fill: $b-c-red;
 			}
 		}
-	}
-
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-red;
 	}
 
 	.expand-image:hover .rounded-icon {
@@ -208,10 +293,6 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-blue;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-blue;
 	}
@@ -255,10 +336,6 @@
 				fill: $b-c-green;
 			}
 		}
-	}
-
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-green;
 	}
 
 	.expand-image:hover .rounded-icon {
@@ -306,10 +383,6 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-purple;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-purple;
 	}
@@ -355,10 +428,6 @@
 		}
 	}
 
-	.inverted .theme-header .logo-edition {
-		fill: $b-c-pink;
-	}
-
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-pink;
 	}
@@ -368,6 +437,14 @@
 			fill: $b-c-pink;
 		}
 	}
+}
+
+/* ==========================================================================
+   Photoswipe Theme
+   ========================================================================== */
+
+.pswp__bg {
+	background-color: $bluegrey1000;
 }
 
 

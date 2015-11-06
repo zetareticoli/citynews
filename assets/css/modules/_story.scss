@@ -148,7 +148,6 @@
 
 	@include max-bp(m) {
 		&.focus-cover {
-			background-color: $bluegrey100;
 
 			.story-media:after {
 				display: none;
@@ -500,6 +499,77 @@
 		width: 5rem;
 		float: right;
 		margin-left: $baseline;
+	}
+}
+
+// Media Story ===============================================================
+
+.media-item {
+
+	@include bp(s) {
+		width: 50%;
+	}
+
+	@include bp(l) {
+		width: 33%;
+	}
+
+	&.size1of2 {
+		width: 100%;
+
+		@include bp(s) {
+			width: 50%;
+		}
+	}
+}
+
+.media-story {
+	border-bottom: 0;
+	padding-bottom: 0;
+	background-color: darken($bluegrey1000, 5%);
+
+	.media-badge {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		@include rounded(3px);
+		background-color: darken($bluegrey1000, 5%);
+		padding: $baseline $baseline * 2;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		@include font-size($fontsize100);
+		font-weight: 700;
+	}
+
+	.story-heading {
+		margin-bottom: 0;
+		color: white;
+		@include font-size($fontsize400);
+
+		@include bp(l) {
+			@include font-size($fontsize500);
+		}
+	}
+
+	.story-media {
+		position: relative;
+		margin-bottom: 0;
+		float: none;
+		width: 100%;
+		max-width: none;
+	}
+
+	.story-header {
+		padding: 1rem;
+	}
+
+	// featured media story
+
+	&.featured-story {
+		.story-heading {
+			@include bp(l) {
+				@include font-size($fontsize600);
+			}
+		}
 	}
 }
 

@@ -30,7 +30,8 @@
 // Entry Header ===============================================================
 
 .entry-title,
-.entry-summary {
+.entry-summary,
+.gallery-related-story {
   	@include bp(xl) {
   		margin-left: 13rem; 	
   	}
@@ -66,6 +67,30 @@
 	}
 }
 
+// Media Entry Header
+
+.media-entry-header {
+	padding-top: 1rem;
+
+	@include bp(xl) {
+		padding-top: 2rem;
+		margin-left: 13rem;
+	}
+
+	.entry-title {
+		margin: 0 0 1rem 0;
+	}
+
+	.media-related-story {
+		margin-bottom: $baseline;
+
+		> .label {
+			color: $bluegrey500;
+			@include font-size($fontsize200);
+		}
+	}
+}
+
 // Entry Content ===============================================================
 
 .entry-content { 
@@ -81,11 +106,15 @@
 	@include bp(l) {
 		float: left;
 		margin-right: 2rem;
-		width: 37.5rem;
+		max-width: 37.5rem;
 	}
 
 	@include bp(xl) {
 		margin: 0 1rem 0 13rem;
+	}
+
+	&.gallery-content-main-column {
+		max-width: none;
 	}
 }
 

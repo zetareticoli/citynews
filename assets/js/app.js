@@ -72,8 +72,9 @@ $(document).ready(function(){
 			$('.start-search').find('input[type="search"]').focus();
 			($('.start-search').hasClass('is-visible')) ? $('.search-overlay').addClass('is-visible') : $('.search-overlay').removeClass('is-visible') ;
 		}
-	}	
+	}
 
+	// check if device supports touchevents
 	if ( 'ontouchstart' in window )
 		$('body').addClass('touchevents');
 

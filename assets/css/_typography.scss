@@ -24,14 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: $baseline * 2;
 }
 
-h1 {
-	font-weight: $bigheadingeweight;
-}
-
 h2, h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
 }
 
+h1 {
+	font-weight: $bigheadingeweight;
+}
 
 h2 {
 	@include bp(m) {
@@ -67,7 +66,7 @@ h2 {
 		line-height: 2rem;
 	}
 
-	@include bp(xl) {
+	@include bp(l) {
 		@include font-size($fontsize700);
 		line-height: 2rem;
 	}
@@ -119,8 +118,6 @@ ul,
 dl,
 address {
 	font-family: $alttexttypeface;
-	@include font-size($basefontsize);
-	line-height: $baselineheight;
 }
 
 p,
@@ -130,6 +127,8 @@ dl,
 address {
 	margin-top: 0;
 	margin-bottom: $baseline;
+	@include font-size($basefontsize);
+	line-height: $baselineheight;
 }
 
 ol,
@@ -137,7 +136,6 @@ ul,
 dl {
 	list-style-position: inside;
 }
-
 
 .entry-content-body > p {
 	font-family: $texttypeface;
@@ -496,6 +494,7 @@ dt {
 	margin: 0 $baseline / 2 $baseline / 2 0;
 	display: inline-block;
 	font-family: $brandtypeface;
+	font-weight: 500;
 	@include font-size($fontsize200);
 	color: $black600;
 	text-transform: uppercase;
@@ -645,36 +644,6 @@ h5.location-label {
 	&:hover {
 		color: $black500;
 	}
-}
-
-.theme-yellow .inverted .block-link:hover,
-.theme-yellow .inverted .block-link:hover .story-heading {
-	color: $b-c-yellow;
-}
-
-.theme-blue .inverted .block-link:hover,
-.theme-blue .inverted .block-link:hover .story-heading  {
-	color: $b-c-blue;
-}
-
-.theme-red .inverted .block-link:hover,
-.theme-red .inverted .block-link:hover .story-heading  {
-	color: $b-c-red;
-}
-
-.theme-green .inverted .block-link:hover,
-.theme-green .inverted .block-link:hover .story-heading  {
-	color: $b-c-green;
-}
-
-.theme-pink .inverted .block-link:hover,
-.theme-pink .inverted .block-link:hover .story-heading  {
-	color: $b-c-pink;
-}
-
-.theme-purple .inverted .block-link:hover,
-.theme-purple .inverted .block-link:hover .story-heading  {
-	color: $b-c-purple;
 }
 
 // Timestamp & Meteo ===============================================================
