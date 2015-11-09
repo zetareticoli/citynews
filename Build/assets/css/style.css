@@ -719,6 +719,10 @@ dt {
       height: 12px;
       top: -2px; } }
 
+.bordered-title {
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 0.5rem; }
+
 .module-title {
   display: block;
   margin-bottom: 0.5rem;
@@ -743,14 +747,16 @@ dt {
     font-weight: 400;
     color: #757575; }
 
-.page-title {
+.page-title,
+.page-title h1 {
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-weight: normal;
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.75rem; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: normal; }
   @media (min-width: 46.25em) {
-    .page-title {
+    .page-title,
+    .page-title h1 {
       font-size: 32px;
       font-size: 2rem;
       line-height: 2.5rem; } }

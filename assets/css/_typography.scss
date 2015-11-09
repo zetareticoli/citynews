@@ -330,6 +330,13 @@ dt {
 	}
 }
 
+// Title =====================================================================
+
+.bordered-title {
+	margin-bottom: $baseline;
+	border-bottom: 2px solid $bordercolor;
+}
+
 // Module heading title
 
 .module-title {
@@ -359,11 +366,12 @@ dt {
 
 // Page title
 
-.page-title {
+.page-title,
+.page-title h1 {
 	font-family: $titleseriftypeface;
+	@include font-size($fontsize500);
+	line-height: 1.5rem;
 	font-weight: normal;
-	@include font-size($fontsize700);
-	line-height: 1.75rem;
 
 	@include bp(m) {
 		@include font-size($fontsize800);
