@@ -1910,7 +1910,7 @@ ol, ul {
   background-color: white; }
 
 .main-content {
-  padding: 1rem 0; }
+  padding: 0.5rem 0; }
   @media (min-width: 46.25em) {
     .main-content {
       padding: 1.5rem 0; } }

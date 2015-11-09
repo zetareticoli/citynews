@@ -74,7 +74,7 @@ ol, ul {
 }
 
 .main-content {
-	padding: 1rem 0;
+	padding: $baseline 0;
 	
 	@include bp(m) {
 		padding: 1.5rem 0;
