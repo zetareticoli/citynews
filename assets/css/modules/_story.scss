@@ -56,8 +56,12 @@
 	.story-media {
 		width: 100%;
 		max-width: none;
-		margin-bottom: 12px;
+		margin-bottom: .5rem;
 		margin-right: 0;
+
+		@include bp(m) {
+			margin-bottom: 1rem;
+		}
 
 		img {
 			width: 100%;

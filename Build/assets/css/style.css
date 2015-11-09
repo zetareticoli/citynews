@@ -3438,8 +3438,11 @@ ol, ul {
   .hero-story .story-media {
     width: 100%;
     max-width: none;
-    margin-bottom: 12px;
+    margin-bottom: .5rem;
     margin-right: 0; }
+    @media (min-width: 46.25em) {
+      .hero-story .story-media {
+        margin-bottom: 1rem; } }
     .hero-story .story-media img {
       width: 100%; }
   .hero-story .story-header,
