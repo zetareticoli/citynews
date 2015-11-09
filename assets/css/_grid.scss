@@ -11,10 +11,20 @@
 	}
 }
 
+.line,
+.unit {
+	padding-left: $baseline / 2;
+	padding-right: $baseline / 2;
+
+	@include bp(m) {
+		padding-left: $baseline;
+		padding-right: $baseline;
+	}
+}
+
 .line {
 	@include border-box;
 	@include clearfix;
-	padding: 0 $baseline;
 	position: relative;
 	zoom: 1;
 }
@@ -25,11 +35,6 @@
 
 .unit, .group {
 	float: left;
-}
-
-.unit {
-	padding-left: $baseline;
-	padding-right: $baseline;
 }
 
 .group,
