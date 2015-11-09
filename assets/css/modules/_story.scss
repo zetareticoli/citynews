@@ -51,7 +51,10 @@
 
 .hero-story {
 	position: relative;
-	background-color: $bluegrey100;
+
+	@include bp(m) {
+		background-color: $bluegrey100;
+	}
 
 	.story-media {
 		width: 100%;
@@ -70,11 +73,7 @@
 
 	.story-header,
 	.story-footer {
-		padding: 0 $baseline $baseline;
-
-		@include bp(m) {
-			padding: 0 12px $baseline;
-		}
+		padding-bottom: $baseline;
 	}
 
 	// cover hero
