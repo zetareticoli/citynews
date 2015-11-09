@@ -424,7 +424,6 @@ ol, ul {
 
 	.page-title {
 		position: relative;
-		margin-top: $baseline * 9;
 
 		@include bp(m) {
 			width: 50%;

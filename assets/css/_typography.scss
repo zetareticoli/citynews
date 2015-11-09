@@ -368,8 +368,9 @@ dt {
 
 .page-title,
 .page-title h1 {
+	margin-bottom: $baseline;
 	font-family: $titleseriftypeface;
-	@include font-size($fontsize500);
+	@include font-size($fontsize300);
 	line-height: 1.5rem;
 	font-weight: normal;
 
