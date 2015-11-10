@@ -36,6 +36,39 @@
 	margin-bottom: $baseline;
 }
 
+.story-heading,
+.story-subheading {
+	word-wrap: break-word;
+}
+
+.story-subheading {
+	display: inline-block;
+	font-family: $headingstypeface;
+	@include font-size($fontsize400);
+
+	&:before {
+		display: inline-block;
+		content: '';
+		position: relative;
+		margin-right: $gutterwidth / 2;
+		vertical-align: middle;
+		top: -1px;
+
+		@include bp(m) {
+			width: 8px;
+			height: 8px;
+		}
+	}
+	
+	.link {
+		color: $bluegrey600;
+	}
+}
+
+.story-heading {
+
+}
+
 // Themes ===============================================================
 
 .inverted {
@@ -89,8 +122,6 @@
 		padding-bottom: $baseline;
 	}
 
-	// Hero story headings
-
 	.story-heading {
 		@include font-size($fontsize600);
 		line-height: 1.75rem;
@@ -107,6 +138,25 @@
 		}
 	}
 
+	.hero-story .story-subheading {
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+		font-weight: 900;
+
+		@include bp(xl) {
+			@include font-size($fontsize600);
+			line-height: 2rem;
+		}
+
+		&:before {
+
+			@include bp(l) {
+				width: 12px;
+				height: 12px;
+				top: -2px;
+			}
+		}
+	}
 
 	// Featured Hero
 
@@ -149,6 +199,13 @@
 			@include bp(xl) {
 				margin-right: $baseline * 3;
 				margin-left: $baseline * 3;
+			}
+		}
+
+		.story-heading {
+			@include bp(xl) {
+				@include font-size($fontsize1000);
+				line-height: 3rem;
 			}
 		}
 
@@ -336,17 +393,6 @@
 	}
 }
 
-.focus-section .list-story {
-	padding-bottom: $baseline;
-}
-
-.focus-section .list-story .story-heading {
-	@include bp(m) {
-		@include font-size($fontsize300);
-		line-height: 1.35rem;
-	}
-}
-
 // Inset Story
 
 .inset-story {
@@ -374,6 +420,42 @@
 				opacity: 1;
 				max-height: 300px;
 			}
+		}
+	}
+
+	.story-header {
+		background-color: $bluegrey1000;
+
+		@include bp(m) {
+			margin-left: 0;
+			padding: 0 $baseline *2;
+		}
+
+		@include bp(l) {
+			padding: $baseline * 2;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background: none;
+		}
+	}
+
+	.story-heading {
+		font-family: $titleseriftypeface;
+		font-weight: normal;
+
+		@include font-size($fontsize300);
+		line-height: 1.25rem;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+			line-height: 1.5rem;
+		}
+
+		@include bp(xl) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
 		}
 	}
 
@@ -405,24 +487,6 @@
 		}
 	}
 
-	.story-header {
-		background-color: $bluegrey1000;
-
-		@include bp(m) {
-			margin-left: 0;
-			padding: 0 $baseline *2;
-		}
-
-		@include bp(l) {
-			padding: $baseline * 2;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			z-index: 1;
-			background: none;
-		}
-	}
-
 	.story-summary {
 		max-height: 0;
 		opacity: 0;
@@ -438,6 +502,10 @@
 		@include bp(xl) {
 			@include font-size($fontsize300);
 		}
+	}
+
+	.link {
+		color: white;
 	}
 }
 
@@ -655,6 +723,62 @@
 			@include bp(l) {
 				@include font-size($fontsize600);
 			}
+		}
+	}
+}
+
+// Stories inside Focus Template ===================================
+
+.focus-section {
+
+	.list-story {
+		padding-bottom: $baseline;
+	}
+
+	.list-story .story-heading {
+		@include bp(m) {
+			@include font-size($fontsize300);
+			line-height: 1.35rem;
+		}
+	}
+	
+	.hero-story .story-heading {
+
+		@include bp(l) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+	}
+
+	.hero-story.fullpage-story .story-heading {
+		font-family: $titleseriftypeface;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+
+		@include bp(xl) {
+			@include font-size($fontsize1000);
+			line-height: 3.5rem;
+		}
+	}
+
+	.featured-story .story-heading {
+		@include bp(m) {
+			@include font-size($fontsize400);
+			line-height: 1.5rem;
+		}
+
+		@include bp(xl) {
+			@include font-size($fontsize500);
 		}
 	}
 }
