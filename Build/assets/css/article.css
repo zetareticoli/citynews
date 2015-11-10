@@ -490,11 +490,11 @@
   ========================================================================== */
 .film-entry .entry-media {
   width: 25%;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0; }
+  float: left; }
   @media (min-width: 62.5em) {
     .film-entry .entry-media {
-      width: 15rem; } }
+      width: 15rem;
+      margin-right: 1rem; } }
 .film-entry .entry-details {
   clear: left; }
   @media (min-width: 46.25em) {

@@ -643,10 +643,10 @@
 	.entry-media {
 		width: 25%;
 		float: left;
-		margin: 0 $baseline $baseline 0;
 
 		@include bp(l) {
 			width: 15rem;
+			margin-right: 1rem;
 		}
 	}
 
