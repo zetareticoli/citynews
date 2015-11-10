@@ -4817,7 +4817,7 @@ html.is-locked body {
   display: block; }
 
 @media (max-width: 46.188em) {
-  .story-summary,
+  .list-story .story-summary,
   .story-subheading,
   .featured-story .story-footer,
   .slim-header .page-title {

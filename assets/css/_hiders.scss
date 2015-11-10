@@ -18,7 +18,7 @@
 }
 
 @include max-bp(s) {
-	.story-summary,
+	.list-story .story-summary,
 	.story-subheading,
 	.featured-story .story-footer,
 	.slim-header .page-title {
