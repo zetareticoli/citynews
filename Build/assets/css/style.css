@@ -720,7 +720,8 @@ dt {
       top: -2px; } }
 
 .bordered-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  padding: .5rem .5rem .75rem;
   border-bottom: 2px solid #e0e0e0; }
 
 .module-title {
@@ -747,17 +748,14 @@ dt {
     font-weight: 400;
     color: #757575; }
 
-.page-title,
-.page-title h1 {
-  margin-bottom: 0.5rem;
+.page-title {
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: normal; }
   @media (min-width: 46.25em) {
-    .page-title,
-    .page-title h1 {
+    .page-title {
       font-size: 32px;
       font-size: 2rem;
       line-height: 2.5rem; } }
@@ -4821,7 +4819,8 @@ html.is-locked body {
 @media (max-width: 46.188em) {
   .story-summary,
   .story-subheading,
-  .featured-story .story-footer {
+  .featured-story .story-footer,
+  .slim-header .page-title {
     display: none; } }
 @media (min-width: 46.25em) {
   .entry-meta .author-role,

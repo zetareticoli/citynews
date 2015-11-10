@@ -20,7 +20,8 @@
 @include max-bp(s) {
 	.story-summary,
 	.story-subheading,
-	.featured-story .story-footer {
+	.featured-story .story-footer,
+	.slim-header .page-title {
 		display: none;
 	}
 }
