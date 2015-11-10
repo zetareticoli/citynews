@@ -97,8 +97,12 @@
 	&.default-pagination,
 	&.loadmore-pagination {
 		width: 100%;
-		margin: 2rem auto;
+		margin: 1rem auto;
 		text-align: center;
+
+		@include bp(l) {
+			margin: 2rem auto;
+		}
 	}
 
 	&.default-pagination {

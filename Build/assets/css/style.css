@@ -2475,8 +2475,11 @@ ol, ul {
   ========================================================================== */
 .pagination.default-pagination, .pagination.loadmore-pagination {
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center; }
+  @media (min-width: 62.5em) {
+    .pagination.default-pagination, .pagination.loadmore-pagination {
+      margin: 2rem auto; } }
 .pagination.default-pagination > li {
   border-right: 1px solid #e0e0e0;
   display: inline-block;
