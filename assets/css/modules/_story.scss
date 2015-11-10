@@ -76,6 +76,11 @@
 .story-summary {
 	@include font-size($fontsize200);
 	line-height: 1.25rem;
+
+	@include bp(l) {
+		@include font-size($fontsize300);
+		line-height: 1.5rem;
+	}
 }
 
 
@@ -98,7 +103,7 @@
 
 	@include bp(xl) {
 		@include font-size($fontsize400);
-		line-height: 1.5rem;
+		line-height: 1.75rem;
 	}
 }
 
@@ -124,11 +129,6 @@
 		img {
 			width: 100%;
 		}
-	}
-
-	.story-header,
-	.story-footer {
-		padding-bottom: $baseline;
 	}
 
 	.story-heading {
@@ -314,7 +314,7 @@
 
 			@include bp(l) {
 				@include font-size($fontsize600);
-				line-height: 2rem;
+				line-height: 1.75rem;
 			}
 		}
 	}
@@ -362,13 +362,6 @@
 		@include bp(m) {
 			@include font-size($fontsize500);
 			line-height: 1.5rem;
-		}
-	}
-
-	.story-summary {
-
-		@include bp(l) {
-			@include font-size($fontsize300);
 		}
 	}
 

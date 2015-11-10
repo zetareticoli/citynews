@@ -3338,6 +3338,11 @@ ol, ul {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.25rem; }
+  @media (min-width: 62.5em) {
+    .story-summary {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5rem; } }
 
 .inverted .story-footer {
   padding: 0 1rem; }
@@ -3347,7 +3352,7 @@ ol, ul {
   .fullpage-story .story-summary {
     font-size: 18px;
     font-size: 1.125rem;
-    line-height: 1.5rem; } }
+    line-height: 1.75rem; } }
 
 .hero-story {
   position: relative; }
@@ -3364,9 +3369,6 @@ ol, ul {
         margin-bottom: 1rem; } }
     .hero-story .story-media img {
       width: 100%; }
-  .hero-story .story-header,
-  .hero-story .story-footer {
-    padding-bottom: 0.5rem; }
   .hero-story .story-heading {
     font-size: 24px;
     font-size: 1.5rem;
@@ -3489,7 +3491,7 @@ ol, ul {
   .featured-story.featured-lg .story-heading {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 2rem; } }
+    line-height: 1.75rem; } }
 @media (min-width: 46.25em) {
   .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
     width: 50%;
@@ -3527,10 +3529,6 @@ ol, ul {
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 1.5rem; } }
-  @media (min-width: 62.5em) {
-    .list-story .story-summary {
-      font-size: 16px;
-      font-size: 1rem; } }
   .list-story .story-footer {
     display: none; }
     @media (min-width: 46.25em) {
