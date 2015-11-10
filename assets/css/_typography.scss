@@ -281,14 +281,6 @@ dt {
 	}
 }
 
-.featured-sm {
-	.story-summary {
-		@include font-size($fontsize200);
-	}
-}
-
-
-
 .byline {
 	color: $black700;
 	margin-bottom: 0;

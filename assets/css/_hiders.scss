@@ -18,6 +18,7 @@
 }
 
 @include max-bp(s) {
+	.featured-story .story-summary,
 	.list-story .story-summary,
 	.story-subheading,
 	.featured-story .story-footer,
