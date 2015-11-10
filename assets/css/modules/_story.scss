@@ -3,15 +3,13 @@
 .story {
 	width: 100%;
 	border-bottom: 1px solid $bordercolor;
-	padding-bottom: $baseline * 2;
+	padding-bottom: $baseline;
 	@include clearfix;
 }
 
 .story-media {
-	width: 30%;
-	max-width: 80px;
+	width: 5rem;
 	float: left;
-	margin-right: .5rem;
 
 	@include bp(m) {
 		width: auto;
@@ -96,7 +94,7 @@
 
 // Templates ===============================================================
 
-// Common typography for templates
+// Common styles for templates
 
 .hero-story .story-summary,
 .fullpage-story .story-summary {
@@ -294,6 +292,12 @@
 
 .featured-story {
 
+	.story-media {
+		@include max-bp(s) {
+			margin-right: .5rem;
+		}
+	}
+
 	// featured story headings
 
 	&.featured-sm {
@@ -328,6 +332,7 @@
 			@include bp(m) {
 				width: 50%;
 				float: left;
+				margin-right: .75rem;
 			}
 		}
 	}
@@ -341,9 +346,11 @@
 	align-items: flex-start;
 
 	.story-media {
-		width: 25%;
-		height: auto;
-		float: left;
+		margin-right: .5rem;
+
+		@include bp(m) {
+			margin-right: .75rem;
+		}
 
 		@include bp(l) {
 			width: 14rem;
@@ -356,13 +363,6 @@
 
 	.byline {
 		margin-bottom: $gutterwidth / 8;
-	}
-
-	.story-heading {
-		@include bp(m) {
-			@include font-size($fontsize500);
-			line-height: 1.5rem;
-		}
 	}
 
 	.story-footer {
@@ -458,7 +458,12 @@
 	}
 
 	.story-media {
+		margin-right: .5rem;
 		margin-bottom: 0;
+
+		@include bp(m) {
+			margin-right: 0;
+		}
 
 		img {
 			width: 100%;

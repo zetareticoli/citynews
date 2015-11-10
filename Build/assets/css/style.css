@@ -3274,7 +3274,7 @@ ol, ul {
 .story {
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   *zoom: 1; }
   .story:before, .story:after {
     content: " ";
@@ -3283,10 +3283,8 @@ ol, ul {
     clear: both; }
 
 .story-media {
-  width: 30%;
-  max-width: 80px;
-  float: left;
-  margin-right: .5rem; }
+  width: 5rem;
+  float: left; }
   @media (min-width: 46.25em) {
     .story-media {
       width: auto;
@@ -3477,6 +3475,9 @@ ol, ul {
     .hero-story.focus-cover .link .story-heading {
       color: #424242; } }
 
+@media (max-width: 46.188em) {
+  .featured-story .story-media {
+    margin-right: .5rem; } }
 @media (min-width: 46.25em) {
   .featured-story.featured-sm .story-heading {
     font-size: 20px;
@@ -3495,7 +3496,8 @@ ol, ul {
 @media (min-width: 46.25em) {
   .featured-story.featured-mid .story-media, .featured-story.featured-xl .story-media {
     width: 50%;
-    float: left; } }
+    float: left;
+    margin-right: .75rem; } }
 
 .list-story {
   display: -webkit-box;
@@ -3510,9 +3512,10 @@ ol, ul {
   flex-flow: row nowrap;
   align-items: flex-start; }
   .list-story .story-media {
-    width: 25%;
-    height: auto;
-    float: left; }
+    margin-right: .5rem; }
+    @media (min-width: 46.25em) {
+      .list-story .story-media {
+        margin-right: .75rem; } }
     @media (min-width: 62.5em) {
       .list-story .story-media {
         width: 14rem; } }
@@ -3524,11 +3527,6 @@ ol, ul {
     flex: 1; }
   .list-story .byline {
     margin-bottom: 0.125rem; }
-  @media (min-width: 46.25em) {
-    .list-story .story-heading {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.5rem; } }
   .list-story .story-footer {
     display: none; }
     @media (min-width: 46.25em) {
@@ -3594,7 +3592,11 @@ ol, ul {
         font-size: 2rem;
         line-height: 2.5rem; } }
   .inset-story .story-media {
+    margin-right: .5rem;
     margin-bottom: 0; }
+    @media (min-width: 46.25em) {
+      .inset-story .story-media {
+        margin-right: 0; } }
     .inset-story .story-media img {
       width: 100%; }
     @media (min-width: 62.5em) {
