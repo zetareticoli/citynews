@@ -596,111 +596,6 @@ dt {
 .middot {
   margin: 0 4px; }
 
-.story-heading,
-.story-subheading {
-  word-wrap: break-word; }
-
-@media (min-width: 75em) {
-  .cover-hero .story-heading {
-    font-size: 48px;
-    font-size: 3rem;
-    line-height: 3rem; } }
-
-@media (min-width: 62.5em) {
-  .focus-section .hero-story .story-heading {
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 2.5rem; } }
-.focus-section .hero-story.fullpage-story .story-heading {
-  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.5rem; }
-  @media (min-width: 46.25em) {
-    .focus-section .hero-story.fullpage-story .story-heading {
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 2.5rem; } }
-  @media (min-width: 62.5em) {
-    .focus-section .hero-story.fullpage-story .story-heading {
-      font-size: 36px;
-      font-size: 2.25rem;
-      line-height: 2.5rem; } }
-  @media (min-width: 75em) {
-    .focus-section .hero-story.fullpage-story .story-heading {
-      font-size: 48px;
-      font-size: 3rem;
-      line-height: 3.5rem; } }
-@media (min-width: 62.5em) {
-  .focus-section .featured-story .story-heading {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.5rem; } }
-
-@media (min-width: 46.25em) {
-  .focus-section .featured-story .story-heading {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.5rem; } }
-@media (min-width: 75em) {
-  .focus-section .featured-story .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem; } }
-
-.inset-story .story-heading {
-  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-weight: normal;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.25rem; }
-  @media (min-width: 46.25em) {
-    .inset-story .story-heading {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.5rem; } }
-  @media (min-width: 75em) {
-    .inset-story .story-heading {
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 2.5rem; } }
-.inset-story .link {
-  color: white; }
-
-.story-subheading {
-  display: inline-block;
-  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem; }
-  .story-subheading:before {
-    display: inline-block;
-    content: '';
-    position: relative;
-    margin-right: 0.5rem;
-    vertical-align: middle;
-    top: -1px; }
-    @media (min-width: 46.25em) {
-      .story-subheading:before {
-        width: 8px;
-        height: 8px; } }
-  .story-subheading .link {
-    color: #607d8b; }
-
-.hero-story .story-subheading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-weight: 900; }
-  @media (min-width: 75em) {
-    .hero-story .story-subheading {
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: 2rem; } }
-  @media (min-width: 62.5em) {
-    .hero-story .story-subheading:before {
-      width: 12px;
-      height: 12px;
-      top: -2px; } }
-
 .bordered-title {
   margin-bottom: 1rem;
   padding: .5rem .5rem .75rem;
@@ -3425,6 +3320,11 @@ ol, ul {
   .story-subheading .link {
     color: #607d8b; }
 
+.story-heading {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.15rem; }
+
 .inverted .story-footer {
   padding: 0 1rem; }
 
@@ -3473,18 +3373,18 @@ ol, ul {
         font-size: 2.25rem;
         line-height: 2.5rem;
         font-weight: 900; } }
-  .hero-story .hero-story .story-subheading {
+  .hero-story .story-subheading {
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: 900; }
     @media (min-width: 75em) {
-      .hero-story .hero-story .story-subheading {
+      .hero-story .story-subheading {
         font-size: 24px;
         font-size: 1.5rem;
         line-height: 2rem; } }
     @media (min-width: 62.5em) {
-      .hero-story .hero-story .story-subheading:before {
+      .hero-story .story-subheading:before {
         width: 12px;
         height: 12px;
         top: -2px; } }
@@ -3611,13 +3511,13 @@ ol, ul {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-  .list-story .story-header .byline {
+  .list-story .byline {
     margin-bottom: 0.125rem; }
-  @media (max-width: 46.188em) {
+  @media (min-width: 46.25em) {
     .list-story .story-heading {
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 1.15rem; } }
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
   .list-story .story-summary {
     font-size: 14px;
     font-size: 0.875rem;

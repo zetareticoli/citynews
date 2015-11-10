@@ -138,7 +138,7 @@
 		}
 	}
 
-	.hero-story .story-subheading {
+	.story-subheading {
 		@include font-size($fontsize500);
 		line-height: 1.5rem;
 		font-weight: 900;
@@ -345,10 +345,8 @@
 		@include flex(1);
 	}
 
-	.story-header {
-		.byline {
-			margin-bottom: $gutterwidth / 8;
-		}
+	.byline {
+		margin-bottom: $gutterwidth / 8;
 	}
 
 	.story-heading {
