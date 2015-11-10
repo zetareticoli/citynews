@@ -157,34 +157,6 @@ dt {
 	word-wrap: break-word;
 }
 
-// featured story headings
-
-.featured-story {
-
-	&.featured-sm {
-
-		.story-heading {
-
-			@include bp(m) {
-				@include font-size($fontsize500);
-				line-height: 1.5rem;
-			}
-		}
-	}
-
-	&.featured-lg {
-
-		.story-heading {
-
-			@include bp(m) {
-				@include font-size($fontsize500);
-				line-height: 1.5rem;
-			}
-		}
-	}
-}
-
-
 // cover hero story headings
 
 .cover-hero .story-heading {

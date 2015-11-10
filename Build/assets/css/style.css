@@ -600,17 +600,6 @@ dt {
 .story-subheading {
   word-wrap: break-word; }
 
-@media (min-width: 46.25em) {
-  .featured-story.featured-sm .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; } }
-@media (min-width: 46.25em) {
-  .featured-story.featured-lg .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; } }
-
 @media (min-width: 75em) {
   .cover-hero .story-heading {
     font-size: 48px;
