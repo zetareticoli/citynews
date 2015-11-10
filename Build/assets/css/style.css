@@ -3511,10 +3511,14 @@ ol, ul {
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   align-items: flex-start; }
+  @media (min-width: 62.5em) {
+    .list-story {
+      padding-bottom: 1rem; } }
   .list-story .story-media {
     margin-right: .5rem; }
     @media (min-width: 46.25em) {
       .list-story .story-media {
+        width: 8rem;
         margin-right: .75rem; } }
     @media (min-width: 62.5em) {
       .list-story .story-media {

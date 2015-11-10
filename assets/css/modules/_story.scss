@@ -345,10 +345,15 @@
 	@include flex-flow(row nowrap);
 	align-items: flex-start;
 
+	@include bp(l) {
+		padding-bottom: 1rem;
+	}
+
 	.story-media {
 		margin-right: .5rem;
 
 		@include bp(m) {
+			width: 8rem;
 			margin-right: .75rem;
 		}
 
