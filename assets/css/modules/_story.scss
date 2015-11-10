@@ -47,13 +47,26 @@
 
 // Templates ===============================================================
 
-// hero
+// Common typography for templates
+
+.hero-story .story-summary,
+.fullpage-story .story-summary {
+	@include font-size($fontsize200);
+	line-height: 1.25rem;
+
+	@include bp(xl) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+	}
+}
+
+// Hero story
 
 .hero-story {
 	position: relative;
 
-	@include bp(m) {
-		background-color: $bluegrey100;
+	@include max-bp(s) {
+		margin-bottom: .5rem;
 	}
 
 	.story-media {
@@ -76,7 +89,43 @@
 		padding-bottom: $baseline;
 	}
 
-	// cover hero
+	// Hero story headings
+
+	.story-heading {
+		@include font-size($fontsize600);
+		line-height: 1.75rem;
+
+		@include bp(m) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+			font-weight: 900;
+		}
+	}
+
+
+	// Featured Hero
+
+	&.featured-hero {
+		padding-bottom: 0;
+		background-color: $bluegrey100;
+
+		.story-header,
+		.story-footer {
+			padding: 0 $baseline;
+
+			@include bp(m) {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+	}
+
+	// Cover Hero
 
 	&.cover-hero {
 		position: relative;
@@ -147,7 +196,7 @@
 		}
 	}
 
-	// focus cover
+	// Focus Cover
 
 	@include max-bp(m) {
 		&.focus-cover {
@@ -175,7 +224,7 @@
 	}
 }
 
-// featured
+// Featured Story
 
 .featured-story {
 
@@ -193,7 +242,7 @@
 	}
 }
 
-// list
+// List Story
 
 .list-story {
 	@include flexbox;
@@ -223,8 +272,8 @@
 
 	.story-heading {
 		@include max-bp(s) {
-			@include font-size($fontsize400);
-			line-height: 1.35rem;
+			@include font-size($fontsize300);
+			line-height: 1.15rem;
 		}
 	}
 
@@ -274,7 +323,7 @@
 	}
 }
 
-// inset
+// Inset Story
 
 .inset-story {
 	position: relative;
@@ -285,6 +334,23 @@
 
 	@include bp(m) {
 		padding: 0;
+	}
+
+	@include bp(l) {
+		background: none;
+		max-height: 425px;
+
+		&:hover {
+
+			.story-media:after {
+				background-color: rgba(38,50,56,.85);
+			}
+
+			.story-summary {
+				opacity: 1;
+				max-height: 300px;
+			}
+		}
 	}
 
 	.story-media {
@@ -338,27 +404,20 @@
 		opacity: 0;
 		overflow: hidden;
 		@include transition(max-height .3s ease-in-out, opacity .2s);
-	}
 
-	@include bp(l) {
-		background: none;
-		max-height: 425px;
+		@include max-bp(m) {
+			display: none;
+		}
 
-		&:hover {
+		@include font-size($fontsize200);
 
-			.story-media:after {
-				background-color: rgba(38,50,56,.85);
-			}
-
-			.story-summary {
-				opacity: 1;
-				max-height: 300px;
-			}
+		@include bp(xl) {
+			@include font-size($fontsize300);
 		}
 	}
 }
 
-// full page
+// Fullpage Story
 
 .fullpage-story {
 	padding: $baseline;

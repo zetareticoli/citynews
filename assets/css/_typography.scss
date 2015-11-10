@@ -157,7 +157,6 @@ dt {
 	word-wrap: break-word;
 }
 
-
 // featured story headings
 
 .featured-story {
@@ -185,15 +184,6 @@ dt {
 	}
 }
 
-// hero story headings
-
-.hero-story .story-heading {
-	@include bp(l) {
-		@include font-size($fontsize900);
-		line-height: 2.5rem;
-		font-weight: 900;
-	}
-}
 
 // cover hero story headings
 
@@ -461,34 +451,13 @@ dt {
 	}
 }
 
-.hero-story .story-summary,
-.fullpage-story .story-summary {
-	@include font-size($fontsize300);
-	line-height: 1.5rem;
-
-	@include bp(xl) {
-		@include font-size($fontsize400);
-		line-height: 1.5rem;
-	}
-}
-
 .featured-sm {
 	.story-summary {
 		@include font-size($fontsize200);
 	}
 }
 
-.inset-story .story-summary {
-	@include max-bp(m) {
-		display: none;
-	}
 
-	@include font-size($fontsize200);
-
-	@include bp(xl) {
-		@include font-size($fontsize300);
-	}
-}
 
 .byline {
 	color: $black700;

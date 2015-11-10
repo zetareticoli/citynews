@@ -611,13 +611,6 @@ dt {
     font-size: 1.25rem;
     line-height: 1.5rem; } }
 
-@media (min-width: 62.5em) {
-  .hero-story .story-heading {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 900; } }
-
 @media (min-width: 75em) {
   .cover-hero .story-heading {
     font-size: 48px;
@@ -821,32 +814,9 @@ dt {
       font-size: 1.375rem;
       line-height: 2rem; } }
 
-.hero-story .story-summary,
-.fullpage-story .story-summary {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5rem; }
-  @media (min-width: 75em) {
-    .hero-story .story-summary,
-    .fullpage-story .story-summary {
-      font-size: 18px;
-      font-size: 1.125rem;
-      line-height: 1.5rem; } }
-
 .featured-sm .story-summary {
   font-size: 14px;
   font-size: 0.875rem; }
-
-.inset-story .story-summary {
-  font-size: 14px;
-  font-size: 0.875rem; }
-  @media (max-width: 62.438em) {
-    .inset-story .story-summary {
-      display: none; } }
-  @media (min-width: 75em) {
-    .inset-story .story-summary {
-      font-size: 16px;
-      font-size: 1rem; } }
 
 .byline {
   color: #757575;
@@ -3444,11 +3414,23 @@ ol, ul {
 .inverted .story-footer {
   padding: 0 1rem; }
 
+.hero-story .story-summary,
+.fullpage-story .story-summary {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+  @media (min-width: 75em) {
+    .hero-story .story-summary,
+    .fullpage-story .story-summary {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+
 .hero-story {
   position: relative; }
-  @media (min-width: 46.25em) {
+  @media (max-width: 46.188em) {
     .hero-story {
-      background-color: #eceff1; } }
+      margin-bottom: .5rem; } }
   .hero-story .story-media {
     width: 100%;
     max-width: none;
@@ -3462,6 +3444,32 @@ ol, ul {
   .hero-story .story-header,
   .hero-story .story-footer {
     padding-bottom: 0.5rem; }
+  .hero-story .story-heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.75rem; }
+    @media (min-width: 46.25em) {
+      .hero-story .story-heading {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 2.5rem; } }
+    @media (min-width: 62.5em) {
+      .hero-story .story-heading {
+        font-size: 36px;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 900; } }
+  .hero-story.featured-hero {
+    padding-bottom: 0;
+    background-color: #eceff1; }
+    .hero-story.featured-hero .story-header,
+    .hero-story.featured-hero .story-footer {
+      padding: 0 0.5rem; }
+      @media (min-width: 46.25em) {
+        .hero-story.featured-hero .story-header,
+        .hero-story.featured-hero .story-footer {
+          padding-left: 1rem;
+          padding-right: 1rem; } }
   .hero-story.cover-hero {
     position: relative; }
     .hero-story.cover-hero .story-header {
@@ -3560,9 +3568,9 @@ ol, ul {
     margin-bottom: 0.125rem; }
   @media (max-width: 46.188em) {
     .list-story .story-heading {
-      font-size: 18px;
-      font-size: 1.125rem;
-      line-height: 1.35rem; } }
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.15rem; } }
   .list-story .story-summary {
     font-size: 14px;
     font-size: 0.875rem;
@@ -3605,6 +3613,15 @@ ol, ul {
   @media (min-width: 46.25em) {
     .inset-story {
       padding: 0; } }
+  @media (min-width: 62.5em) {
+    .inset-story {
+      background: none;
+      max-height: 425px; }
+      .inset-story:hover .story-media:after {
+        background-color: rgba(38, 50, 56, 0.85); }
+      .inset-story:hover .story-summary {
+        opacity: 1;
+        max-height: 300px; } }
   .inset-story .story-media {
     margin-bottom: 0; }
     .inset-story .story-media img {
@@ -3648,16 +3665,16 @@ ol, ul {
     overflow: hidden;
     -webkit-transition: max-height 0.3s ease-in-out, opacity 0.2s;
     -moz-transition: max-height 0.3s ease-in-out, opacity 0.2s;
-    transition: max-height 0.3s ease-in-out, opacity 0.2s; }
-  @media (min-width: 62.5em) {
-    .inset-story {
-      background: none;
-      max-height: 425px; }
-      .inset-story:hover .story-media:after {
-        background-color: rgba(38, 50, 56, 0.85); }
-      .inset-story:hover .story-summary {
-        opacity: 1;
-        max-height: 300px; } }
+    transition: max-height 0.3s ease-in-out, opacity 0.2s;
+    font-size: 14px;
+    font-size: 0.875rem; }
+    @media (max-width: 62.438em) {
+      .inset-story .story-summary {
+        display: none; } }
+    @media (min-width: 75em) {
+      .inset-story .story-summary {
+        font-size: 16px;
+        font-size: 1rem; } }
 
 .fullpage-story {
   padding: 0.5rem; }
