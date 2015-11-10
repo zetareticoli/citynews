@@ -484,3 +484,19 @@
 @media (min-width: 62.5em) {
   .report-entry .entry-map {
     width: 25%; } }
+
+/* ==========================================================================
+  Film Entry 
+  ========================================================================== */
+.film-entry .entry-media {
+  width: 25%;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0; }
+  @media (min-width: 62.5em) {
+    .film-entry .entry-media {
+      width: 15rem; } }
+.film-entry .entry-details {
+  clear: left; }
+  @media (min-width: 46.25em) {
+    .film-entry .entry-details {
+      clear: none; } }

@@ -51,7 +51,14 @@
 	list-style: none;
 }
 
-.inline-list li {
+.u-bordered {
+	> li {
+		border-top: 1px solid $bordercolor;
+		padding: 1rem 0;
+	}
+}
+
+.inline-list > li {
 	display: inline-block;
 }
 

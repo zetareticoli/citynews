@@ -139,10 +139,6 @@ dl {
 	list-style-position: inside;
 }
 
-.entry-content-body > p {
-	font-family: $texttypeface;
-}
-
 strong, 
 dt {
 	font-weight: 700;
@@ -155,6 +151,10 @@ dt {
 /* ==========================================================================
    Text Elements
    ========================================================================== */
+
+.small-text {
+  font-size: 85%;
+}
 
 // Title =====================================================================
 
@@ -260,11 +260,20 @@ dt {
 
 // Content text 
 
-.entry-content-body > p {
-	@include bp(m) {
-		@include font-size($fontsize500);
-		line-height: 2rem;
+.entry-content-body {
+
+	h2, h3, h4, h5, h6 {
+		margin-top: 1rem;
 	}
+
+	p {
+		font-family: $texttypeface;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+			line-height: 2rem;
+		}
+	} 
 }
 
 // Summary
