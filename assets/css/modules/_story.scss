@@ -16,7 +16,7 @@
 		width: auto;
 		max-width: none;
 		float: none;
-		margin: 0 0 $baseline 0;
+		margin-bottom: .5rem;
 	}
 
 	&.right {
@@ -259,7 +259,6 @@
 	&.featured-xl {
 
 		.story-media {
-
 			@include bp(m) {
 				width: 50%;
 				float: left;
@@ -279,7 +278,6 @@
 		width: 25%;
 		height: auto;
 		float: left;
-		margin-right: 1rem;
 
 		@include bp(l) {
 			width: 14rem;

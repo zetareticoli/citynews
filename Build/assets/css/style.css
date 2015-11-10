@@ -3387,7 +3387,7 @@ ol, ul {
       width: auto;
       max-width: none;
       float: none;
-      margin: 0 0 0.5rem 0; } }
+      margin-bottom: .5rem; } }
   .story-media.right {
     float: right;
     margin-left: 0.5rem; }
@@ -3556,8 +3556,7 @@ ol, ul {
   .list-story .story-media {
     width: 25%;
     height: auto;
-    float: left;
-    margin-right: 1rem; }
+    float: left; }
     @media (min-width: 62.5em) {
       .list-story .story-media {
         width: 14rem; } }
