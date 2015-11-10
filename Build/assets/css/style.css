@@ -2806,7 +2806,6 @@ ol, ul {
   Global Styles
   ========================================================================== */
 .module {
-  width: 100%;
   border-top: 3px solid #e0e0e0; }
 
 .has-flex .module {
