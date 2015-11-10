@@ -10,7 +10,7 @@
 	width: 30%;
 	max-width: 80px;
 	float: left;
-	margin-right: 12px;
+	margin-right: .5rem;
 
 	@include bp(m) {
 		width: auto;
@@ -228,6 +228,33 @@
 
 .featured-story {
 
+	// featured story headings
+
+	&.featured-sm {
+		.story-heading {
+			@include bp(m) {
+				@include font-size($fontsize500);
+				line-height: 1.5rem;
+			}
+		}
+	}
+
+	&.featured-lg {
+		.story-heading {
+			@include bp(m) {
+				@include font-size($fontsize500);
+				line-height: 1.5rem;
+			}
+
+			@include bp(l) {
+				@include font-size($fontsize600);
+				line-height: 2rem;
+			}
+		}
+	}
+
+	// featured story media
+
 	&.featured-mid,
 	&.featured-xl {
 
@@ -235,7 +262,6 @@
 
 			@include bp(m) {
 				width: 50%;
-				margin-right: 12px;
 				float: left;
 			}
 		}
