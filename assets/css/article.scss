@@ -314,7 +314,6 @@
 	@include rounded($elementradius);
 
 	@include bp(m) {
-		margin-top: 1rem;
 		margin-bottom: $baseline * 2;
 	}
 
@@ -370,6 +369,8 @@
 		width: 4rem;
 		float: right;
 		margin: 0 0 $baseline $baseline;
+		border: 1px solid $bordercolor;
+		@include box-shadow(0 0 6px $black300);
 
 		@include bp(s) {
 			width: 6rem;
@@ -641,12 +642,17 @@
 .film-entry {
 
 	.entry-media {
-		width: 25%;
+		width: 30%;
 		float: left;
+		margin-left: 0;
+		margin-right: .75rem;
+
+		@include bp(m) {
+			margin-top: 0;    
+		}
 
 		@include bp(l) {
 			width: 15rem;
-			margin-right: 1rem;
 		}
 	}
 

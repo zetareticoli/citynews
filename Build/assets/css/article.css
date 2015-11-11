@@ -247,7 +247,6 @@
   border-radius: 3px; }
   @media (min-width: 46.25em) {
     .detailed-entry-header {
-      margin-top: 1rem;
       margin-bottom: 1rem; } }
   .detailed-entry-header .entry-title {
     margin-bottom: 0.5rem;
@@ -290,7 +289,11 @@
   .detailed-entry-header .entry-media {
     width: 4rem;
     float: right;
-    margin: 0 0 0.5rem 0.5rem; }
+    margin: 0 0 0.5rem 0.5rem;
+    border: 1px solid #e0e0e0;
+    -webkit-box-shadow: 0 0 6px #eeeeee;
+    -moz-box-shadow: 0 0 6px #eeeeee;
+    box-shadow: 0 0 6px #eeeeee; }
     @media (min-width: 30em) {
       .detailed-entry-header .entry-media {
         width: 6rem; } }
@@ -489,12 +492,16 @@
   Film Entry 
   ========================================================================== */
 .film-entry .entry-media {
-  width: 25%;
-  float: left; }
+  width: 30%;
+  float: left;
+  margin-left: 0;
+  margin-right: .75rem; }
+  @media (min-width: 46.25em) {
+    .film-entry .entry-media {
+      margin-top: 0; } }
   @media (min-width: 62.5em) {
     .film-entry .entry-media {
-      width: 15rem;
-      margin-right: 1rem; } }
+      width: 15rem; } }
 .film-entry .entry-details {
   clear: left; }
   @media (min-width: 46.25em) {
