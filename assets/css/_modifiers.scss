@@ -58,8 +58,14 @@
 	}
 }
 
-.inline-list > li {
-	display: inline-block;
+.inline-list {
+	> li {
+		display: inline-block;
+	}
+
+	.inline-list-item {
+		padding-right: .5rem;
+	}
 }
 
 .align-right {

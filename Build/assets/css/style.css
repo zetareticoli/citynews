@@ -4748,6 +4748,8 @@ ol, ul {
 
 .inline-list > li {
   display: inline-block; }
+.inline-list .inline-list-item {
+  padding-right: .5rem; }
 
 .align-right {
   text-align: right; }
