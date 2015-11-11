@@ -3091,7 +3091,8 @@ ol, ul {
     margin-bottom: 0.25rem;
     font-size: 18px;
     font-size: 1.125rem;
-    line-height: 1.15rem; }
+    line-height: 1.15rem;
+    font-weight: 700; }
     @media (min-width: 46.25em) {
       .card .card-heading {
         font-size: 20px;
