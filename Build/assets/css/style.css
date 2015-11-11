@@ -600,7 +600,8 @@ dt {
    Text Elements
    ========================================================================== */
 .small-text {
-  font-size: 85%; }
+  font-size: 85%;
+  line-height: 1.25rem; }
 
 .bordered-title {
   margin-bottom: 1rem;
