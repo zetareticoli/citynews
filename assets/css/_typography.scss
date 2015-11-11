@@ -139,10 +139,6 @@ dl {
 	list-style-position: inside;
 }
 
-.entry-content-body > p {
-	font-family: $texttypeface;
-}
-
 strong, 
 dt {
 	font-weight: 700;
@@ -156,12 +152,17 @@ dt {
    Text Elements
    ========================================================================== */
 
+.small-text {
+  font-size: 85%;
+  line-height: 1.25rem;
+}
+
 // Title =====================================================================
 
 .bordered-title {
 	margin-bottom: 1rem;
 	padding: .5rem .5rem .75rem;
-	border-bottom: 2px solid $bordercolor;
+	border-bottom: 1px solid $bordercolor;
 }
 
 // Module heading title
@@ -260,11 +261,20 @@ dt {
 
 // Content text 
 
-.entry-content-body > p {
-	@include bp(m) {
-		@include font-size($fontsize500);
-		line-height: 2rem;
+.entry-content-body {
+
+	h2, h3, h4, h5, h6 {
+		margin-top: 1rem;
 	}
+
+	p {
+		font-family: $texttypeface;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+			line-height: 2rem;
+		}
+	} 
 }
 
 // Summary

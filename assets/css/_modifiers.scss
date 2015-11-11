@@ -51,8 +51,22 @@
 	list-style: none;
 }
 
-.inline-list li {
-	display: inline-block;
+.u-bordered {
+	> li {
+		border-top: 1px solid $bordercolor;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.inline-list {
+	> li {
+		display: inline-block;
+	}
+
+	.inline-list-item {
+		padding-right: .5rem;
+	}
 }
 
 .align-right {
