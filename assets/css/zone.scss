@@ -1,0 +1,216 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+
+.district-title {
+	margin:0;
+	float:left;
+	display:block;
+	
+	@include bp(l) {
+        margin-bottom:1rem;
+	}
+}
+
+.form-district-desktop {
+    float:right;
+    width:35%;
+		
+	.search-district {
+        width:100%;
+    }
+}
+
+
+.district-search-visited {
+	margin-bottom:1rem;
+	@include clearfix;
+	
+	.district-visited-tab {
+		line-height:2rem;
+		margin:0;
+		@include font-size($fontsize500);
+		
+		@include bp(m) {
+			float:left;
+		}
+	}
+	
+	.district-visited-list-link {
+		list-style: none;
+		padding:0;
+		margin:0 0 1rem;
+		float:left;
+		
+		@include bp(m) {
+			margin:0;
+		}
+		
+		li {
+			line-height:2rem;
+			
+				@include bp(m) {
+					padding:0 .5rem;
+				}
+			
+			a {
+				text-decoration: none;
+                color: $black700;
+				@include font-size($fontsize400);
+				
+				&:hover {
+					color: $black900;
+				}
+			}
+		}	
+	}
+	
+	
+	.form-district-mobile {
+	    float:right;
+		width:100%;
+		
+		@include bp(l) {
+			display:none;
+		}
+		
+	    .search-district {
+		    width:100%;
+	    }
+    }
+}
+
+.alph-filter-list {
+	width: 1rem;
+	padding: 0 2px;
+	float: right;
+	margin-bottom:.5rem;
+	position:relative;
+	
+	@include bp(m) {
+		width: 100%;
+		float: none;
+		padding: inherit;
+	}
+		.alph-list-link {
+			list-style:none;
+			padding:0;
+			margin:0;
+			line-height:1.250rem;
+			
+			&.is-fixed-top-list {
+				position: absolute;
+				width:100%;
+				top:0;
+				
+				@include bp(m) {
+					background-color: $black300;
+					padding:1rem;
+					margin-left:-1rem;
+					width:105%;
+				}
+				@include bp(l) {
+					width:110%;
+				}
+			}
+			
+			@include bp(m) {
+				@include clearfix;
+			}
+	
+			li {
+				padding:0;
+				margin:0;
+				/*margin:0 0 .5rem;
+				padding-bottom:1rem;*/
+				padding-right:.5rem;
+				
+				@include bp(m) {
+					display:inline;
+					margin:0;
+				}
+				
+				a {
+					color:$black700;
+					@include font-size($fontsize200);
+					text-transform:uppercase;
+					cursor:pointer;
+					font-weight:$baseheadingweight;
+					
+					@include bp(m) {
+						@include font-size($fontsize300);
+					}
+					
+					&:hover {
+						text-decotation:none;
+					}				
+				}
+			}
+		}
+	}
+
+.district-group-list {
+	float:left;
+	width:90%;
+	
+	@include bp(m) {
+		width: 85%;
+	}
+	
+	@include bp(l) {
+		width:100%;
+		height:auto;
+		overflow:hidden;
+	}
+		
+	.index-alphabetic-list {
+		width:100%;
+		float:left;
+		border-top: 2px solid $bordercolor;
+		margin-bottom:1rem;
+		font-family:$titleseriftypeface;
+		@include font-size($fontsize900);
+		
+		@include bp(m) {
+			padding-top:1rem;
+			padding-bottom:1rem
+		}
+	}
+	
+	.district-col {
+		margin-bottom:2rem;
+		float:left;
+
+		.district-tab{			
+		}
+		.district-list-link {
+            list-style:none;
+            padding:0;
+            margin:0;		
+				
+            li {
+				padding-bottom:.5rem;
+				margin-bottom:.5rem;
+				border-bottom: 1px solid $bordercolor;
+				
+				@include bp(m) {
+					border:none;
+				}
+				
+                a {
+                    text-decoration: none;
+                    color: $black700;
+                    @include font-size($fontsize400);
+					
+					
+					&:hover {
+						color: $black900;
+					}
+                }	
+            }
+		}
+	}
+}
