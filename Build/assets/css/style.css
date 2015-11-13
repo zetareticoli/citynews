@@ -654,11 +654,10 @@ dt {
 .section-title {
   position: relative;
   margin-bottom: 0.5rem;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
   font-weight: normal;
   font-size: 18px;
   font-size: 1.125rem;
-  text-transform: uppercase;
   color: #757575; }
   @media (min-width: 46.25em) {
     .section-title {
