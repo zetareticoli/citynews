@@ -653,35 +653,28 @@ dt {
 
 .section-title {
   position: relative;
-  margin-bottom: 0.5rem;
-  font-weight: normal;
+  padding: 0.5rem 0;
+  border-top-width: 2px;
+  border-top-style: solid; }
+  @media (min-width: 62.5em) {
+    .section-title {
+      padding: .75rem 0; } }
+
+.section-heading {
+  margin: 0;
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
   font-size: 18px;
   font-size: 1.125rem;
-  color: #757575; }
+  font-weight: normal;
+  color: #546e7a; }
   @media (min-width: 46.25em) {
-    .section-title {
-      margin-bottom: 1rem;
+    .section-heading {
       font-size: 20px;
       font-size: 1.25rem; } }
   @media (min-width: 75em) {
-    .section-title {
+    .section-heading {
       font-size: 24px;
       font-size: 1.5rem; } }
-  .section-title:before {
-    content: '';
-    display: block;
-    width: 3rem;
-    height: .35rem;
-    background-color: #cfd8dc; }
-
-.section-heading {
-  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  font-size: 1.125rem; }
-  @media (min-width: 62.5em) {
-    .section-heading {
-      font-size: 18px;
-      font-size: 1.125rem; } }
 
 .entry-title {
   margin-bottom: 0.5rem;
