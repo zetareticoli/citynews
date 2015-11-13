@@ -221,7 +221,6 @@ dt {
 .section-title {
 	position: relative;
 	margin-bottom: $baseline;
-	font-family: $titleseriftypeface;
 	font-weight: normal;
 	@include font-size($fontsize400);
 	color: $black700;
@@ -241,6 +240,15 @@ dt {
 		width: 3rem;
 		height: .35rem;
 		background-color: $bluegrey200;
+	}
+}
+
+.section-heading {
+	font-family: $titleseriftypeface;
+	@include font-size($fontsize400);
+
+	@include bp(l) {
+		@include font-size($fontsize500);
 	}
 }
 
