@@ -9,12 +9,10 @@
 
 .story-media {
 	width: 5rem;
-	float: left;
 
 	@include bp(m) {
 		width: auto;
 		max-width: none;
-		float: none;
 		margin-bottom: .5rem;
 	}
 
@@ -295,6 +293,7 @@
 	.story-media {
 		@include max-bp(s) {
 			margin-right: .5rem;
+			float: left;
 		}
 	}
 
@@ -341,15 +340,13 @@
 // List Story
 
 .list-story {
-	@include flexbox;
-	@include flex-flow(row nowrap);
-	align-items: flex-start;
 
 	@include bp(l) {
 		padding-bottom: 1rem;
 	}
 
 	.story-media {
+		float: left;
 		margin-right: .5rem;
 
 		@include bp(m) {
