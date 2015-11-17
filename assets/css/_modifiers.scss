@@ -52,10 +52,29 @@
 }
 
 .u-bordered {
-	> li {
-		border-top: 1px solid $bordercolor;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+	> .l-list-item,
+	> .l-row-item {
+		border-bottom: 1px solid $bordercolor;
+		margin-bottom: .5rem;
+		padding-bottom: $baseline;
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+
+	@include bp(m) {
+		> .l-row-item {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: 0;
+			border-right: 1px solid $bordercolor;
+
+			&:last-child {
+				border-right: 0;
+			}
+		}
 	}
 }
 

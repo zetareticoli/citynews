@@ -21,10 +21,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $headingstypeface;
 	font-style: normal;
 	margin-bottom: $baseline * 2;
 }
+
+h1, h2, h3 {
+	font-family: $headingstypeface;
+}
+
+h4, h5, h6 {
+	font-family: $smallheadings;
+}
+
 
 h2, h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
@@ -114,7 +122,6 @@ h6 {
 }
 
 p,
-span,
 ol,
 ul,
 dl,
@@ -257,6 +264,10 @@ dt {
 	}
 }
 
+.heading-divider {
+	color: $black500;
+}
+
 // Inline Text =====================================================================
 
 // Content text 
@@ -291,7 +302,7 @@ dt {
 	margin-bottom: 0;
 
 	@include bp(m) {
-		@include font-size(22);
+		@include font-size($fontsize600);
 		line-height: 2rem;
 	}
 }

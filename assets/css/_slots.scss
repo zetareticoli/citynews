@@ -8,13 +8,16 @@
 }
 
 .slots {
-	margin: $baseline * 2 0;
+	padding: $baseline;
 	background: $black200;
-	border: 1px solid $black300;
+
+	@include max-bp(s) {
+		margin-bottom: $baseline;
+	}
 }
 
 .slot {
-	margin: $baseline;
+	margin: 1rem;
 }
 
 

@@ -7,17 +7,13 @@
   ========================================================================== */
 
 .module {
-	border-top: 3px solid $bordercolor;
+	border-top: 2px solid $bordercolor;
 }
 
 .has-flex {
 	.module {
 		@include flexbox;
 		@include flex-flow(column nowrap);
-
-		.l-list {
-			@include flex(4 1 auto);
-		}
 	}
 }
 

@@ -96,7 +96,6 @@ ol, ul {
 @include bp(m) {
 
 	// flexbox enabled from tablet and up devices
-
 	.has-flex {
 
 		.flx-container {
@@ -151,31 +150,13 @@ ol, ul {
 	}
 }
 
-.l-row {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+.l-list-item {
+	margin-bottom: .5rem;
 
-
-// Slice Item
-
-.slice-item {
-	padding-bottom: $baseline;
-
-	@include bp(m) {
-		padding-bottom: $baseline * 2;
-	}
-	
-	@include bp(xl) {
-		padding-bottom: $baseline * 3;
+	@include bp(l) {
+		margin-bottom: 1rem;
 	}
 }
-
-	.focus-section .slice-item,
-	.module .slice-item {
-		padding-bottom: $baseline;
-	}
 
 // Layout Masonry ===============================================================
 
@@ -418,7 +399,6 @@ ol, ul {
 // Headlines ===============================================================
 
 .headlines-section {
-	margin-bottom: 0;
 
 	.headlines-list {
 		@include bp(l) {
@@ -442,9 +422,12 @@ ol, ul {
 }
 
 .headlines-main {
+	border-bottom: 1px solid $bordercolor;
+
 	@include max-bp(s) {
-		.newslist-module {
-			display: none;
+
+		.latestnews-module {
+			display: none !important;
 		}
 	}
 }
@@ -484,8 +467,11 @@ ol, ul {
 }
 
 .newslist-main {
+	margin-bottom: 1rem;
+
 	@include bp(m) {
 		width: 60%;
+		margin-bottom: 0;
 	}
 
 	@include bp(l) {
@@ -494,6 +480,9 @@ ol, ul {
 }
 
 .newslist-aside {
+	.l-list-item {
+		margin-bottom: $baseline;
+	}
 	@include bp(m) {
 		width: 324px;
 	}
