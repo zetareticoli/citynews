@@ -1884,8 +1884,10 @@ ol, ul {
 .l-m-item {
   /* Masonry bricks or child elements */
   width: 100%;
-  display: inline-block;
-  margin: 0 0 1rem; }
+  margin: 0 0 1rem;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid; }
 
 /* ==========================================================================
   Site Header
