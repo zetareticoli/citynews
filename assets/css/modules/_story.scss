@@ -8,6 +8,11 @@
 .story-media {
 	width: 5rem;
 	float: left;
+	margin-right: .5rem;
+
+	@include bp(m) {
+		margin-right: .75rem;
+	}
 
 	&.align-right {
 		float: right;
@@ -19,22 +24,36 @@
 		margin-right: $baseline;
 	}
 
-	&.media-sm {
-		width: 8rem;
-	}
-
-	&.media-mid {
-		width: 14rem;
-	}
-
-	&.media-half {
-		width: 50%;
-	}
+	// Media Sizes
 
 	&.media-full {
 		width: 100%;
+		margin-bottom: $baseline;
 	}
 
+	@include bp(m) {
+		&.media-half {
+			width: 50%;			
+		}
+	}
+
+	@include bp(l) {
+		&.media-sm {
+			width: 8rem;
+		}
+
+		&.media-mid {
+			width: 14rem;
+		}
+	}
+
+	// Responsive Media Sizes
+
+	@include max-bp(s) {
+		&.bp-xs-media {
+			width: 5rem;
+		}
+	}
 }
 
 .story-heading,
@@ -67,6 +86,8 @@
 		margin-right: $gutterwidth / 2;
 		vertical-align: middle;
 		top: -1px;
+		width: 6px;
+		height: 6px;
 
 		@include bp(m) {
 			width: 8px;
@@ -95,18 +116,6 @@
 }
 
 // Templates ===============================================================
-
-// Common styles to all templates
-
-.list-story .story-media,
-.feature-mid .story-media,
-.featured-lg .story-media {
-	margin-right: .5rem;
-
-	@include bp(m) {
-		margin-right: .75rem;
-	}
-}
 
 // Hero story
 
@@ -305,6 +314,67 @@
 	}
 }
 
+// Fullpage Hero
+
+.fullpage-hero {
+	padding: $baseline;
+	border-top: 1px solid $bordercolor;
+	border-bottom: 1px solid $bordercolor;
+
+	@include bp(m) {
+		padding: 1rem;
+		@include clearfix;
+	}
+
+	.story-media {
+		margin-right: 0;
+		margin-bottom: 0;
+		width: 100%;
+
+		@include bp(m) {
+			float: right;
+			width: 50%;
+		}
+
+		@include bp(l) {
+			width: 23.5rem;
+		}
+	}
+
+	.story-heading {
+		font-family: $titleseriftypeface;
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+
+		@include bp(m) {
+			@include font-size($fontsize800);
+			line-height: 2.5rem;
+		}
+
+		@include bp(l) {
+			@include font-size($fontsize900);
+			line-height: 2.5rem;
+		}
+	}
+
+	.highlight-kicker {
+		font-weight: 900;
+
+		@include bp(m) {
+			@include font-size($fontsize600);
+		}
+	}
+
+	&.fullpage-hero.inverted,
+	&.featured-fullpage {
+		border: 0;
+	}
+
+	&.featured-fullpage {
+		background-color: $bluegrey100;
+	}
+}
+
 // Featured Story Sizes
 
 .featured-story {
@@ -354,10 +424,7 @@
 		}
 	}
 
-	// featured story media
-
 	&.featured-xl {
-
 		.story-media {
 			@include bp(m) {
 				width: 50%;
@@ -371,21 +438,11 @@
 // List Story
 
 .list-story {
-	@include flexbox;
 
 	.story-media {
-
-		@include bp(l) {
-			width: 14rem;
+		@include bp(m) {
+			margin-bottom: $baseline;			
 		}
-	}
-
-	.story-content {
-		@include flex(1);
-	}
-
-	.byline {
-		margin-bottom: $gutterwidth / 8;
 	}
 
 	.story-footer {
@@ -409,15 +466,6 @@
 
 			.location-label {
 				@include font-size($fontsize100);
-			}
-		}
-	}
-
-	&.list-story-sm {
-
-		.story-media {
-			@include bp(l) {
-				width: 8rem;
 			}
 		}
 	}
@@ -526,27 +574,6 @@
 	}
 }
 
-// Fullpage Story
-
-.fullpage-story {
-	padding: $baseline;
-
-	@include bp(m) {
-		padding: $baseline * 2;
-	}
-
-	@include bp(l) {
-		@include clearfix;
-		padding: $baseline * 3;
-
-		.story-media {
-			width: 50%;
-			margin-left: $baseline * 3;
-			float: right;
-		}
-	}
-}
-
 // Sublinks ===============================================================
 
 .sublinks {
@@ -575,6 +602,7 @@
 // Cover hero for preview headline sublink
 
 .cover-hero .sublinks {
+	padding-top: $baseline;
 	border-top: 1px solid $bluegrey900;
 
 	@include bp(m) {
@@ -718,40 +746,6 @@
 			@include bp(l) {
 				@include font-size($fontsize600);
 			}
-		}
-	}
-}
-
-// Stories inside Focus Template ===================================
-
-.focus-section {
-	
-	.hero-story .story-heading {
-
-		@include bp(l) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
-	}
-
-	.hero-story.fullpage-story .story-heading {
-		font-family: $titleseriftypeface;
-		@include font-size($fontsize500);
-		line-height: 1.5rem;
-
-		@include bp(m) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
-
-		@include bp(l) {
-			@include font-size($fontsize900);
-			line-height: 2.5rem;
-		}
-
-		@include bp(xl) {
-			@include font-size($fontsize1000);
-			line-height: 3.5rem;
 		}
 	}
 }

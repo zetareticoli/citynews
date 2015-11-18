@@ -59,21 +59,25 @@
 		padding-bottom: $baseline;
 
 		&:last-child {
-			padding-bottom: 0;
+			margin-bottom: 0;
 			border-bottom: 0;
+			padding-bottom: 0;
 		}
 	}
+	/*
+	> .l-list-item:last-child {
+		margin-bottom: 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}*/
 
 	@include bp(m) {
 		> .l-row-item {
 			margin-bottom: 0;
 			padding-bottom: 0;
 			border-bottom: 0;
-			border-right: 1px solid $bordercolor;
-
-			&:last-child {
-				border-right: 0;
-			}
 		}
 	}
 }
