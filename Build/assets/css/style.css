@@ -1086,7 +1086,7 @@ time {
 .btn,
 a.btn,
 .dropdown-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "SegoeUI", Arial, sans-serif;
   color: #616161; }
 
 .btn,
@@ -1122,8 +1122,8 @@ a.btn {
 
 .btn-sm {
   padding: .45rem .5rem;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: .875rem; }
 
 .btn-lg {
@@ -1382,6 +1382,32 @@ a.light-btn {
   position: absolute;
   top: 0;
   right: 0; }
+
+.share-btn,
+a.share-btn {
+  color: white; }
+  .share-btn:hover,
+  a.share-btn:hover {
+    color: white; }
+  .share-btn .facebook-icon,
+  .share-btn .twitter-icon,
+  .share-btn .whatsapp-icon,
+  a.share-btn .facebook-icon,
+  a.share-btn .twitter-icon,
+  a.share-btn .whatsapp-icon {
+    fill: #fafafa; }
+  .share-btn .btn-label,
+  a.share-btn .btn-label {
+    margin-left: .5rem; }
+
+.facebook-share-btn {
+  background-color: #3b5998; }
+
+.twitter-share-btn {
+  background-color: #55acee; }
+
+.whatsapp-share-btn {
+  background-color: #43d854; }
 
 /* ==========================================================================
   Forms
@@ -3761,17 +3787,22 @@ ol, ul {
   .meta-social:after {
     clear: both; }
 
-.meta-social .social-item {
-  display: inline;
-  list-style: none;
-  margin: 0 0 0 0;
-  padding: 0; }
-.meta-social .social-item .icon {
-  width: 32px;
-  height: 32px; }
-.meta-social.bottom-social {
-  float: none;
-  width: 100%; }
+.meta-social .social-share {
+  width: 50%;
+  float: left; }
+  @media (min-width: 46.25em) {
+    .meta-social .social-share {
+      padding-right: 1rem;
+      text-align: right; } }
+  @media (min-width: 75em) {
+    .meta-social .social-share {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-right: 0;
+      text-align: left; } }
+.meta-social.bottom-social .social-share {
+  width: 100%;
+  text-align: left; }
 .meta-social .social-counter .number {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-weight: 700;

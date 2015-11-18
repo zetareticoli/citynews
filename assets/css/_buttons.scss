@@ -7,7 +7,7 @@
 .btn,
 a.btn,
 .dropdown-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $alttexttypeface;
 	color: $black800;
 }
 
@@ -54,7 +54,7 @@ a.btn {
 
 .btn-sm {
 	padding: .45rem .5rem;
-	@include font-size($fontsize100);
+	@include font-size($fontsize200);
 	line-height: .875rem;
 }
 
@@ -385,3 +385,36 @@ a.light-btn {
 	top: 0;
 	right: 0;
 }
+
+// Social Buttons Style =============================================
+
+.share-btn,
+a.share-btn {
+	color: white;
+
+	&:hover {
+		color: white;
+	}
+
+	.facebook-icon,
+	.twitter-icon,
+	.whatsapp-icon {
+		fill: $black100;
+	}
+
+	.btn-label {
+		margin-left: .5rem;
+	}
+}
+
+.facebook-share-btn {
+	background-color: $facebook;
+}
+
+.twitter-share-btn{
+	background-color: $twitter;
+}
+
+.whatsapp-share-btn {
+	background-color: #43d854;
+}	
