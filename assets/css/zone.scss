@@ -95,62 +95,89 @@
 		float: none;
 		padding: inherit;
 	}
-		.alph-list-link {
-			list-style:none;
+	
+	.affix{
+		position: fixed !important;
+		top:0 !important;
+		
+		@include bp(m) {
+			width:100%;
+			background-color:$black300;
+			/*left:0;*/
+			padding:1rem !important;
+		}
+		
+		@include bp(l) {
+			width:1000px;
+			margin:0 auto;
+		}
+		
+		@include bp(xl) {
+			width:1188px;
+			/*left:81px;*/
+		}
+	}
+		
+	.alph-list-link-mobile {
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height:1.250rem;
+		
+		@include bp(m) {
+			display: none;
+		}
+	
+		li {
 			padding:0;
 			margin:0;
-			line-height:1.250rem;
-			
-			&.is-fixed-top-list {
-				position: absolute;
-				width:100%;
-				top:0;
+			padding-right:.5rem;
 				
-				@include bp(m) {
-					background-color: $black300;
-					padding:1rem;
-					margin-left:-1rem;
-					width:105%;
-				}
-				@include bp(l) {
-					width:110%;
-				}
-			}
-			
-			@include bp(m) {
-				@include clearfix;
-			}
-	
-			li {
-				padding:0;
-				margin:0;
-				/*margin:0 0 .5rem;
-				padding-bottom:1rem;*/
-				padding-right:.5rem;
-				
-				@include bp(m) {
-					display:inline;
-					margin:0;
-				}
-				
-				a {
-					color:$black700;
-					@include font-size($fontsize200);
-					text-transform:uppercase;
-					cursor:pointer;
-					font-weight:$baseheadingweight;
+			a {
+				color:$black700;
+				@include font-size($fontsize200);
+				text-transform:uppercase;
+				cursor:pointer;
+				font-weight:$baseheadingweight;
 					
-					@include bp(m) {
-						@include font-size($fontsize300);
-					}
-					
-					&:hover {
-						text-decotation:none;
-					}				
-				}
+				&:hover {
+					text-decotation:none;
+				}				
 			}
 		}
 	}
+	.alph-list-link-desktop {
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height:1.250rem;
+		@include clearfix;
+		display:none;
+
+		@include bp(m) {
+			display:block;
+		}		
+	
+		li {
+			padding:0;
+			margin:0;
+			display:inline;
+			padding-right:.5rem;
+					
+			a {
+				color:$black700;
+				@include font-size($fontsize300);
+				text-transform:uppercase;
+				cursor:pointer;
+				font-weight:$baseheadingweight;
+					
+				&:hover {
+					text-decotation:none;
+				}				
+			}
+		}
+	}
+}
 
 .district-group-list {
 	float:left;
@@ -171,6 +198,7 @@
 		float:left;
 		border-top: 2px solid $bordercolor;
 		margin-bottom:1rem;
+		padding-top:.5rem;
 		font-family:$titleseriftypeface;
 		@include font-size($fontsize900);
 		
@@ -192,9 +220,9 @@
             margin:0;		
 				
             li {
-				padding-bottom:.5rem;
+				padding-top:.5rem;
 				margin-bottom:.5rem;
-				border-bottom: 1px solid $bordercolor;
+				border-top: 1px solid $bordercolor;
 				
 				@include bp(m) {
 					border:none;

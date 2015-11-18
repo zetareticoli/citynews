@@ -1,6 +1,32 @@
 $(document).ready(function(){
 
-	$(window).on('scroll', function(){
+	$(window).on( 'resize scroll', function()
+	{
+		$('.alph-list-link-mobile').affix
+		({	 
+		offset: 
+	 		{
+				top: function() { return $('.alph-filter-list').offset().top; },
+				bottom: function(){ return $('.site-footer').outerHeight() + $('.back-to-top-link').outerHeight();}
+	 		}			  	
+	});
+	
+	$('.alph-list-link-desktop').affix
+		({	 
+		offset: 
+	 		{
+				top: function() { return $('.alph-filter-list').offset().top; },
+				bottom: function(){ return $('.site-footer').outerHeight() + $('.back-to-top-link').outerHeight();}
+	 		}			  	
+	});
+	
+		
+		
+		$('.alph-list-link-desktop').css( 'left', $('.main-content').offset().left );
+	});
+    
+    
+    /*$(window).on('scroll', function(){
 		(!window.requestAnimationFrame) ? fixContent() : window.requestAnimationFrame(fixContent);
 	});
 
@@ -8,7 +34,7 @@ $(document).ready(function(){
 		var offsetTop = $('.main-content').offset().top,
 			scrollTop = $(window).scrollTop();
 		( scrollTop >= offsetTop ) ? $('.main-content').addClass('is-fixed') : $('.main-content').removeClass('is-fixed');
-	}
+	}*/
 
 	//mobile nav - open/close navigation
 	$('.mobile-nav-trigger').on('click', function(event){
