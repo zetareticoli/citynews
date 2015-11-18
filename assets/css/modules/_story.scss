@@ -43,7 +43,7 @@
 		}
 
 		&.media-mid {
-			width: 14rem;
+			width: 18rem;
 		}
 	}
 
@@ -446,11 +446,6 @@
 	}
 
 	.story-footer {
-		display: none;
-
-		@include bp(m) {
-			display: block;
-		}
 
 		.byline {
 			margin: 1rem 0 .5rem;

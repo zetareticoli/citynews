@@ -44,6 +44,11 @@
 
 .slots-headlines {
 	@include flexbox;
+	margin-top: 1rem;
+
+	@include bp(l) {
+		margin-top: 0;
+	}
 
 	.l-list {
 		margin: 0 auto;
