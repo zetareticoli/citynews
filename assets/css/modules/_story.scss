@@ -43,6 +43,12 @@
 		}
 
 		&.media-mid {
+			width: 14rem;
+		}
+	}
+
+	@include bp(xl) {
+		&.media-mid {
 			width: 18rem;
 		}
 	}

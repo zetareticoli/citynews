@@ -3276,6 +3276,9 @@ ol, ul {
     .story-media.media-sm {
       width: 8rem; }
     .story-media.media-mid {
+      width: 14rem; } }
+  @media (min-width: 75em) {
+    .story-media.media-mid {
       width: 18rem; } }
   @media (max-width: 46.188em) {
     .story-media.bp-xs-media {
