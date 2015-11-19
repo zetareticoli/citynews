@@ -129,6 +129,10 @@
 	margin-right: -$baseline;
 }
 
+.timestamp-icon {
+	fill: $black500;
+}
+
 .has-children > a::before, .has-children > a::after, .go-back:before, .go-back:after {
 	/* arrow icon in CSS - for element with nested unordered lists */
 	content: '';

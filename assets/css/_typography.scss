@@ -152,7 +152,8 @@ dt {
 }
 
 .middot {
-	margin: 0 4px;
+	color: $black500;
+	margin: 0 2px;
 }
 
 /* ==========================================================================
@@ -362,9 +363,9 @@ dt {
 	}
 
 .location-label {
-	font-family: $texttypeface;
-	@include font-size($fontsize200);
-	font-weight: 900;
+	font-family: $alttexttypeface;
+	@include font-size($fontsize100);
+	font-weight: 700;
 
 	> .link {
 		color: $bluegrey500;
@@ -373,13 +374,6 @@ dt {
 			color: $bluegrey600;
 		}
 	}
-}
-
-h5.location-label {
-	margin: 1.5rem 0 .5rem;
-	padding-bottom: .5rem;
-	border-bottom: 3px solid $bordercolor;
-	@include font-size($fontsize300);
 }
 
 // Kicker
@@ -479,6 +473,7 @@ time {
 
 .timestamp {
 	font-family: $alttexttypeface;
+	@include font-size($fontsize100);
 }
 
 .datestamp {
