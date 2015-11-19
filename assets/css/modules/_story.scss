@@ -136,10 +136,6 @@
 		margin-right: .5rem;
 		margin-bottom: .5rem;
 
-		@include bp(m) {
-			margin-bottom: 1rem;
-		}
-
 		img {
 			width: 100%;
 		}
@@ -155,9 +151,7 @@
 		}
 
 		@include bp(l) {
-			@include font-size(40);
-			line-height: 3rem;
-			font-weight: 900;
+			@include font-size($fontsize900);
 		}
 	}
 
@@ -172,7 +166,6 @@
 		}
 
 		&:before {
-
 			@include bp(l) {
 				width: 12px;
 				height: 12px;
@@ -223,6 +216,7 @@
 			position: relative;
 			padding: 0;
 			width: 100%;
+			float: left;
 		}
 
 		.story-footer {
@@ -238,13 +232,6 @@
 			@include bp(xl) {
 				margin-right: $baseline * 3;
 				margin-left: $baseline * 3;
-			}
-		}
-
-		.story-heading {
-			@include bp(xl) {
-				@include font-size($fontsize1000);
-				line-height: 3rem;
 			}
 		}
 
@@ -292,29 +279,51 @@
 		}
 	}
 
-	// Focus Cover
+	// focus cover
 
-	@include max-bp(m) {
-		&.focus-cover {
+	&.focus-cover {
+		border-bottom: 1px solid $bordercolor;
 
-			.story-media:after {
+		@include bp(m) {
+			border-bottom: 0;
+		}
+
+		@include bp(l) {
+			background-color: $bluegrey1000;
+		}
+
+		.story-media {
+			margin-bottom: .25rem;
+
+			@include bp(l) {
+				margin-bottom: 0;
+			}
+
+			&:after {
 				display: none;
 
 				@include bp(l) {
 					display: block;
 				}
 			}
+		}
 
-			.story-heading {
-				position: relative;
+		.story-heading {
+			position: relative;
+			padding: 0;
 
-				@include bp(l) {
-					position: absolute;
-				}
+			@include bp(l) {
+				position: absolute;
+				padding: 0 1rem $baseline;
+				@include font-size($fontsize900);
+				font-weight: 900;
 			}
+		}
 
-			.link .story-heading {
-				color: $black900;
+		.link {
+
+			@include bp(l) {
+				color: white;
 			}
 		}
 	}

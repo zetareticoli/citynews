@@ -25,14 +25,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: $baseline * 2;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: $headingstypeface;
 }
 
-h4, h5, h6 {
-	font-family: $smallheadings;
+@include bp(l) {
+	h4, h5, h6 {
+		font-family: $smallheadings;
+	}
 }
-
 
 h2, h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
@@ -249,7 +250,6 @@ dt {
 
 	.link:hover {
 			color: $bluegrey800;
-			text-decoration: none;
 		}
 	}	
 

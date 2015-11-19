@@ -481,12 +481,12 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   margin-bottom: 1rem; }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
-h4, h5, h6 {
-  font-family: "Neue Haas Grotesk W01", Helvetica, Arial, sans-serif; }
-
+@media (min-width: 62.5em) {
+  h4, h5, h6 {
+    font-family: "Neue Haas Grotesk W01", Helvetica, Arial, sans-serif; } }
 h2, h3, h4, h5, h6 {
   font-weight: 700; }
 
@@ -676,8 +676,7 @@ dt {
     color: #546e7a; }
     .section-heading .link:hover,
     .section-heading .link .link:hover {
-      color: #455a64;
-      text-decoration: none; }
+      color: #455a64; }
   @media (min-width: 46.25em) {
     .section-heading {
       font-size: 20px;
@@ -3337,9 +3336,6 @@ ol, ul {
   .hero-story .story-media {
     margin-right: .5rem;
     margin-bottom: .5rem; }
-    @media (min-width: 46.25em) {
-      .hero-story .story-media {
-        margin-bottom: 1rem; } }
     .hero-story .story-media img {
       width: 100%; }
   .hero-story .story-heading {
@@ -3353,10 +3349,8 @@ ol, ul {
         line-height: 2.5rem; } }
     @media (min-width: 62.5em) {
       .hero-story .story-heading {
-        font-size: 40px;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        font-weight: 900; } }
+        font-size: 36px;
+        font-size: 2.25rem; } }
   .hero-story .story-subheading {
     font-size: 20px;
     font-size: 1.25rem;
@@ -3398,7 +3392,8 @@ ol, ul {
     .hero-story.cover-hero .story-header {
       position: relative;
       padding: 0;
-      width: 100%; }
+      width: 100%;
+      float: left; }
     .hero-story.cover-hero .story-footer {
       padding: 0.5rem 0;
       margin-right: 0.5rem;
@@ -3411,11 +3406,6 @@ ol, ul {
         .hero-story.cover-hero .story-footer {
           margin-right: 1.5rem;
           margin-left: 1.5rem; } }
-    @media (min-width: 75em) {
-      .hero-story.cover-hero .story-heading {
-        font-size: 48px;
-        font-size: 3rem;
-        line-height: 3rem; } }
     .hero-story.cover-hero .story-media {
       position: relative; }
       .hero-story.cover-hero .story-media img {
@@ -3444,21 +3434,37 @@ ol, ul {
           padding: 0 1.5rem; } }
     .hero-story.cover-hero .story-footer .story-subheading:last-child {
       margin-bottom: 16px; }
-  @media (max-width: 62.438em) {
-    .hero-story.focus-cover .story-media:after {
-      display: none; } }
-  @media (max-width: 62.438em) and (min-width: 62.5em) {
-    .hero-story.focus-cover .story-media:after {
-      display: block; } }
-  @media (max-width: 62.438em) {
+  .hero-story.focus-cover {
+    border-bottom: 1px solid #e0e0e0; }
+    @media (min-width: 46.25em) {
+      .hero-story.focus-cover {
+        border-bottom: 0; } }
+    @media (min-width: 62.5em) {
+      .hero-story.focus-cover {
+        background-color: #263238; } }
+    .hero-story.focus-cover .story-media {
+      margin-bottom: .25rem; }
+      @media (min-width: 62.5em) {
+        .hero-story.focus-cover .story-media {
+          margin-bottom: 0; } }
+      .hero-story.focus-cover .story-media:after {
+        display: none; }
+        @media (min-width: 62.5em) {
+          .hero-story.focus-cover .story-media:after {
+            display: block; } }
     .hero-story.focus-cover .story-heading {
-      position: relative; } }
-  @media (max-width: 62.438em) and (min-width: 62.5em) {
-    .hero-story.focus-cover .story-heading {
-      position: absolute; } }
-  @media (max-width: 62.438em) {
-    .hero-story.focus-cover .link .story-heading {
-      color: #424242; } }
+      position: relative;
+      padding: 0; }
+      @media (min-width: 62.5em) {
+        .hero-story.focus-cover .story-heading {
+          position: absolute;
+          padding: 0 1rem 0.5rem;
+          font-size: 36px;
+          font-size: 2.25rem;
+          font-weight: 900; } }
+    @media (min-width: 62.5em) {
+      .hero-story.focus-cover .link {
+        color: white; } }
 
 .fullpage-hero {
   padding: 0.5rem;
@@ -4274,36 +4280,60 @@ ol, ul {
 .mint-fill {
   fill: #20C99E; }
 
+.theme-yellow .inverted .story-heading .link:hover,
 .theme-yellow .inverted .block-link:hover,
 .theme-yellow .inverted .block-link:hover .story-heading,
 .theme-yellow .theme-inverted .block-link:hover .story-heading {
   color: #FFBE26; }
 
+.theme-blue .inverted .story-heading .link:hover,
 .theme-blue .inverted .block-link:hover,
 .theme-blue .inverted .block-link:hover .story-heading,
 .theme-blue .theme-inverted .block-link:hover .story-heading {
   color: #3277C7; }
 
+.theme-red .inverted .story-heading .link:hover,
 .theme-red .inverted .block-link:hover,
 .theme-red .inverted .block-link:hover .story-heading,
 .theme-red .theme-inverted .block-link:hover .story-heading {
   color: #F2463D; }
 
+.theme-green .inverted .story-heading .link:hover,
 .theme-green .inverted .block-link:hover,
 .theme-green .inverted .block-link:hover .story-heading,
 .theme-green .theme-inverted .block-link:hover .story-heading {
   color: #50AE55; }
 
+.theme-pink .inverted .story-heading .link:hover,
 .theme-pink .inverted .block-link:hover,
 .theme-pink .inverted .block-link:hover .story-heading,
 .theme-pink .theme-inverted .block-link:hover .story-heading {
   color: #F291B2; }
 
+.theme-purple .inverted .story-heading .link:hover,
 .theme-purple .inverted .block-link:hover,
 .theme-purple .inverted .block-link:hover .story-heading,
 .theme-purple .theme-inverted .block-link:hover .story-heading {
   color: #B75DC7; }
 
+@media (min-width: 62.5em) {
+  .theme-yellow .focus-cover .story-heading .link:hover {
+    color: #FFBE26; }
+
+  .theme-blue .focus-cover .story-heading .link:hover {
+    color: #3277C7; }
+
+  .theme-red .focus-cover .story-heading .link:hover {
+    color: #F2463D; }
+
+  .theme-green .focus-cover .story-heading .link:hover {
+    color: #50AE55; }
+
+  .theme-pink .focus-cover .story-heading .link:hover {
+    color: #F291B2; }
+
+  .theme-purple .focus-cover .story-heading .link:hover {
+    color: #F291B2; } }
 /* ==========================================================================
    Theme Inverted
    ========================================================================== */
@@ -4687,6 +4717,7 @@ ol, ul {
   text-align: left; }
 
 .has-border-bottom {
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #e0e0e0; }
 
 .is-animated.mobile-nav {

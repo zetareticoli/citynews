@@ -28,40 +28,67 @@
 
 // Theme Colors for hover on block links ===============================================================
 
+.theme-yellow .inverted .story-heading .link:hover,
 .theme-yellow .inverted .block-link:hover,
 .theme-yellow .inverted .block-link:hover .story-heading,
 .theme-yellow .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-yellow;
 }
 
+.theme-blue .inverted .story-heading .link:hover,
 .theme-blue .inverted .block-link:hover,
 .theme-blue .inverted .block-link:hover .story-heading,
 .theme-blue .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-blue;
 }
 
+.theme-red .inverted .story-heading .link:hover,
 .theme-red .inverted .block-link:hover,
 .theme-red .inverted .block-link:hover .story-heading,
 .theme-red .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-red;
 }
 
+.theme-green .inverted .story-heading .link:hover,
 .theme-green .inverted .block-link:hover,
 .theme-green .inverted .block-link:hover .story-heading,
 .theme-green .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-green;
 }
 
+.theme-pink .inverted .story-heading .link:hover,
 .theme-pink .inverted .block-link:hover,
 .theme-pink .inverted .block-link:hover .story-heading,
 .theme-pink .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-pink;
 }
 
+.theme-purple .inverted .story-heading .link:hover,
 .theme-purple .inverted .block-link:hover,
 .theme-purple .inverted .block-link:hover .story-heading,
 .theme-purple .theme-inverted .block-link:hover .story-heading {
 	color: $b-c-purple;
+}
+
+@include bp(l) {
+	.theme-yellow .focus-cover .story-heading .link:hover  {
+		color: $b-c-yellow;
+	}
+	.theme-blue .focus-cover .story-heading .link:hover  {
+		color: $b-c-blue;
+	}
+	.theme-red .focus-cover .story-heading .link:hover  {
+		color: $b-c-red;
+	}
+	.theme-green .focus-cover .story-heading .link:hover  {
+		color: $b-c-green;
+	}
+	.theme-pink .focus-cover .story-heading .link:hover  {
+		color: $b-c-pink;
+	}
+	.theme-purple .focus-cover .story-heading .link:hover  {
+		color: $b-c-pink;
+	}
 }
 
 /* ==========================================================================
