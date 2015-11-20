@@ -21,8 +21,12 @@
 		height: 2rem;
 	}
 	
-	&.inverted {
-		fill: white;
+	&.inverse-icon {
+		fill: $black500;
+
+		&:hover {
+			fill: white;
+		}
 	}
 
 	&.inline-icon {
