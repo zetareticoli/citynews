@@ -3328,10 +3328,10 @@ ol, ul {
     clear: both; }
 
 @media (min-width: 62.5em) {
-  .story-content {
+  .story-content-pull {
     margin-left: 15rem; } }
 @media (min-width: 75em) {
-  .story-content {
+  .story-content-pull {
     margin-left: 18rem; } }
 
 .story-media {
