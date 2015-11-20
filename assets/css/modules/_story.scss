@@ -381,25 +381,6 @@
 			}
 		}
 	}
-
-	&.featured-lg {
-		.story-media {
-			@include bp(m) {
-				width: 50%;
-			}
-		}
-
-	}
-
-	&.featured-xl {
-		.story-media {
-			@include bp(m) {
-				width: 50%;
-				float: left;
-				margin-right: .75rem;
-			}
-		}
-	}
 }
 
 // List Story
@@ -555,6 +536,14 @@
 
 .sublink .kicker {
 	margin-right: $baseline / 2;
+}
+
+.sublink .link:hover {
+	text-decoration: none;
+
+	.sublink-heading {
+		text-decoration: underline;
+	}
 }
 
 // Cover hero for preview headline sublink

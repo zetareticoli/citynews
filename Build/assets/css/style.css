@@ -3574,14 +3574,6 @@ ol, ul {
   .featured-story.featured-md .story-media {
     margin-bottom: 0.5rem;
     width: 100%; } }
-@media (min-width: 46.25em) {
-  .featured-story.featured-lg .story-media {
-    width: 50%; } }
-@media (min-width: 46.25em) {
-  .featured-story.featured-xl .story-media {
-    width: 50%;
-    float: left;
-    margin-right: .75rem; } }
 
 @media (min-width: 46.25em) {
   .list-story .story-media {
@@ -3691,6 +3683,11 @@ ol, ul {
 
 .sublink .kicker {
   margin-right: 0.25rem; }
+
+.sublink .link:hover {
+  text-decoration: none; }
+  .sublink .link:hover .sublink-heading {
+    text-decoration: underline; }
 
 .cover-hero .sublinks {
   padding-top: 0.5rem;
