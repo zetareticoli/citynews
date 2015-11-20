@@ -158,6 +158,73 @@ dt {
 }
 
 /* ==========================================================================
+   Story Headings Sizes
+   ========================================================================== */
+
+.heading-xs {
+	@include font-size($fontsize200);
+	line-height: 1rem;
+}
+
+.heading-sm {
+	@include font-size($fontsize300);
+	line-height: 1.25rem;
+
+	@include bp(s) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+	}
+}
+
+.heading-md {
+	@include font-size($fontsize300);
+	line-height: 1.25rem;
+
+	@include bp(m) {
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+	}
+
+	@include bp(l) {
+		@include font-size($fontsize600);
+		line-height: 1.75rem;
+	}
+}
+
+.heading-lg {
+	@include font-size($fontsize600);
+	line-height: 1.75rem;
+
+	@include bp(m) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
+
+	@include bp(l) {
+		@include font-size($fontsize900);
+	}
+}
+
+.heading-xl {
+	@include font-size($fontsize600);
+	line-height: 1.75rem;
+
+	@include bp(m) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
+
+	@include bp(l) {
+		@include font-size($fontsize900);
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize1000);
+		line-height: 3.5rem;
+	}
+}
+
+/* ==========================================================================
    Text Elements
    ========================================================================== */
 

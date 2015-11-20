@@ -602,6 +602,72 @@ dt {
   margin: 0 2px; }
 
 /* ==========================================================================
+   Story Headings Sizes
+   ========================================================================== */
+.heading-xs {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1rem; }
+
+.heading-sm {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  @media (min-width: 30em) {
+    .heading-sm {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+
+.heading-md {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  @media (min-width: 46.25em) {
+    .heading-md {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 62.5em) {
+    .heading-md {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.75rem; } }
+
+.heading-lg {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
+  @media (min-width: 46.25em) {
+    .heading-lg {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 62.5em) {
+    .heading-lg {
+      font-size: 36px;
+      font-size: 2.25rem; } }
+
+.heading-xl {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
+  @media (min-width: 46.25em) {
+    .heading-xl {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media (min-width: 62.5em) {
+    .heading-xl {
+      font-size: 36px;
+      font-size: 2.25rem; } }
+  @media (min-width: 75em) {
+    .heading-xl {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
+
+/* ==========================================================================
    Text Elements
    ========================================================================== */
 .small-text {
