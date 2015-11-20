@@ -484,18 +484,11 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
-@media (min-width: 62.5em) {
-  h4, h5, h6 {
-    font-family: "Neue Haas Grotesk W01", Helvetica, Arial, sans-serif; } }
-h2, h3, h4, h5, h6 {
-  font-weight: 700; }
-
-h1 {
+h1, h2 {
   font-weight: 900; }
 
-@media (min-width: 46.25em) {
-  h2 {
-    font-weight: 900; } }
+h3, h4, h5, h6 {
+  font-weight: 700; }
 
 h1 {
   font-size: 28px;
@@ -597,10 +590,6 @@ strong,
 dt {
   font-weight: 700; }
 
-.middot {
-  color: #bdbdbd;
-  margin: 0 2px; }
-
 /* ==========================================================================
    Story Headings Sizes
    ========================================================================== */
@@ -622,7 +611,8 @@ dt {
 .heading-md {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  font-weight: 700; }
   @media (min-width: 46.25em) {
     .heading-md {
       font-size: 20px;
@@ -633,6 +623,21 @@ dt {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 1.75rem; } }
+
+.heading-std {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700; }
+  @media (min-width: 46.25em) {
+    .heading-std {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 62.5em) {
+    .heading-std {
+      font-size: 20px;
+      font-size: 1.25rem; } }
 
 .heading-lg {
   font-size: 24px;
@@ -670,10 +675,6 @@ dt {
 /* ==========================================================================
    Text Elements
    ========================================================================== */
-.small-text {
-  font-size: 85%;
-  line-height: 1.25rem; }
-
 .bordered-title {
   margin-bottom: 1rem;
   padding: .5rem .5rem .75rem;
@@ -763,6 +764,14 @@ dt {
 
 .heading-divider {
   color: #bdbdbd; }
+
+.small-text {
+  font-size: 85%;
+  line-height: 1.25rem; }
+
+.middot {
+  color: #bdbdbd;
+  margin: 0 2px; }
 
 .entry-content-body h2, .entry-content-body h3, .entry-content-body h4, .entry-content-body h5, .entry-content-body h6 {
   margin-top: 1rem; }
@@ -3318,6 +3327,13 @@ ol, ul {
   .story:after {
     clear: both; }
 
+@media (min-width: 62.5em) {
+  .story-content {
+    margin-left: 15rem; } }
+@media (min-width: 75em) {
+  .story-content {
+    margin-left: 18rem; } }
+
 .story-media {
   width: 5rem;
   float: left;
@@ -3346,7 +3362,7 @@ ol, ul {
     .story-media.media-mid {
       width: 18rem; } }
   @media (max-width: 46.188em) {
-    .story-media.bp-xs-media {
+    .story-media.media-xs {
       width: 5rem; } }
 
 .story-heading,
@@ -3357,12 +3373,6 @@ ol, ul {
 .story-heading,
 .story-subheading {
   word-wrap: break-word; }
-
-@media (max-width: 46.188em) {
-  .story-heading {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25rem; } }
 
 .story-subheading {
   display: inline-block;
@@ -3404,19 +3414,6 @@ ol, ul {
     margin-bottom: .5rem; }
     .hero-story .story-media img {
       width: 100%; }
-  .hero-story .story-heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.75rem; }
-    @media (min-width: 46.25em) {
-      .hero-story .story-heading {
-        font-size: 32px;
-        font-size: 2rem;
-        line-height: 2.5rem; } }
-    @media (min-width: 62.5em) {
-      .hero-story .story-heading {
-        font-size: 36px;
-        font-size: 2.25rem; } }
   .hero-story .story-subheading {
     font-size: 20px;
     font-size: 1.25rem;
@@ -3520,14 +3517,18 @@ ol, ul {
             display: block; } }
     .hero-story.focus-cover .story-heading {
       position: relative;
-      padding: 0; }
+      padding: 0;
+      font-size: 20px;
+      font-size: 1.25rem; }
+      @media (min-width: 46.25em) {
+        .hero-story.focus-cover .story-heading {
+          font-size: 28px;
+          font-size: 1.75rem;
+          line-height: 2rem; } }
       @media (min-width: 62.5em) {
         .hero-story.focus-cover .story-heading {
           position: absolute;
-          padding: 0 1rem 0.5rem;
-          font-size: 36px;
-          font-size: 2.25rem;
-          font-weight: 900; } }
+          padding: 0 1rem 0.5rem; } }
     @media (min-width: 62.5em) {
       .hero-story.focus-cover .link {
         color: white; } }
@@ -3557,20 +3558,7 @@ ol, ul {
       .fullpage-hero .story-media {
         width: 23.5rem; } }
   .fullpage-hero .story-heading {
-    font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; }
-    @media (min-width: 46.25em) {
-      .fullpage-hero .story-heading {
-        font-size: 32px;
-        font-size: 2rem;
-        line-height: 2.5rem; } }
-    @media (min-width: 62.5em) {
-      .fullpage-hero .story-heading {
-        font-size: 36px;
-        font-size: 2.25rem;
-        line-height: 2.5rem; } }
+    font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
   .fullpage-hero .highlight-kicker {
     font-weight: 900; }
     @media (min-width: 46.25em) {
@@ -3583,32 +3571,12 @@ ol, ul {
     background-color: #eceff1; }
 
 @media (min-width: 46.25em) {
-  .featured-story.featured-sm .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; } }
-@media (min-width: 46.25em) {
-  .featured-story.featured-mid .story-media {
+  .featured-story.featured-md .story-media {
     margin-bottom: 0.5rem;
     width: 100%; } }
 @media (min-width: 46.25em) {
-  .featured-story.featured-mid .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; } }
-@media (min-width: 46.25em) {
   .featured-story.featured-lg .story-media {
     width: 50%; } }
-@media (min-width: 46.25em) {
-  .featured-story.featured-lg .story-heading {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.5rem; } }
-@media (min-width: 62.5em) {
-  .featured-story.featured-lg .story-heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.75rem; } }
 @media (min-width: 46.25em) {
   .featured-story.featured-xl .story-media {
     width: 50%;

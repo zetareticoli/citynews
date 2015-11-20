@@ -29,24 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headingstypeface;
 }
 
-@include bp(l) {
-	h4, h5, h6 {
-		font-family: $smallheadings;
-	}
-}
-
-h2, h3, h4, h5, h6 {
-	font-weight: $baseheadingweight;
-}
-
-h1 {
+h1, h2 {
 	font-weight: $bigheadingeweight;
 }
 
-h2 {
-	@include bp(m) {
-		font-weight: $bigheadingeweight;
-	}
+h3, h4, h5, h6 {
+	font-weight: $baseheadingweight;
 }
 
 h1 {
@@ -152,11 +140,6 @@ dt {
 	font-weight: 700;
 }
 
-.middot {
-	color: $black500;
-	margin: 0 2px;
-}
-
 /* ==========================================================================
    Story Headings Sizes
    ========================================================================== */
@@ -179,6 +162,7 @@ dt {
 .heading-md {
 	@include font-size($fontsize300);
 	line-height: 1.25rem;
+	font-weight: $baseheadingweight;
 
 	@include bp(m) {
 		@include font-size($fontsize500);
@@ -188,6 +172,21 @@ dt {
 	@include bp(l) {
 		@include font-size($fontsize600);
 		line-height: 1.75rem;
+	}
+}
+
+.heading-std {
+	@include font-size($fontsize300);
+	line-height: 1.25rem;
+	font-weight: $baseheadingweight;
+
+	@include bp(m) {
+		@include font-size($fontsize400);
+		line-height: 1.5rem;
+	}
+
+	@include bp(l) {
+		@include font-size($fontsize500);
 	}
 }
 
@@ -227,11 +226,6 @@ dt {
 /* ==========================================================================
    Text Elements
    ========================================================================== */
-
-.small-text {
-  font-size: 85%;
-  line-height: 1.25rem;
-}
 
 // Title =====================================================================
 
@@ -346,6 +340,16 @@ dt {
 }
 
 // Inline Text =====================================================================
+
+.small-text {
+  font-size: 85%;
+  line-height: 1.25rem;
+}
+
+.middot {
+	color: $black500;
+	margin: 0 2px;
+}
 
 // Content text 
 

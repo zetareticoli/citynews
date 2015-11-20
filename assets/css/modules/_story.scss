@@ -5,6 +5,15 @@
 	@include clearfix;
 }
 
+.story-content {
+	@include bp(l) {
+		margin-left: 15rem;
+	}
+	@include bp(xl) {
+		margin-left: 18rem;
+	}
+}
+
 .story-media {
 	width: 5rem;
 	float: left;
@@ -53,10 +62,10 @@
 		}
 	}
 
-	// Responsive Media Sizes
+	// Mobile Media Sizes
 
 	@include max-bp(s) {
-		&.bp-xs-media {
+		&.media-xs {
 			width: 5rem;
 		}
 	}
@@ -71,13 +80,6 @@
 .story-heading,
 .story-subheading {
 	word-wrap: break-word;
-}
-
-.story-heading {
-	@include max-bp(s) {
-		@include font-size($fontsize300);
-		line-height: 1.25rem;
-	}
 }
 
 .story-subheading {
@@ -138,20 +140,6 @@
 
 		img {
 			width: 100%;
-		}
-	}
-
-	.story-heading {
-		@include font-size($fontsize600);
-		line-height: 1.75rem;
-
-		@include bp(m) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
-
-		@include bp(l) {
-			@include font-size($fontsize900);
 		}
 	}
 
@@ -311,17 +299,20 @@
 		.story-heading {
 			position: relative;
 			padding: 0;
+			@include font-size($fontsize500);
+
+			@include bp(m) {
+				@include font-size($fontsize700);
+				line-height: 2rem;
+			}
 
 			@include bp(l) {
 				position: absolute;
 				padding: 0 1rem $baseline;
-				@include font-size($fontsize900);
-				font-weight: 900;
 			}
 		}
 
 		.link {
-
 			@include bp(l) {
 				color: white;
 			}
@@ -329,7 +320,7 @@
 	}
 }
 
-// Fullpage Hero
+// Fullpage Hero Story
 
 .fullpage-hero {
 	padding: $baseline;
@@ -358,18 +349,6 @@
 
 	.story-heading {
 		font-family: $titleseriftypeface;
-		@include font-size($fontsize500);
-		line-height: 1.5rem;
-
-		@include bp(m) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
-
-		@include bp(l) {
-			@include font-size($fontsize900);
-			line-height: 2.5rem;
-		}
 	}
 
 	.highlight-kicker {
@@ -390,31 +369,15 @@
 	}
 }
 
-// Featured Story Sizes
+// Featured Story 
 
 .featured-story {
 
-	&.featured-sm {
-		.story-heading {
-			@include bp(m) {
-				@include font-size($fontsize500);
-				line-height: 1.5rem;
-			}
-		}
-	}
-
-	&.featured-mid {
+	&.featured-md {
 		.story-media {
 			@include bp(m) {
 				margin-bottom: $baseline;
 				width: 100%;
-			}
-		}
-
-		.story-heading {
-			@include bp(m) {
-				@include font-size($fontsize500);
-				line-height: 1.5rem;
 			}
 		}
 	}
@@ -426,17 +389,6 @@
 			}
 		}
 
-		.story-heading {
-			@include bp(m) {
-				@include font-size($fontsize500);
-				line-height: 1.5rem;
-			}
-
-			@include bp(l) {
-				@include font-size($fontsize600);
-				line-height: 1.75rem;
-			}
-		}
 	}
 
 	&.featured-xl {
