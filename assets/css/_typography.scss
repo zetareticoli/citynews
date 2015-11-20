@@ -376,7 +376,7 @@ dt {
 }
 
 .inverted .summary {
-	color: $black400;
+	color: $black500;
 }
 
 .entry-summary {
@@ -506,6 +506,12 @@ dt {
 	text-decoration: none;
 }
 
+.inverted .link,
+.inverted .story-heading .link,
+.inverted .block-link .story-heading {
+	color: white;
+}
+
 .story-heading .link,
 .block-link .story-heading,
 .block-link .card-heading {
@@ -518,6 +524,10 @@ dt {
 	color: $black1000;
 }
 
+.story-subheading .link:hover {
+	color: $bluegrey600;
+}
+
 .sublink .link,
 .entry-label .link {
 	color: $black800;
@@ -525,15 +535,6 @@ dt {
 	&:hover {
 		color: $black900;
 	}	
-}
-
-.inverted .link,
-.inverted .block-link .story-heading {
-	color: white;
-
-	&:hover {
-		color: $black500;
-	}
 }
 
 // Timestamp & Meteo ===============================================================

@@ -108,7 +108,7 @@
 	}
 	
 	.link {
-		color: $bluegrey600;
+		color: $bluegrey400;
 	}
 }
 
@@ -515,35 +515,33 @@
 
 // Sublinks ===============================================================
 
-.sublinks {
 
-	.sublink {
-		margin-bottom: $baseline;
-		font-family: $headingstypeface;
-		@include font-size($fontsize200);
-		line-height: 1.1rem;
-		@include font-size($fontsize200);
+.sublink {
+	margin-bottom: $baseline;
+	font-family: $headingstypeface;
+	@include font-size($fontsize200);
+	line-height: 1.1rem;
+	@include font-size($fontsize200);
 
-		&:last-child {
-			border-bottom: 0;
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	.link:hover {
+		text-decoration: none;
+
+		.sublink-heading {
+			text-decoration: underline;
 		}
+	}
+
+	.kicker {
+		margin-right: $baseline / 2;
 	}
 }
 
 .inverted .sublink .link {
 	color: white;
-}
-
-.sublink .kicker {
-	margin-right: $baseline / 2;
-}
-
-.sublink .link:hover {
-	text-decoration: none;
-
-	.sublink-heading {
-		text-decoration: underline;
-	}
 }
 
 // Cover hero for preview headline sublink
