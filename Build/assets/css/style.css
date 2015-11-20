@@ -3338,6 +3338,8 @@ ol, ul {
   width: 5rem;
   float: left;
   margin-right: .5rem; }
+  .story-media img {
+    width: 100%; }
   @media (min-width: 46.25em) {
     .story-media {
       margin-right: .75rem; } }
@@ -3412,8 +3414,6 @@ ol, ul {
   .hero-story .story-media {
     margin-right: .5rem;
     margin-bottom: .5rem; }
-    .hero-story .story-media img {
-      width: 100%; }
   .hero-story .story-subheading {
     font-size: 20px;
     font-size: 1.25rem;
@@ -3658,8 +3658,6 @@ ol, ul {
       -webkit-transition: background-color 0.2s;
       -moz-transition: background-color 0.2s;
       transition: background-color 0.2s; }
-    .inset-story .story-media img {
-      width: 100%; }
   .inset-story .story-summary {
     max-height: 0;
     opacity: 0;
