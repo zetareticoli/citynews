@@ -1,0 +1,242 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+
+.district-title {
+	margin:0;
+	float:left;
+	display:block;
+	
+	@include bp(l) {
+        margin-bottom:1rem;
+	}
+}
+
+.form-district-desktop {
+    float:right;
+    width:35%;
+		
+	.search-district {
+        width:100%;
+    }
+}
+
+
+.district-search-visited {
+	margin-bottom:1rem;
+	@include clearfix;
+	
+	.district-visited-tab {
+		line-height:2rem;
+		margin:0;
+		@include font-size($fontsize500);
+		
+		@include bp(m) {
+			float:left;
+		}
+	}
+	
+	.district-visited-list-link {
+		list-style: none;
+		padding:0;
+		margin:0 0 1rem;
+		float:left;
+		
+		@include bp(m) {
+			margin:0;
+		}
+		
+		li {
+			line-height:2rem;
+			
+				@include bp(m) {
+					padding:0 .5rem;
+				}
+			
+			a {
+				text-decoration: none;
+                color: $black700;
+				@include font-size($fontsize400);
+				
+				&:hover {
+					color: $black900;
+				}
+			}
+		}	
+	}
+	
+	
+	.form-district-mobile {
+	    float:right;
+		width:100%;
+		
+		@include bp(l) {
+			display:none;
+		}
+		
+	    .search-district {
+		    width:100%;
+	    }
+    }
+}
+
+.alph-filter-list {
+	width: 1rem;
+	padding: 0 2px;
+	float: right;
+	margin-bottom:.5rem;
+	position:relative;
+	
+	@include bp(m) {
+		width: 100%;
+		float: none;
+		padding: inherit;
+	}
+	
+	.affix{
+		position: fixed !important;
+		top:0 !important;
+		
+		@include bp(m) {
+			width:100%;
+			background-color:$black300;
+			/*left:0;*/
+			padding:1rem !important;
+		}
+		
+		@include bp(l) {
+			width:1000px;
+			margin:0 auto;
+		}
+		
+		@include bp(xl) {
+			width:1188px;
+			/*left:81px;*/
+		}
+	}
+		
+	.alph-list-link-mobile {
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height:1.250rem;
+		
+		@include bp(m) {
+			display: none;
+		}
+	
+		li {
+			padding:0;
+			margin:0;
+			padding-right:.5rem;
+				
+			a {
+				color:$black700;
+				@include font-size($fontsize200);
+				text-transform:uppercase;
+				cursor:pointer;
+				font-weight:$baseheadingweight;
+					
+				&:hover {
+					text-decotation:none;
+				}				
+			}
+		}
+	}
+	.alph-list-link-desktop {
+		list-style:none;
+		padding:0;
+		margin:0;
+		line-height:1.250rem;
+		@include clearfix;
+		display:none;
+
+		@include bp(m) {
+			display:block;
+		}		
+	
+		li {
+			padding:0;
+			margin:0;
+			display:inline;
+			padding-right:.5rem;
+					
+			a {
+				color:$black700;
+				@include font-size($fontsize300);
+				text-transform:uppercase;
+				cursor:pointer;
+				font-weight:$baseheadingweight;
+					
+				&:hover {
+					text-decotation:none;
+				}				
+			}
+		}
+	}
+}
+
+.district-group-list {
+	float:left;
+	width:90%;
+	
+	@include bp(m) {
+		width: 85%;
+	}
+	
+	@include bp(l) {
+		width:100%;
+		height:auto;
+		overflow:hidden;
+	}
+		
+	.index-alphabetic-list {
+		width:100%;
+		float:left;
+		border-top: 2px solid $bordercolor;
+		margin-bottom:1rem;
+		padding-top:.5rem;
+		font-family:$titleseriftypeface;
+		@include font-size($fontsize900);
+		
+		@include bp(m) {
+			padding-top:1rem;
+			padding-bottom:1rem
+		}
+	}
+	
+	.district-col {
+		margin-bottom:2rem;
+		float:left;
+
+		.district-list-link {
+            list-style:none;
+            padding:0;
+            margin:0;		
+				
+            li {
+				padding-top:.5rem;
+				margin-bottom:.5rem;
+				border-top: 1px solid $bordercolor;
+				
+				@include bp(m) {
+					border:none;
+				}
+				
+                a {
+                    text-decoration: none;
+                    color: $black700;
+                    @include font-size($fontsize400);
+					
+					
+					&:hover {
+						color: $black900;
+					}
+                }	
+            }
+		}
+	}
+}
