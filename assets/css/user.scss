@@ -1,0 +1,274 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+// Sass forms
+@import "forms";
+
+
+	.user-form {
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 10%;
+		
+		@include bp(m){
+			width: 520px;
+		}
+		
+		.form-wrapper {
+
+		    @include bp(m) {
+				@include border-top-radius(6px);
+		    }			
+		}
+
+		.form-content {
+			padding: 2rem 5rem;
+			background-color: white;
+		    text-align: center;
+
+		    h1 {
+		    	@include font-size($fontsize800);
+		    	font-weight: 700;
+		    	margin-bottom: 1.5rem;
+		    }
+		}
+		
+		.brand-logo {
+			margin-bottom: 0.500rem;
+			width: 100%;
+			text-align: center;
+            
+            .media-brand-logo {
+                
+                img {
+                    margin-bottom: 0.5rem;
+                }
+            }
+         }
+		
+		.header-login {
+			background-color: #FFB507;
+			padding: 2rem 0;
+			text-align: center;	
+
+		    @include bp(m) {
+				@include border-top-radius(6px);
+		    }
+			
+			.logo {
+				height: 2rem;
+				padding: 0;
+			}
+		}
+		
+		.login-title {
+			text-align: center;
+			font-size: 1rem;	
+		}
+		
+		.media-social-login {
+			width: 100%;
+			
+			img {
+                width: 100%;
+				display: block;
+				padding :0 1rem;
+				cursor: pointer;
+				margin-bottom: 1rem;
+			}
+		}
+
+		form {
+			margin-bottom: 2rem;
+			text-align: left;
+			
+			.form-group {
+				
+				.form-address-signup {
+					width: 78%;
+					float: left;
+				}
+				
+				.form-address-number-signup {
+					width:20%;
+					float:right;
+				}
+				
+				.checkbox {
+					
+					.checkbox-label {
+						font-size: 0.750rem;
+					}
+				}
+				
+				.link-recover-account {
+					float: right;
+					font-size: 0.750rem;
+					color: #9e9e9e;
+					text-align:center;
+					margin-bottom: 1rem;
+					
+					&:hover {
+						color: #757575;
+					}
+				}
+			}
+			
+			.btn-login-access { 
+				width: 100%;
+				padding: 1rem 0;
+				font-size: 1.125rem;
+			}
+		}	
+
+		.footer-signup {
+			padding-top:1rem;
+			@include clearfix;
+			@include font-size($fontsize200);
+
+			.link-account-registration, .link-recovery-account, .link-recovery-password {
+				float: right;
+				color: $bluegrey700;
+				@include font-size($fontsize200);
+
+			}
+			
+			
+			.link-back-home {
+				float: left;
+				width: 20%;
+			}
+		}
+
+        &.user-registration {
+
+			h3 {
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 12px;
+				color: #9e9e9e;
+			}
+
+			form {
+				fieldset {
+					border-bottom: 1px solid $bordercolor;
+					margin-bottom: 2.5rem;
+
+					&:nth-child(2n) {
+						border-bottom: 0;
+					}
+					
+				}
+				.btn-account-registration { 
+					width: 100%;
+					font-size: 1.500rem;
+				}
+			}
+		}
+		
+		/* Start password-recovery styles */
+		
+		&.password-recovery {
+			
+			form {
+				h3 {
+					text-transform: uppercase;
+					font-size: 12px;
+					line-height: 12px;
+					color: #9e9e9e;
+					}
+				.form-captcha-code {
+					height:40px;
+					
+					.captcha-code {
+						border: 2px solid #e0e0e0;
+						-webkit-border-radius: 6px;
+    					-moz-border-radius: 6px;
+    					border-radius: 6px;
+						float:left;
+						display:block;
+						min-width:75%;
+						max-height:100%;
+						margin-right:.5rem;
+					}
+					.cycle-icon {
+						float:right;
+						cursor: pointer;
+					}
+				}
+				
+				.link-password-recover {
+					width:100%;
+				}
+			}
+			
+			.headline-password-recovery {
+				padding:0 4rem;
+				margin-bottom:2rem;
+				
+				p {
+					@include font-size($fontsize200);
+				}
+			}
+		}
+		
+		/* End password-recovery styles */
+		
+		
+		&.account-activation {
+			
+			form {
+				h3 {
+					text-transform: uppercase;
+					font-size: 12px;
+					line-height: 12px;
+					color: #9e9e9e;
+					}
+				.form-captcha-code {
+					height:40px;
+					
+					.captcha-code {
+						border: 2px solid #e0e0e0;
+						-webkit-border-radius: 6px;
+    					-moz-border-radius: 6px;
+    					border-radius: 6px;
+						float:left;
+						display:block;
+						min-width:75%;
+						max-height:100%;
+						margin-right:.5rem;
+					}
+					.cycle-icon {
+						float:right;
+						cursor: pointer;
+					}
+				}
+				
+				.link-account-activation {
+					width:100%;
+				}
+			}
+			
+			.headline-account-activation {
+				padding:0 4rem;
+				margin-bottom:2rem;
+				
+				p {
+					@include font-size($fontsize200);
+				}
+			}
+		}
+		
+	}
+
+	.text-divider {
+		border-top: 1px solid $bordercolor;
+		padding-top: $baseline;
+		margin-top: 1rem;
+	}
+	
