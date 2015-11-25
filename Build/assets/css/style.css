@@ -3998,10 +3998,10 @@ ol, ul {
   @media (min-width: 62.5em) {
     .story-media.media-sm {
       width: 8rem; }
-    .story-media.media-mid {
+    .story-media.media-md {
       width: 14rem; } }
   @media (min-width: 75em) {
-    .story-media.media-mid {
+    .story-media.media-md {
       width: 18rem; } }
   @media (max-width: 46.188em) {
     .story-media.media-xs {

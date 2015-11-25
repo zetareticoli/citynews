@@ -55,13 +55,13 @@
 			width: 8rem;
 		}
 
-		&.media-mid {
+		&.media-md {
 			width: 14rem;
 		}
 	}
 
 	@include bp(xl) {
-		&.media-mid {
+		&.media-md {
 			width: 18rem;
 		}
 	}
