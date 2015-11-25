@@ -362,3 +362,107 @@
 		}
 	}
 }
+
+/* ==========================================================================
+  Navigation Links
+  ========================================================================== */
+// Use for Trending Topics or Top Visited Links
+
+.nav-links {
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: $baseline;
+	background-color: $black200;
+
+	.nav-item {
+		margin: 0 $baseline;
+		@include font-size($fontsize200);
+		font-weight: 700;
+
+		@include bp(m) {
+			display: inline-block;
+		}
+	}
+}
+
+/* ==========================================================================
+  Alphabetical Navigation
+  ========================================================================== */
+
+.nav-alph-container {
+	width: 1rem;
+	float: right;
+
+	@include max-bp(s) {
+		margin-right: $baseline;
+	}
+	
+	@include bp(m) {
+		width: 100%;
+		float: none;
+	}
+}
+
+.nav-alph {
+	@include bp(m) {
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+		line-height: 2rem;
+	}
+
+	&.affix {
+		top: $baseline;
+		
+		@include bp(m) {
+			width: 100%;
+			padding: 1rem;
+			background-color: white;
+			border-bottom: 2px solid $bordercolor;
+			z-index: 10;
+			top: 0;
+		}
+		
+		@include bp(l) {
+			width: 1000px;
+		}
+		
+		@include bp(xl) {
+			width: 1188px;
+		}
+	}
+	
+
+	.alph-item {
+		@include bp(m) {
+			display: inline-block;
+		}
+				
+		.link {
+			@include font-size($fontsize200);
+			text-transform:uppercase;
+			color: $black600;
+			font-weight:$headingstypeface;
+			font-weight: 700;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			@include bp(m) {
+				padding: $baseline .65rem;
+				@include font-size($fontsize200);
+				@include rounded(3px);
+					
+				&:hover {
+					color: $black700;
+					background-color: $black300;
+				}
+			}
+
+			@include bp(l) {
+				padding: $baseline 1rem;
+			}				
+		}
+	}
+}
