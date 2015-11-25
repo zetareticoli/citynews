@@ -874,6 +874,14 @@ dt {
       .highlight-kicker:before {
         width: 3rem; } }
 
+.caption {
+  padding: .5rem 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #757575; }
+  .caption .icon.inline-icon {
+    vertical-align: text-bottom; }
+
 .link {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;

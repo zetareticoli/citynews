@@ -483,6 +483,18 @@ dt {
 	}
 }
 
+// Caption
+
+.caption {
+	padding: .5rem 0;
+	@include font-size($fontsize100);
+	color: $black700;
+
+	.icon.inline-icon {
+		vertical-align: text-bottom;
+	}
+}
+
 
 // Links ===============================================================
 
