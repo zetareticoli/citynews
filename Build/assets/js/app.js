@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	$(window).on( 'resize scroll', function(){
+		$('.nav-alph').affix({	 
+			offset: {
+				top: function() { return $('.nav-alph-container').offset().top; },
+				bottom: function(){ return $('.site-footer').outerHeight() + $('.back-to-top-link').outerHeight();}
+	 		}			  	
+		});
+		
+		$('.alph-list-link-desktop').css( 'left', $('.main-content').offset().left );
+	});
+
 	$(window).on('scroll', function(){
 		(!window.requestAnimationFrame) ? fixContent() : window.requestAnimationFrame(fixContent);
 	});

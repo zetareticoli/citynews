@@ -28,47 +28,6 @@
 
 // Theme Colors for hover on block links ===============================================================
 
-.theme-yellow .inverted .story-heading .link:hover,
-.theme-yellow .inverted .block-link:hover,
-.theme-yellow .inverted .block-link:hover .story-heading,
-.theme-yellow .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-yellow;
-}
-
-.theme-blue .inverted .story-heading .link:hover,
-.theme-blue .inverted .block-link:hover,
-.theme-blue .inverted .block-link:hover .story-heading,
-.theme-blue .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-blue;
-}
-
-.theme-red .inverted .story-heading .link:hover,
-.theme-red .inverted .block-link:hover,
-.theme-red .inverted .block-link:hover .story-heading,
-.theme-red .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-red;
-}
-
-.theme-green .inverted .story-heading .link:hover,
-.theme-green .inverted .block-link:hover,
-.theme-green .inverted .block-link:hover .story-heading,
-.theme-green .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-green;
-}
-
-.theme-pink .inverted .story-heading .link:hover,
-.theme-pink .inverted .block-link:hover,
-.theme-pink .inverted .block-link:hover .story-heading,
-.theme-pink .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-pink;
-}
-
-.theme-purple .inverted .story-heading .link:hover,
-.theme-purple .inverted .block-link:hover,
-.theme-purple .inverted .block-link:hover .story-heading,
-.theme-purple .theme-inverted .block-link:hover .story-heading {
-	color: $b-c-purple;
-}
 
 @include bp(l) {
 	.theme-yellow .focus-cover .story-heading .link:hover  {
@@ -241,6 +200,23 @@
 	}
 }
 
+.theme-yellow .inverted .story-heading .link:hover,
+.theme-yellow .inverted .block-link:hover,
+.theme-yellow .inverted .block-link:hover .story-heading,
+.theme-yellow .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-yellow;
+}
+
+.theme-yellow .alph-item.current .link,
+.theme-yellow .alph-item.current .link:hover {
+	color: $b-c-yellow;
+
+	@include bp(m) {
+		background-color: $b-c-yellow;
+		color: white;
+	}
+}
+
 /* ==========================================================================
   Theme Red
   ========================================================================== */
@@ -283,6 +259,22 @@
 		.logo-edition {
 			fill: $b-c-red;
 		}
+	}
+}
+
+.theme-red .inverted .story-heading .link:hover,
+.theme-red .inverted .block-link:hover,
+.theme-red .inverted .block-link:hover .story-heading,
+.theme-red .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-red;
+}
+
+.theme-red .alph-item.current .link {
+	color: $b-c-red;
+
+	@include bp(m) {
+		background-color: $b-c-red;
+		color: white;
 	}
 }
 
@@ -331,6 +323,22 @@
 	}
 }
 
+.theme-blue .inverted .story-heading .link:hover,
+.theme-blue .inverted .block-link:hover,
+.theme-blue .inverted .block-link:hover .story-heading,
+.theme-blue .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-blue;
+}
+
+.theme-blue .alph-item.current .link {
+	color: $b-c-blue;
+
+	@include bp(m) {
+		background-color: $b-c-blue;
+		color: white;
+	}
+}
+
 /* ==========================================================================
   Theme Green
   ========================================================================== */
@@ -373,6 +381,22 @@
 		.logo-edition {
 			fill: $b-c-green;
 		}
+	}
+}
+
+.theme-green .inverted .story-heading .link:hover,
+.theme-green .inverted .block-link:hover,
+.theme-green .inverted .block-link:hover .story-heading,
+.theme-green .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-green;
+}
+
+.theme-green .alph-item.current .link {
+	color: $b-c-green;
+
+	@include bp(m) {
+		background-color: $b-c-green;
+		color: white;
 	}
 }
 
@@ -421,6 +445,23 @@
 	}
 }
 
+.theme-purple .inverted .story-heading .link:hover,
+.theme-purple .inverted .block-link:hover,
+.theme-purple .inverted .block-link:hover .story-heading,
+.theme-purple .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-purple;
+}
+
+.theme-purple .alph-item.current .link,
+.theme-purple .alph-item.current .link:hover {
+	color: $b-c-purple;
+
+	@include bp(m) {
+		background-color: $b-c-purple;
+		color: white;
+	}
+}
+
 /* ==========================================================================
   Theme Pink
   ========================================================================== */
@@ -463,6 +504,23 @@
 		.logo-edition {
 			fill: $b-c-pink;
 		}
+	}
+}
+
+.theme-pink .inverted .story-heading .link:hover,
+.theme-pink .inverted .block-link:hover,
+.theme-pink .inverted .block-link:hover .story-heading,
+.theme-pink .theme-inverted .block-link:hover .story-heading {
+	color: $b-c-pink;
+}
+
+.theme-pink .alph-item.current .link
+.theme-pink .alph-item.current .link:hover {
+	color: $b-c-pink;
+
+	@include bp(m) {
+		background-color: $b-c-pink;
+		color: white;
 	}
 }
 

@@ -1,0 +1,28 @@
+.district-group-list {
+  width: 90%; }
+  @media (min-width: 46.25em) {
+    .district-group-list {
+      width: 100%; } }
+  .district-group-list .district-group {
+    border-top: 2px solid #e0e0e0; }
+  .district-group-list .index-alphabetic-list {
+    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-size: 2.25rem; }
+  .district-group-list .district-col {
+    margin-bottom: 1rem; }
+    @media (min-width: 46.25em) {
+      .district-group-list .district-col {
+        margin-bottom: 2rem; } }
+    .district-group-list .district-col .label {
+      margin-bottom: 1rem; }
+      @media (min-width: 46.25em) {
+        .district-group-list .district-col .label {
+          margin-top: 1rem; } }
+    .district-group-list .district-col .district-list-link li a {
+      text-decoration: none;
+      color: #757575;
+      font-size: 16px;
+      font-size: 1rem; }
+      .district-group-list .district-col .district-list-link li a:hover {
+        color: #424242; }

@@ -1,0 +1,54 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+.district-group-list {
+	width: 90%;
+
+	@include bp(m) {
+		width: 100%;
+	}
+
+	.district-group {
+		border-top: 2px solid $bordercolor;
+	}
+		
+	.index-alphabetic-list {
+		font-family: $headingstypeface;
+		@include font-size($fontsize900);
+	}
+	
+	.district-col {
+		margin-bottom: 1rem;
+
+		@include bp(m) {
+			margin-bottom: 2rem;
+		}
+
+		.label {
+			margin-bottom: 1rem;
+
+			@include bp(m) {
+				margin-top: 1rem;
+			}
+		}
+
+		.district-list-link {		
+				
+            li {
+				
+                a {
+                    text-decoration: none;
+                    color: $black700;
+                    @include font-size($fontsize300);
+					
+					&:hover {
+						color: $black900;
+					}
+                }	
+            }
+		}
+	}
+}
