@@ -3476,6 +3476,8 @@ ol, ul {
   @media (min-width: 75em) {
     .card-item.card-item-mid {
       width: 25%; } }
+  .card-item.card-item-lg {
+    margin-bottom: 1rem; }
 
 @media (max-width: 46.188em) {
   .card-footer {
@@ -4910,6 +4912,9 @@ ol, ul {
   @media (min-width: 62.5em) {
     .entry-aside-slots {
       display: block; } }
+
+.entry-secondary-slot {
+  margin-bottom: 1rem; }
 
 /* ==========================================================================
   Modifiers
