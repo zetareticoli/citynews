@@ -1648,6 +1648,11 @@ label,
   .radio .radio-label::after {
     /* check mark - hidden */
     display: none; }
+  .checkbox .checkbox-label.checkbox-label-sm, .checkbox .checkbox-label.radio-label-sm,
+  .radio .radio-label.checkbox-label-sm,
+  .radio .radio-label.radio-label-sm {
+    font-size: 12px;
+    font-size: 0.75rem; }
 
 .checkbox-label:before {
   -webkit-border-radius: 3px;

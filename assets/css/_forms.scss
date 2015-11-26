@@ -166,6 +166,11 @@ label,
 		/* check mark - hidden */
 		display: none;
 	}
+
+	&.checkbox-label-sm,
+	&.radio-label-sm {
+		@include font-size($fontsize100);
+	}
 }
 
 .checkbox-label:before {
