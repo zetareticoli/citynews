@@ -39,6 +39,17 @@ label,
 	margin-bottom: $baseline;
 }
 
+.form-inline-group {
+	overflow: hidden;
+	.group {
+		padding-right: .25rem;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
 // Supported Controls ===============================================================
 
 // Form Control
@@ -65,31 +76,6 @@ label,
 	&.input-sm {
 		@include font-size($fontsize200);
 		line-height: 1rem;
-	}
-
-	&.form-control-sm,
-	&.form-control-md,
-	&.form-control-lg,
-	&.form-control-xl {
-		width: 100%;
-	}
-
-	&.form-control-lg {
-		@include bp(m) {
-			width: 80%;
-		}
-	}
-
-	&.form-control-md {
-		@include bp(m) {
-			width: 50%;			
-		}
-	}
-
-	&.form-control-sm {
-		@include bp(m) {
-			width: 30%;			
-		}
 	}
 }
 

@@ -1533,6 +1533,13 @@ label,
 .form-group {
   margin-bottom: 0.5rem; }
 
+.form-inline-group {
+  overflow: hidden; }
+  .form-inline-group .group {
+    padding-right: .25rem; }
+    .form-inline-group .group:last-child {
+      padding-right: 0; }
+
 .form-control {
   height: 2.5rem;
   line-height: 1.35rem;
@@ -1553,17 +1560,6 @@ label,
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1rem; }
-  .form-control.form-control-sm, .form-control.form-control-md, .form-control.form-control-lg, .form-control.form-control-xl {
-    width: 100%; }
-  @media (min-width: 46.25em) {
-    .form-control.form-control-lg {
-      width: 80%; } }
-  @media (min-width: 46.25em) {
-    .form-control.form-control-md {
-      width: 50%; } }
-  @media (min-width: 46.25em) {
-    .form-control.form-control-sm {
-      width: 30%; } }
 
 .form-select {
   /* select element wrapper */
