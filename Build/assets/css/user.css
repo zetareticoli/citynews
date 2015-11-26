@@ -261,7 +261,7 @@ input[type=checkbox]:checked + label::after {
       font-weight: 700;
       margin-bottom: 1.5rem; }
     .l-boxed .boxed-content .link {
-      color: #607d8b; }
+      color: #546e7a; }
   .l-boxed .boxed-header {
     padding: 2rem 0;
     text-align: center; }
