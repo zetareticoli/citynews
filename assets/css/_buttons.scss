@@ -147,10 +147,6 @@ a.light-btn {
 	}
 }
 
-.inverted .btn {
-	color: white;
-}
-
 .inverted .light-btn {
 	border-color: $bluegrey800;
 }
@@ -399,14 +395,32 @@ a.share-btn {
 	}
 }
 
-.facebook-share-btn {
+.facebook-share-btn,
+.facebook-connect-btn {
 	background-color: $facebook;
+
+	&:hover {
+		background-color: darken($facebook, 5%);
+	}
 }
 
 .twitter-share-btn{
 	background-color: $twitter;
+
+	&:hover {
+		background-color: darken($twitter, 5%);
+	}
 }
 
 .whatsapp-share-btn {
 	background-color: #43d854;
-}	
+}
+
+.facebook-connect-btn,
+.facebook-connect-btn:hover {
+	color: white;
+}
+
+.facebook-connect-btn:active {
+	color: darken(white, 20%);
+}

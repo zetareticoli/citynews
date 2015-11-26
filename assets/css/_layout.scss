@@ -67,6 +67,11 @@ ol, ul {
 	margin-left: $gutterwidth * 2;
 }
 
+hr {
+	margin: 1rem 0;
+	border-top-color: $bordercolor;
+}
+
 // Global modifiers ===============================================================
 
 .centered {

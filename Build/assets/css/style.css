@@ -475,7 +475,8 @@ html {
 
 body {
   font-family: Helvetica, "SegoeUI", Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #212121; }
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
@@ -1016,9 +1017,7 @@ time {
     width: 2rem;
     height: 2rem; }
   .icon.inverse-icon {
-    fill: #bdbdbd; }
-    .icon.inverse-icon:hover {
-      fill: white; }
+    fill: white; }
   .icon.inline-icon {
     margin-right: .25rem;
     vertical-align: text-bottom; }
@@ -1284,9 +1283,6 @@ a.light-btn {
   a.light-btn:hover {
     border-color: #adadad; }
 
-.inverted .btn {
-  color: white; }
-
 .inverted .light-btn {
   border-color: #455a64; }
 
@@ -1478,14 +1474,27 @@ a.share-btn {
   a.share-btn .btn-label {
     margin-left: .5rem; }
 
-.facebook-share-btn {
+.facebook-share-btn,
+.facebook-connect-btn {
   background-color: #3b5998; }
+  .facebook-share-btn:hover,
+  .facebook-connect-btn:hover {
+    background-color: #344e86; }
 
 .twitter-share-btn {
   background-color: #55acee; }
+  .twitter-share-btn:hover {
+    background-color: #3ea1ec; }
 
 .whatsapp-share-btn {
   background-color: #43d854; }
+
+.facebook-connect-btn,
+.facebook-connect-btn:hover {
+  color: white; }
+
+.facebook-connect-btn:active {
+  color: #cccccc; }
 
 /* ==========================================================================
   Forms
@@ -1888,6 +1897,10 @@ textarea {
 ol, ul {
   padding: 0;
   margin-left: 2rem; }
+
+hr {
+  margin: 1rem 0;
+  border-top-color: #e0e0e0; }
 
 .centered {
   display: -webkit-box;
@@ -5170,6 +5183,8 @@ input[type=checkbox]:checked + label::after {
   @media (min-width: 46.25em) {
     .user-form {
       width: 520px; } }
+  .user-form p {
+    color: #616161; }
   @media (min-width: 46.25em) {
     .user-form .form-wrapper {
       border-top-left-radius: 6px;
@@ -5200,17 +5215,6 @@ input[type=checkbox]:checked + label::after {
     .user-form .header-login .logo {
       height: 2rem;
       padding: 0; }
-  .user-form .login-title {
-    text-align: center;
-    font-size: 1rem; }
-  .user-form .media-social-login {
-    width: 100%; }
-    .user-form .media-social-login img {
-      width: 100%;
-      display: block;
-      padding: 0 1rem;
-      cursor: pointer;
-      margin-bottom: 1rem; }
   .user-form form {
     margin-bottom: 2rem;
     text-align: left; }
@@ -5230,10 +5234,8 @@ input[type=checkbox]:checked + label::after {
       margin-bottom: 1rem; }
       .user-form form .form-group .link-recover-account:hover {
         color: #757575; }
-    .user-form form .btn-login-access {
-      width: 100%;
-      padding: 1rem 0;
-      font-size: 1.125rem; }
+  .user-form .form-content .link {
+    color: #757575; }
   .user-form .footer-signup {
     padding-top: 1rem;
     *zoom: 1;
@@ -5250,8 +5252,7 @@ input[type=checkbox]:checked + label::after {
       font-size: 14px;
       font-size: 0.875rem; }
     .user-form .footer-signup .link-back-home {
-      float: left;
-      width: 20%; }
+      float: left; }
   .user-form.user-registration h3 {
     text-transform: uppercase;
     font-size: 12px;
@@ -5321,11 +5322,6 @@ input[type=checkbox]:checked + label::after {
     .user-form.account-activation .headline-account-activation p {
       font-size: 14px;
       font-size: 0.875rem; }
-
-.text-divider {
-  border-top: 1px solid #e0e0e0;
-  padding-top: 0.5rem;
-  margin-top: 1rem; }
 
 /* ==========================================================================
   Modifiers

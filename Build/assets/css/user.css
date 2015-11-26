@@ -244,6 +244,8 @@ input[type=checkbox]:checked + label::after {
   @media (min-width: 46.25em) {
     .user-form {
       width: 520px; } }
+  .user-form p {
+    color: #616161; }
   @media (min-width: 46.25em) {
     .user-form .form-wrapper {
       border-top-left-radius: 6px;
@@ -274,17 +276,6 @@ input[type=checkbox]:checked + label::after {
     .user-form .header-login .logo {
       height: 2rem;
       padding: 0; }
-  .user-form .login-title {
-    text-align: center;
-    font-size: 1rem; }
-  .user-form .media-social-login {
-    width: 100%; }
-    .user-form .media-social-login img {
-      width: 100%;
-      display: block;
-      padding: 0 1rem;
-      cursor: pointer;
-      margin-bottom: 1rem; }
   .user-form form {
     margin-bottom: 2rem;
     text-align: left; }
@@ -304,10 +295,8 @@ input[type=checkbox]:checked + label::after {
       margin-bottom: 1rem; }
       .user-form form .form-group .link-recover-account:hover {
         color: #757575; }
-    .user-form form .btn-login-access {
-      width: 100%;
-      padding: 1rem 0;
-      font-size: 1.125rem; }
+  .user-form .form-content .link {
+    color: #757575; }
   .user-form .footer-signup {
     padding-top: 1rem;
     *zoom: 1;
@@ -324,8 +313,7 @@ input[type=checkbox]:checked + label::after {
       font-size: 14px;
       font-size: 0.875rem; }
     .user-form .footer-signup .link-back-home {
-      float: left;
-      width: 20%; }
+      float: left; }
   .user-form.user-registration h3 {
     text-transform: uppercase;
     font-size: 12px;
@@ -395,8 +383,3 @@ input[type=checkbox]:checked + label::after {
     .user-form.account-activation .headline-account-activation p {
       font-size: 14px;
       font-size: 0.875rem; }
-
-.text-divider {
-  border-top: 1px solid #e0e0e0;
-  padding-top: 0.5rem;
-  margin-top: 1rem; }
