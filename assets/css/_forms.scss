@@ -41,11 +41,22 @@ label,
 
 .form-inline-group {
 	overflow: hidden;
-	.group {
-		padding-right: .25rem;
 
-		&:last-child {
-			padding-right: 0;
+	.group {
+		@include max-bp(s) {
+			margin-bottom: $baseline;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		@include bp(m) {
+			padding-right: .25rem;
+
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 	}
 }
