@@ -1173,8 +1173,7 @@ time {
 .btn,
 a.btn,
 .dropdown-menu {
-  font-family: Helvetica, "SegoeUI", Arial, sans-serif;
-  color: #616161; }
+  font-family: Helvetica, "SegoeUI", Arial, sans-serif; }
 
 .btn,
 a.btn {
@@ -1183,9 +1182,6 @@ a.btn {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
-  .btn:hover,
-  a.btn:hover {
-    color: #616161; }
   .btn:focus, .btn::-moz-focus-inner,
   a.btn:focus,
   a.btn::-moz-focus-inner {
@@ -1196,9 +1192,6 @@ a.btn {
   .btn.has-icon .btn-label,
   a.btn.has-icon .btn-label {
     padding-left: 4px; }
-  .btn .btn-label,
-  a.btn .btn-label {
-    font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
 .btn {
   padding: .675rem 1rem;
@@ -1221,7 +1214,12 @@ a.btn {
 
 .default-btn,
 a.default-btn {
+  color: #616161;
   background-color: #e0e0e0; }
+  .default-btn:hover, .default-btn:hover .btn-label,
+  a.default-btn:hover,
+  a.default-btn:hover .btn-label {
+    color: #424242; }
   .default-btn:hover,
   a.default-btn:hover {
     background: lightgray; }
@@ -1264,9 +1262,11 @@ a.link-btn {
 
 .light-btn,
 a.light-btn {
+  color: #616161;
   border: 1px solid #e0e0e0; }
   .light-btn:hover,
   a.light-btn:hover {
+    color: #424242;
     border-color: #adadad; }
 
 .inverted .light-btn {
@@ -1289,6 +1289,7 @@ a.light-btn {
   border: 2px solid #e0e0e0;
   font-weight: 400; }
 .dropdown .dropdown-menu {
+  color: #616161;
   border-width: 2px;
   border-color: #bdbdbd; }
   .dropdown .dropdown-menu.has-fixed-height {
@@ -1419,15 +1420,37 @@ a.light-btn {
   @media (min-width: 62.5em) {
     .search-btn {
       border-color: #e0e0e0; } }
+  .search-btn::before {
+    /* lens */
+    border: 3px solid #bdbdbd; }
+  .search-btn::after {
+    /* handle */
+    background: #bdbdbd; }
+  .search-btn:hover:before {
+    border-color: #9e9e9e; }
+  .search-btn:hover:after {
+    background: #9e9e9e; }
 
-@media (min-width: 62.5em) {
-  .login-btn {
-    width: auto;
-    padding: 0 24px; } }
-.login-btn .btn-label {
-  color: #9e9e9e;
-  font-size: 16px;
-  font-size: 1rem; }
+.login-btn {
+  text-transform: uppercase; }
+  @media (min-width: 62.5em) {
+    .login-btn {
+      width: auto;
+      padding: 0 24px; } }
+  .login-btn .btn-label {
+    font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #bdbdbd; }
+  .login-btn .icon {
+    fill: #bdbdbd;
+    -webkit-transition: fill 0.2s;
+    -moz-transition: fill 0.2s;
+    transition: fill 0.2s; }
+  .login-btn:hover .btn-label {
+    color: #9e9e9e; }
+  .login-btn:hover .icon {
+    fill: #9e9e9e; }
 
 .nav-btn .btn-label {
   color: #757575; }

@@ -8,7 +8,6 @@
 a.btn,
 .dropdown-menu {
 	font-family: $alttexttypeface;
-	color: $black800;
 }
 
 .btn,
@@ -16,10 +15,6 @@ a.btn {
 	font-weight: 700;
 	text-decoration: none;
 	@include transition(all .2s);
-
-	&:hover {
-		color: $black800;
-	}
 
 	&:focus,
 	&::-moz-focus-inner {
@@ -34,10 +29,6 @@ a.btn {
 		.btn-label {
 			padding-left: 4px;
 		}
-	}
-
-	.btn-label {
-		font-family: $headingstypeface;
 	}
 }
 
@@ -68,7 +59,13 @@ a.btn {
 
 .default-btn,
 a.default-btn {
+	color: $black800;
 	background-color: $black400;
+
+	&:hover,
+	&:hover .btn-label {
+		color: $black900;
+	}
 
 	&:hover {
 		background: darken($black400, 5%);
@@ -121,9 +118,11 @@ a.link-btn {
 
 .light-btn,
 a.light-btn {
+	color: $black800;
 	border: 1px solid $bordercolor;
 
 	&:hover {
+		color: $black900;
 		border-color: darken($bordercolor, 20%);
 	}
 }
@@ -159,6 +158,7 @@ a.light-btn {
 	}
 
 	.dropdown-menu {
+		color: $black800;
 		border-width: 2px;
 		border-color: $black500;
 
@@ -310,9 +310,29 @@ a.light-btn {
 	@include bp(l) {
 		border-color: $bordercolor;
 	}
+
+	&::before {
+		/* lens */
+		border: 3px solid $black500;
+	}
+
+	&::after {
+		/* handle */
+		background: $black500;
+	}
+
+	&:hover {
+		&:before {
+			border-color: $black600;
+		}
+		&:after {
+			background: $black600;
+		}
+	}
 }
 
 .login-btn {
+	text-transform: uppercase;
 	
 	@include bp(l) {
 		width: auto;
@@ -320,8 +340,24 @@ a.light-btn {
 	}
 	
 	.btn-label {
-		color: $black600;
-		@include font-size(16);
+		font-family: $brandtypeface;
+		@include font-size($fontsize300);
+		color: $black500;
+	}
+
+	.icon {
+		fill: $black500;
+		@include transition(fill .2s);
+	}
+
+	&:hover {
+		.btn-label {
+			color:$black600;
+		}
+
+		.icon {
+			fill: $black600;
+		}
 	}
 }
 
