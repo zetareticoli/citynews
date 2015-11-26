@@ -117,25 +117,6 @@ a.link-btn {
 		position: relative;
 		top: 1px;
 	}
-
-	/*
-	&:after {
-		content: '';
-		position: absolute;
-		left: 0;
-		display: inline-block;
-		height: 1em;
-		width: 100%;
-		border-bottom: 2px solid $black400;
-		margin-top: 6px;
-		@include transition(border-color .15s);
-	}
-
-	&:hover {
-		&:after {
-			border-bottom-color: $black600;
-		}
-	} */
 }
 
 .light-btn,
@@ -372,6 +353,22 @@ a.light-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
+	background: transparent;
+
+	.icon {
+		fill: $black500;
+		@include transition(fill .2s);
+	}
+
+	&:hover {
+		.icon {
+			fill: $black700;
+		}
+
+		.icon.inverse-icon {
+			fill: white;
+		}
+	}
 }
 
 // Social Buttons Style =============================================

@@ -1251,25 +1251,7 @@ a.inverse-btn {
 a.link-btn {
   padding: 0;
   position: relative;
-  background-color: transparent;
-  	/*
-  	&:after {
-  		content: '';
-  		position: absolute;
-  		left: 0;
-  		display: inline-block;
-  		height: 1em;
-  		width: 100%;
-  		border-bottom: 2px solid $black400;
-  		margin-top: 6px;
-  		@include transition(border-color .15s);
-  	}
-  
-  	&:hover {
-  		&:after {
-  			border-bottom-color: $black600;
-  		}
-  	} */ }
+  background-color: transparent; }
   .link-btn:hover,
   a.link-btn:hover {
     color: #424242; }
@@ -1459,7 +1441,17 @@ a.light-btn {
 .close-btn {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  background: transparent; }
+  .close-btn .icon {
+    fill: #bdbdbd;
+    -webkit-transition: fill 0.2s;
+    -moz-transition: fill 0.2s;
+    transition: fill 0.2s; }
+  .close-btn:hover .icon {
+    fill: #757575; }
+  .close-btn:hover .icon.inverse-icon {
+    fill: white; }
 
 .share-btn,
 a.share-btn {
