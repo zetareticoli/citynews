@@ -2506,8 +2506,8 @@ hr {
 .modal .modal-title,
 .modal .modal-body > p {
   color: #424242; }
-.modal .close {
-  margin-top: .35rem; }
+.modal .close-btn {
+  top: 1rem; }
 
 .modal-backdrop {
   background: #263238; }
