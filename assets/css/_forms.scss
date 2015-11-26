@@ -35,6 +35,10 @@ label,
 	@include font-size($fontsize200);
 }
 
+.form-group {
+	margin-bottom: $baseline;
+}
+
 // Supported Controls ===============================================================
 
 // Form Control
