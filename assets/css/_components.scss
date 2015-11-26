@@ -21,13 +21,17 @@
 		}
 	}
 
-	&.small-modal .modal-dialog {
+	&.modal-sm {
+		width: auto;
+	}
+
+	&.modal-sm .modal-dialog {
 		@include bp(m) {
 			width: 30rem;
 		}
 	}
 
-	&.large-modal .modal-dialog {
+	&.modal-lg .modal-dialog {
 		@include bp(m) {
 			width: 50rem;
 		}

@@ -2477,11 +2477,13 @@ hr {
     .modal .modal-dialog {
       width: 40rem;
       margin: 2rem auto; } }
+.modal.modal-sm {
+  width: auto; }
 @media (min-width: 46.25em) {
-  .modal.small-modal .modal-dialog {
+  .modal.modal-sm .modal-dialog {
     width: 30rem; } }
 @media (min-width: 46.25em) {
-  .modal.large-modal .modal-dialog {
+  .modal.modal-lg .modal-dialog {
     width: 50rem; } }
 .modal .modal-content {
   border: 0;
