@@ -1023,11 +1023,7 @@ time {
   .icon.inverse-icon {
     fill: white; }
   .icon.inline-icon {
-    margin-right: .25rem;
-    vertical-align: text-bottom; }
-    @media (min-width: 62.5em) {
-      .icon.inline-icon {
-        vertical-align: text-top; } }
+    margin-right: .25rem; }
 
 .overlay-icon {
   display: block;

@@ -27,11 +27,6 @@
 
 	&.inline-icon {
 		margin-right: .25rem;
-		vertical-align: text-bottom;
-
-		@include bp(l) {
-			vertical-align: text-top;
-		}
 	}
 }
 
