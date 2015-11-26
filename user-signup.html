@@ -58,7 +58,7 @@
 			<p class="text-lg">Scopri cosa accade nel tuo quartiere e contribuisci inviando notizie, foto, segnalazioni e commenti</p>
 		    <a class="link theme-color" href="#"><svg class="icon small theme-fill"><use xlink:href="#video-icon"></use></svg> Guarda il nostro video se vuoi saperne di pi&ugrave;</a>
 		    <hr>
-			<form>
+			<form class="form-signup">
 				<fieldset>
 					<h3 class="label">Dati accesso</h3>
 					<div class="form-group">
@@ -70,18 +70,24 @@
 				</fieldset>
 				<fieldset>
 					<h3 class="label">Dati personali</h3>
-					<div class="form-group inline-group">
-						<input type="text" class="form-control" placeholder="Nome">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Cognome">
+					<div class="form-group form-inline-group">
+						<div class="group size1of2">
+							<input type="text" class="form-control" placeholder="Nome">
+						</div>
+						<div class="group size1of2">
+							<input type="text" class="form-control" placeholder="Cognome">
+						</div>
 					</div>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Città dove vivi">
 					</div>
-					<div class="form-group">
-						<input type="text" class="form-control form-address-signup" placeholder="Indirizzo">
-						<input type="text" class="form-control form-address-number-signup" placeholder="Civico">
+					<div class="form-group form-inline-group">
+						<div class="group size2of3">
+							<input type="text" class="form-control" placeholder="Indirizzo">
+						</div>
+						<div class="group size1of3">
+							<input type="text" class="form-control" placeholder="Civico">
+						</div>
 					</div>
 				</fieldset>
 				<div class="form-group">
