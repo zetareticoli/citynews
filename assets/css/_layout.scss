@@ -279,6 +279,88 @@ hr {
 }
 
 /* ==========================================================================
+  Boxed Layout
+  ========================================================================== */
+
+.l-boxed {
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 3%;
+	
+	@include bp(m){
+		width: 35rem;
+	}
+
+	p {
+		font-family: $texttypeface;
+	}
+
+	form {
+		text-align: left;
+	}
+
+	.boxed-content {
+		padding: 2rem 1rem;
+		background-color: white;
+	    text-align: center;
+
+	    @include bp(m) {
+			padding: 2rem 5rem;
+			@include border-bottom-radius(6px);
+	    }
+
+	    h1 {
+	    	@include font-size($fontsize800);
+	    	font-weight: 700;
+	    	margin-bottom: 1.5rem;
+	    }
+
+	    .link {
+			color: $bluegrey700; 
+	    }
+	}
+	
+	.boxed-header {
+		padding: 2rem 0;
+		text-align: center;	
+
+	    @include bp(m) {
+			@include border-top-radius(6px);
+	    }
+		
+		.logo {
+			height: 2rem;
+			padding: 0;
+		}
+	}
+
+	.brand-logo {
+		margin-bottom: 0.500rem;
+		width: 100%;
+		text-align: center;
+      
+      .media-brand-logo {
+          
+          img {
+              margin-bottom: 0.5rem;
+          }
+      }
+	}
+
+	.boxed-footer {
+		margin: 1rem;
+		@include font-size($fontsize200);
+		text-align: center;
+
+		span, p {
+			color: $bluegrey700;
+		}
+	}
+}
+
+/* ==========================================================================
   Site Header
   ========================================================================== */
 
