@@ -1969,6 +1969,9 @@ hr {
 .align-right {
   text-align: right; }
 
+.align-center {
+  text-align: center; }
+
 .align-left {
   text-align: left; }
 
@@ -4975,6 +4978,9 @@ label,
 .help-block {
   font-size: 14px;
   font-size: 0.875rem; }
+
+.form-group {
+  margin-bottom: 0.5rem; }
 
 .form-control {
   height: 2.5rem;
