@@ -218,7 +218,7 @@ hr {
 		.flx-col {
 			@include flex-flow(column nowrap);
 		}
-
+		
 		.l-row-item,
 		.l-list-item {
 			@include flexbox;

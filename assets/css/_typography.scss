@@ -290,13 +290,15 @@ dt {
 // Section title
 
 .section-title {
+	margin-bottom: 0 !important;
 	position: relative;
 	padding: $baseline 0;
 	border-top-width: 2px;
 	border-top-style: solid;
+	border-bottom: 0 !important;
 
 	@include bp(l) {
-		padding: .75rem 0;
+		padding: .75rem 0 !important;
 	}
 }
 

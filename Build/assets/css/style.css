@@ -725,13 +725,15 @@ dt {
     text-decoration: none; }
 
 .section-title {
+  margin-bottom: 0 !important;
   position: relative;
   padding: 0.5rem 0;
   border-top-width: 2px;
-  border-top-style: solid; }
+  border-top-style: solid;
+  border-bottom: 0 !important; }
   @media (min-width: 62.5em) {
     .section-title {
-      padding: .75rem 0; } }
+      padding: .75rem 0 !important; } }
 
 .section-heading {
   margin: 0;
