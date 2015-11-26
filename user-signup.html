@@ -1,4 +1,4 @@
-<!-- $title Accedi -->
+<!-- $title Crea Account -->
 
 <!DOCTYPE html>
 <html>
@@ -29,21 +29,20 @@
 
 <body class="has-flex theme-yellow inverted" ontouchstart="">
 
-	<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<defs>
-			<symbol id="facebook-icon" viewBox="0 0 585 1024">
-			 <title>facebook</title>
-			 <path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"></path>
-			</symbol>
-		</defs>
-	</svg>
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="video-icon" viewBox="0 0 1024 1024">
+		  <title>iconvideo</title>
+		  <path class="path1" d="M511.773 0c-282.784 0-512 229.216-512 512s229.216 512 512 512c282.784 0 512-229.216 512-512s-229.216-512-512-512v0zM511.773 928c-229.76 0-416-186.24-416-416s186.24-416 416-416c229.76 0 416 186.24 416 416s-186.24 416-416 416v0zM383.773 288l384 224-384 224v-448z"></path>
+		</symbol>
+	</defs>
+</svg>
 
 	<div class="l-boxed">
 
 		<div class="brand-logo">
 			<figure class="media-brand-logo"> <img src="assets/images/citynews-logo.png" alt=""/> </figure>
 		</div>
-
 
 		<div class="boxed-header theme-background">
 			<svg class="logo" viewBox="0 0 324 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -55,33 +54,52 @@
 		</div>
 
 		<div class="boxed-content">
-			<h1>Effettua l'accesso</h1>
-
-			<button type="submit" class="btn btn-lg btn-block facebook-connect-btn">
-				<svg class="icon inverse-icon medium"><use xlink:href="#facebook-icon"></use></svg>
-				Connettiti con Facebook
-			</button>
-
-			<hr>
-
-			<p>oppure usa il tuo account</p>
-
+			<h1>Crea il tuo account</h1>
+			<p class="text-lg">Scopri cosa accade nel tuo quartiere e contribuisci inviando notizie, foto, segnalazioni e commenti</p>
+		    <a class="link theme-color" href="#"><svg class="icon small theme-fill"><use xlink:href="#video-icon"></use></svg> Guarda il nostro video se vuoi saperne di pi&ugrave;</a>
+		    <hr>
 			<form>
+				<fieldset>
+					<h3 class="label">Dati accesso</h3>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+				</fieldset>
+				<fieldset>
+					<h3 class="label">Dati personali</h3>
+					<div class="form-group inline-group">
+						<input type="text" class="form-control" placeholder="Nome">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Cognome">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Città dove vivi">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control form-address-signup" placeholder="Indirizzo">
+						<input type="text" class="form-control form-address-number-signup" placeholder="Civico">
+					</div>
+				</fieldset>
 				<div class="form-group">
-					<input type="email" class="form-control" placeholder="Email">
+				<div class="checkbox">
+					<input type="checkbox" value="" id="checkbox1">
+					<label class="checkbox-label" for="checkbox1">Ho letto e accetto l'informativa sulla privacy</label>
 				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Password">
+				<div class="checkbox">
+					<input type="checkbox" value="" id="checkbox2">
+					<label class="checkbox-label" for="checkbox2">Acconsento al trattamento dei dati personali</label>
 				</div>
-				<div class="form-group align-right">
-					<a class="link text-sm" href="#">Password dimenticata?</a>
 				</div>
-				<button type="submit" class="btn btn-lg btn-block default-btn">Accedi</button>
+				<button type="submit" class="btn btn-lg btn-block primary-btn">Registrati</button>
 			</form>
 		</div>
 
 		<div class="boxed-footer">
-			<span>Nuovo utente? <a class="theme-color" href="<!-- @path user-signup.html -->">Crea un account</a></span>
+			<a class="link" href="#">&larr; Torna indietro</a>  
 		</div>
 	</div>
 

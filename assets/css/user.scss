@@ -8,55 +8,43 @@
 @import "forms";
 
 
-.user-form {
+.l-boxed {
 	margin: 0 auto;
 	position: absolute;
 	right: 0;
 	left: 0;
-	top: 10%;
+	top: 3%;
 	
 	@include bp(m){
-		width: 520px;
+		width: 35rem;
 	}
-	
+
 	p {
-		color: $black800;
+		font-family: $texttypeface;
 	}
 
-	.form-wrapper {
-
-	    @include bp(m) {
-			@include border-top-radius(6px);
-	    }			
-	}
-
-	.form-content {
-		padding: 2rem 5rem;
+	.boxed-content {
+		padding: 2rem 1rem;
 		background-color: white;
 	    text-align: center;
+
+	    @include bp(m) {
+			padding: 2rem 5rem;
+			@include border-bottom-radius(6px);
+	    }
 
 	    h1 {
 	    	@include font-size($fontsize800);
 	    	font-weight: 700;
 	    	margin-bottom: 1.5rem;
 	    }
+
+	    .link {
+			color: $bluegrey700; 
+	    }
 	}
 	
-	.brand-logo {
-		margin-bottom: 0.500rem;
-		width: 100%;
-		text-align: center;
-        
-        .media-brand-logo {
-            
-            img {
-                margin-bottom: 0.5rem;
-            }
-        }
-     }
-	
-	.header-login {
-		background-color: #FFB507;
+	.boxed-header {
 		padding: 2rem 0;
 		text-align: center;	
 
@@ -70,21 +58,43 @@
 		}
 	}
 
+	.brand-logo {
+		margin-bottom: 0.500rem;
+		width: 100%;
+		text-align: center;
+        
+        .media-brand-logo {
+            
+            img {
+                margin-bottom: 0.5rem;
+            }
+        }
+	}
+
+	.boxed-footer {
+		margin: 1rem;
+		@include font-size($fontsize200);
+		text-align: center;
+
+		span, p {
+			color: $bluegrey700;
+		}
+	}
+
 
 	form {
-		margin-bottom: 2rem;
 		text-align: left;
 		
 		.form-group {
 			
 			.form-address-signup {
-				width: 78%;
+				width: 70%;
 				float: left;
 			}
 			
 			.form-address-number-signup {
-				width:20%;
-				float:right;
+				width: 28%;
+				float: right;
 			}
 			
 			.checkbox {
@@ -106,27 +116,6 @@
 			}
 		}
 	}	
-
-	.form-content .link {
-		color: $black700;
-	}
-
-	.footer-signup {
-		padding-top:1rem;
-		@include clearfix;
-		@include font-size($fontsize200);
-
-		.link-account-registration, .link-recovery-account, .link-recovery-password {
-			float: right;
-			color: $bluegrey700;
-			@include font-size($fontsize200);
-
-		}
-		
-		.link-back-home {
-			float: left;
-		}
-	}
 
     &.user-registration {
 

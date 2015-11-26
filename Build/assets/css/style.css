@@ -766,9 +766,13 @@ dt {
 .heading-divider {
   color: #bdbdbd; }
 
-.small-text {
+.text-sm {
   font-size: 85%;
   line-height: 1.25rem; }
+
+.text-lg {
+  font-size: 125%;
+  line-height: 1.5rem; }
 
 .middot {
   color: #bdbdbd;
@@ -5172,108 +5176,97 @@ input[type=checkbox]:checked + label::after {
   background-color: #eeeeee;
   border: 2px solid #e0e0e0; }
 
-.user-form {
+.l-boxed {
   margin: 0 auto;
   position: absolute;
   right: 0;
   left: 0;
-  top: 10%;
+  top: 3%;
   /* Start password-recovery styles */
   /* End password-recovery styles */ }
   @media (min-width: 46.25em) {
-    .user-form {
-      width: 520px; } }
-  .user-form p {
-    color: #616161; }
-  @media (min-width: 46.25em) {
-    .user-form .form-wrapper {
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px; } }
-  .user-form .form-content {
-    padding: 2rem 5rem;
+    .l-boxed {
+      width: 35rem; } }
+  .l-boxed p {
+    font-family: "PublicoText", Georgia, "Times New Roman", serif; }
+  .l-boxed .boxed-content {
+    padding: 2rem 1rem;
     background-color: white;
     text-align: center; }
-    .user-form .form-content h1 {
+    @media (min-width: 46.25em) {
+      .l-boxed .boxed-content {
+        padding: 2rem 5rem;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px; } }
+    .l-boxed .boxed-content h1 {
       font-size: 32px;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1.5rem; }
-  .user-form .brand-logo {
-    margin-bottom: 0.500rem;
-    width: 100%;
-    text-align: center; }
-    .user-form .brand-logo .media-brand-logo img {
-      margin-bottom: 0.5rem; }
-  .user-form .header-login {
-    background-color: #FFB507;
+    .l-boxed .boxed-content .link {
+      color: #546e7a; }
+  .l-boxed .boxed-header {
     padding: 2rem 0;
     text-align: center; }
     @media (min-width: 46.25em) {
-      .user-form .header-login {
+      .l-boxed .boxed-header {
         border-top-left-radius: 6px;
         border-top-right-radius: 6px; } }
-    .user-form .header-login .logo {
+    .l-boxed .boxed-header .logo {
       height: 2rem;
       padding: 0; }
-  .user-form form {
-    margin-bottom: 2rem;
+  .l-boxed .brand-logo {
+    margin-bottom: 0.500rem;
+    width: 100%;
+    text-align: center; }
+    .l-boxed .brand-logo .media-brand-logo img {
+      margin-bottom: 0.5rem; }
+  .l-boxed .boxed-footer {
+    margin: 1rem;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-align: center; }
+    .l-boxed .boxed-footer span, .l-boxed .boxed-footer p {
+      color: #546e7a; }
+  .l-boxed form {
     text-align: left; }
-    .user-form form .form-group .form-address-signup {
-      width: 78%;
+    .l-boxed form .form-group .form-address-signup {
+      width: 70%;
       float: left; }
-    .user-form form .form-group .form-address-number-signup {
-      width: 20%;
+    .l-boxed form .form-group .form-address-number-signup {
+      width: 28%;
       float: right; }
-    .user-form form .form-group .checkbox .checkbox-label {
+    .l-boxed form .form-group .checkbox .checkbox-label {
       font-size: 0.750rem; }
-    .user-form form .form-group .link-recover-account {
+    .l-boxed form .form-group .link-recover-account {
       float: right;
       font-size: 0.750rem;
       color: #9e9e9e;
       text-align: center;
       margin-bottom: 1rem; }
-      .user-form form .form-group .link-recover-account:hover {
+      .l-boxed form .form-group .link-recover-account:hover {
         color: #757575; }
-  .user-form .form-content .link {
-    color: #757575; }
-  .user-form .footer-signup {
-    padding-top: 1rem;
-    *zoom: 1;
-    font-size: 14px;
-    font-size: 0.875rem; }
-    .user-form .footer-signup:before, .user-form .footer-signup:after {
-      content: " ";
-      display: table; }
-    .user-form .footer-signup:after {
-      clear: both; }
-    .user-form .footer-signup .link-account-registration, .user-form .footer-signup .link-recovery-account, .user-form .footer-signup .link-recovery-password {
-      float: right;
-      color: #546e7a;
-      font-size: 14px;
-      font-size: 0.875rem; }
-    .user-form .footer-signup .link-back-home {
-      float: left; }
-  .user-form.user-registration h3 {
+  .l-boxed.user-registration h3 {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px;
     color: #9e9e9e; }
-  .user-form.user-registration form fieldset {
+  .l-boxed.user-registration form fieldset {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 2.5rem; }
-    .user-form.user-registration form fieldset:nth-child(2n) {
+    .l-boxed.user-registration form fieldset:nth-child(2n) {
       border-bottom: 0; }
-  .user-form.user-registration form .btn-account-registration {
+  .l-boxed.user-registration form .btn-account-registration {
     width: 100%;
     font-size: 1.500rem; }
-  .user-form.password-recovery form h3 {
+  .l-boxed.password-recovery form h3 {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px;
     color: #9e9e9e; }
-  .user-form.password-recovery form .form-captcha-code {
+  .l-boxed.password-recovery form .form-captcha-code {
     height: 40px; }
-    .user-form.password-recovery form .form-captcha-code .captcha-code {
+    .l-boxed.password-recovery form .form-captcha-code .captcha-code {
       border: 2px solid #e0e0e0;
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
@@ -5283,25 +5276,25 @@ input[type=checkbox]:checked + label::after {
       min-width: 75%;
       max-height: 100%;
       margin-right: .5rem; }
-    .user-form.password-recovery form .form-captcha-code .cycle-icon {
+    .l-boxed.password-recovery form .form-captcha-code .cycle-icon {
       float: right;
       cursor: pointer; }
-  .user-form.password-recovery form .link-password-recover {
+  .l-boxed.password-recovery form .link-password-recover {
     width: 100%; }
-  .user-form.password-recovery .headline-password-recovery {
+  .l-boxed.password-recovery .headline-password-recovery {
     padding: 0 4rem;
     margin-bottom: 2rem; }
-    .user-form.password-recovery .headline-password-recovery p {
+    .l-boxed.password-recovery .headline-password-recovery p {
       font-size: 14px;
       font-size: 0.875rem; }
-  .user-form.account-activation form h3 {
+  .l-boxed.account-activation form h3 {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px;
     color: #9e9e9e; }
-  .user-form.account-activation form .form-captcha-code {
+  .l-boxed.account-activation form .form-captcha-code {
     height: 40px; }
-    .user-form.account-activation form .form-captcha-code .captcha-code {
+    .l-boxed.account-activation form .form-captcha-code .captcha-code {
       border: 2px solid #e0e0e0;
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
@@ -5311,15 +5304,15 @@ input[type=checkbox]:checked + label::after {
       min-width: 75%;
       max-height: 100%;
       margin-right: .5rem; }
-    .user-form.account-activation form .form-captcha-code .cycle-icon {
+    .l-boxed.account-activation form .form-captcha-code .cycle-icon {
       float: right;
       cursor: pointer; }
-  .user-form.account-activation form .link-account-activation {
+  .l-boxed.account-activation form .link-account-activation {
     width: 100%; }
-  .user-form.account-activation .headline-account-activation {
+  .l-boxed.account-activation .headline-account-activation {
     padding: 0 4rem;
     margin-bottom: 2rem; }
-    .user-form.account-activation .headline-account-activation p {
+    .l-boxed.account-activation .headline-account-activation p {
       font-size: 14px;
       font-size: 0.875rem; }
 
