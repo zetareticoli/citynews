@@ -77,19 +77,29 @@
 
 .story-heading,
 .story-subheading,
-.story-summary {
+.story-summary,
+.gallery-heading {
 	margin-bottom: $baseline;
 }
 
 .story-heading,
-.story-subheading {
+.story-subheading,
+.gallery-heading {
 	word-wrap: break-word;
 }
 
+.gallery-heading,
 .story-subheading {
-	display: inline-block;
+	display: block;
 	font-family: $headingstypeface;
 	@include font-size($fontsize400);
+
+	.link {
+		color: $bluegrey500;
+	}
+}
+
+.story-subheading {
 
 	&:before {
 		display: inline-block;
@@ -105,10 +115,6 @@
 			width: 8px;
 			height: 8px;
 		}
-	}
-	
-	.link {
-		color: $bluegrey400;
 	}
 }
 

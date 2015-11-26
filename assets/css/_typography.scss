@@ -542,7 +542,8 @@ dt {
 	color: $black1000;
 }
 
-.story-subheading .link:hover {
+.story-subheading .link:hover,
+.gallery-heading .link:hover {
 	color: $bluegrey600;
 }
 

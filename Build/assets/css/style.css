@@ -921,7 +921,8 @@ dt {
 .block-link:hover .card-heading {
   color: #212121; }
 
-.story-subheading .link:hover {
+.story-subheading .link:hover,
+.gallery-heading .link:hover {
   color: #607d8b; }
 
 .sublink .link,
@@ -3333,6 +3334,23 @@ hr {
     font-size: 0.75rem;
     color: #607d8b; }
 
+.photo-gallery-preview {
+  padding-top: 0.5rem;
+  clear: left; }
+  @media (min-width: 62.5em) {
+    .photo-gallery-preview {
+      padding-top: 0;
+      clear: none; } }
+  .photo-gallery-preview .gallery-heading {
+    font-size: 16px;
+    font-size: 1rem; }
+    @media (min-width: 46.25em) {
+      .photo-gallery-preview .gallery-heading {
+        font-size: 18px;
+        font-size: 1.125rem; } }
+  .photo-gallery-preview .photo-gallery-item {
+    width: 3rem; }
+
 /* ==========================================================================
   Related
   ========================================================================== */
@@ -4118,33 +4136,38 @@ hr {
 
 .story-heading,
 .story-subheading,
-.story-summary {
+.story-summary,
+.gallery-heading {
   margin-bottom: 0.5rem; }
 
 .story-heading,
-.story-subheading {
+.story-subheading,
+.gallery-heading {
   word-wrap: break-word; }
 
+.gallery-heading,
 .story-subheading {
-  display: inline-block;
+  display: block;
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem; }
-  .story-subheading:before {
-    display: inline-block;
-    content: '';
-    position: relative;
-    margin-right: 0.5rem;
-    vertical-align: middle;
-    top: -1px;
-    width: 6px;
-    height: 6px; }
-    @media (min-width: 46.25em) {
-      .story-subheading:before {
-        width: 8px;
-        height: 8px; } }
+  .gallery-heading .link,
   .story-subheading .link {
-    color: #90a4ae; }
+    color: #78909c; }
+
+.story-subheading:before {
+  display: inline-block;
+  content: '';
+  position: relative;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  top: -1px;
+  width: 6px;
+  height: 6px; }
+  @media (min-width: 46.25em) {
+    .story-subheading:before {
+      width: 8px;
+      height: 8px; } }
 
 .story-summary {
   font-family: "PublicoText", Georgia, "Times New Roman", serif;

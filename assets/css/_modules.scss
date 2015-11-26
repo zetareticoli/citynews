@@ -364,7 +364,7 @@
 .photo-gallery {
 	
 	// List Photo Gallery
-
+	// Used inside the photo gallery page
 	&.list-photo-gallery {
 		
 		.photo-gallery-item {
@@ -432,6 +432,31 @@
 		}
 	}
 }
+
+// Photo Gallery Preview
+// Used inside a story list template
+.photo-gallery-preview {
+	padding-top: $baseline;
+	clear: left;
+
+	@include bp(l) {
+		padding-top: 0;
+		clear: none;
+	}
+
+	.gallery-heading {
+		@include font-size($fontsize300);
+
+		@include bp(m) {
+			@include font-size($fontsize400);
+		}
+	}
+
+	.photo-gallery-item {
+		width: 3rem;
+	}
+}
+
 
 /* ==========================================================================
   Related
