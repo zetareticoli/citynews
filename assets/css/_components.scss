@@ -75,10 +75,10 @@
 }
 
 .modal-backdrop {
-	background: $bluegrey1000;
+	background: $focusoverlay;
 
 	&.in {
-		opacity: .85;
+		opacity: 1;
 	}
 }
 

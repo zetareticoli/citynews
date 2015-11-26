@@ -2596,9 +2596,9 @@ hr {
   top: 1rem; }
 
 .modal-backdrop {
-  background: #263238; }
+  background: rgba(38, 50, 56, 0.85); }
   .modal-backdrop.in {
-    opacity: .85; }
+    opacity: 1; }
 
 .modal.fade .modal-dialog {
   -webkit-transform: scale(0.7, 0.7);
@@ -2901,7 +2901,7 @@ hr {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background-color: rgba(33, 33, 33, 0.92);
+  background-color: rgba(38, 50, 56, 0.85);
   opacity: 0;
   -webkit-transition: opacity 0.2s ease;
   -moz-transition: opacity 0.2s ease;
@@ -3828,7 +3828,7 @@ hr {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(33, 33, 33, 0.92);
+  background-color: rgba(38, 50, 56, 0.85);
   visibility: hidden;
   opacity: 0;
   -webkit-backface-visibility: hidden;
@@ -3966,7 +3966,7 @@ hr {
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     transition: background-color 0.2s;
-    background-color: rgba(33, 33, 33, 0.92); }
+    background-color: rgba(38, 50, 56, 0.85); }
     .start-search-trigger.search-is-visible::before, .start-search-trigger.search-is-visible::after {
       /* hide search icon */
       opacity: 0; }
