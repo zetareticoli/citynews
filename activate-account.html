@@ -1,3 +1,5 @@
+<!-- $title Attivazione Account -->
+
 <!DOCTYPE html>
 <html>
 
@@ -6,36 +8,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- @reload -->
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-  
-  <link rel='stylesheet' href='assets/css/vendor/bootstrap.min.css'>
-<link rel='stylesheet' href='assets/css/vendor/photoswipe.css'>
-<link rel='stylesheet' href='assets/css/vendor/default-skin.css'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<link rel='stylesheet' href='assets/css/article.css'>
+  <!-- @stylesheet bootstrap.min photoswipe default-skin style article -->
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/95154313-3459-4bae-9678-85d353889210.css"/>
 
   <!-- load picturefill -->
@@ -43,25 +18,16 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="assets/js/picturefill.min.js" async></script>
+  <script src="<!-- @path picturefill.min.js -->" async></script>
   
-  <link href="assets/favicon.ico" rel="shortcut icon">
-  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<!-- @path favicon.ico -->" rel="shortcut icon">
+  <link href="<!-- @path apple-touch-icon.png -->" rel="apple-touch-icon">
   
-  <title>RomaToday | Accedi</title>
+  <title>RomaToday | <!-- $title --></title>
   
 </head>
 
 <body class="has-flex theme-yellow inverted" ontouchstart="">
-
-	<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<defs>
-			<symbol id="facebook-icon" viewBox="0 0 585 1024">
-			 <title>facebook</title>
-			 <path class="path1" d="M548 6.857v150.857h-89.714q-49.143 0-66.286 20.571t-17.143 61.714v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571q0-106.286 59.429-164.857t158.286-58.571q84 0 130.286 6.857z"></path>
-			</symbol>
-		</defs>
-	</svg>
 
 	<div class="l-boxed">
 
@@ -80,43 +46,35 @@
 		</div>
 
 		<div class="boxed-content">
-			<h1>Effettua l'accesso</h1>
+			<h1>Attivazione Account</h1>
 
-			<button type="submit" class="btn btn-lg btn-block facebook-connect-btn">
-				<svg class="icon inverse-icon medium"><use xlink:href="#facebook-icon"></use></svg>
-				Connettiti con Facebook
-			</button>
+			<p>Inserisci un tuo indirizzo email valido e il codice di controllo sottostante. Ti invieremo una nuova email per attivare il tuo account.</p>
 
 			<hr>
 
-			<p>oppure usa il tuo account</p>
-
-			<form class="form-signin">
+			<form class="">
 				<div class="form-group">
 					<input type="email" class="form-control" placeholder="Email">
 				</div>
 				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Password">
+					<input type="text" class="form-control" placeholder="Codice di Controllo">
 				</div>
-				<div class="form-group align-right">
-					<a class="link text-sm" href="#">Password dimenticata?</a>
+				<div class="form-group">
+				    <img id="captcha~jfey3cYlYDDqOiFeQ9BeeGL0JZC" alt="Codice di controllo" src="/captcha/?~rand=714438308">
+				    
+				    <a class="link" href="#" title="Rigenera il codice di controllo" onclick="if(confirm('Rigenerare il codice di controllo?'))document.getElementById('captcha~jfey3cYlYDDqOiFeQ9BeeGL0JZC').src='/captcha/?~rand=' + Math.round(Math.random()*999999999);return false;">
+				      <span>Genera un nuovo codice</span>
+				    </a>
 				</div>
-				<button type="submit" class="btn btn-lg btn-block default-btn">Accedi</button>
+				<button type="submit" class="btn btn-lg btn-block primary-btn">Richiedi Attivazione</button>
 			</form>
 		</div>
 
 		<div class="boxed-footer">
-			<span>Non sei registrato? <a class="theme-color" href="user-signup.html">Crea un Account</a></span>
+			<span>Hai dimenticato la password? <a class="link" href="<!-- @path recover-password.html -->">Rigenera Password</a></span>
 		</div>
 	</div>
 
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src='assets/js/bootstrap.min.js'></script>
-<script src='assets/js/photoswipe.min.js'></script>
-<script src='assets/js/photoswipe-ui-default.min.js'></script>
-<script src='assets/js/lightbox.js'></script>
-<script src='assets/js/app.js'></script>
-	
-</body>
+<!-- @include _foot -->
 
-</html>
+
