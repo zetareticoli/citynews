@@ -49,19 +49,19 @@ color : $color; }
 
 @mixin flex-flow($values) {
   -webkit-flex-flow: $values;
-  -moz-flex-flow:  $values;
-  -webkit-flex-flow:  $values;
-  -ms-flex-flow:  $values;
-  flex-flow:  $values;
+  -moz-flex-flow: $values;
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
 }
-
+/*
 @mixin flex($values) {
   -webkit-box-flex: $values;
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
-}
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}*/
 
 // mediaqueries
 
