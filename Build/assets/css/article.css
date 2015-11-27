@@ -248,9 +248,11 @@
     padding: .25rem;
     width: 25%;
     text-align: center;
-    -webkit-box-flex: 0 1 auto;
-    -moz-box-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
     -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
 
@@ -365,9 +367,11 @@
       @media (min-width: 46.25em) {
         .detailed-entry-header .entry-details .details-list {
           width: 45%;
-          -webkit-box-flex: 1 1 auto;
-          -moz-box-flex: 1 1 auto;
+          -webkit-box-flex: 1;
+          -moz-box-flex: 1;
+          box-flex: 1;
           -webkit-flex: 1 1 auto;
+          -moz-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
           flex: 1 1 auto; } }
       @media (min-width: 62.5em) {

@@ -436,6 +436,7 @@
 // Photo Gallery Preview
 // Used inside a story list template
 .photo-gallery-preview {
+	margin-bottom: $baseline;
 	padding-top: $baseline;
 	clear: left;
 
@@ -444,7 +445,13 @@
 		clear: none;
 	}
 
-	.gallery-heading {
+	.preview-gallery-list {
+		@include display(flex);
+		@include flex-direction(row);
+		@include flex-wrap(nowrap);
+	}
+
+	.preview-gallery-heading {
 		@include font-size($fontsize300);
 
 		@include bp(m) {
@@ -452,8 +459,21 @@
 		}
 	}
 
-	.photo-gallery-item {
-		width: 3rem;
+	.preview-gallery-item {
+		@include flex(auto);
+		margin: 0 1%;
+		width: 5rem; // gallery item min width
+
+		@include bp(m) {
+			margin: 0 $baseline / 2;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 
