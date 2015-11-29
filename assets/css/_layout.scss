@@ -228,6 +228,10 @@ hr {
 			@include flex(1 1 auto);
 		}
 
+		.item-span-3 {
+			@include flex(3 1 auto);
+		}
+
 		.centered-items {
 			-webkit-justify-content: center;
 			-webkit-align-items: center;

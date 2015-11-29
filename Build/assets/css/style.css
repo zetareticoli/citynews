@@ -2097,6 +2097,14 @@ hr {
     -moz-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto; }
+  .has-flex .item-span-3 {
+    -webkit-box-flex: 3;
+    -moz-box-flex: 3;
+    box-flex: 3;
+    -webkit-flex: 3 1 auto;
+    -moz-flex: 3 1 auto;
+    -ms-flex: 3 1 auto;
+    flex: 3 1 auto; }
   .has-flex .centered-items {
     -webkit-justify-content: center;
     -webkit-align-items: center;
@@ -5088,6 +5096,13 @@ hr {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  box-flex: 3;
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
   margin-top: 1rem; }
   @media (min-width: 62.5em) {
     .slots-headlines {

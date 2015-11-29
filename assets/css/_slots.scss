@@ -44,6 +44,7 @@
 
 .slots-headlines {
 	@include flexbox;
+	@include flex(3);
 	margin-top: 1rem;
 
 	@include bp(l) {
