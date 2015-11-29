@@ -3368,6 +3368,27 @@ hr {
     .photo-gallery-preview {
       padding-top: 0;
       clear: none; } }
+  .photo-gallery-preview .preview-gallery-heading {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-size: 1rem; }
+    @media (min-width: 46.25em) {
+      .photo-gallery-preview .preview-gallery-heading {
+        font-size: 18px;
+        font-size: 1.125rem; } }
+  .photo-gallery-preview .preview-gallery-item {
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
+    box-flex: auto;
+    -webkit-flex: auto;
+    -moz-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    margin: 0 1%;
+    width: 5rem; }
+    @media (min-width: 46.25em) {
+      .photo-gallery-preview .preview-gallery-item {
+        margin: 0 0.25rem; } }
   .photo-gallery-preview .preview-gallery-list {
     display: -webkit-box;
     display: -moz-box;
@@ -3393,30 +3414,26 @@ hr {
     -moz-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
-  .photo-gallery-preview .preview-gallery-heading {
-    font-size: 16px;
-    font-size: 1rem; }
-    @media (min-width: 46.25em) {
-      .photo-gallery-preview .preview-gallery-heading {
-        font-size: 18px;
-        font-size: 1.125rem; } }
-  .photo-gallery-preview .preview-gallery-item {
-    -webkit-box-flex: auto;
-    -moz-box-flex: auto;
-    box-flex: auto;
-    -webkit-flex: auto;
-    -moz-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    margin: 0 1%;
-    width: 5rem; }
-    @media (min-width: 46.25em) {
-      .photo-gallery-preview .preview-gallery-item {
-        margin: 0 0.25rem; } }
-    .photo-gallery-preview .preview-gallery-item:first-child {
-      margin-left: 0; }
-    .photo-gallery-preview .preview-gallery-item:last-child {
-      margin-right: 0; }
+    .photo-gallery-preview .preview-gallery-list.multi-row-gallery {
+      -webkit-box-lines: multiple;
+      -moz-box-lines: multiple;
+      box-lines: multiple;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .photo-gallery-preview .preview-gallery-list.multi-row-gallery .preview-gallery-item {
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
+        box-flex: auto;
+        -webkit-flex: auto;
+        -moz-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 8rem;
+        margin: 0 0.5rem 0.5rem 0; }
+        .photo-gallery-preview .preview-gallery-list.multi-row-gallery .preview-gallery-item img {
+          width: 100%; }
 
 /* ==========================================================================
   Related
