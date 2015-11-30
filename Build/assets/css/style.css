@@ -2020,10 +2020,6 @@ hr {
 .align-left {
   text-align: left; }
 
-.has-border-bottom {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e0e0e0; }
-
 /* ==========================================================================
   Site Main Blocks
   ========================================================================== */
@@ -5220,3 +5216,10 @@ html.is-locked body {
 
 .has-min-width {
   min-width: 300px; }
+
+.has-border-bottom {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0; }
+
+.has-no-border {
+  border: 0; }
