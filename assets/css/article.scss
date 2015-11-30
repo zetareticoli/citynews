@@ -132,13 +132,14 @@
 .entry-content-body {
 	clear: left;
 
-	h2, h3, h4, h5, h6 {
+	> h2, > h3, > h4, > h5, > h6 {
 		margin-top: 1rem;
 	}
 
 	p,
 	> ul,  
-	> ol {
+	> ol,
+	table {
 		margin-bottom: $baseline * 2;
 		font-family: $texttypeface;
 		color: $black1000;
@@ -161,16 +162,17 @@
 		margin-bottom: $baseline;
 	}
 
-	.article-table table {
+	table {
 	    width: 100%;
 	    max-width: 100%;
-	    margin-bottom: 1rem;
+	    margin-bottom: 2rem;
 	    padding: 0;
 	    border-collapse: collapse;
 	    border-spacing: 0;
+	    @include font-size($fontsize300);
 	         
 	    thead tr{
-	        background-color: $black400;
+	        background-color: $black300;
 	    }
 	    
 	    thead th{
@@ -184,11 +186,6 @@
 	    
 	    tbody tr {
 	        border-bottom: 1px solid $bordercolor;
-	    }
-	    
-	    tbody tr:hover{
-	        background-color: $black200;
-	        cursor: pointer;
 	    }
 	       
 	    tbody tr td {
