@@ -24,7 +24,7 @@
 
 .is-hidden {
 	&.nav-children {
-		@include transform(translateX(-250px));
+		@include transform(translateX(-320px));
 	}
 }
 
@@ -63,7 +63,7 @@ html.is-locked  body {
 		@include transform(translateX(-250px));
 
 		@include bp(l) {
-			@include transform(translateX(250px));
+			@include transform(translateX(320px));
 		}
 	}
 
