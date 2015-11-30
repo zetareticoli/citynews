@@ -361,21 +361,7 @@ dt {
 
 // Content text 
 
-.entry-content-body {
 
-	h2, h3, h4, h5, h6 {
-		margin-top: 1rem;
-	}
-
-	p {
-		font-family: $texttypeface;
-
-		@include bp(m) {
-			@include font-size($fontsize500);
-			line-height: 2rem;
-		}
-	} 
-}
 
 // Summary
 

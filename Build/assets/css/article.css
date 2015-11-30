@@ -117,14 +117,29 @@
 
 .entry-content-body {
   clear: left; }
-  .entry-content-body > p {
+  .entry-content-body h2, .entry-content-body h3, .entry-content-body h4, .entry-content-body h5, .entry-content-body h6 {
+    margin-top: 1rem; }
+  .entry-content-body p,
+  .entry-content-body > ul,
+  .entry-content-body > ol {
     margin-bottom: 1rem;
+    font-family: "PublicoText", Georgia, "Times New Roman", serif;
     color: #212121; }
     @media (min-width: 46.25em) {
-      .entry-content-body > p {
+      .entry-content-body p,
+      .entry-content-body > ul,
+      .entry-content-body > ol {
         font-size: 18px;
         font-size: 1.125rem;
         line-height: 2rem; } }
+  .entry-content-body > ul,
+  .entry-content-body > ol {
+    margin-left: 1.5rem;
+    list-style-position: outside; }
+  .entry-content-body > ul > li,
+  .entry-content-body > ol > li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem; }
 
 .entry-meta {
   border-top: 1px solid #e0e0e0;

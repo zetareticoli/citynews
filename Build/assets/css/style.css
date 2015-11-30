@@ -796,16 +796,6 @@ dt {
   color: #bdbdbd;
   margin: 0 2px; }
 
-.entry-content-body h2, .entry-content-body h3, .entry-content-body h4, .entry-content-body h5, .entry-content-body h6 {
-  margin-top: 1rem; }
-.entry-content-body p {
-  font-family: "PublicoText", Georgia, "Times New Roman", serif; }
-  @media (min-width: 46.25em) {
-    .entry-content-body p {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 2rem; } }
-
 .summary {
   color: #616161; }
 
