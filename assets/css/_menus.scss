@@ -233,7 +233,7 @@
 	}
 
 	.link.go-back {
-		background-color: $black1000;
+		background-color: $bluegrey1000;
 		padding-left: $baseline * 5;
 	}
 }
@@ -252,7 +252,8 @@
 	height: 100%;
 	overflow: hidden;
 	z-index: 10;
-	background: $black1000;
+	background: $bluegrey1000;
+	@include transition(all .15s ease-in-out);
 
 	.alph-list {
 		width: 25%;
@@ -277,7 +278,7 @@
 		h5 {
 			color: $black800;
 			@include font-size(12);
-			font-family: $texttypeface;
+			font-family: $alttexttypeface;
 			text-transform: uppercase;
 			margin-bottom: $baseline;
 		}
@@ -289,7 +290,7 @@
 
 		li a {
 			color: white;
-			font-family: $texttypeface;
+			font-family: $alttexttypeface;
 			display: block;
 			padding: $baseline / 2 0;
 		}
@@ -303,7 +304,7 @@
 			display: block;
 			padding: 4px 0;
 			@include font-size(14);
-			font-family: $texttypeface;
+			font-family: $alttexttypeface;
 			line-height: 0.5em;
 			color: white;
 			text-align: center;

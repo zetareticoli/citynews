@@ -2849,7 +2849,7 @@ hr {
   .mobile-nav .has-children > a, .mobile-nav .go-back {
     position: relative; }
   .mobile-nav .link.go-back {
-    background-color: #212121;
+    background-color: #263238;
     padding-left: 2.5rem; }
 
 .mobile-nav-trigger,
@@ -2865,7 +2865,10 @@ hr {
   height: 100%;
   overflow: hidden;
   z-index: 10;
-  background: #212121; }
+  background: #263238;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
   .nav-children .alph-list {
     width: 25%;
     position: absolute;
@@ -2887,7 +2890,7 @@ hr {
       color: #616161;
       font-size: 12px;
       font-size: 0.75rem;
-      font-family: "PublicoText", Georgia, "Times New Roman", serif;
+      font-family: Helvetica, "SegoeUI", Arial, sans-serif;
       text-transform: uppercase;
       margin-bottom: 0.5rem; }
   .nav-children .alph-group {
@@ -2895,7 +2898,7 @@ hr {
     padding: 0.5rem 0; }
     .nav-children .alph-group li a {
       color: white;
-      font-family: "PublicoText", Georgia, "Times New Roman", serif;
+      font-family: Helvetica, "SegoeUI", Arial, sans-serif;
       display: block;
       padding: 0.25rem 0; }
   .nav-children .alph-item {
@@ -2906,7 +2909,7 @@ hr {
       padding: 4px 0;
       font-size: 14px;
       font-size: 0.875rem;
-      font-family: "PublicoText", Georgia, "Times New Roman", serif;
+      font-family: Helvetica, "SegoeUI", Arial, sans-serif;
       line-height: 0.5em;
       color: white;
       text-align: center;
@@ -5159,11 +5162,18 @@ hr {
   transition: all 0.15s ease-in-out; }
 
 .is-hidden.nav-children {
-  -webkit-transform: translateX(-320px);
-  -moz-transform: translateX(-320px);
-  -ms-transform: translateX(-320px);
-  -o-transform: translateX(-320px);
-  transform: translateX(-320px); }
+  -webkit-transform: translateX(250px);
+  -moz-transform: translateX(250px);
+  -ms-transform: translateX(250px);
+  -o-transform: translateX(250px);
+  transform: translateX(250px); }
+  @media (min-width: 62.5em) {
+    .is-hidden.nav-children {
+      -webkit-transform: translateX(-320px);
+      -moz-transform: translateX(-320px);
+      -ms-transform: translateX(-320px);
+      -o-transform: translateX(-320px);
+      transform: translateX(-320px); } }
 
 html.is-locked body {
   height: 100%;
