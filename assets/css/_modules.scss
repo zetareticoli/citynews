@@ -123,6 +123,13 @@
 
 .discussion-section {
     border-bottom: 0.15rem solid $bordercolor;
+
+    .discussion-comment-box,
+    .discussion-thread {
+    	@include bp(xl) {
+	    	margin-left: 1rem;    		
+    	}
+    }
     
     .discussion-thread {
         width: 100%;
@@ -142,6 +149,11 @@
     	border-bottom: 1px solid $bordercolor;
     }
 
+    .comment-author-name {
+    	font-weight: 700;
+    	color: $black800;
+    }
+
     .comment-box-author {
     	@include clearfix;
     	margin-bottom: .5rem;
@@ -153,11 +165,6 @@
     		@include bp(l) {
     			display: block;
     		}
-    	}
-
-    	.comment-author-name {
-    		font-weight: 700;
-    		color: $black800;
     	}
 
     	.comment-author-label {
@@ -209,17 +216,9 @@
     .comment-info-author {
         margin-bottom: 1rem;
         
-        h4 {
+        .comment-author-name {
         	@include font-size($fontsize200);
-            font-size: $fontsize200;
-            display: inline;
-            margin-bottom: 2rem;
             padding-top: 0.750rem;
-
-            @include bp(m) {
-	        	@include font-size($fontsize300);
-                margin-bottom: 1rem;
-            }
         }
         
         .timestamp { /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
@@ -261,6 +260,7 @@
     }
 
     .discussion-head {
+    	width: 100%;
 
     	h3 {
     		color: $bluegrey600;

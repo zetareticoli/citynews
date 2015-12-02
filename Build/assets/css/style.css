@@ -3194,6 +3194,10 @@ hr {
   ========================================================================== */
 .discussion-section {
   border-bottom: 0.15rem solid #e0e0e0; }
+  @media (min-width: 75em) {
+    .discussion-section .discussion-comment-box,
+    .discussion-section .discussion-thread {
+      margin-left: 1rem; } }
   .discussion-section .discussion-thread {
     width: 100%; }
     .discussion-section .discussion-thread .nested-thread {
@@ -3205,6 +3209,9 @@ hr {
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #e0e0e0; }
+  .discussion-section .comment-author-name {
+    font-weight: 700;
+    color: #616161; }
   .discussion-section .comment-box-author {
     *zoom: 1;
     margin-bottom: .5rem; }
@@ -3220,9 +3227,6 @@ hr {
         .discussion-section .comment-box-author .comment-author-label,
         .discussion-section .comment-box-author .comment-author-name {
           display: block; } }
-    .discussion-section .comment-box-author .comment-author-name {
-      font-weight: 700;
-      color: #616161; }
     .discussion-section .comment-box-author .comment-author-label {
       color: #9e9e9e; }
     .discussion-section .comment-box-author .comment-author-photo {
@@ -3258,18 +3262,10 @@ hr {
         font-size: 0.75rem; }
   .discussion-section .comment-info-author {
     margin-bottom: 1rem; }
-    .discussion-section .comment-info-author h4 {
+    .discussion-section .comment-info-author .comment-author-name {
       font-size: 14px;
       font-size: 0.875rem;
-      font-size: 14;
-      display: inline;
-      margin-bottom: 2rem;
       padding-top: 0.750rem; }
-      @media (min-width: 46.25em) {
-        .discussion-section .comment-info-author h4 {
-          font-size: 16px;
-          font-size: 1rem;
-          margin-bottom: 1rem; } }
     .discussion-section .comment-info-author .timestamp {
       /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
       display: block; }
@@ -3299,14 +3295,16 @@ hr {
       font-size: .75rem;
       margin-right: .5rem;
       line-height: 1.25rem; }
-  .discussion-section .discussion-head h3 {
-    color: #607d8b; }
-  .discussion-section .discussion-head .discussion-counter {
-    color: #90a4ae; }
-  .discussion-section .discussion-head .discussion-action {
-    font-size: 12px;
-    font-size: 0.75rem;
-    line-height: 1.25rem; }
+  .discussion-section .discussion-head {
+    width: 100%; }
+    .discussion-section .discussion-head h3 {
+      color: #607d8b; }
+    .discussion-section .discussion-head .discussion-counter {
+      color: #90a4ae; }
+    .discussion-section .discussion-head .discussion-action {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 1.25rem; }
   .discussion-section .thread-load {
     margin: 1rem 0 2rem; }
 
