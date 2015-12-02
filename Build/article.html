@@ -767,7 +767,44 @@
         <div class="slot medium-slot"><img src="assets/images/medium-rectangle-1.png"></div>
     </div>
 
-    <!-- @todo Review Discussion -->
+    <!-- Modal -->
+<div class="modal fade" id="commentOptions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+        <h3 class="modal-title" id="myModalLabel">Opzioni Avanzate</h3>
+      </div>
+      <div class="modal-body">
+        <p>This is a modal</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn primary-btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="icon cross-icon medium"><use xlink:href="#icon-cross"></use></svg></button>
+        <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+      </div>
+      <div class="modal-body">
+        <p>This is a modal</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn default-btn" data-dismiss="modal">Close</button>
+        <button type="button" class="btn primary-btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section class="section discussion-section">
     <div class="line">        
         <div class="group size1of1">
@@ -794,9 +831,11 @@
                         </div> 
                         <div class="comment-box-content">
                             <form class="inline-form">
-                                    <textarea class="form-control" placeholder="Registrati o Accedi per lasciare il tuo commento"></textarea>
+                                    <textarea id="commentTextarea" class="form-control" placeholder="Registrati o Accedi per lasciare il tuo commento"></textarea>
                                     <button class="btn primary-btn comment-submit-btn">Invia Commento</button>
-                                    <span class="comment-box-options"><a href="#" class="btn link-btn">Opzioni Avanzate</a></span>
+                                    <span class="comment-box-options">
+                                        <a href="#" class="btn link-btn" data-toggle="modal" data-target="#commentOptions">Opzioni Avanzate</a>
+                                    </span>
                             </form>
                         </div>                                   
                     </div>

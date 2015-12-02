@@ -11,6 +11,10 @@ $(document).ready(function(){
 		$('.alph-list-link-desktop').css( 'left', $('.main-content').offset().left );
 	});
 
+	$('#commentTextarea').focus(function() {
+		$('#loginModal').modal();
+	});
+
 	//mobile nav - open/close navigation
 	$('.mobile-nav-trigger').on('click', function(event){
 		event.preventDefault();    
