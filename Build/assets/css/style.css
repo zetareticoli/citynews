@@ -2030,6 +2030,12 @@ hr {
     .section {
       margin-bottom: 1.5rem; } }
 
+@media screen and (min-width: 740px) and (max-width: 999px) {
+  .main-column {
+    width: 56%; }
+
+  .secondary-column {
+    width: 44%; } }
 /* ==========================================================================
   Flexbox
   ========================================================================== */
@@ -4272,7 +4278,8 @@ hr {
       width: 18rem; } }
   @media (max-width: 46.188em) {
     .story-media.media-xs {
-      width: 5rem; } }
+      width: 5rem;
+      margin-bottom: 0; } }
 
 .story-heading,
 .story-subheading,

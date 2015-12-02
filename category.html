@@ -8,16 +8,28 @@
 
 		<main class="main-content">
 
-			<h1 class="page-title bordered-title is-mobile"><!-- $title --></h1>
-
-			<!-- @include _headlines-category -->
+			<h1 class="page-title bordered-title visible-xs"><!-- $title --></h1>
 
 			<div class="line">
-				<!-- @include _news-list-category -->
+
+				<div class="group size2of3 main-column">
+
+					<!-- @include _headlines-category -->
+
+					<!-- @include _news-list-category -->
+				</div>
 
 				<aside class="unit size1of3 secondary-column">
-					Sidebar Modules
+
+					<!-- Adv Slot -->
+					<div class="slots">
+						<div class="slot medium-slot"><img src="<!-- @path medium-rectangle-1 -->"></div>
+						<div class="slot medium-slot"><img src="<!-- @path medium-rectangle-2 -->"></div>
+					</div>
+
+					Sidebar
 				</aside>
+
 			</div>
 
 		</main>
