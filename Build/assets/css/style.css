@@ -2817,17 +2817,22 @@ hr {
       padding: 1rem; }
       @media (min-width: 62.5em) {
         .mobile-nav .mobile-nav-header .header-brand {
-          padding: 1.5rem 1rem; } }
+          padding: 1.25rem 1rem; } }
       @media (max-width: 62.438em) {
         .mobile-nav .mobile-nav-header .header-brand {
           display: none; } }
       .mobile-nav .mobile-nav-header .header-brand .logo {
-        height: 1rem; }
+        height: 1.5rem; }
+      .mobile-nav .mobile-nav-header .header-brand .logo-network {
+        fill: white; }
     .mobile-nav .mobile-nav-header .close-btn {
       top: .3rem; }
       @media (min-width: 46.25em) {
         .mobile-nav .mobile-nav-header .close-btn {
           top: .5rem; } }
+      @media (min-width: 62.5em) {
+        .mobile-nav .mobile-nav-header .close-btn {
+          top: .75rem; } }
     .mobile-nav .mobile-nav-header .nav-toolbar {
       height: 3.5rem; }
       @media (max-width: 62.438em) {

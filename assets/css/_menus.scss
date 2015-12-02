@@ -173,7 +173,7 @@
 			padding: 1rem;
 
 			@include bp(l) {
-				padding: 1.5rem 1rem;
+				padding: 1.25rem 1rem;
 			}
 			
 			@include max-bp(m) {
@@ -181,7 +181,11 @@
 			}
 
 			.logo {
-				height: 1rem;
+				height: 1.5rem;
+			}
+
+			.logo-network {
+				fill: white;
 			}
 		}
 
@@ -190,6 +194,10 @@
 
 			@include bp(m) {
 				top: .5rem;
+			}
+
+			@include bp(l) {
+				top: .75rem;
 			}
 		}
 
