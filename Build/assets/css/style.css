@@ -2799,7 +2799,7 @@ hr {
   -o-transform: translateX(0);
   transform: translateX(0);
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   visibility: hidden; }
   @media (max-width: 62.438em) {
     .mobile-nav {
@@ -2866,12 +2866,13 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
   z-index: 10;
   background: #263238;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out; }
+  transition: all 0.15s ease-in-out;
+  -webkit-overflow-scrolling: touch; }
   .nav-children .alph-list {
     width: 25%;
     position: absolute;
@@ -2882,12 +2883,10 @@ hr {
     z-index: 10; }
   .nav-children .alph-groups-container {
     position: relative;
-    z-index: 10;
     width: 70%;
     margin-left: 25%;
-    height: 90%;
     top: 1rem;
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
     .nav-children .alph-groups-container h5 {
       color: #616161;
@@ -5178,6 +5177,7 @@ hr {
       -o-transform: translateX(-320px);
       transform: translateX(-320px); } }
 
+html.is-locked,
 html.is-locked body {
   height: 100%;
   overflow: hidden; }
