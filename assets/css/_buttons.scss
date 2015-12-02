@@ -285,8 +285,8 @@ a.light-btn {
 .search-btn,
 .login-btn {
 	float: left;
-	padding: $gutterwidth;
 	width: $smallheadersize;
+	height: $smallheadersize;
 
 	@include bp(m) {
 		width: $mediumheadersize;

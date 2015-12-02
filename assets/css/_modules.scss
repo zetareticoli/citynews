@@ -896,12 +896,17 @@
 
 .start-search-trigger {
 	position: relative;
-	width: 4rem;
-	height: 4rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	display: block;
 	overflow: hidden;
 	white-space: nowrap;
 	color: transparent; /* hide text */
+
+	@include bp(m) {
+		width: 4rem;
+		height: 4rem;
+	}
 
 	@include bp(l) {
 		width: 4.5rem;
@@ -921,13 +926,18 @@
 
 	&::before {
 		/* lens */
-		top: 23px;
-		left: 22px;
+		top: 20px;
+		left: 18px;
 		width: 18px;
 		height: 18px;
 		border-radius: 50%;
 		border: 3px solid $black500;
 		@include transition(border-color .2s);
+
+		@include bp(m) {
+			top: 22px;
+			left: 20px;
+		}
 
 		@include bp(l) {
 			top: 25px;
@@ -940,10 +950,15 @@
 		height: 3px;
 		width: 8px;
 		background: $black500;
-		bottom: 21px;
-		right: 19px;
+		bottom: 16px;
+		right: 15px;
 		@include transform(rotate(45deg));
 		@include transition(background .2s);
+
+		@include bp(m) {
+			bottom: 22px;
+			right: 20px;
+		}
 
 		@include bp(l) {
 			bottom: 27px;
