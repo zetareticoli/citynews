@@ -487,18 +487,18 @@
 	
 
 	.alph-item {
+		font-family: $alttexttypeface;
+		@include font-size($fontsize200);
+		text-transform: uppercase;
+		font-weight: 700;
+
 		@include bp(m) {
 			display: inline-block;
 		}
 				
 		.link {
-			@include font-size($fontsize200);
-			text-transform:uppercase;
 			color: $black600;
-			font-weight:$headingstypeface;
-			font-weight: 700;
-			cursor: pointer;
-
+			
 			&:hover {
 				text-decoration: none;
 			}
@@ -517,6 +517,11 @@
 			@include bp(l) {
 				padding: $baseline 1rem;
 			}				
+		}
+
+		&.disabled .link {
+			color: $black400;
+			background-color: white;
 		}
 	}
 }
