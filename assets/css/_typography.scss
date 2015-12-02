@@ -197,7 +197,7 @@ dt {
 
 	@include bp(m) {
 		@include font-size($fontsize800);
-		line-height: 2.5rem;
+		line-height: 2.25rem;
 	}
 
 	@include bp(l) {

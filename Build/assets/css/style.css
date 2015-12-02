@@ -664,7 +664,7 @@ dt {
     .heading-lg {
       font-size: 32px;
       font-size: 2rem;
-      line-height: 2.5rem; } }
+      line-height: 2.25rem; } }
   @media (min-width: 62.5em) {
     .heading-lg {
       font-size: 36px;
