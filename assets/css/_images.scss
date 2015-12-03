@@ -5,17 +5,17 @@
 .avatar {
 	@include rounded(50%);
 
-	&.small {
+	&.avatar-sm {
 		width: 1.5rem;
 		height: 1.5rem;
 	}
 
-	&.medium {
+	&.avatar-md {
 		width: 2rem;
 		height: 2rem;
 	}
 
-	&.large {
+	&.avatar-lg {
 		width: 3rem;
 		height: 3rem;
 	}
