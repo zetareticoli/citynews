@@ -198,6 +198,10 @@
 			fill: $b-c-yellow;
 		}
 	}
+
+	.page-title .link:hover {
+		color: $b-c-yellow;
+	}
 }
 
 .theme-yellow .inverted .story-heading .link:hover,
@@ -260,6 +264,10 @@
 			fill: $b-c-red;
 		}
 	}
+
+	.page-title .link:hover {
+		color: $b-c-red;
+	}
 }
 
 .theme-red .inverted .story-heading .link:hover,
@@ -320,6 +328,10 @@
 		.logo-edition {
 			fill: $b-c-blue;
 		}
+	}
+
+	.page-title .link:hover {
+		color: $b-c-blue;
 	}
 }
 
@@ -382,6 +394,10 @@
 			fill: $b-c-green;
 		}
 	}
+
+	.page-title .link:hover {
+		color: $b-c-green;
+	}
 }
 
 .theme-green .inverted .story-heading .link:hover,
@@ -442,6 +458,10 @@
 		.logo-edition {
 			fill: $b-c-purple;
 		}
+	}
+
+	.page-title .link:hover {
+		color: $b-c-purple;
 	}
 }
 
@@ -504,6 +524,10 @@
 		.logo-edition {
 			fill: $b-c-pink;
 		}
+	}
+
+	.page-title .link:hover {
+		color: $b-c-pink;
 	}
 }
 
