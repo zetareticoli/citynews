@@ -372,11 +372,11 @@ dt {
 
 .number {
 	font-family: $headingstypeface;
-	@include font-size($fontsize400);
-	font-weight: 700;
+	@include font-size($fontsize600);
+	font-weight: 900;
 	float: left;
 	line-height: 1rem;
-	margin-right: 1rem;
+	margin: 0 .75rem;
 	padding-top: .25rem;
 	color: $bluegrey500;
 }
