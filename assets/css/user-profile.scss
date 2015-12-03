@@ -11,6 +11,10 @@
 		float:left;
         width: 30%;
         
+        @include bp(m) {
+            width: 35%;
+        }
+        
         @include bp(l) {
             width: 100%;
         }
@@ -53,6 +57,7 @@
 		
 	}
     
+    /* Lista dettagli (location - like - dislike ...)*/
     .user-profile-list-details {
         float: right;
         
@@ -71,13 +76,14 @@
             font-weight: 700;
             line-height: 1.500rem;
             
-            @include bp(m) {
+            @include bp(l) {
                 display: inline;
                 padding: 0 1rem;
             }
             
             .icon {
                 margin-left: .250rem;
+                margin-bottom: .250rem;
             }
                 
              /*@include bp(l) {
@@ -87,7 +93,15 @@
         }
     }
     
+    /* Menu navigazione contenuti */
     .nav-user-activity {
+        padding-top: .500rem;
+        border-top: 1px solid $bordercolor;
+        
+        @include bp(l) {
+            padding-top: 0;
+            border-top: 0;
+        }
         
         .navbar-toggle {
             margin: 0;
@@ -102,7 +116,7 @@
             float: none;
         }
         
-        .nav-user-profile {
+        .nav-user-profile-content {
             padding-bottom:1rem;
 		    margin-bottom:1rem;
 		    border-bottom: .250rem solid $bordercolor;
@@ -114,29 +128,85 @@
                     float: left;
                     width: auto;
                 }
-			
+                
                 a {
+                    font-size: .875rem;
+                    padding: .250rem;
                     
+                    @include bp (s) {
+                        padding: .500rem;
+                    }
 			
 				    &:focus {
 					    text-decoration:none;
                     }	
 					
                     .count-activity {
-                        font-size: .750rem;
                         font-weight: bold;
+                    }
+                    
+                }
+                
+                &.active {
+                    
+                    a {
+                        background-color: $b-c-yellow;
+                        color:$black700;
+                        padding: .250rem;
+                        
+                        @include bp (s) {
+                            padding: .500rem;
+                        }
+                        
+                        .count-activity {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
         }
+    }
+    
+	.nav-user-modify-profile {
+        border-top: 1px solid $bordercolor;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        border-bottom: 0.25rem solid $bordercolor;
         
-        .nav-user-modify-profile {
-            padding-bottom: 1rem;
-            margin-bottom: 1rem;
-            border-bottom: 0.25rem solid #e0e0e0;
+        @include bp(l) {
+            border-top: 0;
+            padding-top: 0;
+        }
+        
+        .nav-user-profile{
+            
+            .nav-item {
+                
+                a {
+                    font-size: .875rem;
+                    padding: .250rem;
+                    
+                    @include bp (s) {
+                        padding: .500rem;
+                    }
+                }
+                
+                &.active {
+                    
+                    a {
+                        background-color: $b-c-yellow;
+                        color:$black700;
+                        padding: .250rem;
+                        
+                        @include bp (s) {
+                            padding: .500rem;
+                        }
+                    }
+                }
+            }
         }
     }
-	
+    
 	.form-modify-profile {
 		
 		.form-modify-profile-fieldset {
@@ -205,9 +275,9 @@
 			}
 		}
 		
-		.user-profile-data-access {
+		/*.user-profile-data-access {
 			display:none;
-		}
+		}*/
 	}
 	
 	.user-profile-container-activity {
@@ -294,7 +364,7 @@
 			.text-user-profile-comment {
 				width: 90%;
                 padding: 1rem;
-                margin: 0 auto 1rem;
+                margin: 1rem auto 1rem;
                 font-weight: 700;
                 text-align: center;
                 background-color: $bluegrey400;
