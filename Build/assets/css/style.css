@@ -681,6 +681,23 @@ dt {
       font-size: 3rem;
       line-height: 3.5rem; } }
 
+.reportage-heading {
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25rem; }
+  @media (min-width: 46.25em) {
+    .reportage-heading {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
+  @media (min-width: 75em) {
+    .reportage-heading {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+
 /* ==========================================================================
    Text Elements
    ========================================================================== */
@@ -1165,13 +1182,13 @@ time {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%; }
-  .avatar.small {
+  .avatar.avatar-sm {
     width: 1.5rem;
     height: 1.5rem; }
-  .avatar.medium {
+  .avatar.avatar-md {
     width: 2rem;
     height: 2rem; }
-  .avatar.large {
+  .avatar.avatar-lg {
     width: 3rem;
     height: 3rem; }
 
@@ -3125,6 +3142,9 @@ hr {
 .module {
   border-top: 2px solid #e0e0e0; }
 
+.secondary-column .module {
+  margin-bottom: 1rem; }
+
 .has-flex .module {
   display: -webkit-box;
   display: -moz-box;
@@ -4785,6 +4805,12 @@ hr {
   .bottom-nav ul a {
     font-size: 12px;
     font-size: 0.75rem; }
+
+/* ==========================================================================
+  Users List
+  ========================================================================== */
+.users-list li {
+  margin: .3rem; }
 
 /* ==========================================================================
   Video Player
