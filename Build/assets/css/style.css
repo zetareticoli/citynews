@@ -492,7 +492,7 @@ html {
 body {
   font-family: Helvetica, "SegoeUI", Arial, sans-serif;
   font-weight: 400;
-  color: #212121; }
+  color: #424242; }
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
@@ -785,6 +785,7 @@ dt {
   line-height: 1.5rem; }
 
 .middot {
+  color: #9e9e9e;
   margin: 0 2px; }
 
 .summary {
