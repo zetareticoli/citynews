@@ -266,6 +266,10 @@
 
 	&.card-item-mid {
 		@include bp(m) {
+			width: 50%;
+		}
+
+		@include bp(l) {
 			width: 33.33%;
 		}
 
