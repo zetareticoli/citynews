@@ -788,6 +788,17 @@ dt {
   color: #9e9e9e;
   margin: 0 2px; }
 
+.number {
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  float: left;
+  line-height: 1rem;
+  margin-right: 1rem;
+  padding-top: .25rem;
+  color: #78909c; }
+
 .summary {
   color: #616161; }
 
@@ -3498,6 +3509,12 @@ hr {
           width: 100%; }
 
 /* ==========================================================================
+  Most Read
+  ========================================================================== */
+.most-read .story-heading {
+  overflow: hidden; }
+
+/* ==========================================================================
   Related
   ========================================================================== */
 .related-stories.inner {
@@ -4273,7 +4290,8 @@ hr {
       margin-right: .75rem; } }
   .story-media.align-right {
     float: right;
-    margin-left: 0.5rem; }
+    margin-left: 0.5rem;
+    margin-right: 0; }
   .story-media.align-left {
     float: left;
     margin-right: 0.5rem; }
@@ -4550,21 +4568,7 @@ hr {
     z-index: 1;
     background: none; }
   .inset-story .story-heading {
-    font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
-    font-weight: normal;
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25rem; }
-    @media (min-width: 46.25em) {
-      .inset-story .story-heading {
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.5rem; } }
-    @media (min-width: 75em) {
-      .inset-story .story-heading {
-        font-size: 32px;
-        font-size: 2rem;
-        line-height: 2.5rem; } }
+    margin-bottom: 0; }
   .inset-story .story-media {
     position: relative;
     top: 0;
@@ -4860,6 +4864,14 @@ hr {
 /* ==========================================================================
    Brand Themes
    ========================================================================== */
+.theme-yellow ::selection,
+.theme-red ::selection,
+.theme-blue ::selection,
+.theme-green ::selection,
+.theme-purple ::selection,
+.theme-pink ::selection {
+  color: #fff;
+  text-shadow: none; }
 .theme-yellow .nav-btn .btn-label,
 .theme-red .nav-btn .btn-label,
 .theme-blue .nav-btn .btn-label,
@@ -4892,6 +4904,8 @@ hr {
 /* ==========================================================================
   Theme Yellow
   ========================================================================== */
+.theme-yellow ::selection {
+  background: #FFBE26; }
 .theme-yellow .theme-element-bg:before {
   background-color: #FFBE26; }
 .theme-yellow .theme-background {
@@ -4939,6 +4953,8 @@ hr {
 /* ==========================================================================
   Theme Red
   ========================================================================== */
+.theme-red ::selection {
+  background: #F2463D; }
 .theme-red .theme-background {
   background-color: #F2463D; }
 .theme-red .theme-border {
@@ -4978,6 +4994,8 @@ hr {
 /* ==========================================================================
   Theme Blue
   ========================================================================== */
+.theme-blue ::selection {
+  background: #3277C7; }
 .theme-blue .theme-background {
   background-color: #3277C7; }
 .theme-blue .theme-border {
@@ -5017,6 +5035,8 @@ hr {
 /* ==========================================================================
   Theme Green
   ========================================================================== */
+.theme-green ::selection {
+  background: #50AE55; }
 .theme-green .theme-background {
   background-color: #50AE55; }
 .theme-green .theme-border {
@@ -5056,6 +5076,8 @@ hr {
 /* ==========================================================================
   Theme Purple
   ========================================================================== */
+.theme-purple ::selection {
+  background: #B75DC7; }
 .theme-purple .theme-background {
   background-color: #B75DC7; }
 .theme-purple .theme-border {
@@ -5097,6 +5119,8 @@ hr {
 /* ==========================================================================
   Theme Pink
   ========================================================================== */
+.theme-pink ::selection {
+  background: #F291B2; }
 .theme-pink .theme-background {
   background-color: #F291B2; }
 .theme-pink .theme-border {

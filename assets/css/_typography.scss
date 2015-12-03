@@ -215,6 +215,24 @@ dt {
 	}
 }
 
+.reportage-heading {
+	font-family: $titleseriftypeface;
+	font-weight: normal;
+
+	@include font-size($fontsize300);
+	line-height: 1.25rem;
+
+	@include bp(m) {
+		@include font-size($fontsize500);
+		line-height: 1.5rem;
+	}
+
+	@include bp(xl) {
+		@include font-size($fontsize800);
+		line-height: 2.5rem;
+	}
+}
+
 /* ==========================================================================
    Text Elements
    ========================================================================== */
@@ -350,9 +368,18 @@ dt {
 	margin: 0 2px;
 }
 
-// Content text 
+// Numbers
 
-
+.number {
+	font-family: $headingstypeface;
+	@include font-size($fontsize400);
+	font-weight: 700;
+	float: left;
+	line-height: 1rem;
+	margin-right: 1rem;
+	padding-top: .25rem;
+	color: $bluegrey500;
+}
 
 // Summary
 
@@ -587,7 +614,7 @@ time {
 	line-height: 1em;
 }
 
-// Users & Authors ===============================================================
+// Users & Authors ===================================================
 
 .author-name,
 .author-role {

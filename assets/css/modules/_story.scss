@@ -30,6 +30,7 @@
 	&.align-right {
 		float: right;
 		margin-left: $baseline;
+		margin-right: 0;
 	}
 	
 	&.align-left {
@@ -462,21 +463,7 @@
 	}
 
 	.story-heading {
-		font-family: $titleseriftypeface;
-		font-weight: normal;
-
-		@include font-size($fontsize300);
-		line-height: 1.25rem;
-
-		@include bp(m) {
-			@include font-size($fontsize500);
-			line-height: 1.5rem;
-		}
-
-		@include bp(xl) {
-			@include font-size($fontsize800);
-			line-height: 2.5rem;
-		}
+		margin-bottom: 0;
 	}
 
 	.story-media {
@@ -521,7 +508,6 @@
 }
 
 // Sublinks ===============================================================
-
 
 .sublink {
 	margin-bottom: $baseline;

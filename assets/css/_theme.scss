@@ -124,6 +124,11 @@
 .theme-purple,
 .theme-pink {
 
+	::selection {
+		color: #fff;
+		text-shadow: none;
+	}
+
 	.nav-btn {
 		.btn-label {
 			color: $black900;
@@ -148,6 +153,10 @@
   ========================================================================== */
 
 .theme-yellow {
+
+	::selection {
+		background: $b-c-yellow;
+	}
 
 	.theme-element-bg {
 		&:before {
@@ -227,6 +236,10 @@
 
 .theme-red {
 
+	::selection {
+		background: $b-c-red;
+	}
+
 	.theme-background {
 		background-color: $b-c-red;
 	}
@@ -291,6 +304,10 @@
   ========================================================================== */
 
 .theme-blue {
+
+	::selection {
+		background: $b-c-blue;
+	}
 
 	.theme-background {
 		background-color: $b-c-blue;
@@ -357,6 +374,10 @@
 
 .theme-green {
 
+	::selection {
+		background: $b-c-green;
+	}
+
 	.theme-background {
 		background-color: $b-c-green;
 	}
@@ -421,6 +442,10 @@
   ========================================================================== */
 
 .theme-purple {
+
+	::selection {
+		background: $b-c-purple;
+	}
 
 	.theme-background {
 		background-color: $b-c-purple;
@@ -487,6 +512,10 @@
   ========================================================================== */
 
 .theme-pink {
+
+	::selection {
+		background: $b-c-pink;
+	}
 
 	.theme-background {
 		background-color: $b-c-pink;
