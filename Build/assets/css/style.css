@@ -501,9 +501,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif; }
 
-h1, h2 {
-  font-weight: 900; }
-
 h3, h4, h5, h6 {
   font-weight: 700; }
 
@@ -520,11 +517,6 @@ h1 {
     h1 {
       font-size: 36px;
       font-size: 2.25rem; } }
-  @media (min-width: 75em) {
-    h1 {
-      font-size: 48px;
-      font-size: 3rem;
-      line-height: 3.5rem; } }
 
 h2 {
   font-size: 20px;
@@ -3750,6 +3742,9 @@ hr {
     .card-item.card-item-sm {
       width: 25%; } }
   @media (min-width: 46.25em) {
+    .card-item.card-item-mid {
+      width: 50%; } }
+  @media (min-width: 62.5em) {
     .card-item.card-item-mid {
       width: 33.33%; } }
   @media (min-width: 75em) {

@@ -30,10 +30,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headingstypeface;
 }
 
-h1, h2 {
-	font-weight: $bigheadingeweight;
-}
-
 h3, h4, h5, h6 {
 	font-weight: $baseheadingweight;
 }
@@ -50,11 +46,6 @@ h1 {
 	@include bp(l) {
 		@include font-size($fontsize900);
 	}
-
-	@include bp(xl) {
-		@include font-size($fontsize1000);
-		line-height: 3.5rem;
-	}	
 }
 
 h2 {
