@@ -449,6 +449,17 @@ a.share-btn {
 	background-color: #43d854;
 }
 
+.facebook-connect-wrapper {
+	position: relative;
+	height: 3.5rem;
+	cursor: pointer;
+}
+
+.facebook-connect-btn {
+	position: relative;
+	z-index: 5;
+}
+
 .facebook-connect-btn,
 .facebook-connect-btn:hover {
 	color: white;
@@ -456,4 +467,15 @@ a.share-btn {
 
 .facebook-connect-btn:active {
 	color: darken(white, 20%);
+}
+
+.facebook-connect-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 3.5rem !important;
+	opacity: 0;
+	z-index: 6;
+	cursor: pointer;
 }
