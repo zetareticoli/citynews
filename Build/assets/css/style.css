@@ -1312,7 +1312,8 @@ a.light-btn {
   padding-right: .75rem;
   background-color: white;
   border: 2px solid #e0e0e0;
-  font-weight: 400; }
+  font-weight: 400;
+  text-decoration: none; }
 .dropdown .dropdown-menu {
   color: #616161;
   border-width: 2px;
@@ -2335,6 +2336,9 @@ hr {
       .header .header-brand .network .logo {
         height: 12px;
         vertical-align: top; }
+      .header .header-brand .network .dropdown-toggle {
+        border: 0;
+        padding: 0; }
   .header .header-meta {
     display: none; }
     @media (min-width: 62.5em) {
@@ -3400,6 +3404,20 @@ hr {
       position: absolute;
       top: 1.25rem;
       right: 1rem; }
+
+/* ==========================================================================
+  Network Dropdown
+  ========================================================================== */
+.header-network-dropdown {
+  padding: 0.5rem;
+  width: 18rem; }
+  .header-network-dropdown li > a {
+    padding: .25rem .5rem; }
+  .header-network-dropdown .network-item {
+    display: inline-block;
+    float: left; }
+  .header-network-dropdown .divider {
+    clear: left; }
 
 /* ==========================================================================
   Photo Gallery
