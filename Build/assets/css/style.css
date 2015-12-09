@@ -1353,6 +1353,24 @@ a.light-btn {
   -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg); }
 
+.dropup .caret {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  line-height: 1.5rem;
+  margin-left: .25rem;
+  background: url(../images/icon-arrow.svg) 0 0 no-repeat;
+  border: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  -moz-transition: -moz-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in; }
+.dropup.open .caret {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  transform: rotateZ(180deg); }
+
 .date-dropdown {
   width: 100%; }
   .date-dropdown .date-dropdown-timestamp {
@@ -3408,16 +3426,31 @@ hr {
 /* ==========================================================================
   Network Dropdown
   ========================================================================== */
-.header-network-dropdown {
-  padding: 0.5rem;
-  width: 18rem; }
-  .header-network-dropdown li > a {
+.dropdown .network-dropdown,
+.dropup .network-dropdown {
+  padding: 0.5rem; }
+  .dropdown .network-dropdown li > a,
+  .dropup .network-dropdown li > a {
     padding: .25rem .5rem; }
-  .header-network-dropdown .network-item {
+  .dropdown .network-dropdown .network-item,
+  .dropup .network-dropdown .network-item {
     display: inline-block;
-    float: left; }
-  .header-network-dropdown .divider {
+    float: left;
+    width: 33.33%; }
+  .dropdown .network-dropdown .divider,
+  .dropup .network-dropdown .divider {
     clear: left; }
+
+.header .dropdown .network-dropdown {
+  width: 18rem; }
+
+.site-footer .dropup .network-dropdown {
+  width: 100%; }
+  @media (min-width: 46.25em) {
+    .site-footer .dropup .network-dropdown {
+      left: auto;
+      right: 0;
+      width: 18rem; } }
 
 /* ==========================================================================
   Photo Gallery

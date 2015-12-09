@@ -203,6 +203,26 @@ a.light-btn {
 	}	
 }
 
+.dropup {
+	.caret {
+		display: inline-block;
+		width: 10px;
+		height: 6px;
+		line-height: 1.5rem;
+		margin-left: .25rem;
+		background: url('icon-arrow.svg') 0 0 no-repeat;
+		border: 0;
+		@include transition(transform .2s ease-in);
+	}
+
+	&.open {
+
+		.caret {
+			@include transform(rotateZ(180deg));
+		}
+	}
+}
+
 .date-dropdown {
 	width: 100%;
 

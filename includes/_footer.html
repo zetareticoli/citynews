@@ -61,17 +61,17 @@
             <h5 class="footer-col-title theme-color">Apps & SOcial</h5>
             <ul class="u-unstyled inline-list">
                 <li>
-                    <a href="#"><svg class="icon large top-icon"><use xlink:href="#facebook-with-circle-icon"></use></svg></a>
+                    <a href="#"><svg class="icon large top-icon"><use xlink:href="#facebook-circle-icon"></use></svg></a>
                 </li>
                 <li>
-                    <a href="#"><svg class="icon large top-icon"><use xlink:href="#twitter-with-circle-icon"></use></svg></a>
+                    <a href="#"><svg class="icon large top-icon"><use xlink:href="#twitter-circle-icon"></use></svg></a>
                 </li>
                 <li>
                     <a href="#"><svg class="icon large feed-icon"><use xlink:href="#feed-icon"></use></svg></a>
                 </li>
             </ul>
 
-            <div class="footer-app-links is-desktop">   
+            <div class="footer-app-links visible-md">   
                 <a class="link" href="#"><img src="<!-- @path badge-apple.svg -->" alt="Download Citynews App per iOS"/></a>
                 <a class="link" href="#"><img src="<!-- @path badge-google.png -->" alt="Download Citynews Android App"/></a> 
             </div>
@@ -80,8 +80,19 @@
 
     <div class="line">
         <div class="unit size1of1 footer-note">
-            <div class="company-logo"><a href="www.citynews.it"><img src="<!-- @path citynews-logo.svg -->" alt="Citynews" /></a></div>
-            <ul class="u-unstyled inline-list list-link is-desktop">
+            <div class="company-logo hidden-xs hidden-sm">
+                <img src="<!-- @path citynews-logo.svg -->" alt="Citynews" />
+            </div>
+            <div class="network dropup hidden-md hidden-lg">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <div class="company-logo">
+                        <img src="<!-- @path citynews-logo.svg -->" alt="Citynews" />
+                        <span class="icon caret caret-icon small"></span>
+                    </div>
+                </a>
+                <!-- @include _network-dropdown -->
+            </div>
+            <ul class="u-unstyled inline-list list-link visible-md">
                 <li><a href="#" class="link">Chi siamo</a> <span class="middot">&middot;</span></li>
                 <li><a href="#" class="link">Press</a> <span class="middot">&middot;</span></li>
                 <li><a href="#" class="link">Contatti</a></li>
