@@ -225,9 +225,9 @@ a.light-btn {
 
 .date-dropdown {
 	width: 100%;
+	border-top: 2px solid $bordercolor;
 
 	.date-dropdown-timestamp {
-		border-top: 2px solid $bordercolor;
 		border-left: 2px solid $bordercolor;
 		border-right: 2px solid $bordercolor;
 		padding: .875rem .875rem 0;

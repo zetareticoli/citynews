@@ -1372,9 +1372,9 @@ a.light-btn {
   transform: rotateZ(180deg); }
 
 .date-dropdown {
-  width: 100%; }
+  width: 100%;
+  border-top: 2px solid #e0e0e0; }
   .date-dropdown .date-dropdown-timestamp {
-    border-top: 2px solid #e0e0e0;
     border-left: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
     padding: .875rem .875rem 0; }
