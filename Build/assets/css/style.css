@@ -4776,17 +4776,19 @@ hr {
   float: left;
   margin-right: 0.5rem; }
 
-@media (min-width: 30em) {
-  .media-item {
-    width: 50%; } }
-@media (min-width: 62.5em) {
-  .media-item {
-    width: 33%; } }
-.media-item.size1of2 {
-  width: 100%; }
+.media-item {
+  margin-bottom: 1rem; }
   @media (min-width: 30em) {
-    .media-item.size1of2 {
+    .media-item {
       width: 50%; } }
+  @media (min-width: 62.5em) {
+    .media-item {
+      width: 33%; } }
+  .media-item.size1of2 {
+    width: 100%; }
+    @media (min-width: 30em) {
+      .media-item.size1of2 {
+        width: 50%; } }
 
 .media-story {
   border-bottom: 0;

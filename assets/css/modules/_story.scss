@@ -620,6 +620,7 @@
 // Media Story ===============================================================
 
 .media-item {
+	margin-bottom: 1rem;
 
 	@include bp(s) {
 		width: 50%;
