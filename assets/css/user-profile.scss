@@ -231,14 +231,14 @@
 		.form-modify-profile-fieldset {
 			width:100%;
 			float:left;
+            border-bottom: 1px solid $bordercolor;
             
             @include bp(l) {
-                margin-bottom: 2rem;
+                margin-bottom: 2rem; 
             }
 			
 			.form-profile-title-fieldset {
 				padding-bottom:.250rem;
-				border-bottom: 2px solid $black600;
 				
                 .label {
                     margin-bottom: 0;
@@ -294,7 +294,11 @@
                 }
             }
 		}
-	}
+        
+        .default-btn {
+            float: right;
+        }
+    } 
 	
 	.user-profile-container-activity {
         width: 100%;
