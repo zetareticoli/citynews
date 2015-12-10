@@ -1,0 +1,839 @@
+<form>
+
+
+<div class="filter-dropdown">
+	<div class="filter-dropdown-selection">
+		<span class="label">Zona</span>
+		<span class="selection-label">Centro Storico</span>
+	</div>			
+	<div class="dropdown">
+		<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Seleziona una zona
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu bs_links_filters" aria-labelledby="dropdownMenu3">
+			<li><a class="link" href="/eventi/cinema/">Tutte</a></li>												 
+		</ul>
+	</div>  
+</div>
+
+<div class="filter-block grouped-filters bs_checkbox_filters">
+	
+	<h5>Filtra per</h5>
+
+	<h6>Tipologia</h6>
+	<div class="checkbox">   
+		<input data-filter="al" type="checkbox" name="bs_checkbox_al[]" id="bs_checkbox_oggi" value="2015-12-10">
+		<label class="checkbox-label" for="bs_checkbox_oggi">Film di oggi</label>
+	</div>   
+
+	<div class="checkbox">   
+		<input data-filter="dal" type="checkbox" name="bs_checkbox_dal[]" id="bs_checkbox_nuoveuscite" value="2015-12-11">
+		<label class="checkbox-label" for="bs_checkbox_nuoveuscite">Nuove uscite</label>
+	</div>        
+
+	<hr>
+
+	<h6>Genere</h6>
+					
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_drammatico" value="drammatico">
+		<label class="checkbox-label" for="bs_checkbox_drammatico">Drammatico <span class="text-sm checkbox-counter">(33)</span></label>
+	</div> 
+	
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_commedia" value="commedia">
+		<label class="checkbox-label" for="bs_checkbox_commedia">Commedia <span class="text-sm checkbox-counter">(22)</span></label>
+	</div>
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_thriller" value="thriller">
+		<label class="checkbox-label" for="bs_checkbox_thriller">Thriller <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+	
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_animazione" value="animazione">
+		<label class="checkbox-label" for="bs_checkbox_animazione">Animazione <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+	
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_documentario" value="documentario">
+		<label class="checkbox-label" for="bs_checkbox_documentario">Documentario <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+	
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_horror" value="horror">
+		<label class="checkbox-label" for="bs_checkbox_horror">Horror <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+	
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_azione" value="azione">
+		<label class="checkbox-label" for="bs_checkbox_azione">Azione <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_musicale" value="musicale">
+		<label class="checkbox-label" for="bs_checkbox_musicale">Musicale <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_avventura" value="avventura">
+		<label class="checkbox-label" for="bs_checkbox_avventura">Avventura <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_giallo" value="giallo">
+		<label class="checkbox-label" for="bs_checkbox_giallo">Giallo <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_religioso" value="religioso">
+		<label class="checkbox-label" for="bs_checkbox_religioso">Religioso <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_cortometraggio" value="cortometraggio">
+		<label class="checkbox-label" for="bs_checkbox_cortometraggio">Cortometraggio <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_noir" value="noir">
+		<label class="checkbox-label" for="bs_checkbox_noir">Noir <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_eventi" value="eventi">
+		<label class="checkbox-label" for="bs_checkbox_eventi">Eventi <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<div class="checkbox">   
+		<input data-filter="genere" type="checkbox" name="bs_checkbox_genere[]" id="bs_checkbox_spionaggio" value="spionaggio">
+		<label class="checkbox-label" for="bs_checkbox_spionaggio">Spionaggio <span class="text-sm checkbox-counter">(7)</span></label>
+	</div> 
+
+	<hr>
+
+	<h6>Sale</h6>
+					
+	<div class="checkbox">   
+		<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_adriano" value="adriano">
+		<label class="checkbox-label" for="bs_checkbox_adriano">
+		Adriano</label>
+	</div> 
+
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_al-maxxi" value="al-maxxi">
+	<label class="checkbox-label" for="bs_checkbox_al-maxxi">
+	Al MAXXI  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_alhambra" value="alhambra">
+	<label class="checkbox-label" for="bs_checkbox_alhambra">
+	Alhambra  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_ambassade" value="ambassade">
+	<label class="checkbox-label" for="bs_checkbox_ambassade">
+	Ambassade  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_andromeda" value="andromeda">
+	<label class="checkbox-label" for="bs_checkbox_andromeda">
+	Andromeda  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_antares" value="antares">
+	<label class="checkbox-label" for="bs_checkbox_antares">
+	Antares  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_ariston" value="ariston">
+	<label class="checkbox-label" for="bs_checkbox_ariston">
+	Ariston  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_astoria-a-anzio-rm" value="astoria-a-anzio-rm">
+	<label class="checkbox-label" for="bs_checkbox_astoria-a-anzio-rm">
+	Astoria a Anzio (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_atlantic" value="atlantic">
+	<label class="checkbox-label" for="bs_checkbox_atlantic">
+	Atlantic  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_augustus-multisala-a-velletri-rm" value="augustus-multisala-a-velletri-rm">
+	<label class="checkbox-label" for="bs_checkbox_augustus-multisala-a-velletri-rm">
+	Augustus Multisala a Velletri (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_azzurro-scipioni" value="azzurro-scipioni">
+	<label class="checkbox-label" for="bs_checkbox_azzurro-scipioni">
+	Azzurro Scipioni  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_barberini" value="barberini">
+	<label class="checkbox-label" for="bs_checkbox_barberini">
+	Barberini  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_broadway" value="broadway">
+	<label class="checkbox-label" for="bs_checkbox_broadway">
+	Broadway  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_ciak" value="ciak">
+	<label class="checkbox-label" for="bs_checkbox_ciak">
+	Ciak  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_cineclub-alphaville" value="cineclub-alphaville">
+	<label class="checkbox-label" for="bs_checkbox_cineclub-alphaville">
+	Cineclub Alphaville  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_cineland" value="cineland">
+	<label class="checkbox-label" for="bs_checkbox_cineland">
+	Cineland  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_cynthianum" value="cynthianum">
+	<label class="checkbox-label" for="bs_checkbox_cynthianum">
+	Cynthianum  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_dei-piccoli" value="dei-piccoli">
+	<label class="checkbox-label" for="bs_checkbox_dei-piccoli">
+	Dei Piccoli  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_doria" value="doria">
+	<label class="checkbox-label" for="bs_checkbox_doria">
+	Doria  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_eden" value="eden">
+	<label class="checkbox-label" for="bs_checkbox_eden">
+	Eden  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_eurcine-multisala" value="eurcine-multisala">
+	<label class="checkbox-label" for="bs_checkbox_eurcine-multisala">
+	Eurcine Multisala  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_europa" value="europa">
+	<label class="checkbox-label" for="bs_checkbox_europa">
+	Europa  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_ex-aula-consiliare" value="ex-aula-consiliare">
+	<label class="checkbox-label" for="bs_checkbox_ex-aula-consiliare">
+	Ex Aula Consiliare  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_farnese-persol" value="farnese-persol">
+	<label class="checkbox-label" for="bs_checkbox_farnese-persol">
+	Farnese Persol  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_feronia" value="feronia">
+	<label class="checkbox-label" for="bs_checkbox_feronia">
+	Feronia  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_fiamma-multisala" value="fiamma-multisala">
+	<label class="checkbox-label" for="bs_checkbox_fiamma-multisala">
+	Fiamma Multisala  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_galaxy" value="galaxy">
+	<label class="checkbox-label" for="bs_checkbox_galaxy">
+	Galaxy  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_giulio-cesare" value="giulio-cesare">
+	<label class="checkbox-label" for="bs_checkbox_giulio-cesare">
+	Giulio Cesare  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_giuseppetti-a-tivoli-rm" value="giuseppetti-a-tivoli-rm">
+	<label class="checkbox-label" for="bs_checkbox_giuseppetti-a-tivoli-rm">
+	Giuseppetti a Tivoli (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_greenwich" value="greenwich">
+	<label class="checkbox-label" for="bs_checkbox_greenwich">
+	Greenwich  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_il-piccolissimo-a-ciampino-rm" value="il-piccolissimo-a-ciampino-rm">
+	<label class="checkbox-label" for="bs_checkbox_il-piccolissimo-a-ciampino-rm">
+	Il Piccolissimo a Ciampino (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_institut-francais-centre-saint-louis" value="institut-francais-centre-saint-louis">
+	<label class="checkbox-label" for="bs_checkbox_institut-francais-centre-saint-louis">
+	Institut Français - Centre Saint-Louis  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_intrastevere" value="intrastevere">
+	<label class="checkbox-label" for="bs_checkbox_intrastevere">
+	Intrastevere  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_jolly" value="jolly">
+	<label class="checkbox-label" for="bs_checkbox_jolly">
+	Jolly  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_king" value="king">
+	<label class="checkbox-label" for="bs_checkbox_king">
+	King  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_kino" value="kino">
+	<label class="checkbox-label" for="bs_checkbox_kino">
+	Kino  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_lido-multisala" value="lido-multisala">
+	<label class="checkbox-label" for="bs_checkbox_lido-multisala">
+	Lido Multisala  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_lux-multiscreen" value="lux-multiscreen">
+	<label class="checkbox-label" for="bs_checkbox_lux-multiscreen">
+	Lux Multiscreen  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_madison" value="madison">
+	<label class="checkbox-label" for="bs_checkbox_madison">
+	Madison  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_maestoso" value="maestoso">
+	<label class="checkbox-label" for="bs_checkbox_maestoso">
+	Maestoso  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_mancini" value="mancini">
+	<label class="checkbox-label" for="bs_checkbox_mancini">
+	Mancini  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_mignon" value="mignon">
+	<label class="checkbox-label" for="bs_checkbox_mignon">
+	Mignon  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_moderno-multisala" value="moderno-multisala">
+	<label class="checkbox-label" for="bs_checkbox_moderno-multisala">
+	Moderno Multisala  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_nuovo-olimpia" value="nuovo-olimpia">
+	<label class="checkbox-label" for="bs_checkbox_nuovo-olimpia">
+	Nuovo Olimpia  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_odeon-multiscreen" value="odeon-multiscreen">
+	<label class="checkbox-label" for="bs_checkbox_odeon-multiscreen">
+	Odeon Multiscreen  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_palma-a-trevignano-romano-rm" value="palma-a-trevignano-romano-rm">
+	<label class="checkbox-label" for="bs_checkbox_palma-a-trevignano-romano-rm">
+	Palma a Trevignano Romano (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_piccolo-apollo" value="piccolo-apollo">
+	<label class="checkbox-label" for="bs_checkbox_piccolo-apollo">
+	Piccolo Apollo  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_politeama" value="politeama">
+	<label class="checkbox-label" for="bs_checkbox_politeama">
+	Politeama  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_quattro-fontane" value="quattro-fontane">
+	<label class="checkbox-label" for="bs_checkbox_quattro-fontane">
+	Quattro Fontane  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_reale" value="reale">
+	<label class="checkbox-label" for="bs_checkbox_reale">
+	Reale  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_roxy" value="roxy">
+	<label class="checkbox-label" for="bs_checkbox_roxy">
+	Roxy  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_royal" value="royal">
+	<label class="checkbox-label" for="bs_checkbox_royal">
+	Royal  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_royal-a-civitavecchia-rm" value="royal-a-civitavecchia-rm">
+	<label class="checkbox-label" for="bs_checkbox_royal-a-civitavecchia-rm">
+	Royal a Civitavecchia (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_sala-buonarroti-a-civitavecchia-rm" value="sala-buonarroti-a-civitavecchia-rm">
+	<label class="checkbox-label" for="bs_checkbox_sala-buonarroti-a-civitavecchia-rm">
+	Sala Buonarroti a Civitavecchia (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_sala-trevi" value="sala-trevi">
+	<label class="checkbox-label" for="bs_checkbox_sala-trevi">
+	Sala Trevi  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_savoy" value="savoy">
+	<label class="checkbox-label" for="bs_checkbox_savoy">
+	Savoy  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_stardust-village" value="stardust-village">
+	<label class="checkbox-label" for="bs_checkbox_stardust-village">
+	Stardust Village  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_starplex" value="starplex">
+	<label class="checkbox-label" for="bs_checkbox_starplex">
+	Starplex  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_teatro-claudio-a-tolfa-rm" value="teatro-claudio-a-tolfa-rm">
+	<label class="checkbox-label" for="bs_checkbox_teatro-claudio-a-tolfa-rm">
+	Teatro Claudio a Tolfa (RM)  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_teatro-don-bosco" value="teatro-don-bosco">
+	<label class="checkbox-label" for="bs_checkbox_teatro-don-bosco">
+	Teatro Don Bosco  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_the-space-cinema-guidonia" value="the-space-cinema-guidonia">
+	<label class="checkbox-label" for="bs_checkbox_the-space-cinema-guidonia">
+	The Space Cinema Guidonia  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_the-space-cinema-moderno" value="the-space-cinema-moderno">
+	<label class="checkbox-label" for="bs_checkbox_the-space-cinema-moderno">
+	The Space Cinema Moderno  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_the-space-cinema-parco-de-medici" value="the-space-cinema-parco-de-medici">
+	<label class="checkbox-label" for="bs_checkbox_the-space-cinema-parco-de-medici">
+	The Space Cinema Parco de Medici  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_tibur" value="tibur">
+	<label class="checkbox-label" for="bs_checkbox_tibur">
+	Tibur  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_trianon" value="trianon">
+	<label class="checkbox-label" for="bs_checkbox_trianon">
+	Trianon  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_uci-cinemas-marconi" value="uci-cinemas-marconi">
+	<label class="checkbox-label" for="bs_checkbox_uci-cinemas-marconi">
+	Uci Cinemas Marconi  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_uci-cinemas-parco-leonardo" value="uci-cinemas-parco-leonardo">
+	<label class="checkbox-label" for="bs_checkbox_uci-cinemas-parco-leonardo">
+	Uci Cinemas Parco Leonardo  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_uci-cinemas-porta-di-roma" value="uci-cinemas-porta-di-roma">
+	<label class="checkbox-label" for="bs_checkbox_uci-cinemas-porta-di-roma">
+	Uci Cinemas Porta di Roma  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_uci-cinemas-roma-est" value="uci-cinemas-roma-est">
+	<label class="checkbox-label" for="bs_checkbox_uci-cinemas-roma-est">
+	Uci Cinemas Roma Est  </label>
+
+
+
+
+	</div> 
+	<div class="checkbox">   
+
+	<input data-filter="sala" type="checkbox" name="bs_checkbox_element[]" id="bs_checkbox_virgilio-a-bracciano-rm" value="virgilio-a-bracciano-rm">
+	<label class="checkbox-label" for="bs_checkbox_virgilio-a-bracciano-rm">
+	Virgilio a Bracciano (RM)  </label>
+
+
+
+
+	</div> 
+	
+</div>
+
+</form>
+
+
+<div class="filter-block">
+	<h6>Eventi</h6>
+	<ul class="u-unstyled filters-list">			
+		<li><a class="link" href="/eventi/tipo/concerti/">Concerti</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Disco &amp; Feste</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Inaugurazioni</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Mercatini</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Mostre</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Sagre</a></li>  
+	</ul>
+</div>
+
+<div class="filter-block">
+	<h6>Ristoranti</h6>
+	<ul class="u-unstyled filters-list">
+		<li><a class="link" href="/eventi/tipo/concerti/">Italiano</a></li> 
+		<li><a class="link" href="/eventi/tipo/concerti/">Messicano</a></li> 
+	</ul>
+</div>
+

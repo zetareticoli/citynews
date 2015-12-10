@@ -1,6 +1,11 @@
 	<form>
 
-	<div class="date-dropdown">		
+	<div class="filter-dropdown">
+		<div class="filter-dropdown-selection">
+			<span class="label">Data</span>
+			<span class="selection-label">Oggi</span>
+			<time class="timestamp">Venerdì 4 Novembre</time>
+		</div>		
 		<div class="dropdown">
 			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Seleziona una data
 			<span class="caret"></span>
@@ -22,32 +27,31 @@
 
 	<div class="filter-block grouped-filters bs_checkbox_filters">
 		
-		<h6>Filtra gli eventi:</h6>
-
-			
+		<h5>Filtra per</h5>
+		<h6>Tipologia</h6>
 		<div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_concerti" value="concerti">
-		<label class="checkbox-label" for="bs_checkbox_concerti">Concerti (3)</label>
+		<label class="checkbox-label" for="bs_checkbox_concerti">Concerti <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		 <div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mostre" value="mostre">
-		<label class="checkbox-label" for="bs_checkbox_mostre">Mostre (3)</label>
+		<label class="checkbox-label" for="bs_checkbox_mostre">Mostre <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		 <div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_sagre" value="sagre">
-		<label class="checkbox-label" for="bs_checkbox_sagre">Sagre (2)</label>
+		<label class="checkbox-label" for="bs_checkbox_sagre">Sagre <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		 <div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_disco-feste" value="disco-feste">
-		<label class="checkbox-label" for="bs_checkbox_disco-feste">Disco&amp;Feste (1)</label>
+		<label class="checkbox-label" for="bs_checkbox_disco-feste">Disco&amp;Feste <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		 <div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mercatini" value="mercatini">
-		<label class="checkbox-label" for="bs_checkbox_mercatini">Mercatini (1)</label>
+		<label class="checkbox-label" for="bs_checkbox_mercatini">Mercatini <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		 <div class="checkbox">   
 		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_inaugurazioni" value="inaugurazioni">
-		<label class="checkbox-label" for="bs_checkbox_inaugurazioni">Inaugurazioni (1)</label>
+		<label class="checkbox-label" for="bs_checkbox_inaugurazioni">Inaugurazioni <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 		
 		<hr>
@@ -58,10 +62,10 @@
 		</div>
 
 		<hr>
-		
+
 		<div class="checkbox">   
 			<input data-filter="tema" type="checkbox" name="bs_checkbox_tema-dell-evento[]" id="bs_checkbox_natale" value="natale">
-			<label class="checkbox-label" for="bs_checkbox_natale">Natale (3)</label>
+			<label class="checkbox-label" for="bs_checkbox_natale">Natale <span class="text-sm checkbox-counter">(7)</span></label>
 		</div> 
 
 	</div>
@@ -96,6 +100,7 @@
 </ul>
 </div>
 
-
-<p><em>Vuoi segnalare un evento?</em></p>
-<a href="#" class="btn default-btn">Segnala un Evento</a>
+<div class="contribute">
+	<h5>Vuoi segnalare un evento?</h5>
+	<a href="#" class="btn inverse-btn">Crea Scheda</a>
+</div>

@@ -731,6 +731,7 @@ dt {
     color: #757575; }
 
 .page-title {
+  display: inline-block;
   font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -810,10 +811,6 @@ dt {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 900;
-  float: left;
-  line-height: 1rem;
-  margin: 0 .75rem;
-  padding-top: .25rem;
   color: #78909c; }
 
 .summary {
@@ -1371,26 +1368,24 @@ a.light-btn {
   -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg); }
 
-.date-dropdown {
+.filter-dropdown {
   width: 100%;
-  border-top: 2px solid #e0e0e0; }
-  .date-dropdown .date-dropdown-timestamp {
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 0.5rem; }
+  .filter-dropdown .filter-dropdown-selection {
     border-left: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
-    padding: .875rem .875rem 0; }
-    .date-dropdown .date-dropdown-timestamp .timestamp,
-    .date-dropdown .date-dropdown-timestamp .timestamp-label {
+    padding: .75rem;
+    border-bottom: 1px solid #e0e0e0; }
+    .filter-dropdown .filter-dropdown-selection .timestamp,
+    .filter-dropdown .filter-dropdown-selection .selection-label {
       display: block; }
-    .date-dropdown .date-dropdown-timestamp .timestamp-label {
+    .filter-dropdown .filter-dropdown-selection .selection-label {
       font-size: 18px;
       font-size: 1.125rem;
       font-weight: 700; }
-    .date-dropdown .date-dropdown-timestamp .timestamp {
-      padding-bottom: .5rem;
-      font-size: 14px;
-      font-size: 0.875rem;
-      border-bottom: 1px solid #e0e0e0; }
-  .date-dropdown .dropdown-toggle {
+  .filter-dropdown .dropdown-toggle {
     width: 100%;
     padding: .875rem;
     border-top: 0;
@@ -1401,13 +1396,13 @@ a.light-btn {
     border-bottom-right-radius: 0;
     text-align: left;
     color: #757575;
-    font-size: 16px;
-    font-size: 1rem; }
-    .date-dropdown .dropdown-toggle .caret {
+    font-size: 14px;
+    font-size: 0.875rem; }
+    .filter-dropdown .dropdown-toggle .caret {
       position: absolute;
       right: 1rem;
       top: 45%; }
-  .date-dropdown .dropdown-menu {
+  .filter-dropdown .dropdown-menu {
     width: 100%; }
 
 .nav-btn {
@@ -1675,6 +1670,31 @@ label,
   background: url(../images/icon-arrow.svg) no-repeat center center;
   pointer-events: none; }
 
+.form-search {
+  display: inline-block;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding: .125rem 0;
+  transition: background-color 0.5 ease-in-out; }
+  .form-search input {
+    border: 0;
+    background-color: transparent;
+    width: auto; }
+    .form-search input:focus {
+      box-shadow: none;
+      outline: none; }
+  .form-search button {
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: .75rem;
+    border: none;
+    background: transparent;
+    cursor: pointer; }
+    .form-search button .search-icon {
+      margin-top: -2px; }
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -1719,7 +1739,7 @@ label,
     content: '';
     display: block;
     position: absolute;
-    top: 50%;
+    top: .625rem;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1751,10 +1771,13 @@ label,
   height: 1rem;
   background: url(../images/icon-check.svg) no-repeat center center; }
 
+.checkbox-label .checkbox-counter {
+  color: #9e9e9e; }
+
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
-  border-color: #01579B;
-  background-color: #01579B; }
+  border-color: #546e7a;
+  background-color: #546e7a; }
 
 input[type=radio]:checked + label,
 input[type=checkbox]:checked + label {
@@ -2347,7 +2370,7 @@ hr {
       @media (min-width: 62.5em) {
         .header .header-brand .network {
           position: relative;
-          z-index: 1;
+          z-index: 3;
           display: block;
           margin-top: -8px;
           margin-bottom: -5px; } }
@@ -3188,6 +3211,17 @@ hr {
     flex: 1 1 auto; }
 
 /* ==========================================================================
+  Contribute
+  ========================================================================== */
+.contribute {
+  background-color: #eceff1;
+  text-align: center;
+  padding: 1rem; }
+  .contribute h5 {
+    color: #616161;
+    font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
+
+/* ==========================================================================
   Custom Sub-Headers
   ========================================================================== */
 .custom-subheader {
@@ -3383,20 +3417,52 @@ hr {
     .filter-block {
       width: auto;
       float: none;
-      margin: 0 0 .5rem 0;
-      padding: .5rem 0;
-      border-bottom: 1px solid #e0e0e0; } }
-  .filter-block h6 {
-    margin-bottom: .5rem;
+      margin: 0 0 0.5rem 0;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e0e0e0; }
+      .filter-block:last-child {
+        border-bottom: 0; } }
+  .filter-block hr {
+    margin: .65rem 0; }
+  .filter-block h5, .filter-block h6 {
+    font-family: Helvetica, "SegoeUI", Arial, sans-serif; }
+  .filter-block h5 {
+    margin-bottom: .65rem;
     font-size: 16px;
     font-size: 1rem;
     color: #9e9e9e; }
+  .filter-block h6 {
+    margin-bottom: 0.5rem;
+    font-family: Helvetica, "SegoeUI", Arial, sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #424242; }
   .filter-block.grouped-filters {
-    padding: 1rem;
+    padding: .75rem;
     border: 2px solid #e0e0e0; }
+  .filter-block .checkbox-label {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .filter-block .checkbox .checkbox-label,
+  .filter-block .radio .radio-label {
+    padding-left: 1.25rem; }
+  .filter-block .checkbox .checkbox-label::before,
+  .filter-block .radio .radio-label::before,
+  .filter-block .checkbox .checkbox-label::after,
+  .filter-block .radio .radio-label::after {
+    width: .85rem;
+    height: .85rem; }
 
-.filters-list > li {
-  padding: .25rem 0; }
+.filters-list li {
+  padding: .25rem 0;
+  line-height: 1rem; }
+.filters-list .link {
+  color: #616161; }
+  .filters-list .link:hover {
+    color: #212121; }
+
+.aside-filters form {
+  margin-bottom: 0.5rem; }
 
 .top-filters {
   margin-bottom: 1rem;
@@ -3584,6 +3650,11 @@ hr {
   ========================================================================== */
 .most-read .story-heading {
   overflow: hidden; }
+.most-read .number {
+  float: left;
+  line-height: 1rem;
+  margin: 0 .75rem;
+  padding-top: .25rem; }
 
 /* ==========================================================================
   Related

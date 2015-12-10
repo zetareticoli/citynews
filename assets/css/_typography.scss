@@ -275,6 +275,7 @@ dt {
 // Page title
 
 .page-title {
+	display: inline-block;
 	font-family: $titleseriftypeface;
 	@include font-size($fontsize400);
 	line-height: 1.5rem;
@@ -374,10 +375,6 @@ dt {
 	font-family: $headingstypeface;
 	@include font-size($fontsize600);
 	font-weight: 900;
-	float: left;
-	line-height: 1rem;
-	margin: 0 .75rem;
-	padding-top: .25rem;
 	color: $bluegrey500;
 }
 

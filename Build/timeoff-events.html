@@ -221,6 +221,14 @@
 	<title>camera</title>
 	<path class="path1" d="M512 409.6c-84.838 0-153.6 68.813-153.6 153.6s68.762 153.6 153.6 153.6c84.787 0 153.6-68.813 153.6-153.6s-68.813-153.6-153.6-153.6zM921.6 256h-122.88c-16.896 0-35.123-13.107-40.397-29.184l-31.795-95.283c-5.376-16.026-23.501-29.133-40.448-29.133h-348.16c-16.896 0-35.123 13.107-40.397 29.082l-31.846 95.334c-5.325 16.077-23.501 29.184-40.397 29.184h-122.88c-56.32 0-102.4 46.080-102.4 102.4v460.8c0 56.32 46.080 102.4 102.4 102.4h819.2c56.32 0 102.4-46.080 102.4-102.4v-460.8c0-56.32-46.080-102.4-102.4-102.4zM512 819.2c-141.414 0-256-114.586-256-256s114.586-256 256-256c141.363 0 256 114.586 256 256s-114.637 256-256 256zM896 419.84c-19.814 0-35.84-16.077-35.84-35.891 0-19.712 16.026-35.84 35.84-35.84s35.84 16.077 35.84 35.84c0 19.814-16.026 35.891-35.84 35.891z"></path>
 </symbol>
+<symbol id="search-icon" viewBox="0 0 951 1024">
+	<title>search</title>
+	<path class="path1" d="M658.286 475.429q0-105.714-75.143-180.857t-180.857-75.143-180.857 75.143-75.143 180.857 75.143 180.857 180.857 75.143 180.857-75.143 75.143-180.857zM950.857 950.857q0 29.714-21.714 51.429t-51.429 21.714q-30.857 0-51.429-21.714l-196-195.429q-102.286 70.857-228 70.857-81.714 0-156.286-31.714t-128.571-85.714-85.714-128.571-31.714-156.286 31.714-156.286 85.714-128.571 128.571-85.714 156.286-31.714 156.286 31.714 128.571 85.714 85.714 128.571 31.714 156.286q0 125.714-70.857 228l196 196q21.143 21.143 21.143 51.429z"></path>
+</symbol>
+<symbol id="mix-icon" viewBox="0 0 1024 1024">
+	<title>mix</title>
+	<path class="path1" d="M256 81.92c0-28.314-22.938-30.72-51.2-30.72-28.314 0-51.2 2.406-51.2 30.72v430.080h102.4v-430.080zM153.6 942.080c0 28.211 22.886 30.72 51.2 30.72 28.262 0 51.2-2.509 51.2-30.72v-174.080h-102.4v174.080zM327.629 563.2h-245.76c-28.314 0-30.669 22.938-30.669 51.2v51.2c0 28.314 2.355 51.2 30.669 51.2h245.811c28.16 0 30.72-22.886 30.72-51.2v-51.2c0-28.262-2.56-51.2-30.771-51.2zM942.029 614.4h-245.811c-28.262 0-30.618 22.938-30.618 51.2v51.2c0 28.314 2.355 51.2 30.669 51.2h245.811c28.16 0 30.72-22.886 30.72-51.2v-51.2c0-28.262-2.56-51.2-30.771-51.2zM665.6 358.4c0-28.262-2.56-51.2-30.771-51.2h-245.76c-28.314 0-30.669 22.938-30.669 51.2v51.2c0 28.314 2.355 51.2 30.669 51.2h245.811c28.16 0 30.72-22.886 30.72-51.2v-51.2zM563.2 81.92c0-28.314-22.938-30.72-51.2-30.72-28.314 0-51.2 2.406-51.2 30.72v174.080h102.4v-174.080zM460.8 942.080c0 28.211 22.886 30.72 51.2 30.72 28.262 0 51.2-2.509 51.2-30.72v-430.080h-102.4v430.080zM870.4 81.92c0-28.314-22.938-30.72-51.2-30.72-28.314 0-51.2 2.406-51.2 30.72v481.28h102.4v-481.28zM768 942.080c0 28.211 22.886 30.72 51.2 30.72 28.262 0 51.2-2.509 51.2-30.72v-122.88h-102.4v122.88z"></path>
+</symbol>
 </defs>
 </svg>
 
@@ -518,8 +526,8 @@
 
 	<nav class="nav-tabs">
 	<ul class="u-unstyled inline-list">
-		<li class="tab current"><a href="#">Notizie</a></li>
-		<li class="tab"><a href="#">Cosa fare in Città</a></li>
+		<li class="tab"><a href="#">Notizie</a></li>
+		<li class="tab current"><a href="#">Cosa fare in Città</a></li>
 	</u>
 </nav>
 
@@ -528,14 +536,193 @@
 		<div class="line">
 
 			<div class="group size1of1 filters-group top-filters visible-xs visible-sm">
-
 				<div class="unit filter-block">
-					<div class="dropdown">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						Scegli cosa fare
-						<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	<div class="dropdown">
+		<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		Scegli cosa fare
+		<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<li class="dropdown-header">Filtra gli Eventi</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox1">
+					 <label class="checkbox-label" for="mcheckbox1">Concerti</label>
+				 </div>   
+			</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox2">
+					 <label class="checkbox-label" for="mcheckbox2">Mostre</label>
+				 </div>   
+			</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox3">
+					 <label class="checkbox-label" for="mcheckbox3">Teatri</label>
+				 </div>   
+			</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox4">
+					 <label class="checkbox-label" for="mcheckbox4">Sport</label>
+				 </div>   
+			</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox5">
+					 <label class="checkbox-label" for="mcheckbox5">Sagre</label>
+				 </div>   
+			</li>
+			<li>
+				<div class="checkbox">             
+					 <input type="checkbox" value="" id="mcheckbox5">
+					 <label class="checkbox-label" for="mcheckbox5">Discoteche/Feste</label>
+				 </div>   
+			</li>
+			<li><a href="timeoff-cinema.html" class="link">Eventi</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="timeoff-cinema.html" class="link">Cinema</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="timeoff-restaurants.html" class="link">Ristoranti</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="timeoff-shopping.html" class="link">Shopping</a></li>
+		</ul>
+	</div>  
+</div>
+
+<div class="unit filter-block">
+   <div class="dropdown">
+	 <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	   Quando
+	   <span class="caret"></span>
+	 </button>
+	 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+	   <li><a href="#">Oggi</a></li>
+	   <li><a href="#">Domani</a></li>
+	   <li><a href="#">Questa Settimana</a></li>
+	   <li><a href="#">Prossimi 7 Giorni</a></li>
+	   <li><a href="#">Prossimi 15 Giorni</a></li>
+	   <li><a href="#">Prossimi 30 Giorni</a></li>
+	 </ul>
+   </div> 
+</div>
+			</div>
+
+			<div class="unit size1of4 filters-group aside-filters visible-md visible-lg">
+					<form>
+
+	<div class="filter-dropdown">
+		<div class="filter-dropdown-selection">
+			<span class="label">Data</span>
+			<span class="selection-label">Oggi</span>
+			<time class="timestamp">Venerdì 4 Novembre</time>
+		</div>		
+		<div class="dropdown">
+			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Seleziona una data
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu bs_links_filters" aria-labelledby="dropdownMenu3">
+				<li><a href="/eventi/">Tutti</a></li>
+				<li><a href="/eventi/dal/2015-12-09/al/2015-12-09/">Oggi</a></li>
+				<li><a href="/eventi/dal/2015-12-10/al/2015-12-10/">Domani</a></li>
+				<li><a href="/eventi/dal/2015-12-07/al/2015-12-13/">Questa settimana</a></li>
+				<li><a href="/eventi/dal/2015-12-09/al/2015-12-16/">Prossimi 7 giorni</a></li>
+				<li><a href="/eventi/dal/2015-12-09/al/2015-12-24/">Prossimi 15 giorni</a></li>
+				<li><a href="/eventi/dal/2015-12-09/al/2016-01-08/">Prossimi 30 giorni</a></li>
+				<li><a href="/eventi/dal/2015-12-12/al/2015-12-13/">Questo weekend</a></li>
+				<li><a href="/eventi/dal/2015-12-14/al/2015-12-20/">Prossima settimana</a></li>
+				<li><a href="/eventi/dal/2015-12-01/al/2015-12-31/">Questo mese</a></li>				
+			</ul>
+		</div>  
+	</div>
+
+	<div class="filter-block grouped-filters bs_checkbox_filters">
+		
+		<h5>Filtra per</h5>
+		<h6>Tipologia</h6>
+		<div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_concerti" value="concerti">
+		<label class="checkbox-label" for="bs_checkbox_concerti">Concerti <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		 <div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mostre" value="mostre">
+		<label class="checkbox-label" for="bs_checkbox_mostre">Mostre <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		 <div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_sagre" value="sagre">
+		<label class="checkbox-label" for="bs_checkbox_sagre">Sagre <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		 <div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_disco-feste" value="disco-feste">
+		<label class="checkbox-label" for="bs_checkbox_disco-feste">Disco&amp;Feste <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		 <div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mercatini" value="mercatini">
+		<label class="checkbox-label" for="bs_checkbox_mercatini">Mercatini <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		 <div class="checkbox">   
+		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_inaugurazioni" value="inaugurazioni">
+		<label class="checkbox-label" for="bs_checkbox_inaugurazioni">Inaugurazioni <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+		
+		<hr>
+
+		<div class="checkbox">   
+			<input data-filter="bambini" type="checkbox" name="bs_checkbox_bambini" id="bs_checkbox_bambini" value="si">
+			<label class="checkbox-label" for="bs_checkbox_bambini">Evento per Bambini</label>
+		</div>
+
+		<hr>
+
+		<div class="checkbox">   
+			<input data-filter="tema" type="checkbox" name="bs_checkbox_tema-dell-evento[]" id="bs_checkbox_natale" value="natale">
+			<label class="checkbox-label" for="bs_checkbox_natale">Natale <span class="text-sm checkbox-counter">(7)</span></label>
+		</div> 
+
+	</div>
+
+	</form>
+
+<div class="filter-block">
+<h6>Cinema</h6>
+<ul class="u-unstyled filters-list">
+<li><a href="/eventi/cinema/al/2015-12-09" class="link">Film di oggi</a></li>
+<li><a href="/eventi/cinema/dal/2015-12-10" class="link">Nuove uscite</a></li>
+</ul>
+</div>
+<div class="filter-block">
+<h6>Ristoranti</h6>
+<ul class="u-unstyled filters-list">
+
+			
+<li>   
+
+<a class="link" href="/ristoranti/etnia/italiano/">Italiano</a>
+
+
+</li> 
+<li>   
+
+<a class="link" href="/ristoranti/etnia/messicano/">Messicano</a>
+
+
+</li> 
+
+</ul>
+</div>
+
+<div class="contribute">
+	<h5>Vuoi segnalare un evento?</h5>
+	<a href="#" class="btn inverse-btn">Crea Scheda</a>
+</div>
+			</div>
+
+			<div class="group size3of4 cards-list-container">
+
+				<div class="cd-filter sliding-filters">
+					<form>
+						<ul>
 							<li class="dropdown-header">Filtra gli Eventi</li>
 							<li>
 								<div class="checkbox">             
@@ -573,150 +760,23 @@
 									 <label class="checkbox-label" for="mcheckbox5">Discoteche/Feste</label>
 								 </div>   
 							</li>
-							<li role="separator" class="divider"></li>
-							<li><a href="timeoff-cinema.html" class="link">Cinema</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="timeoff-restaurants.html" class="link">Ristoranti</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="timeoff-shopping.html" class="link">Shopping</a></li>
 						</ul>
-					</div>  
-				</div>
+					</form>
 
-				<div class="unit filter-block">
-				   <div class="dropdown">
-					 <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					   Quando
-					   <span class="caret"></span>
-					 </button>
-					 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-					   <li><a href="#">Oggi</a></li>
-					   <li><a href="#">Domani</a></li>
-					   <li><a href="#">Questa Settimana</a></li>
-					   <li><a href="#">Prossimi 7 Giorni</a></li>
-					   <li><a href="#">Prossimi 15 Giorni</a></li>
-					   <li><a href="#">Prossimi 30 Giorni</a></li>
-					 </ul>
-				   </div> 
-				</div>
-			</div>
+					<a href="#0" class="cd-close">Close</a>
+				</div> <!-- cd-filter -->
 
-			<div class="unit size1of4 filters-group aside-filters visible-md visible-lg">
+				<div class="unit size1of1">
+	<h1 class="page-title">Eventi</h1>
 
-					<form>
-
-	<div class="date-dropdown">		
-		<div class="dropdown">
-			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Seleziona una data
-			<span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu bs_links_filters" aria-labelledby="dropdownMenu3">
-				<li><a href="/eventi/">Tutti</a></li>
-				<li><a href="/eventi/dal/2015-12-09/al/2015-12-09/">Oggi</a></li>
-				<li><a href="/eventi/dal/2015-12-10/al/2015-12-10/">Domani</a></li>
-				<li><a href="/eventi/dal/2015-12-07/al/2015-12-13/">Questa settimana</a></li>
-				<li><a href="/eventi/dal/2015-12-09/al/2015-12-16/">Prossimi 7 giorni</a></li>
-				<li><a href="/eventi/dal/2015-12-09/al/2015-12-24/">Prossimi 15 giorni</a></li>
-				<li><a href="/eventi/dal/2015-12-09/al/2016-01-08/">Prossimi 30 giorni</a></li>
-				<li><a href="/eventi/dal/2015-12-12/al/2015-12-13/">Questo weekend</a></li>
-				<li><a href="/eventi/dal/2015-12-14/al/2015-12-20/">Prossima settimana</a></li>
-				<li><a href="/eventi/dal/2015-12-01/al/2015-12-31/">Questo mese</a></li>				
-			</ul>
-		</div>  
-	</div>
-
-	<div class="filter-block grouped-filters bs_checkbox_filters">
-		
-		<h6>Filtra gli eventi:</h6>
-
-			
-		<div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_concerti" value="concerti">
-		<label class="checkbox-label" for="bs_checkbox_concerti">Concerti (3)</label>
-		</div> 
-		 <div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mostre" value="mostre">
-		<label class="checkbox-label" for="bs_checkbox_mostre">Mostre (3)</label>
-		</div> 
-		 <div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_sagre" value="sagre">
-		<label class="checkbox-label" for="bs_checkbox_sagre">Sagre (2)</label>
-		</div> 
-		 <div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_disco-feste" value="disco-feste">
-		<label class="checkbox-label" for="bs_checkbox_disco-feste">Disco&amp;Feste (1)</label>
-		</div> 
-		 <div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_mercatini" value="mercatini">
-		<label class="checkbox-label" for="bs_checkbox_mercatini">Mercatini (1)</label>
-		</div> 
-		 <div class="checkbox">   
-		<input data-filter="tipo" type="checkbox" name="bs_checkbox_tipologia[]" id="bs_checkbox_inaugurazioni" value="inaugurazioni">
-		<label class="checkbox-label" for="bs_checkbox_inaugurazioni">Inaugurazioni (1)</label>
-		</div> 
-		
-		<hr>
-
-		<div class="checkbox">   
-			<input data-filter="bambini" type="checkbox" name="bs_checkbox_bambini" id="bs_checkbox_bambini" value="si">
-			<label class="checkbox-label" for="bs_checkbox_bambini">Evento per Bambini</label>
-		</div>
-
-		<hr>
-		
-		<div class="checkbox">   
-			<input data-filter="tema" type="checkbox" name="bs_checkbox_tema-dell-evento[]" id="bs_checkbox_natale" value="natale">
-			<label class="checkbox-label" for="bs_checkbox_natale">Natale (3)</label>
-		</div> 
-
-	</div>
-
-	</form>
-
-<div class="filter-block">
-<h6>Cinema</h6>
-<ul class="u-unstyled filters-list">
-<li><a href="/eventi/cinema/al/2015-12-09" class="link">Film di oggi</a></li>
-<li><a href="/eventi/cinema/dal/2015-12-10" class="link">Nuove uscite</a></li>
-</ul>
-</div>
-<div class="filter-block">
-<h6>Ristoranti</h6>
-<ul class="u-unstyled filters-list">
-
-			
-<li>   
-
-<a class="link" href="/ristoranti/etnia/italiano/">Italiano</a>
-
-
-</li> 
-<li>   
-
-<a class="link" href="/ristoranti/etnia/messicano/">Messicano</a>
-
-
-</li> 
-
-</ul>
-</div>
-
-
-<p><em>Vuoi segnalare un evento?</em></p>
-<a href="#" class="btn default-btn">Segnala un Evento</a>
-
-			</div>
-
-			<div class="group size3of4 cards-list-container">
-				<div class="group size1of1">
-	<div class="unit size1of3">
-		<h1 class="page-title">Eventi</h1>
-	</div>
-
-	<div class="unit size2of3 align-right events-search hidden-xs">
+	<div class="events-search pull-right hidden-xs hidden-sm">
 		<form class="form-inline">
-			<input type="search" class="form-control" placeholder="Cerca un evento">
-			<button type="submit" class="btn default-btn">Cerca</button>
+			<div class="form-search">
+			    <input type="text" placeholder="Cerca un evento...">
+			    <button class="input-search-btn" type="submit">
+			    	<svg class="icon small search-icon"><use xlink:href="#search-icon"></use></svg>
+			    </button>
+		    </div>
 		</form>
 	</div>
 </div>

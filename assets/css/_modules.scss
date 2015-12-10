@@ -26,6 +26,21 @@
 }
 
 /* ==========================================================================
+  Contribute
+  ========================================================================== */
+
+.contribute {
+	background-color: $bluegrey100;
+	text-align: center;
+	padding: 1rem;
+
+	h5 {
+		color: $black800;
+		font-family: $titleseriftypeface;
+	}
+}
+
+/* ==========================================================================
   Custom Sub-Headers
   ========================================================================== */
 
@@ -297,27 +312,79 @@
 	@include bp(l) {
 		width: auto;
 		float: none;
-		margin: 0 0 .5rem 0;
-		padding: .5rem 0;
-		border-bottom: $borderwidth $borderstyle $defaultbordercolor;
-	
+		margin: 0 0 $baseline 0;
+		padding: $baseline 0;
+		border-bottom: 1px solid $bordercolor;
+
+		&:last-child {
+			border-bottom: 0;
+		}
 	}
 
-	h6 {
-		margin-bottom: .5rem;
+	hr {
+		margin: .65rem 0;
+	}
+
+	h5, h6 {
+		font-family: $alttexttypeface;
+	}
+
+	h5 {
+		margin-bottom: .65rem;
 		@include font-size($fontsize300);
 		color: $black600;
 	}
 
+	h6 {
+		margin-bottom: $baseline;
+		font-family: $alttexttypeface;
+		@include font-size($fontsize200);
+		color: $black900;
+	}
+
 	&.grouped-filters {
-		padding: 1rem;
+		padding: .75rem;
 		border: 2px solid $bordercolor;
+	}
+
+	.checkbox-label {
+		@include font-size($fontsize200);
+	}
+
+	.checkbox .checkbox-label, 
+	.radio .radio-label {
+		padding-left: 1.25rem;
+	}
+
+	.checkbox .checkbox-label::before, 
+	.radio .radio-label::before,
+	.checkbox .checkbox-label::after, 
+	.radio .radio-label::after {
+		width: .85rem;
+		height: .85rem;
 	}
 }
 
 .filters-list {
-	> li {
+	li {
 		padding: .25rem 0;
+		line-height: 1rem;
+	}
+
+	.link {
+		color: $black800;
+
+		&:hover {
+			color: $black1000;
+		}
+	}
+}
+
+// Aside Filters ===============================================================
+
+.aside-filters {
+	form {
+		margin-bottom: $baseline;
 	}
 }
 
@@ -537,6 +604,13 @@
 .most-read {
 	.story-heading {
 		overflow: hidden;
+	}
+
+	.number {
+		float: left;
+		line-height: 1rem;
+		margin: 0 .75rem;
+		padding-top: .25rem;
 	}
 }
 
