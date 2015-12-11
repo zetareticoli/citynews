@@ -16,7 +16,7 @@
 
 .has-flex {
 	.module {
-		@include flexbox;
+		@include display(flex);
 		@include flex-flow(column nowrap);
 
 		.l-list {
@@ -619,7 +619,7 @@
 	.preview-gallery-item {
 		@include flex(auto);
 		margin: 0 1%;
-		width: 5rem; // gallery item min width
+		width: 0; // gallery item min width
 
 		@include bp(m) {
 			margin: 0 $baseline / 2;
@@ -635,7 +635,6 @@
 			@include flex-wrap(wrap);
 
 			.preview-gallery-item { 
-				@include flex(auto);
 				width: 8rem;
 				margin: 0 $baseline $baseline 0;
 

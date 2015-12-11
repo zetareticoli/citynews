@@ -545,7 +545,7 @@
 
 	@include bp(m) {
 		border-top: 0;
-		@include flexbox;
+		@include display(flex);
 		@include flex-flow(row wrap);	
 	}
 }

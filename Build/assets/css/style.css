@@ -1,4 +1,20 @@
 /*
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($values) {
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;
@@ -7,6 +23,22 @@
   flex: $values;
 }*/
 /*
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($values) {
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;
@@ -1377,8 +1409,10 @@ a.light-btn {
   height: 56px;
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex; }
   @media (min-width: 46.25em) {
     .nav-btn {
@@ -1984,35 +2018,65 @@ hr {
 .centered {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
   -webkit-align-items: center;
-  -moz-justify-content: center;
   -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
   justify-content: center;
-  align-items: center; }
+  -ms-flex-pack: center; }
 
 .h-centered {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  justify-content: center; }
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
 
 .v-centered {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
-  align-items: center; }
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
 
 .unspaced {
   margin: 0;
@@ -2088,43 +2152,43 @@ hr {
   .has-flex .flx-container {
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; }
   .has-flex .l-row,
   .has-flex .l-list {
     width: 100%;
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; }
   .has-flex .l-row,
   .has-flex .flx-row {
     -webkit-flex-flow: row nowrap;
     -moz-flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap; }
   .has-flex .l-row-grid {
     -webkit-flex-flow: row nowrap;
     -moz-flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap; }
   .has-flex .l-list,
   .has-flex .flx-col {
     -webkit-flex-flow: column nowrap;
     -moz-flex-flow: column nowrap;
-    -webkit-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap; }
   .has-flex .l-row-item,
   .has-flex .l-list-item {
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; }
   .has-flex .item-span-1 {
     -webkit-box-flex: 1;
@@ -2142,18 +2206,9 @@ hr {
     -moz-flex: 3 1 auto;
     -ms-flex: 3 1 auto;
     flex: 3 1 auto; }
-  .has-flex .centered-items {
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    -moz-justify-content: center;
-    -moz-align-items: center;
-    justify-content: center;
-    align-items: center; }
   .has-flex .multirow {
     -webkit-flex-flow: wrap;
     -moz-flex-flow: wrap;
-    -webkit-flex-flow: wrap;
-    -ms-flex-flow: wrap;
     flex-flow: wrap; }
     .has-flex .multirow > .l-row-item {
       -webkit-box-flex: 0;
@@ -2426,8 +2481,10 @@ hr {
   .headlines-section .headlines-list {
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; } }
 
 @media (max-width: 62.438em) {
@@ -2439,13 +2496,13 @@ hr {
   .headlines-aside {
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-flow: row nowrap;
     -moz-flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -2472,8 +2529,10 @@ hr {
   .headlines-main-list {
     display: -webkit-box;
     display: -moz-box;
-    display: -ms-flexbox;
+    display: box;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; } }
 .headlines-main-list .l-row-item:last-child .l-list-item:last-child {
   margin-bottom: 0; }
@@ -3157,13 +3216,13 @@ hr {
 .has-flex .module {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: column nowrap;
   -moz-flex-flow: column nowrap;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap; }
   .has-flex .module .l-list {
     -webkit-box-flex: 1;
@@ -3596,7 +3655,7 @@ hr {
     -ms-flex: auto;
     flex: auto;
     margin: 0 1%;
-    width: 5rem; }
+    width: 0; }
     @media (min-width: 46.25em) {
       .photo-gallery-preview .preview-gallery-item {
         margin: 0 0.25rem; } }
@@ -3634,13 +3693,6 @@ hr {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .photo-gallery-preview .preview-gallery-list.multi-row-gallery .preview-gallery-item {
-        -webkit-box-flex: auto;
-        -moz-box-flex: auto;
-        box-flex: auto;
-        -webkit-flex: auto;
-        -moz-flex: auto;
-        -ms-flex: auto;
-        flex: auto;
         width: 8rem;
         margin: 0 0.5rem 0.5rem 0; }
         .photo-gallery-preview .preview-gallery-list.multi-row-gallery .preview-gallery-item img {
@@ -4783,13 +4835,13 @@ hr {
       border-top: 0;
       display: -webkit-box;
       display: -moz-box;
-      display: -ms-flexbox;
+      display: box;
       display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
       -webkit-flex-flow: row wrap;
       -moz-flex-flow: row wrap;
-      -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
       flex-flow: row wrap; } }
 
 .cover-hero .sublink {
@@ -5373,8 +5425,10 @@ hr {
 .slots-headlines {
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: box;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 3;
   -moz-box-flex: 3;
@@ -5394,16 +5448,12 @@ hr {
 .slots-headlines .l-list-item {
   -webkit-flex-flow: row nowrap;
   -moz-flex-flow: row nowrap;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap; }
   @media (min-width: 62.5em) {
     .slots-headlines .l-list,
     .slots-headlines .l-list-item {
       -webkit-flex-flow: column nowrap;
       -moz-flex-flow: column nowrap;
-      -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; } }
 
 .entry-inner-slots {

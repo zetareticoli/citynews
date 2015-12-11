@@ -340,7 +340,7 @@
 
 .entry-gallery {
 	margin: $baseline * 2 0;
-	@include flexbox;
+	@include display(flex);
 	@include flex-flow(row wrap);
 
 	@include bp(m) {
@@ -443,7 +443,7 @@
 
 		@include bp(m) {
 			clear: left;
-			@include flexbox;
+			@include display(flex);
 			@include flex-flow(row wrap);
 		}
 

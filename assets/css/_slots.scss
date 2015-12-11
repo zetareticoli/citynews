@@ -43,7 +43,7 @@
 }
 
 .slots-headlines {
-	@include flexbox;
+	@include display(flex);
 	@include flex(3);
 	margin-top: 1rem;
 

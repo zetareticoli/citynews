@@ -2,6 +2,22 @@
    LIBRARY
    ========================================================================== */
 /*
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($values) {
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;
@@ -10,6 +26,22 @@
   flex: $values;
 }*/
 /*
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($values) {
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -webkit-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;

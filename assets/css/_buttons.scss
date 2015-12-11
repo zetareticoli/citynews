@@ -234,7 +234,7 @@ a.light-btn {
 	right: 10px;
 	width: auto;
 	height: 56px;
-	@include flexbox;
+	@include display(flex);
 
 	@include bp(m) {
 		right: 24px;

@@ -75,27 +75,20 @@ hr {
 // Global modifiers ===============================================================
 
 .centered {
-	@include flexbox;
-	-webkit-justify-content: center;
-	-webkit-align-items: center;
-	-moz-justify-content: center;
-	-moz-align-items: center;
-	justify-content: center;
-	align-items: center;
+	@include display(flex);
+	@include align-items(center);
+	@include justify-content(center);
 }
 
 .h-centered {
-	@include flexbox;
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	justify-content: center;
+	@include display(flex);
+	@include justify-content(center);
+
 }
 
 .v-centered {
-	@include flexbox;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	align-items: center;	
+	@include display(flex);
+	@include align-items(center);
 }
 
 .unspaced {
@@ -201,13 +194,13 @@ hr {
 	.has-flex {
 
 		.flx-container {
-			@include flexbox;
+			@include display(flex);
 		}
 
 		.l-row,
 		.l-list {
 			width: 100%;
-			@include flexbox;
+			@include display(flex);
 		}
 
 		.l-row,
@@ -226,7 +219,7 @@ hr {
 		
 		.l-row-item,
 		.l-list-item {
-			@include flexbox;
+			@include display(flex);
 		}
 
 		.item-span-1 {
@@ -235,15 +228,6 @@ hr {
 
 		.item-span-3 {
 			@include flex(3 1 auto);
-		}
-
-		.centered-items {
-			-webkit-justify-content: center;
-			-webkit-align-items: center;
-			-moz-justify-content: center;
-			-moz-align-items: center;
-			justify-content: center;
-			align-items: center;
 		}
 
 		.multirow {
@@ -597,7 +581,7 @@ hr {
 
 	.headlines-list {
 		@include bp(l) {
-			@include flexbox;
+			@include display(flex);
 		}
 	}
 }
@@ -610,7 +594,7 @@ hr {
 	}
 	
 	@include bp(l) {
-		@include flexbox;
+		@include display(flex);
 		@include flex-flow(row nowrap);
 		@include flex(1 1 auto);
 	}
@@ -643,7 +627,7 @@ hr {
 
 .headlines-main-list {
 	@include bp(l) {
-		@include flexbox;
+		@include display(flex);
 	}
 
 	.l-row-item:last-child {
