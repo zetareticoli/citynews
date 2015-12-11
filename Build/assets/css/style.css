@@ -3473,6 +3473,9 @@ hr {
     padding: 0 .25rem; }
   .top-filters .filter-block.is-scrollable {
     height: 14rem; }
+    @media (min-width: 46.25em) {
+      .top-filters .filter-block.is-scrollable {
+        height: 20rem; } }
   .top-filters .dropdown-menu {
     width: 200%; }
     @media (min-width: 46.25em) {

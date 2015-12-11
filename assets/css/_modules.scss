@@ -450,6 +450,10 @@
 	.filter-block {
 		&.is-scrollable {
 			height: 14rem;
+
+			@include bp(m) {
+				height: 20rem;
+			}
 		}
 	}
 
