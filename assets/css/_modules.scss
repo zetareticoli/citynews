@@ -305,13 +305,10 @@
   ========================================================================== */
 
 .filter-block {
-	float: left;
 	width: auto;
 	margin: 0;
 
 	@include bp(l) {
-		width: auto;
-		float: none;
 		margin: 0 0 $baseline 0;
 		padding: $baseline 0;
 		border-bottom: 1px solid $bordercolor;
@@ -338,8 +335,12 @@
 	h6 {
 		margin-bottom: $baseline;
 		font-family: $alttexttypeface;
-		@include font-size($fontsize200);
+		@include font-size($fontsize100);
 		color: $black900;
+
+		@include bp(m) {
+			@include font-size($fontsize200);
+		}
 	}
 
 	&.grouped-filters {
@@ -383,8 +384,55 @@
 // Aside Filters ===============================================================
 
 .aside-filters {
+
 	form {
 		margin-bottom: $baseline;
+	}
+
+	.filter-dropdown {
+		width: 100%;
+		border-top: 2px solid $bordercolor;
+		border-bottom: 2px solid $bordercolor;
+		margin-bottom: $baseline;
+
+		.filter-dropdown-selection {
+			border-left: 2px solid $bordercolor;
+			border-right: 2px solid $bordercolor;
+			padding: .75rem;
+			border-bottom: 1px solid $bordercolor;
+
+			.timestamp,
+			.selection-label {
+				display: block;
+			}
+
+			.selection-label {
+				@include font-size($fontsize400);
+				font-weight: 700;
+			}
+		}
+
+		.dropdown-toggle {
+			width: 100%;
+			padding: .875rem;
+			border-top: 0;
+			border-bottom: 0;
+			@include border-top-radius(0);
+			@include border-bottom-radius(0);
+			text-align: left;
+			color: $black700;
+			@include font-size($fontsize200);
+
+			.caret {
+				position: absolute;
+				right: 1rem;
+				top: 45%;
+			}
+		}
+
+		.dropdown-menu {
+			width: 100%;
+		}
 	}
 }
 
@@ -392,14 +440,16 @@
 
 .top-filters {
 	margin-bottom: 1rem;
-	border-bottom: 1px solid $bordercolor;
+
+	.filter-dropdown {
+		float: left;
+		width: 50%;
+		padding: 0 .25rem;
+	}
 
 	.filter-block {
-		width: 50%;
-		padding-bottom: 1rem;
-
-		@include bp(m) {
-			width: 33.33%;
+		&.is-scrollable {
+			height: 14rem;
 		}
 	}
 
@@ -408,10 +458,6 @@
 
 		@include bp(m) {
 			width: 100%;
-		}
-
-		.checkbox {
-			margin-left: 1rem;
 		}
 	}
 

@@ -82,6 +82,10 @@ html.is-locked  body {
 	}
 }
 
+.is-scrollable {
+	overflow-y: auto;
+}
+
 .has-min-width {
 	min-width: 300px;
 }
