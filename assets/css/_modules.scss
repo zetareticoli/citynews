@@ -7,6 +7,7 @@
   ========================================================================== */
 
 .module {
+	width: 100%;
 	border-top: 2px solid $bordercolor;
 }
 
@@ -22,6 +23,111 @@
 		.l-list {
 			@include flex(1 1 auto);
 		}
+	}
+}
+
+/* ==========================================================================
+  Blog
+  ========================================================================== */
+
+.blog-name {
+
+	.link {
+		color: $bluegrey500;
+	}
+}
+
+.from-blog {
+
+	.l-list-item {
+		padding-bottom: 0;
+	}
+
+	.l-list-item:last-child {
+		border-bottom: 1px solid $bordercolor;
+	}
+}
+
+.blog-story {
+	position: relative;
+
+	.story-header {
+		width: 100%;
+		position: relative;
+		margin-bottom: $baseline;
+		padding: .75rem 0 .5rem .5rem;
+		background-color: $bluegrey100;
+		@include clearfix;
+		
+		&:after {
+			display: inline-block;
+			position: absolute;
+			content: '';
+			margin: auto;
+			left: .5rem;
+			bottom: -.5rem;
+			width: 0;
+			height: 0;
+			vertical-align: middle;
+			border-top: .5rem solid;
+			border-right: 1rem solid transparent;
+			border-left: 1rem solid transparent;
+			color: $bluegrey100;
+		}
+	}
+
+	.story-heading .link {
+		color: $bluegrey600;
+	}
+
+	.blog-author-photo {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.blog-author-photo {
+		width: 40%;
+		margin-top: -0.75rem;
+	}
+
+	.blog-name {
+		margin-bottom: 0;
+		@include font-size($fontsize200);
+	}
+}
+
+.blog-card {
+	margin-bottom: 1rem;
+}
+
+.blog-card .blog-author-photo {
+	text-align: center;
+}
+
+.blog-details {
+	background-color: $bluegrey100;
+	border-top-width: 2px;
+	border-top-style: solid;
+	padding: 1rem;
+
+	@include bp(l) {
+		padding: 2rem;
+	}
+
+	.blog-name {
+		margin-bottom: $baseline / 2;
+		@include font-size($fontsize400);
+
+		@include bp(l) {
+			@include font-size($fontsize500);
+		}
+	}
+
+	.blog-description {
+		margin: 1rem 0 0;
+		font-family: $texttypeface;
+		color: $black800;
 	}
 }
 
@@ -64,6 +170,10 @@
 
 		@include bp(l) {
 			margin: 1.5rem .5rem 1.5rem 0;
+		}
+
+		.link {
+			color: $black900;
 		}
 	}
 
@@ -134,6 +244,47 @@
 			visibility: hidden;
 		}
 	}
+}
+
+// Blog Subheader ===============================================================
+
+.blog-subheader {
+	position: relative;
+
+	.page-title,
+	.byline {
+		display: block;
+
+		@include bp(l) {
+			display: inline-block;
+		}
+	}
+
+	@include max-bp(m) {
+		text-align: center;
+
+		.blog-author-photo {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+
+		.follow-btn {
+			width: 5rem;
+			position: relative;
+			top: 1rem;
+			right: 0;
+			margin: 0 auto;
+			margin-bottom: 7rem;
+		}
+	}
+
+	.blog-author-photo {
+		width: 10rem;
+		float: left;
+	}	
 }
 
 /* ==========================================================================

@@ -47,6 +47,7 @@ color : $color; }
   display: -webkit-flex;
   display: flex;
 }
+*/
 
 @mixin flex-flow($values) {
   -webkit-flex-flow: $values;
@@ -61,7 +62,7 @@ color : $color; }
   -webkit-flex: $values;
   -ms-flex: $values;
   flex: $values;
-}*/
+}
 
 // mediaqueries
 

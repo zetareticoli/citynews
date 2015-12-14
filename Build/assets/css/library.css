@@ -10,21 +10,7 @@
   display: -webkit-flex;
   display: flex;
 }
-
-@mixin flex-flow($values) {
-  -webkit-flex-flow: $values;
-  -moz-flex-flow: $values;
-  -webkit-flex-flow: $values;
-  -ms-flex-flow: $values;
-  flex-flow: $values;
-}
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -webkit-flex: $values;
-  -ms-flex: $values;
-  flex: $values;
-}*/
+*/
 /*
 
 @mixin flexbox() {
@@ -34,21 +20,7 @@
   display: -webkit-flex;
   display: flex;
 }
-
-@mixin flex-flow($values) {
-  -webkit-flex-flow: $values;
-  -moz-flex-flow: $values;
-  -webkit-flex-flow: $values;
-  -ms-flex-flow: $values;
-  flex-flow: $values;
-}
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -webkit-flex: $values;
-  -ms-flex: $values;
-  flex: $values;
-}*/
+*/
 .library {
   background-color: white; }
 

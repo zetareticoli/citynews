@@ -222,7 +222,10 @@
 
 	.meta-social {
 		width: 100%;
-		text-align: left; 
+
+		.social-share {
+			text-align: left; 
+		}
 		
 		.social-items {
 			width: 50%;

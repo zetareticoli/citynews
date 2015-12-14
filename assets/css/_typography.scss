@@ -215,10 +215,13 @@ dt {
 	}
 }
 
-.reportage-heading {
+.serif-heading,
+.reportage-heading  {
 	font-family: $titleseriftypeface;
 	font-weight: normal;
+}
 
+.reportage-heading {
 	@include font-size($fontsize300);
 	line-height: 1.25rem;
 
