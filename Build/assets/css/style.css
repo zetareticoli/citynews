@@ -5082,14 +5082,12 @@ hr {
 /* ==========================================================================
   Today
   ========================================================================== */
-.module-today {
-  border-top-color: #2A9DDB; }
-  .module-today .module-title {
-    padding-bottom: 0;
-    line-height: 1rem;
-    border-bottom: 0; }
-  .module-today .logo {
-    height: 1rem; }
+.module-today .module-title {
+  padding-bottom: 0;
+  line-height: 1rem;
+  border-bottom: 0; }
+.module-today .logo {
+  height: 1rem; }
 
 /* ==========================================================================
   Users List
