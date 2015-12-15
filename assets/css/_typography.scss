@@ -135,6 +135,10 @@ dt {
 blockquote {
 	margin: 1rem 0;
 
+	@include bp(l) {
+		margin: 1.5rem 0;
+	}
+
 	@include bp(xl) {
 		float: left;
 		width: 20rem;

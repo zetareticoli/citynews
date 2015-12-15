@@ -306,7 +306,6 @@
 .entry-media {
 	position: relative;
 	margin: 0 -0.5rem $baseline * 2;
-	width: 100%;
 
 	&.small-media {
 		width: 50%;
@@ -321,11 +320,18 @@
 	}
 
 	@include bp(m) {
+		width: 100%;
 		margin: 0 0 $baseline * 2;
 	}
 
 	img {
 		width: 100%;
+	}
+
+	.caption {
+		@include max-bp(s) {
+			margin-left: $baseline;
+		}
 	}
 }
 

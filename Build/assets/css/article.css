@@ -247,8 +247,7 @@
 
 .entry-media {
   position: relative;
-  margin: 0 -0.5rem 1rem;
-  width: 100%; }
+  margin: 0 -0.5rem 1rem; }
   .entry-media.small-media {
     width: 50%; }
     @media (min-width: 46.25em) {
@@ -259,9 +258,13 @@
         width: 15rem; } }
   @media (min-width: 46.25em) {
     .entry-media {
+      width: 100%;
       margin: 0 0 1rem; } }
   .entry-media img {
     width: 100%; }
+  @media (max-width: 46.188em) {
+    .entry-media .caption {
+      margin-left: 0.5rem; } }
 
 @media (min-width: 75em) {
   .entry-footer {
