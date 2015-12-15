@@ -1554,6 +1554,65 @@
 	}
 }
 
+// Tag Cloud ===============================================================
+
+.bs_tagCloud {
+	font-family: $headingstypeface;
+	font-weight: 700;
+
+	b {
+		padding: 0 $baseline;
+
+		a {
+		    color: $bluegrey300;
+		}
+	}
+}
+
+b.bs_tagSize_1 a, b.bs_tagSize_2 a {
+    @include font-size($fontsize100);
+}
+
+b.bs_tagSize_3 a {
+    @include font-size($fontsize300);
+    color: $bluegrey300;
+}
+
+b.bs_tagSize_4 a {
+    @include font-size($fontsize400);
+    color: $bluegrey400;
+}
+
+b.bs_tagSize_5 a {
+    @include font-size($fontsize500);
+    color: $bluegrey500;
+}
+
+b.bs_tagSize_6 a {
+    @include font-size($fontsize600);
+    color: $bluegrey600;
+}
+
+b.bs_tagSize_7 a {
+    @include font-size($fontsize700);
+    color: $bluegrey700;
+}
+
+b.bs_tagSize_8 a {
+    @include font-size($fontsize800);
+    color: $bluegrey800;
+}
+
+b.bs_tagSize_9 a, b.bs_tagSize_10 a {
+    @include font-size($fontsize900);
+    color: $bluegrey900;
+}
+
+b.bs_tagSize_11 a, b.bs_tagSize_12 a {
+    @include font-size($fontsize1000);
+    color: darken($bluegrey900,5%);
+}
+
 /* ==========================================================================
   Today
   ========================================================================== */
