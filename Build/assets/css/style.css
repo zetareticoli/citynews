@@ -603,6 +603,23 @@ strong,
 dt {
   font-weight: 700; }
 
+blockquote {
+  margin: 1rem 0; }
+  @media (min-width: 75em) {
+    blockquote {
+      float: left;
+      width: 20rem;
+      margin: 0.5rem 1.5rem 1.5rem -13rem; } }
+  blockquote p {
+    padding-left: .75rem;
+    border-left: 0.25rem solid #cfd8dc;
+    font-family: "PublicoText", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400; }
+    @media (min-width: 46.25em) {
+      blockquote p {
+        padding-left: 1.5rem; } }
+
 /* ==========================================================================
    Story Headings Sizes
    ========================================================================== */
