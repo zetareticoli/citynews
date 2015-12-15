@@ -1,0 +1,522 @@
+// Website's atmosphere
+@import "config";
+
+// Sass mixins
+@import "mixins";
+
+.user-profile {	
+	
+	.user-profile-img {
+		
+		float:left;
+        width: 100%;
+		
+		img {
+			width:30%;
+            margin:0 auto;
+			display:block;
+			cursor:pointer;
+            
+            @include bp(m) {
+                width: 20%;
+            }
+            
+            @include bp(l) {
+                width: 15%;
+            }
+		}
+		
+		.user-profile-name {
+			font-size:1.250rem;
+			font-weight:700;
+            display: block;
+			text-align:center;
+			padding-top:.5rem;
+			margin-bottom:1rem;
+			
+			@include bp(m){
+				font-size:1.750rem;
+			}
+		}
+        
+        .user-profile-rank {
+            display: none;
+            font-weight: 400;
+            font-size: .750rem;
+            margin-bottom: .250rem;
+                
+            @include bp(l) {
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        .user-profile-date-registered {
+            display: none;
+            font-weight: 400;
+            font-size: .750rem;
+            margin-bottom: .500rem;
+                
+            @include bp(l) {
+                display: block;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+        .user-profile-follow-btn {
+            display: block;
+            text-align: center;
+            margin-bottom: .500rem;
+        }
+    }
+    
+    /* Lista dettagli (location - like - dislike ...)*/
+    .user-profile-list-details {
+        width: 100%;
+        margin: 0 auto 1rem;
+        padding-bottom: 1rem;        
+            
+        .user-single-detail {
+            font-size: .750rem;
+            font-weight: 700;
+            line-height: 1.500rem;
+            
+            .icon {
+                margin-right: .500rem;
+                margin-bottom: .250rem;
+            }                
+        }
+    }
+    
+    /* Menu navigazione contenuti */
+    .nav-user-activity {
+        padding-top: .500rem;
+        
+        @include bp(m){
+            display: block
+        }
+        
+        @include bp(l) {
+            padding-top: 0;
+            border-top: 0;
+        }
+        
+        .navbar-toggle {
+            margin: 0 0 .500rem 0;
+            padding: .500rem;
+            font-size: .750rem;
+            color: $black700;
+        }    
+        
+        .navbar-collapse {
+            padding: 0;
+
+        }
+        
+        .navbar-header {
+            float: none;
+            padding-top: .500rem;
+            border-top: 1px solid $bordercolor;
+            
+            @include bp(l) {
+                border-top: 0;
+            }
+        }
+        
+        .nav-user-profile-content {
+            padding:0 0 .500rem 0;
+		    margin-bottom:1rem;
+		    border-bottom: 1px solid $bordercolor;
+            
+            @include bp(l){
+                padding: 1rem 0;
+                border-top: 1px solid $bordercolor;
+            }
+		
+		    .nav-item {
+                width: 100%;
+                
+                @include bp(m) {
+                    float: left;
+                    width: auto;
+                }
+                
+                a {
+                    font-size: .875rem;
+                    padding: .250rem;
+                    
+                    @include bp (s) {
+                        padding: .500rem;
+                    }
+			
+				    &:focus {
+					    text-decoration:none;
+                    }	
+					
+                    .count-activity {
+                        font-weight: bold;
+                    }
+                    
+                }
+                
+                &.active {
+                    
+                    a {
+                        background-color: $bluegrey500;
+                        color:$black200;
+                        padding: .250rem;
+                        
+                        @include bp (s) {
+                            padding: .500rem;
+                        }
+                        
+                        .count-activity {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+	.nav-user-modify-profile {
+        padding-top: .500rem;
+        margin-bottom: 1rem;
+
+        
+        @include bp(l) {
+            border-top: 0;
+        }
+        
+        .nav-user-profile{
+            padding:.500rem 0;
+		    margin-bottom:1rem;
+            border-top: 1px solid $bordercolor;
+		    border-bottom: 1px solid $bordercolor;
+            
+            @include bp(l){
+                padding: 1rem 0;
+                border-top: 1px solid $bordercolor;
+            }
+            
+            .nav-item {
+                
+                a {
+                    font-size: .875rem;
+                    padding: .250rem;
+                    
+                    @include bp (s) {
+                        padding: .500rem;
+                    }
+                }
+                
+                &.active {
+                    
+                    a {
+                        background-color: $bluegrey500;
+                        color:$black100;
+                        padding: .250rem;
+                        
+                        @include bp (s) {
+                            padding: .500rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+	.form-modify-profile {
+		
+		.form-modify-profile-fieldset {
+			width:100%;
+			float:left;
+            border-bottom: 1px solid $bordercolor;
+            
+            @include bp(l) {
+                margin-bottom: 2rem; 
+            }
+			
+			.form-profile-title-fieldset {
+				padding-bottom:.250rem;
+				
+                .label {
+                    margin-bottom: 0;
+                    
+                    @include bp(l) {
+                        padding-left: 6rem;
+                    }
+                }
+			}
+            .form-profile-content-fieldset {
+                padding:1rem 0;
+                
+                @include bp(l) {
+                    padding: 2rem 0;
+                    margin-left:6rem;
+                }
+
+                .group{
+
+                    @include bp (m) {
+                           padding-right:.5rem;
+                    }
+                }
+
+                label {
+                    font-size: .750rem;
+                }
+
+                .checkbox {
+
+                    float:left;
+
+                    input {
+                        cursor:pointer;
+                    }
+                    
+                    label {
+                        margin-left:1rem;
+                        cursor:default;
+                    }
+                } 
+
+                input {
+                    margin-bottom: 1rem;
+                }
+                
+                textarea {
+                    margin-bottom: 1rem;
+                }
+                
+                select {
+                    margin-bottom: 1rem;
+                }
+            }
+		}
+        
+        .default-btn {
+            float: right;
+        }
+    } 
+	
+	.user-profile-container-activity {
+        width: 100%;
+        
+        @include bp(l){
+            width: 66.66%;
+        }
+		
+		.user-post-activity {
+			width:100%;
+			float:left;
+			background-color: $black200;
+			margin-bottom:1rem;
+			@include rounded(.250rem);
+			
+			header {
+				width:100%;
+				padding:.500rem;
+				border-bottom: 1px solid $bordercolor;
+                margin-bottom: 1rem;
+				@include clearfix;
+				
+				.user-post-profile-photo {
+					float:left;
+				}
+				.user-post-profile-details {
+					float:left;
+					font-size:.750rem;
+					margin:0;
+					line-height:3rem;
+					padding-left:1rem;
+				}
+			}
+			
+			.user-post-content-image {
+				float:left;
+				padding:1rem .500rem;
+				
+			}
+			
+			.title-user-post-content {
+				font-size:1.250rem;
+				padding-top:.500rem;
+			}
+				
+			.text-user-post-content {
+				font-size:.875rem;
+			}
+			
+			.user-post-footer-datails {
+				float:left;
+				width:100%;
+				padding:.500rem;
+				border-top: 1px solid $bordercolor;
+				@include clearfix;
+				
+				.user-post-date {
+					font-size:.750rem;
+					float:left;
+					
+					.icon {
+						margin-right:.500rem;
+					}
+				}
+				
+				.user-post-comments {
+					font-size:.750rem;
+					float:left;
+					margin-left: 1rem;
+                    line-height: 0;
+					
+					.icon {
+						margin-right:.500rem;
+					}
+				}
+				
+				.user-post-social-btn {
+					list-style:none;
+					float:right;
+					
+					li {
+						display:inline;
+                        
+                        a {
+                            &:hover {
+                                text-decoration: none;
+                            }
+                            &:focus {
+                                text-decoration: none;
+                            }
+                        }
+					}
+				}
+			}
+			
+			.text-user-profile-comment {
+				width: 90%;
+                padding: 1rem;
+                margin: 1rem auto 1rem;
+                font-weight: 700;
+                text-align: center;
+                background-color: $bluegrey400;
+                border-bottom: .250rem solid $black400;
+                color:white;
+                
+			}
+			
+            .title-post-commented {
+                padding: .500rem;
+                font-size: .875rem;
+                
+                @include bp(l) {
+                    padding: 1rem;
+                }
+                
+                .link-post-commented {
+                    /*font-weight: 700;*/
+                }
+				
+			}
+		}
+	}
+    .user-profile-col-right {
+        width: 33.33%;
+        padding-left: .500rem;
+        
+        .label {
+            padding:0 0 .500rem;
+            border-bottom: 1px solid $black400;
+            width: 100%;
+        }
+        .user-profile-list-badge {
+            margin-bottom: 2rem;
+        }
+        .user-profile-list-followers {
+            margin-bottom: 2rem;
+            
+            .single-follower {
+                float: left;
+                margin: .250rem;
+                
+                .avatar {
+                    width: 48px;
+                    border: 2px solid $black400;
+                    
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+        
+        .user-profile-list-following {
+            margin-bottom: 2rem;
+            
+            .single-follower {
+                float: left;
+                margin: .250rem;
+                
+                .avatar {
+                    width: 48px;
+                    border: 2px solid $black700;
+                    
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+        .user-most-active {
+            
+            .single-user-most-active {
+                width: 100%;
+                float: left;
+                padding: .750rem .500rem;
+                border-bottom: 1px dotted $black700;
+                
+                .position{
+                    float: left;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    padding: .750rem .500rem;
+                }
+                
+                .avatar {
+                    width: 48px;
+                    float: left;
+                    border: 2px solid $black700;
+                    
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                
+                .username {
+                    float: left;
+                    padding: .750rem .500rem;
+                }
+                
+                .sum {
+                    float: right;
+                    text-align: right;
+                    
+                    .counter {
+                        font-size: .875rem;
+                        font-weight: bold;
+                    }
+                    
+                    .counter-label {
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+}

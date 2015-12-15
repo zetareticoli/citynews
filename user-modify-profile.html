@@ -1,0 +1,222 @@
+<!-- $title Profilo Utente -->
+
+<!-- @include _head -->
+
+  	<div class="wrapper">
+
+		<!-- @include _header-slim-simple -->
+
+		<main class="main-content">
+
+			<div class="line">
+
+				<section class="user-profile">
+
+		        	<div class="unit size1of1">
+		            	<figure class="user-profile-img" > <img src="assets/images/photo-profile.png" alt="Photo Profile"/>
+		                	<span class="user-profile-name"> Nome Utente </span> 
+		                	<span class="user-profile-rank">Rank 59 punti</span>
+		                	<span class="user-profile-date-registered">Iscritto marted&igrave;, 12 ottobre 2010</span> 
+			                <span class="user-profile-follow-btn">
+			                    <a href="#" class="btn rounded-btn light-btn btn-sm follow-btn">Segui</a>
+			                </span>
+			            </figure>
+			            <div class="unit size1of1 nav-user-modify-profile">
+			            <ul class="u-unstyled inline-list nav nav-pills nav-user-profile" role="tablist">
+		            		<li class="nav-item active">
+		            			<a href="#user-profile-general-info" class="link user-profile-general-info-btn" aria-controls="user-profile-general-info" role="tab" data-toggle="tab">Info generiche</a>
+		            		</li>
+		            		<li class="nav-item">
+		            			<a href="#data-access" class="link user-profile-data-access-btn" aria-controls="user-profile-data-access" role="tab" data-toggle="tab">Dati d'accesso</a>
+		            		</li>
+		            		<li class="nav-item">
+		            			<a href="user-modify-profile-privacy.html" class="link user-profile-privacy">Privacy</a>
+		            		</li>
+			            </ul>
+			          </div>
+			        </div>
+
+			        <div class="unit size1of1">
+		            	<form class="form-modify-profile">
+			            	<div class="tab-content">
+				            	<div role="tabpanel" class="tab-pane fade active in" id="user-profile-general-info">
+
+				            			<fieldset class="form-modify-profile-fieldset user-profile-general-info">
+				            					
+				            					<div class="group size1of1 form-profile-title-fieldset">
+				            						<h3 class="label">Dati personali</h3>
+				            					</div>
+				            					<div class="form-group group size5of6 form-profile-content-fieldset">
+				            							<div class="group size1of2"> 
+				            									<label>Nome</label>
+				            									<input type="text" class="form-control" placeholder="Nome">
+				            							</div>
+				            							<div class="group size1of2"> 
+				            									<label>Cognome</label>
+				            									<input type="text" class="form-control" placeholder="Cognome">
+				            							</div>
+				            							<div class="group size1of1">
+				            									<label>Carica foto</label>
+				            									<input type="file">
+				            							</div>
+				            					</div>
+				            					
+				            			</fieldset>
+				            			
+				            			<fieldset class="form-modify-profile-fieldset user-profile-general-info">
+				            			
+				            					<div class="group size1of1 form-profile-title-fieldset">
+				            						<h3 class="label">Dove vivi</h3>
+				            					</div>
+				            					<div class="form-group group size5of6 form-profile-content-fieldset">
+				            							<div class="group size1of2"> 
+				            									<label>Provincia</label>
+				            									<input type="text" class="form-control" placeholder="Provincia in cui vivi...">
+				            							</div>
+				            							<div class="group size1of2"> 
+				            									<label>Citt&agrave;</label>
+				            									<input type="text" class="form-control" placeholder="Città in cui vivi...">
+				            							</div>
+				            							<div class="group size1of2"> 
+				            									<label>Indirizzo</label>
+				            									<input type="text" class="form-control" placeholder="Via, piazza, viale...">
+				            							</div>
+				            							<div class="group size1of2"> 
+				            									<label>Civico</label>
+				            									<input type="text" class="form-control" placeholder="Numero civico...">
+				            							</div>
+				            					</div>
+				            				 
+				            			</fieldset>
+				            			
+				            			<fieldset class="form-modify-profile-fieldset user-profile-general-info">
+				            			
+				            					<div class="group size1of1 form-profile-title-fieldset">
+				            							<h3 class="label">Il tuo profilo</h3>
+				            					</div>
+				            					
+				            					<div class="form-group  group size5of6 form-profile-content-fieldset">
+				            							<div class="form-select group size1of2">
+				            									<label>Sesso</label> 
+				            									<select class="form-control">
+				            											<option selected>Seleziona sesso...</option>
+				            											<option>Uomo</option>
+				            											<option>Donna</option>
+				            									</select>
+				            							</div>
+				            							<div class="form-select group size1of2">
+				            									<label>Anno di nascita</label>
+				            									<select class="form-control">
+				            											<option selected>Seleziona anno...</option>
+				            											<option>1989</option>
+				            											<option>1988</option>
+				            											<option>1987</option>
+				            											<option>1986</option>
+				            											<option>1985</option>
+				            									</select>
+				            							</div>
+				            							<div class="form-select group size1of2">
+				            									<label>Impiego</label>
+				            									<select class="form-control">
+				            											<option selected>Seleziona impiego...</option>
+				            											<option>Commerciante/artigiano </option>
+				            											<option>Libero professionista </option>
+				            											<option>Impiegato pubblico</option>
+				            											<option>Impiegato privato</option>
+				            											<option>Dirigente</option>
+				            											<option>Operaio</option>
+				            											<option>Agente/rappresentante</option>
+				            											<option>Studente</option>
+				            											<option>Non occupato</option>
+				            									</select>
+				            							</div>
+				            							<div class="form-select group size1of2">
+				            									<label>Settore</label>
+				            									<select class="form-control">
+				            											<option selected>Seleziona settore...</option>
+				            											<option>Edilizia</option>
+				            											<option>Finanziario</option>
+				            											<option>Immobiliare</option>
+				            											<option>Istruzione/ricerca</option>
+				            											<option>Legale</option>
+				            											<option>Media/editoria</option>
+				            											<option>Medicina/salute</option>
+				            											<option>NonProfit / Associazioni</option>
+				            											<option>Pubblica Amministrazione</option>
+				            											<option>Ristorazione</option>
+				            											<option>Servizi/commercio</option>
+				            											<option>Spettacolo/moda</option>
+				            											<option>Telecomunicazioni</option>
+				            											<option>Turistico</option>
+				            											<option>Altro</option>
+				            									</select>
+				            							</div>	
+				            					</div>
+				            			</fieldset>
+				            				
+			            				<fieldset class="form-modify-profile-fieldset user-profile-general-info">
+			            					<div class="group size1of1 form-profile-title-fieldset">
+			            							<h3 class="label">Cosa ti piace</h3>
+			            					</div>
+			            					
+			            					<div class="form-group group size5of6 form-profile-content-fieldset">
+			            							<div class="group size1of2">
+			            									<label>Sport</label>
+			            									<input type="text" class="form-control" placeholder="">
+			            							</div>
+			            							<div class="group size1of2">
+			            									<label>Credo politico</label>
+			            									<input type="text" class="form-control" placeholder="">
+			            							</div>
+			            							<div class="group size1of2">
+			            									<label>Amo</label>
+			            									<textarea class="form-control" rows="3"  placeholder=""></textarea>
+			            							</div>
+			            							<div class="group size1of2">
+			            									<label>Odio</label>
+			            									<textarea class="form-control" rows="3"  placeholder=""></textarea>
+			            							</div>
+			            					</div>
+			            				</fieldset>
+				            	</div>
+				            		
+			            		<div role="tabpanel" class="tab-pane fade" id="data-access" aria-labelledby="user-profile-data-access">
+			            			<fieldset class="form-modify-profile-fieldset user-profile-data-access" >
+	        							<div class="group size1of1 form-profile-title-fieldset">
+	        									<h3 class="label">Dati d'accesso</h3>
+	        							</div>
+	        							
+	        							<div class="form-group group size5of6 form-profile-content-fieldset">
+	        									<div class="group size1of1">
+	        											<label>Email</label>
+	        											<input type="email" class="form-control" placeholder="Email">
+	        									</div>
+	        									<div class="group size1of1">
+	        											<label>Nuova Password</label>
+	        											<input type="password" class="form-control" placeholder="Digita la nuova password">
+	        									</div>
+	        									<div class="group size1of1">
+	        											<label>Vecchia Password</label>
+	        											<input type="password" class="form-control" placeholder="Digita la vecchia password">
+	        									</div>
+	        							</div>
+			            			</fieldset>
+			            		</div>
+
+			            		<button type="submit" class="btn btn-lg btn-block default-btn group size1of3">Salva</button>
+			            		<div class="align-right group size1of1"> <a class="link text-sm" href="#">Cancella Account</a> </div>
+			            	</div>
+			            </form>
+			        </div>
+
+			    </section>
+
+			</div>
+
+		</main>
+    	
+		<!-- @include _footer -->
+
+	</div>
+ 
+<!-- @include _foot -->
