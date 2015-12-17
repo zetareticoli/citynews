@@ -346,6 +346,8 @@
     @media (min-width: 75em) {
       .detailed-entry-header .entry-summary {
         margin-left: 0; } }
+  .detailed-entry-header .author {
+    display: inline-block; }
   .detailed-entry-header .rating {
     margin-bottom: 0.5rem; }
     .detailed-entry-header .rating li {
