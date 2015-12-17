@@ -2370,21 +2370,22 @@ hr {
   .header .header-brand {
     float: left; }
     .header .header-brand .logo {
-      height: 26px;
+      width: 10rem;
       margin-top: 4px;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       @media (min-width: 46.25em) {
         .header .header-brand .logo {
-          height: 36px; } }
+          width: 18rem;
+          height: 3rem; } }
       @media (min-width: 62.5em) {
         .header .header-brand .logo {
           position: relative;
           z-index: 0; } }
       @media (min-width: 75em) {
         .header .header-brand .logo {
-          height: 40px; } }
+          width: auto; } }
     .header .header-brand .network {
       display: none;
       width: auto;
@@ -2394,10 +2395,10 @@ hr {
           position: relative;
           z-index: 3;
           display: block;
-          margin-top: -8px;
           margin-bottom: -5px; } }
       .header .header-brand .network .logo {
         height: 12px;
+        width: auto;
         vertical-align: top; }
       .header .header-brand .network .dropdown-toggle {
         border: 0;
@@ -2433,20 +2434,20 @@ hr {
         box-shadow: 0 2px 0 #e0e0e0; } }
     .slim-header .header-top .header-brand {
       margin-right: 1rem; }
-      .slim-header .header-top .header-brand .logo {
-        margin-top: 14px; }
-        @media (min-width: 46.25em) {
-          .slim-header .header-top .header-brand .logo {
-            margin-top: 1.2rem;
-            height: 1.5rem; } }
-        @media (min-width: 62.5em) {
-          .slim-header .header-top .header-brand .logo {
-            margin-top: 1.5rem; } }
+      @media (min-width: 46.25em) {
+        .slim-header .header-top .header-brand .logo {
+          width: 14rem;
+          margin-top: 0.5rem; } }
+      @media (min-width: 62.5em) {
+        .slim-header .header-top .header-brand .logo {
+          margin-top: .75rem; } }
   .slim-header .slim-header-nav {
     display: none; }
     @media (min-width: 62.5em) {
       .slim-header .slim-header-nav {
         display: block;
+        position: relative;
+        z-index: 2;
         float: left;
         height: 100%; } }
     .slim-header .slim-header-nav > .mobile-nav-trigger {
@@ -2469,7 +2470,8 @@ hr {
         left: 0;
         margin: auto;
         line-height: 4rem;
-        text-align: center; } }
+        text-align: center;
+        z-index: 1; } }
     @media (min-width: 62.5em) {
       .slim-header .page-title {
         line-height: 4.5rem; } }
@@ -2933,12 +2935,12 @@ hr {
       padding: 1rem; }
       @media (min-width: 62.5em) {
         .mobile-nav .mobile-nav-header .header-brand {
-          padding: 1.25rem 1rem; } }
+          padding: 0.5rem 1rem; } }
       @media (max-width: 62.438em) {
         .mobile-nav .mobile-nav-header .header-brand {
           display: none; } }
       .mobile-nav .mobile-nav-header .header-brand .logo {
-        height: 1.5rem; }
+        width: 10rem; }
       .mobile-nav .mobile-nav-header .header-brand .logo-network {
         fill: white; }
     .mobile-nav .mobile-nav-header .close-btn {

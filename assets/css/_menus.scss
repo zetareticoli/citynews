@@ -173,7 +173,7 @@
 			padding: 1rem;
 
 			@include bp(l) {
-				padding: 1.25rem 1rem;
+				padding: $baseline 1rem;
 			}
 			
 			@include max-bp(m) {
@@ -181,7 +181,7 @@
 			}
 
 			.logo {
-				height: 1.5rem;
+				width: 10rem;
 			}
 
 			.logo-network {

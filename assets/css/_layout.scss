@@ -427,12 +427,13 @@ hr {
 		float: left;
 
 		.logo {
-			height: 26px;
+			width: 10rem;
 			margin-top: 4px;
 			@include transition(all .3s ease);
 
 			@include bp(m) {
-				height: 36px;
+				width: 18rem;
+				height: 3rem;
 			}
 
 			@include bp(l) {
@@ -441,7 +442,7 @@ hr {
 			}
 
 			@include bp(xl) {
-				height: 40px;
+				width: auto;
 			}
 		}
 
@@ -454,12 +455,12 @@ hr {
 				position: relative;
 				z-index: 3;
 				display: block;
-				margin-top: -8px;
 				margin-bottom: -5px;
 			}
 
 			.logo {
 				height: 12px;
+				width: auto;
 				vertical-align: top;
 			}
 
@@ -514,15 +515,14 @@ hr {
 			margin-right: $baseline * 2;
 
 			.logo {
-				margin-top: 14px;
 
 				@include bp(m) {
-					margin-top: 1.2rem;
-					height: $baseline * 3;
+					width: 14rem;
+					margin-top: $baseline;
 				}
 
 				@include bp(l) {
-					margin-top: $baseline * 3;
+					margin-top: .75rem;
 				}
 			}
 		}
@@ -533,6 +533,8 @@ hr {
 
 		@include bp(l) {
 			display: block;
+			position: relative;
+			z-index: 2;
 			float: left;
 			height: 100%;
 		}
@@ -563,6 +565,7 @@ hr {
 			margin: auto;
 			line-height: $mediumheadersize;
 			text-align: center;
+			z-index: 1;
 		}
 
 		@include bp(l) {
