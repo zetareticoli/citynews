@@ -427,8 +427,7 @@ hr {
 		float: left;
 
 		.logo {
-			width: 10rem;
-			margin-top: 4px;
+			width: 14rem;
 			@include transition(all .3s ease);
 
 			@include bp(m) {
@@ -437,6 +436,7 @@ hr {
 			}
 
 			@include bp(l) {
+				margin-top: 4px;
 				position: relative;
 				z-index: 0;
 			}
