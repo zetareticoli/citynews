@@ -3828,10 +3828,13 @@ hr {
   Related
   ========================================================================== */
 .related-stories.inner {
-  width: 18rem;
+  width: 100%;
   float: left;
   clear: left;
   margin: 0 2rem 2rem 0; }
+  @media (min-width: 46.25em) {
+    .related-stories.inner {
+      width: 18rem; } }
   @media (min-width: 62.5em) {
     .related-stories.inner {
       float: right;
