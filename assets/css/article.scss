@@ -162,6 +162,10 @@
 		margin-bottom: $baseline;
 	}
 
+	blockquote p {
+		color: $bluegrey700;
+	}
+
 	table {
 	    width: 100%;
 	    max-width: 100%;

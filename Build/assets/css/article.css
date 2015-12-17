@@ -146,6 +146,8 @@
   .entry-content-body > ol > li {
     padding-left: 0.5rem;
     margin-bottom: 0.5rem; }
+  .entry-content-body blockquote p {
+    color: #546e7a; }
   .entry-content-body table {
     width: 100%;
     max-width: 100%;
