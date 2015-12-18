@@ -4112,7 +4112,7 @@ hr {
   width: 100%; }
   @media (min-width: 46.25em) {
     .card-item.card-item-sm {
-      width: 25%; } }
+      width: 33.33%; } }
   @media (min-width: 46.25em) {
     .card-item.card-item-mid {
       width: 50%; } }
