@@ -371,22 +371,32 @@
 		</div>
 
 		<nav class="primary-nav">
-
 			<ul class="u-unstyled inline-list">
 				<li class="current nav-item"><a href="index.html" class="current link">Notizie</a></li>
 				<li class="nav-item"><a href="timeoff-events.html" class="link">Cosa fare in città</a></li>
 				<li class="nav-item"><a href="zone.html" class="link">Zone</a></li>
 			</ul>
-
 		</nav>
 
 		<div class="nav-toolbar">
 	<a href="#start-search" class="btn search-btn start-search-trigger"><span></span></a>
-	<a href="#" class="btn login-btn has-icon centered" data-toggle="modal" data-target="#loginModal">
-		<svg class="icon medium user-icon"><use xlink:href="#icon-user"></use></svg>
-		<span class="btn-label">Accedi</span>
-	</a>
-</div>
+	<div class="dropdown account-dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			<img class="avatar avatar-md" src="assets/images/user-avatar.png" alt="Foto Profilo Utente" Title="Marco Rossi">
+		</a>
+		<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu">
+			<li><a tabindex="-1" class="menu-link" href="/user/profile/francesco/38856336159960/">Profilo Pubblico</a></li>
+			<li><a tabindex="-1" class="menu-link" href="/user/edit/basic/">Modifica dati</a></li>
+			<li><a tabindex="-1" class="menu-link" href="/user/edit/privacy/">Privacy</a></li>
+			<li class="divider"></li>
+			<li>
+				<form onsubmit="window.ga &amp;&amp; ga( 'send', 'event', 'Community', 'Logout' ); return confirm( 'Sei sicuro di voler uscire dal sito?' );" action="/user/logout/" method="post">
+				<input type="hidden" name="nonce" id="nonce" value="zsq4Igl8nTGGFB518nrMc-4bxx3Fl4ZickYcz5aWRw-xae5oxRnKsH_MqMeH5Qq9--jqX6RqXKuk3TvMEx3PSnsQZ9uwXfECDF726OW3jSfjOlpDRRdVnSr2gk5B4Ozc-wTXjbEQMS_sZ_JUN4aRdmEB">          <input type="submit" class="btn link-btn" value="Esci">
+				</form>
+			</li>
+		</ul>
+	</div>
+</div>   
 
 		<a href="#" class="btn nav-btn mobile-nav-trigger has-icon centered"><svg class="icon menu-icon medium"><use xlink:href="#icon-menu"></use></svg><span class="btn-label">Sezioni</span></a>
 
@@ -427,7 +437,9 @@
 
 	<div class="mobile-nav-header">
 		<div class="nav-toolbar">
-			<a href="user-signin.html" class="btn login-btn has-icon centered"><svg class="icon inverse-icon user-icon medium"><use xlink:href="#icon-user"></use></svg></a>	
+			<a href="user-public-profile.html" class="btn account-btn">
+				<img class="avatar avatar-md" src="assets/images/user-avatar.png" alt="Foto Profilo Utente" Title="Marco Rossi">
+			</a>	
 			<a href="#start-search" class="btn search-btn start-search-trigger mobile-search-trigger"><span></span></a>
 		</div>
 

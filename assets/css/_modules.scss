@@ -169,7 +169,7 @@
 		}
 
 		@include bp(l) {
-			margin: 1.5rem .5rem 1.5rem 0;
+			margin: 1.5rem 1rem 1.5rem 0;
 		}
 
 		.link {
@@ -284,6 +284,7 @@
 	.blog-author-photo {
 		width: 10rem;
 		float: left;
+		margin-right: 1rem;
 	}	
 }
 
@@ -667,6 +668,39 @@
 		left: auto;
 		right: 0;
 		width: 18rem;
+	}
+}
+
+/* ==========================================================================
+  Account Dropdown
+  ========================================================================== */
+
+.account-dropdown {
+	display: inline-block;
+	height: 4.5rem;
+	line-height: 4.5rem;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+	}
+
+	.avatar {
+		@include box-shadow(0 0 0 0 $black100);
+		@include transition(all .2s ease);
+	}
+
+	&:hover {
+
+		.avatar {
+			@include box-shadow(0 0 0 4px $black600);
+		}
+	}
+
+	.dropdown-toggle {
+		border: 0;
+		padding: 0 1.25rem;
 	}
 }
 

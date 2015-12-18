@@ -2964,6 +2964,11 @@ hr {
       @media (min-width: 62.5em) {
         .mobile-nav .mobile-nav-header .nav-toolbar {
           display: none; } }
+    .mobile-nav .mobile-nav-header .account-btn {
+      float: left; }
+      @media (min-width: 46.25em) {
+        .mobile-nav .mobile-nav-header .account-btn {
+          padding: .85rem; } }
   .mobile-nav .nav-items-list {
     clear: left; }
   .mobile-nav .nav-item .link {
@@ -3352,7 +3357,7 @@ hr {
         font-size: 2.25rem; } }
     @media (min-width: 62.5em) {
       .custom-subheader .page-title {
-        margin: 1.5rem .5rem 1.5rem 0; } }
+        margin: 1.5rem 1rem 1.5rem 0; } }
     .custom-subheader .page-title .link {
       color: #424242; }
   .custom-subheader .secondary-nav {
@@ -3425,7 +3430,8 @@ hr {
         margin-bottom: 7rem; } }
   .blog-subheader .blog-author-photo {
     width: 10rem;
-    float: left; }
+    float: left;
+    margin-right: 1rem; }
 
 /* ==========================================================================
   Discussion
@@ -3694,6 +3700,30 @@ hr {
       left: auto;
       right: 0;
       width: 18rem; } }
+
+/* ==========================================================================
+  Account Dropdown
+  ========================================================================== */
+.account-dropdown {
+  display: inline-block;
+  height: 4.5rem;
+  line-height: 4.5rem; }
+  .account-dropdown:hover, .account-dropdown:active, .account-dropdown:focus {
+    text-decoration: none; }
+  .account-dropdown .avatar {
+    -webkit-box-shadow: 0 0 0 0 #fafafa;
+    -moz-box-shadow: 0 0 0 0 #fafafa;
+    box-shadow: 0 0 0 0 #fafafa;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .account-dropdown:hover .avatar {
+    -webkit-box-shadow: 0 0 0 4px #9e9e9e;
+    -moz-box-shadow: 0 0 0 4px #9e9e9e;
+    box-shadow: 0 0 0 4px #9e9e9e; }
+  .account-dropdown .dropdown-toggle {
+    border: 0;
+    padding: 0 1.25rem; }
 
 /* ==========================================================================
   Photo Gallery

@@ -212,6 +212,13 @@
 				display: none;
 			}
 		}
+
+		.account-btn {
+			float: left;
+			@include bp(m) {
+				padding: .85rem;
+			}
+		}
 	}
 
 	.nav-items-list {
