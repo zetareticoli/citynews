@@ -993,6 +993,10 @@
 
 	.social-counter {
 
+		&.counter-zero {
+			opacity: .35;
+		}
+
 		.number {
 			font-family: $headingstypeface;
 			font-weight: 700;

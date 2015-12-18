@@ -4158,6 +4158,8 @@ hr {
 .meta-social.bottom-social .social-share {
   width: 100%;
   text-align: left; }
+.meta-social .social-counter.counter-zero {
+  opacity: .35; }
 .meta-social .social-counter .number {
   font-family: "Neue Haas Grotesk W01 Disp", Helvetica, Arial, sans-serif;
   font-weight: 700;
