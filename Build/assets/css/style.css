@@ -4107,12 +4107,25 @@ hr {
     color: #607d8b; }
     .card.tile-card .location-label .icon {
       fill: #90a4ae; }
+.card .card-media.card-media-full {
+  width: 100%;
+  max-width: none;
+  float: none; }
+  @media (max-width: 46.188em) {
+    .card .card-media.card-media-full img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; } }
 
 .card-item {
   width: 100%; }
   @media (min-width: 46.25em) {
     .card-item.card-item-sm {
       width: 33.33%; } }
+  @media (min-width: 75em) {
+    .card-item.card-item-sm {
+      width: 25%; } }
   @media (min-width: 46.25em) {
     .card-item.card-item-mid {
       width: 50%; } }

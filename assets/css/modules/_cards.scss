@@ -252,6 +252,18 @@
 			}
 		}
 	}
+
+	.card-media.card-media-full {
+		width: 100%;
+		max-width: none;
+		float: none;
+		@include max-bp(s) {
+			img {
+				@include border-top-radius($elementradius);
+				@include border-bottom-radius(0);
+			}
+		}
+	}
 }
 
 // Card Item ===============================================================
@@ -262,6 +274,10 @@
 	&.card-item-sm {
 		@include bp(m) {
 			width: 33.33%;
+		}
+
+		@include bp(xl) {
+			width: 25%;
 		}
 	}
 
