@@ -383,15 +383,16 @@
 	<div class="dropdown account-dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 			<img class="avatar avatar-md" src="assets/images/user-avatar.png" alt="Foto Profilo Utente" Title="Marco Rossi">
+			<span class="caret caret-icon"></span>
 		</a>
 		<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu">
-			<li><a tabindex="-1" class="menu-link" href="/user/profile/francesco/38856336159960/">Profilo Pubblico</a></li>
-			<li><a tabindex="-1" class="menu-link" href="/user/edit/basic/">Modifica dati</a></li>
-			<li><a tabindex="-1" class="menu-link" href="/user/edit/privacy/">Privacy</a></li>
-			<li class="divider"></li>
-			<li>
+			<li class="dropdonw-menu-item"><a tabindex="-1" class="menu-link" href="/user/profile/francesco/38856336159960/">Profilo Pubblico</a></li>
+			<li ><a tabindex="-1" class="menu-link" href="/user/edit/basic/">Modifica dati</a></li>
+			<li ><a tabindex="-1" class="menu-link" href="/user/edit/privacy/">Privacy</a></li>
+			<li class="divider" role="separator"></li>
+			<li class="menu-item">
 				<form onsubmit="window.ga &amp;&amp; ga( 'send', 'event', 'Community', 'Logout' ); return confirm( 'Sei sicuro di voler uscire dal sito?' );" action="/user/logout/" method="post">
-				<input type="hidden" name="nonce" id="nonce" value="zsq4Igl8nTGGFB518nrMc-4bxx3Fl4ZickYcz5aWRw-xae5oxRnKsH_MqMeH5Qq9--jqX6RqXKuk3TvMEx3PSnsQZ9uwXfECDF726OW3jSfjOlpDRRdVnSr2gk5B4Ozc-wTXjbEQMS_sZ_JUN4aRdmEB">          <input type="submit" class="btn link-btn" value="Esci">
+				<input type="hidden" name="nonce" id="nonce" value="zsq4Igl8nTGGFB518nrMc-4bxx3Fl4ZickYcz5aWRw-xae5oxRnKsH_MqMeH5Qq9--jqX6RqXKuk3TvMEx3PSnsQZ9uwXfECDF726OW3jSfjOlpDRRdVnSr2gk5B4Ozc-wTXjbEQMS_sZ_JUN4aRdmEB">          <input type="submit" class="btn btn-sm default-btn btn-block" value="Esci">
 				</form>
 			</li>
 		</ul>

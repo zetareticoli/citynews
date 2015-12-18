@@ -679,6 +679,7 @@
 	display: inline-block;
 	height: 4.5rem;
 	line-height: 4.5rem;
+	cursor: pointer;
 
 	&:hover,
 	&:active,
@@ -694,7 +695,7 @@
 	&:hover {
 
 		.avatar {
-			@include box-shadow(0 0 0 4px $black600);
+			@include box-shadow(0 0 0 2px $black500);
 		}
 	}
 
