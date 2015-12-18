@@ -672,6 +672,10 @@ blockquote {
       font-size: 20px;
       font-size: 1.25rem; } }
 
+.heading-lg,
+.heading-xl {
+  font-weight: 900; }
+
 .heading-lg {
   font-size: 24px;
   font-size: 1.5rem;

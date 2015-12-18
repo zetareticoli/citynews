@@ -208,6 +208,11 @@ blockquote {
 	}
 }
 
+.heading-lg,
+.heading-xl {
+	font-weight: 900;
+}
+
 .heading-lg {
 	@include font-size($fontsize600);
 	line-height: 1.75rem;
