@@ -4180,12 +4180,12 @@ hr {
     color: #607d8b; }
     .card.tile-card .location-label .icon {
       fill: #90a4ae; }
-.card.media-full-card {
+.card.media-full-card .card-media {
   width: 100%;
   max-width: none;
   float: none; }
   @media (max-width: 46.188em) {
-    .card.media-full-card img {
+    .card.media-full-card .card-media img {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       border-bottom-left-radius: 0;
