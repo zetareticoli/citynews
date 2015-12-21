@@ -3321,7 +3321,8 @@ hr {
     font-size: 0.875rem; }
 
 .blog-card {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
 
 .blog-card .blog-author-photo {
   text-align: center; }
