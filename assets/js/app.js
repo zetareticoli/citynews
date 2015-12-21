@@ -15,6 +15,19 @@ $(document).ready(function(){
 		$('#loginModal').modal();
 	});
 
+	//mobile filters
+	$('.filters-toggle').on('click', function(event){
+		event.preventDefault();    
+		$('.filters-dropdown').addClass('is-open');
+		$('html').toggleClass("is-locked");
+	});
+
+	$('.filters-confirm').on('click', function(event){
+		event.preventDefault();    
+		$('.filters-dropdown').removeClass('is-open');
+		$('html').removeClass("is-locked");
+	});
+
 	//mobile nav - open/close navigation
 	$('.mobile-nav-trigger').on('click', function(event){
 		event.preventDefault();    

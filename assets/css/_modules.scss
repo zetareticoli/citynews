@@ -598,6 +598,14 @@
 		float: left;
 		padding: 0 .25rem;
 		width: 50%;
+
+		h1 {
+			font-family: $alttexttypeface;
+			font-weight: 400;
+			@include font-size($fontsize200);
+			margin-bottom: 0;
+			line-height: 1rem;
+		}
 	}
 
 	.dropdown-menu {
@@ -621,10 +629,15 @@
 }
 
 .filters-dropdown {
+	position: relative;
 	margin-bottom: 1rem;
 
-	.dropdown-menu {
-		width: 95%;
+	.filters-toggle {
+		color: $black700;
+	}
+
+	.filters-menu {
+		width: 97%;
 		height: 97%;
 		position: fixed;
 		z-index: -1;
@@ -634,21 +647,36 @@
 		right: 0;
 		margin: auto;
 		display: block;
-		@include transform(scale(.7,.7));
-		@include transition(all .2 ease);
 		opacity: 0;
 		@include rounded(0);
 		border: 0;
-		@include transition(transform .15s ease-out);
-		background-color: rgba(255,255,255,.98);
+		background-color: rgba(255,255,255,.99);
+		@include transform(scale(.7,.7));
 	}
 
-	&.open {
-		.dropdown-menu {
+	.dropdown-header {
+		padding: 1.5rem 0 0 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.filter-block {
+		padding: 0 1rem;
+		height: 84%;
+		overflow-y: auto;
+	}
+
+	.filters-confirm {
+		position: absolute; 
+		top: 1rem;
+		right: 1rem;
+	}
+
+	&.is-open {
+		.filters-menu {
 			opacity: 1;
 			z-index: 10;
 			@include transform(scale(1,1));
-			@include transition(transform .15s ease-out);
+			@include transition(all .15s ease-out);
 		}
 	}
 

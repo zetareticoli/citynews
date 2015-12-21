@@ -67,9 +67,17 @@ ol, ul {
 	margin-left: $gutterwidth * 2;
 }
 
-hr {
+hr,
+.divider {
 	margin: 1rem 0;
+}
+
+hr {
 	border-top-color: $bordercolor;
+}
+
+.divider {
+	border: 1px solid $bordercolor;
 }
 
 // Global modifiers ===============================================================
