@@ -1675,7 +1675,7 @@ label,
 
 .form-search {
   display: inline-block;
-  border: 2px solid #ccc;
+  border: 2px solid #e0e0e0;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -1848,6 +1848,19 @@ input[type=checkbox]:checked + label::after {
 .input-group-addon {
   background-color: #eeeeee;
   border: 2px solid #e0e0e0; }
+
+.events-search {
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */ }
+  .events-search input[type="search"]:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .events-search input[type="search"]:focus:-moz-placeholder {
+    color: transparent; }
+  .events-search input[type="search"]:focus::-moz-placeholder {
+    color: transparent; }
+  .events-search input[type="search"]:focus:-ms-input-placeholder {
+    color: transparent; }
 
 .wrapper {
   margin: 0 auto; }
@@ -3661,26 +3674,64 @@ hr {
   margin-bottom: 1rem; }
   .top-filters .filter-dropdown {
     float: left;
-    width: 50%;
-    padding: 0 .25rem; }
-  .top-filters .filter-block.is-scrollable {
-    height: 14rem; }
-    @media (min-width: 46.25em) {
-      .top-filters .filter-block.is-scrollable {
-        height: 20rem; } }
+    padding: 0 .25rem;
+    width: 50%; }
   .top-filters .dropdown-menu {
-    width: 200%; }
+    width: 100%; }
     @media (min-width: 46.25em) {
       .top-filters .dropdown-menu {
         width: 100%; } }
   .top-filters .dropdown-toggle {
-    display: block;
     width: 100%;
     text-align: left; }
     .top-filters .dropdown-toggle .caret {
       position: absolute;
-      top: 1.25rem;
+      top: 1.15rem;
       right: 1rem; }
+
+.filters-dropdown {
+  margin-bottom: 1rem; }
+  .filters-dropdown .dropdown-menu {
+    width: 95%;
+    height: 97%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+    -webkit-transition: all 0.2 ease;
+    -moz-transition: all 0.2 ease;
+    transition: all 0.2 ease;
+    opacity: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    -webkit-transition: -webkit-transform 0.15s ease-out;
+    -moz-transition: -moz-transform 0.15s ease-out;
+    transition: transform 0.15s ease-out;
+    background-color: rgba(255, 255, 255, 0.98); }
+  .filters-dropdown.open .dropdown-menu {
+    opacity: 1;
+    z-index: 10;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: -webkit-transform 0.15s ease-out;
+    -moz-transition: -moz-transform 0.15s ease-out;
+    transition: transform 0.15s ease-out; }
+  .filters-dropdown .filter-actions .btn {
+    display: inline-block; }
 
 /* ==========================================================================
   Network Dropdown
@@ -5794,4 +5845,4 @@ html.is-locked body {
   border-bottom: 1px solid #e0e0e0; }
 
 .has-no-border {
-  border: 0; }
+  border: 0 !important; }

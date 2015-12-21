@@ -22,11 +22,6 @@ $(document).ready(function(){
 		$('html').toggleClass("is-locked");
 	});
 
-	$('.fixed-scrollable-dropdown').on('click', function(event){
-		event.preventDefault();    
-		$('html').toggleClass("is-locked");
-	});
-
 	$('.has-children').children('a').on('click', function(event){
 		event.preventDefault();
 		$(this).next('.nav-children').removeClass('is-hidden');

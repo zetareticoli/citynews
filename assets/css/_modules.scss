@@ -595,22 +595,12 @@
 
 	.filter-dropdown {
 		float: left;
-		width: 50%;
 		padding: 0 .25rem;
-	}
-
-	.filter-block {
-		&.is-scrollable {
-			height: 14rem;
-
-			@include bp(m) {
-				height: 20rem;
-			}
-		}
+		width: 50%;
 	}
 
 	.dropdown-menu {
-		width: 200%;
+		width: 100%;
 
 		@include bp(m) {
 			width: 100%;
@@ -618,14 +608,52 @@
 	}
 
 	.dropdown-toggle {
-		display: block;
 		width: 100%;
 		text-align: left;
-
+		
 		.caret {
 			position: absolute;
-			top: 1.25rem;
+			top: 1.15rem;
 			right: 1rem;
+		}
+	}
+}
+
+.filters-dropdown {
+	margin-bottom: 1rem;
+
+	.dropdown-menu {
+		width: 95%;
+		height: 97%;
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		display: block;
+		@include transform(scale(.7,.7));
+		@include transition(all .2 ease);
+		opacity: 0;
+		@include rounded(0);
+		border: 0;
+		@include transition(transform .15s ease-out);
+		background-color: rgba(255,255,255,.98);
+	}
+
+	&.open {
+		.dropdown-menu {
+			opacity: 1;
+			z-index: 10;
+			@include transform(scale(1,1));
+			@include transition(transform .15s ease-out);
+		}
+	}
+
+	.filter-actions {
+		.btn {
+			display: inline-block;
 		}
 	}
 }
