@@ -3717,11 +3717,6 @@ hr {
     border-radius: 0;
     border: 0;
     background-color: rgba(255, 255, 255, 0.99);
-    -webkit-transform: scale(0.7, 0.7);
-    -moz-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
   .filters-dropdown .dropdown-header {
     padding: 1.5rem 0 0 1rem;
@@ -3740,17 +3735,29 @@ hr {
       margin: 0 0.5rem; }
   .filters-dropdown.is-open .filters-menu {
     opacity: 1;
-    z-index: 10;
-    -webkit-transform: scale(1, 1);
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
-    -webkit-transition: all 0.15s ease-out;
-    -moz-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out; }
+    z-index: 10; }
   .filters-dropdown .filter-actions .btn {
     display: inline-block; }
+
+.filters-dropdown .filters-menu {
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  -webkit-transition: -webkit-transform 0.15s ease-out;
+  -moz-transition: -moz-transform 0.15s ease-out;
+  transition: transform 0.15s ease-out; }
+
+.filters-dropdown.is-open .filters-menu {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: -webkit-transform 0.15s ease-out;
+  -moz-transition: -moz-transform 0.15s ease-out;
+  transition: transform 0.15s ease-out; }
 
 /* ==========================================================================
   Network Dropdown
