@@ -3672,11 +3672,11 @@ hr {
 
 .top-filters {
   margin-bottom: 1rem; }
-  .top-filters .filter-dropdown {
+  .top-filters .dropdown {
     float: left;
     padding: 0 .25rem;
     width: 50%; }
-    .top-filters .filter-dropdown h1 {
+    .top-filters .dropdown h1 {
       font-family: Helvetica, "SegoeUI", Arial, sans-serif;
       font-weight: 400;
       font-size: 14px;
