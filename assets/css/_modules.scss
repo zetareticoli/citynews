@@ -661,6 +661,7 @@
 	.dropdown-header {
 		padding: 1.5rem 0 0 1rem;
 		margin-bottom: 1rem;
+		@include font-size($fontsize200);
 	}
 
 	.filter-block {
@@ -669,10 +670,14 @@
 		overflow-y: auto;
 	}
 
-	.filters-confirm {
-		position: absolute; 
+	.dropdown-actions {
+		position: absolute;
 		top: 1rem;
-		right: 1rem;
+		right: 1rem; 
+
+		.btn {
+			margin: 0 $baseline;
+		}
 	}
 
 	&.is-open {

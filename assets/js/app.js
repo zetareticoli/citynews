@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('html').toggleClass("is-locked");
 	});
 
-	$('.filters-confirm').on('click', function(event){
+	$('.filters-close').on('click', function(event){
 		event.preventDefault();    
 		$('.filters-dropdown').removeClass('is-open');
 		$('html').removeClass("is-locked");
