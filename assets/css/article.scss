@@ -162,8 +162,33 @@
 		margin-bottom: $baseline;
 	}
 
-	blockquote p {
-		color: $bluegrey700;
+	blockquote {
+		margin: 1rem 0;
+
+		@include bp(m) {
+			margin: 1.5rem 0;
+		}
+
+		@include bp(xl) {
+			margin-left: -1.25rem;
+		}
+
+		p {
+			padding-left: .75rem;
+			border-left: .25rem solid $bluegrey200;
+			font-family: $texttypeface;
+			font-style: italic;
+			font-weight: 400;
+			@include font-size($fontsize500);
+			line-height: 2rem;
+			color: $bluegrey700;
+
+			@include bp(m) {
+				padding-left: 1rem;
+				@include font-size($fontsize600);
+				line-height: 2.5rem;
+			}
+		}
 	}
 
 	table {

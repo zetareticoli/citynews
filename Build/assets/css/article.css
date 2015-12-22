@@ -146,8 +146,30 @@
   .entry-content-body > ol > li {
     padding-left: 0.5rem;
     margin-bottom: 0.5rem; }
-  .entry-content-body blockquote p {
-    color: #546e7a; }
+  .entry-content-body blockquote {
+    margin: 1rem 0; }
+    @media (min-width: 46.25em) {
+      .entry-content-body blockquote {
+        margin: 1.5rem 0; } }
+    @media (min-width: 75em) {
+      .entry-content-body blockquote {
+        margin-left: -1.25rem; } }
+    .entry-content-body blockquote p {
+      padding-left: .75rem;
+      border-left: 0.25rem solid #cfd8dc;
+      font-family: "PublicoText", Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      color: #546e7a; }
+      @media (min-width: 46.25em) {
+        .entry-content-body blockquote p {
+          padding-left: 1rem;
+          font-size: 24px;
+          font-size: 1.5rem;
+          line-height: 2.5rem; } }
   .entry-content-body table {
     width: 100%;
     max-width: 100%;

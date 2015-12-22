@@ -603,26 +603,6 @@ strong,
 dt {
   font-weight: 700; }
 
-blockquote {
-  margin: 1rem 0; }
-  @media (min-width: 62.5em) {
-    blockquote {
-      margin: 1.5rem 0; } }
-  @media (min-width: 75em) {
-    blockquote {
-      float: left;
-      width: 20rem;
-      margin: 0.5rem 1.5rem 1.5rem -13rem; } }
-  blockquote p {
-    padding-left: .75rem;
-    border-left: 0.25rem solid #cfd8dc;
-    font-family: "PublicoText", Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 400; }
-    @media (min-width: 46.25em) {
-      blockquote p {
-        padding-left: 1.5rem; } }
-
 /* ==========================================================================
    Story Headings Sizes
    ========================================================================== */
@@ -3945,25 +3925,6 @@ hr {
 /* ==========================================================================
   Related
   ========================================================================== */
-.related-stories.inner {
-  width: 100%;
-  float: left;
-  clear: left;
-  margin: 0 2rem 2rem 0; }
-  @media (min-width: 46.25em) {
-    .related-stories.inner {
-      width: 18rem; } }
-  @media (min-width: 62.5em) {
-    .related-stories.inner {
-      float: right;
-      clear: right;
-      margin: 4rem -23rem 1rem 0;
-      width: 20rem; } }
-  @media (min-width: 75em) {
-    .related-stories.inner {
-      float: left;
-      clear: left;
-      margin: 0 1.5rem 0 -13rem; } }
 .related-stories h5 {
   margin-bottom: .25rem;
   font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
@@ -3981,21 +3942,34 @@ hr {
     position: absolute;
     top: 0;
     left: 0; }
-.related-stories .story {
-  border-bottom: 0;
-  margin-bottom: .5rem; }
 .related-stories .story-heading {
-  margin-right: .25rem;
-  font-size: 16px;
-  font-size: 1rem;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.15rem; }
 .related-stories .story-media {
-  width: 4rem;
+  width: 5rem;
   float: left;
   margin-right: .5rem; }
 .related-stories .timestamp {
-  padding-left: .375rem;
   white-space: nowrap; }
+.related-stories.inner {
+  display: none; }
+  @media (min-width: 46.25em) {
+    .related-stories.inner {
+      display: block;
+      float: right;
+      clear: right;
+      width: 10rem;
+      margin-left: 1.5rem; } }
+  @media (min-width: 75em) {
+    .related-stories.inner {
+      float: left;
+      margin-left: -13rem; } }
+  @media (min-width: 46.25em) {
+    .related-stories.inner .story-media {
+      width: 100%;
+      margin: 0 0 .25rem 0; } }
 
 /* ==========================================================================
   Cards

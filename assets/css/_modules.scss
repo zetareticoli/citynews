@@ -928,30 +928,6 @@
 
 .related-stories {
 
-	&.inner {
-		width: 100%;
-		float: left;
-		clear: left;
-		margin: 0 2rem 2rem 0;
-
-		@include bp(m) {
-			width: 18rem;
-		}
-
-		@include bp(l) {
-			float: right;
-			clear: right;
-			margin: 4rem -23rem $baseline * 2 0;
-			width: 20rem;
-		}
-
-		@include bp(xl) {
-			float: left;
-			clear: left;
-			margin: 0 $baseline * 3 0 -13rem;
-		}
-	}
-
 	h5 {
 		margin-bottom: .25rem;
 		font-family: $brandtypeface;
@@ -972,26 +948,44 @@
 		}
 	}
 
-	.story {
-		border-bottom: 0;
-		margin-bottom: .5rem;
-	}
-
 	.story-heading {
-		margin-right: .25rem;
-		@include font-size($fontsize300);
+		margin-bottom: 0;
+		@include font-size($fontsize200);
 		line-height: 1.15rem;
 	}
 
 	.story-media {
-		width: 4rem;
+		width: 5rem;
 		float: left;
 		margin-right: .5rem;
 	}
 
 	.timestamp {
-		padding-left: .375rem;
 		white-space: nowrap;
+	}
+
+	&.inner {
+		display: none;
+
+		@include bp(m) {
+			display: block;
+			float: right;
+			clear: right;
+			width: 10rem;
+			margin-left: 1.5rem;
+		}
+
+		@include bp(xl) {
+			float: left;
+			margin-left: -13rem;
+		}
+
+		.story-media {
+			@include bp(m) {
+				width: 100%;
+				margin: 0 0 .25rem 0;
+			}
+		}
 	}
 }
 
