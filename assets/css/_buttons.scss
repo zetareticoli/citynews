@@ -172,19 +172,6 @@ a.light-btn {
 		color: $black800;
 		border-width: 2px;
 		border-color: $black500;
-
-		&.has-fixed-height {
-			max-height: 10rem;
-			overflow-y: auto;
-		}
-
-		.link {
-			@include font-size($fontsize200);
-
-			@include bp(m) {
-				@include font-size($fontsize300);
-			}
-		}
 	}
 
 	.menu-item,
