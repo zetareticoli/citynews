@@ -148,6 +148,11 @@ label,
 
 // Radio & Checkbox
 
+.checkbox,
+.radio {
+	margin: .75rem 0;
+}
+
 .radio input[type="radio"], 
 .radio-inline input[type="radio"], 
 .checkbox input[type="checkbox"], 
@@ -199,11 +204,6 @@ label,
 	&::after {
 		/* check mark - hidden */
 		display: none;
-	}
-
-	&.checkbox-label-sm,
-	&.radio-label-sm {
-		@include font-size($fontsize100);
 	}
 }
 
@@ -270,7 +270,6 @@ input[type=checkbox]:checked + label::after {
 		border-color: $black300;
 	}
 }
-
 
 // Validation States ===============================================================
 
