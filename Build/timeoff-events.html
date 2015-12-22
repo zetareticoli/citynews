@@ -556,8 +556,9 @@
 
 			<div class="group size1of1 filters-group top-filters visible-xs visible-sm">
 				<div class="dropdown">
-	<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Scegli cosa fare <span class="caret"></span>
-	</button>
+	<a class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		<h1 class="dropdown-toggle-selection">Eventi</h1><span class="caret"></span>
+	</a>
 
 	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">	
 		<li class='current'><a href="timeoff-events.html" class="current link">Eventi</a></li>
@@ -569,7 +570,7 @@
 
 <div class="dropdown">
 	<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	   Quando
+	   <span class="dropdown-toggle-placeholder">Quando</span>
 	   <span class="caret"></span>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
@@ -588,8 +589,13 @@
 
 	<div class="filter-dropdown">		
 		<div class="dropdown">
-			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Seleziona una data
-			<span class="caret"></span>
+			<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<div class="dropdown-selection">
+					<span class="label">Data</span>
+					<span class="dropdown-toggle-selection">Oggi</span>
+					<time class="timestamp">  mercoledì 23 dicembre </time>
+				</div>
+				<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu bs_links_filters" aria-labelledby="dropdownMenu3">
 				<li><a href="/eventi/">Tutti</a></li>

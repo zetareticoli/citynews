@@ -1350,6 +1350,11 @@ a.light-btn {
   border: 2px solid #e0e0e0;
   font-weight: 400;
   text-decoration: none; }
+  .dropdown .dropdown-toggle .dropdown-toggle-placeholder {
+    color: #757575; }
+  .dropdown .dropdown-toggle .dropdown-toggle-selection {
+    color: #424242;
+    font-weight: 700; }
 .dropdown .dropdown-menu {
   color: #616161;
   border-width: 2px;
@@ -3639,12 +3644,13 @@ hr {
   .aside-filters .dropdown .dropdown-selection .label {
     margin-bottom: .25rem; }
   .aside-filters .dropdown .dropdown-selection .timestamp,
-  .aside-filters .dropdown .dropdown-selection .selection-label {
+  .aside-filters .dropdown .dropdown-selection .dropdown-toggle-selection {
     display: block; }
-  .aside-filters .dropdown .dropdown-selection .selection-label {
+  .aside-filters .dropdown .dropdown-selection .dropdown-toggle-selection {
     font-size: 18px;
     font-size: 1.125rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: .25rem; }
   .aside-filters .dropdown .dropdown-toggle {
     width: 100%;
     padding: .875rem;

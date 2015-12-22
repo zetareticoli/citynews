@@ -166,6 +166,15 @@ a.light-btn {
 		border: 2px solid $bordercolor;
 		font-weight: 400;
 		text-decoration: none;
+
+		.dropdown-toggle-placeholder {
+			color: $black700;
+		}
+
+		.dropdown-toggle-selection {
+			color: $black900;
+			font-weight: 700;
+		}
 	}
 
 	.dropdown-menu {
