@@ -548,18 +548,16 @@
 		margin-bottom: $baseline;
 	}
 
-	.filter-dropdown {
+	.dropdown {
 		width: 100%;
-		border-top: 2px solid $bordercolor;
-		border-bottom: 2px solid $bordercolor;
 		margin-bottom: $baseline;
 
-		.filter-dropdown-selection {
-			border-left: 2px solid $bordercolor;
-			border-right: 2px solid $bordercolor;
-			padding: .75rem;
-			border-bottom: 1px solid $bordercolor;
+		.dropdown-selection {
 
+			.label {
+				margin-bottom: .25rem;
+			}
+			
 			.timestamp,
 			.selection-label {
 				display: block;
@@ -574,8 +572,6 @@
 		.dropdown-toggle {
 			width: 100%;
 			padding: .875rem;
-			border-top: 0;
-			border-bottom: 0;
 			@include border-top-radius(0);
 			@include border-bottom-radius(0);
 			text-align: left;

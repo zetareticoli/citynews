@@ -3633,28 +3633,21 @@ hr {
 
 .aside-filters form {
   margin-bottom: 0.5rem; }
-.aside-filters .filter-dropdown {
+.aside-filters .dropdown {
   width: 100%;
-  border-top: 2px solid #e0e0e0;
-  border-bottom: 2px solid #e0e0e0;
   margin-bottom: 0.5rem; }
-  .aside-filters .filter-dropdown .filter-dropdown-selection {
-    border-left: 2px solid #e0e0e0;
-    border-right: 2px solid #e0e0e0;
-    padding: .75rem;
-    border-bottom: 1px solid #e0e0e0; }
-    .aside-filters .filter-dropdown .filter-dropdown-selection .timestamp,
-    .aside-filters .filter-dropdown .filter-dropdown-selection .selection-label {
-      display: block; }
-    .aside-filters .filter-dropdown .filter-dropdown-selection .selection-label {
-      font-size: 18px;
-      font-size: 1.125rem;
-      font-weight: 700; }
-  .aside-filters .filter-dropdown .dropdown-toggle {
+  .aside-filters .dropdown .dropdown-selection .label {
+    margin-bottom: .25rem; }
+  .aside-filters .dropdown .dropdown-selection .timestamp,
+  .aside-filters .dropdown .dropdown-selection .selection-label {
+    display: block; }
+  .aside-filters .dropdown .dropdown-selection .selection-label {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 700; }
+  .aside-filters .dropdown .dropdown-toggle {
     width: 100%;
     padding: .875rem;
-    border-top: 0;
-    border-bottom: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -3663,11 +3656,11 @@ hr {
     color: #757575;
     font-size: 14px;
     font-size: 0.875rem; }
-    .aside-filters .filter-dropdown .dropdown-toggle .caret {
+    .aside-filters .dropdown .dropdown-toggle .caret {
       position: absolute;
       right: 1rem;
       top: 45%; }
-  .aside-filters .filter-dropdown .dropdown-menu {
+  .aside-filters .dropdown .dropdown-menu {
     width: 100%; }
 
 .top-filters {
