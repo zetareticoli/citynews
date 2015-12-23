@@ -4783,6 +4783,8 @@ hr {
   font-size: 0.875rem;
   line-height: 1.35rem; }
 
+.inverted .story-summary > a {
+  color: white; }
 .inverted .story-footer {
   padding: 0 1rem; }
 

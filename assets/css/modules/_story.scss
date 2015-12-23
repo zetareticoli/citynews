@@ -129,6 +129,10 @@
 // Themes ===============================================================
 
 .inverted {
+
+	.story-summary > a {
+		color: white;
+	}
 	
 	.story-footer {
 		padding: 0 $gutterwidth;
