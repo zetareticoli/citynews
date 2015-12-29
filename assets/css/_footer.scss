@@ -87,10 +87,6 @@
 		}
 
 		&.footer-nav {
-			li {
-				@include font-size($fontsize200);			
-			}
-
 			@include max-bp(m) {
 				.list-link {
 					@include column-count(2);
@@ -100,7 +96,7 @@
 	}
 
 	.footer-network-map {
-		width: 4rem;
+		width: 8rem;
 		margin-right: .5rem;
 		float: left;
 		opacity: .4;

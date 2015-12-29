@@ -2634,16 +2634,13 @@ hr {
       @media (min-width: 62.5em) {
         .site-footer .footer-col.footer-list-link .list-link li {
           line-height: 1.5rem; } }
-    .site-footer .footer-col.footer-nav li {
-      font-size: 14px;
-      font-size: 0.875rem; }
     @media (max-width: 62.438em) {
       .site-footer .footer-col.footer-nav .list-link {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2; } }
   .site-footer .footer-network-map {
-    width: 4rem;
+    width: 8rem;
     margin-right: .5rem;
     float: left;
     opacity: .4; }
