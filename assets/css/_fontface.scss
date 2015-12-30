@@ -1,4 +1,25 @@
 @font-face {
+	font-family: 'NeueHaasGroteskDisplay';
+	src: url('assets/webfonts/NeueHaasGroteskDispBlack.woff')  format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeueHaasGroteskText';
+	src: url('assets/webfonts/NeueHaasGroteskTextBold.woff')  format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PublicoBanner';
+	src: url('assets/webfonts/PublicoBanner-BoldItalic.woff')  format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'PublicoBanner';
 	src: url('assets/webfonts/PublicoBanner-BoldItalic.woff')  format('woff');
 	font-weight: 700;
