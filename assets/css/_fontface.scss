@@ -1,62 +1,52 @@
+/* ==========================================================================
+  FONT FACE
+  ========================================================================== */
+
 @font-face {
 	font-family: 'NeueHaasGroteskDisplay';
-	src: url('assets/webfonts/NeueHaasGroteskDispBlack.woff')  format('woff');
+	src: url('NeueHaasGroteskDispBlack.woff')  format('woff');
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'NeueHaasGroteskText';
-	src: url('assets/webfonts/NeueHaasGroteskTextBold.woff')  format('woff');
+	font-family: 'NeueHaasGroteskDisplay';
+	src: url('NeueHaasGroteskDispBold.woff')  format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'PublicoBanner';
-	src: url('assets/webfonts/PublicoBanner-BoldItalic.woff')  format('woff');
-	font-weight: 700;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'PublicoBanner';
-	src: url('assets/webfonts/PublicoBanner-BoldItalic.woff')  format('woff');
-	font-weight: 700;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'PublicoBanner';
-	src: url('assets/webfonts/PublicoBanner-Bold.woff')  format('woff');
+	src: url('PublicoBanner-Bold.woff')  format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src: url('/assets/webfonts/PublicoText-Italic.woff') format('woff');
+	src: url('PublicoText-Italic.woff') format('woff');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src:url('assets/webfonts/PublicoText-BoldItalic.woff') format('woff');
+	src:url('PublicoText-BoldItalic.woff') format('woff');
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src:url('assets/webfonts/PublicoText-Bold.woff') format('woff');
+	src:url('PublicoText-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'PublicoText';
-	src:url('assets/webfonts/PublicoText-Roman.woff') format('woff');
+	src:url('PublicoText-Roman.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }

@@ -37,18 +37,6 @@ color : $color; }
   }
 }
 
-// flexbox
-/*
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-*/
-
 @mixin flex-flow($values) {
   -webkit-flex-flow: $values;
   -moz-flex-flow: $values;
@@ -67,13 +55,13 @@ color : $color; }
 // mediaqueries
 
 @mixin bp($point) {
-  // xlarge desktop => 1300px
+  // xlarge desktop => 1920px -- temporaneous
   @if $point == xxl {
-    @media (min-width: 81.250em) { @content; }
+    @media (min-width: 120em) { @content; }
   }
-  // large desktop => 1200px
+  // large desktop => 1920px -- temporaneous
   @if $point == xl {
-    @media (min-width: 75em) { @content; }
+    @media (min-width: 120em) { @content; }
   }
   //desktop => 1000px
   @if $point == l {

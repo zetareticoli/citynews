@@ -104,6 +104,7 @@
 		line-height: 3rem;
 		margin: 0 $baseline;
 		font-family: $headingstypeface;
+		font-weight: 700;
 		@include font-size($fontsize400);
 
 		&:first-child {

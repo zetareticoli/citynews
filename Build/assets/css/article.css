@@ -1,23 +1,3 @@
-/*
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-*/
-/*
-
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-*/
 /* ==========================================================================
   ENTRY
   ========================================================================== */
@@ -41,7 +21,7 @@
       margin-bottom: 1rem;
       padding: 0 1rem 1.5rem; } }
 
-@media (min-width: 75em) {
+@media (min-width: 120em) {
   .entry-title,
   .entry-summary,
   .gallery-related-story {
@@ -63,7 +43,7 @@
   .entry-header:after {
     clear: both; }
 
-@media (min-width: 75em) {
+@media (min-width: 120em) {
   .entry-labels {
     float: left;
     width: 11rem;
@@ -76,7 +56,7 @@
 
 .media-entry-header {
   padding-top: 1rem; }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .media-entry-header {
       padding-top: 2rem;
       margin-left: 13rem; } }
@@ -107,7 +87,7 @@
       float: left;
       margin-right: 2rem;
       max-width: 37.5rem; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .content-main-column {
       margin: 0 1rem 0 13rem; } }
   .content-main-column.gallery-content-main-column {
@@ -151,7 +131,7 @@
     @media (min-width: 46.25em) {
       .entry-content-body blockquote {
         margin: 1.5rem 0; } }
-    @media (min-width: 75em) {
+    @media (min-width: 120em) {
       .entry-content-body blockquote {
         margin-left: -1.25rem; } }
     .entry-content-body blockquote p {
@@ -206,7 +186,7 @@
   @media (min-width: 46.25em) {
     .entry-meta {
       margin-bottom: 1rem; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .entry-meta {
       position: absolute;
       top: 0;
@@ -227,7 +207,7 @@
       @media (min-width: 46.25em) {
         .entry-meta .meta-social .social-items {
           line-height: 3rem; } }
-      @media (min-width: 75em) {
+      @media (min-width: 120em) {
         .entry-meta .meta-social .social-items {
           width: 100%;
           float: none;
@@ -239,12 +219,12 @@
       @media (min-width: 46.25em) {
         .entry-meta .meta-social .social-counter {
           text-align: left; } }
-      @media (min-width: 75em) {
+      @media (min-width: 120em) {
         .entry-meta .meta-social .social-counter {
           width: 100%;
           float: none;
           margin: 0 0 1rem 0; } }
-      @media (min-width: 75em) {
+      @media (min-width: 120em) {
         .entry-meta .meta-social .social-counter {
           float: none;
           text-align: left; } }
@@ -255,7 +235,7 @@
     .entry-meta.has-author .meta-social {
       width: 50%;
       float: right; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .entry-meta.has-author .meta-social {
       width: 100%;
       float: none; } }
@@ -265,7 +245,7 @@
     .entry-meta.has-author .meta-social .social-items {
       width: 42%;
       margin-right: 1rem; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .entry-meta.has-author .meta-social .social-items {
       width: 100%; } }
 
@@ -290,7 +270,7 @@
     .entry-media .caption {
       margin-left: 0.5rem; } }
 
-@media (min-width: 75em) {
+@media (min-width: 120em) {
   .entry-footer {
     margin-bottom: 2rem;
     width: 38rem; } }
@@ -312,7 +292,7 @@
   @media (min-width: 46.25em) {
     .entry-gallery {
       margin: 1.5rem 0; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .entry-gallery {
       margin: 2rem 0; } }
   .entry-gallery .gallery-item {
@@ -353,7 +333,7 @@
         line-height: 2.5rem; } }
   .detailed-entry-header .entry-summary {
     margin-bottom: 1rem;
-    font-family: Helvetica, "SegoeUI", Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-size: 0.875rem; }
     @media (min-width: 46.25em) {
@@ -365,7 +345,7 @@
         .detailed-entry-header .entry-summary li {
           margin-right: .5rem;
           display: inline; } }
-    @media (min-width: 75em) {
+    @media (min-width: 120em) {
       .detailed-entry-header .entry-summary {
         margin-left: 0; } }
   .detailed-entry-header .author {
@@ -459,7 +439,7 @@
             padding-right: 0;
             margin-right: 0; } }
     .detailed-entry-header .entry-details .details-list > * {
-      font-family: Helvetica, "SegoeUI", Arial, sans-serif; }
+      font-family: Helvetica, Arial, sans-serif; }
     .detailed-entry-header .entry-details .details-list-title {
       margin-bottom: .25rem;
       font-size: 16px;
@@ -506,7 +486,7 @@
     .event-entry .event-details {
       width: 22rem;
       margin-right: 1rem; } }
-  @media (min-width: 75em) {
+  @media (min-width: 120em) {
     .event-entry .event-details {
       width: 34rem; } }
 .event-entry .entry-media {
@@ -567,7 +547,7 @@
 @media (min-width: 62.5em) {
   .report-entry .report-details {
     width: 75%; } }
-@media (min-width: 75em) {
+@media (min-width: 120em) {
   .report-entry .entry-title {
     font-size: 48px;
     font-size: 3rem;
