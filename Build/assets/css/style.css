@@ -457,6 +457,11 @@ table {
   src: url(../webfonts/PublicoText-Roman.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
+@font-face {
+  font-family: 'NovecentoNarrow-DemiBold';
+  src: url(../webfonts/NovecentoSansNarrow.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .example {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
@@ -846,7 +851,7 @@ dt {
 
 .label {
   display: inline-block;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: .75rem;
@@ -981,7 +986,7 @@ time {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.1rem;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: lowercase; }
 
@@ -1456,7 +1461,7 @@ a.light-btn {
       width: auto;
       padding: 0 24px; } }
   .login-btn .btn-label {
-    font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+    font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-size: 1rem;
     color: #bdbdbd; }
@@ -2578,7 +2583,7 @@ hr {
   text-align: center;
   color: white;
   font-weight: 700;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
   @media (min-width: 46.25em) {
     .back-to-top-link {
@@ -2628,7 +2633,7 @@ hr {
         margin-bottom: 1rem; } }
     .site-footer .footer-col .footer-col-title {
       margin: 0.5rem 0;
-      font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+      font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
     .site-footer .footer-col.footer-list-link .list-link li {
       line-height: 1.75rem; }
@@ -2830,7 +2835,7 @@ hr {
   margin-right: 2rem;
   padding: 1.5rem 0 0 0;
   height: 4.5rem;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
   font-size: 1.25rem;
@@ -3926,7 +3931,7 @@ hr {
   ========================================================================== */
 .related-stories h5 {
   margin-bottom: .25rem;
-  font-family: "Novecento Sans W01", Helvetica, Arial, sans-serif;
+  font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 3rem;
