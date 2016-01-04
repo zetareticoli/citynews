@@ -5371,7 +5371,6 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .theme-green ::selection,
 .theme-purple ::selection,
 .theme-pink ::selection {
-  color: #fff;
   text-shadow: none; }
 .theme-yellow .nav-btn .btn-label,
 .theme-red .nav-btn .btn-label,
