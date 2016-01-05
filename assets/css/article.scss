@@ -175,7 +175,6 @@
 
 		p {
 			padding-left: .75rem;
-			border-left: .25rem solid $bluegrey200;
 			font-family: $texttypeface;
 			font-style: italic;
 			font-weight: 400;
@@ -185,8 +184,8 @@
 
 			@include bp(m) {
 				padding-left: 1rem;
-				@include font-size($fontsize600);
-				line-height: 2.5rem;
+				@include font-size(22);
+				line-height: 2.25rem;
 			}
 		}
 	}

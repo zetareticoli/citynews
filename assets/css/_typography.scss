@@ -430,6 +430,7 @@ dt {
 .label {
 	display: inline-block;
 	font-family: $brandtypeface;
+	font-weight: normal;
 	@include font-size($fontsize100);
 	line-height: .75rem;
 	color: $black600;

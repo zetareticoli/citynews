@@ -520,17 +520,21 @@ hr {
 		}
 
 		.header-brand {
-			margin-right: $baseline * 2;
+			margin-right: $baseline;
 
 			.logo {
 
 				@include bp(m) {
-					width: 14rem;
+					width: 11rem;
 					margin-top: $baseline;
 				}
 
 				@include bp(l) {
 					margin-top: .75rem;
+				}
+
+				@include bp(xl) {
+					width: 14rem;
 				}
 			}
 		}

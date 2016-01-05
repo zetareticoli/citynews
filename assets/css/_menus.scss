@@ -23,7 +23,6 @@
 	}
 
 	&.current {
-
 		.link {
 			color: $black1000;
 		}
@@ -105,7 +104,11 @@
 		margin: 0 $baseline;
 		font-family: $headingstypeface;
 		font-weight: 700;
-		@include font-size($fontsize400);
+		@include font-size($fontsize300);
+
+		@include bp(xl) {
+			@include font-size($fontsize400);			
+		}
 
 		&:first-child {
 			margin-left: 0;

@@ -852,6 +852,7 @@ dt {
 .label {
   display: inline-block;
   font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: .75rem;
@@ -1462,6 +1463,7 @@ a.light-btn {
       padding: 0 24px; } }
   .login-btn .btn-label {
     font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     font-size: 1rem;
     color: #bdbdbd; }
@@ -2442,14 +2444,17 @@ hr {
         -moz-box-shadow: 0 2px 0 #e0e0e0;
         box-shadow: 0 2px 0 #e0e0e0; } }
     .slim-header .header-top .header-brand {
-      margin-right: 1rem; }
+      margin-right: 0.5rem; }
       @media (min-width: 46.25em) {
         .slim-header .header-top .header-brand .logo {
-          width: 14rem;
+          width: 11rem;
           margin-top: 0.5rem; } }
       @media (min-width: 62.5em) {
         .slim-header .header-top .header-brand .logo {
           margin-top: .75rem; } }
+      @media (min-width: 120em) {
+        .slim-header .header-top .header-brand .logo {
+          width: 14rem; } }
   .slim-header .slim-header-nav {
     display: none; }
     @media (min-width: 62.5em) {
@@ -2878,8 +2883,12 @@ hr {
     margin: 0 0.5rem;
     font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    font-size: 1.125rem; }
+    font-size: 16px;
+    font-size: 1rem; }
+    @media (min-width: 120em) {
+      .secondary-nav .nav-item {
+        font-size: 18px;
+        font-size: 1.125rem; } }
     .secondary-nav .nav-item:first-child {
       margin-left: 0; }
     .secondary-nav .nav-item:hover {
@@ -3932,6 +3941,7 @@ hr {
 .related-stories h5 {
   margin-bottom: .25rem;
   font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 16px;
   font-size: 1rem;
   line-height: 3rem;

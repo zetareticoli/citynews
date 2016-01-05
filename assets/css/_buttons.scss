@@ -323,6 +323,7 @@ a.light-btn {
 	
 	.btn-label {
 		font-family: $brandtypeface;
+		font-weight: normal;
 		@include font-size($fontsize300);
 		color: $black500;
 	}

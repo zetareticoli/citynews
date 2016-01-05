@@ -931,6 +931,7 @@
 	h5 {
 		margin-bottom: .25rem;
 		font-family: $brandtypeface;
+		font-weight: normal;
 		@include font-size($fontsize300);
 		line-height: 3rem;
 		color: $black700;
