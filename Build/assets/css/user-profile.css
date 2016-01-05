@@ -8,16 +8,11 @@
     float: left;
     width: 100%; }
     .user-profile .user-profile-img img {
-      width: 30%;
+      width: 8rem;
+      height: 8rem;
       margin: 0 auto;
       display: block;
       cursor: pointer; }
-      @media (min-width: 46.25em) {
-        .user-profile .user-profile-img img {
-          width: 20%; } }
-      @media (min-width: 62.5em) {
-        .user-profile .user-profile-img img {
-          width: 15%; } }
     .user-profile .user-profile-img .user-profile-name {
       font-size: 1.250rem;
       font-weight: 700;

@@ -1077,15 +1077,19 @@
 		float: left;
 
 		@include bp(m) {
-			padding-right: 1rem;
-			text-align: right;
+		}
+
+		@include bp(m) {
+			padding-right: 0;
+			width: 9rem;
+			float: right;
 		}
 		
 		@include bp(xl) {
-			width:100%;
-			margin-bottom:1rem;
-			padding-right: 0;
+			width: 100%;
+			margin-bottom: 1rem;
 			text-align: left;
+			float: none;
 		}			
 	}
 
@@ -1096,15 +1100,11 @@
 
 	.social-counter {
 
-		&.counter-zero {
-			opacity: .35;
-		}
-
 		.number {
 			font-family: $headingstypeface;
 			font-weight: 700;
 			@include font-size($fontsize500);
-			line-height: 2rem;
+			line-height: 1.5rem;
 			color: $bluegrey700;
 			vertical-align: middle;
 
@@ -1150,6 +1150,10 @@
 		border-bottom: 0;
 	}
 
+	@include bp(l) {
+		width: 64%;
+	}
+
 	@include bp(xl) {
 		width: 100%;
 		float: none;
@@ -1166,7 +1170,6 @@
 	.author-photo {
 		float: left;
 		margin: 0 $baseline 0 0;
-		width: $baseline * 6; 
 
 		@include bp(xl) {
 			float: none;

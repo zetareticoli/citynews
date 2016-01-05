@@ -16,18 +16,11 @@
         width: 100%;
 		
 		img {
-			width:30%;
+			width: 8rem;
+            height: 8rem;
             margin:0 auto;
 			display:block;
 			cursor:pointer;
-            
-            @include bp(m) {
-                width: 20%;
-            }
-            
-            @include bp(l) {
-                width: 15%;
-            }
 		}
 		
 		.user-profile-name {

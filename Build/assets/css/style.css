@@ -1204,8 +1204,8 @@ time {
     width: 2rem;
     height: 2rem; }
   .avatar.avatar-lg {
-    width: 3rem;
-    height: 3rem; }
+    width: 2.5rem;
+    height: 2.5rem; }
 
 /* ==========================================================================
   BUTTONS
@@ -2381,7 +2381,7 @@ hr {
   .header .header-brand {
     float: left; }
     .header .header-brand .logo {
-      width: 14rem;
+      width: 11rem;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
@@ -4266,25 +4266,24 @@ hr {
   float: left; }
   @media (min-width: 46.25em) {
     .meta-social .social-share {
-      padding-right: 1rem;
-      text-align: right; } }
+      padding-right: 0;
+      width: 9rem;
+      float: right; } }
   @media (min-width: 120em) {
     .meta-social .social-share {
       width: 100%;
       margin-bottom: 1rem;
-      padding-right: 0;
-      text-align: left; } }
+      text-align: left;
+      float: none; } }
 .meta-social.bottom-social .social-share {
   width: 100%;
   text-align: left; }
-.meta-social .social-counter.counter-zero {
-  opacity: .35; }
 .meta-social .social-counter .number {
   font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   color: #546e7a;
   vertical-align: middle; }
   @media (min-width: 46.25em) {
@@ -4318,6 +4317,9 @@ hr {
       float: left;
       padding-bottom: 0;
       border-bottom: 0; } }
+  @media (min-width: 62.5em) {
+    .meta-byline {
+      width: 64%; } }
   @media (min-width: 120em) {
     .meta-byline {
       width: 100%;
@@ -4329,8 +4331,7 @@ hr {
       margin-bottom: 0.5rem; } }
   .meta-byline .author-photo {
     float: left;
-    margin: 0 0.5rem 0 0;
-    width: 3rem; }
+    margin: 0 0.5rem 0 0; }
     @media (min-width: 120em) {
       .meta-byline .author-photo {
         float: none;

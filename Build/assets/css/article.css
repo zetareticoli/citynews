@@ -85,11 +85,12 @@
   @media (min-width: 62.5em) {
     .content-main-column {
       float: left;
-      margin-right: 2rem;
-      max-width: 37.5rem; } }
+      margin-right: 1rem;
+      width: 40.5rem; } }
   @media (min-width: 120em) {
     .content-main-column {
-      margin: 0 1rem 0 13rem; } }
+      margin-left: 13rem;
+      width: 37.5rem; } }
   .content-main-column.gallery-content-main-column {
     max-width: none; }
 
@@ -200,33 +201,25 @@
     width: 100%; }
     .entry-meta .meta-social .social-share {
       text-align: left; }
-    .entry-meta .meta-social .social-items {
-      width: 50%;
-      float: left; }
       @media (min-width: 46.25em) {
-        .entry-meta .meta-social .social-items {
-          line-height: 3rem; } }
+        .entry-meta .meta-social .social-share {
+          text-align: right; } }
       @media (min-width: 120em) {
-        .entry-meta .meta-social .social-items {
-          width: 100%;
-          float: none;
-          margin-bottom: 0.5rem; } }
+        .entry-meta .meta-social .social-share {
+          text-align: left; } }
     .entry-meta .meta-social .social-counter {
       float: right;
       width: 25%;
       text-align: right; }
       @media (min-width: 46.25em) {
         .entry-meta .meta-social .social-counter {
+          width: 6.5rem;
           text-align: left; } }
       @media (min-width: 120em) {
         .entry-meta .meta-social .social-counter {
           width: 100%;
           float: none;
           margin: 0 0 1rem 0; } }
-      @media (min-width: 120em) {
-        .entry-meta .meta-social .social-counter {
-          float: none;
-          text-align: left; } }
   @media (min-width: 46.25em) {
     .entry-meta.has-author {
       margin-bottom: 1rem; } }
@@ -234,19 +227,13 @@
     .entry-meta.has-author .meta-social {
       width: 50%;
       float: right; } }
+  @media (min-width: 62.5em) {
+    .entry-meta.has-author .meta-social {
+      width: 36%; } }
   @media (min-width: 120em) {
     .entry-meta.has-author .meta-social {
       width: 100%;
       float: none; } }
-  .entry-meta.has-author .meta-social .social-counter {
-    float: left; }
-  @media (min-width: 46.25em) {
-    .entry-meta.has-author .meta-social .social-items {
-      width: 42%;
-      margin-right: 1rem; } }
-  @media (min-width: 120em) {
-    .entry-meta.has-author .meta-social .social-items {
-      width: 100%; } }
 
 .entry-media {
   position: relative;
