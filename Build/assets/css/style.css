@@ -1846,10 +1846,10 @@ input[type=checkbox]:checked + label::after {
   margin: 0 auto; }
   @media (min-width: 62.5em) {
     .wrapper {
-      width: 1000px; } }
+      width: 63.75rem; } }
   @media (min-width: 120em) {
     .wrapper {
-      width: 1188px; } }
+      width: 74.25rem; } }
 
 .line,
 .unit {

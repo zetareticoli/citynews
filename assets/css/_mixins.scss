@@ -65,7 +65,7 @@ color : $color; }
   }
   //desktop => 1000px
   @if $point == l {
-    @media (min-width: 62.50em) { @content; }
+    @media (min-width: 62.5em) { @content; }
   }
   //tablet => 740px
   @else if $point == m {

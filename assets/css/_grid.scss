@@ -3,11 +3,11 @@
 	margin: 0 auto;
 
 	@include bp(l) {
-		width: 1000px;
+		width: 63.75rem;
 	}
 
 	@include bp(xl) {
-		width: 1188px;
+		width: 74.25rem;
 	}
 }
 
