@@ -4,6 +4,10 @@
 // Sass mixins
 @import "mixins";
 
+/* ==========================================================================
+  USER PROFILE
+  ========================================================================== */
+
 .user-profile {	
 	
 	.user-profile-img {
@@ -395,14 +399,13 @@
 			}
 			
 			.text-user-profile-comment {
-				width: 90%;
+				width: 95%;
                 padding: 1rem;
-                margin: 1rem auto 1rem;
-                font-weight: 700;
-                text-align: center;
-                background-color: $bluegrey400;
-                border-bottom: .250rem solid $black400;
-                color:white;
+                margin: 1rem auto 0;
+                font-family: $texttypeface;
+                background-color: white;
+                border-bottom: .2rem solid $black400;
+                color: $black800;
                 
 			}
 			

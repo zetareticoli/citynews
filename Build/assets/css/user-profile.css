@@ -1,3 +1,6 @@
+/* ==========================================================================
+  USER PROFILE
+  ========================================================================== */
 .user-profile {
   /* Lista dettagli (location - like - dislike ...)*/
   /* Menu navigazione contenuti */ }
@@ -256,14 +259,13 @@
             .user-profile .user-profile-container-activity .user-post-activity .user-post-footer-datails .user-post-social-btn li a:focus {
               text-decoration: none; }
       .user-profile .user-profile-container-activity .user-post-activity .text-user-profile-comment {
-        width: 90%;
+        width: 95%;
         padding: 1rem;
-        margin: 1rem auto 1rem;
-        font-weight: 700;
-        text-align: center;
-        background-color: #90a4ae;
-        border-bottom: 0.25rem solid #e0e0e0;
-        color: white; }
+        margin: 1rem auto 0;
+        font-family: "PublicoText", Georgia, "Times New Roman", serif;
+        background-color: white;
+        border-bottom: 0.2rem solid #e0e0e0;
+        color: #616161; }
       .user-profile .user-profile-container-activity .user-post-activity .title-post-commented {
         padding: .500rem;
         font-size: .875rem; }
