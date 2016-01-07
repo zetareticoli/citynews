@@ -2369,7 +2369,8 @@ hr {
           display: block;
           position: absolute;
           right: 14rem;
-          top: 1.25rem; } }
+          top: 1.25rem;
+          z-index: 2; } }
   .header .header-bottom {
     display: none;
     height: 3rem;
