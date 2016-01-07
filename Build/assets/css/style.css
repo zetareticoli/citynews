@@ -5692,6 +5692,9 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .slots,
 .slot {
   width: 100%; }
+  .slots :empty,
+  .slot :empty {
+    display: none; }
 
 .slots {
   padding: 0.5rem;
@@ -5712,6 +5715,12 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   margin: 0 auto;
   width: 300px;
   height: 600px; }
+
+.large-rectangle-slot {
+  padding: 1rem;
+  text-align: center; }
+  .large-rectangle-slot:empty {
+    display: none; }
 
 .slots-headlines,
 .entry-aside-slots {

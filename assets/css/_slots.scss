@@ -5,6 +5,10 @@
 .slots,
 .slot {
 	width: 100%;
+
+	:empty {
+		display: none;
+	}
 }
 
 .slots {
@@ -18,8 +22,8 @@
 
 .slot {
 	margin: 1rem;
-}
 
+}
 
 // Slot Sizes ===============================================================
 
@@ -33,6 +37,15 @@
 	margin: 0 auto;
 	width: 300px;
 	height: 600px;
+}
+
+.large-rectangle-slot {
+	padding: 1rem;
+	text-align: center;
+
+	&:empty {
+		display: none;
+	}
 }
 
 // Slot Templates ===============================================================
