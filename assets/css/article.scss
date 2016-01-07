@@ -268,10 +268,12 @@
 			float: right;
 			width: 25%;
 			text-align: right;
+			margin-top: $baseline;
 
 			@include bp(m) {
 				width: 6.5rem;
 				text-align: left;
+				margin-top: 0;
 			}
 
 			@include bp(xl) {

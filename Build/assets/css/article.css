@@ -210,11 +210,13 @@
     .entry-meta .meta-social .social-counter {
       float: right;
       width: 25%;
-      text-align: right; }
+      text-align: right;
+      margin-top: 0.5rem; }
       @media (min-width: 46.25em) {
         .entry-meta .meta-social .social-counter {
           width: 6.5rem;
-          text-align: left; } }
+          text-align: left;
+          margin-top: 0; } }
       @media (min-width: 120em) {
         .entry-meta .meta-social .social-counter {
           width: 100%;
