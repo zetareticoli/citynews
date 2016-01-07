@@ -55,9 +55,9 @@ color : $color; }
 // mediaqueries
 
 @mixin bp($point) {
-  // xlarge desktop => 1920px -- temporaneous
+  // xlarge desktop => 5000px -- temporaneous
   @if $point == xxl {
-    @media (min-width: 120em) { @content; }
+    @media (min-width: 312.5em) { @content; }
   }
   // large desktop => 1920px -- temporaneous
   @if $point == xl {
