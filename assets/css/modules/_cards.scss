@@ -235,9 +235,13 @@
 
 		}
 
+		.author,
+		.author-name {
+			display: inline-block;
+		}		
+
 		.author {
 			margin-right: 1rem;
-			display: inline-block;
 		}
 
 		.author-name {

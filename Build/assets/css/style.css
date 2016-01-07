@@ -4162,9 +4162,11 @@ hr {
     -webkit-box-shadow: 0 0 0 3px white;
     -moz-box-shadow: 0 0 0 3px white;
     box-shadow: 0 0 0 3px white; }
-  .card.tile-card .author {
-    margin-right: 1rem;
+  .card.tile-card .author,
+  .card.tile-card .author-name {
     display: inline-block; }
+  .card.tile-card .author {
+    margin-right: 1rem; }
   .card.tile-card .author-name {
     font-size: 14px;
     font-size: 0.875rem; }

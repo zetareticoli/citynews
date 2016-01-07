@@ -336,7 +336,8 @@
     @media (min-width: 120em) {
       .detailed-entry-header .entry-summary {
         margin-left: 0; } }
-  .detailed-entry-header .author {
+  .detailed-entry-header .author,
+  .detailed-entry-header .author-photo {
     display: inline-block; }
   .detailed-entry-header .rating {
     margin-bottom: 0.5rem; }
