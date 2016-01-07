@@ -92,7 +92,7 @@
       margin-left: 13rem;
       width: 37.5rem; } }
   .content-main-column.gallery-content-main-column {
-    width: auto; }
+    width: 100%; }
 
 .content-secondary-column {
   width: 20rem; }
