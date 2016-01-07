@@ -102,12 +102,14 @@
 }
 
 .story-subheading {
+	padding-left: 1rem;
 
 	&:before {
 		display: inline-block;
 		content: '';
 		position: relative;
-		margin-right: $gutterwidth / 2;
+		margin-right: $baseline;
+		margin-left: -1rem;
 		vertical-align: middle;
 		top: -1px;
 		width: 6px;
@@ -166,7 +168,7 @@
 		}
 
 		&:before {
-			@include bp(l) {
+			@include bp(xl) {
 				width: 12px;
 				height: 12px;
 				top: -2px;

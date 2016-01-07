@@ -4778,19 +4778,22 @@ hr {
   .story-subheading .link {
     color: #78909c; }
 
-.story-subheading:before {
-  display: inline-block;
-  content: '';
-  position: relative;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-  top: -1px;
-  width: 6px;
-  height: 6px; }
-  @media (min-width: 46.25em) {
-    .story-subheading:before {
-      width: 8px;
-      height: 8px; } }
+.story-subheading {
+  padding-left: 1rem; }
+  .story-subheading:before {
+    display: inline-block;
+    content: '';
+    position: relative;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+    vertical-align: middle;
+    top: -1px;
+    width: 6px;
+    height: 6px; }
+    @media (min-width: 46.25em) {
+      .story-subheading:before {
+        width: 8px;
+        height: 8px; } }
 
 .story-summary {
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
@@ -4821,7 +4824,7 @@ hr {
         font-size: 24px;
         font-size: 1.5rem;
         line-height: 2rem; } }
-    @media (min-width: 62.5em) {
+    @media (min-width: 120em) {
       .hero-story .story-subheading:before {
         width: 12px;
         height: 12px;
