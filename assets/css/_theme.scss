@@ -205,6 +205,7 @@
 		background-color: $b-c-yellow;
 	}
 
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-yellow;
@@ -275,6 +276,7 @@
 		background-color: $b-c-red;
 	}
 
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-red;
@@ -344,6 +346,7 @@
 		background-color: $b-c-blue;
 	}
 
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-blue;
@@ -413,6 +416,7 @@
 		background-color: $b-c-green;
 	}
 
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-green;
@@ -482,6 +486,7 @@
 		background-color: $b-c-purple;
 	}
 
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-purple;
@@ -551,7 +556,8 @@
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-pink;
 	}
-
+	
+	.mobile-nav,
 	.site-footer {
 		.logo-edition {
 			fill: $b-c-pink;

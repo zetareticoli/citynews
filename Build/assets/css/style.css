@@ -2957,7 +2957,7 @@ hr {
         .mobile-nav .mobile-nav-header .header-brand {
           display: none; } }
       .mobile-nav .mobile-nav-header .header-brand .logo {
-        width: 10rem; }
+        width: 11rem; }
       .mobile-nav .mobile-nav-header .header-brand .logo-network {
         fill: white; }
     .mobile-nav .mobile-nav-header .close-btn {
@@ -5454,6 +5454,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #FFBE26; } }
 .theme-yellow .expand-image:hover .rounded-icon {
   background-color: #FFBE26; }
+.theme-yellow .mobile-nav .logo-edition,
 .theme-yellow .site-footer .logo-edition {
   fill: #FFBE26; }
 .theme-yellow .page-title .link:hover {
@@ -5497,6 +5498,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #F2463D; } }
 .theme-red .expand-image:hover .rounded-icon {
   background-color: #F2463D; }
+.theme-red .mobile-nav .logo-edition,
 .theme-red .site-footer .logo-edition {
   fill: #F2463D; }
 .theme-red .page-title .link:hover {
@@ -5538,6 +5540,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #3277C7; } }
 .theme-blue .expand-image:hover .rounded-icon {
   background-color: #3277C7; }
+.theme-blue .mobile-nav .logo-edition,
 .theme-blue .site-footer .logo-edition {
   fill: #3277C7; }
 .theme-blue .page-title .link:hover {
@@ -5579,6 +5582,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #50AE55; } }
 .theme-green .expand-image:hover .rounded-icon {
   background-color: #50AE55; }
+.theme-green .mobile-nav .logo-edition,
 .theme-green .site-footer .logo-edition {
   fill: #50AE55; }
 .theme-green .page-title .link:hover {
@@ -5620,6 +5624,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #B75DC7; } }
 .theme-purple .expand-image:hover .rounded-icon {
   background-color: #B75DC7; }
+.theme-purple .mobile-nav .logo-edition,
 .theme-purple .site-footer .logo-edition {
   fill: #B75DC7; }
 .theme-purple .page-title .link:hover {
@@ -5663,6 +5668,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #F291B2; } }
 .theme-pink .expand-image:hover .rounded-icon {
   background-color: #F291B2; }
+.theme-pink .mobile-nav .logo-edition,
 .theme-pink .site-footer .logo-edition {
   fill: #F291B2; }
 .theme-pink .page-title .link:hover {
