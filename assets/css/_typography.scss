@@ -503,13 +503,9 @@ dt {
 	&:before {
 		content: '';
 		display: block;
-		width: 2rem;
+		width: 1.5rem;
 		height: .15rem;
 		margin-bottom: $baseline / 2; 
-
-		@include bp(m) {
-			width: 3rem;
-		}
 	}
 }
 
