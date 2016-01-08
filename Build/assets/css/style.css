@@ -4971,9 +4971,9 @@ hr {
     @media (min-width: 62.5em) {
       .fullpage-hero .story-media {
         width: 19.8rem; } }
-    @media (min-width: 62.5em) {
+    @media (min-width: 312.5em) {
       .fullpage-hero .story-media {
-        width: 19.8rem; } }
+        width: 23.5rem; } }
   .fullpage-hero .story-heading {
     font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
   .fullpage-hero .highlight-kicker {
@@ -4992,6 +4992,9 @@ hr {
     margin-bottom: 0.5rem;
     width: 100%; } }
 
+@media (min-width: 62.5em) {
+  .list-story {
+    padding-top: 0.5rem; } }
 @media (min-width: 46.25em) {
   .list-story .story-media {
     margin-bottom: 0.5rem; } }
@@ -5006,6 +5009,10 @@ hr {
     font-size: 12px;
     font-size: 0.75rem; }
 
+@media (min-width: 62.5em) {
+  .newslist-main .l-list-item:first-child .list-story {
+    padding-top: 0; } }
+
 .inset-story {
   position: relative;
   border-bottom: 0;
@@ -5015,15 +5022,12 @@ hr {
     .inset-story {
       padding: 0;
       background: none;
-      max-height: 24.5rem; }
+      max-height: 22.5rem; }
       .inset-story:hover .story-media:after {
         background-color: rgba(38, 50, 56, 0.85); }
       .inset-story:hover .story-summary {
         opacity: 1;
-        max-height: 300px; } }
-  @media (min-width: 62.5em) {
-    .inset-story {
-      max-height: 26rem; } }
+        max-height: 18.75rem; } }
   .inset-story .story-header {
     background-color: #263238;
     padding: 1rem;

@@ -372,8 +372,8 @@
 			width: 19.8rem;
 		}
 
-		@include bp(l) {
-			width: 19.8rem;
+		@include bp(xl) {
+			width: 23.5rem;
 		}
 	}
 
@@ -417,6 +417,10 @@
 
 .list-story {
 
+	@include bp(l) {
+		padding-top: $baseline;
+	}
+
 	.story-media {
 		@include bp(m) {
 			margin-bottom: $baseline;			
@@ -444,6 +448,15 @@
 	}
 }
 
+// detect newslist's first list story
+.newslist-main .l-list-item:first-child {
+	.list-story {
+		@include bp(l) {
+			padding-top: 0;
+		}
+	}
+}
+
 // Inset Story
 
 .inset-story {
@@ -455,7 +468,7 @@
 	@include bp(m) {
 		padding: 0;
 		background: none;
-		max-height: 24.5rem;
+		max-height: 22.5rem; //
 
 		&:hover {
 
@@ -465,13 +478,9 @@
 
 			.story-summary {
 				opacity: 1;
-				max-height: 300px;
+				max-height: 18.75rem; // 300px
 			}
 		}
-	}
-
-	@include bp(l) {
-		max-height: 26rem;
 	}
 
 	.story-header {
