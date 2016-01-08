@@ -4987,6 +4987,9 @@ hr {
   .fullpage-hero.featured-fullpage {
     background-color: #eceff1; }
 
+@media (max-width: 46.188em) {
+  .featured-story.featured-md:first-child {
+    margin-bottom: 0.5rem; } }
 @media (min-width: 46.25em) {
   .featured-story.featured-md .story-media {
     margin-bottom: 0.5rem;

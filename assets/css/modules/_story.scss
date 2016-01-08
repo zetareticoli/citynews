@@ -404,6 +404,11 @@
 .featured-story {
 
 	&.featured-md {
+		&:first-child {
+			@include max-bp(s) {
+				margin-bottom: $baseline;				
+			}
+		}
 		.story-media {
 			@include bp(m) {
 				margin-bottom: $baseline;
