@@ -359,7 +359,7 @@
       .detailed-entry-header .entry-media {
         float: left;
         width: 8rem;
-        margin: -2rem 1rem 0.5rem 0; } }
+        margin: 0 1rem 0.5rem 0; } }
   .detailed-entry-header .entry-details {
     margin-bottom: 1rem;
     *zoom: 1; }
