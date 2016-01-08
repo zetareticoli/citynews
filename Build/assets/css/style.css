@@ -4961,15 +4961,19 @@ hr {
         clear: both; } }
   .fullpage-hero .story-media {
     margin-right: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     width: 100%; }
     @media (min-width: 46.25em) {
       .fullpage-hero .story-media {
         float: right;
-        width: 50%; } }
+        width: 33%;
+        margin-left: 2rem; } }
     @media (min-width: 62.5em) {
       .fullpage-hero .story-media {
-        width: 23.5rem; } }
+        width: 19.8rem; } }
+    @media (min-width: 62.5em) {
+      .fullpage-hero .story-media {
+        width: 19.8rem; } }
   .fullpage-hero .story-heading {
     font-family: "PublicoBanner", Georgia, "Times New Roman", serif; }
   .fullpage-hero .highlight-kicker {

@@ -359,16 +359,21 @@
 
 	.story-media {
 		margin-right: 0;
-		margin-bottom: 0;
+		margin-bottom: $baseline;
 		width: 100%;
 
 		@include bp(m) {
 			float: right;
-			width: 50%;
+			width: 33%;
+			margin-left: 2rem;
 		}
 
 		@include bp(l) {
-			width: 23.5rem;
+			width: 19.8rem;
+		}
+
+		@include bp(l) {
+			width: 19.8rem;
 		}
 	}
 
@@ -619,7 +624,6 @@
 			margin: 0 0 0 $baseline;
 		}
 	}
-
 }
 
 .has-flex .full-cover .sublinks .item-span-1 {
