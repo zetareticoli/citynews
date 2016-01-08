@@ -4841,6 +4841,14 @@ hr {
       font-size: 16px;
       font-size: 1rem;
       line-height: 1.5rem; } }
+  .hero-story .sublink {
+    padding-bottom: 0.5rem;
+    *zoom: 1; }
+    .hero-story .sublink:before, .hero-story .sublink:after {
+      content: " ";
+      display: table; }
+    .hero-story .sublink:after {
+      clear: both; }
   .hero-story.featured-hero {
     padding-bottom: 0;
     background-color: #eceff1; }

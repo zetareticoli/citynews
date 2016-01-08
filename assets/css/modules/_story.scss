@@ -188,6 +188,11 @@
 		}
 	}
 
+	.sublink {
+		padding-bottom: $baseline;
+		@include clearfix;
+	}
+
 	// Featured Hero
 
 	&.featured-hero {
