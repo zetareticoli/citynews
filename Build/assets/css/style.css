@@ -2557,6 +2557,7 @@ hr {
 .headlines-main-list .l-row-item:last-child .l-list-item:last-child {
   margin-bottom: 0; }
 
+.section-newslist,
 .newslist-main
 .newslist-aside {
   width: 100%; }
