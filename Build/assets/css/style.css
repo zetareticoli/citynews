@@ -4861,6 +4861,7 @@ hr {
       width: 100%;
       float: left; }
     .hero-story.cover-hero .story-footer {
+      clear: left;
       padding: 0.5rem 0;
       margin-right: 0.5rem;
       margin-left: 0.5rem; }
@@ -5701,8 +5702,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .slots,
 .slot {
   width: 100%; }
-  .slots :empty,
-  .slot :empty {
+  .slots:empty,
+  .slot:empty {
     display: none; }
 
 .slots {

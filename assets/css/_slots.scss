@@ -6,7 +6,7 @@
 .slot {
 	width: 100%;
 
-	:empty {
+	&:empty {
 		display: none;
 	}
 }
