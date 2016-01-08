@@ -2085,8 +2085,8 @@ hr {
   -ms-flex-align: center; }
 
 .unspaced {
-  margin: 0;
-  padding: 0; }
+  margin: 0 !important;
+  padding: 0 !important; }
 
 .u-unstyled, .inline-list {
   overflow: hidden;
@@ -4718,6 +4718,9 @@ hr {
     display: table; }
   .story:after {
     clear: both; }
+  .story .label {
+    display: block;
+    margin-bottom: .25rem; }
 
 @media (min-width: 62.5em) {
   .story-content-pull {

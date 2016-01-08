@@ -3,6 +3,11 @@
 .story {
 	width: 100%;
 	@include clearfix;
+
+	.label {
+		display: block;
+		margin-bottom: .25rem;
+	}
 }
 
 .story-content-pull {
