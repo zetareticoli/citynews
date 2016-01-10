@@ -185,8 +185,23 @@
 	height: 100%;
 	z-index: 100;
 
+	.logo {
+		margin: 2rem 0;
+	}
+
 	.alert-content {
 		width: 40%;
 		margin: 10rem auto;
 	}
+
+	.download-browser {
+		margin: 1rem;
+		text-align: center;
+	}
+
+	.browser-icon {
+		margin: auto;
+		display: block;
+	}
+
 }

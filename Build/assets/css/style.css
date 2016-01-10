@@ -2822,9 +2822,17 @@ hr {
   width: 100%;
   height: 100%;
   z-index: 100; }
+  .ie-alert .logo {
+    margin: 2rem 0; }
   .ie-alert .alert-content {
     width: 40%;
     margin: 10rem auto; }
+  .ie-alert .download-browser {
+    margin: 1rem;
+    text-align: center; }
+  .ie-alert .browser-icon {
+    margin: auto;
+    display: block; }
 
 /* ==========================================================================
   Global Styles
@@ -5046,7 +5054,7 @@ hr {
       background: none;
       max-height: 22.5rem; }
       .inset-story:hover .story-media:after {
-        background-color: rgba(38, 50, 56, 0.85); }
+        background-color: rgba(38, 50, 56, 0.9); }
       .inset-story:hover .story-summary {
         opacity: 1;
         max-height: 18.75rem; } }
@@ -5075,7 +5083,7 @@ hr {
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(38, 50, 56, 0.65);
+      background-color: rgba(38, 50, 56, 0.8);
       -webkit-transition: background-color 0.2s;
       -moz-transition: background-color 0.2s;
       transition: background-color 0.2s; }
