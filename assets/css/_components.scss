@@ -4,6 +4,7 @@
 
 // 01. Modal
 // 02. Pagination
+// 03. Alerts
 
 /* ==========================================================================
   Modal
@@ -164,5 +165,28 @@
 				color: white;
 			}
 		}
+	}
+}
+
+/* ==========================================================================
+  Alerts
+  ========================================================================== */
+
+.validation-alert {
+	margin-left: 0;
+	@include font-size($fontsize200);
+	text-align: left;
+}
+
+.ie-alert {
+	position: fixed;
+	background-color: rgba(255,255,255,.98);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+	.alert-content {
+		width: 40%;
+		margin: 10rem auto;
 	}
 }

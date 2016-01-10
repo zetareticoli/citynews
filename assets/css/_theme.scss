@@ -205,6 +205,7 @@
 		background-color: $b-c-yellow;
 	}
 
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {
@@ -248,11 +249,17 @@
 		background-color: $b-c-red;
 	}
 
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-red;
+		}
+	}
+
 	.theme-border {
 		border-color: $b-c-red;
 	}
 
-	.theme,
+	.theme-color,
 	.theme-color .link {
 		color: $b-c-red;
 	}
@@ -276,6 +283,7 @@
 		background-color: $b-c-red;
 	}
 
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {
@@ -318,6 +326,12 @@
 		background-color: $b-c-blue;
 	}
 
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-blue;
+		}
+	}
+
 	.theme-border {
 		border-color: $b-c-blue;
 	}
@@ -346,6 +360,7 @@
 		background-color: $b-c-blue;
 	}
 
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {
@@ -388,6 +403,12 @@
 		background-color: $b-c-green;
 	}
 
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-green;
+		}
+	}
+
 	.theme-border {
 		border-color: $b-c-green;
 	}
@@ -416,6 +437,7 @@
 		background-color: $b-c-green;
 	}
 
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {
@@ -458,6 +480,12 @@
 		background-color: $b-c-purple;
 	}
 
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-purple;
+		}
+	}
+
 	.theme-border {
 		border-color: $b-c-purple;
 	}
@@ -486,6 +514,7 @@
 		background-color: $b-c-purple;
 	}
 
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {
@@ -529,6 +558,12 @@
 		background-color: $b-c-pink;
 	}
 
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-pink;
+		}
+	}
+
 	.theme-border {
 		border-color: $b-c-pink;
 	}
@@ -557,6 +592,7 @@
 		background-color: $b-c-pink;
 	}
 	
+	.ie-alert,
 	.mobile-nav,
 	.site-footer {
 		.logo-edition {

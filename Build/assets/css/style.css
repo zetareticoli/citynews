@@ -2808,6 +2808,25 @@ hr {
   color: white; }
 
 /* ==========================================================================
+  Alerts
+  ========================================================================== */
+.validation-alert {
+  margin-left: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: left; }
+
+.ie-alert {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.98);
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  .ie-alert .alert-content {
+    width: 40%;
+    margin: 10rem auto; }
+
+/* ==========================================================================
   Global Styles
   ========================================================================== */
 .primary-nav,
@@ -5475,6 +5494,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #FFBE26; } }
 .theme-yellow .expand-image:hover .rounded-icon {
   background-color: #FFBE26; }
+.theme-yellow .ie-alert .logo-edition,
 .theme-yellow .mobile-nav .logo-edition,
 .theme-yellow .site-footer .logo-edition {
   fill: #FFBE26; }
@@ -5503,9 +5523,11 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   background: #F2463D; }
 .theme-red .theme-background {
   background-color: #F2463D; }
+.theme-red .theme-element-bg:before {
+  background-color: #F2463D; }
 .theme-red .theme-border {
   border-color: #F2463D; }
-.theme-red .theme,
+.theme-red .theme-color,
 .theme-red .theme-color .link {
   color: #F2463D; }
 .theme-red .theme-fill {
@@ -5519,6 +5541,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #F2463D; } }
 .theme-red .expand-image:hover .rounded-icon {
   background-color: #F2463D; }
+.theme-red .ie-alert .logo-edition,
 .theme-red .mobile-nav .logo-edition,
 .theme-red .site-footer .logo-edition {
   fill: #F2463D; }
@@ -5545,6 +5568,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   background: #3277C7; }
 .theme-blue .theme-background {
   background-color: #3277C7; }
+.theme-blue .theme-element-bg:before {
+  background-color: #3277C7; }
 .theme-blue .theme-border {
   border-color: #3277C7; }
 .theme-blue .theme-color,
@@ -5561,6 +5586,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #3277C7; } }
 .theme-blue .expand-image:hover .rounded-icon {
   background-color: #3277C7; }
+.theme-blue .ie-alert .logo-edition,
 .theme-blue .mobile-nav .logo-edition,
 .theme-blue .site-footer .logo-edition {
   fill: #3277C7; }
@@ -5587,6 +5613,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   background: #50AE55; }
 .theme-green .theme-background {
   background-color: #50AE55; }
+.theme-green .theme-element-bg:before {
+  background-color: #50AE55; }
 .theme-green .theme-border {
   border-color: #50AE55; }
 .theme-green .theme-color,
@@ -5603,6 +5631,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #50AE55; } }
 .theme-green .expand-image:hover .rounded-icon {
   background-color: #50AE55; }
+.theme-green .ie-alert .logo-edition,
 .theme-green .mobile-nav .logo-edition,
 .theme-green .site-footer .logo-edition {
   fill: #50AE55; }
@@ -5629,6 +5658,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   background: #B75DC7; }
 .theme-purple .theme-background {
   background-color: #B75DC7; }
+.theme-purple .theme-element-bg:before {
+  background-color: #B75DC7; }
 .theme-purple .theme-border {
   border-color: #B75DC7; }
 .theme-purple .theme-color,
@@ -5645,6 +5676,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #B75DC7; } }
 .theme-purple .expand-image:hover .rounded-icon {
   background-color: #B75DC7; }
+.theme-purple .ie-alert .logo-edition,
 .theme-purple .mobile-nav .logo-edition,
 .theme-purple .site-footer .logo-edition {
   fill: #B75DC7; }
@@ -5673,6 +5705,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   background: #F291B2; }
 .theme-pink .theme-background {
   background-color: #F291B2; }
+.theme-pink .theme-element-bg:before {
+  background-color: #F291B2; }
 .theme-pink .theme-border {
   border-color: #F291B2; }
 .theme-pink .theme-color,
@@ -5689,6 +5723,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
         fill: #F291B2; } }
 .theme-pink .expand-image:hover .rounded-icon {
   background-color: #F291B2; }
+.theme-pink .ie-alert .logo-edition,
 .theme-pink .mobile-nav .logo-edition,
 .theme-pink .site-footer .logo-edition {
   fill: #F291B2; }
