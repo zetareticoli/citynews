@@ -478,7 +478,7 @@
 		&:hover {
 
 			.story-media:after {
-				background-color: rgba(38,50,56,.9);
+				background-color: rgba(38,50,56,.85);
 			}
 
 			.story-summary {
@@ -518,7 +518,7 @@
 			position: absolute; 
 			top: 0;
 			left: 0;
-			background-color: rgba(38,50,56,.8);
+			background-color: rgba(38,50,56,.65);
 			@include transition(background-color .2s);
 		}
 	}
@@ -544,6 +544,12 @@
 }
 
 // Sublinks ===============================================================
+
+.sublinks {
+	&:empty {
+		display: none;
+	}
+}
 
 .sublink {
 	margin-bottom: $baseline;
@@ -698,12 +704,12 @@
 	}
 
 	.story-heading {
-		margin-bottom: 0;
 		color: white;
 		@include font-size($fontsize400);
 
 		@include bp(l) {
 			@include font-size($fontsize500);
+			line-height: 1.5rem;
 		}
 	}
 
@@ -716,7 +722,7 @@
 	}
 
 	.story-header {
-		padding: 1rem;
+		padding: .75rem 1rem;
 	}
 
 	// featured media story
@@ -725,6 +731,11 @@
 		.story-heading {
 			@include bp(l) {
 				@include font-size($fontsize600);
+			}
+		}
+		.story-header {
+			@include bp(l) {
+				padding: 1rem;
 			}
 		}
 	}

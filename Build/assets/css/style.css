@@ -5054,7 +5054,7 @@ hr {
       background: none;
       max-height: 22.5rem; }
       .inset-story:hover .story-media:after {
-        background-color: rgba(38, 50, 56, 0.9); }
+        background-color: rgba(38, 50, 56, 0.85); }
       .inset-story:hover .story-summary {
         opacity: 1;
         max-height: 18.75rem; } }
@@ -5083,7 +5083,7 @@ hr {
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(38, 50, 56, 0.8);
+      background-color: rgba(38, 50, 56, 0.65);
       -webkit-transition: background-color 0.2s;
       -moz-transition: background-color 0.2s;
       transition: background-color 0.2s; }
@@ -5103,6 +5103,9 @@ hr {
         font-size: 1rem; } }
   .inset-story .link {
     color: white; }
+
+.sublinks:empty {
+  display: none; }
 
 .sublink {
   margin-bottom: 0.5rem;
@@ -5231,14 +5234,14 @@ hr {
     bottom: 1rem;
     left: 1rem; }
   .media-story .story-heading {
-    margin-bottom: 0;
     color: white;
     font-size: 18px;
     font-size: 1.125rem; }
     @media (min-width: 62.5em) {
       .media-story .story-heading {
         font-size: 20px;
-        font-size: 1.25rem; } }
+        font-size: 1.25rem;
+        line-height: 1.5rem; } }
   .media-story .story-media {
     position: relative;
     margin-bottom: 0;
@@ -5246,11 +5249,14 @@ hr {
     width: 100%;
     max-width: none; }
   .media-story .story-header {
-    padding: 1rem; }
+    padding: .75rem 1rem; }
   @media (min-width: 62.5em) {
     .media-story.featured-story .story-heading {
       font-size: 24px;
       font-size: 1.5rem; } }
+  @media (min-width: 62.5em) {
+    .media-story.featured-story .story-header {
+      padding: 1rem; } }
 
 /* ==========================================================================
   Tags
@@ -5592,6 +5598,10 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-blue .theme-header .logo-edition {
         fill: #3277C7; } }
+.theme-blue .nav-btn .icon {
+  fill: white; }
+.theme-blue .nav-btn .btn-label {
+  color: white; }
 .theme-blue .expand-image:hover .rounded-icon {
   background-color: #3277C7; }
 .theme-blue .ie-alert .logo-edition,
@@ -5751,6 +5761,55 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
     .theme-pink .alph-item.current .link
     .theme-pink .alph-item.current .link:hover {
       background-color: #F291B2;
+      color: white; } }
+
+/* ==========================================================================
+  Theme Today
+  ========================================================================== */
+.theme-today ::selection {
+  background: #2A9DDB; }
+.theme-today .theme-background {
+  background-color: #2A9DDB; }
+.theme-today .theme-element-bg:before {
+  background-color: #2A9DDB; }
+.theme-today .theme-border {
+  border-color: #2A9DDB; }
+.theme-today .theme-color,
+.theme-today .theme-color .link {
+  color: #2A9DDB; }
+.theme-today .theme-fill {
+  fill: #2A9DDB; }
+.theme-today .theme-header {
+  background-color: #2A9DDB; }
+  .theme-today .theme-header .today-logo {
+    fill: white; }
+  @media (min-width: 62.5em) {
+    .theme-today .theme-header {
+      background-color: white; }
+      .theme-today .theme-header .today-logo {
+        fill: #2A9DDB; } }
+.theme-today .nav-btn .icon {
+  fill: white; }
+.theme-today .nav-btn .btn-label {
+  color: white; }
+.theme-today .ie-alert .logo-edition,
+.theme-today .mobile-nav .logo-edition,
+.theme-today .site-footer .logo-edition {
+  fill: #2A9DDB; }
+.theme-today .page-title .link:hover {
+  color: #2A9DDB; }
+.theme-today .inverted .story-heading .link:hover,
+.theme-today .inverted .block-link:hover,
+.theme-today .inverted .block-link:hover .story-heading,
+.theme-today .theme-inverted .block-link:hover .story-heading {
+  color: #FFBE26; }
+.theme-today .alph-item.current .link,
+.theme-today .alph-item.current .link:hover {
+  color: #FFBE26; }
+  @media (min-width: 46.25em) {
+    .theme-today .alph-item.current .link,
+    .theme-today .alph-item.current .link:hover {
+      background-color: #FFBE26;
       color: white; } }
 
 /* ==========================================================================

@@ -356,6 +356,15 @@
 		}
 	}
 
+	.nav-btn {
+		.icon {
+			fill: white;
+		}
+		.btn-label {
+			color: white;
+		}
+	}
+
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-blue;
 	}
@@ -621,6 +630,95 @@
 		color: white;
 	}
 }
+
+/* ==========================================================================
+  Theme Today
+  ========================================================================== */
+
+.theme-today {
+
+	::selection {
+		background: $b-c-today;
+	}
+
+	.theme-background {
+		background-color: $b-c-today;
+	}
+
+	.theme-element-bg {
+		&:before {
+			background-color: $b-c-today;
+		}
+	}
+
+	.theme-border {
+		border-color: $b-c-today;
+	}
+
+	.theme-color,
+	.theme-color .link {
+		color: $b-c-today;
+	}
+
+	.theme-fill {
+		fill: $b-c-today;
+	}
+
+	.theme-header {
+		background-color: $b-c-today;
+
+		.today-logo {
+			fill: white;
+		}
+
+		@include bp(l) {
+			background-color: white;
+			
+			.today-logo {
+				fill: $b-c-today;
+			}
+		}
+	}
+
+	.nav-btn {
+		.icon {
+			fill: white;
+		}
+		.btn-label {
+			color: white;
+		}
+	}
+	
+	.ie-alert,
+	.mobile-nav,
+	.site-footer {
+		.logo-edition {
+			fill: $b-c-today;
+		}
+	}
+
+	.page-title .link:hover {
+		color: $b-c-today;
+	}
+
+	.inverted .story-heading .link:hover,
+	.inverted .block-link:hover,
+	.inverted .block-link:hover .story-heading, 
+	.theme-inverted .block-link:hover .story-heading {
+		color: $b-c-yellow;
+	}
+
+	.alph-item.current .link,
+	.alph-item.current .link:hover {
+		color: $b-c-yellow;
+
+		@include bp(m) {
+			background-color: $b-c-yellow;
+			color: white;
+		}
+	}
+}
+
 
 /* ==========================================================================
    Photoswipe Theme
