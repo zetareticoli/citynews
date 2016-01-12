@@ -209,7 +209,7 @@
 			}
 		}
 
-		.sublinks {
+		.sublinks ul {
 			padding-top: $baseline;
 			border-top: 1px solid $bluegrey200;
 		}
@@ -545,12 +545,6 @@
 
 // Sublinks ===============================================================
 
-.sublinks {
-	&:empty {
-		display: none;
-	}
-}
-
 .sublink {
 	margin-bottom: $baseline;
 	font-family: $headingstypeface;
@@ -581,12 +575,11 @@
 
 // Cover hero for preview headline sublink
 
-.cover-hero .sublinks {
+.cover-hero .sublinks ul {
 	padding-top: $baseline;
 	border-top: 1px solid $bluegrey900;
 
 	@include bp(m) {
-		border-top: 0;
 		@include display(flex);
 		@include flex-flow(row wrap);	
 	}
@@ -617,11 +610,6 @@
 }
 
 // Full cover hero sublink
-
-.full-cover .sublinks {
-	border-top: 1px solid $bluegrey900;
-	padding-top: $baseline;
-}
 
 .full-cover .sublink {
 	@include bp(m) {

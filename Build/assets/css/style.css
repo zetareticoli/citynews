@@ -4888,7 +4888,7 @@ hr {
         .hero-story.featured-hero .story-footer {
           padding-left: 1rem;
           padding-right: 1rem; } }
-    .hero-story.featured-hero .sublinks {
+    .hero-story.featured-hero .sublinks ul {
       padding-top: 0.5rem;
       border-top: 1px solid #cfd8dc; }
     .hero-story.featured-hero .story-media {
@@ -5108,9 +5108,6 @@ hr {
   .inset-story .link {
     color: white; }
 
-.sublinks:empty {
-  display: none; }
-
 .sublink {
   margin-bottom: 0.5rem;
   font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;
@@ -5131,12 +5128,11 @@ hr {
 .inverted .sublink .link {
   color: white; }
 
-.cover-hero .sublinks {
+.cover-hero .sublinks ul {
   padding-top: 0.5rem;
   border-top: 1px solid #37474f; }
   @media (min-width: 46.25em) {
-    .cover-hero .sublinks {
-      border-top: 0;
+    .cover-hero .sublinks ul {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -5169,10 +5165,6 @@ hr {
   .cover-hero .sublink .kicker {
     display: block;
     margin-right: 0; }
-
-.full-cover .sublinks {
-  border-top: 1px solid #37474f;
-  padding-top: 0.5rem; }
 
 @media (min-width: 46.25em) {
   .full-cover .sublink {
