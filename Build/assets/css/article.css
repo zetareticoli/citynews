@@ -438,6 +438,8 @@
     .detailed-entry-header .entry-details .details-list p {
       font-size: 14px;
       font-size: 0.875rem; }
+    .detailed-entry-header .entry-details .details-list li {
+      word-wrap: break-word; }
 
 .entry-map {
   position: relative; }

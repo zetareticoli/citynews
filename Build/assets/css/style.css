@@ -2640,7 +2640,8 @@ hr {
     .site-footer .footer-col .footer-col-title {
       margin: 0.5rem 0;
       font-family: "NovecentoNarrow-DemiBold", Helvetica, Arial, sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: normal; }
     .site-footer .footer-col.footer-list-link .list-link li {
       line-height: 1.75rem; }
       @media (min-width: 62.5em) {

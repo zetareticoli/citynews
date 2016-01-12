@@ -531,6 +531,10 @@
 		.details-list p {
 			@include font-size($fontsize200);
 		}
+
+		.details-list li {
+			word-wrap: break-word;
+		}
 	}
 }
 
