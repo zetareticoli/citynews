@@ -2102,12 +2102,13 @@ hr {
     margin-bottom: 0;
     border-bottom: 0;
     padding-bottom: 0; }
-  .u-bordered > li.not-last,
-  .u-bordered > .l-list-item.not-last,
-  .u-bordered > .l-row-item.not-last {
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: .5rem;
-    padding-bottom: 0.5rem; }
+  @media (max-width: 46.188em) {
+    .u-bordered > li.not-last,
+    .u-bordered > .l-list-item.not-last,
+    .u-bordered > .l-row-item.not-last {
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: .5rem;
+      padding-bottom: 0.5rem; } }
 @media (min-width: 46.25em) {
   .u-bordered > .l-row-item {
     margin-bottom: 0;
@@ -2629,7 +2630,8 @@ hr {
     .site-footer .site-brand .logo-network {
       fill: white; }
     .site-footer .site-brand .logo {
-      width: 8rem; }
+      width: 10rem;
+      height: 1.5rem; }
   .site-footer .footer-col {
     margin-bottom: 2rem; }
     @media (min-width: 46.25em) {

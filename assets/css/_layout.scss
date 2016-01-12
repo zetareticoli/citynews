@@ -124,10 +124,12 @@ hr {
 			padding-bottom: 0;
 		}
 
-		&.not-last {
-			border-bottom: 1px solid $bordercolor;
-			margin-bottom: .5rem;
-			padding-bottom: $baseline;
+		@include max-bp(s) {
+			&.not-last {
+				border-bottom: 1px solid $bordercolor;
+				margin-bottom: .5rem;
+				padding-bottom: $baseline;
+			}
 		}
 	}
 
