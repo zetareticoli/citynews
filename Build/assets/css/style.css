@@ -5419,7 +5419,9 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .theme-inverted .main-content p,
 .theme-inverted .main-content .entry-content-body > p,
 .theme-inverted .main-content .social-counter .number,
-.theme-inverted .main-content .author-role {
+.theme-inverted .main-content .author-name,
+.theme-inverted .main-content .author-role,
+.theme-inverted .main-content .share-btn .btn-label {
   color: white; }
 .theme-inverted .main-content .timestamp,
 .theme-inverted .main-content .datestamp,

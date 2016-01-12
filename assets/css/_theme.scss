@@ -79,7 +79,9 @@
 		p,
 		.entry-content-body > p,
 		.social-counter .number,
-		.author-role {
+		.author-name,
+		.author-role,
+		.share-btn .btn-label {
 			color: white;
 		}
 
@@ -87,7 +89,8 @@
 		.datestamp,
 		.social-counter .counter-label {
 			color: $bluegrey600;
-		}	
+		}
+
 	}
 
 	// Secondary Nav
