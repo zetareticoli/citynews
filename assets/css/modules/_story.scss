@@ -214,6 +214,14 @@
 			border-top: 1px solid $bluegrey200;
 		}
 
+		.sublink {
+			border-bottom: 1px solid $bluegrey200;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
 		.story-media {
 			float: none;
 		}
@@ -576,9 +584,6 @@
 // Cover hero for preview headline sublink
 
 .cover-hero .sublinks ul {
-	padding-top: $baseline;
-	border-top: 1px solid $bluegrey900;
-
 	@include bp(m) {
 		@include display(flex);
 		@include flex-flow(row wrap);	
@@ -587,6 +592,18 @@
 
 .cover-hero .sublink {
 	border-bottom: 1px solid $bluegrey900;
+
+	@include max-bp(s) {
+
+		&:first-child {
+			border-top: 1px solid $bluegrey900;
+			padding-top: $baseline;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 
 	@include bp(m) {
 		@include flex(1 1 50%);
