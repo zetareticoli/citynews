@@ -39,13 +39,17 @@
 	height: 600px;
 }
 
-.large-rectangle-slot {
-	padding: 1rem;
-	text-align: center;
+.slot-large_rectangle_1_desktop>a>img,.slot-large_rectangle_1_desktop>div  {
+  padding: 0 1rem 1rem 1rem;
+  text-align: center; }
 
-	&:empty {
-		display: none;
-	}
+.slot-large_rectangle_2_desktop>a>img,.slot-large_rectangle_2_desktop>div  {
+  padding: 0 1rem 1rem 1rem;
+  text-align: center; }
+
+.slot-980x30 > *,
+.slit-980x20_home > * {
+	padding-top: 1rem;
 }
 
 // Slot Templates ===============================================================
