@@ -705,12 +705,12 @@
 	.inverted .block-link:hover,
 	.inverted .block-link:hover .story-heading, 
 	.theme-inverted .block-link:hover .story-heading {
-		color: $b-c-yellow;
+		color: $b-c-today;
 	}
 
 	.alph-item.current .link,
 	.alph-item.current .link:hover {
-		color: $b-c-yellow;
+		color: $b-c-today;
 
 		@include bp(m) {
 			background-color: $b-c-yellow;

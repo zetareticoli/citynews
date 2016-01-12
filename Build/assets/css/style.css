@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -5805,10 +5806,10 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .theme-today .inverted .block-link:hover,
 .theme-today .inverted .block-link:hover .story-heading,
 .theme-today .theme-inverted .block-link:hover .story-heading {
-  color: #FFBE26; }
+  color: #2A9DDB; }
 .theme-today .alph-item.current .link,
 .theme-today .alph-item.current .link:hover {
-  color: #FFBE26; }
+  color: #2A9DDB; }
   @media (min-width: 46.25em) {
     .theme-today .alph-item.current .link,
     .theme-today .alph-item.current .link:hover {
