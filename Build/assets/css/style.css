@@ -5794,9 +5794,9 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   fill: white; }
 .theme-today .nav-btn .btn-label {
   color: white; }
-.theme-today .ie-alert .logo-edition,
-.theme-today .mobile-nav .logo-edition,
-.theme-today .site-footer .logo-edition {
+.theme-today .ie-alert .today-logo,
+.theme-today .mobile-nav .today-logo,
+.theme-today .site-footer .today-logo {
   fill: #2A9DDB; }
 .theme-today .page-title .link:hover {
   color: #2A9DDB; }
