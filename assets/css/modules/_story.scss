@@ -575,6 +575,12 @@
 	.kicker {
 		margin-right: $baseline / 2;
 	}
+
+	.sublink-media {
+		width: 40px;
+		float: left;
+		margin-right: $baseline;
+	}
 }
 
 .inverted .sublink .link {
@@ -662,13 +668,6 @@
 	@include flex(1 1 0);
 }
 
-// Sublink Media
-
-.sublink-media {
-	width: 40px;
-	float: left;
-	margin-right: $baseline;
-}
 
 // Media Story ===============================================================
 

@@ -5128,6 +5128,10 @@ hr {
       text-decoration: underline; }
   .sublink .kicker {
     margin-right: 0.25rem; }
+  .sublink .sublink-media {
+    width: 40px;
+    float: left;
+    margin-right: 0.5rem; }
 
 .inverted .sublink .link {
   color: white; }
@@ -5200,11 +5204,6 @@ hr {
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0;
   flex: 1 1 0; }
-
-.sublink-media {
-  width: 40px;
-  float: left;
-  margin-right: 0.5rem; }
 
 .media-item {
   margin-bottom: 1rem; }
