@@ -4931,7 +4931,7 @@ hr {
           content: '';
           width: 100%;
           height: 100%;
-          background-image: linear-gradient(-180deg, rgba(135, 147, 153, 0.35) 0%, rgba(94, 103, 107, 0.5) 48%, #263238 100%); } }
+          background-image: linear-gradient(-180deg, rgba(38, 49, 56, 0) 0%, rgba(38, 49, 56, 0.55) 60%, #263138 100%); } }
     .hero-story.cover-hero .story-heading {
       padding: 0 0.5rem; }
       @media (min-width: 46.25em) {
@@ -5062,7 +5062,7 @@ hr {
       background: none;
       max-height: 22.5rem; }
       .inset-story:hover .story-media:after {
-        background-color: rgba(38, 50, 56, 0.85); }
+        background-image: linear-gradient(-180deg, rgba(38, 49, 56, 0.2) 0%, rgba(38, 49, 56, 0.95) 60%, #263138 100%); }
       .inset-story:hover .story-summary {
         opacity: 1;
         max-height: 18.75rem; } }
@@ -5091,10 +5091,10 @@ hr {
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(38, 50, 56, 0.65);
-      -webkit-transition: background-color 0.2s;
-      -moz-transition: background-color 0.2s;
-      transition: background-color 0.2s; }
+      background-image: linear-gradient(-180deg, rgba(38, 49, 56, 0.1) 0%, rgba(38, 49, 56, 0.85) 60%, #263138 100%);
+      -webkit-transition: background-image 0.2s;
+      -moz-transition: background-image 0.2s;
+      transition: background-image 0.2s; }
   .inset-story .story-summary {
     max-height: 0;
     opacity: 0;
@@ -5172,6 +5172,11 @@ hr {
   .cover-hero .sublink .kicker {
     display: block;
     margin-right: 0; }
+
+@media (min-width: 46.25em) {
+  .full-cover .sublinks ul {
+    padding-top: 0.5rem;
+    border-top: 1px solid #37474f; } }
 
 @media (min-width: 46.25em) {
   .full-cover .sublink {
@@ -5583,38 +5588,45 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 /* ==========================================================================
   Theme Blue
   ========================================================================== */
-.theme-blue ::selection {
-  background: #3277C7; }
-.theme-blue .theme-background {
-  background-color: #3277C7; }
-.theme-blue .theme-element-bg:before {
-  background-color: #3277C7; }
-.theme-blue .theme-border {
-  border-color: #3277C7; }
-.theme-blue .theme-color,
-.theme-blue .theme-color .link {
-  color: #3277C7; }
-.theme-blue .theme-fill {
-  fill: #3277C7; }
-.theme-blue .theme-header {
-  background-color: #3277C7; }
-  @media (min-width: 62.5em) {
-    .theme-blue .theme-header {
-      background-color: white; }
-      .theme-blue .theme-header .logo-edition {
-        fill: #3277C7; } }
-.theme-blue .nav-btn .icon {
-  fill: white; }
-.theme-blue .nav-btn .btn-label {
-  color: white; }
-.theme-blue .expand-image:hover .rounded-icon {
-  background-color: #3277C7; }
-.theme-blue .ie-alert .logo-edition,
-.theme-blue .mobile-nav .logo-edition,
-.theme-blue .site-footer .logo-edition {
-  fill: #3277C7; }
-.theme-blue .page-title .link:hover {
-  color: #3277C7; }
+.theme-blue {
+  /*
+  .inset-story .theme-element-bg,
+  .inset-story .theme-color {
+  	color: lighten($b-c-blue, 20%);
+  	fill: lighten($b-c-blue, 20%);
+  } */ }
+  .theme-blue ::selection {
+    background: #3277C7; }
+  .theme-blue .theme-background {
+    background-color: #3277C7; }
+  .theme-blue .theme-element-bg:before {
+    background-color: #3277C7; }
+  .theme-blue .theme-border {
+    border-color: #3277C7; }
+  .theme-blue .theme-color,
+  .theme-blue .theme-color .link {
+    color: #3277C7; }
+  .theme-blue .theme-fill {
+    fill: #3277C7; }
+  .theme-blue .theme-header {
+    background-color: #3277C7; }
+    @media (min-width: 62.5em) {
+      .theme-blue .theme-header {
+        background-color: white; }
+        .theme-blue .theme-header .logo-edition {
+          fill: #3277C7; } }
+  .theme-blue .nav-btn .icon {
+    fill: white; }
+  .theme-blue .nav-btn .btn-label {
+    color: white; }
+  .theme-blue .expand-image:hover .rounded-icon {
+    background-color: #3277C7; }
+  .theme-blue .ie-alert .logo-edition,
+  .theme-blue .mobile-nav .logo-edition,
+  .theme-blue .site-footer .logo-edition {
+    fill: #3277C7; }
+  .theme-blue .page-title .link:hover {
+    color: #3277C7; }
 
 .theme-blue .inverted .story-heading .link:hover,
 .theme-blue .inverted .block-link:hover,
