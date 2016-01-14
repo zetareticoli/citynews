@@ -4220,17 +4220,17 @@ hr {
   @media (min-width: 46.25em) {
     .card-item.card-item-sm {
       width: 33.33%; } }
-  @media (min-width: 312.5em) {
+  @media (min-width: 62.5em) {
     .card-item.card-item-sm {
       width: 25%; } }
   @media (min-width: 46.25em) {
-    .card-item.card-item-mid {
+    .card-item.card-item-md {
       width: 50%; } }
   @media (min-width: 62.5em) {
-    .card-item.card-item-mid {
+    .card-item.card-item-md {
       width: 33.33%; } }
   @media (min-width: 312.5em) {
-    .card-item.card-item-mid {
+    .card-item.card-item-md {
       width: 25%; } }
   .card-item.card-item-lg {
     margin-bottom: 1rem; }
@@ -4238,6 +4238,13 @@ hr {
 @media (max-width: 46.188em) {
   .card-footer {
     display: none; } }
+@media (min-width: 62.5em) {
+  .cinema-cards-list .card-item-sm {
+    width: 33.33%; } }
+@media (min-width: 312.5em) {
+  .cinema-cards-list .card-item-sm {
+    width: 25%; } }
+
 /* ==========================================================================
   District List
   ========================================================================== */

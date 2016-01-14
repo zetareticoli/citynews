@@ -280,12 +280,12 @@
 			width: 33.33%;
 		}
 
-		@include bp(xl) {
+		@include bp(l) {
 			width: 25%;
 		}
 	}
 
-	&.card-item-mid {
+	&.card-item-md {
 		@include bp(m) {
 			width: 50%;
 		}
@@ -307,5 +307,19 @@
 @include max-bp(s) {
 	.card-footer {
 		display: none;
+	}
+}
+
+// Cards list layouts ===============================================================
+
+.cinema-cards-list {
+	.card-item-sm {
+		@include bp(l) {
+			width: 33.33%;
+		}
+
+		@include bp(xl) {
+			width: 25%;
+		}
 	}
 }
