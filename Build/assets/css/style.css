@@ -5097,6 +5097,9 @@ hr {
   .inset-story .link {
     color: white; }
 
+.sublinks ul {
+  width: 100%; }
+
 .sublink {
   margin-bottom: 0.5rem;
   font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;

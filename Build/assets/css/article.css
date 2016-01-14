@@ -240,14 +240,6 @@
 .entry-media {
   position: relative;
   margin: 0 -0.5rem 1rem; }
-  .entry-media.small-media {
-    width: 50%; }
-    @media (min-width: 46.25em) {
-      .entry-media.small-media {
-        width: 14rem; } }
-    @media (min-width: 62.5em) {
-      .entry-media.small-media {
-        width: 15rem; } }
   @media (min-width: 46.25em) {
     .entry-media {
       width: 100%;
@@ -460,6 +452,24 @@
       font-size: 12px;
       font-size: 0.75rem;
       color: #757575; }
+
+.content-sm .entry-media {
+  width: 30%;
+  float: left;
+  margin: .35rem 1rem 1rem 0; }
+  @media (min-width: 46.25em) {
+    .content-sm .entry-media {
+      width: 17rem; } }
+.content-sm .entry-content-body {
+  clear: none; }
+.content-sm .related-stories.inner {
+  float: left;
+  clear: left;
+  margin-left: 0;
+  margin-right: 1rem; }
+  @media (min-width: 62.5em) {
+    .content-sm .related-stories.inner {
+      margin-right: 1.5rem; } }
 
 /* ==========================================================================
   Event Entry 

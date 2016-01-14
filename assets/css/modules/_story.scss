@@ -535,6 +535,10 @@
 
 // Sublinks ===============================================================
 
+.sublinks ul {
+	width: 100%;
+}
+
 .sublink {
 	margin-bottom: $baseline;
 	font-family: $headingstypeface;
