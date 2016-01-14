@@ -1476,9 +1476,9 @@ a.light-btn {
     fill: #9e9e9e; }
 
 .nav-btn .btn-label {
-  color: #757575; }
+  color: #616161; }
 .nav-btn .icon {
-  fill: #757575; }
+  fill: #616161; }
 .nav-btn:hover .btn-label {
   color: #424242; }
 .nav-btn:hover .icon {
@@ -5462,20 +5462,6 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .theme-purple ::selection,
 .theme-pink ::selection {
   text-shadow: none; }
-.theme-yellow .nav-btn .btn-label,
-.theme-red .nav-btn .btn-label,
-.theme-blue .nav-btn .btn-label,
-.theme-green .nav-btn .btn-label,
-.theme-purple .nav-btn .btn-label,
-.theme-pink .nav-btn .btn-label {
-  color: #424242; }
-.theme-yellow .nav-btn .icon,
-.theme-red .nav-btn .icon,
-.theme-blue .nav-btn .icon,
-.theme-green .nav-btn .icon,
-.theme-purple .nav-btn .icon,
-.theme-pink .nav-btn .icon {
-  fill: #424242; }
 .theme-yellow .logo-edition,
 .theme-red .logo-edition,
 .theme-blue .logo-edition,
