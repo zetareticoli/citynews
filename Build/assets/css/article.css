@@ -459,6 +459,9 @@
   margin: .35rem 1rem 1rem 0; }
   @media (min-width: 46.25em) {
     .content-sm .entry-media {
+      width: 35%; } }
+  @media (min-width: 62.5em) {
+    .content-sm .entry-media {
       width: 17rem; } }
 .content-sm .entry-content-body {
   clear: none; }
