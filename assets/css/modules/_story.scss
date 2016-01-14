@@ -188,11 +188,6 @@
 		}
 	}
 
-	.sublink {
-		padding-bottom: $baseline;
-		@include clearfix;
-	}
-
 	// Featured Hero
 
 	&.featured-hero {
@@ -206,19 +201,6 @@
 			@include bp(m) {
 				padding-left: 1rem;
 				padding-right: 1rem;
-			}
-		}
-
-		.sublinks ul {
-			padding-top: $baseline;
-			border-top: 1px solid $bluegrey200;
-		}
-
-		.sublink {
-			border-bottom: 1px solid $bluegrey200;
-
-			&:last-child {
-				border-bottom: 0;
 			}
 		}
 
@@ -560,10 +542,6 @@
 	line-height: 1.1rem;
 	@include font-size($fontsize200);
 
-	&:last-child {
-		border-bottom: 0;
-	}
-
 	.link:hover {
 		text-decoration: none;
 
@@ -587,79 +565,112 @@
 	color: white;
 }
 
-// Cover hero for preview headline sublink
+// Sublinks Featured Hero
 
-.cover-hero .sublinks ul {
-	@include bp(m) {
-		@include display(flex);
-		@include flex-flow(row wrap);	
+.hero-story {
+	.sublinks ul {
+		padding-top: $baseline;
+		border-top: 1px solid $bordercolor;
 	}
-}
 
-.cover-hero .sublink {
-	border-bottom: 1px solid $bluegrey900;
-
-	@include max-bp(s) {
-
-		&:first-child {
-			border-top: 1px solid $bluegrey900;
-			padding-top: $baseline;
-		}
+	.sublink {
+		padding-bottom: $baseline;
+		border-bottom: 1px solid $bordercolor;
+		@include clearfix;
 
 		&:last-child {
 			border-bottom: 0;
 		}
 	}
+}
 
-	@include bp(m) {
-		@include flex(1 1 50%);
-		padding-top: $baseline;
-		border-top: 1px solid $bluegrey900;
-		border-bottom: 0;
-
-		&:nth-child(2n+1) {
-			padding-right: $baseline;
-		}
-	}	
-
-	.link {
-		width: 100%;
-	}
-
-	.kicker {
-		display: block;
-		margin-right: 0;
+.featured-hero {
+	.sublinks ul,
+	.sublink {
+		border-color: $bluegrey200;
 	}
 }
 
-// Full cover hero sublink
+// Sublinks Cover Hero
 
-.full-cover .sublinks ul {
-	@include bp(m) {
-		padding-top: $baseline;
-		border-top: 1px solid $bluegrey900;
-	}
-}
-
-.full-cover .sublink {
-	@include bp(m) {
-		border-bottom: 0;
+.cover-hero {
+	.sublinks ul {
+		padding-top: 0;
 		border-top: 0;
-		border-right: 1px solid $bluegrey900;
-		padding-right: $baseline * 2;
-		margin-right: $baseline * 2;
 
-		&:last-child {
-			border-right: 0;
-			padding-right: 0;
+		@include bp(m) {
+			@include display(flex);
+			@include flex-flow(row wrap);	
+		}
+	}
+
+	.sublink {
+		border-bottom: 1px solid $bluegrey900;
+
+		@include max-bp(s) {
+
+			&:first-child {
+				border-top: 1px solid $bluegrey900;
+				padding-top: $baseline;
+			}
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
+		@include bp(m) {
+			@include flex(1 1 50%);
+			padding-top: $baseline;
+			border-top: 1px solid $bluegrey900;
+			border-bottom: 0;
+
+			&:nth-child(2n+1) {
+				padding-right: $baseline;
+			}
+		}	
+
+		.link {
+			width: 100%;
+		}
+
+		.kicker {
+			display: block;
 			margin-right: 0;
 		}
 	}
+}
 
-	.sublink-media {
+// Sublinks Full Cover Hero
+
+.full-cover {
+	.sublinks ul {
 		@include bp(m) {
-			float: right;
-			margin: 0 0 0 $baseline;
+			padding-top: $baseline;
+			border-top: 1px solid $bluegrey900;
+		}
+	}
+
+	.sublink {
+		@include bp(m) {
+			border-bottom: 0;
+			border-top: 0;
+			border-right: 1px solid $bluegrey900;
+			padding-right: $baseline * 2;
+			margin-right: $baseline * 2;
+
+			&:last-child {
+				border-right: 0;
+				padding-right: 0;
+				margin-right: 0;
+			}
+		}
+
+		.sublink-media {
+			@include bp(m) {
+				float: right;
+				margin: 0 0 0 $baseline;
+			}
 		}
 	}
 }
