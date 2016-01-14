@@ -4245,6 +4245,12 @@ hr {
   .cinema-cards-list .card-item-sm {
     width: 25%; } }
 
+@media (min-width: 62.5em) {
+  .events-cards-list .card-heading {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.5rem; } }
+
 /* ==========================================================================
   District List
   ========================================================================== */

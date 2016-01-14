@@ -323,3 +323,12 @@
 		}
 	}
 }
+
+.events-cards-list {
+	.card-heading {
+		@include bp(l) {
+			@include font-size($fontsize400);
+			line-height: 1.5rem;
+		}
+	}
+}
