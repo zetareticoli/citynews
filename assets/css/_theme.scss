@@ -358,19 +358,15 @@
 			}
 		}
 	}
-	/*
-	.inset-story .theme-element-bg,
-	.inset-story .theme-color {
-		color: lighten($b-c-blue, 20%);
-		fill: lighten($b-c-blue, 20%);
-	} */
 
-	.nav-btn {
-		.icon {
-			fill: white;
-		}
-		.btn-label {
-			color: white;
+	@include max-bp(m) {
+		.nav-btn {
+			.icon {
+				fill: white;
+			}
+			.btn-label {
+				color: white;
+			}
 		}
 	}
 
@@ -689,12 +685,14 @@
 		}
 	}
 
-	.nav-btn {
-		.icon {
-			fill: white;
-		}
-		.btn-label {
-			color: white;
+	@include max-bp(m) {
+		.nav-btn {
+			.icon {
+				fill: white;
+			}
+			.btn-label {
+				color: white;
+			}
 		}
 	}
 	
