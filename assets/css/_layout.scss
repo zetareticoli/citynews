@@ -385,14 +385,14 @@ hr {
 
 	.header-top {
 		height: $smallheadersize;
-		padding: 0 $baseline * 2;
+		padding: 0 $baseline;
 
 		@include bp(m) {
 			height: $mediumheadersize;
+			padding: 0 1rem;
 		}
 
 		@include bp(l) {
-			padding: 0 $gutterwidth;
 			background-color: white;
 			height: $largeheadersize;
 		}
@@ -435,10 +435,23 @@ hr {
 	}
 
 	.header-brand {
-		float: left;
+		display: inline-block;
+		padding-top: 2px;
+
+		@include bp(m) {
+			padding-top: 7px;
+		}
+
+		@include bp(l) {
+			padding-top: 0;
+		}
+
+		.link {
+			display: inline-block;
+		}
 
 		.logo {
-			width: 11rem;
+			width: 12rem;
 			@include transition(all .3s ease);
 
 			@include bp(m) {
@@ -508,32 +521,25 @@ hr {
 
 	.header-top {
 		z-index: 6;
-		height: $smallheadersize;
-
-		@include bp(m) {
-			height: $mediumheadersize;
-		}
-
-		@include bp(l) {
-			height: $largeheadersize;
-		}
 
 		@include bp(l) {
 			@include box-shadow(0 2px 0 $bordercolor);
 		}
 
 		.header-brand {
-			margin-right: $baseline;
+
+			@include bp(l) {
+				padding-top: .5rem;
+			}
+
+			@include bp(l) {
+				float: left;
+				margin-right: $baseline;
+			}
 
 			.logo {
-
 				@include bp(m) {
-					width: 11rem;
-					margin-top: $baseline;
-				}
-
-				@include bp(l) {
-					margin-top: .75rem;
+					width: 12rem;
 				}
 
 				@include bp(xl) {
