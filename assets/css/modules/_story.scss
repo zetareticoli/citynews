@@ -393,6 +393,12 @@
 
 .featured-story {
 
+	&.featured-xl {
+		@include bp(l) {
+			margin-bottom: $baseline;
+		}
+	}
+
 	&.featured-md {
 		&:first-child {
 			@include max-bp(s) {
