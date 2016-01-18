@@ -2824,18 +2824,23 @@ hr {
 
 .ie-alert {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.98);
+  top: 0;
+  background-color: white;
   width: 100%;
   height: 100%;
   z-index: 100; }
   .ie-alert .logo {
-    margin: 2rem 0; }
+    margin: 32px 0; }
   .ie-alert .alert-content {
-    width: 40%;
-    margin: 10rem auto; }
+    width: 600px;
+    margin: 160px auto 0; }
   .ie-alert .download-browser {
-    margin: 1rem;
-    text-align: center; }
+    margin: 8px;
+    padding: 16px 8px;
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #e0e0e0; }
   .ie-alert .browser-icon {
     margin: auto;
     display: block; }

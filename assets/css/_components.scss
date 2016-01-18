@@ -180,23 +180,28 @@
 
 .ie-alert {
 	position: fixed;
-	background-color: rgba(255,255,255,.98);
+	top: 0;
+	background-color: rgb(255,255,255);
 	width: 100%;
 	height: 100%;
 	z-index: 100;
 
 	.logo {
-		margin: 2rem 0;
+		margin: 32px 0;
 	}
 
 	.alert-content {
-		width: 40%;
-		margin: 10rem auto;
+		width: 600px;
+		margin: 160px auto 0;
 	}
 
 	.download-browser {
-		margin: 1rem;
+		margin: 8px;
+		padding: 16px 8px;
+		float: left;
+		width: 30%;
 		text-align: center;
+		border: 1px solid $bordercolor;
 	}
 
 	.browser-icon {
