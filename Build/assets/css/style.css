@@ -3467,9 +3467,6 @@ hr {
       .blog-subheader .byline {
         display: inline-block; } }
   @media (max-width: 46.188em) {
-    .blog-subheader .page-title,
-    .blog-subheader .byline {
-      margin-left: 6rem; }
     .blog-subheader .page-title {
       margin-bottom: 0;
       font-size: 18px;
@@ -3481,14 +3478,15 @@ hr {
       font-size: 0.75rem; } }
   .blog-subheader .blog-author-photo {
     width: 5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
+    float: right;
+    margin: 0 0 0 0.5rem; }
     @media (min-width: 46.25em) {
       .blog-subheader .blog-author-photo {
-        position: static;
-        float: left;
         width: 10rem; } }
+    @media (min-width: 62.5em) {
+      .blog-subheader .blog-author-photo {
+        float: left;
+        margin: 0 1rem 0 0; } }
 
 /* ==========================================================================
   Discussion

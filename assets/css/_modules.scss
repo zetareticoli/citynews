@@ -263,11 +263,6 @@
 
 	@include max-bp(s) {
 
-		.page-title,
-		.byline {
-			margin-left: 6rem;
-		}
-		
 		.page-title {
 			margin-bottom: 0;
 			@include font-size($fontsize400);
@@ -282,14 +277,16 @@
 
 	.blog-author-photo {
 		width: 5rem;
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		float: right;
+		margin: 0 0 0 $baseline;
 
 		@include bp(m) {
-			position: static;
-			float: left;
 			width: 10rem;
+		}
+
+		@include bp(l) {
+			float: left;
+			margin: 0 1rem 0 0;
 		}
 	}	
 }
