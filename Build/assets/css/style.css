@@ -3466,25 +3466,29 @@ hr {
       .blog-subheader .page-title,
       .blog-subheader .byline {
         display: inline-block; } }
-  @media (max-width: 62.438em) {
-    .blog-subheader {
-      text-align: center; }
-      .blog-subheader .blog-author-photo {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto; }
-      .blog-subheader .follow-btn {
-        width: 5rem;
-        position: relative;
-        top: 1rem;
-        right: 0;
-        margin: 0 auto;
-        margin-bottom: 7rem; } }
+  @media (max-width: 46.188em) {
+    .blog-subheader .page-title,
+    .blog-subheader .byline {
+      margin-left: 6rem; }
+    .blog-subheader .page-title {
+      margin-bottom: 0;
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.5rem; }
+    .blog-subheader .byline {
+      padding-bottom: 0.5rem;
+      font-size: 12px;
+      font-size: 0.75rem; } }
   .blog-subheader .blog-author-photo {
-    width: 10rem;
-    float: left; }
+    width: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media (min-width: 46.25em) {
+      .blog-subheader .blog-author-photo {
+        position: static;
+        float: left;
+        width: 10rem; } }
 
 /* ==========================================================================
   Discussion
