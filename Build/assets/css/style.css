@@ -5508,7 +5508,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Yellow
   ========================================================================== */
 .theme-yellow ::selection {
-  background: #FFBE26; }
+  background: rgba(255, 190, 38, 0.3); }
 .theme-yellow .theme-element-bg:before {
   background-color: #FFBE26; }
 .theme-yellow .theme-background {
@@ -5559,7 +5559,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Red
   ========================================================================== */
 .theme-red ::selection {
-  background: #F2463D; }
+  background: rgba(242, 70, 61, 0.3); }
 .theme-red .theme-background {
   background-color: #F2463D; }
 .theme-red .theme-element-bg:before {
@@ -5604,7 +5604,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Blue
   ========================================================================== */
 .theme-blue ::selection {
-  background: #3277C7; }
+  background: rgba(50, 119, 199, 0.3); }
 .theme-blue .theme-background {
   background-color: #3277C7; }
 .theme-blue .theme-element-bg:before {
@@ -5654,7 +5654,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Green
   ========================================================================== */
 .theme-green ::selection {
-  background: #50AE55; }
+  background: rbga(80, 174, 85, 0.3); }
 .theme-green .theme-background {
   background-color: #50AE55; }
 .theme-green .theme-element-bg:before {
@@ -5699,7 +5699,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Purple
   ========================================================================== */
 .theme-purple ::selection {
-  background: #B75DC7; }
+  background: rgba(183, 93, 199, 0.3); }
 .theme-purple .theme-background {
   background-color: #B75DC7; }
 .theme-purple .theme-element-bg:before {
@@ -5746,7 +5746,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Pink
   ========================================================================== */
 .theme-pink ::selection {
-  background: #F291B2; }
+  background: rgba(242, 145, 178, 0.3); }
 .theme-pink .theme-background {
   background-color: #F291B2; }
 .theme-pink .theme-element-bg:before {
@@ -5793,7 +5793,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Theme Today
   ========================================================================== */
 .theme-today ::selection {
-  background: #2A9DDB; }
+  background: rgba(42, 157, 219, 0.3); }
 .theme-today .theme-background {
   background-color: #2A9DDB; }
 .theme-today .theme-element-bg:before {
