@@ -667,6 +667,7 @@
 			border-right: 1px solid $bluegrey900;
 			padding-right: $baseline * 2;
 			margin-right: $baseline * 2;
+			@include flex(1 1 0);
 
 			&:last-child {
 				border-right: 0;
@@ -684,10 +685,11 @@
 	}
 }
 
-.has-flex .full-cover .sublinks .item-span-1 {
-	@include flex(1 1 0);
-}
+// Featured xl Sublinks
 
+.featured-xl .sublinks ul {
+	overflow: visible;
+}
 
 // Media Story ===============================================================
 

@@ -5220,7 +5220,12 @@ hr {
     border-top: 0;
     border-right: 1px solid #37474f;
     padding-right: 1rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    -webkit-box-flex: 1 1 0;
+    -moz-box-flex: 1 1 0;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0; }
     .full-cover .sublink:last-child {
       border-right: 0;
       padding-right: 0;
@@ -5230,12 +5235,8 @@ hr {
     float: right;
     margin: 0 0 0 0.5rem; } }
 
-.has-flex .full-cover .sublinks .item-span-1 {
-  -webkit-box-flex: 1 1 0;
-  -moz-box-flex: 1 1 0;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0; }
+.featured-xl .sublinks ul {
+  overflow: visible; }
 
 .media-item {
   margin-bottom: 1rem; }
