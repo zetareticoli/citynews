@@ -395,7 +395,9 @@
 
 	&.featured-xl {
 		@include bp(l) {
-			margin-bottom: $baseline;
+			.story-media {
+				margin-bottom: $baseline;
+			}
 		}
 	}
 
@@ -541,10 +543,6 @@
 
 // Sublinks ===============================================================
 
-.sublinks ul {
-	width: 100%;
-}
-
 .sublink {
 	margin-bottom: $baseline;
 	font-family: $headingstypeface;
@@ -656,6 +654,7 @@
 .full-cover {
 	.sublinks ul {
 		@include bp(m) {
+			@include flex-flow(row nowrap);
 			padding-top: $baseline;
 			border-top: 1px solid $bluegrey900;
 		}
