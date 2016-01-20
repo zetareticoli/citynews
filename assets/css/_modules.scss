@@ -845,6 +845,8 @@
 
 			> p {
 				@include font-size($fontsize200);
+				line-height: 1.5rem;
+				word-wrap: break-word;
 			}
 
 			.photo-credit {
