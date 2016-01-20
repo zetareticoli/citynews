@@ -2799,8 +2799,10 @@ hr {
   .pagination.default-pagination > li > a:hover {
     background: none;
     color: #858585; }
-.pagination.default-pagination > li.active > a {
+.pagination.default-pagination > li.active > span {
   background: none;
+  border: 0;
+  padding: .475rem 1.15rem;
   color: #212121; }
 .pagination.inverted.default-pagination > li {
   border-right-color: #546e7a; }
@@ -2810,7 +2812,7 @@ hr {
   .pagination.inverted.default-pagination > li > a:hover {
     background: none;
     color: #738c98; }
-.pagination.inverted.default-pagination > li.active > a {
+.pagination.inverted.default-pagination > li.active > span {
   color: white; }
 
 /* ==========================================================================

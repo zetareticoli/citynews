@@ -137,8 +137,10 @@
 			}
 		}
 
-		> li.active > a {
+		> li.active > span {
 			background: none;
+			border: 0;
+			padding: .475rem 1.15rem;
 			color: $black1000;
 		}
 	}
@@ -161,7 +163,7 @@
 				}
 			}
 
-			> li.active > a {
+			> li.active > span {
 				color: white;
 			}
 		}
