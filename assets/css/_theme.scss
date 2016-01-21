@@ -194,6 +194,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-yellow;
 	}
@@ -272,6 +273,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-red;
 	}
@@ -360,6 +362,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-blue;
 	}
@@ -437,6 +440,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-green;
 	}
@@ -514,6 +518,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-purple;
 	}
@@ -592,6 +597,7 @@
 		}
 	}
 
+	.account-dropdown .dropdown-menu-item:hover,
 	.expand-image:hover .rounded-icon {
 		background-color: $b-c-pink;
 	}
@@ -710,9 +716,13 @@
 		color: $b-c-today;
 
 		@include bp(m) {
-			background-color: $b-c-yellow;
+			background-color: $b-c-today;
 			color: white;
 		}
+	}
+
+	.account-dropdown .dropdown-menu-item:hover {
+		background-color: $b-c-today;
 	}
 }
 

@@ -3812,6 +3812,8 @@ hr {
 
 .header .dropdown .network-dropdown {
   width: 18rem; }
+  .header .dropdown .network-dropdown .dropdown-menu {
+    z-index: 99999; }
 
 .site-footer .dropup .network-dropdown {
   width: 100%; }
@@ -3843,8 +3845,42 @@ hr {
     -moz-box-shadow: 0 0 0 2px #bdbdbd;
     box-shadow: 0 0 0 2px #bdbdbd; }
   .account-dropdown .dropdown-toggle {
+    display: block;
     border: 0;
     padding: 0 1.25rem; }
+  .account-dropdown .dropdown-menu {
+    border: 0;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-radius: 0;
+    margin: 0;
+    z-index: 99999; }
+    .account-dropdown .dropdown-menu .dropdown-menu-item {
+      margin: .5rem 0;
+      padding: .125rem 0; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item:hover .menu-link,
+      .account-dropdown .dropdown-menu .dropdown-menu-item:hover .btn-link .menu-link {
+        color: white; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item:hover .icon {
+        fill: white; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item .menu-link {
+        background-color: transparent; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item .btn-dropdown-logout {
+        padding: 0 .5rem; }
+        .account-dropdown .dropdown-menu .dropdown-menu-item .btn-dropdown-logout.btn-link:hover {
+          text-decoration: none; }
+        .account-dropdown .dropdown-menu .dropdown-menu-item .btn-dropdown-logout span {
+          color: #616161;
+          font-weight: normal; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item .menu-link {
+        display: inline;
+        padding: .25rem .500rem; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item .btn-link .menu-link {
+        padding: 0;
+        font-weight: normal;
+        color: #616161; }
+      .account-dropdown .dropdown-menu .dropdown-menu-item form {
+        display: inline; }
 
 /* ==========================================================================
   Photo Gallery
@@ -5538,6 +5574,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-yellow .theme-header .logo-edition {
         fill: #FFBE26; } }
+.theme-yellow .account-dropdown .dropdown-menu-item:hover,
 .theme-yellow .expand-image:hover .rounded-icon {
   background-color: #FFBE26; }
 .theme-yellow .ie-alert .logo-edition,
@@ -5585,6 +5622,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-red .theme-header .logo-edition {
         fill: #F2463D; } }
+.theme-red .account-dropdown .dropdown-menu-item:hover,
 .theme-red .expand-image:hover .rounded-icon {
   background-color: #F2463D; }
 .theme-red .ie-alert .logo-edition,
@@ -5635,6 +5673,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
     fill: white; }
   .theme-blue .nav-btn .btn-label {
     color: white; } }
+.theme-blue .account-dropdown .dropdown-menu-item:hover,
 .theme-blue .expand-image:hover .rounded-icon {
   background-color: #3277C7; }
 .theme-blue .ie-alert .logo-edition,
@@ -5680,6 +5719,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-green .theme-header .logo-edition {
         fill: #50AE55; } }
+.theme-green .account-dropdown .dropdown-menu-item:hover,
 .theme-green .expand-image:hover .rounded-icon {
   background-color: #50AE55; }
 .theme-green .ie-alert .logo-edition,
@@ -5725,6 +5765,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-purple .theme-header .logo-edition {
         fill: #B75DC7; } }
+.theme-purple .account-dropdown .dropdown-menu-item:hover,
 .theme-purple .expand-image:hover .rounded-icon {
   background-color: #B75DC7; }
 .theme-purple .ie-alert .logo-edition,
@@ -5772,6 +5813,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
       background-color: white; }
       .theme-pink .theme-header .logo-edition {
         fill: #F291B2; } }
+.theme-pink .account-dropdown .dropdown-menu-item:hover,
 .theme-pink .expand-image:hover .rounded-icon {
   background-color: #F291B2; }
 .theme-pink .ie-alert .logo-edition,
@@ -5843,8 +5885,10 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   @media (min-width: 46.25em) {
     .theme-today .alph-item.current .link,
     .theme-today .alph-item.current .link:hover {
-      background-color: #FFBE26;
+      background-color: #2A9DDB;
       color: white; } }
+.theme-today .account-dropdown .dropdown-menu-item:hover {
+  background-color: #2A9DDB; }
 
 /* ==========================================================================
    Photoswipe Theme
