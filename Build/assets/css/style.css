@@ -3507,9 +3507,7 @@ hr {
         .discussion-section .discussion-thread .nested-thread {
           padding-left: 4rem; } }
   .discussion-section .discussion-comment-box {
-    margin-bottom: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e0e0e0; }
+    margin-bottom: 0.5rem; }
   .discussion-section .comment-author-name {
     font-weight: 700;
     color: #616161; }
@@ -3568,12 +3566,11 @@ hr {
       font-size: 0.875rem;
       padding-top: 0.750rem; }
     .discussion-section .comment-info-author .timestamp {
-      /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
       display: block; }
   .discussion-section .comment {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #e0e0e0;
     *zoom: 1; }
     .discussion-section .comment:before, .discussion-section .comment:after {
       content: " ";
@@ -3582,8 +3579,10 @@ hr {
       clear: both; }
     @media (min-width: 46.25em) {
       .discussion-section .comment {
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem; } }
+        padding-top: 1.5rem;
+        margin-top: 1.5rem; } }
+    .discussion-section .comment:first-child {
+      margin-top: 0; }
     .discussion-section .comment .author-photo {
       display: block;
       float: left;
@@ -3599,7 +3598,10 @@ hr {
   .discussion-section .discussion-head {
     width: 100%; }
     .discussion-section .discussion-head h3 {
-      color: #607d8b; }
+      color: #607d8b;
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.5rem; }
     .discussion-section .discussion-head .discussion-counter {
       color: #90a4ae; }
     .discussion-section .discussion-head .discussion-action {

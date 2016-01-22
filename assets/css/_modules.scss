@@ -318,9 +318,7 @@
     }
     
     .discussion-comment-box {
-    	margin-bottom: 1rem;
-    	padding-bottom: 2rem;
-    	border-bottom: 1px solid $bordercolor;
+    	margin-bottom: $baseline;
     }
 
     .comment-author-name {
@@ -395,20 +393,24 @@
             padding-top: 0.750rem;
         }
         
-        .timestamp { /* usare .timestamp - intercetta tutti gli <span> dentro discussion section */
+        .timestamp {
             display: block;
         }
     }
     
     .comment {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid $bordercolor;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        border-top: 1px solid $bordercolor;
         @include clearfix;
 
     	@include bp(m) {
-    		padding-bottom: 1.5rem;
-    		margin-bottom: 1.5rem;
+    		padding-top: 1.5rem;
+    		margin-top: 1.5rem;
+    	}
+
+    	&:first-child {
+    		margin-top: 0;
     	}
 
         .author-photo {
@@ -424,7 +426,6 @@
         }
 
         .comment-actions {
-
             .btn {
                 font-size: .75rem;
                 margin-right: .5rem;
@@ -438,6 +439,8 @@
 
     	h3 {
     		color: $bluegrey600;
+    		@include font-size($fontsize500) ;
+    		line-height: 1.5rem;
     	}
 
     	.discussion-counter {
