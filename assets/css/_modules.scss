@@ -297,6 +297,11 @@
 
 .discussion-section {
     border-bottom: 0.15rem solid $bordercolor;
+    padding-bottom: 1rem;
+
+    @include bp(l) {
+    	padding-bottom: 2rem;
+    }
 
     .discussion-comment-box,
     .discussion-thread {
@@ -358,6 +363,8 @@
     	@include clearfix;
 
     	form {
+    		margin-bottom: 0;
+
     	    textarea {
     	        width: 100%;
     	        margin: 0 auto 0.5rem;
@@ -409,10 +416,6 @@
     		margin-top: 1.5rem;
     	}
 
-    	&:first-child {
-    		margin-top: 0;
-    	}
-
         .author-photo {
             display: block;
             float: left;
@@ -454,7 +457,7 @@
     }
 
     .thread-load {
-    	margin: 1rem 0 2rem;
+    	margin: 1rem 0;
     }
 }
 

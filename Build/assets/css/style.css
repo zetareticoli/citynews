@@ -3494,7 +3494,11 @@ hr {
   Discussion
   ========================================================================== */
 .discussion-section {
-  border-bottom: 0.15rem solid #e0e0e0; }
+  border-bottom: 0.15rem solid #e0e0e0;
+  padding-bottom: 1rem; }
+  @media (min-width: 62.5em) {
+    .discussion-section {
+      padding-bottom: 2rem; } }
   @media (min-width: 312.5em) {
     .discussion-section .discussion-comment-box,
     .discussion-section .discussion-thread {
@@ -3542,23 +3546,25 @@ hr {
       display: table; }
     .discussion-section .comment-box-content:after {
       clear: both; }
-    .discussion-section .comment-box-content form textarea {
-      width: 100%;
-      margin: 0 auto 0.5rem; }
-    .discussion-section .comment-box-content form .comment-submit-btn {
-      width: 100%;
-      margin: 0 auto; }
-      @media (min-width: 46.25em) {
-        .discussion-section .comment-box-content form .comment-submit-btn {
-          width: auto;
-          float: left;
-          margin-right: .5rem; } }
-    .discussion-section .comment-box-content form .comment-box-options {
-      display: inline-block;
-      line-height: 2.5rem; }
-      .discussion-section .comment-box-content form .comment-box-options .btn {
-        font-size: 12px;
-        font-size: 0.75rem; }
+    .discussion-section .comment-box-content form {
+      margin-bottom: 0; }
+      .discussion-section .comment-box-content form textarea {
+        width: 100%;
+        margin: 0 auto 0.5rem; }
+      .discussion-section .comment-box-content form .comment-submit-btn {
+        width: 100%;
+        margin: 0 auto; }
+        @media (min-width: 46.25em) {
+          .discussion-section .comment-box-content form .comment-submit-btn {
+            width: auto;
+            float: left;
+            margin-right: .5rem; } }
+      .discussion-section .comment-box-content form .comment-box-options {
+        display: inline-block;
+        line-height: 2.5rem; }
+        .discussion-section .comment-box-content form .comment-box-options .btn {
+          font-size: 12px;
+          font-size: 0.75rem; }
   .discussion-section .comment-info-author {
     margin-bottom: 1rem; }
     .discussion-section .comment-info-author .comment-author-name {
@@ -3581,8 +3587,6 @@ hr {
       .discussion-section .comment {
         padding-top: 1.5rem;
         margin-top: 1.5rem; } }
-    .discussion-section .comment:first-child {
-      margin-top: 0; }
     .discussion-section .comment .author-photo {
       display: block;
       float: left;
@@ -3609,7 +3613,7 @@ hr {
       font-size: 0.75rem;
       line-height: 1.25rem; }
   .discussion-section .thread-load {
-    margin: 1rem 0 2rem; }
+    margin: 1rem 0; }
 
 /* ==========================================================================
   Filters
