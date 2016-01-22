@@ -245,7 +245,7 @@ input[type=checkbox]:checked + label::after {
 }
 
 .radio-label:before {
-	border: 3px solid $bordercolor;
+	border: 2px solid $bordercolor;
 }
 
 .radio-label::after {
