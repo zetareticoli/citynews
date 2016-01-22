@@ -5915,22 +5915,19 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 /* ==========================================================================
   SLOTS
   ========================================================================== */
-.slots,
-.slot {
+.slots {
   width: 100%; }
-  .slots:empty,
-  .slot:empty {
+  .slots:empty {
     display: none; }
 
 .slots {
-  padding: 0.5rem;
   background: #f5f5f5; }
   @media (max-width: 46.188em) {
     .slots {
       margin-bottom: 0.5rem; } }
 
 .slot {
-  margin: 1rem; }
+  margin: 1rem auto; }
 
 .medium-slot {
   margin-right: auto;
@@ -5953,6 +5950,21 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .slot-980x30 >  *,
 .slit-980x30_home > * {
   padding-top: 1rem; }
+
+.XXXmedium-slot {
+  margin: 0;
+  zoom: 125%; }
+
+.slot-interstitial,
+.slot-skin {
+  margin: 0; }
+
+.slot-980x30, .slot-980x30_home, .slot-large_rectangle_1_desktop, .slot-large_rectangle_2_desktop {
+  width: auto; }
+
+.slot-300x250_mobile, .slot-300x250_mobile2, .slot-300x250_loc2 {
+  margin: 1rem auto;
+  width: 300px; }
 
 .slots-headlines,
 .entry-aside-slots {
