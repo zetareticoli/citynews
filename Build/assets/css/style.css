@@ -4809,8 +4809,48 @@ hr {
   padding: 1rem;
   background-color: #eceff1;
   border-top: 2px solid; }
+  .poll .checkbox-label {
+    font-size: 16px;
+    font-size: 1rem; }
   .poll .poll-title {
     color: #424242; }
+  .poll .poll-answer {
+    background: #cfd8dc;
+    float: left;
+    height: auto;
+    margin: 5px 5px 5px 0;
+    width: 100%; }
+    @media (min-width: 62.5em) {
+      .poll .poll-answer {
+        width: 60%; } }
+  .poll .poll-answer-bar {
+    background-color: #78909c;
+    float: none;
+    height: 14px;
+    margin: 0;
+    border: 0;
+    padding: 0; }
+  .poll .poll-answer-votes,
+  .poll .poll-answer-perc {
+    color: #546e7a;
+    margin: 0 .25rem;
+    display: inline-block; }
+  .poll .poll-answer-votes {
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .poll .poll-answer-perc {
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem; }
+  .poll .poll-results {
+    list-style: none;
+    margin: 0; }
+    .poll .poll-results li {
+      margin: .5rem 0;
+      padding: .5rem 0;
+      border-bottom: 1px solid #cfd8dc; }
+      .poll .poll-results li:last-child {
+        border-bottom: 0; }
 
 /* ==========================================================================
   Story

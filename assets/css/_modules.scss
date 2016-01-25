@@ -1701,8 +1701,64 @@
 	background-color: $bluegrey100;
 	border-top: 2px solid;
 
+	.checkbox-label {
+		@include font-size($fontsize300);
+	}
+
 	.poll-title {
 		color: $black900;
+	}
+
+	.poll-answer {
+		background: $bluegrey200;
+		float: left;
+		height: auto;
+		margin: 5px 5px 5px 0;
+		width: 100%;
+
+		@include bp(l) {
+			width: 60%;
+		}
+	}
+
+	.poll-answer-bar {
+		background-color: $bluegrey500;
+		float: none;
+		height: 14px;
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+
+	.poll-answer-votes,
+	.poll-answer-perc {
+		color: $bluegrey700;
+		margin: 0 .25rem;
+		display: inline-block;
+	}
+
+	.poll-answer-votes {
+		@include font-size($fontsize100);
+	}
+
+	.poll-answer-perc {
+		font-weight: 700;
+		@include font-size($fontsize300);
+	}
+
+	.poll-results {
+		list-style: none;
+		margin: 0;
+
+		li {
+			margin: .5rem 0;
+			padding: .5rem 0;
+			border-bottom: 1px solid $bluegrey200;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
 	}
 }
 
