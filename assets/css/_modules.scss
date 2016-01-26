@@ -1701,6 +1701,8 @@
 	background-color: $bluegrey100;
 	border-top: 2px solid;
 
+	.poll-abstract,
+	.radio-label,
 	.checkbox-label {
 		@include font-size($fontsize300);
 	}
@@ -1749,15 +1751,22 @@
 	.poll-results {
 		list-style: none;
 		margin: 0;
+	}
 
-		li {
-			margin: .5rem 0;
-			padding: .5rem 0;
-			border-bottom: 1px solid $bluegrey200;
+	.poll-form {
+		border-top: 1px solid $bluegrey200;
+		border-bottom: 1px solid $bluegrey200;
+		margin-bottom: 1rem;
+	}
 
-			&:last-child {
-				border-bottom: 0;
-			}
+	.poll-form li,
+	.poll-results li {
+		margin: .25rem 0;
+		padding: .25rem 0;
+		border-bottom: 1px solid $bluegrey200;
+
+		&:last-child {
+			border-bottom: 0;
 		}
 	}
 }
