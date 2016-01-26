@@ -712,6 +712,20 @@
 }
 
 /* ==========================================================================
+  Bordered Dropdown 
+  ========================================================================== */
+
+.dropdown .bordered-dropdown-menu,
+.dropup .bordered-dropdown-menu {
+	border: 0;
+  	border-top-width: 2px;
+  	border-top-style: solid;
+  	border-radius: 0;
+  	margin: 0;
+  	z-index: 99999; 
+}
+
+/* ==========================================================================
   Network Dropdown
   ========================================================================== */
 
@@ -791,12 +805,6 @@
 	}
 
 	.dropdown-menu {
-        border:0;
-        border-top-width: 2px;
-        border-top-style: solid;
-        border-radius:0;
-        margin: 0;
-        z-index: 99999;
 
         .dropdown-menu-item {
             margin: .5rem 0;
