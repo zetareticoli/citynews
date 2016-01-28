@@ -1701,14 +1701,113 @@
 }
 
 /* ==========================================================================
-  Poll
+  Poll & Challenges
   ========================================================================== */
 
-.poll {
+.poll,
+.challenge {
 	padding: 1rem;
 	background-color: $bluegrey100;
 	border-top: 2px solid;
+}
 
+// Challenge ===============================================================
+
+.challenge-list {
+	@include display(flex);
+}
+
+.challenge-item {
+	width: 45%;
+	padding: $baseline;
+	float: left;
+	@include display(flex);
+	@include flex(1 1 auto);
+	background-color: white;
+	border-bottom: 2px solid $bluegrey200;
+
+	@include bp(m) {
+		width: 48%;
+	}
+}
+
+.challenge-versus {
+	position: relative;
+	width: 5%;
+	margin: 0 1%;
+	float: left;
+	@include display(flex);
+	@include flex(1 1 auto);
+
+	span {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		@include font-size($fontsize200);
+		font-family: $titleseriftypeface;
+		font-style: italic;
+		color: $bluegrey500;
+		width: 100%;
+		text-align: center;
+
+		@include bp(m) {
+			@include font-size($fontsize500);
+		}
+	}
+}
+
+.challenge-option {
+	width: 100%;
+	position: relative;
+}
+
+.challenge-option-media {
+	position: relative;
+	margin-bottom: 1rem;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $bluegrey900;
+		opacity: 0;
+		@include transition(opacity .15s ease-in);
+		z-index: 1;
+	}
+}
+
+.challenge-icon {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(icon-thumbs-up.svg) center center no-repeat;
+	z-index: 2;
+	opacity: 0;
+	@include transition(opacity .15s ease-in);
+}
+
+.challenge-option .block-link:hover {
+	.challenge-option-media:after {
+		opacity: .5;
+	}
+	.challenge-icon {
+		opacity: 1;
+	}
+}
+
+.challenge-option-title {
+	display: block;
+}
+
+// Poll ===============================================================
+
+.poll {
 	.poll-abstract,
 	.radio-label,
 	.checkbox-label {
