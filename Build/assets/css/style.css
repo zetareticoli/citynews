@@ -4883,6 +4883,11 @@ hr {
         font-size: 20px;
         font-size: 1.25rem; } }
 
+.challenge-kicker {
+  font-family: "PublicoBanner", Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
 .challenge-option {
   width: 100%;
   position: relative; }
