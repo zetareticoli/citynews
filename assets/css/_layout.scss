@@ -236,6 +236,9 @@ hr {
 		.l-row-item,
 		.l-list-item {
 			@include display(flex);
+			/* Bug workaround for http://crbug.com/546034 - flex issues on Chrome 48 */
+			min-width: 0;
+			min-height: 0;
 		}
 
 		.item-span-1 {
