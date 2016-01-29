@@ -143,6 +143,8 @@ hr {
 }
 
 .inline-list {
+	font-size: 0; /* reset font size to remove extra whitespace */
+
 	> li {
 		display: inline-block;
 	}

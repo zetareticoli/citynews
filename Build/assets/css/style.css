@@ -2115,10 +2115,13 @@ hr {
     padding-bottom: 0;
     border-bottom: 0; } }
 
-.inline-list > li {
-  display: inline-block; }
-.inline-list .inline-list-item {
-  padding-right: .5rem; }
+.inline-list {
+  font-size: 0;
+  /* reset font size to remove extra whitespace */ }
+  .inline-list > li {
+    display: inline-block; }
+  .inline-list .inline-list-item {
+    padding-right: .5rem; }
 
 .align-right {
   text-align: right; }
@@ -3303,6 +3306,33 @@ hr {
     flex: 1 1 auto; }
 
 /* ==========================================================================
+  Back Top
+  ========================================================================== */
+.back-top {
+  clear: left;
+  padding: 10px 0;
+  border-top: 1px solid #ccc; }
+  @media (min-width: 62.5em) {
+    .back-top {
+      display: none; } }
+
+.bottom-nav {
+  border-top: 1px solid #ccc; }
+  @media (min-width: 62.5em) {
+    .bottom-nav {
+      display: none; } }
+
+.bottom-nav ul {
+  padding: 0;
+  width: 50%;
+  float: left; }
+  .bottom-nav ul li {
+    margin-bottom: 10px; }
+  .bottom-nav ul a {
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+/* ==========================================================================
   Blog
   ========================================================================== */
 .blog-name .link {
@@ -4368,6 +4398,8 @@ hr {
   .meta-social:after {
     clear: both; }
 
+.meta-social li {
+  margin: 0 .15rem; }
 .meta-social .social-share {
   width: 50%;
   float: left; }
@@ -5574,30 +5606,8 @@ hr {
     .tags-list {
       margin: 2rem 0; } }
 
-/* To Fix */
-.back-top {
-  clear: left;
-  padding: 10px 0;
-  border-top: 1px solid #ccc; }
-  @media (min-width: 62.5em) {
-    .back-top {
-      display: none; } }
-
-.bottom-nav {
-  border-top: 1px solid #ccc; }
-  @media (min-width: 62.5em) {
-    .bottom-nav {
-      display: none; } }
-
-.bottom-nav ul {
-  padding: 0;
-  width: 50%;
-  float: left; }
-  .bottom-nav ul li {
-    margin-bottom: 10px; }
-  .bottom-nav ul a {
-    font-size: 12px;
-    font-size: 0.75rem; }
+.tag-item {
+  margin: 0 .15rem; }
 
 .bs_tagCloud {
   font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;
