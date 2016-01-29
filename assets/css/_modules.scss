@@ -1701,7 +1701,7 @@
 }
 
 /* ==========================================================================
-  Poll & Challenges
+  Poll & Challenge
   ========================================================================== */
 
 .poll,
@@ -1712,6 +1712,11 @@
 }
 
 // Challenge ===============================================================
+
+.challenge,
+.challenge-list {
+	margin-bottom: 1rem;
+}
 
 .challenge-list {
 	@include display(flex);
@@ -1792,9 +1797,14 @@
 	top: 0;
 	left: 0;
 	background: url(icon-thumbs-up.svg) center center no-repeat;
+	background-size: 24px;
 	z-index: 2;
 	opacity: 0;
 	@include transition(opacity .15s ease-in);
+
+	@include bp(m) {
+		background-size: 64px;
+	}
 }
 
 .challenge-option .block-link:hover {
@@ -1808,6 +1818,56 @@
 
 .challenge-option-title {
 	display: block;
+	word-wrap: break-word;
+	color: $black900;
+}
+
+// Challenge Results
+
+.challenge-result {
+	border-top: 1px solid $bordercolor;
+	padding: $baseline 0;
+
+	.challenge-result-dati li {
+		vertical-align: middle;
+	}
+
+
+	.challenge-result-name {
+		width: 50%;
+
+		@include bp(m) {
+			width: 60%;
+		}
+	}
+
+	.challenge-result-thumb {
+		width: 5rem;
+	}
+
+	.challenge-result-counter {
+
+		span + span {
+			display: block;
+			@include font-size($fontsize200);
+		}
+
+		.challenge-counter-lose,
+		.challenge-counter-win {
+			font-family: $headingstypeface;
+			font-weight: 900;
+			@include font-size($fontsize600);
+			line-height: 2rem;
+		}
+
+		.challenge-counter-win {
+			color: $bluegrey600;
+		}
+
+		.challenge-counter-lose {
+			color: $bluegrey400;
+		}
+	}
 }
 
 // Poll ===============================================================

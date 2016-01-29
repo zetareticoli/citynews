@@ -4811,13 +4811,17 @@ hr {
   width: 100%; }
 
 /* ==========================================================================
-  Poll & Challenges
+  Poll & Challenge
   ========================================================================== */
 .poll,
 .challenge {
   padding: 1rem;
   background-color: #eceff1;
   border-top: 2px solid; }
+
+.challenge,
+.challenge-list {
+  margin-bottom: 1rem; }
 
 .challenge-list {
   display: -webkit-box;
@@ -4917,11 +4921,15 @@ hr {
   top: 0;
   left: 0;
   background: url(../images/icon-thumbs-up.svg) center center no-repeat;
+  background-size: 24px;
   z-index: 2;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease-in;
   -moz-transition: opacity 0.15s ease-in;
   transition: opacity 0.15s ease-in; }
+  @media (min-width: 46.25em) {
+    .challenge-icon {
+      background-size: 64px; } }
 
 .challenge-option .block-link:hover .challenge-option-media:after {
   opacity: .5; }
@@ -4929,7 +4937,37 @@ hr {
   opacity: 1; }
 
 .challenge-option-title {
-  display: block; }
+  display: block;
+  word-wrap: break-word;
+  color: #424242; }
+
+.challenge-result {
+  border-top: 1px solid #e0e0e0;
+  padding: 0.5rem 0; }
+  .challenge-result .challenge-result-dati li {
+    vertical-align: middle; }
+  .challenge-result .challenge-result-name {
+    width: 50%; }
+    @media (min-width: 46.25em) {
+      .challenge-result .challenge-result-name {
+        width: 60%; } }
+  .challenge-result .challenge-result-thumb {
+    width: 5rem; }
+  .challenge-result .challenge-result-counter span + span {
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .challenge-result .challenge-result-counter .challenge-counter-lose,
+  .challenge-result .challenge-result-counter .challenge-counter-win {
+    font-family: "NeueHaasGroteskDisplay", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+  .challenge-result .challenge-result-counter .challenge-counter-win {
+    color: #607d8b; }
+  .challenge-result .challenge-result-counter .challenge-counter-lose {
+    color: #90a4ae; }
 
 .poll .poll-abstract,
 .poll .radio-label,
