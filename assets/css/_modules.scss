@@ -1888,7 +1888,8 @@
 
 		span + span {
 			display: block;
-			@include font-size($fontsize200);
+			@include font-size($fontsize100);
+			color: $black600;
 		}
 
 		.challenge-counter-lose,
