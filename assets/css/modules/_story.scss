@@ -773,3 +773,19 @@
 		}
 	}
 }
+
+// Sponsored ===============================================================
+
+.sponsored-story {
+	background-color: $black300;
+	padding: .5rem .25rem;
+
+	.text-sm {
+		font-size: 60%;
+		color: $black600;
+		font-size: 60%;
+		line-height: .5rem;
+		vertical-align: top;
+		display: block;
+	}
+}
