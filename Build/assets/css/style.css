@@ -2119,7 +2119,8 @@ hr {
   font-size: 0;
   /* reset font size to remove extra whitespace */ }
   .inline-list > li {
-    display: inline-block; }
+    display: inline-block;
+    font-size: initial; }
   .inline-list .inline-list-item {
     padding-right: .5rem; }
 
