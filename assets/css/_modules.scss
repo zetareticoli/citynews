@@ -1864,27 +1864,48 @@
 // Challenge Results
 
 .challenge-result {
-	border-top: 1px solid $bordercolor;
-	padding: $baseline 0;
+	margin-bottom: 16px;
+	@include display(flex);
 
-	.challenge-result-dati li {
-		vertical-align: middle;
+	li {
+		@include flex-flow(row wrap);
+		margin-right: .5rem;
+
+		&:first-child,
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
-
 	.challenge-result-name {
-		width: 50%;
+		width: 55%;
+
+		h4 {
+			margin-bottom: 0;
+			@include font-size($fontsize200);
+		}
 
 		@include bp(m) {
 			width: 60%;
 		}
 	}
 
+	.challenge-position {
+		width: 8%;
+		font-family: $headingstypeface;
+		font-weight: 900;
+		text-align: center;
+	}
+
 	.challenge-result-thumb {
-		width: 5rem;
+		width: 15%;
 	}
 
 	.challenge-result-counter {
+		width: 25%;
+		padding-left: .5rem;
+		line-height: 1rem;
+		border-left: 1px solid $bordercolor;
 
 		span + span {
 			display: block;
@@ -1896,8 +1917,7 @@
 		.challenge-counter-win {
 			font-family: $headingstypeface;
 			font-weight: 900;
-			@include font-size($fontsize600);
-			line-height: 2rem;
+			@include font-size($fontsize200);
 		}
 
 		.challenge-counter-win {
@@ -1908,6 +1928,21 @@
 			color: $bluegrey400;
 		}
 	}
+}
+
+.position-top {
+	.challenge-result {
+		background: $bluegrey100;
+	}
+}
+
+.position-four {
+	opacity: .65;
+}
+
+.result-divider {
+	height: 2px;
+	background: $black400;
 }
 
 // Poll ===============================================================
