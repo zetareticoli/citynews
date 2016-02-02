@@ -5186,6 +5186,10 @@ hr {
       .story-subheading:before {
         width: 8px;
         height: 8px; } }
+  .story-subheading.video-link {
+    padding-left: 0; }
+  .story-subheading.video-link:before {
+    display: none; }
 
 .story-summary {
   font-family: "PublicoText", Georgia, "Times New Roman", serif;
