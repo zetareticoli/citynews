@@ -1930,19 +1930,20 @@
 	}
 }
 
-.position-top {
-	.challenge-result {
-		background: $bluegrey100;
-	}
-}
-
 .position-four {
-	opacity: .65;
+	opacity: .75;
+	background-color: $bluegrey100;
+
+	.challenge-result {
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
 }
 
 .result-divider {
 	height: 2px;
 	background: $black400;
+	margin-bottom: 0;
 }
 
 // Poll ===============================================================
