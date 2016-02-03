@@ -396,6 +396,22 @@ dt {
 	@include font-size($fontsize600);
 	font-weight: 900;
 	color: $bluegrey500;
+
+	&.circle-number {
+		width: 1.5rem;
+		height: 1.5rem;
+		background-color: $bluegrey500;
+		color: white;
+		@include rounded(50%); 
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+
+		@include bp(m) {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
 }
 
 // Summary

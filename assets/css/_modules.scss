@@ -1861,10 +1861,18 @@
 	color: $black900;
 }
 
+// Challenge Results List
+
+.challenge-results-list li {
+	&:nth-child(3) {
+		border-bottom-width: 2px;
+		border-bottom-color: $black500;
+	}
+}
+
 // Challenge Results
 
 .challenge-result {
-	margin-bottom: 16px;
 	@include display(flex);
 
 	li {
@@ -1883,6 +1891,10 @@
 		h4 {
 			margin-bottom: 0;
 			@include font-size($fontsize200);
+
+			@include bp(m) {
+				@include font-size($fontsize400);
+			}
 		}
 
 		@include bp(m) {
@@ -1891,21 +1903,37 @@
 	}
 
 	.challenge-position {
-		width: 8%;
-		font-family: $headingstypeface;
-		font-weight: 900;
+		width: 2.5rem;
 		text-align: center;
+
+		@include bp(m) {
+			width: 3rem;
+		}
+
+		.number {
+			margin: auto;
+			@include font-size($fontsize300);
+
+			@include bp(m) {
+				@include font-size($fontsize500);
+			}
+		}
 	}
 
 	.challenge-result-thumb {
 		width: 15%;
+		max-width: 5rem;
 	}
 
 	.challenge-result-counter {
-		width: 25%;
-		padding-left: .5rem;
+		width: 5rem;
 		line-height: 1rem;
-		border-left: 1px solid $bordercolor;
+		text-align: right;
+		margin-right: 0;
+
+		@include bp(m) {
+			width: 8rem;
+		}
 
 		span + span {
 			display: block;
@@ -1927,23 +1955,11 @@
 		.challenge-counter-lose {
 			color: $bluegrey400;
 		}
+
+		.icon-trophy {
+			fill: $bluegrey600;
+		}
 	}
-}
-
-.position-four {
-	opacity: .75;
-	background-color: $bluegrey100;
-
-	.challenge-result {
-		margin-bottom: 0;
-		padding-bottom: 1rem;
-	}
-}
-
-.result-divider {
-	height: 2px;
-	background: $black400;
-	margin-bottom: 0;
 }
 
 // Poll ===============================================================
