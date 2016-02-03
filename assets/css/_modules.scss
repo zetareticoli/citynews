@@ -65,7 +65,8 @@
   Blog
   ========================================================================== */
 
-.blog-name {
+.blog-name,
+.item-name {
 
 	.link {
 		color: $bluegrey500;
@@ -132,28 +133,34 @@
 	}
 }
 
-.blog-card {
+.blog-card,
+.item-card {
 	margin-bottom: 1rem;
 	width: 100%;
+	@include display(flex);
+	@include flex-flow(column nowrap);
+}
+
+.item-card {
+	background-color: $bluegrey100;
 }
 
 .blog-card .blog-author-photo {
 	text-align: center;
 }
 
-.blog-details {
+.blog-details,
+.item-card-details {
 	background-color: $bluegrey100;
 	border-top-width: 2px;
 	border-top-style: solid;
 	padding: 1rem;
 
-	@include bp(l) {
-		padding: 2rem;
-	}
-
-	.blog-name {
+	.blog-name,
+	.item-name {
 		margin-bottom: $baseline / 2;
 		@include font-size($fontsize400);
+		line-height: 1.5rem;
 
 		@include bp(l) {
 			@include font-size($fontsize500);
