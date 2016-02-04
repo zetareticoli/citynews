@@ -2011,6 +2011,7 @@
 	}
 
 	.poll-answer-votes {
+		display: none;
 		@include font-size($fontsize100);
 	}
 

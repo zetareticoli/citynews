@@ -5140,6 +5140,7 @@ hr {
   margin: 0 .25rem;
   display: inline-block; }
 .poll .poll-answer-votes {
+  display: none;
   font-size: 12px;
   font-size: 0.75rem; }
 .poll .poll-answer-perc {
