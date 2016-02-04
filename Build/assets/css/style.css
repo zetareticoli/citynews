@@ -6248,6 +6248,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
     fill: white; }
   .theme-today .nav-btn .btn-label {
     color: white; } }
+.theme-today .slim-header .header-top .header-brand {
+  width: 7rem; }
 .theme-today .ie-alert .today-logo,
 .theme-today .mobile-nav .today-logo,
 .theme-today .site-footer .today-logo {
