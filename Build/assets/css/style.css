@@ -6250,6 +6250,8 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
     color: white; } }
 .theme-today .slim-header .header-top .header-brand {
   width: 8rem; }
+.theme-today .slim-header .header-top .header-brand .logo {
+  width: 14rem; }
 .theme-today .ie-alert .today-logo,
 .theme-today .mobile-nav .today-logo,
 .theme-today .site-footer .today-logo {
