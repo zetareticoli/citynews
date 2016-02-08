@@ -5194,8 +5194,7 @@ hr {
           font-size: 20px;
           font-size: 1.25rem; } }
   .challenge-result .challenge-result-thumb {
-    width: 15%;
-    max-width: 5rem; }
+    width: 3rem; }
   .challenge-result .challenge-result-counter {
     width: 5rem;
     line-height: 1rem;
