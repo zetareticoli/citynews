@@ -1087,6 +1087,9 @@ time {
 /* ==========================================================================
   ICONS
   ========================================================================== */
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
 .icon {
   vertical-align: middle;
   fill: #616161; }
@@ -1128,6 +1131,9 @@ time {
     width: 2rem;
     height: 2rem; }
 
+/* ==========================================================================
+   Icons
+   ========================================================================== */
 .tile-icon {
   display: inline-block;
   width: 2.5rem;
@@ -1224,6 +1230,111 @@ time {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.play-video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+  .play-video-icon:before {
+    content: '';
+    display: block;
+    background-color: rgba(38, 50, 56, 0.85);
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    border-radius: 50rem;
+    -webkit-transition: background-color 0.15s;
+    -moz-transition: background-color 0.15s;
+    transition: background-color 0.15s; }
+  .play-video-icon:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent transparent #FFBE26; }
+
+.video-media {
+  position: relative; }
+
+.video-media .play-video-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1.25rem;
+  margin-left: -1.25rem;
+  /*
+  @include bp(l) {
+  	width: 3.5rem;
+  	height: 3.5rem;
+  	margin-top: -1.55rem;
+  	margin-left: -1.55rem;
+  }*/ }
+  .video-media .play-video-icon:before {
+    width: 2.5rem;
+    height: 2.5rem;
+    /*
+    @include bp(l) {
+    	width: 3.5rem;
+    	height: 3.5rem;
+    }*/ }
+  .video-media .play-video-icon:after {
+    left: 0.9rem;
+    top: 0.7rem;
+    border-width: 0.6rem 0 0.6rem 1rem;
+    /*
+    @include bp(l) {
+    	left: 1.2rem;
+    	top: 0.9rem;
+    	border-width: 0.9rem 0 0.9rem 1.6rem;
+    }*/ }
+
+.video-media:hover .play-video-icon:before {
+  background-color: #FFBE26; }
+.video-media:hover .play-video-icon:after {
+  border-left-color: #37474f; }
+
+.video-media.media-full.media-xs .play-video-icon,
+.fullpage-hero .video-media.media-xs .play-video-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1.25rem;
+  margin-left: -1.25rem; }
+  .video-media.media-full.media-xs .play-video-icon:before,
+  .fullpage-hero .video-media.media-xs .play-video-icon:before {
+    width: 2.5rem;
+    height: 2.5rem; }
+  .video-media.media-full.media-xs .play-video-icon:after,
+  .fullpage-hero .video-media.media-xs .play-video-icon:after {
+    left: 0.9rem;
+    top: 0.7rem;
+    border-width: 0.6rem 0 0.6rem 1rem; }
+.video-media.media-full .play-video-icon,
+.fullpage-hero .video-media .play-video-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: -1.55rem;
+  margin-left: -1.55rem; }
+  .video-media.media-full .play-video-icon:before,
+  .fullpage-hero .video-media .play-video-icon:before {
+    width: 3.5rem;
+    height: 3.5rem; }
+  .video-media.media-full .play-video-icon:after,
+  .fullpage-hero .video-media .play-video-icon:after {
+    left: 1.2rem;
+    top: 0.9rem;
+    border-width: 0.9rem 0 0.9rem 1.6rem; }
+
+.cover-hero .video-media .play-video-icon,
+.inset-story .video-media .play-video-icon {
+  z-index: 5; }
+
+.inset-story .video-media .play-video-icon {
+  top: 1rem;
+  left: 1rem;
+  margin-top: 0;
+  margin-left: 0; }
+
+.inset-story a:hover .play-video-icon:before {
+  background-color: #FFBE26; }
+.inset-story a:hover .play-video-icon:after {
+  border-left-color: #37474f; }
 
 /* ==========================================================================
   IMAGES

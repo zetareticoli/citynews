@@ -2,6 +2,10 @@
   ICONS
   ========================================================================== */
 
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
 .icon {
 	vertical-align: middle;
 	fill: $black800;
@@ -59,6 +63,10 @@
 		height: 2rem;
 	}
 }
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
 
 .tile-icon {
 	display: inline-block;
@@ -128,6 +136,8 @@
 	fill: $black500;
 }
 
+// Sliding children menu links ======================================
+
 .has-children > a::before, .has-children > a::after, .go-back:before, .go-back:after {
 	/* arrow icon in CSS - for element with nested unordered lists */
 	content: '';
@@ -180,4 +190,139 @@
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+// Play Video & Media Video ======================================
+
+.play-video-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	&:before {
+		content: '';
+		display: block;
+		background-color: $focusoverlay;
+		@include rounded(50rem);
+		@include transition(background-color .15s);
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-color: transparent transparent transparent $b-c-yellow;
+	}
+}
+
+.video-media {
+	position: relative;
+}
+
+.video-media .play-video-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-top: -1.25rem;
+	margin-left: -1.25rem;
+	/*
+	@include bp(l) {
+		width: 3.5rem;
+		height: 3.5rem;
+		margin-top: -1.55rem;
+		margin-left: -1.55rem;
+	}*/
+
+	&:before {
+		width: 2.5rem;
+		height: 2.5rem;
+		/*
+		@include bp(l) {
+			width: 3.5rem;
+			height: 3.5rem;
+		}*/
+	}
+
+	&:after {
+		left: 0.9rem;
+		top: 0.7rem;
+		border-width: 0.6rem 0 0.6rem 1rem;
+		/*
+		@include bp(l) {
+			left: 1.2rem;
+			top: 0.9rem;
+			border-width: 0.9rem 0 0.9rem 1.6rem;
+		}*/
+	}
+}
+
+.video-media:hover {
+	.play-video-icon:before {
+		background-color: $b-c-yellow;
+	}
+	.play-video-icon:after {
+		border-left-color: $bluegrey900;
+	}
+}
+
+.video-media.media-full,
+.fullpage-hero .video-media {
+
+	&.media-xs {
+		.play-video-icon {
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-top: -1.25rem;
+			margin-left: -1.25rem;
+
+			&:before {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+
+			&:after {
+				left: 0.9rem;
+				top: 0.7rem;
+				border-width: 0.6rem 0 0.6rem 1rem;
+			}
+		}
+	}
+
+	.play-video-icon {
+		width: 3.5rem;
+		height: 3.5rem;
+		margin-top: -1.55rem;
+		margin-left: -1.55rem;
+
+		&:before {
+			width: 3.5rem;
+			height: 3.5rem;
+		}
+
+		&:after {
+			left: 1.2rem;
+			top: 0.9rem;
+			border-width: 0.9rem 0 0.9rem 1.6rem;
+		}
+	}
+}
+
+.cover-hero .video-media .play-video-icon,
+.inset-story .video-media .play-video-icon {
+	z-index: 5;
+}
+
+.inset-story .video-media .play-video-icon {
+	top: 1rem;
+	left: 1rem;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.inset-story a:hover {
+	.play-video-icon:before {
+		background-color: $b-c-yellow;
+	}
+	.play-video-icon:after {
+		border-left-color: $bluegrey900;
+	}
 }
