@@ -26,7 +26,7 @@
 	fill: $accentmint;
 }
 
-// Theme Colors for hover on block links ===============================================================
+// Theme Colors for hover on block links ======================================
 
 
 @include bp(l) {
@@ -47,6 +47,25 @@
 	}
 	.theme-purple .focus-cover .story-heading .link:hover  {
 		color: $b-c-pink;
+	}
+}
+
+// Mobile Nav Button ==========================================================
+
+.theme-red,
+.theme-blue,
+.theme-green,
+.theme-purple,
+.theme-today {
+	@include max-bp(m) {
+		.nav-btn {
+			.icon {
+				fill: white;
+			}
+			.btn-label {
+				color: white;
+			}
+		}
 	}
 }
 
@@ -347,17 +366,6 @@
 			background-color: white;
 			.logo-edition {
 				fill: $b-c-blue;
-			}
-		}
-	}
-
-	@include max-bp(m) {
-		.nav-btn {
-			.icon {
-				fill: white;
-			}
-			.btn-label {
-				color: white;
 			}
 		}
 	}
@@ -677,17 +685,6 @@
 			
 			.today-logo {
 				fill: $b-c-today;
-			}
-		}
-	}
-
-	@include max-bp(m) {
-		.nav-btn {
-			.icon {
-				fill: white;
-			}
-			.btn-label {
-				color: white;
 			}
 		}
 	}

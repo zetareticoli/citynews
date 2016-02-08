@@ -348,19 +348,21 @@ a.light-btn {
 .nav-btn {
 
 	.btn-label {
-		color: $black800;
+		color: $black900;
 	}
 
 	.icon {
-		fill: $black800;
+		fill: $black900;
 	}
 
 	&:hover {
-		.btn-label {
-			color: $black900;
-		}
-		.icon {
-			fill: $black900;
+		@include bp(l) {
+			.btn-label {
+				color: $black1000;
+			}
+			.icon {
+				fill: $black1000;
+			}
 		}
 	}
 }
