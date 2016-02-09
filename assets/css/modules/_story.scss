@@ -290,7 +290,7 @@
 		}
 	}
 
-	// focus cover
+	// Focus Cover
 
 	&.focus-cover {
 		border-bottom: 1px solid $bordercolor;
@@ -325,19 +325,33 @@
 			@include font-size($fontsize500);
 
 			@include bp(m) {
-				@include font-size($fontsize700);
-				line-height: 2rem;
+				@include font-size($fontsize600);
+				line-height: 1.75rem;
 			}
 
 			@include bp(l) {
 				position: absolute;
 				padding: 0 1rem $baseline;
+				@include font-size($fontsize700);
+				line-height: 2rem;
 			}
 		}
 
 		.link {
 			@include bp(l) {
 				color: white;
+			}
+		}
+
+
+		// Cover Hero Media
+
+		&.media-story {
+			background-color: darken($bluegrey1000, 5%);
+			border-bottom: 0;
+
+			.story-media:after {
+				background-image: linear-gradient(-180deg, rgba(28,36,41,0) 0%, rgba(28,36,41,0.55) 60%, rgba(28,36,41,1) 100%);
 			}
 		}
 	}
@@ -738,28 +752,16 @@
 		font-weight: 700;
 	}
 
-	.video-icon {
-		position: absolute;
-		bottom: 1rem;
-		left: 1rem;
-	}
-
 	.story-heading {
 		color: white;
-		@include font-size($fontsize400);
-
-		@include bp(l) {
-			@include font-size($fontsize500);
-			line-height: 1.5rem;
-		}
 	}
 
 	.story-media {
 		position: relative;
-		margin-bottom: 0;
-		float: none;
-		width: 100%;
-		max-width: none;
+
+		&.media-full {
+			margin-right: 0;
+		}
 	}
 
 	.story-header {
@@ -769,11 +771,7 @@
 	// featured media story
 
 	&.featured-story {
-		.story-heading {
-			@include bp(l) {
-				@include font-size($fontsize600);
-			}
-		}
+
 		.story-header {
 			@include bp(l) {
 				padding: 1rem;

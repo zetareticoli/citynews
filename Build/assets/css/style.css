@@ -5496,16 +5496,24 @@ hr {
       font-size: 1.25rem; }
       @media (min-width: 46.25em) {
         .hero-story.focus-cover .story-heading {
-          font-size: 28px;
-          font-size: 1.75rem;
-          line-height: 2rem; } }
+          font-size: 24px;
+          font-size: 1.5rem;
+          line-height: 1.75rem; } }
       @media (min-width: 62.5em) {
         .hero-story.focus-cover .story-heading {
           position: absolute;
-          padding: 0 1rem 0.5rem; } }
+          padding: 0 1rem 0.5rem;
+          font-size: 28px;
+          font-size: 1.75rem;
+          line-height: 2rem; } }
     @media (min-width: 62.5em) {
       .hero-story.focus-cover .link {
         color: white; } }
+    .hero-story.focus-cover.media-story {
+      background-color: #1c2429;
+      border-bottom: 0; }
+      .hero-story.focus-cover.media-story .story-media:after {
+        background-image: linear-gradient(-180deg, rgba(28, 36, 41, 0) 0%, rgba(28, 36, 41, 0.55) 60%, #1c2429 100%); }
 
 .fullpage-hero {
   padding: 0.5rem;
@@ -5789,31 +5797,14 @@ hr {
     font-size: 12px;
     font-size: 0.75rem;
     font-weight: 700; }
-  .media-story .video-icon {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem; }
   .media-story .story-heading {
-    color: white;
-    font-size: 18px;
-    font-size: 1.125rem; }
-    @media (min-width: 62.5em) {
-      .media-story .story-heading {
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.5rem; } }
+    color: white; }
   .media-story .story-media {
-    position: relative;
-    margin-bottom: 0;
-    float: none;
-    width: 100%;
-    max-width: none; }
+    position: relative; }
+    .media-story .story-media.media-full {
+      margin-right: 0; }
   .media-story .story-header {
     padding: .75rem 1rem; }
-  @media (min-width: 62.5em) {
-    .media-story.featured-story .story-heading {
-      font-size: 24px;
-      font-size: 1.5rem; } }
   @media (min-width: 62.5em) {
     .media-story.featured-story .story-header {
       padding: 1rem; } }
@@ -6025,6 +6016,10 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .theme-inverted .slots {
   border-color: #37474f;
   background-color: #37474f; }
+
+.theme-inverted .u-bordered li,
+.inverted .u-bordered li {
+  border-color: #37474f; }
 
 /* ==========================================================================
    Brand Themes
