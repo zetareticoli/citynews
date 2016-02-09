@@ -267,10 +267,6 @@ hr {
 
 .l-list-item {
 	margin-bottom: .5rem;
-
-	@include bp(l) {
-		margin-bottom: 1rem;
-	}
 }
 
 // Layout Masonry ===============================================================

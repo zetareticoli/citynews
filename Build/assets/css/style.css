@@ -2389,9 +2389,6 @@ hr {
       flex: 0 1 auto; } }
 .l-list-item {
   margin-bottom: .5rem; }
-  @media (min-width: 62.5em) {
-    .l-list-item {
-      margin-bottom: 1rem; } }
 
 .l-masonry {
   /* Masonry container */
