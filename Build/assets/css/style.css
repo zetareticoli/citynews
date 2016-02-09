@@ -2300,6 +2300,8 @@ hr {
   @media (min-width: 62.5em) {
     .section {
       margin-bottom: 1.5rem; } }
+  .section.inverted {
+    padding: 1rem 0; }
 
 @media screen and (min-width: 740px) and (max-width: 999px) {
   .main-column {
