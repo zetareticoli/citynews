@@ -83,6 +83,8 @@
 	// Global Styles
 
 	.main-content {
+		margin-bottom: 1rem;
+		
 		a, a:link, .link {
 			color: $bluegrey400;
 
@@ -123,6 +125,7 @@
 	}
 
 	.entry {
+		padding-bottom: 0;
 		border-bottom: 0;
 	}
 

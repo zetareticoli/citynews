@@ -5966,26 +5966,29 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 .inverted {
   background-color: #263238; }
 
-.theme-inverted .main-content a, .theme-inverted .main-content a:link, .theme-inverted .main-content .link {
-  color: #90a4ae; }
-  .theme-inverted .main-content a:hover, .theme-inverted .main-content a:link:hover, .theme-inverted .main-content .link:hover {
+.theme-inverted .main-content {
+  margin-bottom: 1rem; }
+  .theme-inverted .main-content a, .theme-inverted .main-content a:link, .theme-inverted .main-content .link {
+    color: #90a4ae; }
+    .theme-inverted .main-content a:hover, .theme-inverted .main-content a:link:hover, .theme-inverted .main-content .link:hover {
+      color: white; }
+  .theme-inverted .main-content h1, .theme-inverted .main-content h2, .theme-inverted .main-content h3, .theme-inverted .main-content h4, .theme-inverted .main-content h5, .theme-inverted .main-content h6 {
     color: white; }
-.theme-inverted .main-content h1, .theme-inverted .main-content h2, .theme-inverted .main-content h3, .theme-inverted .main-content h4, .theme-inverted .main-content h5, .theme-inverted .main-content h6 {
-  color: white; }
-.theme-inverted .main-content p,
-.theme-inverted .main-content .entry-content-body > p,
-.theme-inverted .main-content .social-counter .number,
-.theme-inverted .main-content .author-name,
-.theme-inverted .main-content .author-role,
-.theme-inverted .main-content .share-btn .btn-label {
-  color: white; }
-.theme-inverted .main-content .timestamp,
-.theme-inverted .main-content .datestamp,
-.theme-inverted .main-content .social-counter .counter-label {
-  color: #607d8b; }
+  .theme-inverted .main-content p,
+  .theme-inverted .main-content .entry-content-body > p,
+  .theme-inverted .main-content .social-counter .number,
+  .theme-inverted .main-content .author-name,
+  .theme-inverted .main-content .author-role,
+  .theme-inverted .main-content .share-btn .btn-label {
+    color: white; }
+  .theme-inverted .main-content .timestamp,
+  .theme-inverted .main-content .datestamp,
+  .theme-inverted .main-content .social-counter .counter-label {
+    color: #607d8b; }
 .theme-inverted .secondary-nav .nav-item.current {
   box-shadow: inset 0 -0.35rem 0 #263238; }
 .theme-inverted .entry {
+  padding-bottom: 0;
   border-bottom: 0; }
 .theme-inverted .entry-meta,
 .theme-inverted .meta-byline {
