@@ -328,7 +328,11 @@ dt {
 	border-bottom: 0 !important;
 
 	@include bp(l) {
-		padding: .75rem 0 !important;
+		padding: .75rem 0;
+	}
+
+	&.has-no-border {
+		padding-top: 0;
 	}
 }
 
