@@ -5905,13 +5905,13 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
     width: 50%; }
     @media (min-width: 46.25em) {
       .l-m-main .unit:first-child {
-        width: 36.6%; }
+        width: 36.7%; }
       .l-m-main .unit:last-child {
-        width: 63.4%; } }
+        width: 63.3%; } }
 
 @media (min-width: 46.25em) {
   .l-m-aside {
-    width: 33.33%; } }
+    width: 33.23%; } }
 .l-m-aside .unit.size1of1 {
   margin-bottom: .5rem; }
   @media (min-width: 46.25em) {

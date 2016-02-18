@@ -2185,11 +2185,11 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 
 		@include bp(m) {
 			&:first-child {
-				width: 36.6%;
+				width: 36.7%;
 			}
 
 			&:last-child {
-				width: 63.4%;
+				width: 63.3%;
 			}
 		}
 	}
@@ -2197,7 +2197,7 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 
 .l-m-aside {
 	@include bp(m) {
-		width: 33.33%;
+		width: 33.23%;
 	}
 
 	.unit.size1of1 {
