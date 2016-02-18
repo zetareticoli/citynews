@@ -2167,47 +2167,48 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
   Mosaic
   ========================================================================== */
 
-.l-m-3of4,
-.l-m-1of4,
 .l-m-main,
-.l-m-aside,
-.l-m-aside-right,
-.l-m-aside-left {
-	width: 50%;
-}
-
-.l-m-3of4 {
-	@include bp(m) {
-		width: 75%;
-	}
-}
-
-.l-m-1of4 {
-	@include bp(m) {
-		width: 25%;
-	}
+.l-m-aside {
+	width: 100%;
 }
 
 .l-m-main {
+	margin-bottom: .5rem;
+
 	@include bp(m) {
-		width: 57.6%;
+		margin-bottom: 0;
+		width: 66.66%;
+	}
+
+	.unit {
+		width: 50%;
+
+		@include bp(m) {
+			&:first-child {
+				width: 36.6%;
+			}
+
+			&:last-child {
+				width: 63.4%;
+			}
+		}
 	}
 }
 
 .l-m-aside {
 	@include bp(m) {
-		width: 42.4%;
+		width: 33.33%;
 	}
-}
 
-.l-m-aside-right {
-	@include bp(m) {
-		width: 56.5%;
+	.unit.size1of1 {
+		margin-bottom: .5rem;
+
+		@include bp(m) {
+			margin-bottom: .9rem;
+		}
 	}
-}
 
-.l-m-aside-left {
-	@include bp(m) {
-		width: 43.5%;
+	.unit.size1of2 {
+		width: 50%;
 	}
 }

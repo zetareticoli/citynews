@@ -5891,37 +5891,34 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 /* ==========================================================================
   Mosaic
   ========================================================================== */
-.l-m-3of4,
-.l-m-1of4,
 .l-m-main,
-.l-m-aside,
-.l-m-aside-right,
-.l-m-aside-left {
-  width: 50%; }
+.l-m-aside {
+  width: 100%; }
 
-@media (min-width: 46.25em) {
-  .l-m-3of4 {
-    width: 75%; } }
-
-@media (min-width: 46.25em) {
-  .l-m-1of4 {
-    width: 25%; } }
-
-@media (min-width: 46.25em) {
-  .l-m-main {
-    width: 57.6%; } }
+.l-m-main {
+  margin-bottom: .5rem; }
+  @media (min-width: 46.25em) {
+    .l-m-main {
+      margin-bottom: 0;
+      width: 66.66%; } }
+  .l-m-main .unit {
+    width: 50%; }
+    @media (min-width: 46.25em) {
+      .l-m-main .unit:first-child {
+        width: 36.6%; }
+      .l-m-main .unit:last-child {
+        width: 63.4%; } }
 
 @media (min-width: 46.25em) {
   .l-m-aside {
-    width: 42.4%; } }
-
-@media (min-width: 46.25em) {
-  .l-m-aside-right {
-    width: 56.5%; } }
-
-@media (min-width: 46.25em) {
-  .l-m-aside-left {
-    width: 43.5%; } }
+    width: 33.33%; } }
+.l-m-aside .unit.size1of1 {
+  margin-bottom: .5rem; }
+  @media (min-width: 46.25em) {
+    .l-m-aside .unit.size1of1 {
+      margin-bottom: .9rem; } }
+.l-m-aside .unit.size1of2 {
+  width: 50%; }
 
 /* ==========================================================================
   THEME COLORS
