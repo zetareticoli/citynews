@@ -5578,12 +5578,12 @@ hr {
       background: none;
       max-height: 22.5rem; }
       .inset-story:hover .story-media:after {
-        background: -moz-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 45%, #263138 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(38, 49, 56, 0)), color-stop(45%, #263138), color-stop(100%, #263138));
-        background: -webkit-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 45%, #263138 100%);
-        background: -o-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 45%, #263138 100%);
-        background: -ms-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 45%, #263138 100%);
-        background: linear-gradient(to bottom, rgba(38, 49, 56, 0) 0%, #263138 45%, #263138 100%);
+        background: -moz-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 55%, #263138 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(38, 49, 56, 0)), color-stop(55%, #263138), color-stop(100%, #263138));
+        background: -webkit-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 55%, #263138 100%);
+        background: -o-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 55%, #263138 100%);
+        background: -ms-linear-gradient(top, rgba(38, 49, 56, 0) 0%, #263138 55%, #263138 100%);
+        background: linear-gradient(to bottom, rgba(38, 49, 56, 0) 0%, #263138 55%, #263138 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00263138', endColorstr='#263138',GradientType=0 ); }
       .inset-story:hover .story-summary {
         opacity: 1;
