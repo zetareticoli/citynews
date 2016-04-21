@@ -1126,6 +1126,43 @@
 @import "modules/cards";
 
 /* ==========================================================================
+  Weekend
+  ========================================================================== */
+
+.box-weekend {
+	margin-bottom:1rem;
+}
+
+.box-weekend .box-weekend-img {
+	max-width:20%;
+	display:block;
+	float:left;
+	margin-right:1rem;
+}
+
+.box-weekend .box-weekend-img img {
+	width:100%;
+}
+
+.box-weekend a {
+	overflow: hidden;
+	display: block;
+}
+
+.box-weekend a h2 {
+	color:#424242;
+	margin-bottom: .500rem;
+}
+
+.box-weekend a:hover h2 {
+	color:#212121;
+}
+
+.box-weekend small {
+	margin-left:1rem;
+}
+
+/* ==========================================================================
   District List
   ========================================================================== */
 
@@ -2211,4 +2248,75 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 	.unit.size1of2 {
 		width: 50%;
 	}
+}
+
+/* ==========================================================================
+  Ob Widget
+  ========================================================================== */
+/* fix related articles */
+.ob-widget > div ul {
+  list-style: none
+}
+.ob-widget > div ul li:nth-child(1),
+.ob-widget > div ul li:nth-child(2),
+.ob-widget > div ul li:nth-child(3),
+.ob-widget > div ul li:nth-child(4)
+  {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 50px;
+  width: 23.275%;
+  box-sizing: border-box;
+  margin-right: 2.3%;
+  padding:0;
+}
+.ob-widget > div ul li:nth-child(1) .sponsored-story,
+.ob-widget > div ul li:nth-child(2) .sponsored-story,
+.ob-widget > div ul li:nth-child(3) .sponsored-story,
+.ob-widget > div ul li:nth-child(4) .sponsored-story {
+  background-color: transparent;
+  padding:0; 
+}
+.ob-widget > div ul li a span:nth-child(1),
+.ob-widget > div ul li a span:nth-child(2),
+.ob-widget > div ul li a span:nth-child(3),
+.ob-widget > div ul li a span:nth-child(4) {
+  height:55px !important;
+}
+.ob-widget > div ul li a span:nth-child(1) img,
+.ob-widget > div ul li a span:nth-child(2) img,
+.ob-widget > div ul li a span:nth-child(3) img,
+.ob-widget > div ul li a span:nth-child(4) img {
+  max-height:100%;
+}
+
+
+.ob-widget > div ul li:nth-child(1) .sponsored-story > a,
+.ob-widget > div ul li:nth-child(2) .sponsored-story > a,
+.ob-widget > div ul li:nth-child(3) .sponsored-story > a,
+.ob-widget > div ul li:nth-child(4) .sponsored-story > a {
+  width:100%;
+  margin-right:0
+}
+
+.ob-widget > div ul li:nth-child(1) .sponsored-story > a div,
+.ob-widget > div ul li:nth-child(2) .sponsored-story > a div,
+.ob-widget > div ul li:nth-child(3) .sponsored-story > a div,
+.ob-widget > div ul li:nth-child(4) .sponsored-story > a div {
+  height:55px !important;
+}
+
+@media only screen and (min-width:640px) {
+  .ob-widget > div ul li a span:nth-child(1), 
+  .ob-widget > div ul li a span:nth-child(2),
+  .ob-widget > div ul li a span:nth-child(3),
+  .ob-widget > div ul li a span:nth-child(4) {
+    height:80px !important;
+  }
+  .ob-widget > div ul li:nth-child(1) .sponsored-story > a div,
+  .ob-widget > div ul li:nth-child(2) .sponsored-story > a div,
+  .ob-widget > div ul li:nth-child(3) .sponsored-story > a div,
+  .ob-widget > div ul li:nth-child(4) .sponsored-story > a div {
+    height:80px !important;
+  }
 }

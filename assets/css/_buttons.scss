@@ -463,3 +463,68 @@ a.share-btn {
 	z-index: 6;
 	cursor: pointer;
 }
+
+// Button Upload Picture =============================================
+
+.btn-upload-picture .mediaSelectFiles {
+  padding:1rem;
+  border: .250rem dotted #e0e0e0;
+  top:1rem;
+  display:block;
+  width: 250px;
+}
+
+.btn-upload-picture .avatar_pic_preview,
+.btn-upload-picture .immagini-comunicati_pic_preview,
+.btn-upload-picture .petizioni_immagini-petizioni_pic_preview,
+.btn-upload-picture .segnalazioni_immagini_pic_preview,
+.btn-upload-picture .immagini-eventi_pic_preview {
+  list-style: none;
+  overflow:hidden;
+  padding-top:1rem;
+  margin:0;
+}
+
+.btn-upload-picture .immagini-eventi_mediaUploadList,
+.btn-upload-picture .immagini-comunicati_mediaUploadList,
+.btn-upload-picture .segnalazioni_immagini_mediaUploadList,
+.btn-upload-picture .immagini-petizioni_mediaUploadList {
+  width:100%;
+  margin:0;
+  list-style: none;
+  overflow:hidden;
+  padding-top:1rem;
+}
+
+.btn-upload-picture .immagini-eventi_mediaUploadList li,
+.btn-upload-picture .immagini-comunicati_mediaUploadList li,
+.btn-upload-picture .segnalazioni_immagini_mediaUploadList li,
+.btn-upload-picture .immagini-petizioni_mediaUploadList li {
+  margin-bottom: .250rem;
+  float:left;
+  display:block;
+  width:100%;
+  text-align: left;
+}
+
+.btn-upload-picture .immagini-eventi_mediaUploadList li .progress,
+.btn-upload-picture .immagini-comunicati_mediaUploadList li .progress,
+.btn-upload-picture .immagini-petizioni_mediaUploadList li .progress,
+.btn-upload-picture .segnalazioni_immagini_mediaUploadList li .progress {
+  background-color: #e0e0e0;
+  display:block;
+}
+
+.btn-upload-picture .avatar_pic_preview li, .btn-upload-picture .segnalazioni_immagini_pic_preview li, .btn-upload-picture .comunicati_immagini-comunicati_pic_preview li, .btn-upload-picture .immagini-eventi_pic_preview li, .btn-upload-picture .petizioni_immagini-petizioni_pic_preview li {
+  float:left;
+  overflow:hidden;
+  position:relative;
+  margin: .250rem;
+}
+
+
+.btn-upload-picture .avatar_pic_preview li img.mediaDelete, .btn-upload-picture .segnalazioni_immagini_pic_preview li img.mediaDelete, .btn-upload-picture .comunicati_immagini-comunicati_pic_preview li img.mediaDelete, .btn-upload-picture .immagini-eventi_pic_preview li img.mediaDelete, .btn-upload-picture .petizioni_immagini-petizioni_pic_preview li img.mediaDelete{
+  position:absolute;
+  top:0;
+  right:0;
+}

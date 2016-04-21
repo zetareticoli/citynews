@@ -32,6 +32,18 @@
 	&.inline-icon {
 		margin-right: .25rem;
 	}
+
+	&.few {
+	    fill: #ffc200; 
+	}
+
+	&.mid {
+	    fill: #ff7f00; 
+	} 
+	  
+	&.many {
+	    fill: #ff3c00; 
+	}
 }
 
 // Use to overlay an icon over content
