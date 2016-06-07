@@ -35,6 +35,12 @@ $(document).ready(function(){
 		$('html').toggleClass("is-locked");
 	});
 
+	//channel mobile nav - open/close navigation
+	$('.channel-nav-trigger').on('click', function(event){
+		event.preventDefault();    
+		$('.channel-mobile-menu').toggleClass('is-nav-open');
+	});
+
 	$('.has-children').children('a').on('click', function(event){
 		event.preventDefault();
 		$(this).next('.nav-children').removeClass('is-hidden');

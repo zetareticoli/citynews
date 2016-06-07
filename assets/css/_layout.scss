@@ -178,10 +178,6 @@ hr {
 
 .main-content {
 	padding: $baseline 0;
-	
-	@include bp(m) {
-		padding: 1.5rem 0;
-	}
 }
 
 .section {
@@ -380,6 +376,10 @@ hr {
 
 .header {
 	position: relative;
+
+	@include bp(l) {
+		margin-bottom: .5rem;
+	}
 
 	.header-top,
 	.header-bottom {
@@ -604,6 +604,19 @@ hr {
 			margin-top: $baseline * 7;
 		}
 	}
+}
+
+// Theme inverted header
+
+.theme-inverted .header {
+	margin-bottom: 0;
+}
+
+// Channel header
+
+.channel-wellness .header,
+.channel-zone .header {
+	margin-bottom: 0;
 }
 
 /* ==========================================================================

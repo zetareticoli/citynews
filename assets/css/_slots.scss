@@ -44,7 +44,7 @@
   padding: 0 1rem 1rem 1rem;
   text-align: center; }
 
-.slot-980x30 > *,
+.slot-980x30 > *,
 .slit-980x30_home > * {
 	padding-top: 1rem;
 }
@@ -119,17 +119,6 @@
 
 	@include bp(xl) {
 		display: none;
-	}
-}
-
-.entry-aside-slots {
-	display: none;
-	float: right;
-	clear: right;
-	width: 20rem;
-
-	@include bp(l) {
-		display: block;
 	}
 }
 

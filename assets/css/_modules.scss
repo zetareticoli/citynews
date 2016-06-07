@@ -200,6 +200,10 @@
 	border-top-style: solid;
 	z-index: 7;
 
+	@include bp(l) {
+		margin-bottom: .5rem;
+	}
+
 	.page-title {
 		display: inline-block;
 		margin: .5rem 0;
@@ -690,8 +694,8 @@
 	}
 
 	.filters-menu {
-		width: 97%;
-		height: 97%;
+		width: 0;
+		height: 0;
 		position: fixed;
 		z-index: -1;
 		top: 0;
@@ -731,8 +735,10 @@
 
 	&.is-open {
 		.filters-menu {
+			width: 97%;
+			height: 97%;
 			opacity: 1;
-			z-index: 10;
+			z-index: 9999;
 		}
 	}
 
@@ -942,6 +948,8 @@
 		.photo-img {
 			cursor: pointer;
 			width: auto;
+			height: auto;
+			max-height: 28.625rem;
 			margin: auto;
 		}
 
@@ -2203,120 +2211,3 @@ b.bs_tagSize_11 a, b.bs_tagSize_12 a {
 /* ==========================================================================
   Mosaic
   ========================================================================== */
-
-.l-m-main,
-.l-m-aside {
-	width: 100%;
-}
-
-.l-m-main {
-	margin-bottom: .5rem;
-
-	@include bp(m) {
-		margin-bottom: 0;
-		width: 66.66%;
-	}
-
-	.unit {
-		width: 50%;
-
-		@include bp(m) {
-			&:first-child {
-				width: 36.7%;
-			}
-
-			&:last-child {
-				width: 63.3%;
-			}
-		}
-	}
-}
-
-.l-m-aside {
-	@include bp(m) {
-		width: 33.23%;
-	}
-
-	.unit.size1of1 {
-		margin-bottom: .5rem;
-
-		@include bp(m) {
-			margin-bottom: .9rem;
-		}
-	}
-
-	.unit.size1of2 {
-		width: 50%;
-	}
-}
-
-/* ==========================================================================
-  Ob Widget
-  ========================================================================== */
-/* fix related articles */
-.ob-widget > div ul {
-  list-style: none
-}
-.ob-widget > div ul li:nth-child(1),
-.ob-widget > div ul li:nth-child(2),
-.ob-widget > div ul li:nth-child(3),
-.ob-widget > div ul li:nth-child(4)
-  {
-  display: inline-block;
-  vertical-align: top;
-  min-width: 50px;
-  width: 23.275%;
-  box-sizing: border-box;
-  margin-right: 2.3%;
-  padding:0;
-}
-.ob-widget > div ul li:nth-child(1) .sponsored-story,
-.ob-widget > div ul li:nth-child(2) .sponsored-story,
-.ob-widget > div ul li:nth-child(3) .sponsored-story,
-.ob-widget > div ul li:nth-child(4) .sponsored-story {
-  background-color: transparent;
-  padding:0; 
-}
-.ob-widget > div ul li a span:nth-child(1),
-.ob-widget > div ul li a span:nth-child(2),
-.ob-widget > div ul li a span:nth-child(3),
-.ob-widget > div ul li a span:nth-child(4) {
-  height:55px !important;
-}
-.ob-widget > div ul li a span:nth-child(1) img,
-.ob-widget > div ul li a span:nth-child(2) img,
-.ob-widget > div ul li a span:nth-child(3) img,
-.ob-widget > div ul li a span:nth-child(4) img {
-  max-height:100%;
-}
-
-
-.ob-widget > div ul li:nth-child(1) .sponsored-story > a,
-.ob-widget > div ul li:nth-child(2) .sponsored-story > a,
-.ob-widget > div ul li:nth-child(3) .sponsored-story > a,
-.ob-widget > div ul li:nth-child(4) .sponsored-story > a {
-  width:100%;
-  margin-right:0
-}
-
-.ob-widget > div ul li:nth-child(1) .sponsored-story > a div,
-.ob-widget > div ul li:nth-child(2) .sponsored-story > a div,
-.ob-widget > div ul li:nth-child(3) .sponsored-story > a div,
-.ob-widget > div ul li:nth-child(4) .sponsored-story > a div {
-  height:55px !important;
-}
-
-@media only screen and (min-width:640px) {
-  .ob-widget > div ul li a span:nth-child(1), 
-  .ob-widget > div ul li a span:nth-child(2),
-  .ob-widget > div ul li a span:nth-child(3),
-  .ob-widget > div ul li a span:nth-child(4) {
-    height:80px !important;
-  }
-  .ob-widget > div ul li:nth-child(1) .sponsored-story > a div,
-  .ob-widget > div ul li:nth-child(2) .sponsored-story > a div,
-  .ob-widget > div ul li:nth-child(3) .sponsored-story > a div,
-  .ob-widget > div ul li:nth-child(4) .sponsored-story > a div {
-    height:80px !important;
-  }
-}

@@ -1,0 +1,345 @@
+ 
+  img:-moz-loading 
+  {
+  visibility: hidden;
+ }
+  
+  .slot-interstitial, .slot-skin {
+    margin: 0;
+    }
+  
+  .slot-980x30, .slot-980x30_home {
+   padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  
+  .slot-980x30, .slot-980x30_home, .slot-large_rectangle_1_desktop , .slot-large_rectangle_2_desktop{ 
+    width:auto; 
+    }
+  
+  .slot-300x250mobile, .slot-300x250mobile2, .slot-300x250_loc2 { 
+    margin: 0.5rem auto; /* width: 300px; */ max-width:300px; 
+    }
+  
+  .slot-300x250mobile iframe, .slot-300x250mobile2 iframe, .slot-300x250_loc2 iframe { 
+    display: block; margin: 0 auto;  
+    }
+  
+  .slot-300x250mobile a > img, .slot-300x250mobile2 a > img, .slot-300x250_loc2 a > img { 
+    height:auto; 
+    }
+  
+  .slot-300x250_naz { 
+    margin-bottom:30px; width:300px; 
+    }
+    
+  .theme-inverted .slot-980x30,  .theme-inverted .slot-980x30_home {
+    padding-top: 1rem;
+    background-color: #263238;
+  }
+  
+  .story.hero-story.fullpage-hero.inverted {margin-top: 20px;}
+  
+  /*  adatta masthead larghezza 1000px ____classi::: .slot-980x30, .slot-980x30_home */ 
+  @-moz-document url-prefix() {
+    @media only screen and (min-width:37.5rem){
+      .slot-980x30, .slot-980x30_home {
+      -moz-transform: scale(.57);
+      transform: scale(.57);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:43.75rem){
+      .slot-980x30, .slot-980x30_home {
+      -moz-transform: scale(.675);
+      transform: scale(.675);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:50rem){
+      .slot-980x30, .slot-980x30_home {
+      -moz-transform: scale(.780);
+      transform: scale(.780);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:56.25rem){
+      .slot-980x30, .slot-980x30_home {
+      -moz-transform: scale(.875);
+      transform: scale(.875);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:63.75rem){
+      .slot-980x30, .slot-980x30_home {
+      -moz-transform: scale(1);
+      transform: scale(1);
+      }
+    }
+  }
+  @media only screen and (min-width:37.5rem){.slot-980x30, .slot-980x30_home {zoom:58%}}
+  @media only screen and (min-width:43.75rem){.slot-980x30, .slot-980x30_home {zoom:68%}}
+  @media only screen and (min-width:48rem){.slot-980x30, .slot-980x30_home {zoom:74%}}
+  @media only screen and (min-width:50rem){.slot-980x30, .slot-980x30_home {zoom:78%}}
+  @media only screen and (min-width:56.25rem){.slot-980x30, .slot-980x30_home {zoom:88%}}
+  @media only screen and (min-width:63.75rem){.slot-980x30, .slot-980x30_home {zoom:100%}}
+  
+  
+  /*  adatta masthead larghezza 1156px ____classi::: .slot-980x30, .slot-980x30_home  */
+  @-moz-document url-prefix() {
+    @media only screen and (min-width:37.5rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.505);
+        transform: scale(.505);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:40rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.548);
+        transform: scale(.548);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:43.75rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.59);
+        transform: scale(.59);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:46.87rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.62);
+        transform: scale(.62);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:50rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.673);
+        transform: scale(.673);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:53.12rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.71);
+        transform: scale(.71);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:56.25rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.75);
+        transform: scale(.75);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:59.37rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.80);
+        transform: scale(.80);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:62.5rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.83);
+        transform: scale(.83);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:63.75rem){
+      .slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {
+        -moz-transform: scale(.85);
+        transform: scale(.85);
+        -moz-transform-origin: 1rem center;
+        transform-origin: 1rem center;
+      }
+    }
+  }
+  @media only screen and (min-width:37.5rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:50%}}
+  @media only screen and (min-width:40rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:53%}}
+  @media only screen and (min-width:43.75rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:60%}}
+  @media only screen and (min-width:48rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:64%}}
+  @media only screen and (min-width:50rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:68%}}
+  @media only screen and (min-width:53.12rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:73%}}
+  @media only screen and (min-width:56.25rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:77%}}
+  @media only screen and (min-width:59.37rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:81%}}
+  @media only screen and (min-width:62.5rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:83%}}
+  @media only screen and (min-width:63.75rem){.slot-980x30_home [class^="EDGE-new"], .slot-980x30 [class^="EDGE-new"] {zoom:85%}}
+
+
+
+  /* adatta .slot-large_rectangle_1_desktop, .slot-large_rectangle_2_desktop larghezza 1000px  */
+  @-moz-document url-prefix() {
+    @media only screen and (min-width:37.5rem){
+       .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{
+      -moz-transform: scale(.57);
+      transform: scale(.57);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:43.75rem){
+       .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{
+      -moz-transform: scale(.675);
+      transform: scale(.675);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:50rem){
+       .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{
+      -moz-transform: scale(.780);
+      transform: scale(.780);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:56.25rem){
+       .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{
+      -moz-transform: scale(.875);
+      transform: scale(.875);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      }
+    }
+    @media only screen and (min-width:63.75rem){
+       .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{
+      -moz-transform: scale(1);
+      transform: scale(1);
+      }
+    }
+  }
+  @media only screen and (min-width:37.5rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:58%}}
+  @media only screen and (min-width:43.75rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:68%}}
+  @media only screen and (min-width:48rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:74%}}
+  @media only screen and (min-width:50rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:78%}}
+  @media only screen and (min-width:56.25rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:88%}}
+  @media only screen and (min-width:63.75rem){ .slot-large_rectangle_1_desktop [class^="EDGE-"], .slot-large_rectangle_2_desktop [class^="EDGE-"]{zoom:100%}}
+    
+  
+  /* adatta .slot-large_rectangle_1_desktop, .slot-large_rectangle_2_desktop larghezza 1156px  */ 
+@-moz-document url-prefix() {
+  @media only screen and (min-width:37.5rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.505);
+      transform: scale(.505);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -68px 0 0 1px;
+    }
+  }
+  @media only screen and (min-width:40rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.548);
+      transform: scale(.548);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -65px 0 0 2px;
+    }
+  }
+  @media only screen and (min-width:43.75rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.59);
+      transform: scale(.59);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -58px 0 0 2px;
+    }
+  } 
+  @media only screen and (min-width:46.87rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.62);
+      transform: scale(.62);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -49px 0 0 12px;
+    }
+  }
+  @media only screen and (min-width:50rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.673);
+      transform: scale(.673);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -44px 0 0 11px;
+    }
+  }
+  @media only screen and (min-width:53.12rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.71);
+      transform: scale(.71);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -42px 0 0 11px;
+    }
+  }
+  @media only screen and (min-width:56.25rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.75);
+      transform: scale(.75);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -34px 0 0 12px;
+    }
+  }
+  @media only screen and (min-width:59.37rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.80);
+      transform: scale(.80);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -26px 0 0 14px;
+    }
+  }
+  @media only screen and (min-width:62.5rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.83);
+      transform: scale(.83);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -20px 0 0 15px;
+    }
+  }
+  @media only screen and (min-width:63.75rem){
+    .slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {
+      -moz-transform: scale(.87);
+      transform: scale(.87);
+      -moz-transform-origin: 1rem center;
+      transform-origin: 1rem center;
+      margin: -22px 0 0 15px;
+    }
+  }
+}
+
+@media only screen and (min-width:37.5rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:50%}}
+@media only screen and (min-width:40rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:53%}}
+@media only screen and (min-width:43.75rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:60%}}
+@media only screen and (min-width:48rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:64%}}
+@media only screen and (min-width:50rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:68%}}
+@media only screen and (min-width:53.12rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:73%}}
+@media only screen and (min-width:56.25rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:77%}}
+@media only screen and (min-width:59.37rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:81%}}
+@media only screen and (min-width:62.5rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:83%}}
+@media only screen and (min-width:63.75rem){.slot-large_rectangle_1_desktop [class^="EDGE-large"], .slot-large_rectangle_2_desktop [class^="EDGE-large"] {zoom:85%}}
+
+
+div [class^="EDGE-"] {
+  margin: 0 auto !important;
+}

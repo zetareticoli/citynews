@@ -49,6 +49,10 @@
 	position: relative;
 	padding-top: .5rem;
 	@include clearfix;
+
+	@include bp(l) {
+		padding-top: 0;
+	}
 }
 
 .entry-labels {
@@ -220,6 +224,14 @@
 	    tbody tr td {
 	        padding:0.500rem
 	    }    
+	}
+
+	& > p > img {
+		width: auto;
+		height: auto;
+		max-height: 500px;
+		margin: 0 auto;
+		display: block;
 	}
 }
 

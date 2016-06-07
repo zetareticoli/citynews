@@ -1,0 +1,372 @@
+$wellness-primary : rgba(127, 215, 190, 1);
+
+/* ==========================================================================
+  FONTS
+  ========================================================================== */
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_probold_italic';
+    src: url('sourcesanspro-bolditalic-webfont.woff2') format('woff2'),
+         url('sourcesanspro-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('sourcesanspro-italic-webfont.woff2') format('woff2'),
+         url('sourcesanspro-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sans_narrowbold';
+    src: url('pt_sans-narrow-web-bold-webfont.woff2') format('woff2'),
+         url('pt_sans-narrow-web-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+  HEADER
+  ========================================================================== */
+
+/* ==========================================================================
+  Slim Header
+  ========================================================================== */
+
+.channel-wellness {
+
+	// Hide page title
+	.slim-header .page-title {
+		position:absolute;
+		left:-999999px;
+		top:auto;
+		width:1px;
+		height:1px;
+		overflow:hidden;
+		clip:rect(0 0 0 0);
+		clip:rect(0,0,0,0);
+	}
+
+	.slim-header .header-top {
+		height: 2.5rem;
+		box-shadow: none;
+
+		@include bp(l) {
+			height: 3.5rem;
+		}
+	}
+
+	.slim-header .header-top .header-brand {
+		padding-top: 0;
+	}
+
+	.slim-header .header-top .header-brand .logo {
+		width: 7rem;
+		height: 1rem;
+		margin-top: .7rem;	
+
+		@include bp(l) {
+			width: 10rem;
+			height: 1.5rem;		
+			margin-top: 1rem;	
+		}
+	}
+
+	.nav-btn {
+		height: 2.5rem;
+		@include max-bp(m) {
+			.btn-label {
+				display: none;
+			}
+		}
+		.btn-label {
+			@include font-size($fontsize200);
+		}
+
+		.icon {
+			fill: $black900;
+		}
+	}
+
+	.search-btn, .login-btn {
+		height: 3.5rem;
+	}
+
+	.search-btn {
+		width: 3.5rem;
+	}
+
+	.start-search-trigger {
+		&::before {
+			/* lens */
+			top: 20px;
+			left: 18px;
+			width: 18px;
+			height: 18px;
+
+			@include bp(m) {
+				top: 22px;
+				left: 20px;
+			}
+
+			@include bp(l) {
+				top: 18px;
+				left: 19px;
+			}
+		}
+
+		&::after {
+			/* handle */
+			height: 3px;
+			width: 8px;
+			bottom: 16px;
+			right: 15px;
+
+			@include bp(m) {
+				bottom: 22px;
+				right: 20px;
+			}
+
+			@include bp(l) {
+				bottom: 18px;
+				right: 14px;
+			}
+		}
+	}
+}
+
+.theme-yellow.channel-wellness .theme-header,
+.theme-blue.channel-wellness .theme-header,
+.theme-red.channel-wellness .theme-header,
+.theme-green.channel-wellness .theme-header,
+.theme-purple.channel-wellness .theme-header,
+.theme-pink.channel-wellness .theme-header,
+.theme-today.channel-wellness .theme-header {
+	background-color: white;
+}
+
+.theme-today.channel-wellness .slim-header-nav {
+	margin-left: -3rem;
+}
+
+/* ==========================================================================
+  Brand Logo
+  ========================================================================== */
+
+.channel-wellness.theme-today .logo {
+	fill: $b-c-today;	
+}
+
+/* ==========================================================================
+  Channel Header
+  ========================================================================== */
+
+.channel-header {
+	position: relative;
+	background-color: $wellness-primary;
+	height: 4rem;
+	line-height: 4rem;
+	z-index: 5;
+
+	.channel-logo {
+		margin: 0 1rem;
+		width: 13rem;
+		float: left;
+
+		@include bp(m) {
+			width: auto;
+		}
+	}
+
+	.channel-promo-logo {
+		float: right;
+		margin-right: 1rem;
+	}
+}
+
+.channel-promo-byline {
+	color: rgba(0,0,0,0.5);
+	font-style: italic;
+	font-size: 65%;
+}
+
+.channel-promo {
+	float: right;
+	padding: .5rem;
+	margin: 1rem 1rem 0;
+	background-color: rgba(255,255,255,0.4);
+	@include rounded(40px);
+	text-align: right;
+
+	.channel-promo-byline {
+		line-height: 1.5rem;
+		margin-right: .25rem;
+	}
+
+	.channel-promo-byline,
+	.channel-promo-brand {
+		float: left;
+	}
+}
+
+.channel-promo-bar {
+	padding: .25rem 1rem;
+	background-color: $black200;
+
+	.channel-promo-byline {
+		display: inline;
+	}
+
+	.channel-promo-brand {
+		height: 1rem;
+	}
+}
+
+.channel-nav {
+	width: auto;
+	max-width: 50%;
+	float: left;
+	height: 4rem;
+	margin: 0 1rem 0 1rem;
+
+	&-item {
+		display: block;
+		margin: 0 .5rem;
+		font-family: 'pt_sans_narrowbold', Arial, sans-serif;
+		@include font-size($fontsize500);
+		text-transform: uppercase;
+
+		@include bp(l) {
+			display: inline-block;
+		}
+
+		.link {
+			display: block;
+			color: #fff;
+			line-height: 4rem;
+
+			&:hover {
+				box-shadow: inset 0 -0.35rem 0 rgba(255,255,255,.35);
+				text-decoration: none;
+			}
+		}
+
+		&.current .link {
+			box-shadow: inset 0 -0.35rem 0 white;
+		}
+
+		.home-icon {
+			margin-bottom: .35rem;
+			width: 1.25rem;
+			height: 1.25rem;
+		}
+	}
+}
+
+.channel-mobile-menu {
+	position: relative;
+	width: 100%;
+	float: right;
+	margin-top: -4rem;
+}
+
+.channel-nav-trigger {
+	position: relative;
+	float: right;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
+	font-family: 'pt_sans_narrowbold', Arial, sans-serif;
+	@include font-size($fontsize100);
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 6;
+
+	&:hover, &:active {
+		text-decoration: none;		
+	}
+
+	.trigger-label {
+		color: white;
+	}
+}
+
+.channel-mobile-nav {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	background-color: darken($wellness-primary, 15%);
+	z-index: 999;
+	@include transform(translateY(-155%));
+	@include transition(transform .2s ease-in);
+
+	.channel-nav-item {
+		margin: 0;
+
+			.link {
+				display: inline-block;
+				padding-left: 1rem;
+				margin: .5rem 0;
+				line-height: 2rem;
+
+				&:hover {
+					box-shadow: inset .35rem 0 0 rgba(255,255,255,.35);
+				}
+			}
+
+			&.current .link {
+				box-shadow: inset .35rem 0 0 white;
+			}
+		}
+}
+
+.channel-mobile-menu.is-nav-open {
+	
+	.channel-nav-trigger {
+		background-color: darken($wellness-primary, 15%);
+	}
+
+	.channel-mobile-nav {
+		@include transform(translateY(0));
+		@include transition(transform .2s ease-out);
+	}
+}
+
+/* ==========================================================================
+  Focus Section
+  ========================================================================== */
+
+.focus-channel {
+	.section-title {
+		border-color: $wellness-primary;
+	}
+
+	.brand-logo {
+		height: 1rem;
+		
+		@include bp(l) {
+			height: 1.5rem;
+		}
+	}
+}
